@@ -1,0 +1,83 @@
+@import "tailwindcss";
+
+/*
+ * Design tokens. Calm, paper-and-ink palette with a single indigo (藍) accent.
+ * Japanese influence is kept subtle: typography and restraint, not motifs.
+ */
+:root {
+  --paper: #f7f5f0;
+  --surface: #ffffff;
+  --surface-sunken: #f0ede6;
+  --ink: #1d1c1a;
+  --muted: #6b6862;
+  --line: #e4e0d7;
+  --accent: #2f4a6d;
+  --accent-ink: #ffffff;
+  --accent-soft: #e6ecf3;
+  --success: #3e6a4e;
+  --success-soft: #e4eee6;
+  --warning: #96702a;
+  --warning-soft: #f4ecdc;
+  --danger: #b2452f;
+  --danger-soft: #f6e5e0;
+  --guide: #1d1c1a;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --paper: #141413;
+    --surface: #1c1c1a;
+    --surface-sunken: #232320;
+    --ink: #ecebe7;
+    --muted: #a19e97;
+    --line: #2f2e2b;
+    --accent: #9fb7d6;
+    --accent-ink: #141413;
+    --accent-soft: #1f2a37;
+    --success: #8fbf9c;
+    --success-soft: #1c2a21;
+    --warning: #d8b26a;
+    --warning-soft: #2c2619;
+    --danger: #e08a76;
+    --danger-soft: #2f1e1a;
+    --guide: #ecebe7;
+  }
+}
+
+@theme inline {
+  --color-paper: var(--paper);
+  --color-surface: var(--surface);
+  --color-sunken: var(--surface-sunken);
+  --color-ink: var(--ink);
+  --color-muted: var(--muted);
+  --color-line: var(--line);
+  --color-accent: var(--accent);
+  --color-accent-ink: var(--accent-ink);
+  --color-accent-soft: var(--accent-soft);
+  --color-success: var(--success);
+  --color-success-soft: var(--success-soft);
+  --color-warning: var(--warning);
+  --color-warning-soft: var(--warning-soft);
+  --color-danger: var(--danger);
+  --color-danger-soft: var(--danger-soft);
+
+  --font-sans:
+    ui-sans-serif, system-ui, -apple-system, "Segoe UI", "Hiragino Sans", "Noto Sans JP", "Yu Gothic UI",
+    sans-serif;
+  --font-jp: "Hiragino Mincho ProN", "Yu Mincho", "Noto Serif JP", "Noto Serif CJK JP", serif;
+}
+
+html {
+  background: var(--paper);
+  color: var(--ink);
+  -webkit-tap-highlight-color: transparent;
+}
+
+body {
+  font-family: var(--font-sans);
+}
+
+:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+}

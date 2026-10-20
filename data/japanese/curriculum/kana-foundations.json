@@ -1,0 +1,115 @@
+{
+  "slug": "kana-foundations",
+  "title": "Kana Foundations",
+  "description": "Read and write the two Japanese phonetic scripts, hiragana and katakana, from memory.",
+  "lessons": [
+    {
+      "slug": "hiragana-vowels",
+      "title": "Hiragana: Vowels",
+      "items": ["hiragana:あ", "hiragana:い", "hiragana:う", "hiragana:え", "hiragana:お"]
+    },
+    {
+      "slug": "hiragana-k-row",
+      "title": "Hiragana: K row",
+      "items": ["hiragana:か", "hiragana:き", "hiragana:く", "hiragana:け", "hiragana:こ"]
+    },
+    {
+      "slug": "hiragana-s-row",
+      "title": "Hiragana: S row",
+      "items": ["hiragana:さ", "hiragana:し", "hiragana:す", "hiragana:せ", "hiragana:そ"]
+    },
+    {
+      "slug": "hiragana-t-row",
+      "title": "Hiragana: T row",
+      "items": ["hiragana:た", "hiragana:ち", "hiragana:つ", "hiragana:て", "hiragana:と"]
+    },
+    {
+      "slug": "hiragana-n-row",
+      "title": "Hiragana: N row",
+      "items": ["hiragana:な", "hiragana:に", "hiragana:ぬ", "hiragana:ね", "hiragana:の"]
+    },
+    {
+      "slug": "hiragana-h-row",
+      "title": "Hiragana: H row",
+      "items": ["hiragana:は", "hiragana:ひ", "hiragana:ふ", "hiragana:へ", "hiragana:ほ"]
+    },
+    {
+      "slug": "hiragana-m-row",
+      "title": "Hiragana: M row",
+      "items": ["hiragana:ま", "hiragana:み", "hiragana:む", "hiragana:め", "hiragana:も"]
+    },
+    {
+      "slug": "hiragana-y-r-rows",
+      "title": "Hiragana: Y and R rows",
+      "items": [
+        "hiragana:や",
+        "hiragana:ゆ",
+        "hiragana:よ",
+        "hiragana:ら",
+        "hiragana:り",
+        "hiragana:る",
+        "hiragana:れ",
+        "hiragana:ろ"
+      ]
+    },
+    {
+      "slug": "hiragana-w-row-n",
+      "title": "Hiragana: W row and ん",
+      "items": ["hiragana:わ", "hiragana:を", "hiragana:ん"]
+    },
+    {
+      "slug": "katakana-vowels",
+      "title": "Katakana: Vowels",
+      "items": ["katakana:ア", "katakana:イ", "katakana:ウ", "katakana:エ", "katakana:オ"]
+    },
+    {
+      "slug": "katakana-k-row",
+      "title": "Katakana: K row",
+      "items": ["katakana:カ", "katakana:キ", "katakana:ク", "katakana:ケ", "katakana:コ"]
+    },
+    {
+      "slug": "katakana-s-row",
+      "title": "Katakana: S row",
+      "items": ["katakana:サ", "katakana:シ", "katakana:ス", "katakana:セ", "katakana:ソ"]
+    },
+    {
+      "slug": "katakana-t-row",
+      "title": "Katakana: T row",
+      "items": ["katakana:タ", "katakana:チ", "katakana:ツ", "katakana:テ", "katakana:ト"]
+    },
+    {
+      "slug": "katakana-n-row",
+      "title": "Katakana: N row",
+      "items": ["katakana:ナ", "katakana:ニ", "katakana:ヌ", "katakana:ネ", "katakana:ノ"]
+    },
+    {
+      "slug": "katakana-h-row",
+      "title": "Katakana: H row",
+      "items": ["katakana:ハ", "katakana:ヒ", "katakana:フ", "katakana:ヘ", "katakana:ホ"]
+    },
+    {
+      "slug": "katakana-m-row",
+      "title": "Katakana: M row",
+      "items": ["katakana:マ", "katakana:ミ", "katakana:ム", "katakana:メ", "katakana:モ"]
+    },
+    {
+      "slug": "katakana-y-r-rows",
+      "title": "Katakana: Y and R rows",
+      "items": [
+        "katakana:ヤ",
+        "katakana:ユ",
+        "katakana:ヨ",
+        "katakana:ラ",
+        "katakana:リ",
+        "katakana:ル",
+        "katakana:レ",
+        "katakana:ロ"
+      ]
+    },
+    {
+      "slug": "katakana-w-row-n",
+      "title": "Katakana: W row and ン",
+      "items": ["katakana:ワ", "katakana:ヲ", "katakana:ン"]
+    }
+  ]
+}

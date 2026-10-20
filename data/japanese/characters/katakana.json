@@ -1,0 +1,288 @@
+{
+  "script": "katakana",
+  "source": "Basic gojūon (46 characters). Stroke counts follow common textbook forms; alternates list widely taught variants.",
+  "characters": [
+    {
+      "kana": "ア",
+      "romaji": "a",
+      "row": "a",
+      "strokeCount": 2
+    },
+    {
+      "kana": "イ",
+      "romaji": "i",
+      "row": "a",
+      "strokeCount": 2
+    },
+    {
+      "kana": "ウ",
+      "romaji": "u",
+      "row": "a",
+      "strokeCount": 3
+    },
+    {
+      "kana": "エ",
+      "romaji": "e",
+      "row": "a",
+      "strokeCount": 3
+    },
+    {
+      "kana": "オ",
+      "romaji": "o",
+      "row": "a",
+      "strokeCount": 3
+    },
+    {
+      "kana": "カ",
+      "romaji": "ka",
+      "row": "ka",
+      "strokeCount": 2
+    },
+    {
+      "kana": "キ",
+      "romaji": "ki",
+      "row": "ka",
+      "strokeCount": 3
+    },
+    {
+      "kana": "ク",
+      "romaji": "ku",
+      "row": "ka",
+      "strokeCount": 2
+    },
+    {
+      "kana": "ケ",
+      "romaji": "ke",
+      "row": "ka",
+      "strokeCount": 3
+    },
+    {
+      "kana": "コ",
+      "romaji": "ko",
+      "row": "ka",
+      "strokeCount": 2
+    },
+    {
+      "kana": "サ",
+      "romaji": "sa",
+      "row": "sa",
+      "strokeCount": 3
+    },
+    {
+      "kana": "シ",
+      "romaji": "shi",
+      "alternateRomaji": ["si"],
+      "row": "sa",
+      "strokeCount": 3
+    },
+    {
+      "kana": "ス",
+      "romaji": "su",
+      "row": "sa",
+      "strokeCount": 2
+    },
+    {
+      "kana": "セ",
+      "romaji": "se",
+      "row": "sa",
+      "strokeCount": 2
+    },
+    {
+      "kana": "ソ",
+      "romaji": "so",
+      "row": "sa",
+      "strokeCount": 2
+    },
+    {
+      "kana": "タ",
+      "romaji": "ta",
+      "row": "ta",
+      "strokeCount": 3
+    },
+    {
+      "kana": "チ",
+      "romaji": "chi",
+      "alternateRomaji": ["ti"],
+      "row": "ta",
+      "strokeCount": 3
+    },
+    {
+      "kana": "ツ",
+      "romaji": "tsu",
+      "alternateRomaji": ["tu"],
+      "row": "ta",
+      "strokeCount": 3
+    },
+    {
+      "kana": "テ",
+      "romaji": "te",
+      "row": "ta",
+      "strokeCount": 3
+    },
+    {
+      "kana": "ト",
+      "romaji": "to",
+      "row": "ta",
+      "strokeCount": 2
+    },
+    {
+      "kana": "ナ",
+      "romaji": "na",
+      "row": "na",
+      "strokeCount": 2
+    },
+    {
+      "kana": "ニ",
+      "romaji": "ni",
+      "row": "na",
+      "strokeCount": 2
+    },
+    {
+      "kana": "ヌ",
+      "romaji": "nu",
+      "row": "na",
+      "strokeCount": 2
+    },
+    {
+      "kana": "ネ",
+      "romaji": "ne",
+      "row": "na",
+      "strokeCount": 4
+    },
+    {
+      "kana": "ノ",
+      "romaji": "no",
+      "row": "na",
+      "strokeCount": 1
+    },
+    {
+      "kana": "ハ",
+      "romaji": "ha",
+      "row": "ha",
+      "strokeCount": 2
+    },
+    {
+      "kana": "ヒ",
+      "romaji": "hi",
+      "row": "ha",
+      "strokeCount": 2
+    },
+    {
+      "kana": "フ",
+      "romaji": "fu",
+      "alternateRomaji": ["hu"],
+      "row": "ha",
+      "strokeCount": 1
+    },
+    {
+      "kana": "ヘ",
+      "romaji": "he",
+      "row": "ha",
+      "strokeCount": 1
+    },
+    {
+      "kana": "ホ",
+      "romaji": "ho",
+      "row": "ha",
+      "strokeCount": 4
+    },
+    {
+      "kana": "マ",
+      "romaji": "ma",
+      "row": "ma",
+      "strokeCount": 2
+    },
+    {
+      "kana": "ミ",
+      "romaji": "mi",
+      "row": "ma",
+      "strokeCount": 3
+    },
+    {
+      "kana": "ム",
+      "romaji": "mu",
+      "row": "ma",
+      "strokeCount": 2
+    },
+    {
+      "kana": "メ",
+      "romaji": "me",
+      "row": "ma",
+      "strokeCount": 2
+    },
+    {
+      "kana": "モ",
+      "romaji": "mo",
+      "row": "ma",
+      "strokeCount": 3
+    },
+    {
+      "kana": "ヤ",
+      "romaji": "ya",
+      "row": "ya",
+      "strokeCount": 2
+    },
+    {
+      "kana": "ユ",
+      "romaji": "yu",
+      "row": "ya",
+      "strokeCount": 2
+    },
+    {
+      "kana": "ヨ",
+      "romaji": "yo",
+      "row": "ya",
+      "strokeCount": 3
+    },
+    {
+      "kana": "ラ",
+      "romaji": "ra",
+      "row": "ra",
+      "strokeCount": 2
+    },
+    {
+      "kana": "リ",
+      "romaji": "ri",
+      "row": "ra",
+      "strokeCount": 2
+    },
+    {
+      "kana": "ル",
+      "romaji": "ru",
+      "row": "ra",
+      "strokeCount": 2
+    },
+    {
+      "kana": "レ",
+      "romaji": "re",
+      "row": "ra",
+      "strokeCount": 1
+    },
+    {
+      "kana": "ロ",
+      "romaji": "ro",
+      "row": "ra",
+      "strokeCount": 3
+    },
+    {
+      "kana": "ワ",
+      "romaji": "wa",
+      "row": "wa",
+      "strokeCount": 2
+    },
+    {
+      "kana": "ヲ",
+      "romaji": "wo",
+      "alternateRomaji": ["o"],
+      "row": "wa",
+      "strokeCount": 3
+    },
+    {
+      "kana": "ン",
+      "romaji": "n",
+      "alternateRomaji": ["nn"],
+      "row": "n",
+      "strokeCount": 2
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+import type { MasteryState } from "@/core/mastery";
+
+export const MASTERY_LABELS: Record<MasteryState, string> = {
+  not_started: "Not started",
+  learning: "Learning",
+  practicing: "Practicing",
+  proficient: "Proficient",
+  mastered: "Mastered",
+  needs_review: "Needs review",
+};
+
+/** Tailwind classes per state; used consistently in badges, grids and legends. */
+export const MASTERY_TONE: Record<MasteryState, string> = {
+  not_started: "bg-sunken text-muted",
+  learning: "bg-warning-soft text-warning",
+  practicing: "bg-accent-soft text-accent",
+  proficient: "bg-accent text-accent-ink",
+  mastered: "bg-success text-paper",
+  needs_review: "bg-danger-soft text-danger",
+};
+
+/** Solid colours for small marks (legend dots, distribution bars) where soft tints are too faint. */
+export const MASTERY_SWATCH: Record<MasteryState, string> = {
+  not_started: "bg-line",
+  learning: "bg-warning",
+  practicing: "bg-accent/45",
+  proficient: "bg-accent",
+  mastered: "bg-success",
+  needs_review: "bg-danger",
+};

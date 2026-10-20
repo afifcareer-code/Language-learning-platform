@@ -1,0 +1,292 @@
+{
+  "script": "hiragana",
+  "source": "Basic gojūon (46 characters). Stroke counts follow common textbook forms; alternates list widely taught variants.",
+  "characters": [
+    {
+      "kana": "あ",
+      "romaji": "a",
+      "row": "a",
+      "strokeCount": 3
+    },
+    {
+      "kana": "い",
+      "romaji": "i",
+      "row": "a",
+      "strokeCount": 2
+    },
+    {
+      "kana": "う",
+      "romaji": "u",
+      "row": "a",
+      "strokeCount": 2
+    },
+    {
+      "kana": "え",
+      "romaji": "e",
+      "row": "a",
+      "strokeCount": 2
+    },
+    {
+      "kana": "お",
+      "romaji": "o",
+      "row": "a",
+      "strokeCount": 3
+    },
+    {
+      "kana": "か",
+      "romaji": "ka",
+      "row": "ka",
+      "strokeCount": 3
+    },
+    {
+      "kana": "き",
+      "romaji": "ki",
+      "row": "ka",
+      "strokeCount": 4,
+      "alternateStrokeCounts": [3]
+    },
+    {
+      "kana": "く",
+      "romaji": "ku",
+      "row": "ka",
+      "strokeCount": 1
+    },
+    {
+      "kana": "け",
+      "romaji": "ke",
+      "row": "ka",
+      "strokeCount": 3
+    },
+    {
+      "kana": "こ",
+      "romaji": "ko",
+      "row": "ka",
+      "strokeCount": 2
+    },
+    {
+      "kana": "さ",
+      "romaji": "sa",
+      "row": "sa",
+      "strokeCount": 3,
+      "alternateStrokeCounts": [2]
+    },
+    {
+      "kana": "し",
+      "romaji": "shi",
+      "alternateRomaji": ["si"],
+      "row": "sa",
+      "strokeCount": 1
+    },
+    {
+      "kana": "す",
+      "romaji": "su",
+      "row": "sa",
+      "strokeCount": 2
+    },
+    {
+      "kana": "せ",
+      "romaji": "se",
+      "row": "sa",
+      "strokeCount": 3
+    },
+    {
+      "kana": "そ",
+      "romaji": "so",
+      "row": "sa",
+      "strokeCount": 1,
+      "alternateStrokeCounts": [2]
+    },
+    {
+      "kana": "た",
+      "romaji": "ta",
+      "row": "ta",
+      "strokeCount": 4
+    },
+    {
+      "kana": "ち",
+      "romaji": "chi",
+      "alternateRomaji": ["ti"],
+      "row": "ta",
+      "strokeCount": 2
+    },
+    {
+      "kana": "つ",
+      "romaji": "tsu",
+      "alternateRomaji": ["tu"],
+      "row": "ta",
+      "strokeCount": 1
+    },
+    {
+      "kana": "て",
+      "romaji": "te",
+      "row": "ta",
+      "strokeCount": 1
+    },
+    {
+      "kana": "と",
+      "romaji": "to",
+      "row": "ta",
+      "strokeCount": 2
+    },
+    {
+      "kana": "な",
+      "romaji": "na",
+      "row": "na",
+      "strokeCount": 4
+    },
+    {
+      "kana": "に",
+      "romaji": "ni",
+      "row": "na",
+      "strokeCount": 3
+    },
+    {
+      "kana": "ぬ",
+      "romaji": "nu",
+      "row": "na",
+      "strokeCount": 2
+    },
+    {
+      "kana": "ね",
+      "romaji": "ne",
+      "row": "na",
+      "strokeCount": 2
+    },
+    {
+      "kana": "の",
+      "romaji": "no",
+      "row": "na",
+      "strokeCount": 1
+    },
+    {
+      "kana": "は",
+      "romaji": "ha",
+      "row": "ha",
+      "strokeCount": 3
+    },
+    {
+      "kana": "ひ",
+      "romaji": "hi",
+      "row": "ha",
+      "strokeCount": 1
+    },
+    {
+      "kana": "ふ",
+      "romaji": "fu",
+      "alternateRomaji": ["hu"],
+      "row": "ha",
+      "strokeCount": 4
+    },
+    {
+      "kana": "へ",
+      "romaji": "he",
+      "row": "ha",
+      "strokeCount": 1
+    },
+    {
+      "kana": "ほ",
+      "romaji": "ho",
+      "row": "ha",
+      "strokeCount": 4
+    },
+    {
+      "kana": "ま",
+      "romaji": "ma",
+      "row": "ma",
+      "strokeCount": 3
+    },
+    {
+      "kana": "み",
+      "romaji": "mi",
+      "row": "ma",
+      "strokeCount": 2
+    },
+    {
+      "kana": "む",
+      "romaji": "mu",
+      "row": "ma",
+      "strokeCount": 3
+    },
+    {
+      "kana": "め",
+      "romaji": "me",
+      "row": "ma",
+      "strokeCount": 2
+    },
+    {
+      "kana": "も",
+      "romaji": "mo",
+      "row": "ma",
+      "strokeCount": 3
+    },
+    {
+      "kana": "や",
+      "romaji": "ya",
+      "row": "ya",
+      "strokeCount": 3
+    },
+    {
+      "kana": "ゆ",
+      "romaji": "yu",
+      "row": "ya",
+      "strokeCount": 2
+    },
+    {
+      "kana": "よ",
+      "romaji": "yo",
+      "row": "ya",
+      "strokeCount": 2
+    },
+    {
+      "kana": "ら",
+      "romaji": "ra",
+      "row": "ra",
+      "strokeCount": 2
+    },
+    {
+      "kana": "り",
+      "romaji": "ri",
+      "row": "ra",
+      "strokeCount": 2,
+      "alternateStrokeCounts": [1]
+    },
+    {
+      "kana": "る",
+      "romaji": "ru",
+      "row": "ra",
+      "strokeCount": 1
+    },
+    {
+      "kana": "れ",
+      "romaji": "re",
+      "row": "ra",
+      "strokeCount": 2
+    },
+    {
+      "kana": "ろ",
+      "romaji": "ro",
+      "row": "ra",
+      "strokeCount": 1
+    },
+    {
+      "kana": "わ",
+      "romaji": "wa",
+      "row": "wa",
+      "strokeCount": 2
+    },
+    {
+      "kana": "を",
+      "romaji": "wo",
+      "alternateRomaji": ["o"],
+      "row": "wa",
+      "strokeCount": 3
+    },
+    {
+      "kana": "ん",
+      "romaji": "n",
+      "alternateRomaji": ["nn"],
+      "row": "n",
+      "strokeCount": 1
+    }
+  ]
+}
