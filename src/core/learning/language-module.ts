@@ -15,15 +15,24 @@ import type {
  */
 export interface LanguageModule {
   code: LanguageCode;
-  name: string;
+  /** The language's own name (endonym), e.g. "Español". Localized names live in `messages`. */
   nativeName: string;
   capabilities: readonly Capability[];
   skills: readonly SkillDefinition[];
+  /**
+   * Module-owned UI text per platform locale (language name, skill labels,
+   * script names…). Merged into the platform messages under the module's code.
+   */
+  messages: Readonly<Record<string, unknown>>;
   /**
    * Grade a learner's typed response for an item and skill.
    * Returns `null` if the module cannot grade that combination automatically.
    */
   evaluateResponse(item: ContentItem, skill: SkillId, response: string): ResponseEvaluation | null;
+  /** Items commonly confused with this one, used to choose meaningful distractors. */
+  knownConfusables?(contentItemId: string): string[];
+  /** Whether `b` is a sensible answer option when asking about `a` (e.g. the same writing system). */
+  isComparable?(a: ContentItem, b: ContentItem): boolean;
 }
 
 export function hasCapability(module: LanguageModule, capability: Capability): boolean {

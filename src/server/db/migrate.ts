@@ -48,8 +48,10 @@ export async function withMigrationLock<T>(config: DatabaseConfig, task: () => P
 }
 
 /** Apply pending migrations for the database's dialect. */
-export async function runMigrations(db: Database): Promise<void> {
-  const folder = migrationsFolder(db.engine);
+export async function runMigrations(
+  db: Database,
+  folder: string = migrationsFolder(db.engine),
+): Promise<void> {
   // Each migrator expects its own driver's database type; `db` is the matching instance.
   const orm = db as never;
   switch (db.engine) {

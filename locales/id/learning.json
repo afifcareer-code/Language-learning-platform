@@ -1,0 +1,15 @@
+{
+  "title": "Belajar",
+  "description": "Setiap pelajaran mengikuti siklus belajar: kenali, ingat, lalu tulis dari ingatan.",
+  "lessonNumber": "Pelajaran {n}",
+  "current": "Saat ini",
+  "activities": "Aktivitas",
+  "characters": "Karakter",
+  "objective": "Tujuan",
+  "why": "Mengapa ini penting",
+  "successCriteria": "Kriteria keberhasilan",
+  "targetMastery": "Target: setiap item mencapai {state}",
+  "startActivity": "Mulai",
+  "activitiesProgress": "{completed} dari {total} aktivitas",
+  "noCourses": "Belum ada kursus. Periksa log server untuk kesalahan database."
+}

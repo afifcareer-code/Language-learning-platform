@@ -1,0 +1,21 @@
+{
+  "name": "Japanese",
+  "scripts": {
+    "hiragana": "Hiragana",
+    "katakana": "Katakana"
+  },
+  "skills": {
+    "ja.kana.recognition": {
+      "label": "Kana recognition",
+      "description": "See a kana character and pick its sound."
+    },
+    "ja.kana.reading": {
+      "label": "Kana reading",
+      "description": "See a kana character and recall its sound without choices."
+    },
+    "ja.kana.writing": {
+      "label": "Kana writing",
+      "description": "Write a kana character by hand, progressing toward writing from memory."
+    }
+  }
+}

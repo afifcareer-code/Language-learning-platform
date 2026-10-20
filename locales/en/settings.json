@@ -1,0 +1,12 @@
+{
+  "title": "Settings",
+  "language": {
+    "title": "Interface language",
+    "description": "The language of menus, instructions and explanations. The language you are learning does not change."
+  },
+  "learningLanguage": "Learning language",
+  "name": {
+    "label": "Your name"
+  },
+  "saved": "Settings saved"
+}

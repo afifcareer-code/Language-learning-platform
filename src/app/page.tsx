@@ -1,124 +1,208 @@
 import Link from "next/link";
 import type { Recommendation } from "@/core/recommendation";
+import { LearningProgress } from "@/components/learning/learning-progress";
+import { MasteryCard } from "@/components/learning/mastery-card";
 import { ButtonLink } from "@/components/ui/button";
 import { Card, CardTitle } from "@/components/ui/card";
-import { MasteryDistributionBar } from "@/components/ui/mastery-distribution";
 import { PageHeader } from "@/components/ui/page-header";
+import { itemDisplay } from "@/features/kana/kana-view";
+import { activityHref, confusionHref, reviewHref, weakItemsHref } from "@/features/practice/routes";
 import { getLanguageModule } from "@/languages/registry";
+import { languageName, masteryLabels, skillDescription, skillLabel } from "@/localization/labels";
+import { getI18n } from "@/localization/server";
 import { getContext } from "@/server/context";
+import { getContentItems } from "@/server/repositories/content";
 import { getLearningOverview } from "@/server/services/overview";
-import { formatPercent, pluralize } from "@/shared/format";
-import { practiceHref } from "@/features/practice/routes";
-
-function RecommendationRow({ rec, skillLabel }: { rec: Recommendation; skillLabel: string }) {
-  const { title, href } =
-    rec.kind === "review"
-      ? {
-          title: `Review ${pluralize(rec.count, "item")} · ${skillLabel}`,
-          href: practiceHref(rec.skill, { mode: "review" }),
-        }
-      : rec.kind === "practice"
-        ? {
-            title: `Practise ${pluralize(rec.contentItemIds.length, "weak item")} · ${skillLabel}`,
-            href: practiceHref(rec.skill, { focus: "weak" }),
-          }
-        : { title: rec.lesson.title, href: `/learn/${rec.lesson.slug}` };
-  return (
-    <li>
-      <Link
-        href={href}
-        className="flex min-h-14 items-center justify-between gap-4 rounded-xl px-3 hover:bg-sunken"
-      >
-        <span>
-          <span className="block font-medium">{title}</span>
-          <span className="text-sm text-muted">{rec.reason}</span>
-        </span>
-        <span aria-hidden="true" className="text-muted">
-          →
-        </span>
-      </Link>
-    </li>
-  );
-}
 
 export default async function DashboardPage() {
   const { db, learner } = await getContext();
-  const overview = await getLearningOverview(db, learner);
-  const language = getLanguageModule(learner.targetLanguage);
-  const course = overview.courses[0];
-  const skillLabel = (id: string) => overview.skills.find((s) => s.id === id)?.label ?? id;
+  const { locale, t } = await getI18n();
+  const overview = await getLearningOverview(db, learner, locale);
+  const next = overview.nextActivity;
+  const nextLesson = overview.currentLesson;
+
+  const pairIds = overview.recommendations.flatMap((r) => (r.kind === "confusion" ? [r.itemA, r.itemB] : []));
+  const pairItems = Object.fromEntries(
+    (await getContentItems(db, pairIds)).map((i) => [i.id, itemDisplay(i)]),
+  );
+
+  const describe = (rec: Recommendation): { title: string; reason: string; href: string } => {
+    switch (rec.kind) {
+      case "review":
+        return {
+          title: t("dashboard.recommendations.review", { count: rec.count, skill: skillLabel(t, rec.skill) }),
+          reason: t("dashboard.recommendations.reasons.due_for_review"),
+          href: reviewHref(rec.skill),
+        };
+      case "practice":
+        return {
+          title: t("dashboard.recommendations.practice", {
+            count: rec.contentItemIds.length,
+            skill: skillLabel(t, rec.skill),
+          }),
+          reason: t("dashboard.recommendations.reasons.recent_mistakes"),
+          href: weakItemsHref(rec.skill),
+        };
+      case "confusion":
+        return {
+          title: t("dashboard.recommendations.confusion", {
+            a: pairItems[rec.itemA] ?? "",
+            b: pairItems[rec.itemB] ?? "",
+          }),
+          reason: t("dashboard.recommendations.reasons.confused_pair", { count: rec.errorCount }),
+          href: confusionHref(rec.itemA, rec.itemB),
+        };
+      case "activity":
+        return {
+          title:
+            overview.curriculum.activities.find((a) => a.id === rec.activity.id)?.text.title ??
+            rec.activity.id,
+          reason: t("dashboard.recommendations.reasons.next_in_curriculum"),
+          href: activityHref(rec.activity.id),
+        };
+    }
+  };
+
+  const readiness = overview.readiness;
+  const labels = masteryLabels(t);
 
   return (
     <>
       <PageHeader
-        title={`Welcome back, ${learner.displayName}`}
-        description={`Studying ${language.name} · ${language.nativeName}`}
+        title={t("dashboard.title", { name: learner.displayName })}
+        description={`${t("dashboard.learning", { language: languageName(t, learner.targetLanguage) })} · ${getLanguageModule(learner.targetLanguage).nativeName}`}
       />
 
-      <div className="grid gap-4 md:gap-6 lg:grid-cols-3">
-        <Card className="lg:col-span-2">
-          <CardTitle>Continue learning</CardTitle>
-          {overview.currentLesson ? (
-            <div className="mt-4 flex flex-wrap items-center justify-between gap-4">
-              <div>
-                <p className="text-sm text-muted">{course?.title}</p>
-                <p className="text-xl font-semibold">{overview.currentLesson.title}</p>
+      <div className="grid gap-4 md:gap-6">
+        <LearningProgress
+          explainer={t("dashboard.metrics.explainer")}
+          metrics={[
+            {
+              title: t("dashboard.metrics.courseProgress"),
+              ratio: overview.courseProgress.ratio,
+              value: t.percent(overview.courseProgress.ratio),
+              detail: t("dashboard.metrics.courseProgressDetail", {
+                completed: overview.courseProgress.completedActivities,
+                total: overview.courseProgress.totalActivities,
+              }),
+            },
+            {
+              title: t("dashboard.metrics.skillMastery"),
+              ratio: overview.overallMastery.ratio,
+              value: t.percent(overview.overallMastery.ratio),
+              tone: "success",
+              detail: t("dashboard.metrics.skillMasteryDetail", {
+                demonstrated: overview.overallMastery.demonstrated,
+                total: overview.overallMastery.total,
+              }),
+            },
+            {
+              title: t("dashboard.metrics.readiness"),
+              ratio: readiness?.ratio ?? 0,
+              value: t.percent(readiness?.ratio ?? 0),
+              tone: "warning",
+              detail: readiness
+                ? readiness.isReady
+                  ? t("dashboard.metrics.readinessReady", { lesson: readiness.lesson.title })
+                  : t("dashboard.metrics.readinessNotReady", {
+                      lesson: readiness.lesson.title,
+                      ready: readiness.ready,
+                      total: readiness.total,
+                      threshold: t.percent(readiness.threshold),
+                    })
+                : "—",
+            },
+          ]}
+        />
+
+        <div className="grid gap-4 md:gap-6 lg:grid-cols-3">
+          <Card className="lg:col-span-2">
+            <CardTitle>{t("dashboard.continue.title")}</CardTitle>
+            {next ? (
+              <div className="mt-4">
+                <p className="text-sm text-muted">
+                  {nextLesson?.title} · {t(`common.activityTypes.${next.type}`)}
+                </p>
+                <p className="mt-1 text-xl font-semibold">{next.text.title}</p>
+                <p className="mt-3 text-xs font-semibold tracking-wide text-muted uppercase">
+                  {t("dashboard.continue.objective")}
+                </p>
+                <p className="mt-1">{next.text.objective}</p>
+                <ButtonLink href={activityHref(next.id)} className="mt-5">
+                  {t("common.actions.continue")}
+                </ButtonLink>
               </div>
-              <ButtonLink href={`/learn/${overview.currentLesson.slug}`}>Continue</ButtonLink>
-            </div>
-          ) : (
-            <p className="mt-4 text-muted">No content found. Run npm run db:setup to load the curriculum.</p>
-          )}
-        </Card>
+            ) : (
+              <p className="mt-4 text-muted">{t("dashboard.continue.noContent")}</p>
+            )}
+          </Card>
+
+          <Card>
+            <CardTitle>{t("dashboard.week.title")}</CardTitle>
+            <dl className="mt-4 grid grid-cols-2 gap-4">
+              <div>
+                <dt className="text-sm text-muted">{t("dashboard.week.attempts")}</dt>
+                <dd className="text-2xl font-semibold tabular-nums">
+                  {t.number(overview.last7Days.attempts)}
+                </dd>
+              </div>
+              <div>
+                <dt className="text-sm text-muted">{t("dashboard.week.accuracy")}</dt>
+                <dd className="text-2xl font-semibold tabular-nums">
+                  {overview.last7Days.accuracy === null ? "—" : t.percent(overview.last7Days.accuracy)}
+                </dd>
+              </div>
+            </dl>
+          </Card>
+        </div>
 
         <Card>
-          <CardTitle>Last 7 days</CardTitle>
-          <dl className="mt-4 grid grid-cols-2 gap-4">
-            <div>
-              <dt className="text-sm text-muted">Attempts</dt>
-              <dd className="text-2xl font-semibold tabular-nums">{overview.last7Days.attempts}</dd>
-            </div>
-            <div>
-              <dt className="text-sm text-muted">Accuracy</dt>
-              <dd className="text-2xl font-semibold tabular-nums">
-                {formatPercent(overview.last7Days.accuracy)}
-              </dd>
-            </div>
-          </dl>
-        </Card>
-
-        <Card className="lg:col-span-3">
-          <CardTitle>Today&apos;s recommendation</CardTitle>
+          <CardTitle>{t("dashboard.recommendations.title")}</CardTitle>
           {overview.recommendations.length ? (
-            <ul className="mt-3 -mx-3 divide-y divide-line">
-              {overview.recommendations.map((rec, i) => (
-                <RecommendationRow
-                  key={i}
-                  rec={rec}
-                  skillLabel={rec.kind === "learn" ? "" : skillLabel(rec.skill)}
-                />
-              ))}
+            <ul className="-mx-3 mt-3 divide-y divide-line">
+              {overview.recommendations.map((rec, i) => {
+                const { title, reason, href } = describe(rec);
+                return (
+                  <li key={i}>
+                    <Link
+                      href={href}
+                      className="flex min-h-14 items-center justify-between gap-4 rounded-xl px-3 py-2 hover:bg-sunken"
+                    >
+                      <span>
+                        <span className="block font-medium">{title}</span>
+                        <span className="text-sm text-muted">{reason}</span>
+                      </span>
+                      <span aria-hidden="true" className="text-muted">
+                        →
+                      </span>
+                    </Link>
+                  </li>
+                );
+              })}
             </ul>
           ) : (
-            <p className="mt-4 text-muted">You are all caught up.</p>
+            <p className="mt-4 text-muted">{t("dashboard.recommendations.allCaughtUp")}</p>
           )}
         </Card>
 
-        <div className="grid gap-4 md:grid-cols-2 md:gap-6 lg:col-span-3">
-          {overview.skills.map((skill) => (
-            <Card key={skill.id}>
-              <div className="flex items-baseline justify-between gap-4">
-                <CardTitle>{skill.label}</CardTitle>
-                <Link href="/progress" className="text-sm text-accent">
-                  Details
-                </Link>
-              </div>
-              <div className="mt-4">
-                <MasteryDistributionBar distribution={overview.distributionBySkill[skill.id]!} />
-              </div>
-            </Card>
-          ))}
-        </div>
+        <section>
+          <h2 className="mb-3 text-sm font-medium tracking-wide text-muted uppercase">
+            {t("dashboard.masteryBySkill")}
+          </h2>
+          <div className="grid gap-4 md:grid-cols-3 md:gap-6">
+            {overview.skills.map((skill) => (
+              <MasteryCard
+                key={skill.id}
+                title={skillLabel(t, skill.id)}
+                description={skillDescription(t, skill.id)}
+                distribution={overview.distributionBySkill[skill.id]!}
+                labels={labels}
+                href="/progress"
+                linkLabel={t("common.actions.details")}
+              />
+            ))}
+          </div>
+        </section>
       </div>
     </>
   );

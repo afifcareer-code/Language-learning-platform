@@ -6,7 +6,11 @@ The roadmap is intentionally incremental. Each milestone should leave the produc
 
 - [x] Language-agnostic core engine: mastery, review, assessment model, recommendations, analytics
 - [x] Japanese module: hiragana and katakana, romaji grading, kana curriculum
-- [x] Kana reading practice (active recall)
+- [x] Activity system: measurable, localized objectives, success criteria and learning outcomes
+- [x] Learning loop per lesson: recognize → recall → write
+- [x] Localization: interface in Indonesian and English, localized content, locale switching
+- [x] Course progress, skill mastery and learning readiness as separate measures
+- [x] Confusion pairs: detection, targeted practice, remediation
 - [x] Handwriting capture with progressive guidance and self-assessment
 - [x] Stroke-count analysis
 - [x] Review queue, dashboard, progress
@@ -14,10 +18,10 @@ The roadmap is intentionally incremental. Each milestone should leave the produc
 
 ## v0.2: Kana complete
 
-- [ ] Kana assessment (uses the existing definition / attempt / result model)
+- [ ] Kana assessment and an Assessment page (uses the existing definition / attempt / result model)
+- [ ] Basic vocabulary written in kana, with localized meanings
 - [ ] Dakuten and handakuten (が, ぱ, …) and combination kana (きゃ, …)
 - [ ] Audio pronunciation assets (beyond browser speech synthesis)
-- [ ] Error-pattern analytics (for example, confusing シ and ツ)
 - [ ] Docker image for self-hosting
 
 ## v0.3: Writing quality
@@ -40,3 +44,4 @@ The roadmap is intentionally incremental. Each milestone should leave the produc
 - Multi-user accounts and authentication
 - Import and export of learning data
 - Additional languages, once the Japanese experience is mature and the module contract is proven
+- AI-assisted features (coach, explanations, generated practice, pronunciation and handwriting feedback), behind the same activity, evaluation and recommendation interfaces. Only when there is a concrete product need

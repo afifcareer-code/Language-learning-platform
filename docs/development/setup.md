@@ -20,13 +20,14 @@ npm run dev               # http://localhost:3000
 
 ## Environment variables
 
-| Variable                                                                           | Default                           | Description                                                                       |
-| ---------------------------------------------------------------------------------- | --------------------------------- | --------------------------------------------------------------------------------- |
-| `DATABASE_URL`                                                                     | _(unset)_ → `file:./.data/app.db` | Connection URL: `mysql://…`, `postgres://…`, `file:…` or `libsql://…`             |
-| `DB_CONNECTION`, `DB_HOST`, `DB_PORT`, `DB_DATABASE`, `DB_USERNAME`, `DB_PASSWORD` | _(unset)_                         | Separate settings as shown by hosting panels; used when `DATABASE_URL` is not set |
-| `DATABASE_AUTH_TOKEN`                                                              | _(empty)_                         | Auth token for remote libSQL only                                                 |
-| `AUTO_MIGRATE` / `AUTO_SEED`                                                       | `true`                            | Migrate and load content automatically when the server starts                     |
-| `DEFAULT_LEARNER_NAME`                                                             | `Learner`                         | Display name of the local learner created on first run                            |
+| Variable                                                                           | Default                           | Description                                                                                                       |
+| ---------------------------------------------------------------------------------- | --------------------------------- | ----------------------------------------------------------------------------------------------------------------- |
+| `DATABASE_URL`                                                                     | _(unset)_ → `file:./.data/app.db` | Connection URL: `mysql://…`, `postgres://…`, `file:…` or `libsql://…`                                             |
+| `DB_CONNECTION`, `DB_HOST`, `DB_PORT`, `DB_DATABASE`, `DB_USERNAME`, `DB_PASSWORD` | _(unset)_                         | Separate settings as shown by hosting panels; used when `DATABASE_URL` is not set                                 |
+| `DATABASE_AUTH_TOKEN`                                                              | _(empty)_                         | Auth token for remote libSQL only                                                                                 |
+| `AUTO_MIGRATE` / `AUTO_SEED`                                                       | `true`                            | Migrate and load content automatically when the server starts                                                     |
+| `DEFAULT_LOCALE`                                                                   | `en`                              | Interface language (`en` or `id`) when the learner has not chosen one and the browser's language is not supported |
+| `DEFAULT_LEARNER_NAME`                                                             | `Learner`                         | Display name of the local learner created on first run                                                            |
 
 Database detection lives in [`src/server/db/config.ts`](../../src/server/db/config.ts); the full list of recognised variables is in [Deployment](deployment.md#how-the-database-is-detected). Other settings are validated by [`src/server/env.ts`](../../src/server/env.ts).
 

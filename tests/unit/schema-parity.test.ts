@@ -1,4 +1,4 @@
-import { readFileSync } from "node:fs";
+import { readdirSync, readFileSync } from "node:fs";
 import { getTableConfig as mysqlTableConfig, type MySqlTable } from "drizzle-orm/mysql-core";
 import { getTableConfig as pgTableConfig, type PgTable } from "drizzle-orm/pg-core";
 import { getTableConfig as sqliteTableConfig, type SQLiteTable } from "drizzle-orm/sqlite-core";
@@ -29,10 +29,12 @@ describe("database schemas", () => {
     expect(Object.keys(postgresSchema).sort()).toEqual(Object.keys(sqliteSchema).sort());
   });
 
-  it("create MySQL tables as utf8mb4 so Japanese text is stored safely", () => {
-    const sql = readFileSync("database/migrations/mysql/0000_init.sql", "utf8");
-    const tables = sql.match(/CREATE TABLE `[a-z_]+`/g) ?? [];
-    expect(tables.length).toBeGreaterThan(0);
-    expect(sql.match(/DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_bin;/g)).toHaveLength(tables.length);
-  });
+  it.each(readdirSync("database/migrations/mysql").filter((f) => f.endsWith(".sql")))(
+    "creates MySQL tables as utf8mb4 in %s, so Japanese text is stored safely",
+    (file) => {
+      const sql = readFileSync(`database/migrations/mysql/${file}`, "utf8");
+      const tables = sql.match(/CREATE TABLE `[a-z_]+`/g) ?? [];
+      expect(sql.match(/DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_bin;/g) ?? []).toHaveLength(tables.length);
+    },
+  );
 });

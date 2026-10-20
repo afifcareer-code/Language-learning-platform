@@ -1,0 +1,74 @@
+{
+  "title": "Latihan",
+  "description": "Latih satu keterampilan dengan item dari {lesson}, atau fokus pada kelemahan Anda.",
+  "skillCard": "Latih {skill}",
+  "focusTitle": "Latihan terarah",
+  "weakItems": "Kesalahan terbaru",
+  "weakItemsEmpty": "Tidak ada kesalahan terbaru.",
+  "confusionPairs": "Pasangan yang sering tertukar",
+  "empty": "Belum ada yang perlu dilatih di sini.",
+  "progress": "{current} dari {total}",
+  "recognition": {
+    "prompt": "Bunyi mana yang sesuai dengan karakter ini?"
+  },
+  "recall": {
+    "label": "Ketik cara bacanya dalam romaji"
+  },
+  "feedback": {
+    "correct": "Benar",
+    "answer": "Jawaban: {answer}",
+    "confusedWith": "Itu cara baca {item}. Keduanya mudah tertukar.",
+    "saveError": "Jawaban tidak dapat disimpan. Silakan coba lagi."
+  },
+  "writing": {
+    "writeFor": "Tulis {script} untuk",
+    "guide": "Panduan: {stage}",
+    "stages": {
+      "full_example": "Jiplak",
+      "faded_example": "Panduan samar",
+      "minimal_hint": "Petunjuk saja",
+      "recall": "Dari ingatan"
+    },
+    "undo": "Urungkan",
+    "clear": "Hapus",
+    "showHint": "Tampilkan petunjuk",
+    "compare": "Bandingkan tulisan Anda dengan contohnya. Bagaimana hasilnya?",
+    "self": {
+      "incorrect": "Belum",
+      "close": "Hampir",
+      "correct": "Benar"
+    },
+    "keepWriting": "Lanjut menulis",
+    "canvasLabel": "Area menulis untuk {prompt}",
+    "previousItem": "Item sebelumnya:"
+  },
+  "checks": {
+    "stroke-count": {
+      "pass": { "other": "{count} goresan" },
+      "fail": "{count} goresan ditulis, seharusnya {expected}"
+    }
+  },
+  "outcome": {
+    "title": "Hasil belajar",
+    "objective": "Tujuan",
+    "skill": "Keterampilan",
+    "result": "{correct} dari {total} benar",
+    "passed": "Tujuan tercapai pada sesi ini",
+    "notPassed": "Belum tercapai. Targetkan {pass} atau lebih.",
+    "masteryChanged": "Penguasaan",
+    "improved": { "other": "{count} item meningkat" },
+    "declined": { "other": "{count} item perlu latihan lagi" },
+    "nextReview": "Review berikutnya",
+    "toRevisit": "Perlu diulang"
+  },
+  "sessions": {
+    "review": "Review",
+    "weak": "Kesalahan terbaru",
+    "confusion": "Bedakan {a} dan {b}",
+    "objectives": {
+      "review": "Mengingat item-item ini dengan benar saat jadwalnya tiba, agar interval review-nya semakin panjang.",
+      "weak": "Memperbaiki item yang baru saja salah.",
+      "confusion": "Membedakan {a} dan {b} dengan andal."
+    }
+  }
+}

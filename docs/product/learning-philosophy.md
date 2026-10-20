@@ -53,10 +53,33 @@ Writing is practised with progressively less support:
 
 The stage follows the learner's writing mastery of that character. After writing, the learner compares their attempt with the model and grades themselves. Automatic checks (v0.1: stroke count) can lower that grade but never raise it.
 
+## Activities and objectives
+
+Every activity states a measurable objective: what the learner will be able to do afterwards. It also states the success criteria it checks, and it ends with a learning outcome (score, mastery change, next review). Each lesson runs the learning loop **recognize → recall → write**, so the learner moves from easier to harder retrieval on the same items. Activities are never disconnected exercises. Each one is tied to the curriculum, a skill, its evaluation, mastery and review.
+
+```
+Learn → Practice → Measure → Review → Improve
+```
+
+## Three kinds of progress
+
+| Measure                | Question                        | Definition                                                                                  |
+| ---------------------- | ------------------------------- | ------------------------------------------------------------------------------------------- |
+| **Course progress**    | How much have I worked through? | Activities where every item has been attempted                                              |
+| **Skill mastery**      | What can I reliably recall?     | Items proficient or better (recalled correctly after real gaps)                             |
+| **Learning readiness** | Am I ready to move on?          | At least 80% of the current lesson's items at practicing or better on every skill it trains |
+
+They are shown side by side and never merged. Being 80% through a course says nothing about whether you remember it.
+
+## Error patterns
+
+When a wrong answer is the right answer for another item (for example, reading シ as "tsu"), the two items form a **confusion pair**. Repeated confusions trigger targeted discrimination practice until the pair is resolved.
+
 ## Recommendations
 
-"What should I do next?" is answered by transparent rules, in this order:
+"What should I do next?" is answered by transparent rules, in this order, and every suggestion shows its reason:
 
 1. **Due reviews**, to protect what has already been learned.
-2. **Weak items** (the last attempt was wrong), to fix errors while they are fresh.
-3. **The next lesson**, to add new material.
+2. **Confused pairs**, to practise telling similar items apart.
+3. **Recent mistakes**, to fix errors while they are fresh.
+4. **The next activity** in the curriculum.

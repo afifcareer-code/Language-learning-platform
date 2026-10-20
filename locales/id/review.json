@@ -1,0 +1,8 @@
+{
+  "title": "Review",
+  "description": "Item muncul kembali tepat sebelum Anda cenderung melupakannya. Mengingatnya tepat waktu adalah yang membawanya menuju penguasaan.",
+  "nothingDue": "Tidak ada yang perlu di-review saat ini.",
+  "nothingDueHint": "Latih item baru dan jadwal review-nya akan muncul di sini.",
+  "due": { "other": "{count} item perlu di-review" },
+  "start": "Mulai review"
+}

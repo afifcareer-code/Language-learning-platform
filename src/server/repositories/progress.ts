@@ -1,4 +1,5 @@
 import { and, desc, eq, gte, lte } from "drizzle-orm";
+import type { RemediationStatus } from "@/core/analytics";
 import { currentMasteryState, EMPTY_MASTERY, type MasteryRecord, type MasteryState } from "@/core/mastery";
 import type { ReviewState } from "@/core/review";
 import type { Database } from "../db/client";
@@ -115,4 +116,17 @@ export async function getRecentAttempts(
     .where(and(...conditions))
     .orderBy(desc(db.t.learningAttempts.createdAt))
     .limit(options.limit ?? 50);
+}
+
+export async function getConfusionPairs(db: Database, learnerId: string) {
+  const t = db.t.confusionPairs;
+  const rows = await db.select().from(t).where(eq(t.learnerId, learnerId));
+  return rows.map((r) => ({
+    itemA: r.itemA,
+    itemB: r.itemB,
+    errorCount: r.errorCount,
+    correctSinceError: r.correctSinceError,
+    lastSeenAt: r.lastSeenAt,
+    status: r.status as RemediationStatus,
+  }));
 }

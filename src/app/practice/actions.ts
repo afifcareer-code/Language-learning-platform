@@ -1,5 +1,6 @@
 "use server";
 
+import { and, eq } from "drizzle-orm";
 import { z } from "zod";
 import type { MasteryState } from "@/core/mastery";
 import {
@@ -7,55 +8,18 @@ import {
   StrokeCountAnalyzer,
   WRITING_STAGES,
   scoreWriting,
-  type WritingAnalysis,
+  type WritingCheck,
 } from "@/handwriting";
-import { JA_SKILLS, acceptedStrokeCounts, isKanaItemData } from "@/languages/japanese";
+import { acceptedStrokeCounts, isKanaItemData } from "@/languages/japanese";
+import { getLanguageModule } from "@/languages/registry";
+import { itemDisplay } from "@/features/kana/kana-view";
 import { getContext } from "@/server/context";
 import { getContentItem } from "@/server/repositories/content";
 import { evaluateTypedResponse, recordAttempt } from "@/server/services/learning";
 
 // Server actions are public HTTP endpoints: validate every input.
 
-const modeSchema = z.enum(["practice", "review"]);
-
-const readingSchema = z.object({
-  itemId: z.string().min(1).max(100),
-  answer: z.string().max(50),
-  responseMs: z.number().int().nonnegative().max(3_600_000).nullable(),
-  mode: modeSchema,
-});
-
-export interface ReadingResult {
-  correct: boolean;
-  expected: string;
-  masteryState: MasteryState;
-}
-
-export async function submitReadingAnswer(input: z.infer<typeof readingSchema>): Promise<ReadingResult> {
-  const data = readingSchema.parse(input);
-  const { db, learner } = await getContext();
-  const item = await getContentItem(db, data.itemId);
-  if (!item) throw new Error("Unknown item");
-
-  const evaluation = evaluateTypedResponse(item, JA_SKILLS.kanaReading, data.answer);
-  if (!evaluation) throw new Error("This item cannot be graded for reading");
-
-  const result = await recordAttempt(db, {
-    learnerId: learner.id,
-    contentItemId: item.id,
-    skill: JA_SKILLS.kanaReading,
-    mode: data.mode,
-    correct: evaluation.correct,
-    score: evaluation.score,
-    response: data.answer,
-    responseMs: data.responseMs,
-  });
-  return {
-    correct: evaluation.correct,
-    expected: evaluation.expected ?? "",
-    masteryState: result.masteryState,
-  };
-}
+const id = z.string().min(1).max(200);
 
 const pointSchema = z.object({
   x: z.number().min(-0.5).max(1.5),
@@ -64,67 +28,142 @@ const pointSchema = z.object({
   pressure: z.number().min(0).max(1).nullable(),
 });
 
-const writingSchema = z.object({
-  itemId: z.string().min(1).max(100),
-  mode: modeSchema,
-  stage: z.enum(WRITING_STAGES),
-  selfAssessment: z.enum(SELF_ASSESSMENTS),
-  responseMs: z.number().int().nonnegative().max(3_600_000).nullable(),
-  sample: z.object({
-    width: z.number().int().positive().max(10_000),
-    height: z.number().int().positive().max(10_000),
-    capturedAt: z.string().max(40),
-    strokes: z
-      .array(
-        z.object({
-          index: z.number().int().nonnegative(),
-          pointerType: z.enum(["pen", "touch", "mouse", "unknown"]),
-          points: z.array(pointSchema).min(1).max(2000),
-        }),
-      )
-      .min(1)
-      .max(60),
-  }),
+const sampleSchema = z.object({
+  width: z.number().int().positive().max(10_000),
+  height: z.number().int().positive().max(10_000),
+  capturedAt: z.string().max(40),
+  strokes: z
+    .array(
+      z.object({
+        index: z.number().int().nonnegative(),
+        pointerType: z.enum(["pen", "touch", "mouse", "unknown"]),
+        points: z.array(pointSchema).min(1).max(2000),
+      }),
+    )
+    .min(1)
+    .max(60),
 });
 
-export interface WritingResult {
+const attemptSchema = z.object({
+  itemId: id,
+  skill: id,
+  activityId: id.nullable(),
+  mode: z.enum(["practice", "review"]),
+  responseMs: z.number().int().nonnegative().max(3_600_000).nullable(),
+  response: z.discriminatedUnion("kind", [
+    z.object({ kind: z.literal("choice"), choiceId: id }),
+    z.object({ kind: z.literal("text"), answer: z.string().max(50) }),
+    z.object({
+      kind: z.literal("writing"),
+      stage: z.enum(WRITING_STAGES),
+      selfAssessment: z.enum(SELF_ASSESSMENTS),
+      sample: sampleSchema,
+    }),
+  ]),
+});
+
+export type AttemptInput = z.infer<typeof attemptSchema>;
+
+export interface AttemptFeedback {
   correct: boolean;
-  analysis: WritingAnalysis;
-  masteryState: MasteryState;
+  expected: string;
+  previousMastery: MasteryState;
+  mastery: MasteryState;
+  nextReviewAt: string;
+  /** The other item the learner's answer belongs to, when they mixed two up. */
+  confusedWith: { id: string; display: string } | null;
+  checks: WritingCheck[];
 }
 
 const analyzer = new StrokeCountAnalyzer();
 
-export async function submitWritingAttempt(input: z.infer<typeof writingSchema>): Promise<WritingResult> {
-  const data = writingSchema.parse(input);
+export async function submitAttempt(input: AttemptInput): Promise<AttemptFeedback> {
+  const data = attemptSchema.parse(input);
   const { db, learner } = await getContext();
+
+  if (!getLanguageModule(learner.targetLanguage).skills.some((s) => s.id === data.skill)) {
+    throw new Error("Unknown skill");
+  }
+  if (data.activityId) {
+    const [activity] = await db
+      .select({ id: db.t.activities.id })
+      .from(db.t.activities)
+      .where(and(eq(db.t.activities.id, data.activityId), eq(db.t.activities.skill, data.skill)))
+      .limit(1);
+    if (!activity) throw new Error("Unknown activity");
+  }
   const item = await getContentItem(db, data.itemId);
   if (!item || !isKanaItemData(item.data)) throw new Error("Unknown item");
 
-  // Re-run analysis on the server; the client's copy is for immediate feedback only.
-  const analysis = analyzer.analyze(data.sample, {
-    text: item.data.kana,
-    strokeCounts: acceptedStrokeCounts(item.data),
-  });
-  const score = scoreWriting(analysis, data.selfAssessment);
+  let correct: boolean;
+  let score: number;
+  let response: string;
+  let confusedWithId: string | undefined;
+  let checks: WritingCheck[] = [];
+  let writingSample: Parameters<typeof recordAttempt>[1]["writingSample"];
+
+  switch (data.response.kind) {
+    case "choice": {
+      const choice = await getContentItem(db, data.response.choiceId);
+      if (!choice) throw new Error("Unknown choice");
+      correct = choice.id === item.id;
+      score = correct ? 1 : 0;
+      response = choice.id;
+      confusedWithId = correct ? undefined : choice.id;
+      break;
+    }
+    case "text": {
+      const evaluation = evaluateTypedResponse(item, data.skill, data.response.answer);
+      if (!evaluation) throw new Error("This item cannot be graded for this skill");
+      ({ correct, score } = evaluation);
+      response = data.response.answer;
+      confusedWithId = evaluation.confusedWithItemId;
+      break;
+    }
+    case "writing": {
+      // Re-run analysis on the server; the client's copy is for immediate feedback only.
+      const { sample, selfAssessment, stage } = data.response;
+      const analysis = analyzer.analyze(sample, {
+        text: item.data.kana,
+        strokeCounts: acceptedStrokeCounts(item.data),
+      });
+      ({ correct, score } = scoreWriting(analysis, selfAssessment));
+      checks = analysis.checks;
+      response = selfAssessment;
+      writingSample = {
+        strokes: sample.strokes,
+        width: sample.width,
+        height: sample.height,
+        guidanceStage: stage,
+        selfAssessment,
+        analysis,
+      };
+      break;
+    }
+  }
 
   const result = await recordAttempt(db, {
     learnerId: learner.id,
     contentItemId: item.id,
-    skill: JA_SKILLS.kanaWriting,
+    skill: data.skill,
     mode: data.mode,
-    correct: score.correct,
-    score: score.score,
-    response: data.selfAssessment,
+    activityId: data.activityId,
+    correct,
+    score,
+    response,
     responseMs: data.responseMs,
-    writingSample: {
-      strokes: data.sample.strokes,
-      width: data.sample.width,
-      height: data.sample.height,
-      guidanceStage: data.stage,
-      selfAssessment: data.selfAssessment,
-      analysis,
-    },
+    confusedWithItemId: confusedWithId,
+    writingSample,
   });
-  return { correct: score.correct, analysis, masteryState: result.masteryState };
+
+  const confused = confusedWithId ? await getContentItem(db, confusedWithId) : null;
+  return {
+    correct,
+    expected: item.data.romaji,
+    previousMastery: result.previousMasteryState,
+    mastery: result.masteryState,
+    nextReviewAt: result.review.dueAt.toISOString(),
+    confusedWith: confused ? { id: confused.id, display: itemDisplay(confused) } : null,
+    checks,
+  };
 }

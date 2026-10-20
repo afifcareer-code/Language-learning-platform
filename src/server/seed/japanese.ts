@@ -1,9 +1,14 @@
 import { readFile } from "node:fs/promises";
 import { join } from "node:path";
 import { eq } from "drizzle-orm";
-import type { Database } from "../db/client";
-import { upsert } from "../db/dialect";
 import { japanese } from "@/languages/japanese";
+import { expandLessonActivities } from "@/languages/japanese/curriculum/activities";
+import {
+  activityTemplateFileSchema,
+  courseFileSchema,
+  levelsFileSchema,
+  type ActivityTemplateFile,
+} from "@/languages/japanese/curriculum/schema";
 import {
   KANA_CONTENT_TYPE,
   KANA_SCRIPTS,
@@ -11,8 +16,10 @@ import {
   kanaItemId,
   kanaItemKey,
   type KanaItemData,
+  type KanaScript,
 } from "@/languages/japanese/scripts/kana";
-import { courseFileSchema } from "@/languages/japanese/curriculum/schema";
+import type { Database, Transaction } from "../db/client";
+import { upsert } from "../db/dialect";
 
 const COURSE_FILES = ["kana-foundations.json"];
 
@@ -20,13 +27,26 @@ async function readJson(path: string): Promise<unknown> {
   return JSON.parse(await readFile(path, "utf8"));
 }
 
-/** Idempotently load Japanese content from data/japanese into the database. */
+/** Localized script names from the module's own messages, e.g. { en: "Hiragana", id: "Hiragana" }. */
+function scriptNames(script: KanaScript): Record<string, string> {
+  return Object.fromEntries(
+    Object.entries(japanese.messages).map(([locale, m]) => [
+      locale,
+      (m as { scripts: Record<KanaScript, string> }).scripts[script],
+    ]),
+  );
+}
+
+/**
+ * Idempotently load Japanese content from data/japanese: characters, levels,
+ * courses, lessons and their activities, with every translation.
+ */
 export async function seedJapanese(
   db: Database,
   dataDir: string,
-): Promise<{ items: number; lessons: number }> {
+): Promise<{ items: number; lessons: number; activities: number }> {
   const root = join(dataDir, "japanese");
-  const { contentItems, courses, languages, lessonItems, lessons } = db.t;
+  const t = db.t;
 
   // Validate everything before touching the database.
   const scripts = await Promise.all(
@@ -35,21 +55,60 @@ export async function seedJapanese(
       file: kanaFileSchema.parse(await readJson(join(root, "characters", `${script}.json`))),
     })),
   );
+  const levels = levelsFileSchema.parse(await readJson(join(root, "curriculum", "levels.json")));
   const courseFiles = await Promise.all(
     COURSE_FILES.map(async (name) => courseFileSchema.parse(await readJson(join(root, "curriculum", name)))),
   );
+  const templates = new Map<string, ActivityTemplateFile>();
+  for (const course of courseFiles) {
+    if (!templates.has(course.activityTemplates)) {
+      const path = join(root, "activities", `${course.activityTemplates}.json`);
+      templates.set(course.activityTemplates, activityTemplateFileSchema.parse(await readJson(path)));
+    }
+  }
 
   const idByKey = new Map<string, string>();
+  const kanaById = new Map<string, KanaItemData>();
   let lessonCount = 0;
+  let activityCount = 0;
+
+  const translate = async <
+    T extends typeof t.levelTranslations | typeof t.courseTranslations | typeof t.lessonTranslations,
+  >(
+    tx: Transaction,
+    table: T,
+    key: Record<string, string>,
+    keyColumn: T["_"]["columns"][keyof T["_"]["columns"]],
+    texts: Record<string, Record<string, string | null>>,
+  ) => {
+    for (const [locale, fields] of Object.entries(texts)) {
+      await upsert(db, tx, table, { ...key, locale, ...fields } as never, {
+        target: [keyColumn as never, table.locale],
+        set: fields as never,
+      });
+    }
+  };
+
+  /** Turn { title: {en, id}, description: {en, id} } into { en: {title, description}, id: {…} }. */
+  const byLocale = (fields: Record<string, Record<string, string> | undefined>) => {
+    const out: Record<string, Record<string, string | null>> = {};
+    for (const [field, text] of Object.entries(fields)) {
+      for (const [locale, value] of Object.entries(text ?? {})) (out[locale] ??= {})[field] = value;
+    }
+    return out;
+  };
 
   // One transaction, so a running app never sees a half-seeded curriculum.
   await db.transaction(async (tx) => {
     await upsert(
       db,
       tx,
-      languages,
-      { code: japanese.code, name: japanese.name, nativeName: japanese.nativeName },
-      { target: [languages.code], set: { name: japanese.name, nativeName: japanese.nativeName } },
+      t.languages,
+      { code: japanese.code, name: "Japanese", nativeName: japanese.nativeName },
+      {
+        target: [t.languages.code],
+        set: { nativeName: japanese.nativeName },
+      },
     );
 
     for (const { script, file } of scripts) {
@@ -65,45 +124,127 @@ export async function seedJapanese(
           tags: [script, `row:${char.row}`],
           sortOrder: i,
         };
-        await upsert(db, tx, contentItems, { id, ...row }, { target: [contentItems.id], set: row });
+        await upsert(db, tx, t.contentItems, { id, ...row }, { target: [t.contentItems.id], set: row });
         idByKey.set(key, id);
+        kanaById.set(id, data);
       }
+    }
+
+    const levelIdBySlug = new Map<string, string>();
+    for (const [sortOrder, level] of levels.levels.entries()) {
+      const id = `ja.level.${level.slug}`;
+      const row = { languageCode: japanese.code, slug: level.slug, sortOrder };
+      await upsert(db, tx, t.levels, { id, ...row }, { target: [t.levels.id], set: row });
+      await translate(
+        tx,
+        t.levelTranslations,
+        { levelId: id },
+        t.levelTranslations.levelId,
+        byLocale({ title: level.title, description: level.description }),
+      );
+      levelIdBySlug.set(level.slug, id);
     }
 
     for (const [courseIndex, course] of courseFiles.entries()) {
       const courseId = `ja.course.${course.slug}`;
-      const courseRow = {
-        languageCode: japanese.code,
-        slug: course.slug,
-        title: course.title,
-        description: course.description,
-        sortOrder: courseIndex,
-      };
-      await upsert(db, tx, courses, { id: courseId, ...courseRow }, { target: [courses.id], set: courseRow });
+      const levelId = levelIdBySlug.get(course.level);
+      if (!levelId) throw new Error(`Course "${course.slug}" references unknown level "${course.level}"`);
+      const courseRow = { languageCode: japanese.code, levelId, slug: course.slug, sortOrder: courseIndex };
+      await upsert(
+        db,
+        tx,
+        t.courses,
+        { id: courseId, ...courseRow },
+        { target: [t.courses.id], set: courseRow },
+      );
+      await translate(
+        tx,
+        t.courseTranslations,
+        { courseId },
+        t.courseTranslations.courseId,
+        byLocale({ title: course.title, description: course.description }),
+      );
 
       for (const [lessonIndex, lesson] of course.lessons.entries()) {
         const lessonId = `ja.lesson.${lesson.slug}`;
-        const lessonRow = { courseId, slug: lesson.slug, title: lesson.title, sortOrder: lessonIndex };
+        const lessonRow = { courseId, slug: lesson.slug, sortOrder: lessonIndex };
         await upsert(
           db,
           tx,
-          lessons,
+          t.lessons,
           { id: lessonId, ...lessonRow },
-          { target: [lessons.id], set: lessonRow },
+          { target: [t.lessons.id], set: lessonRow },
+        );
+        await translate(
+          tx,
+          t.lessonTranslations,
+          { lessonId },
+          t.lessonTranslations.lessonId,
+          byLocale({ title: lesson.title }),
         );
 
-        await tx.delete(lessonItems).where(eq(lessonItems.lessonId, lessonId));
-        await tx.insert(lessonItems).values(
-          lesson.items.map((key, sortOrder) => {
-            const contentItemId = idByKey.get(key);
-            if (!contentItemId) throw new Error(`Lesson "${lesson.slug}" references unknown item "${key}"`);
-            return { lessonId, contentItemId, sortOrder };
-          }),
+        const itemIds = lesson.items.map((key) => {
+          const id = idByKey.get(key);
+          if (!id) throw new Error(`Lesson "${lesson.slug}" references unknown item "${key}"`);
+          return id;
+        });
+        await tx.delete(t.lessonItems).where(eq(t.lessonItems.lessonId, lessonId));
+        await tx
+          .insert(t.lessonItems)
+          .values(itemIds.map((contentItemId, sortOrder) => ({ lessonId, contentItemId, sortOrder })));
+
+        const firstKana = kanaById.get(itemIds[0]!)!;
+        const activities = expandLessonActivities(
+          { ...lesson, id: lessonId },
+          templates.get(course.activityTemplates)!,
+          {
+            contentItemIds: itemIds,
+            characters: itemIds.map((id) => kanaById.get(id)!.kana).join(" "),
+            scriptName: scriptNames(firstKana.script),
+          },
         );
+        for (const { definition: a, text } of activities) {
+          const row = {
+            languageCode: a.languageCode,
+            lessonId: a.lessonId,
+            type: a.type,
+            skill: a.skill,
+            difficulty: a.difficulty,
+            evaluation: a.evaluation,
+            successCriteria: [...a.successCriteria],
+            passScore: a.passScore,
+            targetMastery: a.targetMastery,
+            sortOrder: a.sortOrder,
+          };
+          await upsert(db, tx, t.activities, { id: a.id, ...row }, { target: [t.activities.id], set: row });
+          await tx.delete(t.activityItems).where(eq(t.activityItems.activityId, a.id));
+          await tx
+            .insert(t.activityItems)
+            .values(
+              a.contentItemIds.map((contentItemId, sortOrder) => ({
+                activityId: a.id,
+                contentItemId,
+                sortOrder,
+              })),
+            );
+          for (const [locale, fields] of Object.entries(text)) {
+            await upsert(
+              db,
+              tx,
+              t.activityTranslations,
+              { activityId: a.id, locale, ...fields },
+              {
+                target: [t.activityTranslations.activityId, t.activityTranslations.locale],
+                set: fields,
+              },
+            );
+          }
+          activityCount++;
+        }
         lessonCount++;
       }
     }
   });
 
-  return { items: idByKey.size, lessons: lessonCount };
+  return { items: idByKey.size, lessons: lessonCount, activities: activityCount };
 }

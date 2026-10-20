@@ -1,0 +1,21 @@
+{
+  "name": "Bahasa Jepang",
+  "scripts": {
+    "hiragana": "Hiragana",
+    "katakana": "Katakana"
+  },
+  "skills": {
+    "ja.kana.recognition": {
+      "label": "Mengenali kana",
+      "description": "Melihat karakter kana dan memilih bunyinya."
+    },
+    "ja.kana.reading": {
+      "label": "Membaca kana",
+      "description": "Melihat karakter kana dan mengingat bunyinya tanpa pilihan jawaban."
+    },
+    "ja.kana.writing": {
+      "label": "Menulis kana",
+      "description": "Menulis karakter kana dengan tangan, bertahap hingga mampu menulis dari ingatan."
+    }
+  }
+}

@@ -1,0 +1,113 @@
+import { randomUUID } from "node:crypto";
+import { PracticePrompt } from "@/components/learning/practice-prompt";
+import { EmptyState } from "@/components/ui/empty-state";
+import { writingStageFor } from "@/handwriting/guidance";
+import { criterionLabel, skillLabel } from "@/localization/labels";
+import type { Messages } from "@/localization/messages";
+import type { Translator } from "@/localization/translator";
+import type { Database } from "@/server/db/client";
+import type { Learner } from "@/server/repositories/learners";
+import { getLearnerProgress, progressKey } from "@/server/repositories/progress";
+import type { PracticeSession as Session } from "@/server/services/practice";
+import { itemDisplay, toPracticeItem, type PracticeItem } from "@/features/kana/kana-view";
+import { PracticeSession, type ExerciseKind } from "./practice-session";
+
+const EXERCISE: Partial<Record<Session["type"], ExerciseKind>> = {
+  recognition: "recognition",
+  multiple_choice: "recognition",
+  recall: "recall",
+  writing: "writing",
+};
+
+/** Server-rendered frame of a practice session: objective first, then the exercise. */
+export async function SessionPage({
+  session,
+  db,
+  learner,
+  t,
+}: {
+  session: Session;
+  db: Database;
+  learner: Learner;
+  t: Translator<Messages>;
+}) {
+  const skill = skillLabel(t, session.skill);
+  const { request } = session;
+  const pairText =
+    request.kind === "confusion"
+      ? { a: itemDisplay(session.items[request.itemA]), b: itemDisplay(session.items[request.itemB]) }
+      : { a: "", b: "" };
+
+  const header = session.activity
+    ? {
+        eyebrow: `${t(`common.activityTypes.${session.activity.type}`)} · ${skill}`,
+        title: session.activity.text.title,
+        objective: session.activity.text.objective,
+        instruction: session.activity.text.instruction,
+        explanation: session.activity.text.explanation,
+        criteria: session.activity.successCriteria.map((c) => criterionLabel(t, c)),
+      }
+    : {
+        eyebrow: skill,
+        title:
+          request.kind === "confusion"
+            ? t("practice.sessions.confusion", pairText)
+            : t(request.kind === "review" ? "practice.sessions.review" : "practice.sessions.weak"),
+        objective:
+          request.kind === "confusion"
+            ? t("practice.sessions.objectives.confusion", pairText)
+            : t(
+                request.kind === "review"
+                  ? "practice.sessions.objectives.review"
+                  : "practice.sessions.objectives.weak",
+              ),
+        instruction: "",
+        explanation: undefined,
+        criteria: undefined,
+      };
+
+  const kind = EXERCISE[session.type];
+  const progress = kind === "writing" ? await getLearnerProgress(db, learner.id) : null;
+  const items = session.prompts
+    .map((item) =>
+      toPracticeItem(item, {
+        choiceItems: (session.choices[item.id] ?? []).map((id) => session.items[id]!).filter(Boolean),
+        stage: writingStageFor(progress?.get(progressKey(item.id, session.skill))?.state ?? "not_started"),
+        scriptName: (script) => t.dynamic(["ja", "scripts", script], undefined, script),
+      }),
+    )
+    .filter((i): i is PracticeItem => i !== null);
+
+  return (
+    <>
+      <PracticePrompt
+        eyebrow={header.eyebrow}
+        title={header.title}
+        objective={header.objective}
+        criteria={header.criteria}
+        explanation={header.explanation}
+        labels={{
+          objective: t("learning.objective"),
+          criteria: t("learning.successCriteria"),
+          why: t("learning.why"),
+        }}
+      />
+      {kind && items.length ? (
+        <PracticeSession
+          key={randomUUID()}
+          kind={kind}
+          items={items}
+          skill={session.skill}
+          skillLabel={skill}
+          activityId={session.activity?.id ?? null}
+          mode={session.mode === "review" ? "review" : "practice"}
+          passScore={session.passScore}
+          objective={header.objective}
+          instruction={header.instruction}
+        />
+      ) : (
+        <EmptyState title={t("practice.empty")} />
+      )}
+    </>
+  );
+}

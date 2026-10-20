@@ -1,8 +1,16 @@
 import type { MasteryState } from "@/core/mastery";
 import { cn } from "@/shared/cn";
-import { MASTERY_LABELS, MASTERY_TONE } from "@/shared/labels";
+import { MASTERY_TONE } from "@/shared/labels";
 
-export function MasteryBadge({ state, className }: { state: MasteryState; className?: string }) {
+export function MasteryBadge({
+  state,
+  label,
+  className,
+}: {
+  state: MasteryState;
+  label: string;
+  className?: string;
+}) {
   return (
     <span
       className={cn(
@@ -11,7 +19,7 @@ export function MasteryBadge({ state, className }: { state: MasteryState; classN
         className,
       )}
     >
-      {MASTERY_LABELS[state]}
+      {label}
     </span>
   );
 }

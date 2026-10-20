@@ -1,0 +1,74 @@
+{
+  "title": "Practice",
+  "description": "Train one skill at a time on the items of {lesson}, or target your weak spots.",
+  "skillCard": "Practice {skill}",
+  "focusTitle": "Focused practice",
+  "weakItems": "Recent mistakes",
+  "weakItemsEmpty": "No recent mistakes.",
+  "confusionPairs": "Confusing pairs",
+  "empty": "There is nothing to practice here right now.",
+  "progress": "{current} of {total}",
+  "recognition": {
+    "prompt": "Which sound matches this character?"
+  },
+  "recall": {
+    "label": "Type the reading in romaji"
+  },
+  "feedback": {
+    "correct": "Correct",
+    "answer": "Answer: {answer}",
+    "confusedWith": "That is the reading of {item}. These two are easy to confuse.",
+    "saveError": "Could not save your answer. Please try again."
+  },
+  "writing": {
+    "writeFor": "Write the {script} for",
+    "guide": "Guide: {stage}",
+    "stages": {
+      "full_example": "Trace",
+      "faded_example": "Faded guide",
+      "minimal_hint": "Hint only",
+      "recall": "From memory"
+    },
+    "undo": "Undo",
+    "clear": "Clear",
+    "showHint": "Show hint",
+    "compare": "Compare your writing with the model. How did you do?",
+    "self": {
+      "incorrect": "Not yet",
+      "close": "Close",
+      "correct": "Correct"
+    },
+    "keepWriting": "Keep writing",
+    "canvasLabel": "Writing area for {prompt}",
+    "previousItem": "Previous item:"
+  },
+  "checks": {
+    "stroke-count": {
+      "pass": { "one": "{count} stroke", "other": "{count} strokes" },
+      "fail": "{count} drawn, expected {expected}"
+    }
+  },
+  "outcome": {
+    "title": "Learning outcome",
+    "objective": "Objective",
+    "skill": "Skill",
+    "result": "{correct} of {total} correct",
+    "passed": "Objective met for this session",
+    "notPassed": "Not met yet. Aim for {pass} or more.",
+    "masteryChanged": "Mastery",
+    "improved": { "one": "{count} item improved", "other": "{count} items improved" },
+    "declined": { "one": "{count} item needs more work", "other": "{count} items need more work" },
+    "nextReview": "Next review",
+    "toRevisit": "To revisit"
+  },
+  "sessions": {
+    "review": "Review",
+    "weak": "Recent mistakes",
+    "confusion": "Tell {a} and {b} apart",
+    "objectives": {
+      "review": "Recall these items correctly now that they are due, so they move to longer review intervals.",
+      "weak": "Correct the items you missed recently.",
+      "confusion": "Reliably tell {a} and {b} apart."
+    }
+  }
+}

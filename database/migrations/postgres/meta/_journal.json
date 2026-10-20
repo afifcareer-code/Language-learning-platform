@@ -8,6 +8,20 @@
       "when": 1792462852981,
       "tag": "0000_init",
       "breakpoints": true
+    },
+    {
+      "idx": 1,
+      "version": "7",
+      "when": 1792469418841,
+      "tag": "0001_localization_activities",
+      "breakpoints": true
+    },
+    {
+      "idx": 2,
+      "version": "7",
+      "when": 1792469422147,
+      "tag": "0002_drop_untranslated_titles",
+      "breakpoints": true
     }
   ]
 }

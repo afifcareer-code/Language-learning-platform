@@ -13,6 +13,8 @@ These cover the pure logic: the scheduler, mastery state transitions, recommenda
 - **Content validation** (`tests/unit/languages/content.test.ts`): every content file parses and every lesson references existing items.
 - **Database configuration** (`tests/unit/database-config.test.ts`): detection of hosting-panel variables, URL encoding, and passwords never being logged.
 - **Schema parity** (`tests/unit/schema-parity.test.ts`): the three schemas define the same tables and columns, and MySQL tables are `utf8mb4`.
+- **Localization** (`tests/unit/localization.test.ts`): the translator (plurals, fallback, formatting), locale negotiation, and that every locale file has the same keys and placeholders as English.
+- **Activities, progress and confusion pairs** (`tests/unit/core/`): activity status, learning outcomes, answer options, the three progress measures, confusion remediation.
 - **Architecture boundaries** (`tests/unit/architecture.test.ts`): `src/core` imports no language, persistence or UI code and mentions no Japanese-specific concepts.
 
 ## Integration tests

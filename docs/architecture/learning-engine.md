@@ -44,23 +44,32 @@ Assessments are split into three parts:
 - `AssessmentAttempt`: one sitting by a learner.
 - `AssessmentResult`: the output of `scoreAssessment`, including `missedItemIds` for targeted practice.
 
+### `core/activities`
+
+The activity model (type, skill, objective, success criteria, evaluation strategy, pass score, target mastery), activity status derived from mastery, `summarizeSession` for the learning outcome, and `buildChoices` for choice-based activities. See [Activity system](activity-system.md).
+
 ### `core/recommendation`
 
-`recommendNext({ dueReviews, weakItems, nextLesson })` returns an ordered list:
-review → practise weak items → learn the next lesson. These deterministic rules are intentionally simple and explainable.
+`recommendNext({ dueReviews, confusionPairs, weakItems, nextActivity })` returns an ordered list: review → confused pair → recent mistakes → next activity. Each recommendation carries a **reason code** (`due_for_review`, `confused_pair`, `recent_mistakes`, `next_in_curriculum`) that the UI explains in the learner's language. The rules are deterministic and explainable by design.
 
 ### `core/analytics`
 
-Helpers such as `masteryDistribution` (counts per state, with no synthetic percentage) and `attemptAccuracy`.
+- **Three progress concepts**, never merged into one number:
+  - `courseProgress`: activities worked through (every item attempted),
+  - `skillMastery`: share of items **proficient or better** on a skill,
+  - `learningReadiness`: whether at least 80% of the current lesson's (item, skill) pairs are at **practicing or better**.
+- **Confusion pairs**: `recordConfusion`, `recordPairSuccess`, `needsRemediation`. A pair needs practice after 2 confusions and is resolved after 4 correct answers on its items.
+- `masteryDistribution` (counts per state) and `attemptAccuracy`.
 
 ## Write path
 
 All learning evidence goes through one function, `server/services/learning.recordAttempt`, inside a single transaction:
 
 ```
-attempt ─► learning_attempts (insert)
+attempt ─► learning_attempts (insert, linked to its activity)
         ─► scheduler.next()   ─► review_schedule (upsert)
         ─► applyAttempt()     ─► mastery (upsert)
+        ─► recordConfusion() / recordPairSuccess() ─► confusion_pairs
 ```
 
 ## Extending the engine

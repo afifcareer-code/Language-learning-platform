@@ -1,0 +1,27 @@
+{
+  "source": "Commonly confused kana pairs in beginner instruction. Used to choose practice distractors; learner-specific confusions are detected separately from answers.",
+  "pairs": [
+    ["hiragana:さ", "hiragana:ち"],
+    ["hiragana:さ", "hiragana:き"],
+    ["hiragana:れ", "hiragana:ね"],
+    ["hiragana:れ", "hiragana:わ"],
+    ["hiragana:ね", "hiragana:わ"],
+    ["hiragana:ぬ", "hiragana:め"],
+    ["hiragana:る", "hiragana:ろ"],
+    ["hiragana:は", "hiragana:ほ"],
+    ["hiragana:い", "hiragana:り"],
+    ["hiragana:こ", "hiragana:に"],
+    ["hiragana:あ", "hiragana:お"],
+    ["katakana:シ", "katakana:ツ"],
+    ["katakana:ソ", "katakana:ン"],
+    ["katakana:シ", "katakana:ン"],
+    ["katakana:ソ", "katakana:ツ"],
+    ["katakana:ク", "katakana:タ"],
+    ["katakana:ク", "katakana:ケ"],
+    ["katakana:ウ", "katakana:ワ"],
+    ["katakana:コ", "katakana:ユ"],
+    ["katakana:ノ", "katakana:メ"],
+    ["katakana:チ", "katakana:テ"],
+    ["katakana:ヌ", "katakana:ス"]
+  ]
+}

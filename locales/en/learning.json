@@ -1,0 +1,15 @@
+{
+  "title": "Learn",
+  "description": "Each lesson follows the learning loop: recognize, recall, then write from memory.",
+  "lessonNumber": "Lesson {n}",
+  "current": "Current",
+  "activities": "Activities",
+  "characters": "Characters",
+  "objective": "Objective",
+  "why": "Why it matters",
+  "successCriteria": "Success criteria",
+  "targetMastery": "Goal: every item at {state}",
+  "startActivity": "Start",
+  "activitiesProgress": "{completed} of {total} activities",
+  "noCourses": "No courses yet. Check the server log for database errors."
+}

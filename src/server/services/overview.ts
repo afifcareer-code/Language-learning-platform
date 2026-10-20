@@ -1,39 +1,53 @@
-import { attemptAccuracy, masteryDistribution, type MasteryDistribution } from "@/core/analytics";
+import {
+  attemptAccuracy,
+  courseProgress,
+  learningReadiness,
+  masteryDistribution,
+  needsRemediation,
+  skillMastery,
+  type ConfusionPairState,
+  type CourseProgress,
+  type LearningReadiness,
+  type MasteryDistribution,
+  type SkillMastery,
+} from "@/core/analytics";
+import { activityStatus, type ActivityStatus } from "@/core/activities";
 import type { SkillDefinition } from "@/core/learning";
 import type { MasteryState } from "@/core/mastery";
 import { recommendNext, type Recommendation } from "@/core/recommendation";
 import { getLanguageModule } from "@/languages/registry";
+import type { Locale } from "@/localization/config";
 import type { Database } from "../db/client";
-import { listCourses, type CourseWithLessons, type LessonSummary } from "../repositories/content";
 import {
+  getCurriculum,
+  type ActivityView,
+  type Curriculum,
+  type LessonView,
+} from "../repositories/curriculum";
+import type { Learner } from "../repositories/learners";
+import {
+  getConfusionPairs,
   getDueReviews,
   getLearnerProgress,
   getRecentAttempts,
   progressKey,
   type ItemProgress,
 } from "../repositories/progress";
-import type { Learner } from "../repositories/learners";
-
-const ESTABLISHED_OR_PRACTICING: ReadonlySet<MasteryState> = new Set([
-  "practicing",
-  "proficient",
-  "mastered",
-]);
-
-export interface LessonStatus {
-  lesson: LessonSummary;
-  /** Items with any evidence, on any skill. */
-  started: number;
-  /** Per skill: items at practicing or better. */
-  practicedBySkill: Record<string, number>;
-}
 
 export interface LearningOverview {
   skills: readonly SkillDefinition[];
-  courses: CourseWithLessons[];
-  lessonStatus: Map<string, LessonStatus>;
+  curriculum: Curriculum;
   progress: Map<string, ItemProgress>;
-  currentLesson: LessonSummary | null;
+  activityStatus: Map<string, ActivityStatus>;
+  /** The next activity to work on, in curriculum order. */
+  nextActivity: ActivityView | null;
+  currentLesson: LessonView | null;
+  courseProgress: CourseProgress;
+  /** Across every (item, skill) pair in the curriculum. */
+  overallMastery: SkillMastery;
+  skillMastery: SkillMastery[];
+  readiness: (LearningReadiness & { lesson: LessonView }) | null;
+  confusionPairs: ConfusionPairState[];
   dueBySkill: Record<string, number>;
   distributionBySkill: Record<string, MasteryDistribution>;
   recommendations: Recommendation[];
@@ -49,38 +63,46 @@ export function stateFor(progress: Map<string, ItemProgress>, itemId: string, sk
 export async function getLearningOverview(
   db: Database,
   learner: Learner,
+  locale: Locale,
   now = new Date(),
 ): Promise<LearningOverview> {
-  const languageModule = getLanguageModule(learner.targetLanguage);
-  const skills = languageModule.skills;
-  const [courses, progress, due, recent] = await Promise.all([
-    listCourses(db, learner.targetLanguage),
+  const skills = getLanguageModule(learner.targetLanguage).skills;
+  const [curriculum, progress, due, recent, pairs] = await Promise.all([
+    getCurriculum(db, learner.targetLanguage, locale),
     getLearnerProgress(db, learner.id, now),
     getDueReviews(db, learner.id, now),
     getRecentAttempts(db, learner.id, { since: new Date(now.getTime() - 7 * DAY_MS), limit: 10_000 }),
+    getConfusionPairs(db, learner.id),
   ]);
+  const stateOf = (itemId: string, skill: string) => stateFor(progress, itemId, skill);
 
-  const allLessons = courses.flatMap((c) => c.lessons);
-  const allItemIds = [...new Set(allLessons.flatMap((l) => l.itemIds))];
+  const statuses = new Map<string, ActivityStatus>();
+  for (const a of curriculum.activities)
+    statuses.set(
+      a.id,
+      activityStatus(a, (id) => stateOf(id, a.skill)),
+    );
+  const nextActivity =
+    curriculum.activities.find((a) => !["completed", "outcome_achieved"].includes(statuses.get(a.id)!)) ??
+    null;
+  const currentLesson =
+    curriculum.lessons.find((l) => l.id === nextActivity?.lessonId) ?? curriculum.lessons.at(-1) ?? null;
 
-  const lessonStatus = new Map<string, LessonStatus>();
-  for (const lesson of allLessons) {
-    const practicedBySkill: Record<string, number> = {};
-    let started = 0;
-    for (const itemId of lesson.itemIds) {
-      if (skills.some((s) => progress.has(progressKey(itemId, s.id)))) started++;
-      for (const s of skills) {
-        if (ESTABLISHED_OR_PRACTICING.has(stateFor(progress, itemId, s.id))) {
-          practicedBySkill[s.id] = (practicedBySkill[s.id] ?? 0) + 1;
-        }
+  const allItemIds = [...new Set(curriculum.lessons.flatMap((l) => l.itemIds))];
+  const bySkill = skills.map((s) => skillMastery(s.id, allItemIds, stateOf));
+  const demonstrated = bySkill.reduce((n, s) => n + s.demonstrated, 0);
+  const total = bySkill.reduce((n, s) => n + s.total, 0);
+
+  const readiness = currentLesson
+    ? {
+        lesson: currentLesson,
+        ...learningReadiness(
+          currentLesson.itemIds,
+          [...new Set(currentLesson.activities.map((a) => a.skill))],
+          stateOf,
+        ),
       }
-    }
-    lessonStatus.set(lesson.id, { lesson, started, practicedBySkill });
-  }
-
-  // The current lesson is the first one containing items the learner has not yet tried.
-  const nextLesson =
-    allLessons.find((l) => (lessonStatus.get(l.id)?.started ?? 0) < l.itemIds.length) ?? null;
+    : null;
 
   const dueBySkill: Record<string, number> = Object.fromEntries(skills.map((s) => [s.id, 0]));
   for (const d of due) dueBySkill[d.skill] = (dueBySkill[d.skill] ?? 0) + 1;
@@ -94,12 +116,15 @@ export async function getLearningOverview(
     distributionBySkill[s.id] = masteryDistribution(states, allItemIds.length);
   }
 
-  // Weak = the most recent attempt was wrong, or retention has lapsed.
+  // Weak = the most recent attempt was wrong, or retention has lapsed (and not already due).
+  const isDue = (p: ItemProgress) =>
+    due.some((d) => d.contentItemId === p.contentItemId && d.skill === p.skill);
   const weakItems = [...progress.values()]
     .filter(
-      (p) => p.state === "needs_review" || (p.mastery.attempts > 0 && p.mastery.consecutiveCorrect === 0),
+      (p) =>
+        (p.state === "needs_review" || (p.mastery.attempts > 0 && p.mastery.consecutiveCorrect === 0)) &&
+        !isDue(p),
     )
-    .filter((p) => !due.some((d) => d.contentItemId === p.contentItemId && d.skill === p.skill))
     .map((p) => ({
       contentItemId: p.contentItemId,
       skill: p.skill,
@@ -109,15 +134,22 @@ export async function getLearningOverview(
   const recommendations = recommendNext({
     dueReviews: Object.entries(dueBySkill).map(([skill, count]) => ({ skill, count })),
     weakItems,
-    nextLesson,
+    confusionPairs: pairs.filter((p) => needsRemediation(p)),
+    nextActivity: nextActivity ? { id: nextActivity.id, skill: nextActivity.skill } : null,
   });
 
   return {
     skills,
-    courses,
-    lessonStatus,
+    curriculum,
     progress,
-    currentLesson: nextLesson ?? allLessons.at(-1) ?? null,
+    activityStatus: statuses,
+    nextActivity,
+    currentLesson,
+    courseProgress: courseProgress(curriculum.activities, stateOf),
+    overallMastery: { skill: "*", demonstrated, total, ratio: total ? demonstrated / total : 0 },
+    skillMastery: bySkill,
+    readiness,
+    confusionPairs: pairs,
     dueBySkill,
     distributionBySkill,
     recommendations,

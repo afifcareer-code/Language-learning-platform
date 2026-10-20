@@ -7,6 +7,8 @@ const executablePath = process.env.PLAYWRIGHT_CHROMIUM_EXECUTABLE || undefined;
 export default defineConfig({
   testDir: "tests/e2e",
   fullyParallel: false,
+  // Tests share one database (and the learner's language setting), so run them one at a time.
+  workers: 1,
   retries: process.env.CI ? 1 : 0,
   use: {
     baseURL: `http://localhost:${PORT}`,

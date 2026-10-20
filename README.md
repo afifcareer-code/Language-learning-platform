@@ -2,9 +2,9 @@
 
 An open-source adaptive language learning platform focused on mastery, active recall, progressive practice, and personalized learning.
 
-**Japanese is currently the first supported language.**
+**Japanese is currently the first supported language.** The platform is built so that more languages can be added as modules later, without rewriting the core. The interface is available in **Bahasa Indonesia** and **English**.
 
-> **Status: early development (v0.1).** The core learning engine, the Japanese kana module and the handwriting foundation work end to end. Expect breaking changes. See the [roadmap](docs/product/roadmap.md).
+> **Status: early development (v0.1).** The core learning engine, the activity system, localization, the Japanese kana module and the handwriting foundation work end to end. Expect breaking changes. See the [roadmap](docs/product/roadmap.md).
 
 ## Why another learning app?
 
@@ -14,26 +14,37 @@ Most learning apps measure activity: lessons completed, minutes spent, streaks k
 Recognition → Understanding → Recall → Production → Automaticity → Retention
 ```
 
-Mastery here is earned through recall over time. It is never derived from lesson completion. An item counts as proficient only after you have recalled it correctly following a real gap of days, so cramming cannot fake it. Read more in [Learning philosophy](docs/product/learning-philosophy.md).
+Mastery here is earned through recall over time. It is never derived from lesson completion. An item counts as proficient only after you have recalled it correctly following a real gap of days, so cramming cannot fake it.
+
+Every activity has a **measurable objective** ("Write か き く け こ from memory with the correct shape and number of strokes") and is tied to the curriculum, a skill, its evaluation, mastery and review. The learner always knows what they are learning, why, how they did and what to practise next. The loop is:
+
+```
+Learn → Practice → Measure → Review → Improve
+```
+
+Read more in [Learning philosophy](docs/product/learning-philosophy.md) and [Activity system](docs/architecture/activity-system.md).
 
 ## Features
 
 Working in v0.1:
 
-- **Kana reading (active recall).** You see a character and type its reading. There is no multiple choice.
+- **Activities with objectives.** Each lesson runs the learning loop: **recognize** (pick the sound), **recall** (type it with no options), **write** (by hand). Each activity has a localized, measurable objective, explicit success criteria, and a learning outcome at the end.
 - **Handwriting practice.** Pen, touch and mouse input are captured through the Pointer Events API, with optional pressure. Guidance fades as mastery grows: Trace → Faded guide → Hint only → From memory.
 - **Mastery engine.** Six states per item per skill: Not started, Learning, Practicing, Proficient, Mastered, Needs review.
 - **Spaced review.** A Leitner scheduler with intervals of 10 minutes, then 1, 3, 7, 14, 30 and 90 days. It is pluggable, so SM-2 or FSRS can replace it later.
-- **Recommendations.** A rule-based answer to "what should I do next?": due reviews first, then weak items, then the next lesson.
-- **Progress.** Per-character mastery grids and your learning history.
+- **Three separate progress measures.** **Course progress** (what you have worked through), **skill mastery** (what you can reliably recall over time) and **learning readiness** (whether you are ready for the next lesson), each with its explanation.
+- **Confusion pairs.** Mixing up two characters (シ/ツ, さ/ち) is detected from your answers, tracked, and practised in targeted sessions until resolved.
+- **Explainable recommendations.** Every suggestion says why: due for review, recent mistakes, confused pair, or next in your curriculum.
+- **Progress.** Per-character mastery grids, commonly confused pairs, and your learning history.
+- **Localization.** Interface in Indonesian and English (switchable in Settings), and localized learning content. The UI language, content translations and the language being learned are three separate concerns ([Localization](docs/architecture/localization.md)).
 - **Data-driven content.** All Japanese content lives in validated JSON files under [`data/`](data/japanese).
 - **Responsive, tablet-first UI** with automatic light and dark themes.
 
 ## Current language
 
-| Language          | Status      | Scope                                                |
-| ----------------- | ----------- | ---------------------------------------------------- |
-| Japanese (日本語) | In progress | Hiragana and katakana (46 + 46), reading and writing |
+| Language          | Status      | Scope                                                          |
+| ----------------- | ----------- | -------------------------------------------------------------- |
+| Japanese (日本語) | In progress | Hiragana and katakana (46 + 46): recognition, reading, writing |
 
 The core engine is language-agnostic. Japanese concepts such as kana, kanji and JLPT live only in the Japanese module. See [Language system](docs/architecture/language-system.md).
 
@@ -47,19 +58,23 @@ _Screenshots will be added once the UI stabilises._
 src/
 ├── core/            Language-agnostic learning engine (pure TypeScript)
 │   ├── learning/    Shared types and the LanguageModule contract
+│   ├── activities/  Activities, objectives, success criteria, outcomes
 │   ├── mastery/     Mastery states derived from evidence
 │   ├── review/      Spaced-repetition scheduling
 │   ├── assessment/  Definition / attempt / result model
 │   ├── recommendation/
-│   └── analytics/
+│   └── analytics/   Progress, readiness, confusion pairs
 ├── languages/
-│   └── japanese/    First language module (kana, skills, content schemas)
+│   └── japanese/    First language module (kana, skills, messages, content schemas)
+├── localization/    Locales, translator, locale negotiation
 ├── handwriting/     Stroke capture, features, analysis, scoring, guidance
 ├── audio/           Browser speech synthesis
 ├── server/          Database (Drizzle; MySQL, PostgreSQL or SQLite), repositories, services
 ├── features/        Feature UI (practice sessions, kana views)
 ├── components/      Shared UI primitives and app shell
 └── app/             Next.js routes and server actions
+locales/             UI messages per locale (id, en)
+data/                Learning content (characters, curriculum, activity templates)
 ```
 
 The core engine has no dependency on Japanese, the database or React. Lint rules and an architecture test enforce this. Read more in [Architecture overview](docs/architecture/overview.md).

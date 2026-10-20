@@ -1,0 +1,12 @@
+{
+  "title": "Pengaturan",
+  "language": {
+    "title": "Bahasa antarmuka",
+    "description": "Bahasa untuk menu, instruksi, dan penjelasan. Bahasa yang sedang Anda pelajari tidak berubah."
+  },
+  "learningLanguage": "Bahasa yang dipelajari",
+  "name": {
+    "label": "Nama Anda"
+  },
+  "saved": "Pengaturan disimpan"
+}

@@ -1,0 +1,8 @@
+{
+  "title": "Review",
+  "description": "Items come back just before you are likely to forget them. Recalling them on time is what moves them toward mastery.",
+  "nothingDue": "Nothing is due right now.",
+  "nothingDueHint": "Practice new items and they will be scheduled here.",
+  "due": { "one": "{count} item due", "other": "{count} items due" },
+  "start": "Start review"
+}

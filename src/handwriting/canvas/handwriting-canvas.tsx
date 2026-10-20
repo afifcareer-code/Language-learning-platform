@@ -3,7 +3,7 @@
 import { useEffect, useRef, type PointerEvent } from "react";
 import type { PointerKind, Stroke, StrokePoint } from "../strokes/types";
 
-export interface WritingCanvasProps {
+export interface HandwritingCanvasProps {
   strokes: Stroke[];
   onStrokesChange: (strokes: Stroke[]) => void;
   /** Model text rendered behind the canvas. */
@@ -24,14 +24,14 @@ function toPointerKind(type: string): PointerKind {
  * Square writing surface capturing device-independent stroke data via Pointer
  * Events (mouse, touch and any stylus). Pressure is recorded only for pens.
  */
-export function WritingCanvas({
+export function HandwritingCanvas({
   strokes,
   onStrokesChange,
   guideText,
   guideOpacity = 0,
   disabled,
   label,
-}: WritingCanvasProps) {
+}: HandwritingCanvasProps) {
   const canvasRef = useRef<HTMLCanvasElement>(null);
   const current = useRef<Stroke | null>(null);
   // Point timestamps are relative to the first point of the sample.

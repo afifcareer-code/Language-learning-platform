@@ -36,17 +36,19 @@ export const CAPABILITIES = [
   "pronunciation",
   "character-recognition",
   "character-writing",
+  "sentence-production",
 ] as const;
 export type Capability = (typeof CAPABILITIES)[number];
 
 /** Identifier of a skill declared by a language module, namespaced by language code. */
 export type SkillId = string;
 
-/** A measurable ability on a content item. Mastery is tracked per item per skill. */
+/**
+ * A measurable ability on a content item. Mastery is tracked per item per skill.
+ * Human-readable labels are localized by the owning module, keyed by `id`.
+ */
 export interface SkillDefinition {
   id: SkillId;
-  label: string;
-  description: string;
   stage: LearningStage;
   capability: Capability;
 }
@@ -70,6 +72,11 @@ export interface ResponseEvaluation {
   score: number;
   /** The canonical expected answer, for feedback. */
   expected?: string;
+  /**
+   * When a wrong answer is the correct answer for a different item, that
+   * item's id. Feeds confusion-pair tracking.
+   */
+  confusedWithItemId?: string;
 }
 
 export interface AttemptOutcome {

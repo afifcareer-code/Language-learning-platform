@@ -15,11 +15,13 @@ We therefore:
 ```ts
 interface LanguageModule {
   code: string; // BCP 47, e.g. "ja"
-  name: string; // "Japanese"
   nativeName: string; // "日本語"
   capabilities: Capability[]; // what it supports
   skills: SkillDefinition[]; // what it can measure
-  evaluateResponse(item, skill, response): ResponseEvaluation | null;
+  messages: Record<Locale, object>; // its own UI text: name, skill labels, script names
+  evaluateResponse(item, skill, response): ResponseEvaluation | null; // incl. confusedWithItemId
+  knownConfusables?(itemId): string[]; // curated similar items, used as distractors
+  isComparable?(a, b): boolean; // which items make sensible answer options
 }
 ```
 
@@ -33,10 +35,13 @@ Not every language has every feature. Japanese declares `character-recognition` 
 
 Skills are namespaced strings owned by the module:
 
-| Skill             | Stage      | Capability            |
-| ----------------- | ---------- | --------------------- |
-| `ja.kana.reading` | recall     | character-recognition |
-| `ja.kana.writing` | production | character-writing     |
+| Skill                 | Stage       | Capability            |
+| --------------------- | ----------- | --------------------- |
+| `ja.kana.recognition` | recognition | character-recognition |
+| `ja.kana.reading`     | recall      | character-recognition |
+| `ja.kana.writing`     | production  | character-writing     |
+
+Skill labels are localized in the module's `locales/<locale>.json`.
 
 Mastery and review are tracked per item × skill, so adding a skill requires no schema change.
 
@@ -44,16 +49,22 @@ Mastery and review are tracked per item × skill, so adding a skill requires no 
 
 ```
 src/languages/japanese/
-├── index.ts               Module definition (capabilities, skills, grading)
-├── skills.ts              Skill ids and definitions
-├── scripts/kana.ts        Kana content schema, ids, romaji normalisation and checking
-├── curriculum/schema.ts   Course file schema
-└── content/validate.ts    Content consistency checks
+├── index.ts                 Module definition (capabilities, skills, grading, confusables)
+├── skills.ts                Skill ids and definitions
+├── locales/{en,id}.json     The module's own UI text
+├── scripts/kana.ts          Kana content schema, ids, romaji normalisation and checking
+├── scripts/catalog.ts       Lookups over bundled kana data (reading → item, confusables)
+├── curriculum/schema.ts     Level, course and activity-template file schemas
+├── curriculum/activities.ts Expands activity templates per lesson
+└── content/validate.ts      Content consistency and translation checks
 
 data/japanese/
 ├── characters/hiragana.json
 ├── characters/katakana.json
-└── curriculum/kana-foundations.json
+├── curriculum/levels.json
+├── curriculum/kana-foundations.json   (localized titles)
+├── activities/kana.json               (activity templates with localized objectives)
+└── confusion/kana.json                (commonly confused kana)
 ```
 
 Future Japanese areas (`vocabulary/`, `kanji/`, `grammar/`, `sentences/`, `pronunciation/`, `proficiency/` for JLPT) will be added next to `scripts/` when implemented.
@@ -72,7 +83,7 @@ The seeder validates files with Zod, stores each character as a `content_items` 
 
 1. Create `src/languages/<code>/` implementing `LanguageModule`.
 2. Add content schemas and `data/<code>/` files.
-3. Add a seeder in `database/seeders/`.
+3. Add a seeder in `src/server/seed/` and call it from `src/server/db/bootstrap.ts`.
 4. Register the module in `src/languages/registry.ts`.
 5. Add language-specific UI under `src/features/` only where the generic UI is not enough.
 

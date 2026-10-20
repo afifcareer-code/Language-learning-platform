@@ -8,10 +8,11 @@ export interface WritingTarget {
   strokeCounts?: readonly number[];
 }
 
+/** The outcome of one automatic check. `values` feed localized feedback in the UI. */
 export interface WritingCheck {
   id: string;
   passed: boolean;
-  detail: string;
+  values: Record<string, number | number[]>;
 }
 
 export interface WritingAnalysis {

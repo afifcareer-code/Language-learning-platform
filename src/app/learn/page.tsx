@@ -3,57 +3,73 @@ import Link from "next/link";
 import { Card } from "@/components/ui/card";
 import { EmptyState } from "@/components/ui/empty-state";
 import { PageHeader } from "@/components/ui/page-header";
+import { getI18n } from "@/localization/server";
 import { getContext } from "@/server/context";
 import { getLearningOverview } from "@/server/services/overview";
+import { cn } from "@/shared/cn";
 
-export const metadata: Metadata = { title: "Learn" };
+export async function generateMetadata(): Promise<Metadata> {
+  const { t } = await getI18n();
+  return { title: t("learning.title") };
+}
 
 export default async function LearnPage() {
   const { db, learner } = await getContext();
-  const overview = await getLearningOverview(db, learner);
+  const { locale, t } = await getI18n();
+  const overview = await getLearningOverview(db, learner, locale);
+  const done = (id: string) =>
+    ["completed", "outcome_achieved"].includes(overview.activityStatus.get(id) ?? "");
 
   return (
     <>
-      <PageHeader
-        title="Learn"
-        description="Work through the curriculum. Each lesson introduces a small set of items to practise."
-      />
-      {overview.courses.length === 0 && (
-        <EmptyState title="No courses yet">Run npm run db:setup to load the curriculum.</EmptyState>
-      )}
-      {overview.courses.map((course) => (
-        <section key={course.id} className="mb-10">
-          <h2 className="text-xl font-semibold">{course.title}</h2>
-          <p className="mt-1 mb-4 text-muted">{course.description}</p>
-          <ol className="grid gap-3 md:grid-cols-2 xl:grid-cols-3">
-            {course.lessons.map((lesson, i) => {
-              const status = overview.lessonStatus.get(lesson.id);
-              const isCurrent = overview.currentLesson?.id === lesson.id;
-              return (
-                <li key={lesson.id}>
-                  <Link href={`/learn/${lesson.slug}`} className="block h-full">
-                    <Card className={isCurrent ? "h-full border-accent" : "h-full hover:bg-sunken"}>
-                      <p className="text-sm text-muted">
-                        Lesson {i + 1}
-                        {isCurrent && <span className="ml-2 font-medium text-accent">Current</span>}
-                      </p>
-                      <p className="mt-1 text-lg font-semibold">{lesson.title}</p>
-                      <dl className="mt-3 space-y-1 text-sm">
-                        {overview.skills.map((skill) => (
-                          <div key={skill.id} className="flex justify-between gap-4">
-                            <dt className="text-muted">{skill.label}</dt>
-                            <dd className="tabular-nums">
-                              {status?.practicedBySkill[skill.id] ?? 0} / {lesson.itemIds.length} practising
-                            </dd>
+      <PageHeader title={t("learning.title")} description={t("learning.description")} />
+      {overview.curriculum.levels.length === 0 && <EmptyState title={t("learning.noCourses")} />}
+      {overview.curriculum.levels.map((level) => (
+        <section key={level.id} className="mb-10">
+          {level.title && (
+            <header className="mb-4">
+              <h2 className="text-xl font-semibold">{level.title}</h2>
+              {level.description && <p className="mt-1 text-muted">{level.description}</p>}
+            </header>
+          )}
+          {level.courses.map((course) => (
+            <div key={course.id} className="mb-8">
+              <h3 className="text-lg font-semibold">{course.title}</h3>
+              {course.description && <p className="mt-1 mb-4 text-muted">{course.description}</p>}
+              <ol className="grid gap-3 md:grid-cols-2 xl:grid-cols-3">
+                {course.lessons.map((lesson, i) => {
+                  const isCurrent = overview.currentLesson?.id === lesson.id;
+                  const completed = lesson.activities.filter((a) => done(a.id)).length;
+                  return (
+                    <li key={lesson.id}>
+                      <Link href={`/learn/${lesson.slug}`} className="block h-full">
+                        <Card className={cn("h-full", isCurrent ? "border-accent" : "hover:bg-sunken")}>
+                          <p className="text-sm text-muted">
+                            {t("learning.lessonNumber", { n: i + 1 })}
+                            {isCurrent && (
+                              <span className="ml-2 font-medium text-accent">{t("learning.current")}</span>
+                            )}
+                          </p>
+                          <p className="mt-1 text-lg font-semibold">{lesson.title}</p>
+                          <div className="mt-3 h-1.5 overflow-hidden rounded-full bg-sunken">
+                            <div
+                              className="h-full rounded-full bg-accent"
+                              style={{
+                                width: `${(completed / Math.max(1, lesson.activities.length)) * 100}%`,
+                              }}
+                            />
                           </div>
-                        ))}
-                      </dl>
-                    </Card>
-                  </Link>
-                </li>
-              );
-            })}
-          </ol>
+                          <p className="mt-2 text-sm text-muted">
+                            {t("learning.activitiesProgress", { completed, total: lesson.activities.length })}
+                          </p>
+                        </Card>
+                      </Link>
+                    </li>
+                  );
+                })}
+              </ol>
+            </div>
+          ))}
         </section>
       ))}
     </>

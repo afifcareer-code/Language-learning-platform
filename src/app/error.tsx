@@ -1,6 +1,7 @@
 "use client";
 
 import { Button } from "@/components/ui/button";
+import { useT } from "@/localization/client";
 
 export default function ErrorPage({
   error,
@@ -9,16 +10,16 @@ export default function ErrorPage({
   error: Error & { digest?: string };
   reset: () => void;
 }) {
+  const t = useT();
   return (
     <div className="mx-auto max-w-xl py-16">
-      <h1 className="text-2xl font-semibold">Something went wrong</h1>
-      <p className="mt-2 text-muted">
-        If this is a fresh checkout, the database may not be set up yet. Run{" "}
-        <code className="rounded bg-sunken px-1.5 py-0.5">npm run db:setup</code> and reload.
-      </p>
-      {error.digest && <p className="mt-2 text-sm text-muted">Error reference: {error.digest}</p>}
+      <h1 className="text-2xl font-semibold">{t("common.error.title")}</h1>
+      <p className="mt-2 text-muted">{t("common.error.setupHint")}</p>
+      {error.digest && (
+        <p className="mt-2 text-sm text-muted">{t("common.error.reference", { digest: error.digest })}</p>
+      )}
       <Button className="mt-6" onClick={reset}>
-        Try again
+        {t("common.actions.tryAgain")}
       </Button>
     </div>
   );

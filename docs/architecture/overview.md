@@ -62,38 +62,41 @@ environment ──► db/config.ts ──► { dialect, url }
 - **Defaults** (timestamps, empty arrays) are applied by the application, not by SQL, so behaviour is identical everywhere.
 - **Times** are stored in UTC with millisecond precision on every engine.
 
-## Request flow: answering a reading question
+## Request flow: answering inside an activity
 
-1. `app/practice/reading/page.tsx` (a server component) calls `services/practice.getPracticeSet` to pick items.
-2. `features/practice/reading-session.tsx` (a client component) shows a character and the learner types an answer.
-3. The `submitReadingAnswer` server action validates the input with Zod and loads the item.
-4. `services/learning.evaluateTypedResponse` asks the item's **language module** to grade the response.
-5. `services/learning.recordAttempt` runs in one transaction:
-   - inserts the `learning_attempts` row (the raw evidence),
+1. `app/activities/[activityId]/page.tsx` (a server component) resolves the locale and calls `services/practice.getPracticeSession`. That service picks the items and, for recognition, builds answer options with commonly confused items first.
+2. `features/practice/session-page.tsx` renders the objective (`PracticePrompt`), then the client `PracticeSession`, which shows one exercise at a time: recognition, recall or writing.
+3. The learner answers. The `submitAttempt` server action validates the input with Zod, checks the skill and activity, and grades the answer:
+   - **choice**: correct when the chosen item is the target, otherwise a confusion with the chosen item;
+   - **typed text**: graded by the item's **language module**, which also reports which other item a wrong answer belongs to;
+   - **writing**: the server reruns the handwriting analyzer and combines it with the learner's self-assessment.
+4. `services/learning.recordAttempt` runs in one transaction:
+   - inserts the `learning_attempts` row (the raw evidence, linked to the activity),
    - calls `ReviewScheduler.next` (core) and upserts `review_schedule`,
-   - calls `applyAttempt` (core) and upserts `mastery`.
-6. The action returns the result and the new mastery state to the client.
-
-Writing attempts follow the same path. The server reruns the handwriting analyzer, combines it with the learner's self-assessment, and stores the raw strokes in `writing_samples` for future re-analysis.
+   - calls `applyAttempt` (core) and upserts `mastery`,
+   - updates `confusion_pairs`.
+5. The action returns feedback: correctness, expected answer, mastery before → after, next review. At the end of the session, `summarizeSession` (core) produces the **learning outcome**.
 
 ## Directory map
 
-| Path              | Contents                                                                      |
-| ----------------- | ----------------------------------------------------------------------------- |
-| `src/core`        | Domain logic (see [Learning engine](learning-engine.md))                      |
-| `src/languages`   | Language modules and the registry (see [Language system](language-system.md)) |
-| `src/handwriting` | Stroke types, feature extraction, analyzers, scoring, guidance, canvas        |
-| `src/audio`       | Speech synthesis hook and button                                              |
-| `src/server`      | Env, database client and schema, repositories, services                       |
-| `src/features`    | Feature-level UI (practice sessions, kana views)                              |
-| `src/components`  | App shell and UI primitives                                                   |
-| `src/app`         | Next.js routes and server actions                                             |
-| `src/shared`      | Small framework-agnostic utilities                                            |
-| `data/`           | Content files (JSON), validated by Zod schemas                                |
-| `database/`       | Generated SQL migrations and seeders                                          |
-| `scripts/`        | Development and content scripts                                               |
-| `tests/`          | Unit, integration and e2e tests                                               |
+| Path               | Contents                                                                                                                                              |
+| ------------------ | ----------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `src/core`         | Domain logic (see [Learning engine](learning-engine.md))                                                                                              |
+| `src/languages`    | Language modules and the registry (see [Language system](language-system.md))                                                                         |
+| `src/localization` | Locales, translator, locale negotiation (see [Localization](localization.md))                                                                         |
+| `locales/`         | UI messages per locale and namespace                                                                                                                  |
+| `src/handwriting`  | Stroke types, feature extraction, analyzers, scoring, guidance, canvas                                                                                |
+| `src/audio`        | Speech synthesis hook and button                                                                                                                      |
+| `src/server`       | Env, database client and schema, repositories, services                                                                                               |
+| `src/features`     | Feature-level UI (practice sessions, kana views)                                                                                                      |
+| `src/components`   | App shell, UI primitives, and learning components (`ProgressRing`, `LearningProgress`, `MasteryCard`, `ActivityCard`, `PracticePrompt`, `ReviewCard`) |
+| `src/app`          | Next.js routes and server actions                                                                                                                     |
+| `src/shared`       | Small framework-agnostic utilities                                                                                                                    |
+| `data/`            | Content files (JSON), validated by Zod schemas                                                                                                        |
+| `database/`        | Generated SQL migrations and seeders                                                                                                                  |
+| `scripts/`         | Development and content scripts                                                                                                                       |
+| `tests/`           | Unit, integration and e2e tests                                                                                                                       |
 
 ### Mapping from the original conceptual layout
 
-The original proposal included a top-level `frontend/` folder. In Next.js, routes must live in `src/app`, so the UI is split across `src/app` (pages), `src/features` (feature UI) and `src/components` (shared UI and layout). Folders that would be empty in v0.1 (for example `languages/japanese/kanji`, `grammar` or `proficiency`) are not created yet. They will be added together with their first real code.
+The original proposal included a top-level `frontend/` folder. In Next.js, routes must live in `src/app`, so the UI is split across `src/app` (pages), `src/features` (feature UI) and `src/components` (shared UI and layout). The original `locales/` folder is kept at the root. Folders that would be empty in v0.1 (for example `languages/japanese/kanji`, `grammar` or `proficiency`) are not created yet. They will be added together with their first real code.

@@ -1,14 +1,5 @@
 import type { MasteryState } from "@/core/mastery";
 
-export const MASTERY_LABELS: Record<MasteryState, string> = {
-  not_started: "Not started",
-  learning: "Learning",
-  practicing: "Practicing",
-  proficient: "Proficient",
-  mastered: "Mastered",
-  needs_review: "Needs review",
-};
-
 /** Tailwind classes per state; used consistently in badges, grids and legends. */
 export const MASTERY_TONE: Record<MasteryState, string> = {
   not_started: "bg-sunken text-muted",

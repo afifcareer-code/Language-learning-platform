@@ -1,0 +1,93 @@
+{
+  "appName": "Language Learning Platform",
+  "nav": {
+    "dashboard": "Beranda",
+    "learn": "Belajar",
+    "practice": "Latihan",
+    "review": "Review",
+    "progress": "Progres",
+    "settings": "Pengaturan"
+  },
+  "actions": {
+    "continue": "Lanjutkan",
+    "start": "Mulai",
+    "next": "Berikutnya",
+    "check": "Periksa",
+    "done": "Selesai",
+    "practiceAgain": "Latihan lagi",
+    "tryAgain": "Coba lagi",
+    "details": "Detail",
+    "save": "Simpan",
+    "backToDashboard": "Kembali ke beranda"
+  },
+  "mastery": {
+    "not_started": "Belum dimulai",
+    "learning": "Belajar",
+    "practicing": "Berlatih",
+    "proficient": "Mahir",
+    "mastered": "Dikuasai",
+    "needs_review": "Perlu diulang"
+  },
+  "activityStatus": {
+    "not_started": "Belum dimulai",
+    "in_progress": "Sedang berjalan",
+    "completed": "Selesai dikerjakan",
+    "outcome_achieved": "Tujuan tercapai"
+  },
+  "activityTypes": {
+    "recognition": "Kenali",
+    "recall": "Ingat",
+    "multiple_choice": "Pilihan ganda",
+    "matching": "Pasangkan",
+    "writing": "Tulis",
+    "listening": "Dengarkan",
+    "reading": "Baca",
+    "translation": "Terjemahkan",
+    "sentence_building": "Susun kalimat",
+    "grammar_application": "Terapkan tata bahasa",
+    "speaking": "Ucapkan",
+    "shadowing": "Shadowing",
+    "production": "Hasilkan"
+  },
+  "stages": {
+    "recognition": "Mengenali",
+    "understanding": "Memahami",
+    "recall": "Mengingat",
+    "production": "Menghasilkan",
+    "automaticity": "Otomatis",
+    "retention": "Retensi"
+  },
+  "criteria": {
+    "recognition": "Mengenali item",
+    "sound_recall": "Mengingat bunyinya",
+    "meaning_recall": "Mengingat maknanya",
+    "recall": "Dikerjakan dari ingatan",
+    "production": "Menghasilkan secara mandiri",
+    "contextual_usage": "Menggunakan dalam konteks",
+    "stroke_count": "Jumlah goresan benar",
+    "stroke_order": "Urutan goresan benar",
+    "shape_accuracy": "Bentuk akurat",
+    "proportion": "Proporsi benar",
+    "position": "Posisi benar",
+    "consistency": "Konsisten di setiap percobaan",
+    "audio_recognition": "Mengenali saat didengar",
+    "word_identification": "Mengidentifikasi kata",
+    "pattern_recognition": "Mengenali pola",
+    "application": "Menerapkan pola",
+    "sentence_accuracy": "Menyusun kalimat dengan tepat"
+  },
+  "units": {
+    "items": { "other": "{count} item" },
+    "characters": { "other": "{count} karakter" },
+    "attempts": { "other": "{count} percobaan" }
+  },
+  "error": {
+    "title": "Terjadi kesalahan",
+    "setupHint": "Jika ini instalasi baru, periksa pengaturan database dan log server. Di lokal, jalankan npm run db:setup lalu muat ulang.",
+    "reference": "Referensi kesalahan: {digest}"
+  },
+  "notFound": {
+    "title": "Halaman tidak ditemukan",
+    "body": "Halaman yang Anda cari tidak ada."
+  }
+}

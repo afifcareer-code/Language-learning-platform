@@ -1,12 +1,14 @@
 import { ButtonLink } from "@/components/ui/button";
+import { getI18n } from "@/localization/server";
 
-export default function NotFound() {
+export default async function NotFound() {
+  const { t } = await getI18n();
   return (
     <div className="mx-auto max-w-xl py-16">
-      <h1 className="text-2xl font-semibold">Page not found</h1>
-      <p className="mt-2 text-muted">The page you are looking for does not exist.</p>
+      <h1 className="text-2xl font-semibold">{t("common.notFound.title")}</h1>
+      <p className="mt-2 text-muted">{t("common.notFound.body")}</p>
       <ButtonLink href="/" className="mt-6">
-        Back to today
+        {t("common.actions.backToDashboard")}
       </ButtonLink>
     </div>
   );

@@ -29,6 +29,10 @@ Every feature should either generate evidence of these abilities or use that evi
 
 The project starts as a personal tool for a learner studying Japanese, built in public. It is designed so that other learners can self-host it, and so that contributors can extend it with new content and, eventually, new languages.
 
+## Languages
+
+The **learning language** (Japanese for now) is separate from the **platform language** (the interface: Bahasa Indonesia or English). Learners use the platform in their own language while studying another. Learning content, such as objectives and instructions, is localized too.
+
 ## Scope
 
 Japanese is the first and currently only supported language. The architecture is **Japanese-first but language-agnostic**: the learning engine knows nothing about Japanese, so other languages can be added later without rewriting it. We will not add other languages until the Japanese experience is solid.

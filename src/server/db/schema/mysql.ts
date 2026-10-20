@@ -38,6 +38,8 @@ export const learners = mysqlTable("learners", {
   targetLanguage: str("target_language")
     .notNull()
     .references(() => languages.code),
+  /** Preferred platform (UI) locale; null means "use the browser's language". */
+  uiLocale: str("ui_locale"),
   createdAt: createdAt(),
 });
 
@@ -63,16 +65,57 @@ export const contentItems = mysqlTable(
   ],
 );
 
-export const courses = mysqlTable("courses", {
+/*
+ * Curriculum: Language → Level → Course → Lesson → Activity.
+ * Localized text lives in *_translations tables keyed by (entity, locale),
+ * so adding a locale never changes the schema.
+ */
+
+/** A proficiency band within a language, e.g. a foundation level or a framework level. */
+export const levels = mysqlTable("levels", {
   id: str("id").primaryKey(),
   languageCode: str("language_code")
     .notNull()
     .references(() => languages.code),
   slug: str("slug").notNull().unique(),
-  title: str("title").notNull(),
-  description: text("description").notNull(),
+  sortOrder: int("sort_order").notNull(),
+});
+
+export const levelTranslations = mysqlTable(
+  "level_translations",
+  {
+    levelId: str("level_id")
+      .notNull()
+      .references(() => levels.id, { onDelete: "cascade" }),
+    locale: str("locale").notNull(),
+    title: str("title").notNull(),
+    description: text("description"),
+  },
+  (t) => [primaryKey({ columns: [t.levelId, t.locale] })],
+);
+
+export const courses = mysqlTable("courses", {
+  id: str("id").primaryKey(),
+  languageCode: str("language_code")
+    .notNull()
+    .references(() => languages.code),
+  levelId: str("level_id").references(() => levels.id),
+  slug: str("slug").notNull().unique(),
   sortOrder: int("sort_order").notNull().default(0),
 });
+
+export const courseTranslations = mysqlTable(
+  "course_translations",
+  {
+    courseId: str("course_id")
+      .notNull()
+      .references(() => courses.id, { onDelete: "cascade" }),
+    locale: str("locale").notNull(),
+    title: str("title").notNull(),
+    description: text("description"),
+  },
+  (t) => [primaryKey({ columns: [t.courseId, t.locale] })],
+);
 
 export const lessons = mysqlTable("lessons", {
   id: str("id").primaryKey(),
@@ -80,9 +123,21 @@ export const lessons = mysqlTable("lessons", {
     .notNull()
     .references(() => courses.id, { onDelete: "cascade" }),
   slug: str("slug").notNull().unique(),
-  title: str("title").notNull(),
   sortOrder: int("sort_order").notNull(),
 });
+
+export const lessonTranslations = mysqlTable(
+  "lesson_translations",
+  {
+    lessonId: str("lesson_id")
+      .notNull()
+      .references(() => lessons.id, { onDelete: "cascade" }),
+    locale: str("locale").notNull(),
+    title: str("title").notNull(),
+    description: text("description"),
+  },
+  (t) => [primaryKey({ columns: [t.lessonId, t.locale] })],
+);
 
 export const lessonItems = mysqlTable(
   "lesson_items",
@@ -96,6 +151,56 @@ export const lessonItems = mysqlTable(
     sortOrder: int("sort_order").notNull(),
   },
   (t) => [primaryKey({ columns: [t.lessonId, t.contentItemId] })],
+);
+
+/** A measurable learning action: objective, skill, content and evaluation. */
+export const activities = mysqlTable(
+  "activities",
+  {
+    id: str("id").primaryKey(),
+    languageCode: str("language_code")
+      .notNull()
+      .references(() => languages.code),
+    lessonId: str("lesson_id").references(() => lessons.id, { onDelete: "cascade" }),
+    type: str("type").notNull(),
+    skill: str("skill").notNull(),
+    difficulty: int("difficulty").notNull(),
+    evaluation: str("evaluation").notNull(),
+    successCriteria: json("success_criteria").$type<string[]>().notNull(),
+    passScore: double("pass_score").notNull(),
+    targetMastery: str("target_mastery").notNull(),
+    sortOrder: int("sort_order").notNull(),
+  },
+  (t) => [index("activities_lesson").on(t.lessonId)],
+);
+
+export const activityItems = mysqlTable(
+  "activity_items",
+  {
+    activityId: str("activity_id")
+      .notNull()
+      .references(() => activities.id, { onDelete: "cascade" }),
+    contentItemId: str("content_item_id")
+      .notNull()
+      .references(() => contentItems.id),
+    sortOrder: int("sort_order").notNull(),
+  },
+  (t) => [primaryKey({ columns: [t.activityId, t.contentItemId] })],
+);
+
+export const activityTranslations = mysqlTable(
+  "activity_translations",
+  {
+    activityId: str("activity_id")
+      .notNull()
+      .references(() => activities.id, { onDelete: "cascade" }),
+    locale: str("locale").notNull(),
+    title: str("title").notNull(),
+    objective: text("objective").notNull(),
+    instruction: text("instruction").notNull(),
+    explanation: text("explanation").notNull(),
+  },
+  (t) => [primaryKey({ columns: [t.activityId, t.locale] })],
 );
 
 export const learningSessions = mysqlTable("learning_sessions", {
@@ -122,6 +227,7 @@ export const learningAttempts = mysqlTable(
     skill: str("skill").notNull(),
     mode: str("mode").notNull(),
     sessionId: str("session_id").references(() => learningSessions.id),
+    activityId: str("activity_id").references(() => activities.id, { onDelete: "set null" }),
     correct: boolean("correct").notNull(),
     score: double("score").notNull(),
     /** What the learner answered, for error-pattern analysis. */
@@ -188,6 +294,27 @@ export const reviewSchedule = mysqlTable(
     primaryKey({ columns: [t.learnerId, t.contentItemId, t.skill] }),
     index("review_learner_due").on(t.learnerId, t.dueAt),
   ],
+);
+
+/** Two items a learner keeps mixing up, with remediation state. Stored with itemA < itemB. */
+export const confusionPairs = mysqlTable(
+  "confusion_pairs",
+  {
+    learnerId: str("learner_id")
+      .notNull()
+      .references(() => learners.id),
+    itemA: str("item_a")
+      .notNull()
+      .references(() => contentItems.id),
+    itemB: str("item_b")
+      .notNull()
+      .references(() => contentItems.id),
+    errorCount: int("error_count").notNull(),
+    correctSinceError: int("correct_since_error").notNull(),
+    lastSeenAt: timestamp("last_seen_at").notNull(),
+    status: str("status").notNull(),
+  },
+  (t) => [primaryKey({ columns: [t.learnerId, t.itemA, t.itemB] })],
 );
 
 export const assessments = mysqlTable("assessments", {

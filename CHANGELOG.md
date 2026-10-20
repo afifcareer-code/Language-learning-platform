@@ -5,8 +5,21 @@ The format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/), and
 
 ## [Unreleased]
 
+### Changed
+
+- Database migrations `0001` and `0002` move curriculum titles into translation tables. Existing databases upgrade automatically on startup.
+- Practice routes are now `/activities/<id>` and `/practice/session`, replacing `/practice/reading` and `/practice/writing`.
+
 ### Added
 
+- Activity system: activities with type, skill, difficulty, evaluation strategy, reusable success criteria, pass score and target mastery; measurable, localized objectives, instructions and explanations; a learning outcome at the end of every session.
+- Learning loop per lesson, generated from data templates: recognize (multiple choice) → recall (typed) → write (handwriting). New `ja.kana.recognition` skill.
+- Localization: Bahasa Indonesia and English interface (`locales/`), locale chosen from the learner's setting, the browser, or `DEFAULT_LOCALE`; a Settings page; content translations in `*_translations` tables; module-owned messages.
+- Curriculum levels (Foundation) above courses.
+- Three separate progress measures on the dashboard: course progress, skill mastery and learning readiness.
+- Confusion pairs: detected from answers, recommended for targeted practice, resolved after correct answers; curated commonly confused kana used as distractors.
+- Explainable recommendations with reason codes.
+- Design-system components: `ProgressRing`, `LearningProgress`, `MasteryCard`, `ActivityCard`, `PracticePrompt`, `ReviewCard`, `HandwritingCanvas`.
 - Project foundation: Next.js App Router, TypeScript, Tailwind CSS, Drizzle ORM, Vitest and Playwright.
 - Database support for MySQL/MariaDB, PostgreSQL and SQLite (libSQL), detected automatically from `DATABASE_URL`, hosting-panel `DB_*` variables (cPanel, Plesk, aaPanel) or platform variables (`MYSQL_URL`, `POSTGRES_URL`, `PG*`, …).
 - Automatic migrations and content seeding on server start (`AUTO_MIGRATE`, `AUTO_SEED`), serialised with a database lock across processes.

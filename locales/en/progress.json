@@ -1,0 +1,25 @@
+{
+  "title": "Progress",
+  "description": "Mastery is tracked per item and per skill, based on recall over time, not on lessons completed.",
+  "history": "Learning history",
+  "noAttempts": "No attempts yet.",
+  "correct": "Correct",
+  "missed": "Missed",
+  "modes": {
+    "learn": "Learn",
+    "practice": "Practice",
+    "review": "Review",
+    "assessment": "Assessment"
+  },
+  "confusion": {
+    "title": "Commonly confused",
+    "empty": "No confusions detected yet. When you mix up two items, they appear here.",
+    "errors": { "one": "{count} mix-up", "other": "{count} mix-ups" },
+    "status": {
+      "open": "Needs practice",
+      "improving": "Improving",
+      "resolved": "Resolved"
+    },
+    "practice": "Practice"
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "title": "Welcome back, {name}",
+  "learning": "Learning {language}",
+  "metrics": {
+    "courseProgress": "Course progress",
+    "courseProgressDetail": "{completed} of {total} activities worked through",
+    "skillMastery": "Skill mastery",
+    "skillMasteryDetail": "{demonstrated} of {total} characters proficient or better, across all skills",
+    "readiness": "Learning readiness",
+    "readinessReady": "Ready to move on from {lesson}",
+    "readinessNotReady": "{lesson}: {ready} of {total} at Practicing or better ({threshold} needed)",
+    "explainer": "Progress shows what you have worked through. Mastery shows what you can reliably recall over time. Readiness shows whether you are ready for the next lesson."
+  },
+  "continue": {
+    "title": "Continue learning",
+    "objective": "Objective",
+    "noContent": "No curriculum found. Check the server log for database errors."
+  },
+  "recommendations": {
+    "title": "Recommended next",
+    "allCaughtUp": "You are all caught up.",
+    "review": { "one": "Review {count} item · {skill}", "other": "Review {count} items · {skill}" },
+    "practice": {
+      "one": "Practice {count} recent mistake · {skill}",
+      "other": "Practice {count} recent mistakes · {skill}"
+    },
+    "confusion": "Tell {a} and {b} apart",
+    "reasons": {
+      "due_for_review": "Due now, practice it before it fades from memory",
+      "recent_mistakes": "You missed these recently; fix them while they are fresh",
+      "confused_pair": "You have mixed these up {count} times",
+      "next_in_curriculum": "Next in your curriculum"
+    }
+  },
+  "week": {
+    "title": "Last 7 days",
+    "attempts": "Attempts",
+    "accuracy": "Accuracy"
+  },
+  "masteryBySkill": "Mastery by skill"
+}

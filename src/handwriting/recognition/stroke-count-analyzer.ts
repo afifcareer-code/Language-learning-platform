@@ -8,16 +8,12 @@ export class StrokeCountAnalyzer implements HandwritingAnalyzer {
   analyze(sample: WritingSample, target: WritingTarget): WritingAnalysis {
     if (!target.strokeCounts?.length) return { checks: [] };
     const drawn = sample.strokes.length;
-    const passed = target.strokeCounts.includes(drawn);
-    const expected = target.strokeCounts.join(" or ");
     return {
       checks: [
         {
           id: STROKE_COUNT_CHECK,
-          passed,
-          detail: passed
-            ? `${drawn} strokes`
-            : `${drawn} stroke${drawn === 1 ? "" : "s"} drawn, expected ${expected}`,
+          passed: target.strokeCounts.includes(drawn),
+          values: { count: drawn, expected: [...target.strokeCounts] },
         },
       ],
     };

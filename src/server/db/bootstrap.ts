@@ -32,7 +32,9 @@ export async function prepareDatabase(db: Database = getDb(), options: PrepareOp
     if (seed) {
       const result = await seedJapanese(db, options.dataDir ?? join(process.cwd(), "data"));
       await ensureLocalLearner(db, env.DEFAULT_LEARNER_NAME);
-      log(`Content loaded: ${result.items} items, ${result.lessons} lessons`);
+      log(
+        `Content loaded: ${result.items} items, ${result.lessons} lessons, ${result.activities} activities`,
+      );
     }
   });
 }

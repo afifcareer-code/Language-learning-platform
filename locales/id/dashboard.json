@@ -1,0 +1,38 @@
+{
+  "title": "Selamat datang kembali, {name}",
+  "learning": "Belajar {language}",
+  "metrics": {
+    "courseProgress": "Progres kursus",
+    "courseProgressDetail": "{completed} dari {total} aktivitas sudah dikerjakan",
+    "skillMastery": "Penguasaan keterampilan",
+    "skillMasteryDetail": "{demonstrated} dari {total} karakter sudah Mahir atau lebih, di semua keterampilan",
+    "readiness": "Kesiapan belajar",
+    "readinessReady": "Siap melanjutkan dari {lesson}",
+    "readinessNotReady": "{lesson}: {ready} dari {total} sudah Berlatih atau lebih (perlu {threshold})",
+    "explainer": "Progres menunjukkan apa yang sudah Anda kerjakan. Penguasaan menunjukkan apa yang bisa Anda ingat dengan andal dari waktu ke waktu. Kesiapan menunjukkan apakah Anda siap untuk pelajaran berikutnya."
+  },
+  "continue": {
+    "title": "Lanjutkan belajar",
+    "objective": "Tujuan",
+    "noContent": "Kurikulum tidak ditemukan. Periksa log server untuk kesalahan database."
+  },
+  "recommendations": {
+    "title": "Rekomendasi berikutnya",
+    "allCaughtUp": "Semua sudah beres.",
+    "review": { "other": "Review {count} item · {skill}" },
+    "practice": { "other": "Latih {count} kesalahan terbaru · {skill}" },
+    "confusion": "Bedakan {a} dan {b}",
+    "reasons": {
+      "due_for_review": "Sudah waktunya diulang, latih sebelum terlupa",
+      "recent_mistakes": "Baru saja salah; perbaiki selagi masih segar",
+      "confused_pair": "Anda sudah {count} kali tertukar",
+      "next_in_curriculum": "Berikutnya dalam kurikulum Anda"
+    }
+  },
+  "week": {
+    "title": "7 hari terakhir",
+    "attempts": "Percobaan",
+    "accuracy": "Akurasi"
+  },
+  "masteryBySkill": "Penguasaan per keterampilan"
+}

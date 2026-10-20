@@ -1,14 +1,17 @@
-import { JA_SKILLS } from "@/languages/japanese/skills";
+/** URLs for practice sessions. */
 
-/** Practice URL for a skill. Each skill maps to the exercise that measures it. */
-export function practiceHref(
-  skill: string,
-  params: { lesson?: string; mode?: "review"; focus?: "weak" } = {},
-): string {
-  const path = skill === JA_SKILLS.kanaWriting ? "/practice/writing" : "/practice/reading";
-  const query = new URLSearchParams(
-    Object.entries(params).filter((e): e is [string, string] => Boolean(e[1])),
-  );
-  const qs = query.toString();
-  return qs ? `${path}?${qs}` : path;
+export function activityHref(activityId: string): string {
+  return `/activities/${encodeURIComponent(activityId)}`;
+}
+
+export function reviewHref(skill: string): string {
+  return `/practice/session?${new URLSearchParams({ kind: "review", skill })}`;
+}
+
+export function weakItemsHref(skill: string): string {
+  return `/practice/session?${new URLSearchParams({ kind: "weak", skill })}`;
+}
+
+export function confusionHref(itemA: string, itemB: string): string {
+  return `/practice/session?${new URLSearchParams({ kind: "confusion", a: itemA, b: itemB })}`;
 }

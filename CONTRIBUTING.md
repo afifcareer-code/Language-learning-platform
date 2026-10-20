@@ -29,6 +29,8 @@ By participating you agree to follow the [Code of Conduct](CODE_OF_CONDUCT.md).
 ## Guidelines
 
 - **Keep the core language-agnostic.** Code in `src/core` must not import from `src/languages`, `src/server` or any UI code, and must not mention language-specific concepts. A lint rule and `tests/unit/architecture.test.ts` enforce this.
+- **Never hard-code user-facing text.** Add it to `locales/en/*.json` **and** `locales/id/*.json` (tests fail if a key is missing in either). Japanese-specific text such as skill labels goes in `src/languages/japanese/locales/`. See [Localization](docs/architecture/localization.md).
+- **Every activity needs a measurable objective** and must be tied to a lesson, a skill, its evaluation and mastery. See [Activity system](docs/architecture/activity-system.md).
 - **Content is data.** Add or fix Japanese content in `data/japanese/`, never inside components. Run `npm run content:validate` afterwards.
 - **Measure learning, not activity.** Features should be grounded in evidence of recall and retention. Avoid metrics based on time spent or lessons clicked.
 - **Do not expose unfinished features** in the UI. Hide them until they work.

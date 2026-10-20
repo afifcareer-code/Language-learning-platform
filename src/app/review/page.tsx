@@ -1,52 +1,48 @@
 import type { Metadata } from "next";
-import { ButtonLink } from "@/components/ui/button";
-import { Card } from "@/components/ui/card";
+import { ReviewCard } from "@/components/learning/review-card";
 import { EmptyState } from "@/components/ui/empty-state";
 import { PageHeader } from "@/components/ui/page-header";
-import { toKanaViews } from "@/features/kana/kana-view";
-import { practiceHref } from "@/features/practice/routes";
+import { itemDisplay } from "@/features/kana/kana-view";
+import { reviewHref } from "@/features/practice/routes";
 import { getLanguageModule } from "@/languages/registry";
+import { skillLabel } from "@/localization/labels";
+import { getI18n } from "@/localization/server";
 import { getContext } from "@/server/context";
 import { getContentItems } from "@/server/repositories/content";
 import { getDueReviews } from "@/server/repositories/progress";
-import { pluralize } from "@/shared/format";
 
-export const metadata: Metadata = { title: "Review" };
+export async function generateMetadata(): Promise<Metadata> {
+  const { t } = await getI18n();
+  return { title: t("review.title") };
+}
 
 export default async function ReviewPage() {
   const { db, learner } = await getContext();
+  const { t } = await getI18n();
   const due = await getDueReviews(db, learner.id);
   const items = await getContentItems(db, [...new Set(due.map((d) => d.contentItemId))]);
-  const kanaById = new Map(toKanaViews(items).map((k) => [k.id, k]));
+  const display = new Map(items.map((i) => [i.id, itemDisplay(i)]));
   const skills = getLanguageModule(learner.targetLanguage).skills;
 
   return (
     <>
-      <PageHeader
-        title="Review"
-        description="Items come back for review just before you are likely to forget them. Reviewing on time is what moves them toward mastery."
-      />
+      <PageHeader title={t("review.title")} description={t("review.description")} />
       {due.length === 0 ? (
-        <EmptyState title="Nothing due right now">
-          Practise new items and they will be scheduled here.
-        </EmptyState>
+        <EmptyState title={t("review.nothingDue")}>{t("review.nothingDueHint")}</EmptyState>
       ) : (
-        <div className="grid gap-4 md:grid-cols-2 md:gap-6">
+        <div className="grid gap-4 md:grid-cols-3 md:gap-6">
           {skills.map((skill) => {
             const forSkill = due.filter((d) => d.skill === skill.id);
             return (
-              <Card key={skill.id} className="flex flex-col">
-                <h2 className="text-xl font-semibold">{skill.label}</h2>
-                <p className="mt-1 text-muted">{pluralize(forSkill.length, "item")} due</p>
-                <p lang="ja" className="mt-4 flex-1 font-jp text-2xl tracking-widest break-all">
-                  {forSkill.map((d) => kanaById.get(d.contentItemId)?.kana).join(" ")}
-                </p>
-                {forSkill.length > 0 && (
-                  <ButtonLink href={practiceHref(skill.id, { mode: "review" })} className="mt-6">
-                    Start review
-                  </ButtonLink>
-                )}
-              </Card>
+              <ReviewCard
+                key={skill.id}
+                title={skillLabel(t, skill.id)}
+                countLabel={t("review.due", { count: forSkill.length })}
+                preview={forSkill.map((d) => display.get(d.contentItemId) ?? "")}
+                previewLang={learner.targetLanguage}
+                href={forSkill.length ? reviewHref(skill.id) : undefined}
+                startLabel={t("review.start")}
+              />
             );
           })}
         </div>

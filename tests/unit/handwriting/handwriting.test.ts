@@ -55,9 +55,13 @@ describe("stroke features", () => {
 describe("StrokeCountAnalyzer", () => {
   const analyzer = new StrokeCountAnalyzer();
 
-  it("passes accepted stroke counts, including variants", () => {
+  it("passes accepted stroke counts, including variants, and reports values for feedback", () => {
     expect(analyzer.analyze(sample(3), { text: "き", strokeCounts: [4, 3] }).checks[0]?.passed).toBe(true);
-    expect(analyzer.analyze(sample(2), { text: "き", strokeCounts: [4, 3] }).checks[0]?.passed).toBe(false);
+    expect(analyzer.analyze(sample(2), { text: "き", strokeCounts: [4, 3] }).checks[0]).toEqual({
+      id: "stroke-count",
+      passed: false,
+      values: { count: 2, expected: [4, 3] },
+    });
   });
 
   it("makes no claim when the stroke count is unknown", () => {
@@ -66,8 +70,8 @@ describe("StrokeCountAnalyzer", () => {
 });
 
 describe("scoreWriting", () => {
-  const pass = { checks: [{ id: "x", passed: true, detail: "" }] };
-  const fail = { checks: [{ id: "x", passed: false, detail: "" }] };
+  const pass = { checks: [{ id: "x", passed: true, values: {} }] };
+  const fail = { checks: [{ id: "x", passed: false, values: {} }] };
 
   it("uses self-assessment when automatic checks pass", () => {
     expect(scoreWriting(pass, "correct")).toEqual({ correct: true, score: 1 });

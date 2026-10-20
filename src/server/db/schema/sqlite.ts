@@ -28,6 +28,8 @@ export const learners = sqliteTable("learners", {
   targetLanguage: text("target_language")
     .notNull()
     .references(() => languages.code),
+  /** Preferred platform (UI) locale; null means "use the browser's language". */
+  uiLocale: text("ui_locale"),
   createdAt: createdAt(),
 });
 
@@ -53,16 +55,57 @@ export const contentItems = sqliteTable(
   ],
 );
 
-export const courses = sqliteTable("courses", {
+/*
+ * Curriculum: Language → Level → Course → Lesson → Activity.
+ * Localized text lives in *_translations tables keyed by (entity, locale),
+ * so adding a locale never changes the schema.
+ */
+
+/** A proficiency band within a language, e.g. a foundation level or a framework level. */
+export const levels = sqliteTable("levels", {
   id: text("id").primaryKey(),
   languageCode: text("language_code")
     .notNull()
     .references(() => languages.code),
   slug: text("slug").notNull().unique(),
-  title: text("title").notNull(),
-  description: text("description").notNull(),
+  sortOrder: integer("sort_order").notNull(),
+});
+
+export const levelTranslations = sqliteTable(
+  "level_translations",
+  {
+    levelId: text("level_id")
+      .notNull()
+      .references(() => levels.id, { onDelete: "cascade" }),
+    locale: text("locale").notNull(),
+    title: text("title").notNull(),
+    description: text("description"),
+  },
+  (t) => [primaryKey({ columns: [t.levelId, t.locale] })],
+);
+
+export const courses = sqliteTable("courses", {
+  id: text("id").primaryKey(),
+  languageCode: text("language_code")
+    .notNull()
+    .references(() => languages.code),
+  levelId: text("level_id").references(() => levels.id),
+  slug: text("slug").notNull().unique(),
   sortOrder: integer("sort_order").notNull().default(0),
 });
+
+export const courseTranslations = sqliteTable(
+  "course_translations",
+  {
+    courseId: text("course_id")
+      .notNull()
+      .references(() => courses.id, { onDelete: "cascade" }),
+    locale: text("locale").notNull(),
+    title: text("title").notNull(),
+    description: text("description"),
+  },
+  (t) => [primaryKey({ columns: [t.courseId, t.locale] })],
+);
 
 export const lessons = sqliteTable("lessons", {
   id: text("id").primaryKey(),
@@ -70,9 +113,21 @@ export const lessons = sqliteTable("lessons", {
     .notNull()
     .references(() => courses.id, { onDelete: "cascade" }),
   slug: text("slug").notNull().unique(),
-  title: text("title").notNull(),
   sortOrder: integer("sort_order").notNull(),
 });
+
+export const lessonTranslations = sqliteTable(
+  "lesson_translations",
+  {
+    lessonId: text("lesson_id")
+      .notNull()
+      .references(() => lessons.id, { onDelete: "cascade" }),
+    locale: text("locale").notNull(),
+    title: text("title").notNull(),
+    description: text("description"),
+  },
+  (t) => [primaryKey({ columns: [t.lessonId, t.locale] })],
+);
 
 export const lessonItems = sqliteTable(
   "lesson_items",
@@ -86,6 +141,56 @@ export const lessonItems = sqliteTable(
     sortOrder: integer("sort_order").notNull(),
   },
   (t) => [primaryKey({ columns: [t.lessonId, t.contentItemId] })],
+);
+
+/** A measurable learning action: objective, skill, content and evaluation. */
+export const activities = sqliteTable(
+  "activities",
+  {
+    id: text("id").primaryKey(),
+    languageCode: text("language_code")
+      .notNull()
+      .references(() => languages.code),
+    lessonId: text("lesson_id").references(() => lessons.id, { onDelete: "cascade" }),
+    type: text("type").notNull(),
+    skill: text("skill").notNull(),
+    difficulty: integer("difficulty").notNull(),
+    evaluation: text("evaluation").notNull(),
+    successCriteria: text("success_criteria", { mode: "json" }).$type<string[]>().notNull(),
+    passScore: real("pass_score").notNull(),
+    targetMastery: text("target_mastery").notNull(),
+    sortOrder: integer("sort_order").notNull(),
+  },
+  (t) => [index("activities_lesson").on(t.lessonId)],
+);
+
+export const activityItems = sqliteTable(
+  "activity_items",
+  {
+    activityId: text("activity_id")
+      .notNull()
+      .references(() => activities.id, { onDelete: "cascade" }),
+    contentItemId: text("content_item_id")
+      .notNull()
+      .references(() => contentItems.id),
+    sortOrder: integer("sort_order").notNull(),
+  },
+  (t) => [primaryKey({ columns: [t.activityId, t.contentItemId] })],
+);
+
+export const activityTranslations = sqliteTable(
+  "activity_translations",
+  {
+    activityId: text("activity_id")
+      .notNull()
+      .references(() => activities.id, { onDelete: "cascade" }),
+    locale: text("locale").notNull(),
+    title: text("title").notNull(),
+    objective: text("objective").notNull(),
+    instruction: text("instruction").notNull(),
+    explanation: text("explanation").notNull(),
+  },
+  (t) => [primaryKey({ columns: [t.activityId, t.locale] })],
 );
 
 export const learningSessions = sqliteTable("learning_sessions", {
@@ -112,6 +217,7 @@ export const learningAttempts = sqliteTable(
     skill: text("skill").notNull(),
     mode: text("mode").notNull(),
     sessionId: text("session_id").references(() => learningSessions.id),
+    activityId: text("activity_id").references(() => activities.id, { onDelete: "set null" }),
     correct: integer("correct", { mode: "boolean" }).notNull(),
     score: real("score").notNull(),
     /** What the learner answered, for error-pattern analysis. */
@@ -178,6 +284,27 @@ export const reviewSchedule = sqliteTable(
     primaryKey({ columns: [t.learnerId, t.contentItemId, t.skill] }),
     index("review_learner_due").on(t.learnerId, t.dueAt),
   ],
+);
+
+/** Two items a learner keeps mixing up, with remediation state. Stored with itemA < itemB. */
+export const confusionPairs = sqliteTable(
+  "confusion_pairs",
+  {
+    learnerId: text("learner_id")
+      .notNull()
+      .references(() => learners.id),
+    itemA: text("item_a")
+      .notNull()
+      .references(() => contentItems.id),
+    itemB: text("item_b")
+      .notNull()
+      .references(() => contentItems.id),
+    errorCount: integer("error_count").notNull(),
+    correctSinceError: integer("correct_since_error").notNull(),
+    lastSeenAt: timestamp("last_seen_at").notNull(),
+    status: text("status").notNull(),
+  },
+  (t) => [primaryKey({ columns: [t.learnerId, t.itemA, t.itemB] })],
 );
 
 export const assessments = sqliteTable("assessments", {

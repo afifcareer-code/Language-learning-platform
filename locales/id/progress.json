@@ -1,0 +1,25 @@
+{
+  "title": "Progres",
+  "description": "Penguasaan dilacak per item dan per keterampilan, berdasarkan kemampuan mengingat dari waktu ke waktu, bukan jumlah pelajaran yang selesai.",
+  "history": "Riwayat belajar",
+  "noAttempts": "Belum ada percobaan.",
+  "correct": "Benar",
+  "missed": "Salah",
+  "modes": {
+    "learn": "Belajar",
+    "practice": "Latihan",
+    "review": "Review",
+    "assessment": "Penilaian"
+  },
+  "confusion": {
+    "title": "Sering tertukar",
+    "empty": "Belum ada yang tertukar. Jika Anda mencampuradukkan dua item, keduanya akan muncul di sini.",
+    "errors": { "other": "{count} kali tertukar" },
+    "status": {
+      "open": "Perlu latihan",
+      "improving": "Membaik",
+      "resolved": "Teratasi"
+    },
+    "practice": "Latih"
+  }
+}

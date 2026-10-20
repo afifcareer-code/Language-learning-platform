@@ -1,10 +1,17 @@
 import { randomUUID } from "node:crypto";
-import { and, eq } from "drizzle-orm";
+import { and, eq, ne, or } from "drizzle-orm";
+import {
+  pairKey,
+  recordConfusion,
+  recordPairSuccess,
+  type ConfusionPairState,
+  type RemediationStatus,
+} from "@/core/analytics";
 import type { AttemptMode, ContentItem, ResponseEvaluation, SkillId } from "@/core/learning";
 import { applyAttempt, type MasteryState } from "@/core/mastery";
 import { LeitnerScheduler, type ReviewScheduler, type ReviewState } from "@/core/review";
 import { getLanguageModule } from "@/languages/registry";
-import type { Database } from "../db/client";
+import type { Database, Transaction } from "../db/client";
 import { upsert } from "../db/dialect";
 import type { writingSamples } from "../db/schema/sqlite";
 import { toMasteryRecord, toReviewState } from "../repositories/progress";
@@ -18,12 +25,16 @@ export interface RecordAttemptInput {
   score: number;
   response?: string | null;
   responseMs?: number | null;
+  activityId?: string | null;
+  /** Another item the learner gave the answer for, e.g. a similar-looking character. */
+  confusedWithItemId?: string | null;
   writingSample?: Omit<typeof writingSamples.$inferInsert, "attemptId">;
   at?: Date;
 }
 
 export interface RecordAttemptResult {
   attemptId: string;
+  previousMasteryState: MasteryState;
   masteryState: MasteryState;
   review: ReviewState;
 }
@@ -66,6 +77,7 @@ export async function recordAttempt(
       score: input.score,
       response: input.response ?? null,
       responseMs: input.responseMs ?? null,
+      activityId: input.activityId ?? null,
       createdAt: at,
     });
     if (input.writingSample) {
@@ -86,7 +98,8 @@ export async function recordAttempt(
     );
 
     const [masteryRow] = await tx.select().from(mastery).where(where(mastery)).limit(1);
-    const next = applyAttempt(toMasteryRecord(masteryRow), outcome, review);
+    const previous = toMasteryRecord(masteryRow);
+    const next = applyAttempt(previous, outcome, review);
     await upsert(
       db,
       tx,
@@ -98,6 +111,63 @@ export async function recordAttempt(
       },
     );
 
-    return { attemptId, masteryState: next.state, review };
+    await updateConfusionPairs(db, tx, input, at);
+
+    return { attemptId, previousMasteryState: previous.state, masteryState: next.state, review };
   });
+}
+
+/**
+ * A confusion strengthens the pair; a correct answer on either item counts
+ * toward resolving every open pair it belongs to.
+ */
+async function updateConfusionPairs(
+  db: Database,
+  tx: Transaction,
+  input: RecordAttemptInput,
+  at: Date,
+): Promise<void> {
+  const t = db.t.confusionPairs;
+  const toState = (row: typeof t.$inferSelect): ConfusionPairState => ({
+    ...row,
+    status: row.status as RemediationStatus,
+  });
+
+  if (!input.correct && input.confusedWithItemId && input.confusedWithItemId !== input.contentItemId) {
+    const [itemA, itemB] = pairKey(input.contentItemId, input.confusedWithItemId);
+    const [row] = await tx
+      .select()
+      .from(t)
+      .where(and(eq(t.learnerId, input.learnerId), eq(t.itemA, itemA), eq(t.itemB, itemB)))
+      .limit(1);
+    const next = recordConfusion(row ? toState(row) : null, itemA, itemB, at);
+    await upsert(
+      db,
+      tx,
+      t,
+      { learnerId: input.learnerId, ...next },
+      { target: [t.learnerId, t.itemA, t.itemB], set: next },
+    );
+    return;
+  }
+
+  if (input.correct) {
+    const rows = await tx
+      .select()
+      .from(t)
+      .where(
+        and(
+          eq(t.learnerId, input.learnerId),
+          ne(t.status, "resolved"),
+          or(eq(t.itemA, input.contentItemId), eq(t.itemB, input.contentItemId)),
+        ),
+      );
+    for (const row of rows) {
+      const next = recordPairSuccess(toState(row));
+      await tx
+        .update(t)
+        .set({ correctSinceError: next.correctSinceError, status: next.status })
+        .where(and(eq(t.learnerId, row.learnerId), eq(t.itemA, row.itemA), eq(t.itemB, row.itemB)));
+    }
+  }
 }

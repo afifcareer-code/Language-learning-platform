@@ -1,0 +1,93 @@
+{
+  "appName": "Language Learning Platform",
+  "nav": {
+    "dashboard": "Dashboard",
+    "learn": "Learn",
+    "practice": "Practice",
+    "review": "Review",
+    "progress": "Progress",
+    "settings": "Settings"
+  },
+  "actions": {
+    "continue": "Continue",
+    "start": "Start",
+    "next": "Next",
+    "check": "Check",
+    "done": "Done",
+    "practiceAgain": "Practice again",
+    "tryAgain": "Try again",
+    "details": "Details",
+    "save": "Save",
+    "backToDashboard": "Back to dashboard"
+  },
+  "mastery": {
+    "not_started": "Not started",
+    "learning": "Learning",
+    "practicing": "Practicing",
+    "proficient": "Proficient",
+    "mastered": "Mastered",
+    "needs_review": "Needs review"
+  },
+  "activityStatus": {
+    "not_started": "Not started",
+    "in_progress": "In progress",
+    "completed": "Completed",
+    "outcome_achieved": "Outcome achieved"
+  },
+  "activityTypes": {
+    "recognition": "Recognize",
+    "recall": "Recall",
+    "multiple_choice": "Multiple choice",
+    "matching": "Matching",
+    "writing": "Write",
+    "listening": "Listen",
+    "reading": "Read",
+    "translation": "Translate",
+    "sentence_building": "Build sentences",
+    "grammar_application": "Apply grammar",
+    "speaking": "Speak",
+    "shadowing": "Shadowing",
+    "production": "Produce"
+  },
+  "stages": {
+    "recognition": "Recognition",
+    "understanding": "Understanding",
+    "recall": "Recall",
+    "production": "Production",
+    "automaticity": "Automaticity",
+    "retention": "Retention"
+  },
+  "criteria": {
+    "recognition": "Recognizes the item",
+    "sound_recall": "Recalls the sound",
+    "meaning_recall": "Recalls the meaning",
+    "recall": "Works from memory",
+    "production": "Produces it independently",
+    "contextual_usage": "Uses it in context",
+    "stroke_count": "Correct number of strokes",
+    "stroke_order": "Correct stroke order",
+    "shape_accuracy": "Accurate shape",
+    "proportion": "Correct proportions",
+    "position": "Correct position",
+    "consistency": "Consistent across attempts",
+    "audio_recognition": "Recognizes it when heard",
+    "word_identification": "Identifies the word",
+    "pattern_recognition": "Recognizes the pattern",
+    "application": "Applies the pattern",
+    "sentence_accuracy": "Builds an accurate sentence"
+  },
+  "units": {
+    "items": { "one": "{count} item", "other": "{count} items" },
+    "characters": { "one": "{count} character", "other": "{count} characters" },
+    "attempts": { "one": "{count} attempt", "other": "{count} attempts" }
+  },
+  "error": {
+    "title": "Something went wrong",
+    "setupHint": "If this is a new installation, check the database settings and the server log. Locally, run npm run db:setup and reload.",
+    "reference": "Error reference: {digest}"
+  },
+  "notFound": {
+    "title": "Page not found",
+    "body": "The page you are looking for does not exist."
+  }
+}

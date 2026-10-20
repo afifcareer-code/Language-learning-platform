@@ -1,0 +1,15 @@
+{
+  "levels": [
+    {
+      "slug": "foundation",
+      "title": {
+        "en": "Foundation",
+        "id": "Dasar"
+      },
+      "description": {
+        "en": "The writing systems and sounds of Japanese, before JLPT N5.",
+        "id": "Sistem tulisan dan bunyi bahasa Jepang, sebelum JLPT N5."
+      }
+    }
+  ]
+}
