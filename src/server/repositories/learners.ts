@@ -1,6 +1,7 @@
 import { asc } from "drizzle-orm";
 import type { Database } from "../db/client";
-import { learners } from "../db/schema";
+import { insertIgnore } from "../db/dialect";
+import type { learners } from "../db/schema/sqlite";
 
 export type Learner = typeof learners.$inferSelect;
 
@@ -15,10 +16,13 @@ export async function ensureLocalLearner(
   displayName = "Learner",
   targetLanguage = "ja",
 ): Promise<Learner> {
-  await db
-    .insert(learners)
-    .values({ id: LOCAL_LEARNER_ID, displayName, targetLanguage })
-    .onConflictDoNothing();
-  const [learner] = await db.select().from(learners).orderBy(asc(learners.createdAt)).limit(1);
+  await insertIgnore(
+    db,
+    db,
+    db.t.learners,
+    { id: LOCAL_LEARNER_ID, displayName, targetLanguage },
+    db.t.learners.id,
+  );
+  const [learner] = await db.select().from(db.t.learners).orderBy(asc(db.t.learners.createdAt)).limit(1);
   return learner!;
 }

@@ -1,7 +1,7 @@
 {
   "version": "6",
   "dialect": "sqlite",
-  "id": "1a227503-a279-4f61-bc65-71d8afc6de07",
+  "id": "80d2c8c6-f515-4588-8173-c4bc7442fb25",
   "prevId": "00000000-0000-0000-0000-000000000000",
   "tables": {
     "assessment_attempts": {
@@ -28,13 +28,12 @@
           "notNull": true,
           "autoincrement": false
         },
-        "created_at": {
-          "name": "created_at",
+        "started_at": {
+          "name": "started_at",
           "type": "integer",
           "primaryKey": false,
           "notNull": true,
-          "autoincrement": false,
-          "default": "(unixepoch() * 1000)"
+          "autoincrement": false
         },
         "completed_at": {
           "name": "completed_at",
@@ -274,8 +273,7 @@
           "type": "text",
           "primaryKey": false,
           "notNull": true,
-          "autoincrement": false,
-          "default": "'[]'"
+          "autoincrement": false
         },
         "sort_order": {
           "name": "sort_order",
@@ -457,8 +455,7 @@
           "type": "integer",
           "primaryKey": false,
           "notNull": true,
-          "autoincrement": false,
-          "default": "(unixepoch() * 1000)"
+          "autoincrement": false
         }
       },
       "indexes": {},
@@ -559,8 +556,7 @@
           "type": "integer",
           "primaryKey": false,
           "notNull": true,
-          "autoincrement": false,
-          "default": "(unixepoch() * 1000)"
+          "autoincrement": false
         }
       },
       "indexes": {
@@ -651,13 +647,12 @@
           "notNull": true,
           "autoincrement": false
         },
-        "created_at": {
-          "name": "created_at",
+        "started_at": {
+          "name": "started_at",
           "type": "integer",
           "primaryKey": false,
           "notNull": true,
-          "autoincrement": false,
-          "default": "(unixepoch() * 1000)"
+          "autoincrement": false
         },
         "ended_at": {
           "name": "ended_at",

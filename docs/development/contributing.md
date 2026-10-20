@@ -24,15 +24,15 @@ Run them locally before pushing. Run `npm run test:e2e` as well when you change 
 
 ## Where things go
 
-| You are adding…                                | Put it in…                                                        |
-| ---------------------------------------------- | ----------------------------------------------------------------- |
-| A learning rule that applies to every language | `src/core/*`, with unit tests                                     |
-| Something Japanese-specific                    | `src/languages/japanese/*`                                        |
-| Content (characters, lessons)                  | `data/japanese/*`, then run `npm run content:validate`            |
-| A handwriting analyzer                         | `src/handwriting/recognition`, implementing `HandwritingAnalyzer` |
-| A database change                              | `src/server/db/schema.ts` and `npm run db:generate`               |
-| A page                                         | `src/app/<route>/page.tsx`, with feature UI in `src/features`     |
-| A reusable UI primitive                        | `src/components/ui`                                               |
+| You are adding…                                | Put it in…                                                             |
+| ---------------------------------------------- | ---------------------------------------------------------------------- |
+| A learning rule that applies to every language | `src/core/*`, with unit tests                                          |
+| Something Japanese-specific                    | `src/languages/japanese/*`                                             |
+| Content (characters, lessons)                  | `data/japanese/*`, then run `npm run content:validate`                 |
+| A handwriting analyzer                         | `src/handwriting/recognition`, implementing `HandwritingAnalyzer`      |
+| A database change                              | All three files in `src/server/db/schema/`, then `npm run db:generate` |
+| A page                                         | `src/app/<route>/page.tsx`, with feature UI in `src/features`          |
+| A reusable UI primitive                        | `src/components/ui`                                                    |
 
 ## UI guidelines
 

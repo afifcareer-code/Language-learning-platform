@@ -1,6 +1,6 @@
 # Data model
 
-The schema is defined in [`src/server/db/schema.ts`](../../src/server/db/schema.ts), and migrations are generated into [`database/migrations`](../../database/migrations). Every table is language-agnostic.
+The schema is defined once per database engine in [`src/server/db/schema/`](../../src/server/db/schema): `sqlite.ts` is the reference, while `mysql.ts` and `postgres.ts` mirror it with native types. Migrations are generated into [`database/migrations/<dialect>`](../../database/migrations). Every table is language-agnostic.
 
 ```
 languages ─┬─< learners
@@ -34,7 +34,8 @@ learners ─┬─< learning_sessions
 - **Attempts are immutable evidence.** `mastery` and `review_schedule` are projections that could be rebuilt from `learning_attempts`. This allows the mastery policy or scheduler to change later.
 - **Language-specific data in JSON.** `content_items.data` holds module-typed payloads (kana, romaji, stroke counts). The module validates the payload with Zod when seeding and narrows it with type guards when reading. A new language does not need a migration to add new content attributes.
 - **Skills are strings declared by modules** (`ja.kana.reading`), not database enums, so modules can add skills without schema changes.
-- **Timestamps** are stored as integer milliseconds.
+- **Timestamps** are UTC with millisecond precision: integer milliseconds on SQLite, `datetime(3)` on MySQL and `timestamptz(3)` on PostgreSQL.
+- **MySQL tables use `utf8mb4_bin`**, so any Japanese text is stored safely and keys compare exactly (for example, あ and ぁ stay distinct).
 
 ## Concepts not yet materialised
 

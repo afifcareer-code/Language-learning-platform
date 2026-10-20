@@ -1,15 +1,20 @@
-import { sql } from "drizzle-orm";
 import { index, integer, primaryKey, real, sqliteTable, text, uniqueIndex } from "drizzle-orm/sqlite-core";
 
 /**
- * Generic, language-agnostic schema. Language-specific attributes live in
- * `content_items.data` (JSON) and are typed by the owning language module.
+ * SQLite / libSQL schema. This is the reference schema: the MySQL and
+ * PostgreSQL schemas mirror it table for table and column for column
+ * (enforced by tests/unit/schema-parity.test.ts).
+ *
+ * Language-specific attributes live in `content_items.data` (JSON) and are
+ * typed by the owning language module. Defaults are applied by the app,
+ * not the database, so behaviour is identical on every dialect.
  */
 
-const createdAt = () =>
-  integer("created_at", { mode: "timestamp_ms" })
+const timestamp = (name: string) => integer(name, { mode: "timestamp_ms" });
+const createdAt = (name = "created_at") =>
+  timestamp(name)
     .notNull()
-    .default(sql`(unixepoch() * 1000)`);
+    .$defaultFn(() => new Date());
 
 export const languages = sqliteTable("languages", {
   code: text("code").primaryKey(),
@@ -35,8 +40,11 @@ export const contentItems = sqliteTable(
       .references(() => languages.code),
     type: text("type").notNull(),
     key: text("key").notNull(),
-    data: text("data", { mode: "json" }).notNull(),
-    tags: text("tags", { mode: "json" }).$type<string[]>().notNull().default([]),
+    data: text("data", { mode: "json" }).$type<unknown>().notNull(),
+    tags: text("tags", { mode: "json" })
+      .$type<string[]>()
+      .notNull()
+      .$defaultFn(() => []),
     sortOrder: integer("sort_order").notNull().default(0),
   },
   (t) => [
@@ -86,8 +94,8 @@ export const learningSessions = sqliteTable("learning_sessions", {
     .notNull()
     .references(() => learners.id),
   mode: text("mode").notNull(),
-  startedAt: createdAt(),
-  endedAt: integer("ended_at", { mode: "timestamp_ms" }),
+  startedAt: createdAt("started_at"),
+  endedAt: timestamp("ended_at"),
 });
 
 /** Every graded response. The raw evidence from which mastery is derived. */
@@ -122,12 +130,12 @@ export const writingSamples = sqliteTable("writing_samples", {
   attemptId: text("attempt_id")
     .primaryKey()
     .references(() => learningAttempts.id, { onDelete: "cascade" }),
-  strokes: text("strokes", { mode: "json" }).notNull(),
+  strokes: text("strokes", { mode: "json" }).$type<unknown>().notNull(),
   width: integer("width").notNull(),
   height: integer("height").notNull(),
   guidanceStage: text("guidance_stage").notNull(),
   selfAssessment: text("self_assessment").notNull(),
-  analysis: text("analysis", { mode: "json" }).notNull(),
+  analysis: text("analysis", { mode: "json" }).$type<unknown>().notNull(),
 });
 
 export const mastery = sqliteTable(
@@ -144,7 +152,7 @@ export const mastery = sqliteTable(
     attempts: integer("attempts").notNull(),
     correct: integer("correct").notNull(),
     consecutiveCorrect: integer("consecutive_correct").notNull(),
-    lastAttemptAt: integer("last_attempt_at", { mode: "timestamp_ms" }),
+    lastAttemptAt: timestamp("last_attempt_at"),
   },
   (t) => [primaryKey({ columns: [t.learnerId, t.contentItemId, t.skill] })],
 );
@@ -161,8 +169,8 @@ export const reviewSchedule = sqliteTable(
     skill: text("skill").notNull(),
     stage: integer("stage").notNull(),
     intervalDays: real("interval_days").notNull(),
-    dueAt: integer("due_at", { mode: "timestamp_ms" }).notNull(),
-    lastReviewedAt: integer("last_reviewed_at", { mode: "timestamp_ms" }),
+    dueAt: timestamp("due_at").notNull(),
+    lastReviewedAt: timestamp("last_reviewed_at"),
     reviews: integer("reviews").notNull(),
     lapses: integer("lapses").notNull(),
   },
@@ -180,7 +188,7 @@ export const assessments = sqliteTable("assessments", {
   slug: text("slug").notNull().unique(),
   title: text("title").notNull(),
   skill: text("skill").notNull(),
-  selector: text("selector", { mode: "json" }).notNull(),
+  selector: text("selector", { mode: "json" }).$type<unknown>().notNull(),
   questionCount: integer("question_count").notNull(),
   passThreshold: real("pass_threshold").notNull(),
 });
@@ -193,8 +201,8 @@ export const assessmentAttempts = sqliteTable("assessment_attempts", {
   learnerId: text("learner_id")
     .notNull()
     .references(() => learners.id),
-  startedAt: createdAt(),
-  completedAt: integer("completed_at", { mode: "timestamp_ms" }),
+  startedAt: createdAt("started_at"),
+  completedAt: timestamp("completed_at"),
 });
 
 export const assessmentResults = sqliteTable("assessment_results", {

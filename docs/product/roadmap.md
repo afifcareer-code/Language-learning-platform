@@ -10,7 +10,7 @@ The roadmap is intentionally incremental. Each milestone should leave the produc
 - [x] Handwriting capture with progressive guidance and self-assessment
 - [x] Stroke-count analysis
 - [x] Review queue, dashboard, progress
-- [x] SQLite database with migrations and seed data
+- [x] MySQL/MariaDB, PostgreSQL and SQLite with automatic detection, migrations and seeding on startup
 
 ## v0.2: Kana complete
 

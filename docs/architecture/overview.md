@@ -2,27 +2,28 @@
 
 ## Goals
 
-- **Simple to run.** One Node.js process and one SQLite file. No queues, caches or microservices.
+- **Simple to run.** One Node.js process and one database: a local SQLite file by default, or the MySQL/PostgreSQL database a hosting panel provides. No queues, caches or microservices.
 - **Japanese-first, language-agnostic.** The learning engine knows nothing about any specific language.
 - **Testable.** Learning logic is made of pure functions with no I/O.
 - **Approachable for contributors.** Mainstream, well-documented tools.
 
 ## Technology decision
 
-| Concern           | Choice                                        | Why                                                                                                                             |
-| ----------------- | --------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------- |
-| Framework         | **Next.js (App Router) + React + TypeScript** | UI, server rendering and server actions in one process; huge ecosystem; easy to self-host with `next start`                     |
-| Database          | **SQLite via libSQL**                         | Zero-infrastructure, single-file and fast; prebuilt binaries; the same driver can later point to a hosted libSQL/Turso database |
-| ORM               | **Drizzle**                                   | Type-safe, SQL-like, light runtime; generates plain SQL migrations                                                              |
-| Styling           | **Tailwind CSS v4** with design tokens        | Consistent responsive styling; light and dark themes through CSS variables                                                      |
-| Validation        | **Zod**                                       | Validates content files, environment and server-action inputs                                                                   |
-| Handwriting input | **Pointer Events API**                        | One API for mouse, touch and any stylus; pressure where available; no vendor SDK                                                |
-| Tests             | **Vitest**, **Playwright**                    | Fast unit/integration tests; e2e on tablet and mobile profiles                                                                  |
+| Concern           | Choice                                                          | Why                                                                                                                                                            |
+| ----------------- | --------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Framework         | **Next.js (App Router) + React + TypeScript**                   | UI, server rendering and server actions in one process; huge ecosystem; easy to self-host with `next start`                                                    |
+| Database          | **MySQL/MariaDB, PostgreSQL or SQLite (libSQL)**, auto-detected | Hosting panels mostly offer MySQL and PaaS platforms mostly PostgreSQL, while SQLite needs no setup for development. See [Database support](#database-support) |
+| ORM               | **Drizzle**                                                     | Type-safe, SQL-like, light runtime; generates plain SQL migrations                                                                                             |
+| Styling           | **Tailwind CSS v4** with design tokens                          | Consistent responsive styling; light and dark themes through CSS variables                                                                                     |
+| Validation        | **Zod**                                                         | Validates content files, environment and server-action inputs                                                                                                  |
+| Handwriting input | **Pointer Events API**                                          | One API for mouse, touch and any stylus; pressure where available; no vendor SDK                                                                               |
+| Tests             | **Vitest**, **Playwright**                                      | Fast unit/integration tests; e2e on tablet and mobile profiles                                                                                                 |
 
 ### Trade-offs
 
 - **Next.js** is heavier than a plain Vite single-page app with a separate API, but it removes the need to run and deploy two processes. Server actions keep the client thin.
-- **SQLite** is single-writer and not suited to large multi-tenant deployments. It is ideal for personal or self-hosted use, and Drizzle keeps a migration path to Postgres open.
+- **Three database engines** mean three Drizzle schema files and three migration folders that must stay in sync. A parity test (`tests/unit/schema-parity.test.ts`) and integration tests that run on every engine keep them honest.
+- **SQLite** is single-writer: ideal for personal use, not for large multi-user deployments.
 - **No authentication in v0.1.** A single local learner keeps the scope small. The schema already has a `learners` table.
 - **TypeScript 5.9 / ESLint 9** are pinned instead of the newest majors so that the Next.js and typescript-eslint tooling stays compatible.
 
@@ -43,6 +44,23 @@
 ```
 
 Dependencies point **downward only**. `src/core` imports nothing from the layers above it. ESLint (`no-restricted-imports`) and `tests/unit/architecture.test.ts` enforce this, and the test also forbids Japanese-specific terms in core.
+
+## Database support
+
+```
+environment ──► db/config.ts ──► { dialect, url }
+  DATABASE_URL     resolveDatabaseConfig()        │
+  DB_HOST, DB_*                                   ▼
+  MYSQL_URL, PG*   db/client.ts createDatabase() ─► libsql | mysql2 | node-postgres
+                                                  │
+                   instrumentation.ts (server start)
+                     └─ db/bootstrap.ts: lock → migrate (database/migrations/<dialect>) → seed
+```
+
+- **Schemas**: `src/server/db/schema/{sqlite,mysql,postgres}.ts` define the same tables and columns with each engine's native types (for example `json`/`jsonb`, `datetime(3)`/`timestamptz`, `boolean`).
+- **Queries** are written once with Drizzle's query builder against `db.t` (the active engine's tables). The only statement that differs between engines, upsert (`ON CONFLICT` vs `ON DUPLICATE KEY UPDATE`), goes through `src/server/db/dialect.ts`.
+- **Defaults** (timestamps, empty arrays) are applied by the application, not by SQL, so behaviour is identical everywhere.
+- **Times** are stored in UTC with millisecond precision on every engine.
 
 ## Request flow: answering a reading question
 

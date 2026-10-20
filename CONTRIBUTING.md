@@ -32,7 +32,7 @@ By participating you agree to follow the [Code of Conduct](CODE_OF_CONDUCT.md).
 - **Content is data.** Add or fix Japanese content in `data/japanese/`, never inside components. Run `npm run content:validate` afterwards.
 - **Measure learning, not activity.** Features should be grounded in evidence of recall and retention. Avoid metrics based on time spent or lessons clicked.
 - **Do not expose unfinished features** in the UI. Hide them until they work.
-- **Schema changes** need a migration: edit `src/server/db/schema.ts`, then run `npm run db:generate` and commit the generated files in `database/migrations/`.
+- **Schema changes** must be made in all three files in `src/server/db/schema/` (SQLite, MySQL, PostgreSQL). Then run `npm run db:generate` and commit the generated files in `database/migrations/`. Keep new MySQL tables `utf8mb4` (see the existing migration); the schema parity test checks this.
 - Match the existing code style; Prettier and ESLint are configured (`npm run format`).
 - Use [Conventional Commit](https://www.conventionalcommits.org/)-style messages when practical (`feat:`, `fix:`, `docs:`, …).
 

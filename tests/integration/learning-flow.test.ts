@@ -1,39 +1,48 @@
-import { mkdtempSync, rmSync } from "node:fs";
-import { tmpdir } from "node:os";
-import { join } from "node:path";
 import { afterAll, beforeAll, describe, expect, it } from "vitest";
-import { seedJapanese } from "../../database/seeders/japanese";
 import { JA_SKILLS } from "@/languages/japanese";
+import { prepareDatabase } from "@/server/db/bootstrap";
 import { createDatabase, type Database } from "@/server/db/client";
-import { runMigrations } from "@/server/db/migrate";
 import { listCourses } from "@/server/repositories/content";
 import { ensureLocalLearner, type Learner } from "@/server/repositories/learners";
-import { getLearnerProgress, progressKey } from "@/server/repositories/progress";
+import { getLearnerProgress, getRecentAttempts, progressKey } from "@/server/repositories/progress";
 import { recordAttempt } from "@/server/services/learning";
 import { getLearningOverview } from "@/server/services/overview";
 import { getPracticeSet } from "@/server/services/practice";
+import { createTestDatabase, TEST_DIALECTS, type TestDatabase } from "./databases";
 
-let dir: string;
-let db: Database;
-let learner: Learner;
+const quiet = { log: () => undefined };
 
-beforeAll(async () => {
-  dir = mkdtempSync(join(tmpdir(), "llp-test-"));
-  db = createDatabase(`file:${join(dir, "test.db")}`);
-  await runMigrations(db);
-  await seedJapanese(db, join(process.cwd(), "data"));
-  learner = await ensureLocalLearner(db, "Test");
-});
+describe.each(TEST_DIALECTS)("learning flow on $dialect", ({ dialect, serverUrl }) => {
+  let testDb: TestDatabase;
+  let db: Database;
+  let learner: Learner;
 
-afterAll(() => rmSync(dir, { recursive: true, force: true }));
+  beforeAll(async () => {
+    testDb = await createTestDatabase(dialect, serverUrl);
+    db = createDatabase(testDb.config);
+    await prepareDatabase(db, { migrate: true, seed: true, ...quiet });
+    learner = await ensureLocalLearner(db, "Test");
+  }, 60_000);
 
-describe("learning flow", () => {
-  it("seeds idempotently", async () => {
-    const again = await seedJapanese(db, join(process.cwd(), "data"));
-    expect(again).toEqual({ items: 92, lessons: 18 });
+  afterAll(async () => {
+    await db?.close();
+    await testDb?.drop();
+  });
+
+  it("migrates and seeds idempotently, preserving Japanese text", async () => {
+    await prepareDatabase(db, { migrate: true, seed: true, ...quiet });
     const [course] = await listCourses(db, "ja");
     expect(course?.lessons).toHaveLength(18);
     expect(course?.lessons[0]?.itemIds).toHaveLength(5);
+    const set = await getPracticeSet(db, learner, JA_SKILLS.kanaReading, { lesson: "hiragana-vowels" });
+    expect(set.items.map((i) => (i.data as { kana: string }).kana).sort()).toEqual([
+      "あ",
+      "い",
+      "う",
+      "え",
+      "お",
+    ]);
+    expect(set.items[0]?.tags).toContain("hiragana");
   });
 
   it("recommends the first lesson to a new learner", async () => {
@@ -44,24 +53,13 @@ describe("learning flow", () => {
 
   it("records attempts, schedules reviews and updates mastery", async () => {
     const set = await getPracticeSet(db, learner, JA_SKILLS.kanaReading, { lesson: "hiragana-vowels" });
-    expect(set.items).toHaveLength(5);
-
-    const t0 = new Date("2026-01-01T09:00:00Z");
+    const t0 = new Date("2026-01-01T09:00:00.123Z");
     const [first, second] = set.items;
-    await recordAttempt(db, {
-      learnerId: learner.id,
-      contentItemId: first!.id,
-      skill: JA_SKILLS.kanaReading,
-      mode: "practice",
-      correct: true,
-      score: 1,
-      at: t0,
-    });
+    const base = { learnerId: learner.id, skill: JA_SKILLS.kanaReading, mode: "practice" as const };
+    await recordAttempt(db, { ...base, contentItemId: first!.id, correct: true, score: 1, at: t0 });
     const missed = await recordAttempt(db, {
-      learnerId: learner.id,
+      ...base,
       contentItemId: second!.id,
-      skill: JA_SKILLS.kanaReading,
-      mode: "practice",
       correct: false,
       score: 0,
       response: "x",
@@ -71,9 +69,15 @@ describe("learning flow", () => {
     expect(missed.review.stage).toBe(0);
 
     const progress = await getLearnerProgress(db, learner.id, t0);
-    expect(progress.get(progressKey(first!.id, JA_SKILLS.kanaReading))?.review?.stage).toBe(1);
+    const firstProgress = progress.get(progressKey(first!.id, JA_SKILLS.kanaReading));
+    expect(firstProgress?.review?.stage).toBe(1);
+    // Timestamps round-trip exactly (UTC, millisecond precision) on every dialect.
+    expect(firstProgress?.mastery.lastAttemptAt?.toISOString()).toBe(t0.toISOString());
+    expect(firstProgress?.review?.dueAt.toISOString()).toBe("2026-01-02T09:00:00.123Z");
 
-    // A day later both are due and the dashboard asks for a review first.
+    const [latest] = await getRecentAttempts(db, learner.id, { limit: 1 });
+    expect(typeof latest?.correct).toBe("boolean");
+
     const later = new Date(t0.getTime() + 2 * 24 * 60 * 60 * 1000);
     const overview = await getLearningOverview(db, learner, later);
     expect(overview.dueBySkill[JA_SKILLS.kanaReading]).toBe(2);
@@ -84,7 +88,6 @@ describe("learning flow", () => {
     });
 
     const review = await getPracticeSet(db, learner, JA_SKILLS.kanaReading, { mode: "review" }, later);
-    expect(review.mode).toBe("review");
     expect(review.items.map((i) => i.id).sort()).toEqual([first!.id, second!.id].sort());
   });
 

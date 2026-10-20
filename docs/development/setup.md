@@ -5,7 +5,7 @@
 - Node.js **20.9 or newer** (22 recommended; see `.nvmrc`)
 - npm (bundled with Node.js)
 
-No database server, Docker or external services are needed.
+No database server, Docker or external services are needed for development: without database settings the app uses a local SQLite file. MySQL/MariaDB and PostgreSQL are supported too (see [Deployment](deployment.md)).
 
 ## Steps
 
@@ -20,32 +20,30 @@ npm run dev               # http://localhost:3000
 
 ## Environment variables
 
-| Variable               | Default               | Description                                                                                                 |
-| ---------------------- | --------------------- | ----------------------------------------------------------------------------------------------------------- |
-| `DATABASE_URL`         | `file:./.data/app.db` | libSQL connection URL. A `file:` path is a local SQLite file; `libsql://…` points to a remote libSQL server |
-| `DATABASE_AUTH_TOKEN`  | _(empty)_             | Auth token for remote libSQL only                                                                           |
-| `DEFAULT_LEARNER_NAME` | `Learner`             | Display name of the local learner created on first run                                                      |
+| Variable                                                                           | Default                           | Description                                                                       |
+| ---------------------------------------------------------------------------------- | --------------------------------- | --------------------------------------------------------------------------------- |
+| `DATABASE_URL`                                                                     | _(unset)_ → `file:./.data/app.db` | Connection URL: `mysql://…`, `postgres://…`, `file:…` or `libsql://…`             |
+| `DB_CONNECTION`, `DB_HOST`, `DB_PORT`, `DB_DATABASE`, `DB_USERNAME`, `DB_PASSWORD` | _(unset)_                         | Separate settings as shown by hosting panels; used when `DATABASE_URL` is not set |
+| `DATABASE_AUTH_TOKEN`                                                              | _(empty)_                         | Auth token for remote libSQL only                                                 |
+| `AUTO_MIGRATE` / `AUTO_SEED`                                                       | `true`                            | Migrate and load content automatically when the server starts                     |
+| `DEFAULT_LEARNER_NAME`                                                             | `Learner`                         | Display name of the local learner created on first run                            |
 
-Environment variables are validated by [`src/server/env.ts`](../../src/server/env.ts).
+Database detection lives in [`src/server/db/config.ts`](../../src/server/db/config.ts); the full list of recognised variables is in [Deployment](deployment.md#how-the-database-is-detected). Other settings are validated by [`src/server/env.ts`](../../src/server/env.ts).
 
 ## Database workflow
 
-| Task                    | Command                                                                                          |
-| ----------------------- | ------------------------------------------------------------------------------------------------ |
-| Apply migrations        | `npm run db:migrate`                                                                             |
-| Load or refresh content | `npm run db:seed`                                                                                |
-| Change the schema       | Edit `src/server/db/schema.ts`, then run `npm run db:generate` and commit `database/migrations/` |
-| Browse data             | `npm run db:studio`                                                                              |
-| Start fresh             | Delete `.data/` and run `npm run db:setup`                                                       |
+| Task                    | Command                                                                                                                                         |
+| ----------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------- |
+| Apply migrations        | `npm run db:migrate`                                                                                                                            |
+| Load or refresh content | `npm run db:seed`                                                                                                                               |
+| Change the schema       | Edit **all three** files in `src/server/db/schema/` (sqlite, mysql, postgres), then run `npm run db:generate` and commit `database/migrations/` |
+| Check the connection    | `npm run db:check`                                                                                                                              |
+| Browse data             | `npm run db:studio`                                                                                                                             |
+| Start fresh             | Delete `.data/` and run `npm run db:setup`                                                                                                      |
 
 ## Running in production (self-hosting)
 
-```bash
-npm ci
-npm run db:setup
-npm run build
-npm start                 # port 3000; set PORT to change it
-```
+See [Deployment](deployment.md) for cPanel/Plesk, VPS panels, PaaS and SQLite instructions.
 
 v0.1 has no authentication. Keep it on a private network or put it behind an authenticating reverse proxy.
 

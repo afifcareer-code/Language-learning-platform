@@ -2,7 +2,7 @@ import { and, desc, eq, gte, lte } from "drizzle-orm";
 import { currentMasteryState, EMPTY_MASTERY, type MasteryRecord, type MasteryState } from "@/core/mastery";
 import type { ReviewState } from "@/core/review";
 import type { Database } from "../db/client";
-import { learningAttempts, mastery, reviewSchedule } from "../db/schema";
+import type { mastery, reviewSchedule } from "../db/schema/sqlite";
 
 export interface ItemProgress {
   contentItemId: string;
@@ -46,17 +46,17 @@ export async function getLearnerProgress(
   now = new Date(),
 ): Promise<Map<string, ItemProgress>> {
   const rows = await db
-    .select({ mastery, review: reviewSchedule })
-    .from(mastery)
+    .select({ mastery: db.t.mastery, review: db.t.reviewSchedule })
+    .from(db.t.mastery)
     .leftJoin(
-      reviewSchedule,
+      db.t.reviewSchedule,
       and(
-        eq(reviewSchedule.learnerId, mastery.learnerId),
-        eq(reviewSchedule.contentItemId, mastery.contentItemId),
-        eq(reviewSchedule.skill, mastery.skill),
+        eq(db.t.reviewSchedule.learnerId, db.t.mastery.learnerId),
+        eq(db.t.reviewSchedule.contentItemId, db.t.mastery.contentItemId),
+        eq(db.t.reviewSchedule.skill, db.t.mastery.skill),
       ),
     )
-    .where(eq(mastery.learnerId, learnerId));
+    .where(eq(db.t.mastery.learnerId, learnerId));
 
   const out = new Map<string, ItemProgress>();
   for (const row of rows) {
@@ -84,13 +84,13 @@ export async function getDueReviews(
 ): Promise<{ contentItemId: string; skill: string; dueAt: Date }[]> {
   return db
     .select({
-      contentItemId: reviewSchedule.contentItemId,
-      skill: reviewSchedule.skill,
-      dueAt: reviewSchedule.dueAt,
+      contentItemId: db.t.reviewSchedule.contentItemId,
+      skill: db.t.reviewSchedule.skill,
+      dueAt: db.t.reviewSchedule.dueAt,
     })
-    .from(reviewSchedule)
-    .where(and(eq(reviewSchedule.learnerId, learnerId), lte(reviewSchedule.dueAt, now)))
-    .orderBy(reviewSchedule.dueAt);
+    .from(db.t.reviewSchedule)
+    .where(and(eq(db.t.reviewSchedule.learnerId, learnerId), lte(db.t.reviewSchedule.dueAt, now)))
+    .orderBy(db.t.reviewSchedule.dueAt);
 }
 
 export async function getRecentAttempts(
@@ -98,21 +98,21 @@ export async function getRecentAttempts(
   learnerId: string,
   options: { since?: Date; limit?: number } = {},
 ) {
-  const conditions = [eq(learningAttempts.learnerId, learnerId)];
-  if (options.since) conditions.push(gte(learningAttempts.createdAt, options.since));
+  const conditions = [eq(db.t.learningAttempts.learnerId, learnerId)];
+  if (options.since) conditions.push(gte(db.t.learningAttempts.createdAt, options.since));
   return db
     .select({
-      id: learningAttempts.id,
-      contentItemId: learningAttempts.contentItemId,
-      skill: learningAttempts.skill,
-      mode: learningAttempts.mode,
-      correct: learningAttempts.correct,
-      score: learningAttempts.score,
-      response: learningAttempts.response,
-      createdAt: learningAttempts.createdAt,
+      id: db.t.learningAttempts.id,
+      contentItemId: db.t.learningAttempts.contentItemId,
+      skill: db.t.learningAttempts.skill,
+      mode: db.t.learningAttempts.mode,
+      correct: db.t.learningAttempts.correct,
+      score: db.t.learningAttempts.score,
+      response: db.t.learningAttempts.response,
+      createdAt: db.t.learningAttempts.createdAt,
     })
-    .from(learningAttempts)
+    .from(db.t.learningAttempts)
     .where(and(...conditions))
-    .orderBy(desc(learningAttempts.createdAt))
+    .orderBy(desc(db.t.learningAttempts.createdAt))
     .limit(options.limit ?? 50);
 }

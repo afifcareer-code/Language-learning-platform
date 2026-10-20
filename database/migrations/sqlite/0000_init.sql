@@ -2,7 +2,7 @@ CREATE TABLE `assessment_attempts` (
 	`id` text PRIMARY KEY NOT NULL,
 	`assessment_id` text NOT NULL,
 	`learner_id` text NOT NULL,
-	`created_at` integer DEFAULT (unixepoch() * 1000) NOT NULL,
+	`started_at` integer NOT NULL,
 	`completed_at` integer,
 	FOREIGN KEY (`assessment_id`) REFERENCES `assessments`(`id`) ON UPDATE no action ON DELETE no action,
 	FOREIGN KEY (`learner_id`) REFERENCES `learners`(`id`) ON UPDATE no action ON DELETE no action
@@ -37,7 +37,7 @@ CREATE TABLE `content_items` (
 	`type` text NOT NULL,
 	`key` text NOT NULL,
 	`data` text NOT NULL,
-	`tags` text DEFAULT '[]' NOT NULL,
+	`tags` text NOT NULL,
 	`sort_order` integer DEFAULT 0 NOT NULL,
 	FOREIGN KEY (`language_code`) REFERENCES `languages`(`code`) ON UPDATE no action ON DELETE no action
 );
@@ -65,7 +65,7 @@ CREATE TABLE `learners` (
 	`id` text PRIMARY KEY NOT NULL,
 	`display_name` text NOT NULL,
 	`target_language` text NOT NULL,
-	`created_at` integer DEFAULT (unixepoch() * 1000) NOT NULL,
+	`created_at` integer NOT NULL,
 	FOREIGN KEY (`target_language`) REFERENCES `languages`(`code`) ON UPDATE no action ON DELETE no action
 );
 --> statement-breakpoint
@@ -80,7 +80,7 @@ CREATE TABLE `learning_attempts` (
 	`score` real NOT NULL,
 	`response` text,
 	`response_ms` integer,
-	`created_at` integer DEFAULT (unixepoch() * 1000) NOT NULL,
+	`created_at` integer NOT NULL,
 	FOREIGN KEY (`learner_id`) REFERENCES `learners`(`id`) ON UPDATE no action ON DELETE no action,
 	FOREIGN KEY (`content_item_id`) REFERENCES `content_items`(`id`) ON UPDATE no action ON DELETE no action,
 	FOREIGN KEY (`session_id`) REFERENCES `learning_sessions`(`id`) ON UPDATE no action ON DELETE no action
@@ -92,7 +92,7 @@ CREATE TABLE `learning_sessions` (
 	`id` text PRIMARY KEY NOT NULL,
 	`learner_id` text NOT NULL,
 	`mode` text NOT NULL,
-	`created_at` integer DEFAULT (unixepoch() * 1000) NOT NULL,
+	`started_at` integer NOT NULL,
 	`ended_at` integer,
 	FOREIGN KEY (`learner_id`) REFERENCES `learners`(`id`) ON UPDATE no action ON DELETE no action
 );

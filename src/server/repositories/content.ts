@@ -1,7 +1,7 @@
 import { and, asc, eq, inArray } from "drizzle-orm";
 import type { ContentItem } from "@/core/learning";
 import type { Database } from "../db/client";
-import { contentItems, courses, lessonItems, lessons } from "../db/schema";
+import type { contentItems } from "../db/schema/sqlite";
 
 type ContentRow = typeof contentItems.$inferSelect;
 
@@ -17,7 +17,7 @@ function toContentItem(row: ContentRow): ContentItem {
 }
 
 export async function getContentItem(db: Database, id: string): Promise<ContentItem | null> {
-  const [row] = await db.select().from(contentItems).where(eq(contentItems.id, id)).limit(1);
+  const [row] = await db.select().from(db.t.contentItems).where(eq(db.t.contentItems.id, id)).limit(1);
   return row ? toContentItem(row) : null;
 }
 
@@ -26,8 +26,8 @@ export async function getContentItems(db: Database, ids: readonly string[]): Pro
   if (ids.length === 0) return [];
   const rows = await db
     .select()
-    .from(contentItems)
-    .where(inArray(contentItems.id, [...ids]));
+    .from(db.t.contentItems)
+    .where(inArray(db.t.contentItems.id, [...ids]));
   const byId = new Map(rows.map((r) => [r.id, toContentItem(r)]));
   return ids.map((id) => byId.get(id)).filter((i): i is ContentItem => Boolean(i));
 }
@@ -39,9 +39,9 @@ export async function listContentItemsByType(
 ): Promise<ContentItem[]> {
   const rows = await db
     .select()
-    .from(contentItems)
-    .where(and(eq(contentItems.languageCode, languageCode), eq(contentItems.type, type)))
-    .orderBy(asc(contentItems.sortOrder));
+    .from(db.t.contentItems)
+    .where(and(eq(db.t.contentItems.languageCode, languageCode), eq(db.t.contentItems.type, type)))
+    .orderBy(asc(db.t.contentItems.sortOrder));
   return rows.map(toContentItem);
 }
 
@@ -63,15 +63,15 @@ export interface CourseWithLessons {
 export async function listCourses(db: Database, languageCode: string): Promise<CourseWithLessons[]> {
   const rows = await db
     .select({
-      course: courses,
-      lesson: { id: lessons.id, slug: lessons.slug, title: lessons.title },
-      itemId: lessonItems.contentItemId,
+      course: db.t.courses,
+      lesson: { id: db.t.lessons.id, slug: db.t.lessons.slug, title: db.t.lessons.title },
+      itemId: db.t.lessonItems.contentItemId,
     })
-    .from(courses)
-    .innerJoin(lessons, eq(lessons.courseId, courses.id))
-    .innerJoin(lessonItems, eq(lessonItems.lessonId, lessons.id))
-    .where(eq(courses.languageCode, languageCode))
-    .orderBy(asc(courses.sortOrder), asc(lessons.sortOrder), asc(lessonItems.sortOrder));
+    .from(db.t.courses)
+    .innerJoin(db.t.lessons, eq(db.t.lessons.courseId, db.t.courses.id))
+    .innerJoin(db.t.lessonItems, eq(db.t.lessonItems.lessonId, db.t.lessons.id))
+    .where(eq(db.t.courses.languageCode, languageCode))
+    .orderBy(asc(db.t.courses.sortOrder), asc(db.t.lessons.sortOrder), asc(db.t.lessonItems.sortOrder));
 
   const result: CourseWithLessons[] = [];
   for (const row of rows) {
@@ -98,11 +98,16 @@ export async function listCourses(db: Database, languageCode: string): Promise<C
 
 export async function getLessonBySlug(db: Database, slug: string): Promise<LessonSummary | null> {
   const rows = await db
-    .select({ id: lessons.id, slug: lessons.slug, title: lessons.title, itemId: lessonItems.contentItemId })
-    .from(lessons)
-    .innerJoin(lessonItems, eq(lessonItems.lessonId, lessons.id))
-    .where(eq(lessons.slug, slug))
-    .orderBy(asc(lessonItems.sortOrder));
+    .select({
+      id: db.t.lessons.id,
+      slug: db.t.lessons.slug,
+      title: db.t.lessons.title,
+      itemId: db.t.lessonItems.contentItemId,
+    })
+    .from(db.t.lessons)
+    .innerJoin(db.t.lessonItems, eq(db.t.lessonItems.lessonId, db.t.lessons.id))
+    .where(eq(db.t.lessons.slug, slug))
+    .orderBy(asc(db.t.lessonItems.sortOrder));
   const first = rows[0];
   if (!first) return null;
   return { id: first.id, slug: first.slug, title: first.title, itemIds: rows.map((r) => r.itemId) };

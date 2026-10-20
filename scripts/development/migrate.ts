@@ -1,11 +1,12 @@
-import { createDatabase } from "@/server/db/client";
-import { runMigrations } from "@/server/db/migrate";
-import { readEnv } from "@/server/env";
+import { loadEnvConfig } from "@next/env";
+import { prepareDatabase } from "@/server/db/bootstrap";
+import { getDb } from "@/server/db/client";
 
 async function main() {
-  const env = readEnv();
-  await runMigrations(createDatabase(env.DATABASE_URL, env.DATABASE_AUTH_TOKEN));
-  console.log(`Migrations applied to ${env.DATABASE_URL}`);
+  loadEnvConfig(process.cwd());
+  const db = getDb();
+  await prepareDatabase(db, { migrate: true, seed: false });
+  await db.close();
 }
 
 main().catch((error) => {

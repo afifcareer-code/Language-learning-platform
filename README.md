@@ -56,7 +56,7 @@ src/
 │   └── japanese/    First language module (kana, skills, content schemas)
 ├── handwriting/     Stroke capture, features, analysis, scoring, guidance
 ├── audio/           Browser speech synthesis
-├── server/          Database (Drizzle + SQLite/libSQL), repositories, services
+├── server/          Database (Drizzle; MySQL, PostgreSQL or SQLite), repositories, services
 ├── features/        Feature UI (practice sessions, kana views)
 ├── components/      Shared UI primitives and app shell
 └── app/             Next.js routes and server actions
@@ -64,7 +64,7 @@ src/
 
 The core engine has no dependency on Japanese, the database or React. Lint rules and an architecture test enforce this. Read more in [Architecture overview](docs/architecture/overview.md).
 
-**Stack:** Next.js (App Router) · React · TypeScript · SQLite via libSQL + Drizzle ORM · Tailwind CSS · Vitest · Playwright.
+**Stack:** Next.js (App Router) · React · TypeScript · Drizzle ORM with MySQL/MariaDB, PostgreSQL or SQLite · Tailwind CSS · Vitest · Playwright.
 
 ## Getting started
 
@@ -75,23 +75,30 @@ git clone https://github.com/afifcareer-code/language-learning-platform.git
 cd language-learning-platform
 npm install
 cp .env.example .env        # optional; defaults work out of the box
-npm run db:setup            # create the SQLite database and load content
+npm run db:setup            # create the database and load content
 npm run dev                 # http://localhost:3000
 ```
 
-There are no external services to run. The database is a single file in `.data/`.
+With no database settings, the app uses a local SQLite file in `.data/`, so no external services are needed.
+
+### Deploying with MySQL, PostgreSQL or a hosting panel
+
+The app **detects the database automatically** from the variables your hosting panel provides: `DB_HOST`/`DB_DATABASE`/`DB_USERNAME`/`DB_PASSWORD` (cPanel, Plesk, aaPanel), `DATABASE_URL`, `MYSQL_URL`, `POSTGRES_URL` and others. It **migrates and seeds the database on startup**. On cPanel, set `server.js` as the application startup file. Run `npm run db:check` to see what was detected.
+
+Step-by-step guides are in [Deployment](docs/development/deployment.md).
 
 ## Development
 
-| Command                              | Purpose                                        |
-| ------------------------------------ | ---------------------------------------------- |
-| `npm run dev`                        | Start the dev server                           |
-| `npm run lint` / `npm run typecheck` | Static checks                                  |
-| `npm test`                           | Unit and integration tests (Vitest)            |
-| `npm run test:e2e`                   | End-to-end tests (Playwright)                  |
-| `npm run content:validate`           | Validate content files                         |
-| `npm run db:generate`                | Generate a migration after changing the schema |
-| `npm run db:setup`                   | Apply migrations and seed content              |
+| Command                              | Purpose                                                         |
+| ------------------------------------ | --------------------------------------------------------------- |
+| `npm run dev`                        | Start the dev server                                            |
+| `npm run lint` / `npm run typecheck` | Static checks                                                   |
+| `npm test`                           | Unit and integration tests (Vitest)                             |
+| `npm run test:e2e`                   | End-to-end tests (Playwright)                                   |
+| `npm run content:validate`           | Validate content files                                          |
+| `npm run db:generate`                | Generate migrations for all databases after changing the schema |
+| `npm run db:setup`                   | Apply migrations and seed content                               |
+| `npm run db:check`                   | Show the detected database and test the connection              |
 
 See [Setup](docs/development/setup.md) and [Testing](docs/development/testing.md).
 

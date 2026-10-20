@@ -5,7 +5,8 @@ import { applyAttempt, type MasteryState } from "@/core/mastery";
 import { LeitnerScheduler, type ReviewScheduler, type ReviewState } from "@/core/review";
 import { getLanguageModule } from "@/languages/registry";
 import type { Database } from "../db/client";
-import { learningAttempts, mastery, reviewSchedule, writingSamples } from "../db/schema";
+import { upsert } from "../db/dialect";
+import type { writingSamples } from "../db/schema/sqlite";
 import { toMasteryRecord, toReviewState } from "../repositories/progress";
 
 export interface RecordAttemptInput {
@@ -53,6 +54,8 @@ export async function recordAttempt(
   const where = (t: typeof mastery | typeof reviewSchedule) =>
     and(eq(t.learnerId, key.learnerId), eq(t.contentItemId, key.contentItemId), eq(t.skill, key.skill));
 
+  const { learningAttempts, mastery, reviewSchedule, writingSamples } = db.t;
+
   return db.transaction(async (tx) => {
     const attemptId = randomUUID();
     await tx.insert(learningAttempts).values({
@@ -71,20 +74,29 @@ export async function recordAttempt(
 
     const [reviewRow] = await tx.select().from(reviewSchedule).where(where(reviewSchedule)).limit(1);
     const review = scheduler.next(toReviewState(reviewRow), outcome);
-    await tx
-      .insert(reviewSchedule)
-      .values({ ...key, ...review })
-      .onConflictDoUpdate({
+    await upsert(
+      db,
+      tx,
+      reviewSchedule,
+      { ...key, ...review },
+      {
         target: [reviewSchedule.learnerId, reviewSchedule.contentItemId, reviewSchedule.skill],
         set: review,
-      });
+      },
+    );
 
     const [masteryRow] = await tx.select().from(mastery).where(where(mastery)).limit(1);
     const next = applyAttempt(toMasteryRecord(masteryRow), outcome, review);
-    await tx
-      .insert(mastery)
-      .values({ ...key, ...next })
-      .onConflictDoUpdate({ target: [mastery.learnerId, mastery.contentItemId, mastery.skill], set: next });
+    await upsert(
+      db,
+      tx,
+      mastery,
+      { ...key, ...next },
+      {
+        target: [mastery.learnerId, mastery.contentItemId, mastery.skill],
+        set: next,
+      },
+    );
 
     return { attemptId, masteryState: next.state, review };
   });
