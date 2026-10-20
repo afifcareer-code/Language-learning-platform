@@ -11,6 +11,7 @@
 These cover the pure logic: the scheduler, mastery state transitions, recommendations, assessment scoring, romaji grading, stroke features, analyzers and writing scoring. They also include:
 
 - **Content validation** (`tests/unit/languages/content.test.ts`): every content file parses and every lesson references existing items.
+- **Language catalog** (`tests/unit/languages/catalog.test.ts`): a language can be "available" only with an installed module, and every module is in the catalog.
 - **Database configuration** (`tests/unit/database-config.test.ts`): detection of hosting-panel variables, URL encoding, and passwords never being logged.
 - **Schema parity** (`tests/unit/schema-parity.test.ts`): the three schemas define the same tables and columns, and MySQL tables are `utf8mb4`.
 - **Localization** (`tests/unit/localization.test.ts`): the translator (plurals, fallback, formatting), locale negotiation, and that every locale file has the same keys and placeholders as English.
@@ -29,11 +30,16 @@ TEST_POSTGRES_URL=postgres://postgres:password@127.0.0.1:5432/postgres \
 npm test
 ```
 
+Further scenarios on every engine: choosing a learning language and level (coming-soon languages and levels without curriculum are rejected), and upgrading databases from the first and the previous release while keeping a learner's attempts and placing them at Foundation without onboarding.
+
 CI runs all three engines.
 
 ## End-to-end tests
 
-Playwright builds the app, seeds a separate database (`.data/e2e.db`) and runs smoke tests on an iPad Pro landscape profile and a Pixel 7 profile. The tests include drawing on the handwriting canvas.
+Playwright builds the app, seeds a separate database (`.data/e2e.db`) and runs on an iPad Pro landscape profile and a Pixel 7 profile, one test at a time because tests share that database.
+
+- `onboarding.spec.ts` runs first (tablet only), against the fresh database. It covers language selection, coming-soon languages (shown, not startable, 404), level selection (only levels with curriculum), persistence, the learning-language switcher and the global ID / EN switch.
+- `smoke.spec.ts` covers the learning flows, including drawing on the handwriting canvas. Its tests complete onboarding themselves if needed (`helpers.ts`).
 
 The first time, install a browser with `npx playwright install chromium`. To use an existing Chromium instead, set:
 

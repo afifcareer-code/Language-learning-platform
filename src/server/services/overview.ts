@@ -60,11 +60,17 @@ export function stateFor(progress: Map<string, ItemProgress>, itemId: string, sk
   return progress.get(progressKey(itemId, skill))?.state ?? "not_started";
 }
 
+/**
+ * Everything the dashboard needs. With `levelId`, the next activity, progress,
+ * mastery and readiness are computed for that level only; activity statuses
+ * cover the whole curriculum.
+ */
 export async function getLearningOverview(
   db: Database,
   learner: Learner,
   locale: Locale,
   now = new Date(),
+  levelId?: string,
 ): Promise<LearningOverview> {
   const skills = getLanguageModule(learner.targetLanguage).skills;
   const [curriculum, progress, due, recent, pairs] = await Promise.all([
@@ -82,13 +88,15 @@ export async function getLearningOverview(
       a.id,
       activityStatus(a, (id) => stateOf(id, a.skill)),
     );
-  const nextActivity =
-    curriculum.activities.find((a) => !["completed", "outcome_achieved"].includes(statuses.get(a.id)!)) ??
-    null;
-  const currentLesson =
-    curriculum.lessons.find((l) => l.id === nextActivity?.lessonId) ?? curriculum.lessons.at(-1) ?? null;
+  const level = levelId ? curriculum.levels.find((l) => l.id === levelId) : undefined;
+  const lessons = level ? level.courses.flatMap((c) => c.lessons) : curriculum.lessons;
+  const activities = lessons.flatMap((l) => l.activities);
 
-  const allItemIds = [...new Set(curriculum.lessons.flatMap((l) => l.itemIds))];
+  const nextActivity =
+    activities.find((a) => !["completed", "outcome_achieved"].includes(statuses.get(a.id)!)) ?? null;
+  const currentLesson = lessons.find((l) => l.id === nextActivity?.lessonId) ?? lessons.at(-1) ?? null;
+
+  const allItemIds = [...new Set(lessons.flatMap((l) => l.itemIds))];
   const bySkill = skills.map((s) => skillMastery(s.id, allItemIds, stateOf));
   const demonstrated = bySkill.reduce((n, s) => n + s.demonstrated, 0);
   const total = bySkill.reduce((n, s) => n + s.total, 0);
@@ -145,7 +153,7 @@ export async function getLearningOverview(
     activityStatus: statuses,
     nextActivity,
     currentLesson,
-    courseProgress: courseProgress(curriculum.activities, stateOf),
+    courseProgress: courseProgress(activities, stateOf),
     overallMastery: { skill: "*", demonstrated, total, ratio: total ? demonstrated / total : 0 },
     skillMastery: bySkill,
     readiness,

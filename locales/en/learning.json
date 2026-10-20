@@ -11,5 +11,7 @@
   "targetMastery": "Goal: every item at {state}",
   "startActivity": "Start",
   "activitiesProgress": "{completed} of {total} activities",
-  "noCourses": "No courses yet. Check the server log for database errors."
+  "noCourses": "No courses yet. Check the server log for database errors.",
+  "inDevelopment": "Curriculum in development",
+  "currentLevel": "Your level"
 }

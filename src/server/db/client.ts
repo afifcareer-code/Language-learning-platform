@@ -63,6 +63,9 @@ export function createDatabase(config: DatabaseConfig): Database {
     }
     case "postgres": {
       const pool = new pg.Pool({ connectionString: config.url, max: 5 });
+      // An idle connection can be closed by the server (restart, failover, admin).
+      // Without a listener that error would crash the process; the pool reconnects on demand.
+      pool.on("error", (error) => console.error(`[database] idle connection closed: ${error.message}`));
       orm = drizzlePostgres(pool, { schema: postgresSchema });
       close = () => pool.end();
       ping = async () => void (await pool.query("SELECT 1"));

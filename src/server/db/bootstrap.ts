@@ -2,6 +2,7 @@ import { join } from "node:path";
 import { readEnv } from "../env";
 import { ensureLocalLearner } from "../repositories/learners";
 import { seedJapanese } from "../seed/japanese";
+import { seedLanguageCatalog } from "../seed/languages";
 import { describeDatabase, getDb, type Database } from "./client";
 import { runMigrations, withMigrationLock } from "./migrate";
 
@@ -30,10 +31,12 @@ export async function prepareDatabase(db: Database = getDb(), options: PrepareOp
       log("Migrations up to date");
     }
     if (seed) {
-      const result = await seedJapanese(db, options.dataDir ?? join(process.cwd(), "data"));
+      const dataDir = options.dataDir ?? join(process.cwd(), "data");
+      const catalog = await seedLanguageCatalog(db, dataDir);
+      const result = await seedJapanese(db, dataDir);
       await ensureLocalLearner(db, env.DEFAULT_LEARNER_NAME);
       log(
-        `Content loaded: ${result.items} items, ${result.lessons} lessons, ${result.activities} activities`,
+        `Content loaded: ${catalog.languages} languages in catalog; Japanese: ${result.items} items, ${result.lessons} lessons, ${result.activities} activities`,
       );
     }
   });

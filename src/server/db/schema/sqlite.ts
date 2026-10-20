@@ -16,10 +16,21 @@ const createdAt = (name = "created_at") =>
     .notNull()
     .$defaultFn(() => new Date());
 
+/**
+ * The language catalog: every language the platform offers or plans to offer.
+ * A language is `available` only when its module is installed; others are
+ * listed as `coming_soon` and cannot be studied.
+ */
 export const languages = sqliteTable("languages", {
   code: text("code").primaryKey(),
   name: text("name").notNull(),
   nativeName: text("native_name").notNull(),
+  status: text("status").notNull().default("available"),
+  /** e.g. "kana_kanji", "latin", "hangul". */
+  writingSystem: text("writing_system"),
+  /** The proficiency framework its curriculum follows, e.g. "jlpt", "cefr". */
+  proficiencyFramework: text("proficiency_framework"),
+  sortOrder: integer("sort_order").notNull().default(0),
 });
 
 export const learners = sqliteTable("learners", {
@@ -32,6 +43,27 @@ export const learners = sqliteTable("learners", {
   uiLocale: text("ui_locale"),
   createdAt: createdAt(),
 });
+
+/**
+ * Languages a learner studies, each with its own current level. The active
+ * one is `learners.target_language`; switching keeps every language's level.
+ */
+export const learnerLanguages = sqliteTable(
+  "learner_languages",
+  {
+    learnerId: text("learner_id")
+      .notNull()
+      .references(() => learners.id),
+    languageCode: text("language_code")
+      .notNull()
+      .references(() => languages.code),
+    currentLevelId: text("current_level_id")
+      .notNull()
+      .references(() => levels.id),
+    startedAt: createdAt("started_at"),
+  },
+  (t) => [primaryKey({ columns: [t.learnerId, t.languageCode] })],
+);
 
 export const contentItems = sqliteTable(
   "content_items",
@@ -68,6 +100,11 @@ export const levels = sqliteTable("levels", {
     .notNull()
     .references(() => languages.code),
   slug: text("slug").notNull().unique(),
+  /**
+   * The level's code in the language's proficiency framework (e.g. "N5");
+   * null for platform stages such as Foundation that precede the framework.
+   */
+  frameworkLevel: text("framework_level"),
   sortOrder: integer("sort_order").notNull(),
 });
 

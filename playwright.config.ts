@@ -18,7 +18,8 @@ export default defineConfig({
   projects: [
     // Tablet is the primary target for handwriting, so it is tested first.
     { name: "tablet", use: { ...devices["iPad Pro 11 landscape"], browserName: "chromium" } },
-    { name: "mobile", use: { ...devices["Pixel 7"], browserName: "chromium" } },
+    // Onboarding runs once, on the fresh database, before the tablet smoke tests.
+    { name: "mobile", use: { ...devices["Pixel 7"], browserName: "chromium" }, testIgnore: /onboarding/ },
   ],
   webServer: {
     command: `npm run db:setup && npm run build && npx next start -p ${PORT}`,

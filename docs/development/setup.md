@@ -16,6 +16,8 @@ npm run db:setup          # apply migrations and load content
 npm run dev               # http://localhost:3000
 ```
 
+Open the app and choose what to learn: Japanese, then **Foundation**. The ID / EN switch at the top (or in the sidebar) changes the interface language.
+
 `db:setup` is idempotent. Run it again after pulling changes to the schema or content.
 
 ## Environment variables

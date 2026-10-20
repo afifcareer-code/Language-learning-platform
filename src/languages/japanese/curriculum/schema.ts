@@ -5,15 +5,30 @@ import { localizedTextSchema } from "@/localization/content";
 
 const slug = z.string().regex(/^[a-z0-9-]+$/);
 
-/** data/japanese/curriculum/levels.json */
+/**
+ * data/japanese/curriculum/levels.json: the levels of the language's
+ * proficiency framework in order, each listing its courses (files in
+ * curriculum/courses). A level may have no courses yet.
+ */
 export const levelsFileSchema = z.object({
-  levels: z.array(z.object({ slug, title: localizedTextSchema, description: localizedTextSchema })).min(1),
+  framework: z.string().regex(/^[a-z]+$/),
+  levels: z
+    .array(
+      z.object({
+        slug,
+        /** Official code in the framework (e.g. "N5"); null for platform stages such as Foundation. */
+        frameworkLevel: z.string().min(1).nullable(),
+        courses: z.array(slug),
+        title: localizedTextSchema,
+        description: localizedTextSchema,
+      }),
+    )
+    .min(1),
 });
 
-/** A course file under data/japanese/curriculum. Lessons reference content by item key. */
+/** A course file under data/japanese/curriculum/courses. Lessons reference content by item key. */
 export const courseFileSchema = z.object({
   slug,
-  level: slug,
   title: localizedTextSchema,
   description: localizedTextSchema,
   /** Name of the activity template file in data/japanese/activities used for every lesson. */

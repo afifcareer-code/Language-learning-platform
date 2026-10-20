@@ -26,10 +26,21 @@ const createdAt = (name = "created_at") =>
     .notNull()
     .$defaultFn(() => new Date());
 
+/**
+ * The language catalog: every language the platform offers or plans to offer.
+ * A language is `available` only when its module is installed; others are
+ * listed as `coming_soon` and cannot be studied.
+ */
 export const languages = mysqlTable("languages", {
   code: str("code").primaryKey(),
   name: str("name").notNull(),
   nativeName: str("native_name").notNull(),
+  status: str("status").notNull().default("available"),
+  /** e.g. "kana_kanji", "latin", "hangul". */
+  writingSystem: str("writing_system"),
+  /** The proficiency framework its curriculum follows, e.g. "jlpt", "cefr". */
+  proficiencyFramework: str("proficiency_framework"),
+  sortOrder: int("sort_order").notNull().default(0),
 });
 
 export const learners = mysqlTable("learners", {
@@ -42,6 +53,27 @@ export const learners = mysqlTable("learners", {
   uiLocale: str("ui_locale"),
   createdAt: createdAt(),
 });
+
+/**
+ * Languages a learner studies, each with its own current level. The active
+ * one is `learners.target_language`; switching keeps every language's level.
+ */
+export const learnerLanguages = mysqlTable(
+  "learner_languages",
+  {
+    learnerId: str("learner_id")
+      .notNull()
+      .references(() => learners.id),
+    languageCode: str("language_code")
+      .notNull()
+      .references(() => languages.code),
+    currentLevelId: str("current_level_id")
+      .notNull()
+      .references(() => levels.id),
+    startedAt: createdAt("started_at"),
+  },
+  (t) => [primaryKey({ columns: [t.learnerId, t.languageCode] })],
+);
 
 export const contentItems = mysqlTable(
   "content_items",
@@ -78,6 +110,11 @@ export const levels = mysqlTable("levels", {
     .notNull()
     .references(() => languages.code),
   slug: str("slug").notNull().unique(),
+  /**
+   * The level's code in the language's proficiency framework (e.g. "N5");
+   * null for platform stages such as Foundation that precede the framework.
+   */
+  frameworkLevel: str("framework_level"),
   sortOrder: int("sort_order").notNull(),
 });
 

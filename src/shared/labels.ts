@@ -6,16 +6,16 @@ export const MASTERY_TONE: Record<MasteryState, string> = {
   learning: "bg-warning-soft text-warning",
   practicing: "bg-accent-soft text-accent",
   proficient: "bg-accent text-accent-ink",
-  mastered: "bg-success text-paper",
+  mastered: "bg-success text-accent-ink",
   needs_review: "bg-danger-soft text-danger",
 };
 
 /** Solid colours for small marks (legend dots, distribution bars) where soft tints are too faint. */
 export const MASTERY_SWATCH: Record<MasteryState, string> = {
   not_started: "bg-line",
-  learning: "bg-warning",
-  practicing: "bg-accent/45",
-  proficient: "bg-accent",
-  mastered: "bg-success",
+  learning: "bg-warning-fill",
+  practicing: "bg-accent-fill/45",
+  proficient: "bg-accent-fill",
+  mastered: "bg-success-fill",
   needs_review: "bg-danger",
 };

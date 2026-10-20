@@ -31,8 +31,16 @@ The project starts as a personal tool for a learner studying Japanese, built in 
 
 ## Languages
 
-The **learning language** (Japanese for now) is separate from the **platform language** (the interface: Bahasa Indonesia or English). Learners use the platform in their own language while studying another. Learning content, such as objectives and instructions, is localized too.
+The product is a language-learning platform where learners **choose what language they want to master**. It is not a Japanese app with other languages bolted on later.
+
+Three concepts are always separate:
+
+- **UI language**: the interface (Bahasa Indonesia or English).
+- **Learning language**: the language being learned (Japanese now; more planned).
+- **Proficiency framework and level**: where the learner is in that language (JLPT for Japanese; CEFR, HSK, TOPIK for planned languages).
+
+Learners use the platform in their own language while studying another, and learning content such as objectives and instructions is localized too.
 
 ## Scope
 
-Japanese is the first and currently only supported language. The architecture is **Japanese-first but language-agnostic**: the learning engine knows nothing about Japanese, so other languages can be added later without rewriting it. We will not add other languages until the Japanese experience is solid.
+**Japanese is the first available language, not the architectural boundary of the platform.** The learning engine knows nothing about Japanese, so other languages can be added as modules without rewriting it. The planned order is Japanese, then English, Mandarin Chinese, Spanish, German, French, Korean, Portuguese, Arabic, Italian and Hindi. Planned languages appear in the catalog as "coming soon", with no fake curriculum, until their modules exist. Each new language is added only once the current ones are solid.

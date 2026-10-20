@@ -1,0 +1,95 @@
+{
+  "slug": "hiragana",
+  "title": {
+    "en": "Hiragana",
+    "id": "Hiragana"
+  },
+  "description": {
+    "en": "Read and write the 46 basic hiragana from memory: the script for native Japanese words and grammar.",
+    "id": "Membaca dan menulis 46 hiragana dasar dari ingatan: aksara untuk kata asli dan tata bahasa Jepang."
+  },
+  "activityTemplates": "kana",
+  "lessons": [
+    {
+      "slug": "hiragana-vowels",
+      "title": {
+        "en": "Hiragana: Vowels",
+        "id": "Hiragana: Vokal"
+      },
+      "items": ["hiragana:あ", "hiragana:い", "hiragana:う", "hiragana:え", "hiragana:お"]
+    },
+    {
+      "slug": "hiragana-k-row",
+      "title": {
+        "en": "Hiragana: K row",
+        "id": "Hiragana: Baris K"
+      },
+      "items": ["hiragana:か", "hiragana:き", "hiragana:く", "hiragana:け", "hiragana:こ"]
+    },
+    {
+      "slug": "hiragana-s-row",
+      "title": {
+        "en": "Hiragana: S row",
+        "id": "Hiragana: Baris S"
+      },
+      "items": ["hiragana:さ", "hiragana:し", "hiragana:す", "hiragana:せ", "hiragana:そ"]
+    },
+    {
+      "slug": "hiragana-t-row",
+      "title": {
+        "en": "Hiragana: T row",
+        "id": "Hiragana: Baris T"
+      },
+      "items": ["hiragana:た", "hiragana:ち", "hiragana:つ", "hiragana:て", "hiragana:と"]
+    },
+    {
+      "slug": "hiragana-n-row",
+      "title": {
+        "en": "Hiragana: N row",
+        "id": "Hiragana: Baris N"
+      },
+      "items": ["hiragana:な", "hiragana:に", "hiragana:ぬ", "hiragana:ね", "hiragana:の"]
+    },
+    {
+      "slug": "hiragana-h-row",
+      "title": {
+        "en": "Hiragana: H row",
+        "id": "Hiragana: Baris H"
+      },
+      "items": ["hiragana:は", "hiragana:ひ", "hiragana:ふ", "hiragana:へ", "hiragana:ほ"]
+    },
+    {
+      "slug": "hiragana-m-row",
+      "title": {
+        "en": "Hiragana: M row",
+        "id": "Hiragana: Baris M"
+      },
+      "items": ["hiragana:ま", "hiragana:み", "hiragana:む", "hiragana:め", "hiragana:も"]
+    },
+    {
+      "slug": "hiragana-y-r-rows",
+      "title": {
+        "en": "Hiragana: Y and R rows",
+        "id": "Hiragana: Baris Y dan R"
+      },
+      "items": [
+        "hiragana:や",
+        "hiragana:ゆ",
+        "hiragana:よ",
+        "hiragana:ら",
+        "hiragana:り",
+        "hiragana:る",
+        "hiragana:れ",
+        "hiragana:ろ"
+      ]
+    },
+    {
+      "slug": "hiragana-w-row-n",
+      "title": {
+        "en": "Hiragana: W row and ん",
+        "id": "Hiragana: Baris W dan ん"
+      },
+      "items": ["hiragana:わ", "hiragana:を", "hiragana:ん"]
+    }
+  ]
+}

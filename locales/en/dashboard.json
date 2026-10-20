@@ -19,7 +19,10 @@
   "recommendations": {
     "title": "Recommended next",
     "allCaughtUp": "You are all caught up.",
-    "review": { "one": "Review {count} item · {skill}", "other": "Review {count} items · {skill}" },
+    "review": {
+      "one": "Review {count} item · {skill}",
+      "other": "Review {count} items · {skill}"
+    },
     "practice": {
       "one": "Practice {count} recent mistake · {skill}",
       "other": "Practice {count} recent mistakes · {skill}"
@@ -37,5 +40,6 @@
     "attempts": "Attempts",
     "accuracy": "Accuracy"
   },
-  "masteryBySkill": "Mastery by skill"
+  "masteryBySkill": "Mastery by skill",
+  "change": "Change"
 }

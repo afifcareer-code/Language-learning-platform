@@ -1,6 +1,6 @@
 "use client";
 
-import type { AttemptFeedback } from "@/app/practice/actions";
+import type { AttemptFeedback } from "@/features/practice/actions";
 import { SpeakButton } from "@/audio/speak-button";
 import { MasteryBadge } from "@/components/ui/mastery-badge";
 import { useT } from "@/localization/client";

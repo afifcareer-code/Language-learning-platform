@@ -39,6 +39,8 @@ export interface CourseView {
 export interface LevelView {
   id: string;
   slug: string;
+  /** Official framework code (e.g. "N5"), or null for platform stages such as Foundation. */
+  frameworkLevel: string | null;
   title: string;
   description: string | null;
   courses: CourseView[];
@@ -181,6 +183,7 @@ export async function getCurriculum(db: Database, languageCode: string, locale: 
     return {
       id: level.id,
       slug: level.slug,
+      frameworkLevel: level.frameworkLevel,
       title: text?.title ?? level.slug,
       description: text?.description ?? null,
       courses: courses.filter((c) => c.levelId === level.id).map(courseView),
@@ -189,7 +192,14 @@ export async function getCurriculum(db: Database, languageCode: string, locale: 
   // Courses not yet assigned to a level still appear, under an untitled level.
   const unassigned = courses.filter((c) => !c.levelId || !levels.some((l) => l.id === c.levelId));
   if (unassigned.length) {
-    levelViews.push({ id: "", slug: "", title: "", description: null, courses: unassigned.map(courseView) });
+    levelViews.push({
+      id: "",
+      slug: "",
+      frameworkLevel: null,
+      title: "",
+      description: null,
+      courses: unassigned.map(courseView),
+    });
   }
 
   return { levels: levelViews, lessons: allLessons, activities: allActivities };

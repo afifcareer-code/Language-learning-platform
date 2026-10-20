@@ -77,9 +77,15 @@
     "sentence_accuracy": "Menyusun kalimat dengan tepat"
   },
   "units": {
-    "items": { "other": "{count} item" },
-    "characters": { "other": "{count} karakter" },
-    "attempts": { "other": "{count} percobaan" }
+    "items": {
+      "other": "{count} item"
+    },
+    "characters": {
+      "other": "{count} karakter"
+    },
+    "attempts": {
+      "other": "{count} percobaan"
+    }
   },
   "error": {
     "title": "Terjadi kesalahan",
@@ -89,5 +95,10 @@
   "notFound": {
     "title": "Halaman tidak ditemukan",
     "body": "Halaman yang Anda cari tidak ada."
+  },
+  "shell": {
+    "uiLanguage": "Bahasa antarmuka",
+    "learningLanguage": "Bahasa yang dipelajari",
+    "changeLearningLanguage": "Ganti bahasa yang dipelajari"
   }
 }

@@ -11,5 +11,7 @@
   "targetMastery": "Target: setiap item mencapai {state}",
   "startActivity": "Mulai",
   "activitiesProgress": "{completed} dari {total} aktivitas",
-  "noCourses": "Belum ada kursus. Periksa log server untuk kesalahan database."
+  "noCourses": "Belum ada kursus. Periksa log server untuk kesalahan database.",
+  "inDevelopment": "Kurikulum sedang dikembangkan",
+  "currentLevel": "Tingkat Anda"
 }

@@ -1,13 +1,8 @@
-import { expect, test, type Page } from "@playwright/test";
-
-async function useEnglish(page: Page) {
-  await page.goto("/settings");
-  await page.getByLabel("English").check();
-  await page.getByRole("button", { name: /^(Save|Simpan)$/ }).click();
-  await expect(page.getByRole("heading", { level: 1 })).toHaveText(/Settings/);
-}
+import { expect, test } from "@playwright/test";
+import { ensureLearning, useEnglish } from "./helpers";
 
 test.beforeEach(async ({ page }) => {
+  await ensureLearning(page);
   await useEnglish(page);
 });
 
@@ -36,7 +31,7 @@ test("recognition activity ends with a learning outcome", async ({ page }) => {
   await page.goto("/activities/ja.activity.hiragana-vowels.recognition");
   await expect(page.getByText("Objective").first()).toBeVisible();
   for (let i = 0; i < 5; i++) {
-    await page.getByRole("group").getByRole("button").first().click();
+    await page.getByRole("group", { name: /sound/ }).getByRole("button").first().click();
     await expect(page.getByRole("status")).toBeVisible();
     await page.getByRole("button", { name: "Next" }).click();
   }
@@ -70,14 +65,13 @@ test("writing activity captures strokes and records a self-assessment", async ({
   await expect(page.getByText("2 of 5").first()).toBeVisible();
 });
 
-test("switching the interface to Indonesian keeps the Japanese content", async ({ page }) => {
+test("Settings still changes the interface language and shows the learning language", async ({ page }) => {
   await page.goto("/settings");
-  await page.getByLabel("Bahasa Indonesia").check();
+  await expect(page.getByText(/Learning language: Japanese · 日本語 · Foundation/)).toBeVisible();
+  await page.getByRole("radio", { name: "Bahasa Indonesia" }).check();
   await page.getByRole("button", { name: "Save" }).click();
   await expect(page.getByRole("heading", { level: 1 })).toHaveText("Pengaturan");
-  await page.goto("/learn/hiragana-vowels");
-  await expect(page.locator("ol > li").nth(2)).toContainText("Menulis Hiragana あ い う え お");
-  await page.goto("/");
+  await page.goto("/dashboard");
   await expect(page.getByText("Progres kursus")).toBeVisible();
   await useEnglish(page);
 });

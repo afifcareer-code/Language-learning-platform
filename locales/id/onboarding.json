@@ -1,0 +1,19 @@
+{
+  "title": "Bahasa apa yang ingin Anda pelajari?",
+  "subtitle": "Pilih bahasa untuk mulai. Anda bisa menambah atau mengganti bahasa kapan saja.",
+  "switchTitle": "Bahasa yang Anda pelajari",
+  "switchSubtitle": "Lanjutkan bahasa yang sedang Anda pelajari, atau pilih bahasa lain.",
+  "inProgress": "{level} · Sedang dipelajari",
+  "choose": "Pilih",
+  "levels": {
+    "title": "Dari mana Anda mulai?",
+    "subtitle": "{language} mengikuti tingkatan {framework}. Jika Anda baru mengenal bahasa ini, mulailah dari {first}.",
+    "preFramework": "Sebelum {framework}",
+    "inDevelopment": "Sedang dikembangkan",
+    "current": "Tingkat Anda saat ini",
+    "start": "Mulai di sini",
+    "continue": "Lanjutkan di sini",
+    "onlyPublished": "Tingkatan akan dibuka saat kurikulumnya diterbitkan. Progres Anda di tingkat sebelumnya tetap dihitung.",
+    "back": "Semua bahasa"
+  }
+}

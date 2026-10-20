@@ -8,7 +8,7 @@ By participating you agree to follow the [Code of Conduct](CODE_OF_CONDUCT.md).
 
 - **Small fixes** (typos, bugs, content errors): open a pull request directly.
 - **Features or architectural changes**: open an issue first so we can agree on the approach. Please read [Architecture overview](docs/architecture/overview.md) before proposing changes to `src/core`.
-- **New languages**: we are deliberately building one language well before adding more. Please open a discussion before starting a new language module.
+- **New languages**: planned languages are listed in [`data/languages.json`](data/languages.json) as coming soon. Please open a discussion before starting a language module: it needs a real curriculum, not placeholders.
 
 ## Development workflow
 

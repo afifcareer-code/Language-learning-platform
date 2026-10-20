@@ -61,6 +61,8 @@ The activity model (type, skill, objective, success criteria, evaluation strateg
 - **Confusion pairs**: `recordConfusion`, `recordPairSuccess`, `needsRemediation`. A pair needs practice after 2 confusions and is resolved after 4 correct answers on its items.
 - `masteryDistribution` (counts per state) and `attemptAccuracy`.
 
+The dashboard computes these measures for the learner's **current level** (`getLearningOverview(…, levelId)`), so each language and level has its own progress. The engine itself has no notion of a specific framework such as JLPT.
+
 ## Write path
 
 All learning evidence goes through one function, `server/services/learning.recordAttempt`, inside a single transaction:

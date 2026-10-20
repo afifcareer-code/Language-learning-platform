@@ -7,17 +7,18 @@ import { Card, CardTitle } from "@/components/ui/card";
 import { PageHeader } from "@/components/ui/page-header";
 import { itemDisplay } from "@/features/kana/kana-view";
 import { activityHref, confusionHref, reviewHref, weakItemsHref } from "@/features/practice/routes";
-import { getLanguageModule } from "@/languages/registry";
 import { languageName, masteryLabels, skillDescription, skillLabel } from "@/localization/labels";
 import { getI18n } from "@/localization/server";
 import { getContext } from "@/server/context";
+import { requireLearningContext } from "@/server/learning-context";
 import { getContentItems } from "@/server/repositories/content";
 import { getLearningOverview } from "@/server/services/overview";
 
 export default async function DashboardPage() {
   const { db, learner } = await getContext();
   const { locale, t } = await getI18n();
-  const overview = await getLearningOverview(db, learner, locale);
+  const context = await requireLearningContext();
+  const overview = await getLearningOverview(db, learner, locale, undefined, context.level.id);
   const next = overview.nextActivity;
   const nextLesson = overview.currentLesson;
 
@@ -70,7 +71,15 @@ export default async function DashboardPage() {
     <>
       <PageHeader
         title={t("dashboard.title", { name: learner.displayName })}
-        description={`${t("dashboard.learning", { language: languageName(t, learner.targetLanguage) })} · ${getLanguageModule(learner.targetLanguage).nativeName}`}
+        description={`${t("dashboard.learning", { language: languageName(t, context.language.code) })} · ${context.level.title}`}
+        actions={
+          <Link
+            href="/languages"
+            className="inline-flex min-h-11 items-center text-sm font-medium text-accent"
+          >
+            {t("dashboard.change")}
+          </Link>
+        }
       />
 
       <div className="grid gap-4 md:gap-6">

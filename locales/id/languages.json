@@ -1,0 +1,21 @@
+{
+  "names": {
+    "ja": "Bahasa Jepang",
+    "en": "Bahasa Inggris",
+    "zh": "Bahasa Mandarin",
+    "es": "Bahasa Spanyol",
+    "de": "Bahasa Jerman",
+    "fr": "Bahasa Prancis",
+    "ko": "Bahasa Korea"
+  },
+  "frameworks": {
+    "jlpt": "JLPT",
+    "cefr": "CEFR",
+    "hsk": "HSK",
+    "topik": "TOPIK"
+  },
+  "status": {
+    "available": "Tersedia",
+    "coming_soon": "Segera hadir"
+  }
+}

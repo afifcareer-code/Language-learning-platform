@@ -2,6 +2,19 @@
 
 The roadmap is intentionally incremental. Each milestone should leave the product usable.
 
+## Languages
+
+| Order | Language                           | Framework | Status                                       |
+| ----- | ---------------------------------- | --------- | -------------------------------------------- |
+| 1     | Japanese                           | JLPT      | Available (Foundation; N5–N1 in development) |
+| 2     | English                            | CEFR      | Coming soon                                  |
+| 3     | Mandarin Chinese                   | HSK       | Coming soon                                  |
+| 4     | Spanish                            | CEFR      | Coming soon                                  |
+| 5     | German                             | CEFR      | Coming soon                                  |
+| 6     | French                             | CEFR      | Coming soon                                  |
+| 7     | Korean                             | TOPIK     | Coming soon                                  |
+| 8–11  | Portuguese, Arabic, Italian, Hindi | —         | Planned (not yet in the catalog)             |
+
 ## v0.1: Foundation (current)
 
 - [x] Language-agnostic core engine: mastery, review, assessment model, recommendations, analytics
@@ -14,11 +27,15 @@ The roadmap is intentionally incremental. Each milestone should leave the produc
 - [x] Handwriting capture with progressive guidance and self-assessment
 - [x] Stroke-count analysis
 - [x] Review queue, dashboard, progress
+- [x] Language selection as the entry point; learning language, proficiency level and UI language as separate, persisted choices
+- [x] Language catalog with coming-soon languages; JLPT levels (Foundation, N5–N1) for Japanese
+- [x] Global ID / EN switch and learning-language switch in the app shell
 - [x] MySQL/MariaDB, PostgreSQL and SQLite with automatic detection, migrations and seeding on startup
 
-## v0.2: Kana complete
+## v0.2: Kana complete, N5 begins
 
 - [ ] Kana assessment and an Assessment page (uses the existing definition / attempt / result model)
+- [ ] N5 curriculum, structured as situation → vocabulary → grammar → pattern practice → listening → reading → production → review (original content)
 - [ ] Basic vocabulary written in kana, with localized meanings
 - [ ] Dakuten and handakuten (が, ぱ, …) and combination kana (きゃ, …)
 - [ ] Audio pronunciation assets (beyond browser speech synthesis)
@@ -43,5 +60,5 @@ The roadmap is intentionally incremental. Each milestone should leave the produc
 - Grammar, sentences, reading and listening comprehension
 - Multi-user accounts and authentication
 - Import and export of learning data
-- Additional languages, once the Japanese experience is mature and the module contract is proven
+- Additional languages in roadmap order, each as a module with its own curriculum, once the Japanese experience is mature
 - AI-assisted features (coach, explanations, generated practice, pronunciation and handwriting feedback), behind the same activity, evaluation and recommendation interfaces. Only when there is a concrete product need

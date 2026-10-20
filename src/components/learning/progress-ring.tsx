@@ -41,9 +41,9 @@ export function ProgressRing({
           transform={`rotate(-90 ${size / 2} ${size / 2})`}
           className={cn(
             "transition-[stroke-dashoffset] duration-500",
-            tone === "accent" && "stroke-accent",
-            tone === "success" && "stroke-success",
-            tone === "warning" && "stroke-warning",
+            tone === "accent" && "stroke-accent-fill",
+            tone === "success" && "stroke-success-fill",
+            tone === "warning" && "stroke-warning-fill",
           )}
         />
       </svg>

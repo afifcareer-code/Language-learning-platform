@@ -1,6 +1,6 @@
 "use client";
 
-import type { AttemptFeedback } from "@/app/practice/actions";
+import type { AttemptFeedback } from "@/features/practice/actions";
 import { useT } from "@/localization/client";
 import { cn } from "@/shared/cn";
 import type { PracticeItem } from "@/features/kana/kana-view";

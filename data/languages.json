@@ -1,0 +1,61 @@
+{
+  "source": "The platform's language catalog. A language can be 'available' only when its module is installed (src/languages/registry.ts); others are listed as 'coming_soon' and cannot be studied. Names are localized in locales/<locale>/languages.json.",
+  "languages": [
+    {
+      "code": "ja",
+      "name": "Japanese",
+      "nativeName": "日本語",
+      "status": "available",
+      "writingSystem": "kana_kanji",
+      "proficiencyFramework": "jlpt"
+    },
+    {
+      "code": "en",
+      "name": "English",
+      "nativeName": "English",
+      "status": "coming_soon",
+      "writingSystem": "latin",
+      "proficiencyFramework": "cefr"
+    },
+    {
+      "code": "zh",
+      "name": "Mandarin Chinese",
+      "nativeName": "中文",
+      "status": "coming_soon",
+      "writingSystem": "hanzi",
+      "proficiencyFramework": "hsk"
+    },
+    {
+      "code": "es",
+      "name": "Spanish",
+      "nativeName": "Español",
+      "status": "coming_soon",
+      "writingSystem": "latin",
+      "proficiencyFramework": "cefr"
+    },
+    {
+      "code": "de",
+      "name": "German",
+      "nativeName": "Deutsch",
+      "status": "coming_soon",
+      "writingSystem": "latin",
+      "proficiencyFramework": "cefr"
+    },
+    {
+      "code": "fr",
+      "name": "French",
+      "nativeName": "Français",
+      "status": "coming_soon",
+      "writingSystem": "latin",
+      "proficiencyFramework": "cefr"
+    },
+    {
+      "code": "ko",
+      "name": "Korean",
+      "nativeName": "한국어",
+      "status": "coming_soon",
+      "writingSystem": "hangul",
+      "proficiencyFramework": "topik"
+    }
+  ]
+}

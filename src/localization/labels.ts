@@ -31,7 +31,14 @@ export function skillDescription(t: Translator<Messages>, skill: string): string
   return t.dynamic([languageCode, "skills", skill, "description"], undefined, "");
 }
 
-/** The learning language's name in the UI language, e.g. "Bahasa Jepang". */
+/** A catalog language's name in the UI language, e.g. "Bahasa Jepang". */
 export function languageName(t: Translator<Messages>, code: string): string {
-  return t.dynamic([code, "name"], undefined, code);
+  return t.dynamic(["languages", "names", code], undefined, code);
+}
+
+/** A proficiency framework's display name, e.g. "JLPT". */
+export function frameworkName(t: Translator<Messages>, framework: string | null): string {
+  return framework
+    ? t.dynamic(["languages", "frameworks", framework], undefined, framework.toUpperCase())
+    : "";
 }

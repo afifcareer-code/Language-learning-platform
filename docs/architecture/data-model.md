@@ -22,8 +22,9 @@ learners ─┬─< learning_sessions
 
 | Table                                                      | Purpose                                                                                                                                                                                                             |
 | ---------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| `languages`                                                | Installed languages (`ja`)                                                                                                                                                                                          |
-| `learners`                                                 | Learners. v0.1 uses a single local learner (`id = "local"`). `ui_locale` stores the preferred interface language                                                                                                    |
+| `languages`                                                | The language catalog: code, native name, `status` (`available` / `coming_soon`), writing system, proficiency framework                                                                                              |
+| `learners`                                                 | Learners. v0.1 uses a single local learner (`id = "local"`). `ui_locale` is the interface language; `target_language` is the active learning language                                                               |
+| `learner_languages`                                        | The languages a learner has started, each with its `current_level_id`, so switching languages keeps every language's level                                                                                          |
 | `levels`                                                   | Proficiency bands in a language (Foundation now; JLPT levels later)                                                                                                                                                 |
 | `activities`, `activity_items`                             | Measurable learning actions: type, skill, difficulty, evaluation strategy, success criteria, pass score, target mastery, and the items they use. See [Activity system](activity-system.md)                          |
 | `*_translations`                                           | Localized text per entity and locale: `level_translations`, `course_translations`, `lesson_translations`, `activity_translations` (title, objective, instruction, explanation). See [Localization](localization.md) |
@@ -54,4 +55,10 @@ learners ─┬─< learning_sessions
 
 ## Migrations
 
-Migrations are append-only. The first release's database (`0000_init`) upgrades automatically: `0001` adds localization, activities and confusion pairs, and `0002` removes the untranslated title columns. Content is re-seeded on startup. `tests/integration/learning-flow.test.ts` covers this upgrade path on every engine.
+Migrations are append-only, and every earlier release's database upgrades automatically on startup:
+
+- `0001` adds localization, activities and confusion pairs.
+- `0002` removes the untranslated title columns.
+- `0003` adds the language catalog fields (`languages.status`, `writing_system`, `proficiency_framework`, `sort_order`), `levels.framework_level` and `learner_languages`.
+
+Content is re-seeded on startup; when a course is split (Kana Foundations → Hiragana and Katakana), lessons keep their ids, so attempts and mastery stay attached. `tests/integration/learning-flow.test.ts` covers upgrades from the first and the previous release on every engine, including a learner with existing progress.

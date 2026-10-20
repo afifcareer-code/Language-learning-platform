@@ -1,0 +1,21 @@
+{
+  "names": {
+    "ja": "Japanese",
+    "en": "English",
+    "zh": "Mandarin Chinese",
+    "es": "Spanish",
+    "de": "German",
+    "fr": "French",
+    "ko": "Korean"
+  },
+  "frameworks": {
+    "jlpt": "JLPT",
+    "cefr": "CEFR",
+    "hsk": "HSK",
+    "topik": "TOPIK"
+  },
+  "status": {
+    "available": "Available",
+    "coming_soon": "Coming soon"
+  }
+}

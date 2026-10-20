@@ -1,4 +1,4 @@
-import { readFile } from "node:fs/promises";
+import { readdir, readFile } from "node:fs/promises";
 import { join } from "node:path";
 import { missingLocales, placeholdersIn } from "@/localization/content";
 import { LOCALES } from "@/localization/config";
@@ -10,8 +10,6 @@ import {
   levelsFileSchema,
 } from "../curriculum/schema";
 import { KANA_SCRIPTS, kanaFileSchema, kanaItemKey } from "../scripts/kana";
-
-const COURSE_FILES = ["kana-foundations.json"];
 
 async function readJson(path: string): Promise<unknown> {
   return JSON.parse(await readFile(path, "utf8"));
@@ -51,25 +49,54 @@ export async function validateJapaneseContent(dataDir: string): Promise<string[]
   }
 
   const levels = levelsFileSchema.safeParse(await readJson(join(root, "curriculum", "levels.json")));
-  const levelSlugs = new Set<string>();
+  const courseSlugs: string[] = [];
   if (!levels.success) problems.push(`levels.json: ${levels.error.message}`);
-  else
+  else {
+    const levelSlugs = new Set<string>();
+    const frameworkLevels = new Set<string>();
     for (const level of levels.data.levels) {
+      if (levelSlugs.has(level.slug)) problems.push(`Duplicate level "${level.slug}"`);
       levelSlugs.add(level.slug);
+      if (level.frameworkLevel) {
+        if (frameworkLevels.has(level.frameworkLevel))
+          problems.push(`Duplicate framework level "${level.frameworkLevel}"`);
+        frameworkLevels.add(level.frameworkLevel);
+      }
       checkLocales(`level "${level.slug}" title`, level.title);
       checkLocales(`level "${level.slug}" description`, level.description);
+      for (const course of level.courses) {
+        if (courseSlugs.includes(course))
+          problems.push(`Course "${course}" is listed in more than one level`);
+        courseSlugs.push(course);
+      }
     }
+  }
+
+  const courseDir = join(root, "curriculum", "courses");
+  for (const file of await readdir(courseDir)) {
+    if (!courseSlugs.includes(file.replace(/\.json$/, ""))) {
+      problems.push(`curriculum/courses/${file} is not listed in any level`);
+    }
+  }
 
   const templateFiles = new Set<string>();
   const slugs = new Set<string>();
-  for (const name of COURSE_FILES) {
-    const course = courseFileSchema.safeParse(await readJson(join(root, "curriculum", name)));
+  for (const slug of courseSlugs) {
+    const name = `courses/${slug}.json`;
+    let raw: unknown;
+    try {
+      raw = await readJson(join(courseDir, `${slug}.json`));
+    } catch {
+      problems.push(`${name}: missing`);
+      continue;
+    }
+    const course = courseFileSchema.safeParse(raw);
     if (!course.success) {
       problems.push(`${name}: ${course.error.message}`);
       continue;
     }
     const c = course.data;
-    if (!levelSlugs.has(c.level)) problems.push(`${name}: unknown level "${c.level}"`);
+    if (c.slug !== slug) problems.push(`${name}: slug "${c.slug}" does not match its file name`);
     checkLocales(`${name} title`, c.title);
     checkLocales(`${name} description`, c.description);
     templateFiles.add(c.activityTemplates);

@@ -1,14 +1,14 @@
-import { BookIcon, ChartIcon, HomeIcon, PenIcon, RepeatIcon, SettingsIcon } from "./icons";
+import { BookIcon, ChartIcon, HomeIcon, PenIcon, RepeatIcon } from "./icons";
 
 /**
- * Primary navigation. Only sections with working features are listed;
- * Assessment and JLPT appear once they are implemented.
+ * Primary navigation for the current learning language. Only sections with
+ * working features are listed; Assessment appears once it is implemented.
+ * Settings and the language switchers live in the shell's context area.
  */
 export const NAV_ITEMS = [
-  { href: "/", label: "common.nav.dashboard", icon: HomeIcon, mobile: true },
-  { href: "/learn", label: "common.nav.learn", icon: BookIcon, mobile: true },
-  { href: "/practice", label: "common.nav.practice", icon: PenIcon, mobile: true },
-  { href: "/review", label: "common.nav.review", icon: RepeatIcon, mobile: true },
-  { href: "/progress", label: "common.nav.progress", icon: ChartIcon, mobile: true },
-  { href: "/settings", label: "common.nav.settings", icon: SettingsIcon, mobile: false },
+  { href: "/dashboard", label: "common.nav.dashboard", icon: HomeIcon },
+  { href: "/learn", label: "common.nav.learn", icon: BookIcon },
+  { href: "/practice", label: "common.nav.practice", icon: PenIcon },
+  { href: "/review", label: "common.nav.review", icon: RepeatIcon },
+  { href: "/progress", label: "common.nav.progress", icon: ChartIcon },
 ] as const;

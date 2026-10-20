@@ -9,6 +9,7 @@ import { activityHref } from "@/features/practice/routes";
 import { criterionLabel, masteryLabels, skillLabel } from "@/localization/labels";
 import { getI18n } from "@/localization/server";
 import { getContext } from "@/server/context";
+import { requireLearningContext } from "@/server/learning-context";
 import { getContentItems } from "@/server/repositories/content";
 import { getLearningOverview } from "@/server/services/overview";
 
@@ -18,7 +19,13 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { db, learner } = await getContext();
   const { locale } = await getI18n();
   const slug = (await params).lessonSlug;
-  const overview = await getLearningOverview(db, learner, locale);
+  const overview = await getLearningOverview(
+    db,
+    learner,
+    locale,
+    undefined,
+    (await requireLearningContext()).level.id,
+  );
   return { title: overview.curriculum.lessons.find((l) => l.slug === slug)?.title };
 }
 
@@ -26,7 +33,13 @@ export default async function LessonPage({ params }: Props) {
   const { lessonSlug } = await params;
   const { db, learner } = await getContext();
   const { locale, t } = await getI18n();
-  const overview = await getLearningOverview(db, learner, locale);
+  const overview = await getLearningOverview(
+    db,
+    learner,
+    locale,
+    undefined,
+    (await requireLearningContext()).level.id,
+  );
   const lesson = overview.curriculum.lessons.find((l) => l.slug === lessonSlug);
   if (!lesson) notFound();
 

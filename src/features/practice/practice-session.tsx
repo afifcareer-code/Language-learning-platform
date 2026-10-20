@@ -1,7 +1,7 @@
 "use client";
 
 import { useState, useTransition, type FormEvent } from "react";
-import { submitAttempt, type AttemptFeedback, type AttemptInput } from "@/app/practice/actions";
+import { submitAttempt, type AttemptFeedback, type AttemptInput } from "@/features/practice/actions";
 import type { SessionResult } from "@/core/activities";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";

@@ -19,8 +19,12 @@
   "recommendations": {
     "title": "Rekomendasi berikutnya",
     "allCaughtUp": "Semua sudah beres.",
-    "review": { "other": "Review {count} item · {skill}" },
-    "practice": { "other": "Latih {count} kesalahan terbaru · {skill}" },
+    "review": {
+      "other": "Review {count} item · {skill}"
+    },
+    "practice": {
+      "other": "Latih {count} kesalahan terbaru · {skill}"
+    },
     "confusion": "Bedakan {a} dan {b}",
     "reasons": {
       "due_for_review": "Sudah waktunya diulang, latih sebelum terlupa",
@@ -34,5 +38,6 @@
     "attempts": "Percobaan",
     "accuracy": "Akurasi"
   },
-  "masteryBySkill": "Penguasaan per keterampilan"
+  "masteryBySkill": "Penguasaan per keterampilan",
+  "change": "Ganti"
 }

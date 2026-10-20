@@ -2,11 +2,12 @@ import type { Metadata } from "next";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { PageHeader } from "@/components/ui/page-header";
-import { getLanguageModule } from "@/languages/registry";
+import Link from "next/link";
 import { LOCALE_NAMES, LOCALES } from "@/localization/config";
 import { languageName } from "@/localization/labels";
 import { getI18n } from "@/localization/server";
 import { getContext } from "@/server/context";
+import { requireLearningContext } from "@/server/learning-context";
 import { saveSettings } from "./actions";
 
 export async function generateMetadata(): Promise<Metadata> {
@@ -17,7 +18,7 @@ export async function generateMetadata(): Promise<Metadata> {
 export default async function SettingsPage() {
   const { learner } = await getContext();
   const { locale, t } = await getI18n();
-  const learning = getLanguageModule(learner.targetLanguage);
+  const learning = await requireLearningContext();
 
   return (
     <>
@@ -50,8 +51,12 @@ export default async function SettingsPage() {
           <p className="mt-5 text-sm text-muted">
             {t("settings.learningLanguage")}:{" "}
             <span className="font-medium text-ink">
-              {languageName(t, learning.code)} · {learning.nativeName}
-            </span>
+              {languageName(t, learning.language.code)} · {learning.language.nativeName} ·{" "}
+              {learning.level.title}
+            </span>{" "}
+            <Link href="/languages" className="font-medium text-accent">
+              {t("dashboard.change")}
+            </Link>
           </p>
         </Card>
 

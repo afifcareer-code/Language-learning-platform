@@ -1,46 +1,55 @@
 @import "tailwindcss";
 
 /*
- * Design tokens. Calm, paper-and-ink palette with a single indigo (藍) accent.
- * Japanese influence is kept subtle: typography and restraint, not motifs.
+ * Design tokens. Palette:
+ *   Background #F8F9FA · Surface #FFFFFF · Primary #1F2937 · Secondary #64748B
+ *   Accent #6366F1 · Success #22C55E · Warning #F59E0B · Border #E5E7EB · Dark #0F1115
+ * Text-on-light variants are mixed toward Primary so small text keeps WCAG AA
+ * contrast; "danger" (incorrect answers) is the one colour outside the palette.
  */
 :root {
-  --paper: #f7f5f0;
+  --paper: #f8f9fa;
   --surface: #ffffff;
-  --surface-sunken: #f0ede6;
-  --ink: #1d1c1a;
-  --muted: #6b6862;
-  --line: #e4e0d7;
-  --accent: #2f4a6d;
+  --surface-sunken: #f1f3f5;
+  --ink: #1f2937;
+  --muted: #64748b;
+  --line: #e5e7eb;
+  --accent-fill: #6366f1;
+  --accent: color-mix(in oklab, #6366f1 82%, #1f2937);
   --accent-ink: #ffffff;
-  --accent-soft: #e6ecf3;
-  --success: #3e6a4e;
-  --success-soft: #e4eee6;
-  --warning: #96702a;
-  --warning-soft: #f4ecdc;
-  --danger: #b2452f;
-  --danger-soft: #f6e5e0;
-  --guide: #1d1c1a;
+  --accent-soft: color-mix(in oklab, #6366f1 10%, #ffffff);
+  --success-fill: #22c55e;
+  --success: color-mix(in oklab, #22c55e 55%, #1f2937);
+  --success-soft: color-mix(in oklab, #22c55e 12%, #ffffff);
+  --warning-fill: #f59e0b;
+  --warning: color-mix(in oklab, #f59e0b 55%, #1f2937);
+  --warning-soft: color-mix(in oklab, #f59e0b 14%, #ffffff);
+  --danger: #dc2626;
+  --danger-soft: #fdecec;
+  --guide: #1f2937;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --paper: #141413;
-    --surface: #1c1c1a;
-    --surface-sunken: #232320;
-    --ink: #ecebe7;
-    --muted: #a19e97;
-    --line: #2f2e2b;
-    --accent: #9fb7d6;
-    --accent-ink: #141413;
-    --accent-soft: #1f2a37;
-    --success: #8fbf9c;
-    --success-soft: #1c2a21;
-    --warning: #d8b26a;
-    --warning-soft: #2c2619;
-    --danger: #e08a76;
-    --danger-soft: #2f1e1a;
-    --guide: #ecebe7;
+    --paper: #0f1115;
+    --surface: #171a21;
+    --surface-sunken: #1e222b;
+    --ink: #e5e7eb;
+    --muted: #94a3b8;
+    --line: #272b35;
+    --accent-fill: #6366f1;
+    --accent: color-mix(in oklab, #6366f1 70%, #ffffff);
+    --accent-ink: #0f1115;
+    --accent-soft: color-mix(in oklab, #6366f1 22%, #0f1115);
+    --success-fill: #22c55e;
+    --success: color-mix(in oklab, #22c55e 80%, #ffffff);
+    --success-soft: color-mix(in oklab, #22c55e 16%, #0f1115);
+    --warning-fill: #f59e0b;
+    --warning: color-mix(in oklab, #f59e0b 85%, #ffffff);
+    --warning-soft: color-mix(in oklab, #f59e0b 16%, #0f1115);
+    --danger: #f87171;
+    --danger-soft: color-mix(in oklab, #dc2626 20%, #0f1115);
+    --guide: #e5e7eb;
   }
 }
 
@@ -52,6 +61,9 @@
   --color-muted: var(--muted);
   --color-line: var(--line);
   --color-accent: var(--accent);
+  --color-accent-fill: var(--accent-fill);
+  --color-success-fill: var(--success-fill);
+  --color-warning-fill: var(--warning-fill);
   --color-accent-ink: var(--accent-ink);
   --color-accent-soft: var(--accent-soft);
   --color-success: var(--success);

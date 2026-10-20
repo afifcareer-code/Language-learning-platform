@@ -9,6 +9,7 @@ import { activityHref, confusionHref, weakItemsHref } from "@/features/practice/
 import { skillDescription, skillLabel } from "@/localization/labels";
 import { getI18n } from "@/localization/server";
 import { getContext } from "@/server/context";
+import { requireLearningContext } from "@/server/learning-context";
 import { getContentItems } from "@/server/repositories/content";
 import { getLearningOverview } from "@/server/services/overview";
 
@@ -20,7 +21,13 @@ export async function generateMetadata(): Promise<Metadata> {
 export default async function PracticePage() {
   const { db, learner } = await getContext();
   const { locale, t } = await getI18n();
-  const overview = await getLearningOverview(db, learner, locale);
+  const overview = await getLearningOverview(
+    db,
+    learner,
+    locale,
+    undefined,
+    (await requireLearningContext()).level.id,
+  );
   const lesson = overview.currentLesson;
 
   const weakBySkill = new Map<string, number>();

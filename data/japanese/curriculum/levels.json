@@ -1,14 +1,82 @@
 {
+  "framework": "jlpt",
   "levels": [
     {
       "slug": "foundation",
+      "frameworkLevel": null,
+      "courses": ["hiragana", "katakana"],
       "title": {
         "en": "Foundation",
         "id": "Dasar"
       },
       "description": {
-        "en": "The writing systems and sounds of Japanese, before JLPT N5.",
-        "id": "Sistem tulisan dan bunyi bahasa Jepang, sebelum JLPT N5."
+        "en": "The sounds and the two phonetic scripts of Japanese, before JLPT N5.",
+        "id": "Bunyi dan dua aksara fonetik bahasa Jepang, sebelum JLPT N5."
+      }
+    },
+    {
+      "slug": "n5",
+      "frameworkLevel": "N5",
+      "courses": [],
+      "title": {
+        "en": "N5",
+        "id": "N5"
+      },
+      "description": {
+        "en": "Everyday basics: greetings, simple sentences, numbers and time, and the first kanji.",
+        "id": "Dasar sehari-hari: salam, kalimat sederhana, angka dan waktu, serta kanji pertama."
+      }
+    },
+    {
+      "slug": "n4",
+      "frameworkLevel": "N4",
+      "courses": [],
+      "title": {
+        "en": "N4",
+        "id": "N4"
+      },
+      "description": {
+        "en": "Common situations: describing, asking, and connecting ideas in short conversations.",
+        "id": "Situasi umum: menjelaskan, bertanya, dan menghubungkan ide dalam percakapan singkat."
+      }
+    },
+    {
+      "slug": "n3",
+      "frameworkLevel": "N3",
+      "courses": [],
+      "title": {
+        "en": "N3",
+        "id": "N3"
+      },
+      "description": {
+        "en": "The bridge to natural Japanese: longer texts and conversations at near-natural speed.",
+        "id": "Jembatan menuju bahasa Jepang alami: teks lebih panjang dan percakapan dengan kecepatan hampir alami."
+      }
+    },
+    {
+      "slug": "n2",
+      "frameworkLevel": "N2",
+      "courses": [],
+      "title": {
+        "en": "N2",
+        "id": "N2"
+      },
+      "description": {
+        "en": "Japanese for work and study: articles, explanations and discussions on general topics.",
+        "id": "Bahasa Jepang untuk kerja dan studi: artikel, penjelasan, dan diskusi topik umum."
+      }
+    },
+    {
+      "slug": "n1",
+      "frameworkLevel": "N1",
+      "courses": [],
+      "title": {
+        "en": "N1",
+        "id": "N1"
+      },
+      "description": {
+        "en": "Advanced Japanese: complex and abstract texts across a wide range of topics.",
+        "id": "Bahasa Jepang tingkat lanjut: teks kompleks dan abstrak di berbagai topik."
       }
     }
   ]

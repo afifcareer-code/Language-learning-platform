@@ -1,0 +1,95 @@
+{
+  "slug": "katakana",
+  "title": {
+    "en": "Katakana",
+    "id": "Katakana"
+  },
+  "description": {
+    "en": "Read and write the 46 basic katakana from memory: the script for loanwords and names.",
+    "id": "Membaca dan menulis 46 katakana dasar dari ingatan: aksara untuk kata serapan dan nama."
+  },
+  "activityTemplates": "kana",
+  "lessons": [
+    {
+      "slug": "katakana-vowels",
+      "title": {
+        "en": "Katakana: Vowels",
+        "id": "Katakana: Vokal"
+      },
+      "items": ["katakana:ア", "katakana:イ", "katakana:ウ", "katakana:エ", "katakana:オ"]
+    },
+    {
+      "slug": "katakana-k-row",
+      "title": {
+        "en": "Katakana: K row",
+        "id": "Katakana: Baris K"
+      },
+      "items": ["katakana:カ", "katakana:キ", "katakana:ク", "katakana:ケ", "katakana:コ"]
+    },
+    {
+      "slug": "katakana-s-row",
+      "title": {
+        "en": "Katakana: S row",
+        "id": "Katakana: Baris S"
+      },
+      "items": ["katakana:サ", "katakana:シ", "katakana:ス", "katakana:セ", "katakana:ソ"]
+    },
+    {
+      "slug": "katakana-t-row",
+      "title": {
+        "en": "Katakana: T row",
+        "id": "Katakana: Baris T"
+      },
+      "items": ["katakana:タ", "katakana:チ", "katakana:ツ", "katakana:テ", "katakana:ト"]
+    },
+    {
+      "slug": "katakana-n-row",
+      "title": {
+        "en": "Katakana: N row",
+        "id": "Katakana: Baris N"
+      },
+      "items": ["katakana:ナ", "katakana:ニ", "katakana:ヌ", "katakana:ネ", "katakana:ノ"]
+    },
+    {
+      "slug": "katakana-h-row",
+      "title": {
+        "en": "Katakana: H row",
+        "id": "Katakana: Baris H"
+      },
+      "items": ["katakana:ハ", "katakana:ヒ", "katakana:フ", "katakana:ヘ", "katakana:ホ"]
+    },
+    {
+      "slug": "katakana-m-row",
+      "title": {
+        "en": "Katakana: M row",
+        "id": "Katakana: Baris M"
+      },
+      "items": ["katakana:マ", "katakana:ミ", "katakana:ム", "katakana:メ", "katakana:モ"]
+    },
+    {
+      "slug": "katakana-y-r-rows",
+      "title": {
+        "en": "Katakana: Y and R rows",
+        "id": "Katakana: Baris Y dan R"
+      },
+      "items": [
+        "katakana:ヤ",
+        "katakana:ユ",
+        "katakana:ヨ",
+        "katakana:ラ",
+        "katakana:リ",
+        "katakana:ル",
+        "katakana:レ",
+        "katakana:ロ"
+      ]
+    },
+    {
+      "slug": "katakana-w-row-n",
+      "title": {
+        "en": "Katakana: W row and ン",
+        "id": "Katakana: Baris W dan ン"
+      },
+      "items": ["katakana:ワ", "katakana:ヲ", "katakana:ン"]
+    }
+  ]
+}

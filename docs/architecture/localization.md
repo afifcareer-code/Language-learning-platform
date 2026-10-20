@@ -1,6 +1,6 @@
 # Localization
 
-Three concerns are kept separate:
+Three concerns are kept separate (and distinct from the learner's **proficiency level**, see [Language system](language-system.md#three-separate-concepts)):
 
 | Concern                           | Example                                                      | Where                                        |
 | --------------------------------- | ------------------------------------------------------------ | -------------------------------------------- |
@@ -16,7 +16,7 @@ Supported platform locales: **`id`** (Bahasa Indonesia) and **`en`** (English), 
 
 For each request ([`src/localization/server.ts`](../../src/localization/server.ts)):
 
-1. The learner's saved preference (`learners.ui_locale`, set on the Settings page).
+1. The learner's saved preference (`learners.ui_locale`), set with the **ID / EN switcher in the app shell** (sidebar on tablet and desktop, header on mobile, and on the language-selection screens) or on the Settings page.
 2. Otherwise the browser's `Accept-Language` header.
 3. Otherwise `DEFAULT_LOCALE` from the environment, falling back to `en`.
 

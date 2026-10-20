@@ -66,6 +66,15 @@ export async function createTestDatabase(dialect: Dialect, serverUrl?: string): 
     drop: async () => {
       const c = new pg.Client({ connectionString: serverUrl });
       await c.connect();
+      // Closed pools may still be finishing their disconnects; wait for them
+      // rather than force-terminating sessions that are already going away.
+      for (let i = 0; i < 50; i++) {
+        const { rows } = await c.query("SELECT count(*)::int AS n FROM pg_stat_activity WHERE datname = $1", [
+          name,
+        ]);
+        if (rows[0].n === 0) break;
+        await new Promise((resolve) => setTimeout(resolve, 100));
+      }
       await c.query(`DROP DATABASE IF EXISTS "${name}" WITH (FORCE)`);
       await c.end();
     },

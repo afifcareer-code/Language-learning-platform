@@ -1,0 +1,19 @@
+{
+  "title": "What do you want to learn?",
+  "subtitle": "Choose a language to start. You can add or switch languages at any time.",
+  "switchTitle": "Your learning languages",
+  "switchSubtitle": "Continue a language you are learning, or choose a different one.",
+  "inProgress": "{level} · In progress",
+  "choose": "Choose",
+  "levels": {
+    "title": "Where are you starting?",
+    "subtitle": "{language} follows the {framework} levels. If you are new to the language, start with {first}.",
+    "preFramework": "Before {framework}",
+    "inDevelopment": "In development",
+    "current": "Your current level",
+    "start": "Start here",
+    "continue": "Continue here",
+    "onlyPublished": "Levels open as their curriculum is published. Your progress at earlier levels always counts.",
+    "back": "All languages"
+  }
+}

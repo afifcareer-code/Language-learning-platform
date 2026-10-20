@@ -1,6 +1,6 @@
 import { readFile } from "node:fs/promises";
 import { join } from "node:path";
-import { eq } from "drizzle-orm";
+import { and, eq, notInArray } from "drizzle-orm";
 import { japanese } from "@/languages/japanese";
 import { expandLessonActivities } from "@/languages/japanese/curriculum/activities";
 import {
@@ -20,8 +20,6 @@ import {
 } from "@/languages/japanese/scripts/kana";
 import type { Database, Transaction } from "../db/client";
 import { upsert } from "../db/dialect";
-
-const COURSE_FILES = ["kana-foundations.json"];
 
 async function readJson(path: string): Promise<unknown> {
   return JSON.parse(await readFile(path, "utf8"));
@@ -56,8 +54,14 @@ export async function seedJapanese(
     })),
   );
   const levels = levelsFileSchema.parse(await readJson(join(root, "curriculum", "levels.json")));
+  // Courses in curriculum order: by level, then as each level lists them.
   const courseFiles = await Promise.all(
-    COURSE_FILES.map(async (name) => courseFileSchema.parse(await readJson(join(root, "curriculum", name)))),
+    levels.levels.flatMap((level) =>
+      level.courses.map(async (slug) => ({
+        level: level.slug,
+        ...courseFileSchema.parse(await readJson(join(root, "curriculum", "courses", `${slug}.json`))),
+      })),
+    ),
   );
   const templates = new Map<string, ActivityTemplateFile>();
   for (const course of courseFiles) {
@@ -99,18 +103,8 @@ export async function seedJapanese(
   };
 
   // One transaction, so a running app never sees a half-seeded curriculum.
+  // The language row itself comes from the platform catalog (seedLanguageCatalog).
   await db.transaction(async (tx) => {
-    await upsert(
-      db,
-      tx,
-      t.languages,
-      { code: japanese.code, name: "Japanese", nativeName: japanese.nativeName },
-      {
-        target: [t.languages.code],
-        set: { nativeName: japanese.nativeName },
-      },
-    );
-
     for (const { script, file } of scripts) {
       for (const [i, char] of file.characters.entries()) {
         const id = kanaItemId(script, char.romaji);
@@ -133,7 +127,12 @@ export async function seedJapanese(
     const levelIdBySlug = new Map<string, string>();
     for (const [sortOrder, level] of levels.levels.entries()) {
       const id = `ja.level.${level.slug}`;
-      const row = { languageCode: japanese.code, slug: level.slug, sortOrder };
+      const row = {
+        languageCode: japanese.code,
+        slug: level.slug,
+        frameworkLevel: level.frameworkLevel,
+        sortOrder,
+      };
       await upsert(db, tx, t.levels, { id, ...row }, { target: [t.levels.id], set: row });
       await translate(
         tx,
@@ -218,15 +217,13 @@ export async function seedJapanese(
           };
           await upsert(db, tx, t.activities, { id: a.id, ...row }, { target: [t.activities.id], set: row });
           await tx.delete(t.activityItems).where(eq(t.activityItems.activityId, a.id));
-          await tx
-            .insert(t.activityItems)
-            .values(
-              a.contentItemIds.map((contentItemId, sortOrder) => ({
-                activityId: a.id,
-                contentItemId,
-                sortOrder,
-              })),
-            );
+          await tx.insert(t.activityItems).values(
+            a.contentItemIds.map((contentItemId, sortOrder) => ({
+              activityId: a.id,
+              contentItemId,
+              sortOrder,
+            })),
+          );
           for (const [locale, fields] of Object.entries(text)) {
             await upsert(
               db,
@@ -244,6 +241,13 @@ export async function seedJapanese(
         lessonCount++;
       }
     }
+
+    // Remove courses no longer in the data (e.g. after a course was split).
+    // Their lessons were moved to the new courses above, so nothing cascades.
+    const courseIds = courseFiles.map((c) => `ja.course.${c.slug}`);
+    await tx
+      .delete(t.courses)
+      .where(and(eq(t.courses.languageCode, japanese.code), notInArray(t.courses.id, courseIds)));
   });
 
   return { items: idByKey.size, lessons: lessonCount, activities: activityCount };

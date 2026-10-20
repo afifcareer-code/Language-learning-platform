@@ -1,13 +1,17 @@
 import enCommon from "../../locales/en/common.json";
 import enDashboard from "../../locales/en/dashboard.json";
+import enLanguages from "../../locales/en/languages.json";
 import enLearning from "../../locales/en/learning.json";
+import enOnboarding from "../../locales/en/onboarding.json";
 import enPractice from "../../locales/en/practice.json";
 import enProgress from "../../locales/en/progress.json";
 import enReview from "../../locales/en/review.json";
 import enSettings from "../../locales/en/settings.json";
 import idCommon from "../../locales/id/common.json";
 import idDashboard from "../../locales/id/dashboard.json";
+import idLanguages from "../../locales/id/languages.json";
 import idLearning from "../../locales/id/learning.json";
+import idOnboarding from "../../locales/id/onboarding.json";
 import idPractice from "../../locales/id/practice.json";
 import idProgress from "../../locales/id/progress.json";
 import idReview from "../../locales/id/review.json";
@@ -25,6 +29,8 @@ const platform = {
   en: {
     common: enCommon,
     dashboard: enDashboard,
+    languages: enLanguages,
+    onboarding: enOnboarding,
     learning: enLearning,
     practice: enPractice,
     review: enReview,
@@ -34,6 +40,8 @@ const platform = {
   id: {
     common: idCommon,
     dashboard: idDashboard,
+    languages: idLanguages,
+    onboarding: idOnboarding,
     learning: idLearning,
     practice: idPractice,
     review: idReview,

@@ -53,6 +53,16 @@ Writing is practised with progressively less support:
 
 The stage follows the learner's writing mastery of that character. After writing, the learner compares their attempt with the model and grades themselves. Automatic checks (v0.1: stroke count) can lower that grade but never raise it.
 
+## Curriculum structure
+
+A language's curriculum follows its proficiency framework (Japanese: Foundation → N5 → N4 → N3 → N2 → N1). Lessons draw on the pedagogical structure of established textbooks: **situation → vocabulary → grammar → pattern practice → listening → reading → production → review**. They are original content, never copied textbook material. Today, Foundation lessons cover the kana with recognize → recall → write. Later levels add those sections as they are built.
+
+The broader learning loop is:
+
+```
+Exposure → Recognition → Understanding → Controlled practice → Recall → Production → Assessment → Review → Improvement
+```
+
 ## Activities and objectives
 
 Every activity states a measurable objective: what the learner will be able to do afterwards. It also states the success criteria it checks, and it ends with a learning outcome (score, mastery change, next review). Each lesson runs the learning loop **recognize → recall → write**, so the learner moves from easier to harder retrieval on the same items. Activities are never disconnected exercises. Each one is tied to the curriculum, a skill, its evaluation, mastery and review.

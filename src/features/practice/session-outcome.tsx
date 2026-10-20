@@ -103,7 +103,7 @@ export function SessionOutcome({
         <Button variant="secondary" onClick={() => router.refresh()}>
           {t("common.actions.practiceAgain")}
         </Button>
-        <ButtonLink href="/">{t("common.actions.done")}</ButtonLink>
+        <ButtonLink href="/dashboard">{t("common.actions.done")}</ButtonLink>
       </div>
     </Card>
   );

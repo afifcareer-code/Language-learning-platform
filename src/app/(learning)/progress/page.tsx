@@ -11,6 +11,7 @@ import { KANA_CONTENT_TYPE, KANA_SCRIPTS } from "@/languages/japanese";
 import { masteryLabels, skillLabel } from "@/localization/labels";
 import { getI18n } from "@/localization/server";
 import { getContext } from "@/server/context";
+import { requireLearningContext } from "@/server/learning-context";
 import { getContentItems, listContentItemsByType } from "@/server/repositories/content";
 import { getRecentAttempts, progressKey } from "@/server/repositories/progress";
 import { getLearningOverview } from "@/server/services/overview";
@@ -25,7 +26,7 @@ export default async function ProgressPage() {
   const { db, learner } = await getContext();
   const { locale, t } = await getI18n();
   const [overview, items, recent] = await Promise.all([
-    getLearningOverview(db, learner, locale),
+    getLearningOverview(db, learner, locale, undefined, (await requireLearningContext()).level.id),
     listContentItemsByType(db, learner.targetLanguage, KANA_CONTENT_TYPE),
     getRecentAttempts(db, learner.id, { limit: 20 }),
   ]);

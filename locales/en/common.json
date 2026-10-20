@@ -77,9 +77,18 @@
     "sentence_accuracy": "Builds an accurate sentence"
   },
   "units": {
-    "items": { "one": "{count} item", "other": "{count} items" },
-    "characters": { "one": "{count} character", "other": "{count} characters" },
-    "attempts": { "one": "{count} attempt", "other": "{count} attempts" }
+    "items": {
+      "one": "{count} item",
+      "other": "{count} items"
+    },
+    "characters": {
+      "one": "{count} character",
+      "other": "{count} characters"
+    },
+    "attempts": {
+      "one": "{count} attempt",
+      "other": "{count} attempts"
+    }
   },
   "error": {
     "title": "Something went wrong",
@@ -89,5 +98,10 @@
   "notFound": {
     "title": "Page not found",
     "body": "The page you are looking for does not exist."
+  },
+  "shell": {
+    "uiLanguage": "Interface language",
+    "learningLanguage": "Learning language",
+    "changeLearningLanguage": "Change learning language"
   }
 }

@@ -1,8 +1,16 @@
 # Language Learning Platform
 
-An open-source adaptive language learning platform focused on mastery, active recall, progressive practice, and personalized learning.
+An open-source adaptive language learning platform focused on mastery, active recall, progressive practice, personalized learning, and spaced review.
 
-**Japanese is currently the first supported language.** The platform is built so that more languages can be added as modules later, without rewriting the core. The interface is available in **Bahasa Indonesia** and **English**.
+**Japanese is currently the first supported language.** It is the first implementation, not the boundary of the platform: learners start by choosing **what language they want to learn**, and more languages (English, Mandarin, Spanish, German, French, Korean, …) are planned as modules on the same engine. The interface is available in **Bahasa Indonesia** and **English**.
+
+Three concepts are kept separate throughout:
+
+| Concept                             | Example                                                 |                                                      |
+| ----------------------------------- | ------------------------------------------------------- | ---------------------------------------------------- |
+| **UI language**                     | Bahasa Indonesia, English                               | What the app's menus and explanations are written in |
+| **Learning language**               | Japanese (available); English, Mandarin… (coming soon)  | What you are learning                                |
+| **Proficiency framework and level** | JLPT: Foundation, N5 … N1 · CEFR: A1 … C2 · HSK · TOPIK | Where you are in that language                       |
 
 > **Status: early development (v0.1).** The core learning engine, the activity system, localization, the Japanese kana module and the handwriting foundation work end to end. Expect breaking changes. See the [roadmap](docs/product/roadmap.md).
 
@@ -28,6 +36,7 @@ Read more in [Learning philosophy](docs/product/learning-philosophy.md) and [Act
 
 Working in v0.1:
 
+- **Language selection first.** The app opens with "What do you want to learn?". Japanese is available; planned languages are shown as coming soon and cannot be started. You then choose where to start in the language's framework (Japanese: Foundation, N5 … N1; levels open as their curriculum is published). Your choice is remembered, and both the learning language and the UI language can be changed from the app shell at any time.
 - **Activities with objectives.** Each lesson runs the learning loop: **recognize** (pick the sound), **recall** (type it with no options), **write** (by hand). Each activity has a localized, measurable objective, explicit success criteria, and a learning outcome at the end.
 - **Handwriting practice.** Pen, touch and mouse input are captured through the Pointer Events API, with optional pressure. Guidance fades as mastery grows: Trace → Faded guide → Hint only → From memory.
 - **Mastery engine.** Six states per item per skill: Not started, Learning, Practicing, Proficient, Mastered, Needs review.
@@ -36,17 +45,18 @@ Working in v0.1:
 - **Confusion pairs.** Mixing up two characters (シ/ツ, さ/ち) is detected from your answers, tracked, and practised in targeted sessions until resolved.
 - **Explainable recommendations.** Every suggestion says why: due for review, recent mistakes, confused pair, or next in your curriculum.
 - **Progress.** Per-character mastery grids, commonly confused pairs, and your learning history.
-- **Localization.** Interface in Indonesian and English (switchable in Settings), and localized learning content. The UI language, content translations and the language being learned are three separate concerns ([Localization](docs/architecture/localization.md)).
+- **Localization.** Interface in Indonesian and English, switchable from the app shell (ID / EN), and localized learning content. The UI language, content translations and the language being learned are three separate concerns ([Localization](docs/architecture/localization.md)).
 - **Data-driven content.** All Japanese content lives in validated JSON files under [`data/`](data/japanese).
 - **Responsive, tablet-first UI** with automatic light and dark themes.
 
 ## Current language
 
-| Language          | Status      | Scope                                                          |
-| ----------------- | ----------- | -------------------------------------------------------------- |
-| Japanese (日本語) | In progress | Hiragana and katakana (46 + 46): recognition, reading, writing |
+| Language                                                   | Status               | Scope                                                                                                                                           |
+| ---------------------------------------------------------- | -------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------- |
+| Japanese (日本語)                                          | **Available** (JLPT) | Foundation: hiragana and katakana (46 + 46) with recognition, reading and writing. N5–N1 levels are defined; their curriculum is in development |
+| English, Mandarin Chinese, Spanish, German, French, Korean | Coming soon          | Listed in the catalog with their frameworks (CEFR, HSK, TOPIK); no curriculum yet                                                               |
 
-The core engine is language-agnostic. Japanese concepts such as kana, kanji and JLPT live only in the Japanese module. See [Language system](docs/architecture/language-system.md).
+The core engine is language-agnostic. Japanese concepts such as kana, kanji and JLPT live only in the Japanese module; the catalog of languages lives in [`data/languages.json`](data/languages.json). See [Language system](docs/architecture/language-system.md).
 
 ## Screenshots
 
