@@ -99,6 +99,10 @@
   "shell": {
     "uiLanguage": "Bahasa antarmuka",
     "learningLanguage": "Bahasa yang dipelajari",
-    "changeLearningLanguage": "Ganti bahasa yang dipelajari"
+    "changeLearningLanguage": "Ganti bahasa yang dipelajari",
+    "learningPath": "Buka jalur belajar"
+  },
+  "audio": {
+    "play": "Putar pelafalan {text}"
   }
 }

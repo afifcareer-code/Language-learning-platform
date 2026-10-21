@@ -13,5 +13,55 @@
   "activitiesProgress": "{completed} of {total} activities",
   "noCourses": "No courses yet. Check the server log for database errors.",
   "inDevelopment": "Curriculum in development",
-  "currentLevel": "Your level"
+  "currentLevel": "Your level",
+  "path": {
+    "title": "Your learning path",
+    "description": "{language} along the {framework} levels. Each level builds on the one before.",
+    "levels": "Levels",
+    "youAreHere": "You are here",
+    "lessonsIn": "Lessons in {level}",
+    "viewing": "You are viewing {level}. Your current level is {current}.",
+    "switch": "Study this level",
+    "view": "View lessons",
+    "continue": "Continue",
+    "status": {
+      "current": "Current level",
+      "completed": "Completed",
+      "in_progress": "In progress",
+      "recommended": "Recommended next",
+      "available": "Available",
+      "locked": "In development"
+    }
+  },
+  "lesson": {
+    "breadcrumb": "Breadcrumb",
+    "situation": "Situation",
+    "objective": "Lesson objective",
+    "outcomes": "What you'll learn",
+    "outcomesHint": "Each outcome is measured by an activity below.",
+    "vocabulary": "Vocabulary",
+    "grammar": "Grammar",
+    "examples": "Examples",
+    "commonErrors": "Common mistakes",
+    "romajiNote": "Romaji is shown as a temporary aid while you learn to read kana. It fades as your reading improves.",
+    "groups": {
+      "learn": {
+        "title": "Learn",
+        "description": "Read and listen first. There is nothing to get wrong here."
+      },
+      "practice": {
+        "title": "Practice",
+        "description": "Recognize, then recall the new items."
+      },
+      "apply": {
+        "title": "Apply",
+        "description": "Use what you learned to produce something yourself."
+      },
+      "check": {
+        "title": "Check",
+        "description": "You are ready for the next lesson when {threshold} of this lesson's items hold up from memory."
+      }
+    },
+    "readiness": "{ready} of {total} ready"
+  }
 }

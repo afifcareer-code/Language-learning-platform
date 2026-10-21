@@ -7,6 +7,7 @@ import { JA_SKILLS } from "@/languages/japanese";
 import { prepareDatabase } from "@/server/db/bootstrap";
 import { createDatabase, type Database } from "@/server/db/client";
 import { migrationsFolder, runMigrations } from "@/server/db/migrate";
+import { getContentTranslations } from "@/server/repositories/content";
 import { getCurriculum } from "@/server/repositories/curriculum";
 import { ensureLocalLearner, type Learner } from "@/server/repositories/learners";
 import { getConfusionPairs, getLearnerProgress, progressKey } from "@/server/repositories/progress";
@@ -55,7 +56,7 @@ describe.each(TEST_DIALECTS)("learning flow on $dialect", ({ dialect, serverUrl 
     await prepareDatabase(db, { migrate: true, seed: true, ...quiet });
     const en = await getCurriculum(db, "ja", "en");
     const id = await getCurriculum(db, "ja", "id");
-    // The JLPT path is explicit; only Foundation has curriculum so far.
+    // The JLPT path is explicit; Foundation is complete and N5 has its first lesson.
     expect(en.levels.map((l) => [l.title, l.frameworkLevel])).toEqual([
       ["Foundation", null],
       ["N5", "N5"],
@@ -66,9 +67,11 @@ describe.each(TEST_DIALECTS)("learning flow on $dialect", ({ dialect, serverUrl 
     ]);
     expect(id.levels[0]?.title).toBe("Dasar");
     expect(en.levels[0]?.courses.map((c) => c.title)).toEqual(["Hiragana", "Katakana"]);
-    expect(en.levels.slice(1).every((l) => l.courses.length === 0)).toBe(true);
-    expect(en.lessons).toHaveLength(18);
-    expect(en.activities).toHaveLength(54);
+    expect(en.levels[1]?.courses.map((c) => c.title)).toEqual(["N5 Core"]);
+    expect(id.levels[1]?.courses.map((c) => c.title)).toEqual(["Inti N5"]);
+    expect(en.levels.slice(2).every((l) => l.courses.length === 0)).toBe(true);
+    expect(en.lessons).toHaveLength(19);
+    expect(en.activities).toHaveLength(57);
     expect(en.lessons[1]?.title).toBe("Hiragana: K row");
     expect(id.lessons[1]?.title).toBe("Hiragana: Baris K");
 
@@ -87,9 +90,51 @@ describe.each(TEST_DIALECTS)("learning flow on $dialect", ({ dialect, serverUrl 
     const overview = await getLearningOverview(db, learner, "en");
     expect(overview.nextActivity?.id).toBe("ja.activity.hiragana-vowels.recognition");
     expect(overview.recommendations).toEqual([expect.objectContaining({ kind: "activity" })]);
-    expect(overview.courseProgress).toMatchObject({ completedActivities: 0, totalActivities: 54 });
+    expect(overview.courseProgress).toMatchObject({ completedActivities: 0, totalActivities: 57 });
     expect(overview.overallMastery.ratio).toBe(0);
     expect(overview.readiness).toMatchObject({ ratio: 0, isReady: false });
+  });
+
+  it("seeds the first N5 lesson: objective, situation, localized words and grammar, activities per content type", async () => {
+    const en = await getCurriculum(db, "ja", "en");
+    const id = await getCurriculum(db, "ja", "id");
+    const lesson = en.lessons.find((l) => l.slug === "n5-01-introductions")!;
+    expect(lesson.objective).toMatch(/introduce yourself/);
+    expect(lesson.situation).toBeTruthy();
+    expect(id.lessons.find((l) => l.slug === "n5-01-introductions")?.objective).not.toBe(lesson.objective);
+    expect(lesson.activities.map((a) => [a.type, a.skill, a.contentItemIds.length])).toEqual([
+      ["recognition", JA_SKILLS.vocabularyRecognition, 12],
+      ["recall", JA_SKILLS.vocabularyRecall, 12],
+      ["sentence_building", JA_SKILLS.sentenceBuilding, 6],
+    ]);
+    // Kana lessons get their objective from the course, with the characters filled in.
+    expect(en.lessons[0]?.objective).toBe("Read and write あ い う え お from memory.");
+
+    const meanings = await getContentTranslations(db, ["ja.vocab.sensei", "ja.grammar.n5-wa-desu"], "id");
+    expect(meanings.get("ja.vocab.sensei")).toEqual({ meaning: "guru" });
+    expect(meanings.get("ja.grammar.n5-wa-desu")).toMatchObject({
+      meaning: expect.any(String),
+      commonErrors: expect.any(Array),
+    });
+  });
+
+  it("practises N5 words and sentences, with distractors of the same content type", async () => {
+    const recognition = await getPracticeSession(db, learner, "en", {
+      kind: "activity",
+      activityId: "ja.activity.n5-01-introductions.vocabulary-recognition",
+    });
+    expect(recognition?.type).toBe("recognition");
+    const [first] = recognition!.prompts;
+    const choices = recognition!.choices[first!.id]!;
+    expect(choices).toContain(first!.id);
+    expect(choices.every((c) => c.startsWith("ja.vocab."))).toBe(true);
+
+    const sentences = await getPracticeSession(db, learner, "en", {
+      kind: "activity",
+      activityId: "ja.activity.n5-01-introductions.sentence-building",
+    });
+    expect(sentences?.type).toBe("sentence_building");
+    expect(sentences?.prompts.every((p) => p.type === "ja.sentence")).toBe(true);
   });
 
   it("builds a recognition session with commonly confused distractors", async () => {
@@ -288,87 +333,94 @@ describe.each(TEST_DIALECTS)("upgrading an existing $dialect database", ({ diale
     ]);
   });
 
-  it("upgrades a database from the previous release and keeps the learner's progress and context", async () => {
-    // Previous release: migrations up to 0002, kana in one course, a learner with attempts, no learning context.
-    const fresh = await createTestDatabase(dialect, serverUrl);
-    const old = createDatabase(fresh.config);
-    try {
-      const source = migrationsFolder(dialect);
-      const previous = join(tmp, `${dialect}-previous`);
-      mkdirSync(join(previous, "meta"), { recursive: true });
-      const journal = JSON.parse(readFileSync(join(source, "meta", "_journal.json"), "utf8"));
-      const entries = journal.entries.slice(0, 3);
-      for (const e of entries) {
-        cpSync(join(source, `${e.tag}.sql`), join(previous, `${e.tag}.sql`));
-        cpSync(
-          join(source, "meta", `${String(e.idx).padStart(4, "0")}_snapshot.json`),
-          join(previous, "meta", `${String(e.idx).padStart(4, "0")}_snapshot.json`),
+  it.each([
+    { release: "0002", applied: 3 },
+    { release: "0003", applied: 4 },
+  ])(
+    "upgrades a database from release $release and keeps the learner's progress and context",
+    async ({ applied }) => {
+      // An earlier release: some migrations applied, kana in one course, a learner with attempts, no learning context.
+      const fresh = await createTestDatabase(dialect, serverUrl);
+      const old = createDatabase(fresh.config);
+      try {
+        const source = migrationsFolder(dialect);
+        const previous = join(tmp, `${dialect}-previous-${applied}`);
+        mkdirSync(join(previous, "meta"), { recursive: true });
+        const journal = JSON.parse(readFileSync(join(source, "meta", "_journal.json"), "utf8"));
+        const entries = journal.entries.slice(0, applied);
+        for (const e of entries) {
+          cpSync(join(source, `${e.tag}.sql`), join(previous, `${e.tag}.sql`));
+          cpSync(
+            join(source, "meta", `${String(e.idx).padStart(4, "0")}_snapshot.json`),
+            join(previous, "meta", `${String(e.idx).padStart(4, "0")}_snapshot.json`),
+          );
+        }
+        writeFileSync(join(previous, "meta", "_journal.json"), JSON.stringify({ ...journal, entries }));
+        await runMigrations(old, previous);
+
+        const at = {
+          sqlite: sql`1767225600000`,
+          mysql: sql`'2026-01-01 00:00:00.000'`,
+          postgres: sql`'2026-01-01T00:00:00Z'`,
+        }[dialect];
+        await exec(
+          old,
+          sql`INSERT INTO languages (code, name, native_name) VALUES ('ja', 'Japanese', '日本語')`,
         );
+        await exec(
+          old,
+          sql`INSERT INTO learners (id, display_name, target_language, created_at) VALUES ('local', 'Aiko', 'ja', ${at})`,
+        );
+        await exec(
+          old,
+          sql`INSERT INTO content_items (id, language_code, type, ${sql.identifier("key")}, data, tags, sort_order) VALUES ('ja.hiragana.a', 'ja', 'ja.kana', 'hiragana:あ', '{"script":"hiragana","kana":"あ","romaji":"a","row":"a","strokeCount":3}', '[]', 0)`,
+        );
+        await exec(
+          old,
+          sql`INSERT INTO levels (id, language_code, slug, sort_order) VALUES ('ja.level.foundation', 'ja', 'foundation', 0)`,
+        );
+        await exec(
+          old,
+          sql`INSERT INTO courses (id, language_code, level_id, slug, sort_order) VALUES ('ja.course.kana-foundations', 'ja', 'ja.level.foundation', 'kana-foundations', 0)`,
+        );
+        await exec(
+          old,
+          sql`INSERT INTO lessons (id, course_id, slug, sort_order) VALUES ('ja.lesson.hiragana-vowels', 'ja.course.kana-foundations', 'hiragana-vowels', 0)`,
+        );
+        await exec(
+          old,
+          sql`INSERT INTO learning_attempts (id, learner_id, content_item_id, skill, mode, correct, score, created_at) VALUES ('attempt-1', 'local', 'ja.hiragana.a', 'ja.kana.reading', 'practice', ${dialect === "postgres" ? sql`true` : sql`1`}, 1, ${at})`,
+        );
+
+        await prepareDatabase(old, { migrate: true, seed: true, ...quiet });
+
+        const learner = await ensureLocalLearner(old);
+        expect(learner.displayName).toBe("Aiko");
+        const progress = await getLearnerProgress(old, learner.id);
+        const attempts = await old.select().from(old.t.learningAttempts);
+        expect(attempts.map((a) => a.id)).toEqual(["attempt-1"]);
+        expect(progress.size).toBe(0); // the old attempt predates mastery records it may have had; it is kept as evidence
+
+        // Existing learners with progress are not sent back through onboarding.
+        const context = await getLearningContext(old, learner, "en");
+        expect(context).toMatchObject({
+          language: { code: "ja", status: "available" },
+          level: { slug: "foundation" },
+        });
+
+        const curriculum = await getCurriculum(old, "ja", "en");
+        expect(curriculum.levels[0]?.courses.map((c) => c.id)).toEqual([
+          "ja.course.hiragana",
+          "ja.course.katakana",
+        ]);
+        expect(curriculum.lessons[0]?.id).toBe("ja.lesson.hiragana-vowels");
+      } finally {
+        await old.close();
+        await fresh.drop();
       }
-      writeFileSync(join(previous, "meta", "_journal.json"), JSON.stringify({ ...journal, entries }));
-      await runMigrations(old, previous);
-
-      const at = {
-        sqlite: sql`1767225600000`,
-        mysql: sql`'2026-01-01 00:00:00.000'`,
-        postgres: sql`'2026-01-01T00:00:00Z'`,
-      }[dialect];
-      await exec(
-        old,
-        sql`INSERT INTO languages (code, name, native_name) VALUES ('ja', 'Japanese', '日本語')`,
-      );
-      await exec(
-        old,
-        sql`INSERT INTO learners (id, display_name, target_language, created_at) VALUES ('local', 'Aiko', 'ja', ${at})`,
-      );
-      await exec(
-        old,
-        sql`INSERT INTO content_items (id, language_code, type, ${sql.identifier("key")}, data, tags, sort_order) VALUES ('ja.hiragana.a', 'ja', 'ja.kana', 'hiragana:あ', '{"script":"hiragana","kana":"あ","romaji":"a","row":"a","strokeCount":3}', '[]', 0)`,
-      );
-      await exec(
-        old,
-        sql`INSERT INTO levels (id, language_code, slug, sort_order) VALUES ('ja.level.foundation', 'ja', 'foundation', 0)`,
-      );
-      await exec(
-        old,
-        sql`INSERT INTO courses (id, language_code, level_id, slug, sort_order) VALUES ('ja.course.kana-foundations', 'ja', 'ja.level.foundation', 'kana-foundations', 0)`,
-      );
-      await exec(
-        old,
-        sql`INSERT INTO lessons (id, course_id, slug, sort_order) VALUES ('ja.lesson.hiragana-vowels', 'ja.course.kana-foundations', 'hiragana-vowels', 0)`,
-      );
-      await exec(
-        old,
-        sql`INSERT INTO learning_attempts (id, learner_id, content_item_id, skill, mode, correct, score, created_at) VALUES ('attempt-1', 'local', 'ja.hiragana.a', 'ja.kana.reading', 'practice', ${dialect === "postgres" ? sql`true` : sql`1`}, 1, ${at})`,
-      );
-
-      await prepareDatabase(old, { migrate: true, seed: true, ...quiet });
-
-      const learner = await ensureLocalLearner(old);
-      expect(learner.displayName).toBe("Aiko");
-      const progress = await getLearnerProgress(old, learner.id);
-      const attempts = await old.select().from(old.t.learningAttempts);
-      expect(attempts.map((a) => a.id)).toEqual(["attempt-1"]);
-      expect(progress.size).toBe(0); // the old attempt predates mastery records it may have had; it is kept as evidence
-
-      // Existing learners with progress are not sent back through onboarding.
-      const context = await getLearningContext(old, learner, "en");
-      expect(context).toMatchObject({
-        language: { code: "ja", status: "available" },
-        level: { slug: "foundation" },
-      });
-
-      const curriculum = await getCurriculum(old, "ja", "en");
-      expect(curriculum.levels[0]?.courses.map((c) => c.id)).toEqual([
-        "ja.course.hiragana",
-        "ja.course.katakana",
-      ]);
-      expect(curriculum.lessons[0]?.id).toBe("ja.lesson.hiragana-vowels");
-    } finally {
-      await old.close();
-      await fresh.drop();
-    }
-  }, 60_000);
+    },
+    60_000,
+  );
 });
 
 describe.each(TEST_DIALECTS)("choosing what to learn on $dialect", ({ dialect, serverUrl }) => {
@@ -401,11 +453,11 @@ describe.each(TEST_DIALECTS)("choosing what to learn on $dialect", ({ dialect, s
     ]);
   });
 
-  it("lists Japanese levels along JLPT, with only Foundation open", async () => {
+  it("lists Japanese levels along JLPT, with Foundation and N5 open", async () => {
     const levels = await listLevels(db, "ja", "id");
     expect(levels.map((l) => [l.slug, l.frameworkLevel, l.hasContent])).toEqual([
       ["foundation", null, true],
-      ["n5", "N5", false],
+      ["n5", "N5", true],
       ["n4", "N4", false],
       ["n3", "N3", false],
       ["n2", "N2", false],

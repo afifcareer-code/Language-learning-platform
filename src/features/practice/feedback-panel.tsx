@@ -5,7 +5,7 @@ import { SpeakButton } from "@/audio/speak-button";
 import { MasteryBadge } from "@/components/ui/mastery-badge";
 import { useT } from "@/localization/client";
 import { cn } from "@/shared/cn";
-import type { PracticeItem } from "@/features/kana/kana-view";
+import type { PracticeItem } from "@/features/japanese/practice-items";
 
 /** Immediate, explainable feedback after one answer. */
 export function FeedbackPanel({ feedback, item }: { feedback: AttemptFeedback; item: PracticeItem }) {
@@ -24,7 +24,7 @@ export function FeedbackPanel({ feedback, item }: { feedback: AttemptFeedback; i
             ? t("practice.feedback.correct")
             : t("practice.feedback.answer", { answer: feedback.expected })}
         </span>
-        <SpeakButton text={item.display} lang={item.displayLang} className="size-10" />
+        <SpeakButton text={item.speech} lang="ja" className="size-10" />
       </div>
       {feedback.confusedWith && (
         <p className="mt-1 text-sm">

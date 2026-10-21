@@ -29,7 +29,16 @@ Levels belong to a language and are ordered. `levels.framework_level` holds the 
 
 ## Choosing what to learn
 
-`/` asks "What do you want to learn?" (language selection), then `/languages/<code>` asks "Where are you starting?" (level selection). The choice is stored in `learner_languages` and `learners.target_language`, and learning pages (`/dashboard`, `/learn`, …) require it. Learners who already had progress before language selection existed are placed at the first level with content automatically, so their progress is never reset and they never see onboarding again. The learning language can be changed at any time from the app shell (`/languages`); each language remembers its own level.
+`/` asks "What do you want to learn?" (language selection), then `/languages/<code>` asks "Where are you starting?" (level selection). The choice is stored in `learner_languages` and `learners.target_language`, and learning pages (`/dashboard`, `/learn`, …) require it. Learners who already had progress before language selection existed are placed at the first level with content automatically, so their progress is never reset and they never see onboarding again. The learning language can be changed at any time from the learning path (`/learn` → "Change learning language" → `/languages`); each language remembers its own level.
+
+## Where am I? Navigation
+
+The app shell always shows the three concepts separately:
+
+- **Learning context**, e.g. `日本語 Japanese · N5` with `Lesson 1 · Introductions` underneath (sidebar; `Japanese · N5` in the mobile header). It opens the learning path.
+- **Interface language**, a menu (`🌐 Bahasa Indonesia ▾`, `🌐 ID ▾` on phones) with one radio option per platform locale. It closes on Escape or an outside click and never changes the learning language.
+
+The **learning path** (`/learn`) shows where the learner is (language · level · course · lesson, with Continue), then every level of the framework with a status — _Current level_, _Completed_, _In progress_, _Recommended next_ (the next level once the current one is completed), _Available_, or _In development_ (no curriculum; it cannot be opened) — and the lessons of the selected level (`/learn?level=n5`). Any level with curriculum can be viewed; "Study this level" makes it the current one. Statuses are computed in [`src/server/services/learning-path.ts`](../../src/server/services/learning-path.ts) from activity statuses. Only languages with a module are selectable; coming-soon languages are listed but never selectable.
 
 ## The module contract
 
@@ -50,17 +59,20 @@ Modules are registered in [`src/languages/registry.ts`](../../src/languages/regi
 
 ### Capabilities
 
-Not every language has every feature. Japanese declares `character-recognition` and `character-writing`, while a language written in the Latin alphabet might declare neither. Features check capabilities, not language names. The Japanese module declares only the capabilities that are implemented today; vocabulary, grammar and listening will be added as they land.
+Not every language has every feature. Japanese declares `character-recognition` and `character-writing`, while a language written in the Latin alphabet might declare neither. Features check capabilities, not language names. The Japanese module declares only the capabilities that are implemented today (character recognition and writing, vocabulary, grammar); listening and speaking will be added as they land.
 
 ### Skills
 
 Skills are namespaced strings owned by the module:
 
-| Skill                 | Stage       | Capability            |
-| --------------------- | ----------- | --------------------- |
-| `ja.kana.recognition` | recognition | character-recognition |
-| `ja.kana.reading`     | recall      | character-recognition |
-| `ja.kana.writing`     | production  | character-writing     |
+| Skill                  | Stage       | Capability            |
+| ---------------------- | ----------- | --------------------- |
+| `ja.kana.recognition`  | recognition | character-recognition |
+| `ja.kana.reading`      | recall      | character-recognition |
+| `ja.kana.writing`      | production  | character-writing     |
+| `ja.vocab.recognition` | recognition | vocabulary            |
+| `ja.vocab.recall`      | recall      | vocabulary            |
+| `ja.grammar.sentence`  | production  | grammar               |
 
 Skill labels are localized in the module's `locales/<locale>.json`.
 
@@ -75,6 +87,11 @@ src/languages/japanese/
 ├── locales/{en,id}.json     The module's own UI text
 ├── scripts/kana.ts          Kana content schema, ids, romaji normalisation and checking
 ├── scripts/catalog.ts       Lookups over bundled kana data (reading → item, confusables)
+├── vocabulary/schema.ts     Words: kana, kanji, romaji scaffold, part of speech, localized meaning
+├── vocabulary/answers.ts    Accepts a typed word in kana, kanji or romaji
+├── grammar/schema.ts        Grammar points: pattern, meaning, explanation, examples, common errors
+├── sentences/schema.ts      Sentences: text, pieces for sentence building, grammar point, translation
+├── kanji/schema.ts          Kanji: meanings, on/kun readings, stroke count (model only, not populated)
 ├── curriculum/schema.ts     Level, course and activity-template file schemas
 ├── curriculum/activities.ts Expands activity templates per lesson
 └── content/validate.ts      Content consistency and translation checks
@@ -85,11 +102,30 @@ data/japanese/
 ├── curriculum/levels.json             (JLPT: Foundation, N5…N1, and each level's courses)
 ├── curriculum/courses/hiragana.json   (localized titles)
 ├── curriculum/courses/katakana.json
+├── curriculum/courses/n5-core.json    (N5 lessons: situation, objective, items)
+├── vocabulary/n5-introductions.json
+├── grammar/n5-introductions.json
+├── sentences/n5-introductions.json
 ├── activities/kana.json               (activity templates with localized objectives)
+├── activities/n5-lesson.json          (word recognition, word recall, sentence building)
 └── confusion/kana.json                (commonly confused kana)
 ```
 
-Future Japanese areas (`vocabulary/`, `kanji/`, `grammar/`, `sentences/`, `pronunciation/`, `proficiency/` for JLPT) will be added next to `scripts/` when implemented.
+Future Japanese areas (`pronunciation/`, kanji content, listening) will be added next to these when implemented.
+
+### Japanese content and JLPT
+
+All content is original. Commercial textbooks (for example Minna no Nihongo) may inspire the order of topics, but no text, example or exercise is copied.
+
+| Content type    | Item id / key                                  | Learning-language data (`content_items.data`) | Localized data (`content_item_translations`)                   |
+| --------------- | ---------------------------------------------- | --------------------------------------------- | -------------------------------------------------------------- |
+| `ja.kana`       | `ja.hiragana.a` / `hiragana:あ`                | script, kana, romaji, row, stroke count       | —                                                              |
+| `ja.vocabulary` | `ja.vocab.sensei` / `vocabulary:せんせい`      | kana, kanji?, romaji, affix?, part of speech  | `meaning`                                                      |
+| `ja.grammar`    | `ja.grammar.n5-wa-desu` / `grammar:n5-wa-desu` | pattern, examples (Japanese, romaji), related | `meaning`, `explanation`, example translations, `commonErrors` |
+| `ja.sentence`   | `ja.sentence.watashi-gakusei`                  | text, pieces, romaji?, grammar point          | `translation`                                                  |
+| `ja.kanji`      | (model only)                                   | character, readings, stroke count             | meanings                                                       |
+
+The JLPT relationship is data, not code: each content file names the level it is introduced at, stored as `content_items.level_id`, and levels carry their official code in `levels.framework_level`. **Romaji is a temporary scaffold**: it is shown next to words in the early levels and accepted as a typed answer, but the canonical form is kana (and kanji where usual). Representative content only: N5 currently has one lesson (Introductions: 12 words, 4 grammar points, 6 sentences).
 
 ## Content as data
 

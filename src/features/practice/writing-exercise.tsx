@@ -12,7 +12,7 @@ import type { SelfAssessment } from "@/handwriting/scoring/score";
 import type { Stroke, WritingSample } from "@/handwriting/strokes/types";
 import { useT } from "@/localization/client";
 import { cn } from "@/shared/cn";
-import type { PracticeItem } from "@/features/kana/kana-view";
+import type { PracticeItem } from "@/features/japanese/practice-items";
 
 const analyzer = new StrokeCountAnalyzer();
 
@@ -106,7 +106,7 @@ export function WritingExercise({
           <p className="text-sm text-muted">{t("practice.writing.writeFor", { script: item.cueKind })}</p>
           <div className="mt-1 flex items-center gap-3">
             <p className="text-4xl font-semibold">{item.cue}</p>
-            <SpeakButton text={item.display} lang={item.displayLang} />
+            <SpeakButton text={item.speech} lang="ja" />
           </div>
           <p className="mt-2 text-sm text-muted">
             {t("practice.writing.guide", { stage: t(`practice.writing.stages.${item.stage}`) })}

@@ -14,10 +14,17 @@
   "recall": {
     "label": "Type the reading in romaji"
   },
+  "sentence": {
+    "instruction": "Arrange the pieces to say the sentence in Japanese.",
+    "answer": "Your sentence",
+    "empty": "Tap the pieces below in order.",
+    "remove": "Remove {piece}",
+    "pieces": "Pieces"
+  },
   "feedback": {
     "correct": "Correct",
     "answer": "Answer: {answer}",
-    "confusedWith": "That is the reading of {item}. These two are easy to confuse.",
+    "confusedWith": "That is the answer for {item}. These two are easy to mix up.",
     "saveError": "Could not save your answer. Please try again."
   },
   "writing": {
@@ -44,7 +51,10 @@
   },
   "checks": {
     "stroke-count": {
-      "pass": { "one": "{count} stroke", "other": "{count} strokes" },
+      "pass": {
+        "one": "{count} stroke",
+        "other": "{count} strokes"
+      },
       "fail": "{count} drawn, expected {expected}"
     }
   },
@@ -56,8 +66,14 @@
     "passed": "Objective met for this session",
     "notPassed": "Not met yet. Aim for {pass} or more.",
     "masteryChanged": "Mastery",
-    "improved": { "one": "{count} item improved", "other": "{count} items improved" },
-    "declined": { "one": "{count} item needs more work", "other": "{count} items need more work" },
+    "improved": {
+      "one": "{count} item improved",
+      "other": "{count} items improved"
+    },
+    "declined": {
+      "one": "{count} item needs more work",
+      "other": "{count} items need more work"
+    },
     "nextReview": "Next review",
     "toRevisit": "To revisit"
   },

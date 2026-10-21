@@ -6,7 +6,8 @@ import { LearningContextChip } from "@/features/shell/learning-context-chip";
 import { UiLocaleSwitcher } from "@/features/shell/ui-locale-switcher";
 import { languageName } from "@/localization/labels";
 import { getI18n } from "@/localization/server";
-import { requireLearningContext } from "@/server/learning-context";
+import { getCurrentOverview, requireLearningContext } from "@/server/learning-context";
+import { locateLesson } from "@/server/repositories/curriculum";
 
 /**
  * Shell for learning pages. Requires a learning language and level; learners
@@ -15,11 +16,17 @@ import { requireLearningContext } from "@/server/learning-context";
 export default async function LearningLayout({ children }: { children: ReactNode }) {
   const context = await requireLearningContext();
   const { t } = await getI18n();
+  const overview = await getCurrentOverview();
+  const here = overview.currentLesson && locateLesson(overview.curriculum, overview.currentLesson.id);
   const chip = {
+    languageCode: context.language.code,
     nativeName: context.language.nativeName,
     languageLabel: languageName(t, context.language.code),
-    levelLabel: context.level.title,
-    srLabel: t("common.shell.changeLearningLanguage"),
+    levelLabel: context.level.frameworkLevel ?? context.level.title,
+    lessonLabel: here
+      ? `${t("learning.lessonNumber", { n: here.number })} · ${here.lesson.title}`
+      : undefined,
+    srLabel: t("common.shell.learningPath"),
   };
 
   return (
@@ -38,7 +45,7 @@ export default async function LearningLayout({ children }: { children: ReactNode
               compact
               className="flex-col justify-center gap-1 px-2 xl:flex-row xl:justify-start xl:gap-3 xl:px-3"
             />
-            <UiLocaleSwitcher stacked className="self-center xl:self-stretch" />
+            <UiLocaleSwitcher compact="below-xl" placement="up" />
             <SettingsNavLink />
           </div>
         </aside>
@@ -48,7 +55,7 @@ export default async function LearningLayout({ children }: { children: ReactNode
               <LogoMark />
             </Link>
             <LearningContextChip {...chip} className="min-h-11 min-w-0 flex-1 py-1" />
-            <UiLocaleSwitcher />
+            <UiLocaleSwitcher compact="always" />
             <MobileSettingsLink />
           </header>
           <main className="mx-auto w-full max-w-6xl px-4 pt-4 pb-28 md:px-8 md:pt-10 md:pb-12">

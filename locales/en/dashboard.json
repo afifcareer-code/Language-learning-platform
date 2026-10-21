@@ -1,11 +1,10 @@
 {
   "title": "Welcome back, {name}",
-  "learning": "Learning {language}",
   "metrics": {
     "courseProgress": "Course progress",
     "courseProgressDetail": "{completed} of {total} activities worked through",
     "skillMastery": "Skill mastery",
-    "skillMasteryDetail": "{demonstrated} of {total} characters proficient or better, across all skills",
+    "skillMasteryDetail": "{demonstrated} of {total} items proficient or better, across all skills",
     "readiness": "Learning readiness",
     "readinessReady": "Ready to move on from {lesson}",
     "readinessNotReady": "{lesson}: {ready} of {total} at Practicing or better ({threshold} needed)",
@@ -41,5 +40,8 @@
     "accuracy": "Accuracy"
   },
   "masteryBySkill": "Mastery by skill",
-  "change": "Change"
+  "change": "Change",
+  "youAreHere": "You are here",
+  "todaysFocus": "Today's focus",
+  "viewPath": "Learning path"
 }

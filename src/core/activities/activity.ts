@@ -111,3 +111,25 @@ export function evaluationFor(type: ActivityType): EvaluationStrategy {
       return "typed_response";
   }
 }
+
+/**
+ * How a lesson is organised for the learner: Learn (the lesson's content,
+ * not an activity), Practice (recognize and recall the new items), Apply (use
+ * them to produce something) and Check (show it holds up from memory).
+ */
+export const ACTIVITY_GROUPS = ["practice", "apply"] as const;
+export type ActivityGroup = (typeof ACTIVITY_GROUPS)[number];
+
+export function activityGroup(type: ActivityType): ActivityGroup {
+  switch (type) {
+    case "recognition":
+    case "recall":
+    case "multiple_choice":
+    case "matching":
+    case "listening":
+    case "reading":
+      return "practice";
+    default:
+      return "apply";
+  }
+}

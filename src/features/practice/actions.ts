@@ -12,9 +12,10 @@ import {
 } from "@/handwriting";
 import { acceptedStrokeCounts, isKanaItemData } from "@/languages/japanese";
 import { getLanguageModule } from "@/languages/registry";
-import { itemDisplay } from "@/features/kana/kana-view";
+import { choiceLabel, itemDisplay } from "@/features/japanese/practice-items";
+import { getLocale } from "@/localization/server";
 import { getContext } from "@/server/context";
-import { getContentItem } from "@/server/repositories/content";
+import { getContentItem, getContentTranslations } from "@/server/repositories/content";
 import { evaluateTypedResponse, recordAttempt } from "@/server/services/learning";
 
 // Server actions are public HTTP endpoints: validate every input.
@@ -53,6 +54,8 @@ const attemptSchema = z.object({
   response: z.discriminatedUnion("kind", [
     z.object({ kind: z.literal("choice"), choiceId: id }),
     z.object({ kind: z.literal("text"), answer: z.string().max(50) }),
+    // Sentence building: the pieces in the order the learner arranged them.
+    z.object({ kind: z.literal("sequence"), tokens: z.array(z.string().min(1).max(50)).min(1).max(30) }),
     z.object({
       kind: z.literal("writing"),
       stage: z.enum(WRITING_STAGES),
@@ -93,11 +96,12 @@ export async function submitAttempt(input: AttemptInput): Promise<AttemptFeedbac
     if (!activity) throw new Error("Unknown activity");
   }
   const item = await getContentItem(db, data.itemId);
-  if (!item || !isKanaItemData(item.data)) throw new Error("Unknown item");
+  if (!item) throw new Error("Unknown item");
 
   let correct: boolean;
   let score: number;
   let response: string;
+  let expected = "";
   let confusedWithId: string | undefined;
   let checks: WritingCheck[] = [];
   let writingSample: Parameters<typeof recordAttempt>[1]["writingSample"];
@@ -105,11 +109,13 @@ export async function submitAttempt(input: AttemptInput): Promise<AttemptFeedbac
   switch (data.response.kind) {
     case "choice": {
       const choice = await getContentItem(db, data.response.choiceId);
-      if (!choice) throw new Error("Unknown choice");
+      if (!choice || choice.type !== item.type) throw new Error("Unknown choice");
       correct = choice.id === item.id;
       score = correct ? 1 : 0;
       response = choice.id;
       confusedWithId = correct ? undefined : choice.id;
+      const translations = await getContentTranslations(db, [item.id], await getLocale());
+      expected = choiceLabel(item, translations.get(item.id));
       break;
     }
     case "text": {
@@ -118,11 +124,22 @@ export async function submitAttempt(input: AttemptInput): Promise<AttemptFeedbac
       ({ correct, score } = evaluation);
       response = data.response.answer;
       confusedWithId = evaluation.confusedWithItemId;
+      expected = evaluation.expected ?? "";
+      break;
+    }
+    case "sequence": {
+      response = data.response.tokens.join(" ");
+      const evaluation = evaluateTypedResponse(item, data.skill, response);
+      if (!evaluation) throw new Error("This item cannot be graded for this skill");
+      ({ correct, score } = evaluation);
+      expected = evaluation.expected ?? "";
       break;
     }
     case "writing": {
       // Re-run analysis on the server; the client's copy is for immediate feedback only.
+      if (!isKanaItemData(item.data)) throw new Error("This item cannot be written by hand yet");
       const { sample, selfAssessment, stage } = data.response;
+      expected = item.data.kana;
       const analysis = analyzer.analyze(sample, {
         text: item.data.kana,
         strokeCounts: acceptedStrokeCounts(item.data),
@@ -159,7 +176,7 @@ export async function submitAttempt(input: AttemptInput): Promise<AttemptFeedbac
   const confused = confusedWithId ? await getContentItem(db, confusedWithId) : null;
   return {
     correct,
-    expected: item.data.romaji,
+    expected,
     previousMastery: result.previousMasteryState,
     mastery: result.masteryState,
     nextReviewAt: result.review.dueAt.toISOString(),

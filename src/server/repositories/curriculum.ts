@@ -24,6 +24,10 @@ export interface LessonView {
   id: string;
   slug: string;
   title: string;
+  /** The lesson objective: what the learner can do after it. */
+  objective: string | null;
+  /** The situation the lesson's language is used in. */
+  situation: string | null;
   itemIds: string[];
   activities: ActivityView[];
 }
@@ -156,10 +160,13 @@ export async function getCurriculum(db: Database, languageCode: string, locale: 
           };
         });
         allActivities.push(...lessonActivities);
+        const text = pickTranslation(lessonTextBy.get(l.id) ?? [], locale);
         const view: LessonView = {
           id: l.id,
           slug: l.slug,
-          title: pickTranslation(lessonTextBy.get(l.id) ?? [], locale)?.title ?? l.slug,
+          title: text?.title ?? l.slug,
+          objective: text?.objective ?? null,
+          situation: text?.description ?? null,
           itemIds: (lessonItemsBy.get(l.id) ?? []).map((i) => i.contentItemId),
           activities: lessonActivities,
         };
@@ -203,4 +210,22 @@ export async function getCurriculum(db: Database, languageCode: string, locale: 
   }
 
   return { levels: levelViews, lessons: allLessons, activities: allActivities };
+}
+
+export interface LessonLocation {
+  level: LevelView;
+  course: CourseView;
+  lesson: LessonView;
+  /** 1-based position of the lesson in its course. */
+  number: number;
+}
+
+/** Where a lesson sits in the curriculum: its level, course and number. */
+export function locateLesson(curriculum: Curriculum, lessonId: string): LessonLocation | null {
+  for (const level of curriculum.levels)
+    for (const course of level.courses) {
+      const index = course.lessons.findIndex((l) => l.id === lessonId);
+      if (index >= 0) return { level, course, lesson: course.lessons[index]!, number: index + 1 };
+    }
+  return null;
 }

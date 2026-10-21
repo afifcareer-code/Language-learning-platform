@@ -7,6 +7,14 @@ The format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/), and
 
 ### Changed
 
+- The interface-language switch is now a menu (`🌐 Bahasa Indonesia ▾`, `🌐 ID ▾` on phones) with radio options; it closes on Escape or outside click.
+- The learning-context chip shows language · level · lesson and opens the learning path; the learning language is changed from there.
+- `/learn` is now the learning path: where you are, every level with its status, and the lessons of a selected level (`?level=`), with switching between levels that have curriculum.
+- Lesson pages show a breadcrumb, the situation and lesson objective, "What you'll learn", and Learn → Practice → Apply → Check.
+- Skill mastery and readiness are measured per skill on the items that skill's activities train; the dashboard and progress page show only skills in the current level. The progress page groups items by course.
+- Practice supports any content type: words show their meaning as choices, and recall accepts kana, kanji or romaji.
+- Database migration `0004`: `content_items.level_id`, `content_item_translations`, `lesson_translations.objective`. Existing databases upgrade automatically.
+
 - The app opens with language selection ("What do you want to learn?") instead of the Japanese dashboard; the dashboard moved to `/dashboard`. Learners with existing progress go straight to their dashboard.
 - Japanese Foundation is split into two courses, Hiragana and Katakana (lesson and activity ids unchanged, so progress is kept). Course files now live in `data/japanese/curriculum/courses/`, listed by `levels.json`.
 - Design tokens follow the platform palette (background #F8F9FA, primary #1F2937, accent #6366F1, …). The logo mark is now language-neutral ("A文").
@@ -17,6 +25,10 @@ The format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/), and
 
 ### Added
 
+- Japanese N5, lesson 1 (Introductions), all original content: 12 words, 4 grammar points with explanations, examples and common mistakes, and 6 sentences; activities for word recognition, word recall and sentence building.
+- Japanese content models for vocabulary, grammar, sentences and kanji (kanji not populated), linked to JLPT levels; romaji as a temporary scaffold.
+- Sentence-building exercise (arrange the pieces).
+- Lesson objectives for every lesson, and content validation for lesson objectives, sentence pieces and template content types.
 - Language catalog (`data/languages.json`): Japanese available; English, Mandarin Chinese, Spanish, German, French and Korean coming soon, with their proficiency frameworks (CEFR, HSK, TOPIK). Coming-soon languages cannot be started.
 - Level selection ("Where are you starting?") for a language's framework: Japanese JLPT with Foundation and N5–N1; levels without curriculum are shown as in development.
 - Learning language, proficiency level and UI language as separate, persisted choices; per-language current level.

@@ -4,7 +4,8 @@ import { useEffect, useRef } from "react";
 import type { AttemptFeedback } from "@/features/practice/actions";
 import { useT } from "@/localization/client";
 import { cn } from "@/shared/cn";
-import type { PracticeItem } from "@/features/kana/kana-view";
+import { PromptDisplay } from "./prompt-display";
+import type { PracticeItem } from "@/features/japanese/practice-items";
 
 /** Active recall: see the item and type the answer. No options to pick from. */
 export function RecallExercise({
@@ -28,9 +29,7 @@ export function RecallExercise({
 
   return (
     <>
-      <p lang={item.displayLang} className="font-jp text-[7rem] leading-none md:text-[9rem]">
-        {item.display}
-      </p>
+      <PromptDisplay item={item} />
       <label htmlFor="answer" className="mt-8 block text-muted">
         {instruction || t("practice.recall.label")}
       </label>

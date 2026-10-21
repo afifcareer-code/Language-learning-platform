@@ -4,16 +4,16 @@ The roadmap is intentionally incremental. Each milestone should leave the produc
 
 ## Languages
 
-| Order | Language                           | Framework | Status                                       |
-| ----- | ---------------------------------- | --------- | -------------------------------------------- |
-| 1     | Japanese                           | JLPT      | Available (Foundation; N5–N1 in development) |
-| 2     | English                            | CEFR      | Coming soon                                  |
-| 3     | Mandarin Chinese                   | HSK       | Coming soon                                  |
-| 4     | Spanish                            | CEFR      | Coming soon                                  |
-| 5     | German                             | CEFR      | Coming soon                                  |
-| 6     | French                             | CEFR      | Coming soon                                  |
-| 7     | Korean                             | TOPIK     | Coming soon                                  |
-| 8–11  | Portuguese, Arabic, Italian, Hindi | —         | Planned (not yet in the catalog)             |
+| Order | Language                           | Framework | Status                                                        |
+| ----- | ---------------------------------- | --------- | ------------------------------------------------------------- |
+| 1     | Japanese                           | JLPT      | Available (Foundation, first N5 lesson; N4–N1 in development) |
+| 2     | English                            | CEFR      | Coming soon                                                   |
+| 3     | Mandarin Chinese                   | HSK       | Coming soon                                                   |
+| 4     | Spanish                            | CEFR      | Coming soon                                                   |
+| 5     | German                             | CEFR      | Coming soon                                                   |
+| 6     | French                             | CEFR      | Coming soon                                                   |
+| 7     | Korean                             | TOPIK     | Coming soon                                                   |
+| 8–11  | Portuguese, Arabic, Italian, Hindi | —         | Planned (not yet in the catalog)                              |
 
 ## v0.1: Foundation (current)
 
@@ -31,12 +31,16 @@ The roadmap is intentionally incremental. Each milestone should leave the produc
 - [x] Language catalog with coming-soon languages; JLPT levels (Foundation, N5–N1) for Japanese
 - [x] Global ID / EN switch and learning-language switch in the app shell
 - [x] MySQL/MariaDB, PostgreSQL and SQLite with automatic detection, migrations and seeding on startup
+- [x] Interface-language menu and "where am I" context (language · level · lesson) in the app shell
+- [x] Learning path with level statuses (current, completed, in progress, recommended, available, in development)
+- [x] Lesson structure: situation, lesson objective, "What you'll learn", Learn → Practice → Apply → Check
+- [x] Japanese content models for vocabulary, grammar, sentences and kanji, linked to JLPT levels; localized content translations
 
 ## v0.2: Kana complete, N5 begins
 
 - [ ] Kana assessment and an Assessment page (uses the existing definition / attempt / result model)
-- [ ] N5 curriculum, structured as situation → vocabulary → grammar → pattern practice → listening → reading → production → review (original content)
-- [ ] Basic vocabulary written in kana, with localized meanings
+- [ ] N5 curriculum, structured as situation → vocabulary → grammar → pattern practice → listening → reading → production → review (original content). Lesson 1 (Introductions) is done
+- [x] Basic vocabulary written in kana, with localized meanings; word recognition, word recall and sentence building
 - [ ] Dakuten and handakuten (が, ぱ, …) and combination kana (きゃ, …)
 - [ ] Audio pronunciation assets (beyond browser speech synthesis)
 - [ ] Docker image for self-hosting
@@ -50,8 +54,8 @@ The roadmap is intentionally incremental. Each milestone should leave the produc
 
 ## v0.4: Words and kanji
 
-- [ ] Vocabulary items and reading/meaning skills
-- [ ] Kanji module: readings, meanings, writing
+- [x] Vocabulary items and recognition/recall skills
+- [ ] Kanji content and skills: readings, meanings, writing (the model exists)
 - [ ] JLPT N5 proficiency framework
 - [ ] Improved scheduler (FSRS or SM-2) behind the `ReviewScheduler` interface
 

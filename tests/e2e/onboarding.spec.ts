@@ -1,5 +1,5 @@
 import { expect, test } from "@playwright/test";
-import { useEnglish } from "./helpers";
+import { useEnglish, switchUiLanguage } from "./helpers";
 
 // Runs first, against a fresh database: the learner has not chosen a language yet.
 test.describe.serial("choosing what to learn", () => {
@@ -36,22 +36,28 @@ test.describe.serial("choosing what to learn", () => {
     for (const level of ["Foundation", "N5", "N4", "N3", "N2", "N1"]) {
       await expect(page.getByText(level, { exact: true }).first()).toBeVisible();
     }
-    await expect(page.getByText("In development")).toHaveCount(5);
-    await expect(page.getByRole("button", { name: "Start here" })).toHaveCount(1);
+    // Foundation and N5 have curriculum; N4–N1 are in development.
+    await expect(page.getByText("In development")).toHaveCount(4);
+    await expect(page.getByRole("button", { name: "Start here" })).toHaveCount(2);
 
-    await page.getByRole("button", { name: "Start here" }).click();
+    await page.getByRole("button", { name: "Start here" }).first().click();
     await expect(page).toHaveURL(/\/dashboard$/);
-    await expect(page.getByText("Learning Japanese · Foundation")).toBeVisible();
+    await expect(
+      page.getByText("You are here: Japanese · Foundation · Lesson 1 · Hiragana: Vowels"),
+    ).toBeVisible();
   });
 
   test("the choice persists, and the learning language can be changed from the shell", async ({ page }) => {
     await page.goto("/");
     await expect(page).toHaveURL(/\/dashboard$/);
 
+    // The context in the shell opens the learning path, which links to the language choice.
     await page
-      .getByRole("link", { name: /Change learning language/ })
+      .getByRole("link", { name: /Open learning path: Japanese, Foundation, Lesson 1/ })
       .first()
       .click();
+    await expect(page.getByRole("heading", { level: 1 })).toHaveText("Your learning path");
+    await page.getByRole("link", { name: "Change learning language" }).click();
     await expect(page.getByRole("heading", { level: 1 })).toHaveText("Your learning languages");
     await expect(page.getByText("Foundation · In progress")).toBeVisible();
     await page.getByRole("button", { name: "Continue" }).click();
@@ -60,12 +66,23 @@ test.describe.serial("choosing what to learn", () => {
 
   test("the interface language switches from the shell without opening Settings", async ({ page }) => {
     await page.goto("/dashboard");
-    await page.getByRole("button", { name: "Bahasa Indonesia", exact: true }).click();
+    const menu = page.getByRole("button", { name: "Interface language: English" });
+    await menu.click();
+    await expect(page.getByRole("menuitemradio", { name: "English" })).toHaveAttribute(
+      "aria-checked",
+      "true",
+    );
+    // Escape closes the menu without changing anything.
+    await page.keyboard.press("Escape");
+    await expect(page.getByRole("menu")).toHaveCount(0);
+    await expect(menu).toBeFocused();
+
+    await switchUiLanguage(page, "Bahasa Indonesia");
     await expect(page.getByRole("link", { name: "Beranda" })).toBeVisible();
-    await expect(page.getByText("Belajar Bahasa Jepang · Dasar")).toBeVisible();
+    await expect(page.getByText(/Posisi Anda: Bahasa Jepang · Dasar · Pelajaran 1/)).toBeVisible();
     // The learning language is unchanged: still Japanese content.
     await page.goto("/learn/hiragana-vowels");
-    await expect(page.locator("ol > li").nth(2)).toContainText("Menulis Hiragana あ い う え お");
+    await expect(page.getByRole("heading", { name: "Menulis Hiragana あ い う え お" })).toBeVisible();
     await useEnglish(page);
     await expect(page.getByRole("link", { name: "Dashboard" })).toBeVisible();
   });

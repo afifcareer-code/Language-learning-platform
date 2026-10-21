@@ -80,11 +80,30 @@ export const contentItems = sqliteTable(
       .notNull()
       .$defaultFn(() => []),
     sortOrder: integer("sort_order").notNull().default(0),
+    /** The proficiency level the item is introduced at (e.g. JLPT N5 vocabulary); null when not tied to one. */
+    levelId: text("level_id").references(() => levels.id),
   },
   (t) => [
     uniqueIndex("content_items_language_key").on(t.languageCode, t.key),
     index("content_items_type").on(t.type),
   ],
+);
+
+/**
+ * Localized parts of a content item (a word's meaning, a grammar point's
+ * explanation), as module-typed JSON per locale. The item itself stays in
+ * the learning language.
+ */
+export const contentItemTranslations = sqliteTable(
+  "content_item_translations",
+  {
+    contentItemId: text("content_item_id")
+      .notNull()
+      .references(() => contentItems.id, { onDelete: "cascade" }),
+    locale: text("locale").notNull(),
+    data: text("data", { mode: "json" }).$type<unknown>().notNull(),
+  },
+  (t) => [primaryKey({ columns: [t.contentItemId, t.locale] })],
 );
 
 /*
@@ -161,7 +180,10 @@ export const lessonTranslations = sqliteTable(
       .references(() => lessons.id, { onDelete: "cascade" }),
     locale: text("locale").notNull(),
     title: text("title").notNull(),
+    /** The situation or context the lesson is set in. */
     description: text("description"),
+    /** What the learner can do after the lesson; its activities' objectives contribute to it. */
+    objective: text("objective"),
   },
   (t) => [primaryKey({ columns: [t.lessonId, t.locale] })],
 );

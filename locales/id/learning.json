@@ -13,5 +13,55 @@
   "activitiesProgress": "{completed} dari {total} aktivitas",
   "noCourses": "Belum ada kursus. Periksa log server untuk kesalahan database.",
   "inDevelopment": "Kurikulum sedang dikembangkan",
-  "currentLevel": "Tingkat Anda"
+  "currentLevel": "Tingkat Anda",
+  "path": {
+    "title": "Jalur belajar Anda",
+    "description": "{language} mengikuti tingkat {framework}. Setiap tingkat dibangun di atas tingkat sebelumnya.",
+    "levels": "Tingkat",
+    "youAreHere": "Posisi Anda",
+    "lessonsIn": "Pelajaran di {level}",
+    "viewing": "Anda sedang melihat {level}. Tingkat Anda saat ini {current}.",
+    "switch": "Pelajari tingkat ini",
+    "view": "Lihat pelajaran",
+    "continue": "Lanjutkan",
+    "status": {
+      "current": "Tingkat saat ini",
+      "completed": "Selesai",
+      "in_progress": "Sedang berjalan",
+      "recommended": "Disarankan berikutnya",
+      "available": "Tersedia",
+      "locked": "Sedang dikembangkan"
+    }
+  },
+  "lesson": {
+    "breadcrumb": "Navigasi",
+    "situation": "Situasi",
+    "objective": "Tujuan pelajaran",
+    "outcomes": "Yang akan Anda pelajari",
+    "outcomesHint": "Setiap hasil diukur oleh salah satu aktivitas di bawah.",
+    "vocabulary": "Kosakata",
+    "grammar": "Tata bahasa",
+    "examples": "Contoh",
+    "commonErrors": "Kesalahan umum",
+    "romajiNote": "Romaji ditampilkan sebagai bantuan sementara selama Anda belajar membaca kana. Romaji akan berkurang seiring kemampuan membaca Anda meningkat.",
+    "groups": {
+      "learn": {
+        "title": "Pelajari",
+        "description": "Baca dan dengarkan dulu. Di bagian ini tidak ada jawaban yang salah."
+      },
+      "practice": {
+        "title": "Latihan",
+        "description": "Kenali, lalu ingat item-item baru."
+      },
+      "apply": {
+        "title": "Terapkan",
+        "description": "Gunakan yang sudah dipelajari untuk menghasilkan sesuatu sendiri."
+      },
+      "check": {
+        "title": "Periksa",
+        "description": "Anda siap untuk pelajaran berikutnya jika {threshold} item pelajaran ini sudah melekat di ingatan."
+      }
+    },
+    "readiness": "{ready} dari {total} siap"
+  }
 }

@@ -1,5 +1,5 @@
 {
-  "source": "Activity templates for kana lessons. The seeder creates one activity per template for every lesson, in this order (recognize → recall → write). Placeholders: {script}, {characters}, {lesson}.",
+  "source": "Activity templates for kana lessons. The seeder creates one activity per template for every lesson, in this order (recognize → recall → write). Placeholders: {script}, {characters}, {lesson}, {count}.",
   "templates": [
     {
       "key": "recognition",
@@ -22,7 +22,8 @@
           "instruction": "Pilih bunyi yang sesuai dengan karakter.",
           "explanation": "Mengenali adalah langkah pertama: Anda belajar membedakan karakter sebelum harus mengingatnya sendiri."
         }
-      }
+      },
+      "contentType": "ja.kana"
     },
     {
       "key": "recall",
@@ -45,7 +46,8 @@
           "instruction": "Ketik bunyi karakter dalam romaji.",
           "explanation": "Mengingat tanpa pilihan lebih sulit daripada mengenali, dan usaha itulah yang membuat ingatan bertahan lama."
         }
-      }
+      },
+      "contentType": "ja.kana"
     },
     {
       "key": "writing",
@@ -68,7 +70,8 @@
           "instruction": "Tulis karakter untuk bunyi yang ditampilkan pada area menulis.",
           "explanation": "Menulis dengan tangan adalah produksi: Anda menyusun ulang karakter dari ingatan, yang memperkuat kemampuan membaca dan menulis. Panduan akan memudar seiring tulisan Anda membaik."
         }
-      }
+      },
+      "contentType": "ja.kana"
     }
   ]
 }

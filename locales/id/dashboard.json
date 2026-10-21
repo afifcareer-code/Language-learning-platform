@@ -1,11 +1,10 @@
 {
   "title": "Selamat datang kembali, {name}",
-  "learning": "Belajar {language}",
   "metrics": {
     "courseProgress": "Progres kursus",
     "courseProgressDetail": "{completed} dari {total} aktivitas sudah dikerjakan",
     "skillMastery": "Penguasaan keterampilan",
-    "skillMasteryDetail": "{demonstrated} dari {total} karakter sudah Mahir atau lebih, di semua keterampilan",
+    "skillMasteryDetail": "{demonstrated} dari {total} item sudah Mahir atau lebih, di semua keterampilan",
     "readiness": "Kesiapan belajar",
     "readinessReady": "Siap melanjutkan dari {lesson}",
     "readinessNotReady": "{lesson}: {ready} dari {total} sudah Berlatih atau lebih (perlu {threshold})",
@@ -39,5 +38,8 @@
     "accuracy": "Akurasi"
   },
   "masteryBySkill": "Penguasaan per keterampilan",
-  "change": "Ganti"
+  "change": "Ganti",
+  "youAreHere": "Posisi Anda",
+  "todaysFocus": "Fokus hari ini",
+  "viewPath": "Jalur belajar"
 }

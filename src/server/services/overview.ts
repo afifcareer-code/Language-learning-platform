@@ -1,7 +1,7 @@
 import {
   attemptAccuracy,
   courseProgress,
-  learningReadiness,
+  readinessOfPairs,
   masteryDistribution,
   needsRemediation,
   skillMastery,
@@ -35,7 +35,10 @@ import {
 } from "../repositories/progress";
 
 export interface LearningOverview {
+  /** Skills trained by at least one activity in scope. */
   skills: readonly SkillDefinition[];
+  /** Items each skill is trained on, from the activities in scope. */
+  itemsBySkill: Map<string, string[]>;
   curriculum: Curriculum;
   progress: Map<string, ItemProgress>;
   activityStatus: Map<string, ActivityStatus>;
@@ -72,7 +75,7 @@ export async function getLearningOverview(
   now = new Date(),
   levelId?: string,
 ): Promise<LearningOverview> {
-  const skills = getLanguageModule(learner.targetLanguage).skills;
+  const moduleSkills = getLanguageModule(learner.targetLanguage).skills;
   const [curriculum, progress, due, recent, pairs] = await Promise.all([
     getCurriculum(db, learner.targetLanguage, locale),
     getLearnerProgress(db, learner.id, now),
@@ -96,32 +99,45 @@ export async function getLearningOverview(
     activities.find((a) => !["completed", "outcome_achieved"].includes(statuses.get(a.id)!)) ?? null;
   const currentLesson = lessons.find((l) => l.id === nextActivity?.lessonId) ?? lessons.at(-1) ?? null;
 
-  const allItemIds = [...new Set(lessons.flatMap((l) => l.itemIds))];
-  const bySkill = skills.map((s) => skillMastery(s.id, allItemIds, stateOf));
+  // Each skill is measured on the items its activities train, not on every item
+  // in scope: kana writing says nothing about vocabulary, and the reverse.
+  const itemsBySkill = new Map<string, string[]>();
+  for (const a of activities)
+    itemsBySkill.set(a.skill, [...new Set([...(itemsBySkill.get(a.skill) ?? []), ...a.contentItemIds])]);
+  const skills = moduleSkills.filter((s) => itemsBySkill.has(s.id));
+  const bySkill = skills.map((s) => skillMastery(s.id, itemsBySkill.get(s.id)!, stateOf));
   const demonstrated = bySkill.reduce((n, s) => n + s.demonstrated, 0);
   const total = bySkill.reduce((n, s) => n + s.total, 0);
 
   const readiness = currentLesson
     ? {
         lesson: currentLesson,
-        ...learningReadiness(
-          currentLesson.itemIds,
-          [...new Set(currentLesson.activities.map((a) => a.skill))],
+        ...readinessOfPairs(
+          [
+            ...new Map(
+              currentLesson.activities.flatMap((a) =>
+                a.contentItemIds.map(
+                  (itemId) => [`${itemId}|${a.skill}`, { itemId, skill: a.skill }] as const,
+                ),
+              ),
+            ).values(),
+          ],
           stateOf,
         ),
       }
     : null;
 
-  const dueBySkill: Record<string, number> = Object.fromEntries(skills.map((s) => [s.id, 0]));
+  const dueBySkill: Record<string, number> = Object.fromEntries(moduleSkills.map((s) => [s.id, 0]));
   for (const d of due) dueBySkill[d.skill] = (dueBySkill[d.skill] ?? 0) + 1;
 
   const distributionBySkill: Record<string, MasteryDistribution> = {};
   for (const s of skills) {
-    const states = allItemIds.flatMap((id) => {
+    const ids = itemsBySkill.get(s.id)!;
+    const states = ids.flatMap((id) => {
       const p = progress.get(progressKey(id, s.id));
       return p ? [p.state] : [];
     });
-    distributionBySkill[s.id] = masteryDistribution(states, allItemIds.length);
+    distributionBySkill[s.id] = masteryDistribution(states, ids.length);
   }
 
   // Weak = the most recent attempt was wrong, or retention has lapsed (and not already due).
@@ -148,6 +164,7 @@ export async function getLearningOverview(
 
   return {
     skills,
+    itemsBySkill,
     curriculum,
     progress,
     activityStatus: statuses,

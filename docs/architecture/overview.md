@@ -37,7 +37,7 @@
 /dashboard  /learn  /learn/<lesson>  /activities/<id>  /practice  /practice/session  /review  /progress  /settings
 ```
 
-The `(onboarding)` and `(learning)` route groups only select a layout; they do not appear in URLs. The learning layout resolves the learner's context (`src/server/learning-context.ts`) and redirects to `/` when there is none. Its shell shows the five learning sections, the **learning-language chip** (for example "日本語 · Foundation", linking to `/languages`), the **ID / EN interface switch**, and Settings.
+The `(onboarding)` and `(learning)` route groups only select a layout; they do not appear in URLs. The learning layout resolves the learner's context (`src/server/learning-context.ts`) and redirects to `/` when there is none. Its shell shows the five learning sections, the **learning context** (for example "日本語 Japanese · N5 · Lesson 1", linking to the learning path `/learn`), the **interface-language menu** (🌐 Bahasa Indonesia ▾), and Settings. The overview for the current level is computed once per request (`getCurrentOverview`) and shared by the shell and the page.
 
 ## Layers
 

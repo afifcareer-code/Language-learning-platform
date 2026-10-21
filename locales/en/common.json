@@ -102,6 +102,10 @@
   "shell": {
     "uiLanguage": "Interface language",
     "learningLanguage": "Learning language",
-    "changeLearningLanguage": "Change learning language"
+    "changeLearningLanguage": "Change learning language",
+    "learningPath": "Open learning path"
+  },
+  "audio": {
+    "play": "Play pronunciation of {text}"
   }
 }

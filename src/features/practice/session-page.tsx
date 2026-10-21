@@ -7,9 +7,10 @@ import type { Messages } from "@/localization/messages";
 import type { Translator } from "@/localization/translator";
 import type { Database } from "@/server/db/client";
 import type { Learner } from "@/server/repositories/learners";
+import { getContentTranslations } from "@/server/repositories/content";
 import { getLearnerProgress, progressKey } from "@/server/repositories/progress";
 import type { PracticeSession as Session } from "@/server/services/practice";
-import { itemDisplay, toPracticeItem, type PracticeItem } from "@/features/kana/kana-view";
+import { itemDisplay, toPracticeItem, type PracticeItem } from "@/features/japanese/practice-items";
 import { PracticeSession, type ExerciseKind } from "./practice-session";
 
 const EXERCISE: Partial<Record<Session["type"], ExerciseKind>> = {
@@ -17,6 +18,7 @@ const EXERCISE: Partial<Record<Session["type"], ExerciseKind>> = {
   multiple_choice: "recognition",
   recall: "recall",
   writing: "writing",
+  sentence_building: "sentence",
 };
 
 /** Server-rendered frame of a practice session: objective first, then the exercise. */
@@ -68,10 +70,18 @@ export async function SessionPage({
 
   const kind = EXERCISE[session.type];
   const progress = kind === "writing" ? await getLearnerProgress(db, learner.id) : null;
+  // Meanings and translations in the learner's interface language.
+  const translations = await getContentTranslations(db, Object.keys(session.items), t.locale);
   const items = session.prompts
     .map((item) =>
       toPracticeItem(item, {
-        choiceItems: (session.choices[item.id] ?? []).map((id) => session.items[id]!).filter(Boolean),
+        kind: kind ?? "recall",
+        locale: t.locale,
+        translation: translations.get(item.id),
+        choiceItems: (session.choices[item.id] ?? [])
+          .map((id) => session.items[id])
+          .filter((c) => c !== undefined)
+          .map((c) => ({ item: c, translation: translations.get(c.id) })),
         stage: writingStageFor(progress?.get(progressKey(item.id, session.skill))?.state ?? "not_started"),
         scriptName: (script) => t.dynamic(["ja", "scripts", script], undefined, script),
       }),

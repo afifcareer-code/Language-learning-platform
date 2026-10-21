@@ -9,15 +9,16 @@ import type { SelfAssessment } from "@/handwriting/scoring/score";
 import type { WritingSample } from "@/handwriting/strokes/types";
 import { useT } from "@/localization/client";
 import { useStopwatch } from "@/shared/use-stopwatch";
-import type { PracticeItem } from "@/features/kana/kana-view";
+import type { PracticeItem } from "@/features/japanese/practice-items";
 import { FeedbackPanel } from "./feedback-panel";
 import { RecallExercise } from "./recall-exercise";
+import { SentenceExercise } from "./sentence-exercise";
 import { RecognitionExercise } from "./recognition-exercise";
 import { SessionOutcome } from "./session-outcome";
 import { SessionProgress } from "./session-progress";
 import { WritingExercise } from "./writing-exercise";
 
-export type ExerciseKind = "recognition" | "recall" | "writing";
+export type ExerciseKind = "recognition" | "recall" | "writing" | "sentence";
 
 export interface PracticeSessionProps {
   kind: ExerciseKind;
@@ -41,6 +42,7 @@ export function PracticeSession(props: PracticeSessionProps) {
   const t = useT();
   const [index, setIndex] = useState(0);
   const [answer, setAnswer] = useState("");
+  const [placed, setPlaced] = useState<number[]>([]);
   const [chosen, setChosen] = useState<string | null>(null);
   const [feedback, setFeedback] = useState<AttemptFeedback | null>(null);
   const [results, setResults] = useState<SessionResult[]>([]);
@@ -56,8 +58,8 @@ export function PracticeSession(props: PracticeSessionProps) {
         passScore={props.passScore}
         objective={props.objective}
         skillLabel={props.skillLabel}
-        displayOf={Object.fromEntries(items.map((i) => [i.id, i.display]))}
-        displayLang={items[0]?.displayLang ?? "und"}
+        displayOf={Object.fromEntries(items.map((i) => [i.id, i.speech]))}
+        displayLang="ja"
       />
     );
   }
@@ -89,6 +91,7 @@ export function PracticeSession(props: PracticeSessionProps) {
   function next() {
     setIndex((i) => i + 1);
     setAnswer("");
+    setPlaced([]);
     setChosen(null);
     setFeedback(null);
   }
@@ -146,6 +149,15 @@ export function PracticeSession(props: PracticeSessionProps) {
                 submit({ kind: "choice", choiceId });
               }}
             />
+          ) : kind === "sentence" ? (
+            <SentenceExercise
+              item={item}
+              instruction={props.instruction}
+              placed={placed}
+              feedback={feedback}
+              onPlace={(index) => setPlaced((p) => [...p, index])}
+              onRemove={(position) => setPlaced((p) => p.filter((_, i) => i !== position))}
+            />
           ) : (
             <form id="recall" onSubmit={onRecallSubmit}>
               <RecallExercise
@@ -159,6 +171,14 @@ export function PracticeSession(props: PracticeSessionProps) {
           )}
           <div className="mt-4 flex flex-col gap-4">
             {feedback && <FeedbackPanel feedback={feedback} item={item} />}
+            {kind === "sentence" && !feedback && (
+              <Button
+                onClick={() => submit({ kind: "sequence", tokens: placed.map((i) => item.tokens[i]!) })}
+                disabled={pending || placed.length !== item.tokens.length}
+              >
+                {t("common.actions.check")}
+              </Button>
+            )}
             {kind === "recall" && !feedback && (
               <Button type="submit" form="recall" disabled={pending || !answer.trim()}>
                 {t("common.actions.check")}

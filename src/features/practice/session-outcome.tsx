@@ -93,9 +93,13 @@ export function SessionOutcome({
           <p className="text-xs font-semibold tracking-wide text-muted uppercase">
             {t("practice.outcome.toRevisit")}
           </p>
-          <p lang={displayLang} className="mt-2 font-jp text-3xl tracking-widest">
-            {missed.map((id) => displayOf[id]).join(" ")}
-          </p>
+          <ul className="mt-2 flex flex-wrap gap-2">
+            {missed.map((id) => (
+              <li key={id} lang={displayLang} className="rounded-lg bg-sunken px-3 py-1 font-jp text-xl">
+                {displayOf[id]}
+              </li>
+            ))}
+          </ul>
         </div>
       )}
 

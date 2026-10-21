@@ -5,17 +5,18 @@ import { ProgressRing } from "@/components/learning/progress-ring";
 import { Card, CardTitle } from "@/components/ui/card";
 import { PageHeader } from "@/components/ui/page-header";
 import { KanaGrid } from "@/features/kana/kana-grid";
-import { itemDisplay, toKanaViews } from "@/features/kana/kana-view";
+import { itemDisplay } from "@/features/japanese/practice-items";
+import { toKanaViews } from "@/features/kana/kana-view";
 import { confusionHref } from "@/features/practice/routes";
-import { KANA_CONTENT_TYPE, KANA_SCRIPTS } from "@/languages/japanese";
 import { masteryLabels, skillLabel } from "@/localization/labels";
 import { getI18n } from "@/localization/server";
 import { getContext } from "@/server/context";
-import { requireLearningContext } from "@/server/learning-context";
-import { getContentItems, listContentItemsByType } from "@/server/repositories/content";
-import { getRecentAttempts, progressKey } from "@/server/repositories/progress";
-import { getLearningOverview } from "@/server/services/overview";
+import { getCurrentOverview, requireLearningContext } from "@/server/learning-context";
+import { getContentItems } from "@/server/repositories/content";
+import { getRecentAttempts } from "@/server/repositories/progress";
+import { stateFor } from "@/server/services/overview";
 import { cn } from "@/shared/cn";
+import { MASTERY_TONE } from "@/shared/labels";
 
 export async function generateMetadata(): Promise<Metadata> {
   const { t } = await getI18n();
@@ -24,21 +25,38 @@ export async function generateMetadata(): Promise<Metadata> {
 
 export default async function ProgressPage() {
   const { db, learner } = await getContext();
-  const { locale, t } = await getI18n();
-  const [overview, items, recent] = await Promise.all([
-    getLearningOverview(db, learner, locale, undefined, (await requireLearningContext()).level.id),
-    listContentItemsByType(db, learner.targetLanguage, KANA_CONTENT_TYPE),
+  const { t } = await getI18n();
+  const context = await requireLearningContext();
+  const [overview, recent] = await Promise.all([
+    getCurrentOverview(),
     getRecentAttempts(db, learner.id, { limit: 20 }),
   ]);
-  const kana = toKanaViews(items);
-  const display = new Map(kana.map((k) => [k.id, k.kana]));
   const pairs = [...overview.confusionPairs].sort((a, b) => b.errorCount - a.errorCount);
-  for (const i of await getContentItems(
-    db,
-    pairs.flatMap((p) => [p.itemA, p.itemB]),
-  ))
-    display.set(i.id, itemDisplay(i));
+  const items = await getContentItems(db, [
+    ...new Set([
+      ...[...overview.itemsBySkill.values()].flat(),
+      ...pairs.flatMap((p) => [p.itemA, p.itemB]),
+      ...recent.map((a) => a.contentItemId),
+    ]),
+  ]);
+  const byId = new Map(items.map((i) => [i.id, i]));
+  const display = new Map(items.map((i) => [i.id, itemDisplay(i)]));
   const labels = masteryLabels(t);
+  const courses = overview.curriculum.levels.find((l) => l.id === context.level.id)?.courses ?? [];
+  /** The skill's items in each course of the current level, in lesson order. */
+  const courseItems = (skill: string) =>
+    courses
+      .map((course) => ({
+        course,
+        ids: [
+          ...new Set(
+            course.lessons.flatMap((l) =>
+              l.activities.filter((a) => a.skill === skill).flatMap((a) => a.contentItemIds),
+            ),
+          ),
+        ],
+      }))
+      .filter((c) => c.ids.length);
 
   return (
     <>
@@ -66,20 +84,36 @@ export default async function ProgressPage() {
             labels={labels}
           />
           <div className="mt-4 grid gap-4 lg:grid-cols-2">
-            {KANA_SCRIPTS.map((script) => {
-              const forScript = kana.filter((k) => k.script === script);
+            {courseItems(skill.id).map(({ course, ids }) => {
               const states = Object.fromEntries(
-                forScript.map((k) => [
-                  k.id,
-                  overview.progress.get(progressKey(k.id, skill.id))?.state ?? "not_started",
-                ]),
+                ids.map((id) => [id, stateFor(overview.progress, id, skill.id)]),
               );
+              const courseContent = ids.flatMap((id) => byId.get(id) ?? []);
+              const kana = toKanaViews(courseContent);
               return (
-                <Card key={script}>
-                  <CardTitle className="mb-4">
-                    {t.dynamic(["ja", "scripts", script], undefined, script)}
-                  </CardTitle>
-                  <KanaGrid items={forScript} states={states} labels={labels} />
+                <Card key={course.id}>
+                  <CardTitle className="mb-4">{course.title}</CardTitle>
+                  {kana.length === courseContent.length ? (
+                    <KanaGrid items={kana} states={states} labels={labels} />
+                  ) : (
+                    <ul className="flex flex-wrap gap-2">
+                      {ids.map((id) => (
+                        <li
+                          key={id}
+                          title={labels[states[id]!]}
+                          className={cn(
+                            "rounded-lg border border-line px-3 py-1.5",
+                            MASTERY_TONE[states[id]!],
+                          )}
+                        >
+                          <span lang="ja" className="font-jp text-lg">
+                            {display.get(id)}
+                          </span>
+                          <span className="sr-only">{labels[states[id]!]}</span>
+                        </li>
+                      ))}
+                    </ul>
+                  )}
                 </Card>
               );
             })}
@@ -128,7 +162,7 @@ export default async function ProgressPage() {
               <ul className="divide-y divide-line">
                 {recent.map((a) => (
                   <li key={a.id} className="flex items-center gap-4 py-3">
-                    <span lang="ja" className="w-10 text-center font-jp text-2xl">
+                    <span lang="ja" className="max-w-[45%] min-w-10 text-center font-jp text-xl">
                       {display.get(a.contentItemId)}
                     </span>
                     <span className="flex-1">

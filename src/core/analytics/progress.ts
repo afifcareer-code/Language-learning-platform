@@ -82,10 +82,25 @@ export function learningReadiness(
   stateOf: StateOf,
   policy: ReadinessPolicy = DEFAULT_READINESS_POLICY,
 ): LearningReadiness {
-  let ready = 0;
-  for (const id of contentItemIds)
-    for (const s of skills) if (meetsMastery(stateOf(id, s), policy.state)) ready++;
-  const total = contentItemIds.length * skills.length;
+  return readinessOfPairs(
+    contentItemIds.flatMap((itemId) => skills.map((skill) => ({ itemId, skill }))),
+    stateOf,
+    policy,
+  );
+}
+
+/**
+ * Readiness over explicit (item, skill) pairs, for lessons whose activities
+ * train different items on different skills (e.g. vocabulary recall and
+ * sentence building).
+ */
+export function readinessOfPairs(
+  pairs: readonly { itemId: string; skill: string }[],
+  stateOf: StateOf,
+  policy: ReadinessPolicy = DEFAULT_READINESS_POLICY,
+): LearningReadiness {
+  const ready = pairs.filter((p) => meetsMastery(stateOf(p.itemId, p.skill), policy.state)).length;
+  const total = pairs.length;
   const ratio = total ? ready / total : 0;
   return {
     ready,

@@ -17,7 +17,7 @@
     {
       "slug": "n5",
       "frameworkLevel": "N5",
-      "courses": [],
+      "courses": ["n5-core"],
       "title": {
         "en": "N5",
         "id": "N5"

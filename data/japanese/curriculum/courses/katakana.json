@@ -8,6 +8,10 @@
     "en": "Read and write the 46 basic katakana from memory: the script for loanwords and names.",
     "id": "Membaca dan menulis 46 katakana dasar dari ingatan: aksara untuk kata serapan dan nama."
   },
+  "lessonObjective": {
+    "en": "Read and write {characters} from memory.",
+    "id": "Membaca dan menulis {characters} dari ingatan."
+  },
   "activityTemplates": "kana",
   "lessons": [
     {

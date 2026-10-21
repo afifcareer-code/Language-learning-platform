@@ -1,0 +1,77 @@
+{
+  "source": "Activity templates for N5 lessons. Each template uses the lesson's items of one content type. Placeholders: {lesson}, {count}.",
+  "templates": [
+    {
+      "key": "vocabulary-recognition",
+      "type": "recognition",
+      "skill": "ja.vocab.recognition",
+      "contentType": "ja.vocabulary",
+      "difficulty": 1,
+      "successCriteria": ["recognition", "meaning_recall"],
+      "passScore": 0.8,
+      "targetMastery": "proficient",
+      "text": {
+        "en": {
+          "title": "Recognize the words of {lesson}",
+          "objective": "Recognize the {count} words of this lesson and connect each one to its meaning.",
+          "instruction": "Choose the meaning of the word.",
+          "explanation": "Recognizing a word comes before using it: here you connect what you see with what it means."
+        },
+        "id": {
+          "title": "Kenali kosakata {lesson}",
+          "objective": "Mengenali {count} kosakata pelajaran ini dan menghubungkan masing-masing dengan maknanya.",
+          "instruction": "Pilih arti kata tersebut.",
+          "explanation": "Mengenali kata adalah langkah sebelum menggunakannya: di sini Anda menghubungkan apa yang Anda lihat dengan maknanya."
+        }
+      }
+    },
+    {
+      "key": "vocabulary-recall",
+      "type": "recall",
+      "skill": "ja.vocab.recall",
+      "contentType": "ja.vocabulary",
+      "difficulty": 2,
+      "successCriteria": ["recall", "production"],
+      "passScore": 0.8,
+      "targetMastery": "proficient",
+      "text": {
+        "en": {
+          "title": "Recall the words of {lesson}",
+          "objective": "Given its meaning, recall each of the {count} words of this lesson and type it, without answer choices.",
+          "instruction": "Type the Japanese word in kana or romaji.",
+          "explanation": "Producing a word from its meaning is harder than recognizing it, and that effort is what makes it stick."
+        },
+        "id": {
+          "title": "Ingat kosakata {lesson}",
+          "objective": "Berdasarkan artinya, mengingat dan mengetik {count} kosakata pelajaran ini tanpa pilihan jawaban.",
+          "instruction": "Ketik kata bahasa Jepangnya dalam kana atau romaji.",
+          "explanation": "Menghasilkan kata dari artinya lebih sulit daripada mengenalinya, dan usaha itulah yang membuatnya melekat."
+        }
+      }
+    },
+    {
+      "key": "sentence-building",
+      "type": "sentence_building",
+      "skill": "ja.grammar.sentence",
+      "contentType": "ja.sentence",
+      "difficulty": 3,
+      "successCriteria": ["pattern_recognition", "sentence_accuracy"],
+      "passScore": 0.8,
+      "targetMastery": "proficient",
+      "text": {
+        "en": {
+          "title": "Build sentences for {lesson}",
+          "objective": "Build the {count} sentences of this lesson in correct Japanese word order, using the lesson's grammar patterns.",
+          "instruction": "Arrange the pieces to say the sentence in Japanese.",
+          "explanation": "Ordering words and particles yourself is controlled practice: the step between understanding a pattern and using it freely."
+        },
+        "id": {
+          "title": "Susun kalimat {lesson}",
+          "objective": "Menyusun {count} kalimat pelajaran ini dengan urutan kata bahasa Jepang yang benar, menggunakan pola tata bahasa pelajaran ini.",
+          "instruction": "Susun potongan-potongan berikut menjadi kalimat bahasa Jepang.",
+          "explanation": "Menyusun kata dan partikel sendiri adalah latihan terkontrol: langkah antara memahami pola dan menggunakannya dengan bebas."
+        }
+      }
+    }
+  ]
+}

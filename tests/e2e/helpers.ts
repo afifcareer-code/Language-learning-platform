@@ -8,16 +8,24 @@ export async function ensureLearning(page: Page) {
       .getByRole("link", { name: /日本語/ })
       .first()
       .click();
-    await page.getByRole("button", { name: /^(Start here|Mulai di sini)$/ }).click();
+    await page
+      .getByRole("button", { name: /^(Start here|Mulai di sini)$/ })
+      .first()
+      .click();
     await expect(page).toHaveURL(/\/dashboard$/);
   }
 }
 
-/** Switch the interface to English with the global switcher (not Settings). */
+/** Choose the interface language from the global menu in the app shell (not Settings). */
+export async function switchUiLanguage(page: Page, name: "English" | "Bahasa Indonesia") {
+  const menu = page.getByRole("button", { name: /^(Interface language|Bahasa antarmuka): / });
+  if ((await menu.getAttribute("aria-label"))?.endsWith(`: ${name}`)) return;
+  await menu.click();
+  await page.getByRole("menuitemradio", { name }).click();
+  await expect(page.getByRole("button", { name: new RegExp(`: ${name}$`) })).toBeVisible();
+}
+
+/** Switch the interface to English with the global menu. */
 export async function useEnglish(page: Page) {
-  const english = page.getByRole("button", { name: "English", exact: true });
-  if ((await english.getAttribute("aria-pressed")) !== "true") {
-    await english.click();
-    await expect(english).toHaveAttribute("aria-pressed", "true");
-  }
+  await switchUiLanguage(page, "English");
 }

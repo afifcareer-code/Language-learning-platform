@@ -15,6 +15,18 @@
     "ja.kana.writing": {
       "label": "Menulis kana",
       "description": "Menulis karakter kana dengan tangan, bertahap hingga mampu menulis dari ingatan."
+    },
+    "ja.vocab.recognition": {
+      "label": "Mengenali kosakata",
+      "description": "Melihat kata bahasa Jepang dan memilih artinya."
+    },
+    "ja.vocab.recall": {
+      "label": "Mengingat kosakata",
+      "description": "Melihat arti dan menghasilkan kata bahasa Jepangnya tanpa pilihan."
+    },
+    "ja.grammar.sentence": {
+      "label": "Menyusun kalimat",
+      "description": "Menyusun kata dan partikel dalam urutan yang benar untuk menyatakan suatu makna dengan tata bahasa lesson ini."
     }
   }
 }

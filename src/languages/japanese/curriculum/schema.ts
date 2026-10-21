@@ -31,10 +31,22 @@ export const courseFileSchema = z.object({
   slug,
   title: localizedTextSchema,
   description: localizedTextSchema,
+  /** Objective used for lessons without their own, with {characters} and {lesson} placeholders. */
+  lessonObjective: localizedTextSchema.optional(),
   /** Name of the activity template file in data/japanese/activities used for every lesson. */
   activityTemplates: slug,
   lessons: z
-    .array(z.object({ slug, title: localizedTextSchema, items: z.array(z.string().min(1)).min(1) }))
+    .array(
+      z.object({
+        slug,
+        title: localizedTextSchema,
+        /** The situation the lesson is set in. */
+        situation: localizedTextSchema.optional(),
+        /** What the learner can do after the lesson. */
+        objective: localizedTextSchema.optional(),
+        items: z.array(z.string().min(1)).min(1),
+      }),
+    )
     .min(1),
 });
 
@@ -54,6 +66,8 @@ export const activityTemplateFileSchema = z.object({
         key: slug,
         type: z.enum(ACTIVITY_TYPES),
         skill: z.string().min(1),
+        /** The activity uses the lesson's items of this content type; skipped when the lesson has none. */
+        contentType: z.string().min(1),
         difficulty: z
           .number()
           .int()
@@ -74,5 +88,5 @@ export type LevelsFile = z.infer<typeof levelsFileSchema>;
 export type CourseFile = z.infer<typeof courseFileSchema>;
 export type ActivityTemplateFile = z.infer<typeof activityTemplateFileSchema>;
 
-/** Placeholders a kana activity template may use. */
-export const KANA_TEMPLATE_PLACEHOLDERS = ["script", "characters", "lesson"] as const;
+/** Placeholders an activity template or lesson objective may use. */
+export const TEMPLATE_PLACEHOLDERS = ["script", "characters", "lesson", "count"] as const;

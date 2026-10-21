@@ -14,10 +14,17 @@
   "recall": {
     "label": "Ketik cara bacanya dalam romaji"
   },
+  "sentence": {
+    "instruction": "Susun potongan-potongan berikut menjadi kalimat bahasa Jepang.",
+    "answer": "Kalimat Anda",
+    "empty": "Ketuk potongan di bawah sesuai urutan.",
+    "remove": "Hapus {piece}",
+    "pieces": "Potongan"
+  },
   "feedback": {
     "correct": "Benar",
     "answer": "Jawaban: {answer}",
-    "confusedWith": "Itu cara baca {item}. Keduanya mudah tertukar.",
+    "confusedWith": "Itu jawaban untuk {item}. Keduanya mudah tertukar.",
     "saveError": "Jawaban tidak dapat disimpan. Silakan coba lagi."
   },
   "writing": {
@@ -44,7 +51,9 @@
   },
   "checks": {
     "stroke-count": {
-      "pass": { "other": "{count} goresan" },
+      "pass": {
+        "other": "{count} goresan"
+      },
       "fail": "{count} goresan ditulis, seharusnya {expected}"
     }
   },
@@ -56,8 +65,12 @@
     "passed": "Tujuan tercapai pada sesi ini",
     "notPassed": "Belum tercapai. Targetkan {pass} atau lebih.",
     "masteryChanged": "Penguasaan",
-    "improved": { "other": "{count} item meningkat" },
-    "declined": { "other": "{count} item perlu latihan lagi" },
+    "improved": {
+      "other": "{count} item meningkat"
+    },
+    "declined": {
+      "other": "{count} item perlu latihan lagi"
+    },
     "nextReview": "Review berikutnya",
     "toRevisit": "Perlu diulang"
   },

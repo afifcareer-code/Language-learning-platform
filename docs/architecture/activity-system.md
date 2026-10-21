@@ -55,6 +55,19 @@ Activity status is derived from mastery evidence, never from opening a page:
 
 At the end of a session, `summarizeSession` produces the outcome shown to the learner: score against `passScore`, items that improved or declined, the mastery distribution afterwards, and the earliest next review.
 
+## Lesson structure
+
+A lesson has one **objective** (what the learner can do afterwards, localized) and a **situation** (where that language is used). The page follows the learning flow exposure → recognition → understanding → controlled practice → recall → production → assessment → review, as four groups:
+
+| Group        | Contains                                                                                                                                                                |
+| ------------ | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Learn**    | The lesson's content to read and listen to: characters, or words (with romaji) and grammar points with examples and common mistakes. Not an activity; nothing is graded |
+| **Practice** | Recognition and recall activities (`activityGroup(type) === "practice"`)                                                                                                |
+| **Apply**    | Production activities: writing, sentence building (`"apply"`)                                                                                                           |
+| **Check**    | Learning readiness for the lesson: the share of its (item, skill) pairs that hold up from memory                                                                        |
+
+"What you'll learn" lists the activities' objectives with their status. There is one objective system: lesson objective → activity objectives → skills; outcomes are never authored separately.
+
 ## Writing objectives
 
 Objectives must be measurable and stated as what the learner can do:
@@ -65,6 +78,8 @@ Objectives must be measurable and stated as what the learner can do:
 Only promise what the activity evaluates. The writing activity says "correct shape and number of strokes" because stroke count is checked automatically and shape is self-assessed. It does not yet promise stroke order, because that is not measured yet.
 
 ## Activity templates
+
+Each template declares the `contentType` it uses (`ja.kana`, `ja.vocabulary`, `ja.sentence`); a lesson gets the template only if it has items of that type, and `{count}` is filled with their number. The content validator checks that every template's content type appears in a lesson that uses the file.
 
 Writing every activity by hand would repeat the same objectives across dozens of lessons. Instead, a language provides **templates** as data (for kana: [`data/japanese/activities/kana.json`](../../data/japanese/activities/kana.json)). The seeder creates one activity per template for each lesson, in template order, which follows the learning loop:
 

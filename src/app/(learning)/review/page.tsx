@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { ReviewCard } from "@/components/learning/review-card";
 import { EmptyState } from "@/components/ui/empty-state";
 import { PageHeader } from "@/components/ui/page-header";
-import { itemDisplay } from "@/features/kana/kana-view";
+import { itemDisplay } from "@/features/japanese/practice-items";
 import { reviewHref } from "@/features/practice/routes";
 import { getLanguageModule } from "@/languages/registry";
 import { skillLabel } from "@/localization/labels";
@@ -22,7 +22,10 @@ export default async function ReviewPage() {
   const due = await getDueReviews(db, learner.id);
   const items = await getContentItems(db, [...new Set(due.map((d) => d.contentItemId))]);
   const display = new Map(items.map((i) => [i.id, itemDisplay(i)]));
-  const skills = getLanguageModule(learner.targetLanguage).skills;
+  // Only skills with something due; the module may define skills this learner has not met yet.
+  const skills = getLanguageModule(learner.targetLanguage).skills.filter((s) =>
+    due.some((d) => d.skill === s.id),
+  );
 
   return (
     <>

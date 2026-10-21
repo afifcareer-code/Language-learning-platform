@@ -4,14 +4,13 @@ import { needsRemediation } from "@/core/analytics";
 import { ButtonLink } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { PageHeader } from "@/components/ui/page-header";
-import { itemDisplay } from "@/features/kana/kana-view";
+import { itemDisplay } from "@/features/japanese/practice-items";
 import { activityHref, confusionHref, weakItemsHref } from "@/features/practice/routes";
 import { skillDescription, skillLabel } from "@/localization/labels";
 import { getI18n } from "@/localization/server";
 import { getContext } from "@/server/context";
-import { requireLearningContext } from "@/server/learning-context";
+import { getCurrentOverview } from "@/server/learning-context";
 import { getContentItems } from "@/server/repositories/content";
-import { getLearningOverview } from "@/server/services/overview";
 
 export async function generateMetadata(): Promise<Metadata> {
   const { t } = await getI18n();
@@ -19,15 +18,9 @@ export async function generateMetadata(): Promise<Metadata> {
 }
 
 export default async function PracticePage() {
-  const { db, learner } = await getContext();
-  const { locale, t } = await getI18n();
-  const overview = await getLearningOverview(
-    db,
-    learner,
-    locale,
-    undefined,
-    (await requireLearningContext()).level.id,
-  );
+  const { db } = await getContext();
+  const { t } = await getI18n();
+  const overview = await getCurrentOverview();
   const lesson = overview.currentLesson;
 
   const weakBySkill = new Map<string, number>();

@@ -36,8 +36,8 @@ Read more in [Learning philosophy](docs/product/learning-philosophy.md) and [Act
 
 Working in v0.1:
 
-- **Language selection first.** The app opens with "What do you want to learn?". Japanese is available; planned languages are shown as coming soon and cannot be started. You then choose where to start in the language's framework (Japanese: Foundation, N5 … N1; levels open as their curriculum is published). Your choice is remembered, and both the learning language and the UI language can be changed from the app shell at any time.
-- **Activities with objectives.** Each lesson runs the learning loop: **recognize** (pick the sound), **recall** (type it with no options), **write** (by hand). Each activity has a localized, measurable objective, explicit success criteria, and a learning outcome at the end.
+- **Language selection first.** The app opens with "What do you want to learn?". Japanese is available; planned languages are shown as coming soon and cannot be started. You then choose where to start in the language's framework (Japanese: Foundation, N5 … N1; levels open as their curriculum is published). Your choice is remembered. The app shell always shows where you are (Japanese · N5 · Lesson 1) and opens your **learning path**, with every level's status (current, completed, recommended, in development) and its lessons.
+- **Lessons with objectives.** Each lesson has a situation, a lesson objective and "What you'll learn", then **Learn** (characters, or words and grammar with examples and common mistakes) → **Practice** (recognize, recall) → **Apply** (write by hand, build sentences) → **Check** (readiness). Each activity has a localized, measurable objective, explicit success criteria, and a learning outcome at the end.
 - **Handwriting practice.** Pen, touch and mouse input are captured through the Pointer Events API, with optional pressure. Guidance fades as mastery grows: Trace → Faded guide → Hint only → From memory.
 - **Mastery engine.** Six states per item per skill: Not started, Learning, Practicing, Proficient, Mastered, Needs review.
 - **Spaced review.** A Leitner scheduler with intervals of 10 minutes, then 1, 3, 7, 14, 30 and 90 days. It is pluggable, so SM-2 or FSRS can replace it later.
@@ -45,16 +45,16 @@ Working in v0.1:
 - **Confusion pairs.** Mixing up two characters (シ/ツ, さ/ち) is detected from your answers, tracked, and practised in targeted sessions until resolved.
 - **Explainable recommendations.** Every suggestion says why: due for review, recent mistakes, confused pair, or next in your curriculum.
 - **Progress.** Per-character mastery grids, commonly confused pairs, and your learning history.
-- **Localization.** Interface in Indonesian and English, switchable from the app shell (ID / EN), and localized learning content. The UI language, content translations and the language being learned are three separate concerns ([Localization](docs/architecture/localization.md)).
+- **Localization.** Interface in Indonesian and English, switchable from the app shell (🌐 Bahasa Indonesia ▾), and localized learning content (word meanings, grammar explanations, translations). The UI language, content translations and the language being learned are three separate concerns ([Localization](docs/architecture/localization.md)).
 - **Data-driven content.** All Japanese content lives in validated JSON files under [`data/`](data/japanese).
 - **Responsive, tablet-first UI** with automatic light and dark themes.
 
 ## Current language
 
-| Language                                                   | Status               | Scope                                                                                                                                           |
-| ---------------------------------------------------------- | -------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------- |
-| Japanese (日本語)                                          | **Available** (JLPT) | Foundation: hiragana and katakana (46 + 46) with recognition, reading and writing. N5–N1 levels are defined; their curriculum is in development |
-| English, Mandarin Chinese, Spanish, German, French, Korean | Coming soon          | Listed in the catalog with their frameworks (CEFR, HSK, TOPIK); no curriculum yet                                                               |
+| Language                                                   | Status               | Scope                                                                                                                                                                                                         |
+| ---------------------------------------------------------- | -------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Japanese (日本語)                                          | **Available** (JLPT) | Foundation: hiragana and katakana (46 + 46) with recognition, reading and writing. N5: first lesson (Introductions: words, grammar, sentence building). N4–N1 are defined; their curriculum is in development |
+| English, Mandarin Chinese, Spanish, German, French, Korean | Coming soon          | Listed in the catalog with their frameworks (CEFR, HSK, TOPIK); no curriculum yet                                                                                                                             |
 
 The core engine is language-agnostic. Japanese concepts such as kana, kanji and JLPT live only in the Japanese module; the catalog of languages lives in [`data/languages.json`](data/languages.json). See [Language system](docs/architecture/language-system.md).
 
@@ -129,7 +129,7 @@ See [Setup](docs/development/setup.md) and [Testing](docs/development/testing.md
 
 ## Roadmap
 
-Next up: a kana assessment, dakuten and combination kana, stroke-order data, then vocabulary and kanji. See the [full roadmap](docs/product/roadmap.md).
+Next up: more N5 lessons, a kana assessment, dakuten and combination kana, stroke-order data, then kanji. See the [full roadmap](docs/product/roadmap.md).
 
 ## Contributing
 

@@ -1,0 +1,115 @@
+{
+  "source": "Original grammar explanations for N5 · Lesson 1 (Introductions), written for this project.",
+  "level": "n5",
+  "items": [
+    {
+      "slug": "n5-wa-desu",
+      "pattern": "N1 は N2 です",
+      "meaning": {
+        "en": "N1 is N2",
+        "id": "N1 adalah N2"
+      },
+      "explanation": {
+        "en": "は (read \"wa\") marks the topic: what the sentence is about. です closes the sentence politely and says what the topic is. です stays the same for I, you, he or they.",
+        "id": "は (dibaca \"wa\") menandai topik, yaitu hal yang sedang dibicarakan. です menutup kalimat dengan sopan dan menyatakan topik itu apa. です tidak berubah untuk saya, Anda, dia, maupun mereka."
+      },
+      "examples": [
+        {
+          "ja": "わたしは がくせいです。",
+          "romaji": "watashi wa gakusei desu",
+          "translation": {
+            "en": "I am a student.",
+            "id": "Saya pelajar."
+          }
+        },
+        {
+          "ja": "やまださんは せんせいです。",
+          "romaji": "yamada-san wa sensei desu",
+          "translation": {
+            "en": "Mr./Ms. Yamada is a teacher.",
+            "id": "Pak/Bu Yamada adalah guru."
+          }
+        }
+      ],
+      "commonErrors": [
+        {
+          "en": "Writing the particle as わ: it is written は but read \"wa\".",
+          "id": "Menulis partikel ini sebagai わ: ditulis は tetapi dibaca \"wa\"."
+        },
+        {
+          "en": "Adding さん to your own name: さん is only for other people.",
+          "id": "Menambahkan さん pada nama sendiri: さん hanya untuk orang lain."
+        }
+      ]
+    },
+    {
+      "slug": "n5-ja-arimasen",
+      "pattern": "N1 は N2 じゃ ありません",
+      "meaning": {
+        "en": "N1 is not N2",
+        "id": "N1 bukan N2"
+      },
+      "explanation": {
+        "en": "じゃ ありません is the polite negative of です. In writing you will also see では ありません, which is a little more formal.",
+        "id": "じゃ ありません adalah bentuk negatif sopan dari です. Dalam tulisan Anda juga akan melihat では ありません, yang sedikit lebih formal."
+      },
+      "examples": [
+        {
+          "ja": "わたしは せんせいじゃ ありません。",
+          "romaji": "watashi wa sensei ja arimasen",
+          "translation": {
+            "en": "I am not a teacher.",
+            "id": "Saya bukan guru."
+          }
+        }
+      ],
+      "related": ["n5-wa-desu"]
+    },
+    {
+      "slug": "n5-ka-question",
+      "pattern": "N1 は N2 ですか",
+      "meaning": {
+        "en": "Is N1 N2?",
+        "id": "Apakah N1 N2?"
+      },
+      "explanation": {
+        "en": "Add か at the end of a sentence to turn it into a yes/no question. Japanese needs no question mark: か does that job, and your voice rises at the end.",
+        "id": "Tambahkan か di akhir kalimat untuk menjadikannya pertanyaan ya/tidak. Bahasa Jepang tidak memerlukan tanda tanya: か sudah berfungsi sebagai penanda tanya, dan intonasi naik di akhir."
+      },
+      "examples": [
+        {
+          "ja": "あなたは がくせいですか。",
+          "romaji": "anata wa gakusei desu ka",
+          "translation": {
+            "en": "Are you a student?",
+            "id": "Apakah Anda pelajar?"
+          }
+        }
+      ],
+      "related": ["n5-wa-desu"]
+    },
+    {
+      "slug": "n5-jin",
+      "pattern": "Country + じん",
+      "meaning": {
+        "en": "a person from (country)",
+        "id": "orang (dari negara)"
+      },
+      "explanation": {
+        "en": "Put じん (人) after a country's name to say someone is from there: にほんじん is a Japanese person, インドネシアじん an Indonesian.",
+        "id": "Letakkan じん (人) setelah nama negara untuk menyatakan asal seseorang: にほんじん berarti orang Jepang, インドネシアじん orang Indonesia."
+      },
+      "examples": [
+        {
+          "ja": "アニさんは インドネシアじんです。",
+          "romaji": "ani-san wa indoneshia-jin desu",
+          "translation": {
+            "en": "Ani is Indonesian.",
+            "id": "Ani orang Indonesia."
+          }
+        }
+      ],
+      "related": ["n5-wa-desu"]
+    }
+  ]
+}

@@ -5,22 +5,28 @@ import { MasteryCard } from "@/components/learning/mastery-card";
 import { ButtonLink } from "@/components/ui/button";
 import { Card, CardTitle } from "@/components/ui/card";
 import { PageHeader } from "@/components/ui/page-header";
-import { itemDisplay } from "@/features/kana/kana-view";
+import { itemDisplay } from "@/features/japanese/practice-items";
 import { activityHref, confusionHref, reviewHref, weakItemsHref } from "@/features/practice/routes";
 import { languageName, masteryLabels, skillDescription, skillLabel } from "@/localization/labels";
 import { getI18n } from "@/localization/server";
 import { getContext } from "@/server/context";
-import { requireLearningContext } from "@/server/learning-context";
+import { getCurrentOverview, requireLearningContext } from "@/server/learning-context";
 import { getContentItems } from "@/server/repositories/content";
-import { getLearningOverview } from "@/server/services/overview";
+import { locateLesson } from "@/server/repositories/curriculum";
 
 export default async function DashboardPage() {
   const { db, learner } = await getContext();
-  const { locale, t } = await getI18n();
+  const { t } = await getI18n();
   const context = await requireLearningContext();
-  const overview = await getLearningOverview(db, learner, locale, undefined, context.level.id);
+  const overview = await getCurrentOverview();
   const next = overview.nextActivity;
   const nextLesson = overview.currentLesson;
+  const here = nextLesson && locateLesson(overview.curriculum, nextLesson.id);
+  const youAreHere = [
+    languageName(t, context.language.code),
+    context.level.frameworkLevel ?? context.level.title,
+    ...(here ? [t("learning.lessonNumber", { n: here.number }), here.lesson.title] : []),
+  ].join(" · ");
 
   const pairIds = overview.recommendations.flatMap((r) => (r.kind === "confusion" ? [r.itemA, r.itemB] : []));
   const pairItems = Object.fromEntries(
@@ -71,13 +77,10 @@ export default async function DashboardPage() {
     <>
       <PageHeader
         title={t("dashboard.title", { name: learner.displayName })}
-        description={`${t("dashboard.learning", { language: languageName(t, context.language.code) })} · ${context.level.title}`}
+        description={`${t("dashboard.youAreHere")}: ${youAreHere}`}
         actions={
-          <Link
-            href="/languages"
-            className="inline-flex min-h-11 items-center text-sm font-medium text-accent"
-          >
-            {t("dashboard.change")}
+          <Link href="/learn" className="inline-flex min-h-11 items-center text-sm font-medium text-accent">
+            {t("dashboard.viewPath")}
           </Link>
         }
       />
@@ -126,7 +129,10 @@ export default async function DashboardPage() {
 
         <div className="grid gap-4 md:gap-6 lg:grid-cols-3">
           <Card className="lg:col-span-2">
-            <CardTitle>{t("dashboard.continue.title")}</CardTitle>
+            <p className="text-xs font-semibold tracking-wide text-accent uppercase">
+              {t("dashboard.todaysFocus")}
+            </p>
+            <CardTitle className="mt-1">{t("dashboard.continue.title")}</CardTitle>
             {next ? (
               <div className="mt-4">
                 <p className="text-sm text-muted">

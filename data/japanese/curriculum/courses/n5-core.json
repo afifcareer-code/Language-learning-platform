@@ -1,0 +1,53 @@
+{
+  "slug": "n5-core",
+  "title": {
+    "en": "N5 Core",
+    "id": "Inti N5"
+  },
+  "description": {
+    "en": "Everyday Japanese for beginners, lesson by lesson: situation, vocabulary, grammar, then practice from recognition to building your own sentences.",
+    "id": "Bahasa Jepang sehari-hari untuk pemula, pelajaran demi pelajaran: situasi, kosakata, tata bahasa, lalu latihan dari mengenali hingga menyusun kalimat sendiri."
+  },
+  "activityTemplates": "n5-lesson",
+  "lessons": [
+    {
+      "slug": "n5-01-introductions",
+      "title": {
+        "en": "Introductions",
+        "id": "Perkenalan"
+      },
+      "situation": {
+        "en": "Your first day at a Japanese class. You meet your teacher and classmates and introduce yourself: your name, where you are from and what you do.",
+        "id": "Hari pertama di kelas bahasa Jepang. Anda bertemu guru dan teman sekelas, lalu memperkenalkan diri: nama, asal negara, dan pekerjaan Anda."
+      },
+      "objective": {
+        "en": "By the end of this lesson, you can introduce yourself and others in simple sentences: who you are, where you are from and what you do.",
+        "id": "Setelah menyelesaikan lesson ini, Anda mampu memperkenalkan diri dan orang lain dengan kalimat sederhana: siapa Anda, dari mana asal Anda, dan apa pekerjaan Anda."
+      },
+      "items": [
+        "vocabulary:わたし",
+        "vocabulary:あなた",
+        "vocabulary:〜さん",
+        "vocabulary:せんせい",
+        "vocabulary:がくせい",
+        "vocabulary:かいしゃいん",
+        "vocabulary:いしゃ",
+        "vocabulary:にほん",
+        "vocabulary:インドネシア",
+        "vocabulary:〜じん",
+        "vocabulary:はじめまして",
+        "vocabulary:よろしく おねがいします",
+        "grammar:n5-wa-desu",
+        "grammar:n5-ja-arimasen",
+        "grammar:n5-ka-question",
+        "grammar:n5-jin",
+        "sentence:watashi-gakusei",
+        "sentence:watashi-indoneshia-jin",
+        "sentence:yamada-sensei",
+        "sentence:watashi-not-kaishain",
+        "sentence:anata-gakusei-ka",
+        "sentence:ani-isha"
+      ]
+    }
+  ]
+}

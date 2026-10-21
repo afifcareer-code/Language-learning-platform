@@ -1,5 +1,6 @@
 import { and, asc, eq, inArray } from "drizzle-orm";
 import type { ContentItem } from "@/core/learning";
+import { CONTENT_SOURCE_LOCALE } from "@/localization/config";
 import type { Database } from "../db/client";
 import type { contentItems } from "../db/schema/sqlite";
 
@@ -43,4 +44,28 @@ export async function listContentItemsByType(
     .where(and(eq(db.t.contentItems.languageCode, languageCode), eq(db.t.contentItems.type, type)))
     .orderBy(asc(db.t.contentItems.sortOrder));
   return rows.map(toContentItem);
+}
+
+/**
+ * Localized parts of content items (meanings, explanations) for a locale,
+ * falling back to the content source locale. Keyed by content item id.
+ */
+export async function getContentTranslations(
+  db: Database,
+  ids: readonly string[],
+  locale: string,
+): Promise<Map<string, unknown>> {
+  if (ids.length === 0) return new Map();
+  const t = db.t.contentItemTranslations;
+  const rows = await db
+    .select()
+    .from(t)
+    .where(inArray(t.contentItemId, [...new Set(ids)]));
+  const out = new Map<string, unknown>();
+  for (const row of rows) {
+    if (row.locale === locale || (row.locale === CONTENT_SOURCE_LOCALE && !out.has(row.contentItemId))) {
+      out.set(row.contentItemId, row.data);
+    }
+  }
+  return out;
 }

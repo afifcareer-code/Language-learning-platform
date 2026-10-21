@@ -1,0 +1,126 @@
+{
+  "source": "Original vocabulary list for N5 · Lesson 1 (Introductions). Meanings written for this project.",
+  "level": "n5",
+  "items": [
+    {
+      "kana": "わたし",
+      "kanji": "私",
+      "romaji": "watashi",
+      "partOfSpeech": "pronoun",
+      "meaning": {
+        "en": "I, me",
+        "id": "saya, aku"
+      }
+    },
+    {
+      "kana": "あなた",
+      "romaji": "anata",
+      "partOfSpeech": "pronoun",
+      "meaning": {
+        "en": "you",
+        "id": "Anda, kamu"
+      }
+    },
+    {
+      "kana": "さん",
+      "romaji": "san",
+      "affix": "suffix",
+      "partOfSpeech": "suffix",
+      "meaning": {
+        "en": "Mr./Ms. (polite, after a name)",
+        "id": "Bapak/Ibu/Saudara (sopan, setelah nama)"
+      }
+    },
+    {
+      "kana": "せんせい",
+      "kanji": "先生",
+      "romaji": "sensei",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "teacher",
+        "id": "guru"
+      }
+    },
+    {
+      "kana": "がくせい",
+      "kanji": "学生",
+      "romaji": "gakusei",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "student",
+        "id": "pelajar, mahasiswa"
+      }
+    },
+    {
+      "kana": "かいしゃいん",
+      "kanji": "会社員",
+      "romaji": "kaishain",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "company employee",
+        "id": "karyawan perusahaan"
+      }
+    },
+    {
+      "kana": "いしゃ",
+      "kanji": "医者",
+      "romaji": "isha",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "doctor",
+        "id": "dokter"
+      }
+    },
+    {
+      "kana": "にほん",
+      "kanji": "日本",
+      "romaji": "nihon",
+      "alternateRomaji": ["nippon"],
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "Japan",
+        "id": "Jepang"
+      }
+    },
+    {
+      "kana": "インドネシア",
+      "romaji": "indoneshia",
+      "alternateRomaji": ["indonesia"],
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "Indonesia",
+        "id": "Indonesia"
+      }
+    },
+    {
+      "kana": "じん",
+      "kanji": "人",
+      "romaji": "jin",
+      "affix": "suffix",
+      "partOfSpeech": "suffix",
+      "meaning": {
+        "en": "person from (a country)",
+        "id": "orang (dari suatu negara)"
+      }
+    },
+    {
+      "kana": "はじめまして",
+      "romaji": "hajimemashite",
+      "partOfSpeech": "expression",
+      "meaning": {
+        "en": "How do you do? (when meeting for the first time)",
+        "id": "Salam kenal (saat pertama bertemu)"
+      }
+    },
+    {
+      "kana": "よろしく おねがいします",
+      "romaji": "yoroshiku onegaishimasu",
+      "alternateRomaji": ["yoroshiku onegai shimasu"],
+      "partOfSpeech": "expression",
+      "meaning": {
+        "en": "Pleased to meet you (asking for good relations)",
+        "id": "Senang berkenalan; mohon bantuannya"
+      }
+    }
+  ]
+}

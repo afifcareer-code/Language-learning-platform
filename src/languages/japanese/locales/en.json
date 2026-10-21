@@ -15,6 +15,18 @@
     "ja.kana.writing": {
       "label": "Kana writing",
       "description": "Write a kana character by hand, progressing toward writing from memory."
+    },
+    "ja.vocab.recognition": {
+      "label": "Word recognition",
+      "description": "See a Japanese word and pick its meaning."
+    },
+    "ja.vocab.recall": {
+      "label": "Word recall",
+      "description": "See a meaning and produce the Japanese word without choices."
+    },
+    "ja.grammar.sentence": {
+      "label": "Sentence building",
+      "description": "Put words and particles in the right order to express a meaning with the lesson's grammar."
     }
   }
 }

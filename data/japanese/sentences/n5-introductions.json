@@ -1,0 +1,72 @@
+{
+  "source": "Original practice sentences for N5 · Lesson 1 (Introductions).",
+  "level": "n5",
+  "items": [
+    {
+      "slug": "watashi-gakusei",
+      "text": "わたしは がくせいです。",
+      "tokens": ["わたし", "は", "がくせい", "です"],
+      "romaji": "watashi wa gakusei desu",
+      "grammar": "n5-wa-desu",
+      "translation": {
+        "en": "I am a student.",
+        "id": "Saya pelajar."
+      }
+    },
+    {
+      "slug": "watashi-indoneshia-jin",
+      "text": "わたしは インドネシアじんです。",
+      "tokens": ["わたし", "は", "インドネシア", "じん", "です"],
+      "romaji": "watashi wa indoneshia-jin desu",
+      "grammar": "n5-jin",
+      "translation": {
+        "en": "I am Indonesian.",
+        "id": "Saya orang Indonesia."
+      }
+    },
+    {
+      "slug": "yamada-sensei",
+      "text": "やまださんは せんせいです。",
+      "tokens": ["やまだ", "さん", "は", "せんせい", "です"],
+      "romaji": "yamada-san wa sensei desu",
+      "grammar": "n5-wa-desu",
+      "translation": {
+        "en": "Mr./Ms. Yamada is a teacher.",
+        "id": "Pak/Bu Yamada adalah guru."
+      }
+    },
+    {
+      "slug": "watashi-not-kaishain",
+      "text": "わたしは かいしゃいんじゃ ありません。",
+      "tokens": ["わたし", "は", "かいしゃいん", "じゃ", "ありません"],
+      "romaji": "watashi wa kaishain ja arimasen",
+      "grammar": "n5-ja-arimasen",
+      "translation": {
+        "en": "I am not a company employee.",
+        "id": "Saya bukan karyawan perusahaan."
+      }
+    },
+    {
+      "slug": "anata-gakusei-ka",
+      "text": "あなたは がくせいですか。",
+      "tokens": ["あなた", "は", "がくせい", "です", "か"],
+      "romaji": "anata wa gakusei desu ka",
+      "grammar": "n5-ka-question",
+      "translation": {
+        "en": "Are you a student?",
+        "id": "Apakah Anda pelajar?"
+      }
+    },
+    {
+      "slug": "ani-isha",
+      "text": "アニさんは いしゃです。",
+      "tokens": ["アニ", "さん", "は", "いしゃ", "です"],
+      "romaji": "ani-san wa isha desu",
+      "grammar": "n5-wa-desu",
+      "translation": {
+        "en": "Ani is a doctor.",
+        "id": "Ani adalah dokter."
+      }
+    }
+  ]
+}

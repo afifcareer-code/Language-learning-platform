@@ -16,7 +16,7 @@ Supported platform locales: **`id`** (Bahasa Indonesia) and **`en`** (English), 
 
 For each request ([`src/localization/server.ts`](../../src/localization/server.ts)):
 
-1. The learner's saved preference (`learners.ui_locale`), set with the **ID / EN switcher in the app shell** (sidebar on tablet and desktop, header on mobile, and on the language-selection screens) or on the Settings page.
+1. The learner's saved preference (`learners.ui_locale`), set with the **interface-language menu in the app shell** (`🌐 Bahasa Indonesia ▾` at the bottom of the sidebar on tablet and desktop, `🌐 ID ▾` in the header on phones, and on the language-selection screens) or on the Settings page.
 2. Otherwise the browser's `Accept-Language` header.
 3. Otherwise `DEFAULT_LOCALE` from the environment, falling back to `en`.
 
@@ -41,9 +41,10 @@ The database never has columns per language (no `title_id` / `title_en`). Each t
 
 ```
 activities ──< activity_translations (activity_id, locale, title, objective, instruction, explanation)
-lessons    ──< lesson_translations   (lesson_id, locale, title, description)
+lessons    ──< lesson_translations   (lesson_id, locale, title, description = situation, objective)
 courses    ──< course_translations   (course_id, locale, title, description)
 levels     ──< level_translations    (level_id, locale, title, description)
+content_items ──< content_item_translations (content_item_id, locale, data: meaning, explanation, translation …)
 ```
 
 Adding a locale requires no schema change. Lookups fall back to the content source locale (`en`) and then to any available translation.

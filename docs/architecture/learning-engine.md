@@ -57,7 +57,8 @@ The activity model (type, skill, objective, success criteria, evaluation strateg
 - **Three progress concepts**, never merged into one number:
   - `courseProgress`: activities worked through (every item attempted),
   - `skillMastery`: share of items **proficient or better** on a skill,
-  - `learningReadiness`: whether at least 80% of the current lesson's (item, skill) pairs are at **practicing or better**.
+  - `learningReadiness` / `readinessOfPairs`: whether at least 80% of the current lesson's (item, skill) pairs are at **practicing or better**. Pairs come from the lesson's activities, so a word is measured on the skills that train it, not on kana writing.
+  - Skill mastery is likewise computed per skill over the items that skill's activities train; skills with no activity in scope are not shown.
 - **Confusion pairs**: `recordConfusion`, `recordPairSuccess`, `needsRemediation`. A pair needs practice after 2 confusions and is resolved after 4 correct answers on its items.
 - `masteryDistribution` (counts per state) and `attemptAccuracy`.
 

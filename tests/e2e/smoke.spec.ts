@@ -18,13 +18,68 @@ test("dashboard separates progress, mastery and readiness, and explains the next
   await expect(page.getByText("Objective").first()).toBeVisible();
 });
 
-test("lesson lists activities along the learning loop with objectives", async ({ page }) => {
+test("lesson shows its objective, outcomes and Learn → Practice → Apply → Check", async ({ page }) => {
   await page.goto("/learn/hiragana-vowels");
-  const cards = page.locator("ol > li");
-  await expect(cards).toHaveCount(3);
-  await expect(cards.nth(0)).toContainText("Recognize Hiragana");
-  await expect(cards.nth(1)).toContainText("from memory");
-  await expect(cards.nth(2)).toContainText("Write Hiragana");
+  const breadcrumb = page.getByRole("navigation", { name: "Breadcrumb" });
+  await expect(breadcrumb).toContainText("Japanese");
+  await expect(breadcrumb).toContainText("Foundation");
+  await expect(breadcrumb).toContainText("Lesson 1");
+  await expect(page.getByText("Lesson objective")).toBeVisible();
+  await expect(page.getByText("Read and write あ い う え お from memory.")).toBeVisible();
+  await expect(page.getByRole("heading", { name: "What you'll learn" })).toBeVisible();
+  for (const group of ["Learn", "Practice", "Apply", "Check"]) {
+    await expect(page.getByRole("heading", { level: 2, name: group, exact: true })).toBeVisible();
+  }
+  await expect(page.getByRole("heading", { name: "Recognize Hiragana あ い う え お" })).toBeVisible();
+  await expect(page.getByRole("heading", { name: "Write Hiragana あ い う え お" })).toBeVisible();
+});
+
+test("an N5 lesson teaches words and grammar before practice", async ({ page }) => {
+  await page.goto("/learn/n5-01-introductions");
+  await expect(page.getByRole("navigation", { name: "Breadcrumb" })).toContainText("N5");
+  await expect(page.getByText("Situation")).toBeVisible();
+  await expect(page.getByRole("heading", { name: "Vocabulary" })).toBeVisible();
+  await expect(page.getByText("せんせい", { exact: true })).toBeVisible();
+  await expect(page.getByText("teacher", { exact: false }).first()).toBeVisible();
+  await expect(page.getByRole("heading", { name: "Grammar" })).toBeVisible();
+  await expect(page.getByText("Common mistakes").first()).toBeVisible();
+  await expect(page.getByRole("heading", { level: 2, name: "Apply", exact: true })).toBeVisible();
+});
+
+test("the learning path shows every level with its status and opens a level's lessons", async ({ page }) => {
+  await page.goto("/learn");
+  await expect(page.getByRole("heading", { level: 1 })).toHaveText("Your learning path");
+  await expect(page.getByText("You are here")).toBeVisible();
+  await expect(page.getByText("Current level")).toBeVisible();
+  await expect(page.getByText("In development")).toHaveCount(4);
+  await page.getByRole("link", { name: /^N5/ }).click();
+  await expect(page).toHaveURL(/level=n5$/);
+  await expect(page.getByRole("heading", { name: "Lessons in N5" })).toBeVisible();
+  await expect(page.getByRole("button", { name: "Study this level" })).toBeVisible();
+  await expect(page.getByText("Introductions").first()).toBeVisible();
+});
+
+test("vocabulary recall accepts kana or romaji", async ({ page }) => {
+  await page.goto("/activities/ja.activity.n5-01-introductions.vocabulary-recall");
+  const input = page.getByLabel("Type the Japanese word in kana or romaji.");
+  await input.fill("zzz");
+  await page.getByRole("button", { name: "Check" }).click();
+  await expect(page.getByRole("status")).toContainText("Answer:");
+  await page.getByRole("button", { name: "Next" }).click();
+  await expect(page.getByText("2 of").first()).toBeVisible();
+});
+
+test("sentence building is checked once every piece is placed", async ({ page }) => {
+  await page.goto("/activities/ja.activity.n5-01-introductions.sentence-building");
+  const check = page.getByRole("button", { name: "Check" });
+  await expect(check).toBeDisabled();
+  const pieces = page.getByRole("group", { name: "Pieces" });
+  const count = await pieces.getByRole("button").count();
+  for (let i = 0; i < count; i++) await pieces.getByRole("button", { disabled: false }).first().click();
+  await expect(page.getByRole("group", { name: "Your sentence" }).getByRole("button")).toHaveCount(count);
+  await expect(check).toBeEnabled();
+  await check.click();
+  await expect(page.getByRole("status")).toBeVisible();
 });
 
 test("recognition activity ends with a learning outcome", async ({ page }) => {

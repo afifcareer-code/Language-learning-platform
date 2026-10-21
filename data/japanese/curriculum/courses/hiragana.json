@@ -8,6 +8,10 @@
     "en": "Read and write the 46 basic hiragana from memory: the script for native Japanese words and grammar.",
     "id": "Membaca dan menulis 46 hiragana dasar dari ingatan: aksara untuk kata asli dan tata bahasa Jepang."
   },
+  "lessonObjective": {
+    "en": "Read and write {characters} from memory.",
+    "id": "Membaca dan menulis {characters} dari ingatan."
+  },
   "activityTemplates": "kana",
   "lessons": [
     {

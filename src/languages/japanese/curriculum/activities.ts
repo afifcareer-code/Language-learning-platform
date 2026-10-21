@@ -13,31 +13,42 @@ export interface ExpandedActivity {
   text: Record<string, ActivityText>;
 }
 
+/** A lesson's items of one content type. */
+export interface LessonItems {
+  ids: string[];
+  /** How the items read, joined for titles, e.g. "あ い う え お". */
+  characters: string;
+}
+
 export function activityId(lessonSlug: string, templateKey: string): string {
   return `ja.activity.${lessonSlug}.${templateKey}`;
 }
 
 /**
- * Create the concrete activities of one lesson from a template file, filling
- * {script}, {characters} and {lesson} per locale.
+ * Create the concrete activities of one lesson from a template file. Each
+ * template uses the lesson's items of its content type and is skipped when
+ * the lesson has none. Fills {script}, {characters}, {lesson} and {count}.
  */
 export function expandLessonActivities(
   lesson: CourseFile["lessons"][number] & { id: string },
   templates: ActivityTemplateFile,
   context: {
-    contentItemIds: string[];
-    characters: string;
-    /** Localized script name per locale, e.g. { en: "Hiragana" }. */
-    scriptName: Record<string, string>;
+    itemsByType: Record<string, LessonItems>;
+    /** Localized script name per locale for kana lessons, e.g. { en: "Hiragana" }. */
+    scriptName?: Record<string, string>;
   },
 ): ExpandedActivity[] {
-  return templates.templates.map((template, index) => {
+  const activities: ExpandedActivity[] = [];
+  for (const template of templates.templates) {
+    const items = context.itemsByType[template.contentType];
+    if (!items?.ids.length) continue;
     const text: Record<string, ActivityText> = {};
     for (const [locale, t] of Object.entries(template.text)) {
       const vars = {
-        script: context.scriptName[locale] ?? context.scriptName.en ?? "",
-        characters: context.characters,
+        script: context.scriptName?.[locale] ?? context.scriptName?.en ?? "",
+        characters: items.characters,
         lesson: lesson.title[locale] ?? lesson.title.en ?? "",
+        count: String(items.ids.length),
       };
       text[locale] = {
         title: fillPlaceholders(t.title, vars),
@@ -46,7 +57,7 @@ export function expandLessonActivities(
         explanation: fillPlaceholders(t.explanation, vars),
       };
     }
-    return {
+    activities.push({
       definition: {
         id: activityId(lesson.slug, template.key),
         languageCode: "ja",
@@ -58,10 +69,11 @@ export function expandLessonActivities(
         successCriteria: template.successCriteria,
         passScore: template.passScore,
         targetMastery: template.targetMastery,
-        contentItemIds: context.contentItemIds,
-        sortOrder: index,
+        contentItemIds: items.ids,
+        sortOrder: activities.length,
       },
       text,
-    };
-  });
+    });
+  }
+  return activities;
 }

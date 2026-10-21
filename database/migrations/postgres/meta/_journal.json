@@ -29,6 +29,13 @@
       "when": 1792488433433,
       "tag": "0003_language_catalog_learner_languages",
       "breakpoints": true
+    },
+    {
+      "idx": 4,
+      "version": "7",
+      "when": 1792558432120,
+      "tag": "0004_content_translations_lesson_objective",
+      "breakpoints": true
     }
   ]
 }
