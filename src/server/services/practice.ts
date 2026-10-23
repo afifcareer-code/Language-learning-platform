@@ -23,6 +23,8 @@ export interface PracticeSession {
   type: ActivityType;
   skill: SkillId;
   mode: AttemptMode;
+  /** Set for a mock assessment section: exam conditions apply. */
+  assessment: { level: string; section: string; timeLimitSeconds: number | null } | null;
   /** The curriculum activity, when the session runs one. */
   activity: ActivityView | null;
   passScore: number;
@@ -53,6 +55,7 @@ export async function getPracticeSession(
   let activity: ActivityView | null = null;
   let skill: SkillId;
   let mode: AttemptMode = "practice";
+  let assessment: PracticeSession["assessment"] = null;
   let promptIds: string[];
 
   switch (request.kind) {
@@ -92,6 +95,11 @@ export async function getPracticeSession(
       if (!section) return null;
       skill = section.skill;
       mode = "assessment";
+      assessment = {
+        level: request.level,
+        section: request.section,
+        timeLimitSeconds: section.timeLimitSeconds ?? null,
+      };
       const progress = await getLearnerProgress(db, learner.id, now);
       const ids = sectionItemIds(curriculum, request.level, skill);
       const attempts = (id: string) => progress.get(progressKey(id, skill))?.mastery.attempts ?? 0;
@@ -117,6 +125,7 @@ export async function getPracticeSession(
       type,
       skill,
       mode,
+      assessment,
       activity,
       passScore: activity?.passScore ?? DEFAULT_PASS_SCORE,
       prompts,
@@ -160,6 +169,7 @@ export async function getPracticeSession(
     type,
     skill,
     mode,
+    assessment,
     activity,
     passScore: activity?.passScore ?? DEFAULT_PASS_SCORE,
     prompts,

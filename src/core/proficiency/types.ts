@@ -43,6 +43,8 @@ export interface AssessmentSectionSpec {
   domain: string;
   skill: SkillId;
   questionCount: number;
+  /** Time allowed for the section, when it is timed. */
+  timeLimitSeconds?: number;
 }
 
 export interface ProficiencyLevelSpec {

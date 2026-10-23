@@ -157,6 +157,14 @@ export async function SessionPage({
           objective={header.objective}
           instruction={header.instruction}
           introduction={introduction}
+          exam={
+            session.assessment
+              ? {
+                  timeLimitSeconds: session.assessment.timeLimitSeconds,
+                  resultHref: `/proficiency?${new URLSearchParams({ level: session.assessment.level })}`,
+                }
+              : undefined
+          }
         />
       ) : (
         <EmptyState title={t("practice.empty")} />

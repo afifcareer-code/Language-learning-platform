@@ -120,5 +120,11 @@
     "group": "Karakter {from}–{to} dari {total}",
     "next": "Karakter berikutnya",
     "start": "Mulai berlatih"
+  },
+  "exam": {
+    "conditions": "Kondisi ujian: jawaban tidak ditampilkan sampai selesai.",
+    "timeLeft": "Sisa waktu: {time}",
+    "timeUp": "Waktu habis. Soal yang belum dijawab dihitung salah.",
+    "seeResult": "Lihat hasil asesmen tiruan Anda"
   }
 }

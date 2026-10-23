@@ -400,3 +400,20 @@ test("N5 listening: the sentence is played, not shown, and the options are meani
   await page.getByRole("button", { name: SENTENCES[text]!, exact: true }).click();
   await expect(page.getByRole("status")).toContainText("Correct");
 });
+
+test("a mock assessment runs under exam conditions and reports the result afterwards", async ({ page }) => {
+  await page.goto("/practice/session?kind=assessment&level=n5&section=vocabulary");
+  await expect(page.getByText("Exam conditions: answers are not shown until the end.")).toBeVisible();
+  await expect(page.getByRole("timer")).toContainText("Time left: 3:0");
+
+  const total = 8;
+  for (let i = 1; i <= total; i++) {
+    await expect(page.getByText(`${i} of ${total}`).first()).toBeVisible();
+    await page.getByRole("group").getByRole("button").first().click();
+    // No right/wrong feedback between questions.
+    await expect(page.getByRole("status")).toHaveCount(0);
+  }
+  await page.getByRole("link", { name: "See your mock assessment result" }).click();
+  await expect(page).toHaveURL(/\/proficiency\?level=n5/);
+  await expect(page.getByTestId("assessment-result")).toContainText(/Vocabulary: \d+ of 8 correct/);
+});

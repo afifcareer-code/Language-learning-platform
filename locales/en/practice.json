@@ -123,5 +123,11 @@
     "group": "Characters {from}–{to} of {total}",
     "next": "Next characters",
     "start": "Start practice"
+  },
+  "exam": {
+    "conditions": "Exam conditions: answers are not shown until the end.",
+    "timeLeft": "Time left: {time}",
+    "timeUp": "Time is up. Questions you did not answer count as wrong.",
+    "seeResult": "See your mock assessment result"
   }
 }
