@@ -1,3 +1,4 @@
+import type { PracticeFrameworkSpec } from "../practice/types";
 import type { ProficiencyLevelSpec } from "../proficiency/types";
 import type {
   Capability,
@@ -30,6 +31,8 @@ export interface LanguageModule {
    * Returns `null` if the module cannot grade that combination automatically.
    */
   evaluateResponse(item: ContentItem, skill: SkillId, response: string): ResponseEvaluation | null;
+  /** The practice skills and their stages, when the module defines them. */
+  practice?: PracticeFrameworkSpec;
   /** The proficiency specification of a level (by platform level slug), when the module defines one. */
   proficiencyLevel?(level: string): ProficiencyLevelSpec | null;
   /** Items commonly confused with this one, used to choose meaningful distractors. */

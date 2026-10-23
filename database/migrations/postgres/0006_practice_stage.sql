@@ -1,0 +1,1 @@
+ALTER TABLE "learning_attempts" ADD COLUMN "practice_stage" text;

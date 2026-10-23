@@ -94,7 +94,7 @@ export function expectedAnswer(
 export function toPracticeItem(
   item: ContentItem,
   options: {
-    kind: "recognition" | "recall" | "writing" | "sentence";
+    kind: "recognition" | "recall" | "writing" | "sentence" | "production";
     /** The skill being practised, to tell reading from listening on the same sentences. */
     skill?: string;
     locale: string;
@@ -138,6 +138,18 @@ export function toPracticeItem(
   }
   if (isVocabularyData(item.data)) {
     const meaning = (options.translation as VocabularyTranslation | undefined)?.meaning ?? item.data.romaji;
+    // Writing by hand: the meaning is the cue and the word in kana is the model to compare with.
+    if (options.kind === "production") {
+      return {
+        ...base,
+        display: item.data.kana,
+        displayLang: "ja",
+        displayStyle: "word",
+        speech: item.data.kana,
+        cue: meaning,
+        cueKind: "word",
+      };
+    }
     // Recognition shows the word; recall shows the meaning and asks for the word.
     return options.kind === "recall"
       ? {
@@ -153,6 +165,9 @@ export function toPracticeItem(
           displayLang: "ja",
           displayStyle: "word",
           speech: item.data.kana,
+          // Word listening plays the word and shows nothing; the options are meanings.
+          audioPrompt: options.skill === JA_SKILLS.wordListening,
+          answerKind: options.skill === JA_SKILLS.wordListening ? ("meaning" as const) : base.answerKind,
         };
   }
   if (isSentenceData(item.data) && options.kind === "recognition") {
@@ -166,6 +181,19 @@ export function toPracticeItem(
       speech: item.data.text,
       audioPrompt: options.skill === JA_SKILLS.sentenceListening,
       answerKind: "meaning" as const,
+    };
+  }
+  if (isSentenceData(item.data) && options.kind === "production") {
+    const translation =
+      (options.translation as SentenceTranslation | undefined)?.translation ?? item.data.text;
+    return {
+      ...base,
+      display: item.data.text,
+      displayLang: "ja",
+      displayStyle: "word",
+      speech: item.data.text,
+      cue: translation,
+      cueKind: "sentence",
     };
   }
   if (isSentenceData(item.data)) {

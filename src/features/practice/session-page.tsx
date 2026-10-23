@@ -25,6 +25,7 @@ const EXERCISE: Partial<Record<Session["type"], ExerciseKind>> = {
   recall: "recall",
   writing: "writing",
   sentence_building: "sentence",
+  production: "textwriting",
 };
 
 /** Server-rendered frame of a practice session: objective first, then the exercise. */
@@ -46,6 +47,38 @@ export async function SessionPage({
       ? { a: itemDisplay(session.items[request.itemA]), b: itemDisplay(session.items[request.itemB]) }
       : { a: "", b: "" };
 
+  const stageText =
+    request.kind === "stage"
+      ? {
+          skill: t.dynamic(["practice", "skills", request.skillId], undefined, request.skillId),
+          focus: t.dynamic(["practice", "focus", request.stageId], undefined, request.stageId),
+        }
+      : { skill: "", focus: "" };
+  const sessionTitle =
+    request.kind === "confusion"
+      ? t("practice.sessions.confusion", pairText)
+      : request.kind === "stage"
+        ? t("practice.sessions.stage", stageText)
+        : t(
+            request.kind === "review"
+              ? "practice.sessions.review"
+              : request.kind === "assessment"
+                ? "practice.sessions.assessment"
+                : "practice.sessions.weak",
+          );
+  const sessionObjective =
+    request.kind === "confusion"
+      ? t("practice.sessions.objectives.confusion", pairText)
+      : request.kind === "stage"
+        ? t("practice.sessions.objectives.stage", stageText)
+        : t(
+            request.kind === "review"
+              ? "practice.sessions.objectives.review"
+              : request.kind === "assessment"
+                ? "practice.sessions.objectives.assessment"
+                : "practice.sessions.objectives.weak",
+          );
+
   const header = session.activity
     ? {
         eyebrow: `${t(`common.activityTypes.${session.activity.type}`)} · ${skill}`,
@@ -57,26 +90,8 @@ export async function SessionPage({
       }
     : {
         eyebrow: skill,
-        title:
-          request.kind === "confusion"
-            ? t("practice.sessions.confusion", pairText)
-            : t(
-                request.kind === "review"
-                  ? "practice.sessions.review"
-                  : request.kind === "assessment"
-                    ? "practice.sessions.assessment"
-                    : "practice.sessions.weak",
-              ),
-        objective:
-          request.kind === "confusion"
-            ? t("practice.sessions.objectives.confusion", pairText)
-            : t(
-                request.kind === "review"
-                  ? "practice.sessions.objectives.review"
-                  : request.kind === "assessment"
-                    ? "practice.sessions.objectives.assessment"
-                    : "practice.sessions.objectives.weak",
-              ),
+        title: sessionTitle,
+        objective: sessionObjective,
         instruction: "",
         explanation: undefined,
         criteria: undefined,
@@ -91,7 +106,7 @@ export async function SessionPage({
   const level = where?.level ?? learning.level;
   const context = [
     languageName(t, learning.language.code),
-    level.frameworkLevel ?? level.title,
+    request.kind === "stage" ? t("practice.title") : (level.frameworkLevel ?? level.title),
     where ? `${t("learning.lessonNumber", { n: where.number })} · ${where.lesson.title}` : null,
   ]
     .filter(Boolean)
@@ -104,7 +119,7 @@ export async function SessionPage({
   const items = session.prompts
     .map((item) =>
       toPracticeItem(item, {
-        kind: kind ?? "recall",
+        kind: kind === "textwriting" ? "production" : (kind ?? "recall"),
         skill: session.skill,
         locale: t.locale,
         translation: translations.get(item.id),
@@ -152,6 +167,7 @@ export async function SessionPage({
           skill={session.skill}
           skillLabel={skill}
           activityId={session.activity?.id ?? null}
+          practiceStage={session.practiceStage}
           mode={session.mode === "review" || session.mode === "assessment" ? session.mode : "practice"}
           passScore={session.passScore}
           objective={header.objective}

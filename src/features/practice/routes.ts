@@ -19,3 +19,8 @@ export function confusionHref(itemA: string, itemB: string): string {
 export function assessmentHref(level: string, section: string): string {
   return `/practice/session?${new URLSearchParams({ kind: "assessment", level, section })}`;
 }
+
+/** A Practice stage: continuous skill training outside the curriculum. */
+export function stageHref(skillId: string, stageId: string): string {
+  return `/practice/session?${new URLSearchParams({ kind: "stage", practiceSkill: skillId, stage: stageId })}`;
+}

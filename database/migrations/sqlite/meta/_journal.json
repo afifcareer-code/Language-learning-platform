@@ -43,6 +43,13 @@
       "when": 1792746324008,
       "tag": "0005_accounts",
       "breakpoints": true
+    },
+    {
+      "idx": 6,
+      "version": "6",
+      "when": 1792754304003,
+      "tag": "0006_practice_stage",
+      "breakpoints": true
     }
   ]
 }

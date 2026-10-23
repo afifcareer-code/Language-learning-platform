@@ -17,9 +17,10 @@ import { SentenceExercise } from "./sentence-exercise";
 import { RecognitionExercise } from "./recognition-exercise";
 import { SessionOutcome } from "./session-outcome";
 import { SessionProgress } from "./session-progress";
+import { TextWritingExercise } from "./text-writing-exercise";
 import { WritingExercise } from "./writing-exercise";
 
-export type ExerciseKind = "recognition" | "recall" | "writing" | "sentence";
+export type ExerciseKind = "recognition" | "recall" | "writing" | "sentence" | "textwriting";
 
 export interface PracticeSessionProps {
   kind: ExerciseKind;
@@ -27,6 +28,8 @@ export interface PracticeSessionProps {
   skill: string;
   skillLabel: string;
   activityId: string | null;
+  /** The Practice stage ("<skill>.<stage>") when this session trains one. */
+  practiceStage?: string | null;
   mode: "practice" | "review" | "assessment";
   passScore: number;
   objective: string;
@@ -116,7 +119,15 @@ export function PracticeSession(props: PracticeSessionProps) {
     const responseMs = elapsed();
     startTransition(async () => {
       try {
-        const fb = await submitAttempt({ itemId: item.id, skill, activityId, mode, responseMs, response });
+        const fb = await submitAttempt({
+          itemId: item.id,
+          skill,
+          activityId,
+          practiceStage: props.practiceStage ?? null,
+          mode,
+          responseMs,
+          response,
+        });
         if (options.retry) setAttempt((a) => a + 1);
         else if (exam) next();
         else setFeedback(fb);
@@ -159,7 +170,7 @@ export function PracticeSession(props: PracticeSessionProps) {
   );
 
   return (
-    <div className={kind === "writing" ? "mx-auto max-w-5xl" : "mx-auto max-w-xl"}>
+    <div className={kind === "writing" || kind === "textwriting" ? "mx-auto max-w-5xl" : "mx-auto max-w-xl"}>
       {exam && (
         <div className="mb-3 flex flex-wrap items-center justify-between gap-2 text-sm text-muted">
           <p>{t("practice.exam.conditions")}</p>
@@ -176,7 +187,21 @@ export function PracticeSession(props: PracticeSessionProps) {
         label={t("practice.progress", { current: index + 1, total: items.length })}
       />
 
-      {kind === "writing" ? (
+      {kind === "textwriting" ? (
+        !feedback ? (
+          <TextWritingExercise
+            key={`${item.id}-${index}`}
+            item={item}
+            disabled={pending}
+            onSubmit={(rating) => submit({ kind: "self_writing", rating })}
+          />
+        ) : (
+          <Card className="mx-auto flex max-w-xl flex-col gap-4">
+            <FeedbackPanel feedback={feedback} item={item} />
+            {nextButton}
+          </Card>
+        )
+      ) : kind === "writing" ? (
         <>
           {!feedback ? (
             <WritingExercise

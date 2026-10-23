@@ -16,6 +16,7 @@ export type SessionRequest =
   | { kind: "review"; skill: SkillId }
   | { kind: "weak"; skill: SkillId }
   | { kind: "assessment"; level: string; section: string }
+  | { kind: "stage"; skillId: string; stageId: string }
   | { kind: "confusion"; itemA: string; itemB: string };
 
 export interface PracticeSession {
@@ -23,6 +24,8 @@ export interface PracticeSession {
   type: ActivityType;
   skill: SkillId;
   mode: AttemptMode;
+  /** "<practice skill>.<stage>" when the session trains a Practice stage. */
+  practiceStage: string | null;
   /** Set for a mock assessment section: exam conditions apply. */
   assessment: { level: string; section: string; timeLimitSeconds: number | null } | null;
   /** The curriculum activity, when the session runs one. */
@@ -37,6 +40,8 @@ export interface PracticeSession {
 }
 
 const MAX_SESSION_ITEMS = 20;
+const MIN_STAGE_ITEMS = 8;
+const MAX_STAGE_ITEMS = 10;
 const OPTION_COUNT = 4;
 const DEFAULT_PASS_SCORE = 0.8;
 
@@ -56,6 +61,8 @@ export async function getPracticeSession(
   let skill: SkillId;
   let mode: AttemptMode = "practice";
   let assessment: PracticeSession["assessment"] = null;
+  let practiceStage: string | null = null;
+  let stageType: ActivityType | null = null;
   let promptIds: string[];
 
   switch (request.kind) {
@@ -108,6 +115,37 @@ export async function getPracticeSession(
         .slice(0, section.questionCount);
       break;
     }
+    case "stage": {
+      // Practice is outside the curriculum: any content of the stage's kind the learner has
+      // met, least practised first, topped up with the earliest unmet content so a new learner
+      // can start. No lesson is involved.
+      const stage = languageModule.practice?.skills
+        .find((sk) => sk.id === request.skillId)
+        ?.stages.find((st) => st.id === request.stageId);
+      if (!stage || stage.availability !== "available" || !stage.session) return null;
+      const spec = stage.session;
+      skill = spec.skill;
+      stageType = spec.type;
+      practiceStage = `${request.skillId}.${request.stageId}`;
+      const progress = await getLearnerProgress(db, learner.id, now);
+      const met = new Set([...progress.values()].map((p) => p.contentItemId));
+      const poolIds = [...new Set(curriculum.lessons.flatMap((l) => l.itemIds))];
+      const matching = (await getContentItems(db, poolIds))
+        .filter(
+          (i) =>
+            i.type === spec.itemType &&
+            Object.entries(spec.dataEquals ?? {}).every(
+              ([key, value]) => (i.data as Record<string, unknown>)[key] === value,
+            ),
+        )
+        .map((i) => i.id);
+      const practised = (id: string) => progress.get(progressKey(id, skill))?.mastery.attempts ?? 0;
+      const seen = matching.filter((id) => met.has(id)).sort((a, b) => practised(a) - practised(b));
+      const unmet = matching.filter((id) => !met.has(id));
+      const chosen = seen.slice(0, MAX_STAGE_ITEMS);
+      promptIds = shuffle([...chosen, ...unmet.slice(0, Math.max(0, MIN_STAGE_ITEMS - chosen.length))]);
+      break;
+    }
     case "confusion": {
       // Discrimination practice: recognize each item of the pair twice.
       skill = curriculum.activities.find((a) => a.type === "recognition")?.skill ?? "";
@@ -117,7 +155,8 @@ export async function getPracticeSession(
     }
   }
 
-  const type = activity?.type ?? (request.kind === "confusion" ? "recognition" : typeForSkill(skill));
+  const type =
+    activity?.type ?? stageType ?? (request.kind === "confusion" ? "recognition" : typeForSkill(skill));
   const prompts = await getContentItems(db, promptIds);
   if (prompts.length === 0) {
     return {
@@ -125,6 +164,7 @@ export async function getPracticeSession(
       type,
       skill,
       mode,
+      practiceStage,
       assessment,
       activity,
       passScore: activity?.passScore ?? DEFAULT_PASS_SCORE,
@@ -169,6 +209,7 @@ export async function getPracticeSession(
     type,
     skill,
     mode,
+    practiceStage,
     assessment,
     activity,
     passScore: activity?.passScore ?? DEFAULT_PASS_SCORE,

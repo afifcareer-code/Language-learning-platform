@@ -26,6 +26,8 @@ export interface RecordAttemptInput {
   response?: string | null;
   responseMs?: number | null;
   activityId?: string | null;
+  /** The Practice stage this attempt trains ("<skill>.<stage>"), when it belongs to Practice. */
+  practiceStage?: string | null;
   /** Another item the learner gave the answer for, e.g. a similar-looking character. */
   confusedWithItemId?: string | null;
   writingSample?: Omit<typeof writingSamples.$inferInsert, "attemptId">;
@@ -78,6 +80,7 @@ export async function recordAttempt(
       response: input.response ?? null,
       responseMs: input.responseMs ?? null,
       activityId: input.activityId ?? null,
+      practiceStage: input.practiceStage ?? null,
       createdAt: at,
     });
     if (input.writingSample) {
