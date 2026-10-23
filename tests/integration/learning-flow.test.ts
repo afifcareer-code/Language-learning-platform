@@ -674,8 +674,12 @@ describe.each(TEST_DIALECTS)("learning flow on $dialect", ({ dialect, serverUrl 
 
     // Every stage that is available can actually be practised, with the exercise it declares.
     const { japanese } = await import("@/languages/japanese");
+    // Stages whose content is above the learner's level (N5 here) are not offered yet.
+    const aboveLevel = new Set(["reading.paragraph", "reading.real-world"]);
     for (const skill of japanese.practice!.skills) {
-      for (const stage of skill.stages.filter((st) => st.availability === "available")) {
+      for (const stage of skill.stages.filter(
+        (st) => st.availability === "available" && !aboveLevel.has(`${skill.id}.${st.id}`),
+      )) {
         const session = await getPracticeSession(db, learner, "en", {
           kind: "stage",
           skillId: skill.id,
@@ -707,6 +711,44 @@ describe.each(TEST_DIALECTS)("learning flow on $dialect", ({ dialect, serverUrl 
     expect(text!.choices).toEqual({});
     const talk = await stageSession("listening", "conversation");
     expect(talk!.prompts.every((p) => (p.data as { form: string }).form === "dialogue")).toBe(true);
+
+    // Practice follows the learner's level: published writing opens when they reach it.
+    for (const id of aboveLevel) {
+      const [skillId, stageId] = id.split(".") as [string, string];
+      expect(await stageSession(skillId, stageId), id).toBeNull();
+    }
+    const { getPracticeOverview } = await import("@/server/services/practice-skills");
+    const { upsert } = await import("@/server/db/dialect");
+    const gym = await getPracticeOverview(db, learner);
+    expect(gym.find((g) => g.skill.id === "reading")!.opensAt).toEqual({
+      paragraph: "N4",
+      "real-world": "N3",
+    });
+    const levelRows = await db.select().from(db.t.levels);
+    const n4 = levelRows.find((l) => l.slug === "n4")!;
+    const n2 = levelRows.find((l) => l.slug === "n2")!;
+    const learnerLanguages = db.t.learnerLanguages;
+    await upsert(
+      db,
+      db,
+      learnerLanguages,
+      { learnerId: learner.id, languageCode: "ja", currentLevelId: n4.id },
+      { target: [learnerLanguages.learnerId, learnerLanguages.languageCode], set: { currentLevelId: n4.id } },
+    );
+    const paragraph = await stageSession("reading", "paragraph");
+    expect(paragraph!.prompts.length).toBeGreaterThan(0);
+    expect(paragraph!.prompts.every((p) => (p.data as { form: string }).form === "paragraph")).toBe(true);
+    // Real-world text starts at N3: nothing at N4 yet.
+    expect(await stageSession("reading", "real-world")).toBeNull();
+    await upsert(
+      db,
+      db,
+      learnerLanguages,
+      { learnerId: learner.id, languageCode: "ja", currentLevelId: n2.id },
+      { target: [learnerLanguages.learnerId, learnerLanguages.languageCode], set: { currentLevelId: n2.id } },
+    );
+    const real = await stageSession("reading", "real-world");
+    expect(real!.prompts.every((p) => (p.data as { form: string }).form === "authentic")).toBe(true);
 
     // A stage that is not built yet is never offered.
     expect(await stageSession("listening", "real-world")).toBeNull();

@@ -70,6 +70,10 @@ EXCERPTS = [
    "Tiba-tiba di belakangnya terdengar bunyi dahsyat, “dubrak, sraaak”, dan salju halus seperti remah roti jatuh menimpa anak rubah. Terkejut, ia berguling di salju dan lari sepuluh meter jauhnya. Ia bertanya-tanya apa itu dan menoleh ke belakang, tetapi tidak ada apa-apa. Rupanya salju longsor dari ranting pohon cemara. Di sela-sela ranting, salju masih tumpah seperti benang sutra putih.")),
 ]
 
+# Our own estimate of the level a learner needs to read each excerpt with furigana and the meaning.
+LEVEL = {"gon-storyteller": "n4", "tebukuro-snow": "n4", "tebukuro-mother": "n4", "gon-rain": "n4", "gon-fish": "n4",
+         "tebukuro-night": "n3", "tebukuro-avalanche": "n3", "kumo-lotus": "n2", "kumo-hell-view": "n2"}
+
 def fetch(key):
     w = WORKS[key]
     raw = urllib.request.urlopen(f"{BASE}/{w['zip']}", timeout=60).read()
@@ -94,7 +98,7 @@ def main():
     for slug, form, work, start, end, tr in EXCERPTS:
         w = WORKS[work]
         items.append({
-            "slug": slug, "form": form, "lines": [{"text": cut(bodies[work], start, end)}], "answer": 0,
+            "slug": slug, "form": form, "level": LEVEL[slug], "lines": [{"text": cut(bodies[work], start, end)}], "answer": 0,
             "credit": {"author": w["author"], "work": w["work"], "url": f"{BASE}/{w['card']}", "license": LICENSE},
             "comprehension": tr,
         })

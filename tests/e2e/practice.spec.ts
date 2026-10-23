@@ -137,20 +137,13 @@ test("native sentences: a real speaker's sentence is read, and its authors are c
   );
 });
 
-test("published writing is read with furigana, its meaning appears after the answer, and it is credited", async ({
+test("Practice follows the learner's level: published writing shows when it opens and is not offered before", async ({
   page,
 }) => {
-  for (const stage of ["paragraph", "real-world"]) {
-    await page.goto(`/practice/session?kind=stage&practiceSkill=reading&stage=${stage}`);
-    const text = page.getByTestId("passage-text");
-    await expect(text).toBeVisible();
-    await expect(text.locator("ruby rt").first()).not.toBeEmpty();
-    await expect(page.getByTestId("passage-gloss")).toHaveCount(0);
-    await page.getByRole("group").last().getByRole("button").first().click();
-    await expect(page.getByTestId("passage-gloss")).toBeVisible();
-    await expect(page.getByRole("link", { name: "View source" })).toHaveAttribute(
-      "href",
-      /aozora\.gr\.jp\/cards\//,
-    );
-  }
+  await page.goto("/practice");
+  const reading = page.getByRole("list", { name: "Stages for Reading" });
+  await expect(reading).toContainText("Opens at N4");
+  await expect(reading).toContainText("Opens at N3");
+  const response = await page.goto("/practice/session?kind=stage&practiceSkill=reading&stage=paragraph");
+  expect(response?.status()).toBe(404);
 });

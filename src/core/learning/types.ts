@@ -61,6 +61,8 @@ export interface ContentItem<TData = unknown> {
   key: string;
   data: TData;
   tags: readonly string[];
+  /** The proficiency level the item belongs to, when it has one. */
+  levelId?: string | null;
 }
 
 export type AttemptMode = "learn" | "practice" | "review" | "assessment";

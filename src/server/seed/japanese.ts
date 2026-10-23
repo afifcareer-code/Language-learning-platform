@@ -221,14 +221,14 @@ async function readItems(root: string): Promise<SeedItem[]> {
     }
   }
   for (const file of await readFolder(join(root, "passages"), (raw) => passageFileSchema.parse(raw))) {
-    for (const { comprehension, ...passage } of file.items) {
+    for (const { comprehension, level, ...passage } of file.items) {
       items.push({
         id: passageItemId(passage.slug),
         key: passageItemKey(passage.slug),
         type: PASSAGE_CONTENT_TYPE,
         data: passage satisfies PassageItemData,
         tags: [`passage:${passage.form}`],
-        level: file.level,
+        level: level ?? file.level,
         display: passageSpeech(passage),
         translations: Object.fromEntries(
           Object.entries(comprehension).map(([l, c]) => [l, c satisfies PassageTranslation]),

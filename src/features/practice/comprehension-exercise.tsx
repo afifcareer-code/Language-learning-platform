@@ -60,20 +60,7 @@ export function ComprehensionExercise({
           data-testid="passage-text"
         >
           {passage.lines.map((line, i) => (
-            <p key={i}>
-              {line.map((segment, j) =>
-                segment.reading ? (
-                  <ruby key={j}>
-                    {segment.text}
-                    <rp>(</rp>
-                    <rt>{segment.reading}</rt>
-                    <rp>)</rp>
-                  </ruby>
-                ) : (
-                  <span key={j}>{segment.text}</span>
-                ),
-              )}
-            </p>
+            <RubyLine key={i} segments={line} />
           ))}
         </div>
       )}
@@ -129,5 +116,25 @@ export function ComprehensionExercise({
         </p>
       )}
     </>
+  );
+}
+
+/** One line of text, with furigana above the segments that have a reading. */
+export function RubyLine({ segments }: { segments: { text: string; reading?: string }[] }) {
+  return (
+    <p>
+      {segments.map((segment, j) =>
+        segment.reading ? (
+          <ruby key={j}>
+            {segment.text}
+            <rp>(</rp>
+            <rt>{segment.reading}</rt>
+            <rp>)</rp>
+          </ruby>
+        ) : (
+          <span key={j}>{segment.text}</span>
+        ),
+      )}
+    </p>
   );
 }

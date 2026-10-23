@@ -59,3 +59,9 @@ Content lives in `data/japanese/situations/`, `data/japanese/passages/` and `dat
 ## What is not built
 
 Real-world audio, a wider set of authentic texts (signs, menus, news), vocabulary and grammar in context, kanji, speaking, spaced-repetition scheduling specific to stages, and any automatic handwriting recognition.
+
+## Levels
+
+Practice stages are ordered by complexity, but their **content carries a level** (N5, N4, N3, N2). A learner is only offered content up to their current level; a learner still in the foundation practises up to N5, which is what they are working towards. A stage whose content is all above the learner's level is listed as "Opens at N4" and cannot be started. Content without a level is always available.
+
+The levels of original content (N5) are authored. The levels of the Aozora excerpts (N4, N3, N2) are an editorial estimate of the reading level needed, with furigana and the meaning, not an official JLPT classification. Until the course has N4+ curriculum a learner cannot be at those levels, so those stages stay closed.
