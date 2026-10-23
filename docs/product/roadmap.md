@@ -43,7 +43,9 @@ The roadmap is intentionally incremental. Each milestone should leave the produc
 - [x] Basic vocabulary written in kana, with localized meanings; word recognition, word recall and sentence building
 - [x] Dakuten and handakuten (が, ぱ, …) and combination kana (きゃ, …)
 - [ ] Audio pronunciation assets (beyond browser speech synthesis)
-- [ ] Docker image for self-hosting
+- [x] Optional email and password accounts (`AUTH_MODE=accounts`)
+- [ ] Password reset and email verification
+- [ ] Docker image for self-hosting (not planned for the current hosting panel)
 
 ## v0.3: Writing quality
 

@@ -1,3 +1,4 @@
+import enAuth from "../../locales/en/auth.json";
 import enCommon from "../../locales/en/common.json";
 import enDashboard from "../../locales/en/dashboard.json";
 import enLanguages from "../../locales/en/languages.json";
@@ -8,6 +9,7 @@ import enProficiency from "../../locales/en/proficiency.json";
 import enProgress from "../../locales/en/progress.json";
 import enReview from "../../locales/en/review.json";
 import enSettings from "../../locales/en/settings.json";
+import idAuth from "../../locales/id/auth.json";
 import idCommon from "../../locales/id/common.json";
 import idDashboard from "../../locales/id/dashboard.json";
 import idLanguages from "../../locales/id/languages.json";
@@ -29,6 +31,7 @@ import type { MessageTree } from "./translator";
  */
 const platform = {
   en: {
+    auth: enAuth,
     common: enCommon,
     dashboard: enDashboard,
     languages: enLanguages,
@@ -41,6 +44,7 @@ const platform = {
     settings: enSettings,
   },
   id: {
+    auth: idAuth,
     common: idCommon,
     dashboard: idDashboard,
     languages: idLanguages,

@@ -8,6 +8,8 @@ import { languageName } from "@/localization/labels";
 import { getI18n } from "@/localization/server";
 import { getContext } from "@/server/context";
 import { requireLearningContext } from "@/server/learning-context";
+import { logOut } from "@/features/auth/actions";
+import { accountEmailForLearner } from "@/server/auth/accounts";
 import { saveSettings } from "./actions";
 
 export async function generateMetadata(): Promise<Metadata> {
@@ -16,7 +18,8 @@ export async function generateMetadata(): Promise<Metadata> {
 }
 
 export default async function SettingsPage() {
-  const { learner } = await getContext();
+  const { db, learner } = await getContext();
+  const accountEmail = await accountEmailForLearner(db, learner.id);
   const { locale, t } = await getI18n();
   const learning = await requireLearningContext();
 
@@ -78,6 +81,20 @@ export default async function SettingsPage() {
           <Button type="submit">{t("common.actions.save")}</Button>
         </div>
       </form>
+
+      {accountEmail && (
+        <Card className="mt-6" aria-labelledby="account-title">
+          <h2 id="account-title" className="text-lg font-semibold">
+            {t("auth.account.title")}
+          </h2>
+          <p className="mt-1 text-sm text-muted">{t("auth.account.signedInAs", { email: accountEmail })}</p>
+          <form action={logOut} className="mt-3">
+            <Button type="submit" variant="secondary">
+              {t("auth.account.logout")}
+            </Button>
+          </form>
+        </Card>
+      )}
 
       <Card className="mt-6" aria-labelledby="credits-title">
         <h2 id="credits-title" className="text-lg font-semibold">

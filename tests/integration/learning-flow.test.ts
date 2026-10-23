@@ -3,6 +3,13 @@ import { tmpdir } from "node:os";
 import { join } from "node:path";
 import { sql } from "drizzle-orm";
 import { afterAll, beforeAll, describe, expect, it } from "vitest";
+import {
+  createAccount,
+  createSession,
+  deleteSession,
+  learnerForSession,
+  verifyCredentials,
+} from "@/server/auth/accounts";
 import { JA_SKILLS } from "@/languages/japanese";
 import { prepareDatabase } from "@/server/db/bootstrap";
 import { createDatabase, type Database } from "@/server/db/client";
@@ -58,6 +65,57 @@ describe.each(TEST_DIALECTS)("learning flow on $dialect", ({ dialect, serverUrl 
   afterAll(async () => {
     await db?.close();
     await testDb?.drop();
+  });
+
+  it("keeps accounts apart: the first claims the original learner, others get their own", async () => {
+    const first = await createAccount(db, {
+      email: " Dewi@Example.test ",
+      password: "a-long-test-passphrase",
+      displayName: "Dewi",
+    });
+    expect(first.learnerId).toBe(learner.id);
+    const second = await createAccount(db, {
+      email: "budi@example.test",
+      password: "another-test-passphrase",
+      displayName: "Budi",
+    });
+    expect(second.learnerId).not.toBe(learner.id);
+
+    await expect(
+      createAccount(db, { email: "DEWI@example.test", password: "a-long-test-passphrase", displayName: "X" }),
+    ).rejects.toMatchObject({ code: "email_taken" });
+    await expect(
+      createAccount(db, { email: "x@example.test", password: "short", displayName: "X" }),
+    ).rejects.toMatchObject({ code: "weak_password" });
+
+    expect(await verifyCredentials(db, "dewi@example.test", "a-long-test-passphrase")).toBe(first.accountId);
+    expect(await verifyCredentials(db, "dewi@example.test", "wrong-passphrase!")).toBeNull();
+    expect(await verifyCredentials(db, "nobody@example.test", "a-long-test-passphrase")).toBeNull();
+
+    const { token } = await createSession(db, second.accountId);
+    expect((await learnerForSession(db, token))?.id).toBe(second.learnerId);
+    expect(await learnerForSession(db, "not-a-token")).toBeNull();
+    const later = new Date(Date.now() + 31 * 86_400_000);
+    expect(await learnerForSession(db, token, later)).toBeNull();
+
+    // Evidence is per learner: an attempt by the second learner is invisible to the first.
+    const curriculum = await getCurriculum(db, "ja", "en");
+    const item = curriculum.activities[0]!.contentItemIds[0]!;
+    await recordAttempt(db, {
+      learnerId: second.learnerId,
+      contentItemId: item,
+      skill: curriculum.activities[0]!.skill,
+      mode: "practice",
+      correct: true,
+      score: 1,
+    });
+    const mine = await getLearnerProgress(db, learner.id);
+    const theirs = await getLearnerProgress(db, second.learnerId);
+    expect(mine.has(progressKey(item, curriculum.activities[0]!.skill))).toBe(false);
+    expect(theirs.has(progressKey(item, curriculum.activities[0]!.skill))).toBe(true);
+
+    await deleteSession(db, token);
+    expect(await learnerForSession(db, token)).toBeNull();
   });
 
   it("derives N5 proficiency from attempts, not from lesson completion", async () => {

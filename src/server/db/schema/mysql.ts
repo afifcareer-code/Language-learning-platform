@@ -411,3 +411,35 @@ export const assessmentResults = mysqlTable("assessment_results", {
   passed: boolean("passed").notNull(),
   missedItemIds: json("missed_item_ids").$type<string[]>().notNull(),
 });
+
+/**
+ * Optional accounts (AUTH_MODE=accounts). An account owns one learner, so all
+ * learning data stays keyed by learner. Passwords are stored as scrypt hashes;
+ * sessions store only a SHA-256 hash of the cookie token.
+ */
+export const accounts = mysqlTable(
+  "accounts",
+  {
+    id: str("id").primaryKey(),
+    learnerId: str("learner_id")
+      .notNull()
+      .references(() => learners.id),
+    email: str("email").notNull(),
+    passwordHash: text("password_hash").notNull(),
+    createdAt: createdAt(),
+  },
+  (t) => [uniqueIndex("accounts_email").on(t.email), uniqueIndex("accounts_learner").on(t.learnerId)],
+);
+
+export const accountSessions = mysqlTable(
+  "account_sessions",
+  {
+    tokenHash: str("token_hash").primaryKey(),
+    accountId: str("account_id")
+      .notNull()
+      .references(() => accounts.id, { onDelete: "cascade" }),
+    expiresAt: timestamp("expires_at").notNull(),
+    createdAt: createdAt(),
+  },
+  (t) => [index("account_sessions_account").on(t.accountId)],
+);

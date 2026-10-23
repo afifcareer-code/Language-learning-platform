@@ -408,3 +408,35 @@ export const assessmentResults = pgTable("assessment_results", {
   passed: boolean("passed").notNull(),
   missedItemIds: jsonb("missed_item_ids").$type<string[]>().notNull(),
 });
+
+/**
+ * Optional accounts (AUTH_MODE=accounts). An account owns one learner, so all
+ * learning data stays keyed by learner. Passwords are stored as scrypt hashes;
+ * sessions store only a SHA-256 hash of the cookie token.
+ */
+export const accounts = pgTable(
+  "accounts",
+  {
+    id: text("id").primaryKey(),
+    learnerId: text("learner_id")
+      .notNull()
+      .references(() => learners.id),
+    email: text("email").notNull(),
+    passwordHash: text("password_hash").notNull(),
+    createdAt: createdAt(),
+  },
+  (t) => [uniqueIndex("accounts_email").on(t.email), uniqueIndex("accounts_learner").on(t.learnerId)],
+);
+
+export const accountSessions = pgTable(
+  "account_sessions",
+  {
+    tokenHash: text("token_hash").primaryKey(),
+    accountId: text("account_id")
+      .notNull()
+      .references(() => accounts.id, { onDelete: "cascade" }),
+    expiresAt: timestamp("expires_at").notNull(),
+    createdAt: createdAt(),
+  },
+  (t) => [index("account_sessions_account").on(t.accountId)],
+);
