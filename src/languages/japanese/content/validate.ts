@@ -156,6 +156,18 @@ export async function validateJapaneseContent(dataDir: string): Promise<string[]
       for (const [locale, c] of Object.entries(passage.comprehension)) {
         if (new Set(c.options).size !== c.options.length)
           problems.push(`${where} "${locale}": options must be different from each other`);
+        if ((passage.form === "paragraph" || passage.form === "authentic") && !c.gloss)
+          problems.push(`${where} "${locale}": an excerpt needs its meaning (gloss)`);
+      }
+      if ((passage.form === "paragraph" || passage.form === "authentic") && !passage.credit)
+        problems.push(`${where}: an excerpt of published writing needs its credit`);
+      for (const line of passage.lines) {
+        // Every reading must sit on kanji, and every bracket must be closed.
+        if (
+          /《[^》]*$|^[^《]*》/.test(line.text) ||
+          /[\u3041-\u3096]《/.test(line.text.replace(/｜[^《]*《/g, ""))
+        )
+          problems.push(`${where}: furigana markup is not well formed`);
       }
     }
   }

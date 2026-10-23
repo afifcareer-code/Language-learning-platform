@@ -39,6 +39,7 @@ import {
   passageFileSchema,
   passageItemId,
   passageItemKey,
+  passageSpeech,
   type PassageItemData,
   type PassageTranslation,
 } from "@/languages/japanese/passages/schema";
@@ -228,7 +229,7 @@ async function readItems(root: string): Promise<SeedItem[]> {
         data: passage satisfies PassageItemData,
         tags: [`passage:${passage.form}`],
         level: file.level,
-        display: passage.lines.map((l) => l.text).join(" "),
+        display: passageSpeech(passage),
         translations: Object.fromEntries(
           Object.entries(comprehension).map(([l, c]) => [l, c satisfies PassageTranslation]),
         ),
