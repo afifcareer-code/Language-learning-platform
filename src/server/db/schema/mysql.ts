@@ -285,6 +285,8 @@ export const learningAttempts = mysqlTable(
       .references(() => contentItems.id),
     skill: str("skill").notNull(),
     mode: str("mode").notNull(),
+    /** The Practice stage this attempt trains, or null for Learn and review attempts. */
+    practiceStage: str("practice_stage"),
     sessionId: str("session_id").references(() => learningSessions.id),
     activityId: str("activity_id").references(() => activities.id, { onDelete: "set null" }),
     correct: boolean("correct").notNull(),

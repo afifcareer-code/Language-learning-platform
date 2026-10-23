@@ -1,0 +1,432 @@
+{
+  "source": "Practice skills and stages for Japanese. Stages are ordered by complexity, not by JLPT level. Requirements are platform settings, not official thresholds.",
+  "skills": [
+    {
+      "id": "writing",
+      "capability": "writing",
+      "stages": [
+        {
+          "id": "character",
+          "focus": "character",
+          "availability": "available",
+          "requirement": {
+            "minAttempts": 6,
+            "window": 10,
+            "promoteAt": 0.8,
+            "demoteBelow": 0.6
+          },
+          "session": {
+            "skill": "ja.kana.writing",
+            "type": "writing",
+            "itemType": "ja.kana"
+          }
+        },
+        {
+          "id": "word",
+          "focus": "word",
+          "availability": "available",
+          "requirement": {
+            "minAttempts": 6,
+            "window": 10,
+            "promoteAt": 0.8,
+            "demoteBelow": 0.6
+          },
+          "session": {
+            "skill": "ja.word.writing",
+            "type": "production",
+            "itemType": "ja.vocabulary"
+          }
+        },
+        {
+          "id": "phrase",
+          "focus": "phrase",
+          "availability": "available",
+          "requirement": {
+            "minAttempts": 6,
+            "window": 10,
+            "promoteAt": 0.8,
+            "demoteBelow": 0.6
+          },
+          "session": {
+            "skill": "ja.word.writing",
+            "type": "production",
+            "itemType": "ja.vocabulary",
+            "dataEquals": {
+              "partOfSpeech": "expression"
+            }
+          }
+        },
+        {
+          "id": "sentence",
+          "focus": "sentence",
+          "availability": "available",
+          "requirement": {
+            "minAttempts": 6,
+            "window": 10,
+            "promoteAt": 0.8,
+            "demoteBelow": 0.6
+          },
+          "session": {
+            "skill": "ja.sentence.writing",
+            "type": "production",
+            "itemType": "ja.sentence"
+          }
+        },
+        {
+          "id": "context",
+          "focus": "context",
+          "availability": "planned",
+          "requirement": {
+            "minAttempts": 6,
+            "window": 10,
+            "promoteAt": 0.8,
+            "demoteBelow": 0.6
+          }
+        },
+        {
+          "id": "free",
+          "focus": "free",
+          "availability": "planned",
+          "requirement": {
+            "minAttempts": 6,
+            "window": 10,
+            "promoteAt": 0.8,
+            "demoteBelow": 0.6
+          }
+        }
+      ]
+    },
+    {
+      "id": "reading",
+      "capability": "reading",
+      "stages": [
+        {
+          "id": "character",
+          "focus": "character",
+          "availability": "available",
+          "requirement": {
+            "minAttempts": 6,
+            "window": 10,
+            "promoteAt": 0.8,
+            "demoteBelow": 0.6
+          },
+          "session": {
+            "skill": "ja.kana.reading",
+            "type": "recall",
+            "itemType": "ja.kana"
+          }
+        },
+        {
+          "id": "word",
+          "focus": "word",
+          "availability": "available",
+          "requirement": {
+            "minAttempts": 6,
+            "window": 10,
+            "promoteAt": 0.8,
+            "demoteBelow": 0.6
+          },
+          "session": {
+            "skill": "ja.vocab.recognition",
+            "type": "recognition",
+            "itemType": "ja.vocabulary"
+          }
+        },
+        {
+          "id": "phrase",
+          "focus": "phrase",
+          "availability": "available",
+          "requirement": {
+            "minAttempts": 6,
+            "window": 10,
+            "promoteAt": 0.8,
+            "demoteBelow": 0.6
+          },
+          "session": {
+            "skill": "ja.vocab.recognition",
+            "type": "recognition",
+            "itemType": "ja.vocabulary",
+            "dataEquals": {
+              "partOfSpeech": "expression"
+            }
+          }
+        },
+        {
+          "id": "sentence",
+          "focus": "sentence",
+          "availability": "available",
+          "requirement": {
+            "minAttempts": 6,
+            "window": 10,
+            "promoteAt": 0.8,
+            "demoteBelow": 0.6
+          },
+          "session": {
+            "skill": "ja.reading.sentence",
+            "type": "reading",
+            "itemType": "ja.sentence"
+          }
+        },
+        {
+          "id": "text",
+          "focus": "text",
+          "availability": "planned",
+          "requirement": {
+            "minAttempts": 6,
+            "window": 10,
+            "promoteAt": 0.8,
+            "demoteBelow": 0.6
+          }
+        },
+        {
+          "id": "paragraph",
+          "focus": "paragraph",
+          "availability": "planned",
+          "requirement": {
+            "minAttempts": 6,
+            "window": 10,
+            "promoteAt": 0.8,
+            "demoteBelow": 0.6
+          }
+        },
+        {
+          "id": "real-world",
+          "focus": "real-world",
+          "availability": "planned",
+          "requirement": {
+            "minAttempts": 6,
+            "window": 10,
+            "promoteAt": 0.8,
+            "demoteBelow": 0.6
+          }
+        }
+      ]
+    },
+    {
+      "id": "listening",
+      "capability": "listening",
+      "stages": [
+        {
+          "id": "sound",
+          "focus": "sound",
+          "availability": "available",
+          "requirement": {
+            "minAttempts": 6,
+            "window": 10,
+            "promoteAt": 0.8,
+            "demoteBelow": 0.6
+          },
+          "session": {
+            "skill": "ja.kana.recognition",
+            "type": "recognition",
+            "itemType": "ja.kana"
+          }
+        },
+        {
+          "id": "word",
+          "focus": "word",
+          "availability": "available",
+          "requirement": {
+            "minAttempts": 6,
+            "window": 10,
+            "promoteAt": 0.8,
+            "demoteBelow": 0.6
+          },
+          "session": {
+            "skill": "ja.listening.word",
+            "type": "listening",
+            "itemType": "ja.vocabulary"
+          }
+        },
+        {
+          "id": "phrase",
+          "focus": "phrase",
+          "availability": "available",
+          "requirement": {
+            "minAttempts": 6,
+            "window": 10,
+            "promoteAt": 0.8,
+            "demoteBelow": 0.6
+          },
+          "session": {
+            "skill": "ja.listening.word",
+            "type": "listening",
+            "itemType": "ja.vocabulary",
+            "dataEquals": {
+              "partOfSpeech": "expression"
+            }
+          }
+        },
+        {
+          "id": "sentence",
+          "focus": "sentence",
+          "availability": "available",
+          "requirement": {
+            "minAttempts": 6,
+            "window": 10,
+            "promoteAt": 0.8,
+            "demoteBelow": 0.6
+          },
+          "session": {
+            "skill": "ja.listening.sentence",
+            "type": "listening",
+            "itemType": "ja.sentence"
+          }
+        },
+        {
+          "id": "conversation",
+          "focus": "conversation",
+          "availability": "planned",
+          "requirement": {
+            "minAttempts": 6,
+            "window": 10,
+            "promoteAt": 0.8,
+            "demoteBelow": 0.6
+          }
+        },
+        {
+          "id": "real-world",
+          "focus": "real-world",
+          "availability": "planned",
+          "requirement": {
+            "minAttempts": 6,
+            "window": 10,
+            "promoteAt": 0.8,
+            "demoteBelow": 0.6
+          }
+        }
+      ]
+    },
+    {
+      "id": "vocabulary",
+      "capability": "vocabulary",
+      "stages": [
+        {
+          "id": "recognition",
+          "focus": "recognition",
+          "availability": "available",
+          "requirement": {
+            "minAttempts": 6,
+            "window": 10,
+            "promoteAt": 0.8,
+            "demoteBelow": 0.6
+          },
+          "session": {
+            "skill": "ja.vocab.recognition",
+            "type": "recognition",
+            "itemType": "ja.vocabulary"
+          }
+        },
+        {
+          "id": "recall",
+          "focus": "recall",
+          "availability": "available",
+          "requirement": {
+            "minAttempts": 6,
+            "window": 10,
+            "promoteAt": 0.8,
+            "demoteBelow": 0.6
+          },
+          "session": {
+            "skill": "ja.vocab.recall",
+            "type": "recall",
+            "itemType": "ja.vocabulary"
+          }
+        },
+        {
+          "id": "context",
+          "focus": "context",
+          "availability": "planned",
+          "requirement": {
+            "minAttempts": 6,
+            "window": 10,
+            "promoteAt": 0.8,
+            "demoteBelow": 0.6
+          }
+        },
+        {
+          "id": "usage",
+          "focus": "usage",
+          "availability": "planned",
+          "requirement": {
+            "minAttempts": 6,
+            "window": 10,
+            "promoteAt": 0.8,
+            "demoteBelow": 0.6
+          }
+        },
+        {
+          "id": "automatic",
+          "focus": "automatic",
+          "availability": "planned",
+          "requirement": {
+            "minAttempts": 6,
+            "window": 10,
+            "promoteAt": 0.8,
+            "demoteBelow": 0.6
+          }
+        }
+      ]
+    },
+    {
+      "id": "grammar",
+      "capability": "grammar",
+      "stages": [
+        {
+          "id": "recognition",
+          "focus": "recognition",
+          "availability": "available",
+          "requirement": {
+            "minAttempts": 6,
+            "window": 10,
+            "promoteAt": 0.8,
+            "demoteBelow": 0.6
+          },
+          "session": {
+            "skill": "ja.reading.sentence",
+            "type": "reading",
+            "itemType": "ja.sentence"
+          }
+        },
+        {
+          "id": "construction",
+          "focus": "construction",
+          "availability": "available",
+          "requirement": {
+            "minAttempts": 6,
+            "window": 10,
+            "promoteAt": 0.8,
+            "demoteBelow": 0.6
+          },
+          "session": {
+            "skill": "ja.grammar.sentence",
+            "type": "sentence_building",
+            "itemType": "ja.sentence"
+          }
+        },
+        {
+          "id": "context",
+          "focus": "context",
+          "availability": "planned",
+          "requirement": {
+            "minAttempts": 6,
+            "window": 10,
+            "promoteAt": 0.8,
+            "demoteBelow": 0.6
+          }
+        },
+        {
+          "id": "production",
+          "focus": "production",
+          "availability": "planned",
+          "requirement": {
+            "minAttempts": 6,
+            "window": 10,
+            "promoteAt": 0.8,
+            "demoteBelow": 0.6
+          }
+        }
+      ]
+    }
+  ]
+}

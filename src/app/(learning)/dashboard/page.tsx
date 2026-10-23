@@ -6,6 +6,8 @@ import { ButtonLink } from "@/components/ui/button";
 import { Card, CardTitle } from "@/components/ui/card";
 import { PageHeader } from "@/components/ui/page-header";
 import { itemDisplay } from "@/features/japanese/practice-items";
+import { PracticeSummary } from "@/features/practice/skill-gym";
+import { getPracticeOverview } from "@/server/services/practice-skills";
 import { activityHref, confusionHref, reviewHref, weakItemsHref } from "@/features/practice/routes";
 import { languageName, masteryLabels, skillDescription, skillLabel } from "@/localization/labels";
 import { getI18n } from "@/localization/server";
@@ -19,6 +21,7 @@ export default async function DashboardPage() {
   const { t } = await getI18n();
   const context = await requireLearningContext();
   const overview = await getCurrentOverview();
+  const gym = await getPracticeOverview(db, learner);
   const next = overview.nextActivity;
   const nextLesson = overview.currentLesson;
   const here = nextLesson && locateLesson(overview.curriculum, nextLesson.id);
@@ -126,6 +129,8 @@ export default async function DashboardPage() {
             },
           ]}
         />
+
+        {gym.length > 0 && <PracticeSummary overview={gym} t={t} />}
 
         <div className="grid gap-4 md:gap-6 lg:grid-cols-3">
           <Card className="lg:col-span-2">

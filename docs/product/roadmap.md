@@ -47,6 +47,11 @@ The roadmap is intentionally incremental. Each milestone should leave the produc
 - [ ] Password reset and email verification
 - [ ] Docker image for self-hosting (not planned for the current hosting panel)
 
+- [x] Practice skill gym: Writing, Reading, Listening, Vocabulary and Grammar stages with adaptive progression
+- [x] Word, phrase and sentence writing with self-rating (no automatic recognition)
+- [ ] Practice stages: context and free production writing, short texts, conversations, real-world audio
+- [ ] Automatic recognition of handwritten words and sentences
+
 ## v0.3: Writing quality
 
 - [ ] Stroke-order and stroke-direction data, with license-compatible sourcing

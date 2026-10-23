@@ -111,9 +111,11 @@
       "review": "Recall these items correctly now that they are due, so they move to longer review intervals.",
       "weak": "Correct the items you missed recently.",
       "confusion": "Reliably tell {a} and {b} apart.",
-      "assessment": "Answer questions on the items you have practiced least. This is a check, not new learning."
+      "assessment": "Answer questions on the items you have practiced least. This is a check, not new learning.",
+      "stage": "Practice {skill} at the {focus} level until it is reliable."
     },
-    "assessment": "Mock assessment"
+    "assessment": "Mock assessment",
+    "stage": "{skill} · {focus}"
   },
   "introduction": {
     "title": "Meet the characters",
@@ -129,5 +131,80 @@
     "timeLeft": "Time left: {time}",
     "timeUp": "Time is up. Questions you did not answer count as wrong.",
     "seeResult": "See your mock assessment result"
+  },
+  "hub": {
+    "gymTitle": "Skill gym",
+    "gymDescription": "Train one skill at a time, step by step. This is separate from your course: a skill moves up when you do well and back a step when you struggle.",
+    "lessonTitle": "From your current lesson",
+    "stageNumber": "Stage {n}",
+    "stageHeading": "Stage {n}: {focus}",
+    "start": "Practice stage {n}",
+    "recentScore": "{percent}% recently",
+    "attempts": "{count} attempts",
+    "needsAttempts": "{count} more attempts to be judged",
+    "plannedNote": "Coming later",
+    "passedNote": "Passed",
+    "nextLabel": "Next",
+    "masteredAll": "All available stages passed. Keep them fresh with review.",
+    "ladder": "Stages for {skill}"
+  },
+  "skills": {
+    "writing": "Writing",
+    "reading": "Reading",
+    "listening": "Listening",
+    "vocabulary": "Vocabulary",
+    "grammar": "Grammar"
+  },
+  "focus": {
+    "character": "Character",
+    "word": "Word",
+    "phrase": "Phrase",
+    "sentence": "Sentence",
+    "context": "Context",
+    "free": "Free production",
+    "text": "Short text",
+    "paragraph": "Paragraph",
+    "real-world": "Real-world material",
+    "sound": "Sound",
+    "conversation": "Conversation",
+    "recognition": "Recognition",
+    "recall": "Recall",
+    "usage": "Usage",
+    "automatic": "Automatic recall",
+    "construction": "Sentence construction",
+    "production": "Production"
+  },
+  "stageStatus": {
+    "planned": "Planned",
+    "locked": "Later",
+    "current": "Current",
+    "passed": "Passed",
+    "needs_work": "Needs work"
+  },
+  "reason": {
+    "start": "Start here: this is the first stage.",
+    "continue": "Keep going: more recent evidence is needed on this stage.",
+    "advance": "You passed the stage before, so this one is next.",
+    "regress": "Your recent {weak} results were weak, so go back a step to {stage} and then retry.",
+    "retry": "Your recent results here were weak. Practice this stage again.",
+    "mastered": "You passed every available stage. They stay fresh through review."
+  },
+  "textWriting": {
+    "instruction": {
+      "word": "Write this word by hand in the writing area.",
+      "sentence": "Write this sentence by hand in the writing area."
+    },
+    "meaning": "Meaning",
+    "canvasLabel": "Writing area for {prompt}",
+    "showModel": "Show the model",
+    "selfNote": "The app does not read handwriting. You compare with the model and rate yourself.",
+    "model": "Model",
+    "compare": "Compare your writing with the model. How did it go?",
+    "rateLabel": "Rate your writing",
+    "rating": {
+      "correct": "I wrote it correctly",
+      "partly": "Almost: small mistakes",
+      "incorrect": "Not yet"
+    }
   }
 }

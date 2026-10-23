@@ -14,6 +14,9 @@ function toRequest(params: Record<string, string | string[] | undefined>): Sessi
   const level = get("level");
   const section = get("section");
   if (kind === "assessment" && level && section) return { kind, level, section };
+  const skillId = get("practiceSkill");
+  const stageId = get("stage");
+  if (kind === "stage" && skillId && stageId) return { kind, skillId, stageId };
   const a = get("a");
   const b = get("b");
   if (kind === "confusion" && a && b) return { kind, itemA: a, itemB: b };

@@ -13,8 +13,11 @@ import {
   type WritingEvaluation,
 } from "@/handwriting";
 import { acceptedStrokeCounts, isKanaItemData } from "@/languages/japanese";
+import { isSentenceData } from "@/languages/japanese/sentences/schema";
+import { isVocabularyData } from "@/languages/japanese/vocabulary/schema";
 import { getLanguageModule } from "@/languages/registry";
 import { choiceLabel, itemDisplay } from "@/features/japanese/practice-items";
+import { SELF_WRITING_RATINGS, SELF_WRITING_SCORE } from "./self-writing";
 import { getLocale } from "@/localization/server";
 import { getContext } from "@/server/context";
 import { getContentItem, getContentTranslations } from "@/server/repositories/content";
@@ -52,10 +55,15 @@ const attemptSchema = z.object({
   skill: id,
   activityId: id.nullable(),
   mode: z.enum(["practice", "review", "assessment"]),
+  /** "<practice skill>.<stage>" when the attempt belongs to Practice. */
+  practiceStage: z.string().min(3).max(100).nullable().optional(),
   responseMs: z.number().int().nonnegative().max(3_600_000).nullable(),
   response: z.discriminatedUnion("kind", [
     z.object({ kind: z.literal("choice"), choiceId: id }),
     z.object({ kind: z.literal("text"), answer: z.string().max(50) }),
+    // Writing a word or sentence by hand: the learner compares with the model and rates it.
+    // Nothing reads the handwriting; the rating is the evidence.
+    z.object({ kind: z.literal("self_writing"), rating: z.enum(SELF_WRITING_RATINGS) }),
     // Sentence building: the pieces in the order the learner arranged them.
     z.object({ kind: z.literal("sequence"), tokens: z.array(z.string().min(1).max(50)).min(1).max(30) }),
     z.object({
@@ -87,6 +95,13 @@ export interface AttemptFeedback {
 
 const analyzer = new StrokeCountAnalyzer();
 
+function practiceStageOf(language: string, ref: string) {
+  const [skillId, stageId] = ref.split(".");
+  return getLanguageModule(language)
+    .practice?.skills.find((s) => s.id === skillId)
+    ?.stages.find((st) => st.id === stageId);
+}
+
 export async function submitAttempt(input: AttemptInput): Promise<AttemptFeedback> {
   const data = attemptSchema.parse(input);
   const { db, learner } = await getContext();
@@ -104,6 +119,10 @@ export async function submitAttempt(input: AttemptInput): Promise<AttemptFeedbac
   }
   const item = await getContentItem(db, data.itemId);
   if (!item) throw new Error("Unknown item");
+  if (data.practiceStage) {
+    const stage = practiceStageOf(learner.targetLanguage, data.practiceStage);
+    if (!stage || stage.session?.skill !== data.skill) throw new Error("Unknown practice stage");
+  }
 
   let correct: boolean;
   let score: number;
@@ -133,6 +152,17 @@ export async function submitAttempt(input: AttemptInput): Promise<AttemptFeedbac
       response = data.response.answer;
       confusedWithId = evaluation.confusedWithItemId;
       expected = evaluation.expected ?? "";
+      break;
+    }
+    case "self_writing": {
+      if (!isVocabularyData(item.data) && !isSentenceData(item.data)) {
+        throw new Error("This item cannot be written by hand yet");
+      }
+      const { rating } = data.response;
+      expected = isVocabularyData(item.data) ? item.data.kana : item.data.text;
+      correct = rating === "correct";
+      score = SELF_WRITING_SCORE[rating];
+      response = rating;
       break;
     }
     case "sequence": {
@@ -182,6 +212,7 @@ export async function submitAttempt(input: AttemptInput): Promise<AttemptFeedbac
     skill: data.skill,
     mode: data.mode,
     activityId: data.activityId,
+    practiceStage: data.practiceStage ?? null,
     correct,
     score,
     response,

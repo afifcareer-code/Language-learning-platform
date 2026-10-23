@@ -35,6 +35,18 @@
     "ja.listening.sentence": {
       "label": "Sentence listening",
       "description": "Hear a Japanese sentence and pick its meaning."
+    },
+    "ja.listening.word": {
+      "label": "Word listening",
+      "description": "Hear a Japanese word and pick its meaning."
+    },
+    "ja.word.writing": {
+      "label": "Word writing",
+      "description": "Write a Japanese word by hand from its meaning, then check it against the model."
+    },
+    "ja.sentence.writing": {
+      "label": "Sentence writing",
+      "description": "Write a Japanese sentence by hand from its meaning, then check it against the model."
     }
   }
 }

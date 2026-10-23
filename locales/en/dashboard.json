@@ -43,5 +43,10 @@
   "change": "Change",
   "youAreHere": "You are here",
   "todaysFocus": "Today's focus",
-  "viewPath": "Learning path"
+  "viewPath": "Learning path",
+  "practice": {
+    "title": "Practice",
+    "description": "Practice is separate from your course: it shows how well you can actually use each skill.",
+    "open": "Open Practice"
+  }
 }

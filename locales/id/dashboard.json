@@ -41,5 +41,10 @@
   "change": "Ganti",
   "youAreHere": "Posisi Anda",
   "todaysFocus": "Fokus hari ini",
-  "viewPath": "Jalur belajar"
+  "viewPath": "Jalur belajar",
+  "practice": {
+    "title": "Practice",
+    "description": "Practice terpisah dari kursus: menunjukkan seberapa baik Anda benar-benar bisa memakai tiap keterampilan.",
+    "open": "Buka Practice"
+  }
 }

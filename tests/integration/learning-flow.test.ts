@@ -592,6 +592,113 @@ describe.each(TEST_DIALECTS)("learning flow on $dialect", ({ dialect, serverUrl 
       consecutiveCorrect: 0,
     });
   });
+  it("tracks Practice stages apart from the course, and moves the learner back a stage when they struggle", async () => {
+    const { getPracticeOverview } = await import("@/server/services/practice-skills");
+    const start = new Date("2026-03-01T09:00:00.000Z");
+    const ids = [
+      "ja.hiragana.a",
+      "ja.hiragana.i",
+      "ja.hiragana.u",
+      "ja.hiragana.e",
+      "ja.hiragana.o",
+      "ja.hiragana.ka",
+    ];
+    const record = (id: string, stage: string, skill: string, score: number, minute: number) =>
+      recordAttempt(db, {
+        learnerId: learner.id,
+        contentItemId: id,
+        skill,
+        mode: "practice",
+        practiceStage: stage,
+        correct: score >= 0.8,
+        score,
+        at: new Date(start.getTime() + minute * 60_000),
+      });
+
+    const before = (await getPracticeOverview(db, learner)).find((o) => o.skill.id === "writing")!;
+    const courseAttemptsBefore = (await getRecentAttempts(db, learner.id, { limit: 1000 })).length;
+    expect(before.progress.nextStageId).toBe("character");
+
+    // Six strong character-writing attempts pass stage 1 and open stage 2.
+    for (const [n, id] of ids.entries()) await record(id, "writing.character", JA_SKILLS.kanaWriting, 1, n);
+    const passed = (await getPracticeOverview(db, learner)).find((o) => o.skill.id === "writing")!;
+    expect(passed.progress.stages[0]).toMatchObject({ status: "passed", attempts: 6 });
+    expect(passed.progress.nextStageId).toBe("word");
+    expect(passed.progress.reason).toBe("advance");
+
+    // Weak word writing sends the learner back to the character stage; the course is untouched by the stage.
+    for (let n = 0; n < 6; n++) await record(ids[n]!, "writing.word", JA_SKILLS.wordWriting, 0, 10 + n);
+    const weak = (await getPracticeOverview(db, learner)).find((o) => o.skill.id === "writing")!;
+    expect(weak.progress.reason).toBe("regress");
+    expect(weak.progress.nextStageId).toBe("character");
+    expect(weak.progress.weakStageId).toBe("word");
+
+    // Other skills are independent.
+    const reading = (await getPracticeOverview(db, learner)).find((o) => o.skill.id === "reading")!;
+    expect(reading.progress.reason).toBe("start");
+    expect((await getRecentAttempts(db, learner.id, { limit: 1000 })).length).toBe(courseAttemptsBefore + 12);
+  });
+
+  it("builds a Practice stage session outside any lesson, for words and sentences written by hand", async () => {
+    const word = await getPracticeSession(db, learner, "id", {
+      kind: "stage",
+      skillId: "writing",
+      stageId: "word",
+    });
+    expect(word).toMatchObject({
+      type: "production",
+      skill: JA_SKILLS.wordWriting,
+      practiceStage: "writing.word",
+      mode: "practice",
+    });
+    expect(word!.activity).toBeNull();
+    expect(word!.prompts.length).toBeGreaterThanOrEqual(8);
+    expect(word!.prompts.every((p) => p.type === "ja.vocabulary")).toBe(true);
+
+    const phrase = await getPracticeSession(db, learner, "en", {
+      kind: "stage",
+      skillId: "writing",
+      stageId: "phrase",
+    });
+    expect(phrase!.prompts.length).toBeGreaterThan(0);
+    expect(
+      phrase!.prompts.every((p) => (p.data as { partOfSpeech: string }).partOfSpeech === "expression"),
+    ).toBe(true);
+
+    const sentence = await getPracticeSession(db, learner, "en", {
+      kind: "stage",
+      skillId: "writing",
+      stageId: "sentence",
+    });
+    expect(sentence!.prompts.every((p) => p.type === "ja.sentence")).toBe(true);
+
+    // Every stage that is available can actually be practised, with the exercise it declares.
+    const { japanese } = await import("@/languages/japanese");
+    for (const skill of japanese.practice!.skills) {
+      for (const stage of skill.stages.filter((st) => st.availability === "available")) {
+        const session = await getPracticeSession(db, learner, "en", {
+          kind: "stage",
+          skillId: skill.id,
+          stageId: stage.id,
+        });
+        expect(session, `${skill.id}/${stage.id}`).not.toBeNull();
+        expect(session!.prompts.length, `${skill.id}/${stage.id}`).toBeGreaterThan(0);
+        expect(session!.type).toBe(stage.session!.type);
+        expect(session!.practiceStage).toBe(`${skill.id}.${stage.id}`);
+        if (["recognition", "listening", "reading"].includes(session!.type)) {
+          for (const p of session!.prompts) expect(session!.choices[p.id]).toContain(p.id);
+        }
+      }
+    }
+
+    // A stage that is not built yet is never offered.
+    expect(
+      await getPracticeSession(db, learner, "en", { kind: "stage", skillId: "writing", stageId: "free" }),
+    ).toBeNull();
+    expect(
+      await getPracticeSession(db, learner, "en", { kind: "stage", skillId: "nope", stageId: "word" }),
+    ).toBeNull();
+  });
 });
 
 describe.each(TEST_DIALECTS)("upgrading an existing $dialect database", ({ dialect, serverUrl }) => {

@@ -108,9 +108,11 @@
       "review": "Mengingat item-item ini dengan benar saat jadwalnya tiba, agar interval review-nya semakin panjang.",
       "weak": "Memperbaiki item yang baru saja salah.",
       "confusion": "Membedakan {a} dan {b} dengan andal.",
-      "assessment": "Jawab soal tentang butir yang paling jarang Anda latih. Ini pemeriksaan, bukan pembelajaran baru."
+      "assessment": "Jawab soal tentang butir yang paling jarang Anda latih. Ini pemeriksaan, bukan pembelajaran baru.",
+      "stage": "Latih {skill} pada tingkat {focus} sampai andal."
     },
-    "assessment": "Asesmen tiruan"
+    "assessment": "Asesmen tiruan",
+    "stage": "{skill} · {focus}"
   },
   "introduction": {
     "title": "Kenali karakternya",
@@ -126,5 +128,80 @@
     "timeLeft": "Sisa waktu: {time}",
     "timeUp": "Waktu habis. Soal yang belum dijawab dihitung salah.",
     "seeResult": "Lihat hasil asesmen tiruan Anda"
+  },
+  "hub": {
+    "gymTitle": "Latihan keterampilan",
+    "gymDescription": "Latih satu keterampilan langkah demi langkah. Ini terpisah dari kursus: keterampilan naik tahap saat Anda baik, dan turun satu tahap saat Anda kesulitan.",
+    "lessonTitle": "Dari pelajaran Anda saat ini",
+    "stageNumber": "Tahap {n}",
+    "stageHeading": "Tahap {n}: {focus}",
+    "start": "Latih tahap {n}",
+    "recentScore": "{percent}% belakangan ini",
+    "attempts": "{count} percobaan",
+    "needsAttempts": "{count} percobaan lagi untuk dinilai",
+    "plannedNote": "Segera hadir",
+    "passedNote": "Lulus",
+    "nextLabel": "Berikutnya",
+    "masteredAll": "Semua tahap yang tersedia sudah lulus. Jaga tetap segar lewat ulasan.",
+    "ladder": "Tahap {skill}"
+  },
+  "skills": {
+    "writing": "Menulis",
+    "reading": "Membaca",
+    "listening": "Mendengarkan",
+    "vocabulary": "Kosakata",
+    "grammar": "Tata bahasa"
+  },
+  "focus": {
+    "character": "Huruf",
+    "word": "Kata",
+    "phrase": "Frasa",
+    "sentence": "Kalimat",
+    "context": "Konteks",
+    "free": "Produksi bebas",
+    "text": "Teks pendek",
+    "paragraph": "Paragraf",
+    "real-world": "Bahan dunia nyata",
+    "sound": "Bunyi",
+    "conversation": "Percakapan",
+    "recognition": "Pengenalan",
+    "recall": "Mengingat",
+    "usage": "Pemakaian",
+    "automatic": "Ingatan otomatis",
+    "construction": "Menyusun kalimat",
+    "production": "Produksi"
+  },
+  "stageStatus": {
+    "planned": "Direncanakan",
+    "locked": "Nanti",
+    "current": "Saat ini",
+    "passed": "Lulus",
+    "needs_work": "Perlu latihan"
+  },
+  "reason": {
+    "start": "Mulai di sini: ini tahap pertama.",
+    "continue": "Lanjutkan: masih perlu bukti terbaru pada tahap ini.",
+    "advance": "Tahap sebelumnya sudah lulus, jadi tahap ini berikutnya.",
+    "regress": "Hasil {weak} Anda belakangan ini lemah, jadi mundur satu tahap ke {stage} lalu coba lagi.",
+    "retry": "Hasil Anda di sini belakangan ini lemah. Latih tahap ini lagi.",
+    "mastered": "Semua tahap yang tersedia sudah lulus. Tetap segar lewat ulasan."
+  },
+  "textWriting": {
+    "instruction": {
+      "word": "Tulis kata ini dengan tangan di area menulis.",
+      "sentence": "Tulis kalimat ini dengan tangan di area menulis."
+    },
+    "meaning": "Arti",
+    "canvasLabel": "Area menulis untuk {prompt}",
+    "showModel": "Tampilkan contoh",
+    "selfNote": "Aplikasi tidak membaca tulisan tangan. Anda membandingkan dengan contoh dan menilai sendiri.",
+    "model": "Contoh",
+    "compare": "Bandingkan tulisan Anda dengan contoh. Bagaimana hasilnya?",
+    "rateLabel": "Nilai tulisan Anda",
+    "rating": {
+      "correct": "Saya menulis dengan benar",
+      "partly": "Hampir: ada kesalahan kecil",
+      "incorrect": "Belum"
+    }
   }
 }

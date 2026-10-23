@@ -275,6 +275,8 @@ export const learningAttempts = sqliteTable(
       .references(() => contentItems.id),
     skill: text("skill").notNull(),
     mode: text("mode").notNull(),
+    /** The Practice stage this attempt trains, or null for Learn and review attempts. */
+    practiceStage: text("practice_stage"),
     sessionId: text("session_id").references(() => learningSessions.id),
     activityId: text("activity_id").references(() => activities.id, { onDelete: "set null" }),
     correct: integer("correct", { mode: "boolean" }).notNull(),

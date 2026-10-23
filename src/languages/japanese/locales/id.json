@@ -35,6 +35,18 @@
     "ja.listening.sentence": {
       "label": "Menyimak kalimat",
       "description": "Dengarkan kalimat bahasa Jepang dan pilih artinya."
+    },
+    "ja.listening.word": {
+      "label": "Mendengarkan kata",
+      "description": "Dengarkan kata Jepang lalu pilih artinya."
+    },
+    "ja.word.writing": {
+      "label": "Menulis kata",
+      "description": "Tulis kata Jepang dengan tangan dari artinya, lalu cocokkan dengan contoh."
+    },
+    "ja.sentence.writing": {
+      "label": "Menulis kalimat",
+      "description": "Tulis kalimat Jepang dengan tangan dari artinya, lalu cocokkan dengan contoh."
     }
   }
 }

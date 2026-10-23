@@ -4,6 +4,8 @@ import { needsRemediation } from "@/core/analytics";
 import { ButtonLink } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { PageHeader } from "@/components/ui/page-header";
+import { SkillGym } from "@/features/practice/skill-gym";
+import { getPracticeOverview } from "@/server/services/practice-skills";
 import { itemDisplay } from "@/features/japanese/practice-items";
 import { activityHref, confusionHref, weakItemsHref } from "@/features/practice/routes";
 import { skillDescription, skillLabel } from "@/localization/labels";
@@ -18,9 +20,10 @@ export async function generateMetadata(): Promise<Metadata> {
 }
 
 export default async function PracticePage() {
-  const { db } = await getContext();
+  const { db, learner } = await getContext();
   const { t } = await getI18n();
   const overview = await getCurrentOverview();
+  const gym = await getPracticeOverview(db, learner);
   const lesson = overview.currentLesson;
 
   const weakBySkill = new Map<string, number>();
@@ -41,11 +44,19 @@ export default async function PracticePage() {
 
   return (
     <>
-      <PageHeader
-        title={t("practice.title")}
-        description={lesson ? t("practice.description", { lesson: lesson.title }) : undefined}
-      />
+      <PageHeader title={t("practice.title")} description={t("practice.hub.gymDescription")} />
 
+      {gym.length > 0 && (
+        <section aria-labelledby="gym-title">
+          <h2 id="gym-title" className="mb-4 text-xl font-semibold">
+            {t("practice.hub.gymTitle")}
+          </h2>
+          <SkillGym overview={gym} t={t} />
+        </section>
+      )}
+
+      {lesson && <h2 className="mt-10 mb-1 text-xl font-semibold">{t("practice.hub.lessonTitle")}</h2>}
+      {lesson && <p className="mb-4 text-muted">{t("practice.description", { lesson: lesson.title })}</p>}
       <div className="grid gap-4 md:grid-cols-3 md:gap-6">
         {lesson?.activities.map((activity) => (
           <Card key={activity.id} className="flex flex-col">

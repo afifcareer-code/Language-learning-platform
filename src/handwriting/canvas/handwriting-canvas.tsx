@@ -11,6 +11,8 @@ export interface HandwritingCanvasProps {
   /** 0 hides the guide. */
   guideOpacity?: number;
   disabled?: boolean;
+  /** A wide surface (2:1) for words and sentences, without the single-character cross guide. */
+  wide?: boolean;
   label: string;
 }
 
@@ -30,6 +32,7 @@ export function HandwritingCanvas({
   guideText,
   guideOpacity = 0,
   disabled,
+  wide = false,
   label,
 }: HandwritingCanvasProps) {
   const canvasRef = useRef<HTMLCanvasElement>(null);
@@ -98,12 +101,12 @@ export function HandwritingCanvas({
 
   return (
     <div
-      className="relative aspect-square w-full overflow-hidden rounded-2xl border border-line bg-surface"
+      className={`relative w-full overflow-hidden rounded-2xl border border-line bg-surface ${wide ? "aspect-[2/1]" : "aspect-square"}`}
       style={{ containerType: "inline-size" }}
     >
       {/* Practice-sheet cross guide */}
       <svg className="pointer-events-none absolute inset-0 size-full text-line" aria-hidden="true">
-        <line x1="50%" y1="0" x2="50%" y2="100%" stroke="currentColor" strokeDasharray="6 6" />
+        {!wide && <line x1="50%" y1="0" x2="50%" y2="100%" stroke="currentColor" strokeDasharray="6 6" />}
         <line x1="0" y1="50%" x2="100%" y2="50%" stroke="currentColor" strokeDasharray="6 6" />
       </svg>
       {guideText && guideOpacity > 0 && (
