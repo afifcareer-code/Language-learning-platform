@@ -19,6 +19,7 @@ import {
   tokensMatchText,
 } from "../sentences/schema";
 import { PASSAGE_CONTENT_TYPE, passageFileSchema, passageItemKey } from "../passages/schema";
+import { KANJI_CONTENT_TYPE, kanjiFileSchema, kanjiItemKey } from "../kanji/schema";
 import { NATIVE_CONTENT_TYPE, nativeFileSchema, nativeItemKey } from "../native/schema";
 import { SITUATION_CONTENT_TYPE, situationFileSchema, situationItemKey } from "../situations/schema";
 import { VOCABULARY_CONTENT_TYPE, vocabularyFileSchema, vocabularyItemKey } from "../vocabulary/schema";
@@ -169,6 +170,23 @@ export async function validateJapaneseContent(dataDir: string): Promise<string[]
         )
           problems.push(`${where}: furigana markup is not well formed`);
       }
+    }
+  }
+
+  for (const file of await folder("kanji")) {
+    const parsed = kanjiFileSchema.safeParse(await readJson(join(root, "kanji", file)));
+    if (!parsed.success) {
+      problems.push(`kanji/${file}: ${parsed.error.message}`);
+      continue;
+    }
+    for (const kanji of parsed.data.items) {
+      const where = `kanji/${file} "${kanji.character}"`;
+      addKey(where, kanjiItemKey(kanji.character), KANJI_CONTENT_TYPE);
+      checkLocales(`${where} meaning`, kanji.meanings);
+      if (kanji.strokes.length !== kanji.strokeCount)
+        problems.push(`${where}: ${kanji.strokes.length} stroke paths for ${kanji.strokeCount} strokes`);
+      if (!/^[\u4e00-\u9fff]$/.test(kanji.character)) problems.push(`${where}: not a kanji`);
+      if (kanji.onyomi.length + kanji.kunyomi.length === 0) problems.push(`${where}: no reading`);
     }
   }
 

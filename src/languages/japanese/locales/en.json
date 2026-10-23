@@ -67,6 +67,18 @@
     "ja.listening.native": {
       "label": "Native sentence listening",
       "description": "Hear a sentence written by a Japanese speaker and pick its meaning."
+    },
+    "ja.kanji.meaning": {
+      "label": "Kanji meaning",
+      "description": "See a kanji and pick what it means."
+    },
+    "ja.kanji.reading": {
+      "label": "Kanji reading",
+      "description": "See a kanji and pick how it is read."
+    },
+    "ja.kanji.writing": {
+      "label": "Kanji writing",
+      "description": "Write a kanji by hand, following its stroke order."
     }
   }
 }

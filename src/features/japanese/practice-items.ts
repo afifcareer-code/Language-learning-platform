@@ -4,6 +4,12 @@ import type { WritingStage } from "@/handwriting/guidance";
 import { acceptedStrokeCounts, isKanaItemData, type KanaItemData } from "@/languages/japanese";
 import { isGrammarData, type GrammarTranslation } from "@/languages/japanese/grammar/schema";
 import { parseRuby } from "@/languages/japanese/ruby";
+import {
+  isKanjiData,
+  KANJI_VIEWBOX,
+  kanjiReadings,
+  type KanjiTranslation,
+} from "@/languages/japanese/kanji/schema";
 import { isPassageData, passageSpeech, type PassageTranslation } from "@/languages/japanese/passages/schema";
 import { isSentenceData, type SentenceTranslation } from "@/languages/japanese/sentences/schema";
 import { isNativeData, tatoebaSentenceUrl, type NativeTranslation } from "@/languages/japanese/native/schema";
@@ -45,11 +51,13 @@ export interface PracticeItem {
    */
   audioPrompt: boolean;
   /** What the options are: the character that was heard, or the meaning of what was read or heard. */
-  answerKind: "character" | "meaning";
+  answerKind: "character" | "meaning" | "reading";
   /** For writing: the cue the learner writes from, and what kind of character to write. */
   cue: string;
   cueKind: string;
   strokeCounts: number[];
+  /** Stroke paths in writing order, for showing how to write the character (kanji). */
+  strokeOrder: { strokes: string[]; viewBox: number } | null;
   stage: WritingStage;
   /** `label` is what the option means (a sound or a meaning); `glyph` is the character itself, for kana. */
   choices: { id: string; label: string; glyph: string }[];
@@ -82,6 +90,7 @@ export interface PracticeItem {
 export function itemDisplay(item: ContentItem | undefined): string {
   if (!item) return "";
   if (isKanaItemData(item.data)) return item.data.kana;
+  if (isKanjiData(item.data)) return item.data.character;
   if (isVocabularyData(item.data)) return vocabularyDisplay(item.data);
   if (isNativeData(item.data)) return item.data.text;
   if (isSentenceData(item.data)) return item.data.text;
@@ -90,8 +99,12 @@ export function itemDisplay(item: ContentItem | undefined): string {
 }
 
 /** The answer label for a choice option: a kana's sound or a word's meaning. */
-export function choiceLabel(item: ContentItem, translation: unknown): string {
+export function choiceLabel(item: ContentItem, translation: unknown, skill?: string): string {
   if (isKanaItemData(item.data)) return item.data.romaji;
+  if (isKanjiData(item.data))
+    return skill === JA_SKILLS.kanjiReading
+      ? kanjiReadings(item.data)
+      : ((translation as KanjiTranslation | undefined)?.meaning ?? item.data.character);
   if (isVocabularyData(item.data))
     return (translation as VocabularyTranslation | undefined)?.meaning ?? item.data.romaji;
   if (isNativeData(item.data))
@@ -114,6 +127,7 @@ export function expectedAnswer(
   translation: unknown,
 ): string {
   if (skillType === "choice") return choiceLabel(item, translation);
+  if (isKanjiData(item.data)) return `${item.data.character} (${kanjiReadings(item.data)})`;
   if (isVocabularyData(item.data)) return `${vocabularyDisplay(item.data)} (${item.data.romaji})`;
   if (isKanaItemData(item.data)) return item.data.romaji;
   return itemDisplay(item);
@@ -137,10 +151,11 @@ export function toPracticeItem(
     cue: "",
     cueKind: "",
     strokeCounts: [] as number[],
+    strokeOrder: null as PracticeItem["strokeOrder"],
     stage: options.stage,
     choices: options.choiceItems.map((c) => ({
       id: c.item.id,
-      label: choiceLabel(c.item, c.translation),
+      label: choiceLabel(c.item, c.translation, options.skill),
       glyph: choiceGlyph(c.item, c.translation),
     })),
     speechLang: "ja",
@@ -152,6 +167,24 @@ export function toPracticeItem(
     attribution: null,
   };
 
+  if (isKanjiData(item.data)) {
+    const meaning = (options.translation as KanjiTranslation | undefined)?.meaning ?? "";
+    const readings = kanjiReadings(item.data);
+    return {
+      ...base,
+      display: item.data.character,
+      displayLang: "ja",
+      displayStyle: "glyph",
+      // Kanji have several readings; nothing is spoken rather than guessing one.
+      speech: "",
+      answerKind: options.skill === JA_SKILLS.kanjiReading ? ("reading" as const) : ("meaning" as const),
+      reading: options.skill === JA_SKILLS.kanjiReading ? "" : readings,
+      cue: meaning,
+      cueKind: "kanji",
+      strokeCounts: [item.data.strokeCount],
+      strokeOrder: { strokes: item.data.strokes, viewBox: KANJI_VIEWBOX },
+    };
+  }
   if (isPassageData(item.data)) {
     const c = options.translation as PassageTranslation | undefined;
     const speech = passageSpeech(item.data);

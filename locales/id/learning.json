@@ -65,5 +65,16 @@
     },
     "readiness": "{ready} dari {total} siap",
     "tapToHear": "Ketuk karakter untuk mendengar bunyinya."
+  },
+  "kanji": {
+    "title": "Kanji",
+    "description": "Semua kanji N5 dan N4: arti, cara baca, dan cara menulisnya goresan demi goresan.",
+    "level": "{level} · {count} kanji",
+    "notYet": "Latihan dibuka di {level}; Anda sudah bisa melihatnya di sini.",
+    "onyomi": "Bacaan on",
+    "kunyomi": "Bacaan kun",
+    "strokes": "Goresan",
+    "credit": "Bacaan: KANJIDIC2 (EDRDG, CC BY-SA 4.0). Urutan goresan: KanjiVG oleh Ulrich Apel (CC BY-SA 3.0). Daftar level: Jonathan Waller, tanos.co.uk (CC BY). Arti ditulis untuk proyek ini.",
+    "open": "Daftar kanji"
   }
 }

@@ -7,9 +7,10 @@ import id from "../../../locales/id/practice.json";
 const practice = japanese.practice!;
 
 describe("Japanese practice framework", () => {
-  it("defines the five skills, ordered by complexity", () => {
+  it("defines the six skills, ordered by complexity", () => {
     expect(practice.skills.map((s) => s.id)).toEqual([
       "writing",
+      "kanji",
       "reading",
       "listening",
       "vocabulary",

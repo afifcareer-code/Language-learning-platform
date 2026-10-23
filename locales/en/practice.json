@@ -15,7 +15,8 @@
     "visualPrompt": "Look at the character, then choose the matching sound.",
     "noAudio": "Audio is not available on this device, so this question shows the character instead.",
     "audioQuestionMeaning": "Which meaning did you hear?",
-    "meaningPrompt": "Which meaning matches this?"
+    "meaningPrompt": "Which meaning matches this?",
+    "readingPrompt": "How is this kanji read?"
   },
   "recall": {
     "label": "Recall this character's sound without options, then type it in romaji."
@@ -74,7 +75,11 @@
       "improve": "Improve writing",
       "continueAnyway": "Continue anyway",
       "continue": "Continue"
-    }
+    },
+    "kanjiInstruction": "Write this kanji in the writing area, stroke by stroke in the order shown.",
+    "strokeOrder": "Stroke order",
+    "strokeOrderLabel": "How to write {character}: {count} strokes, in order",
+    "replay": "Play again"
   },
   "checks": {
     "stroke-count": {
@@ -156,7 +161,8 @@
     "reading": "Reading",
     "listening": "Listening",
     "vocabulary": "Vocabulary",
-    "grammar": "Grammar"
+    "grammar": "Grammar",
+    "kanji": "Kanji"
   },
   "focus": {
     "character": "Character",
@@ -176,7 +182,10 @@
     "automatic": "Automatic recall",
     "construction": "Sentence construction",
     "production": "Production",
-    "native": "Native sentences"
+    "native": "Native sentences",
+    "kanji-meaning": "Meaning",
+    "kanji-reading": "Reading",
+    "kanji-writing": "Writing with stroke order"
   },
   "stageStatus": {
     "planned": "Planned",

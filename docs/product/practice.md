@@ -65,3 +65,7 @@ Real-world audio, a wider set of authentic texts (signs, menus, news), vocabular
 Practice stages are ordered by complexity, but their **content carries a level** (N5, N4, N3, N2). A learner is only offered content up to their current level; a learner still in the foundation practises up to N5, which is what they are working towards. A stage whose content is all above the learner's level is listed as "Opens at N4" and cannot be started. Content without a level is always available.
 
 The levels of original content (N5) are authored. The levels of the Aozora excerpts (N4, N3, N2) are an editorial estimate of the reading level needed, with furigana and the meaning, not an official JLPT classification. Until the course has N4+ curriculum a learner cannot be at those levels, so those stages stay closed.
+
+## Kanji
+
+The Kanji skill has three stages: **meaning** (see the kanji, pick its meaning), **reading** (pick its on/kun readings) and **writing** (write it by hand with its stroke order shown, then compare and rate; the app does not read handwriting). 79 N5 and 166 N4 kanji are available; N4 kanji follow the level rule above. The stroke order comes from KanjiVG and is animated stroke by stroke with numbers. The kanji reference (Learn → Kanji reference, `/learn/kanji`) lists every kanji by level with its readings and stroke order.

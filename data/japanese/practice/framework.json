@@ -113,6 +113,60 @@
       ]
     },
     {
+      "id": "kanji",
+      "capability": "character-recognition",
+      "stages": [
+        {
+          "id": "kanji-meaning",
+          "focus": "kanji-meaning",
+          "availability": "available",
+          "requirement": {
+            "minAttempts": 6,
+            "window": 10,
+            "promoteAt": 0.8,
+            "demoteBelow": 0.6
+          },
+          "session": {
+            "skill": "ja.kanji.meaning",
+            "type": "recognition",
+            "itemType": "ja.kanji"
+          }
+        },
+        {
+          "id": "kanji-reading",
+          "focus": "kanji-reading",
+          "availability": "available",
+          "requirement": {
+            "minAttempts": 6,
+            "window": 10,
+            "promoteAt": 0.8,
+            "demoteBelow": 0.6
+          },
+          "session": {
+            "skill": "ja.kanji.reading",
+            "type": "recognition",
+            "itemType": "ja.kanji"
+          }
+        },
+        {
+          "id": "kanji-writing",
+          "focus": "kanji-writing",
+          "availability": "available",
+          "requirement": {
+            "minAttempts": 6,
+            "window": 10,
+            "promoteAt": 0.8,
+            "demoteBelow": 0.6
+          },
+          "session": {
+            "skill": "ja.kanji.writing",
+            "type": "writing",
+            "itemType": "ja.kanji"
+          }
+        }
+      ]
+    },
+    {
       "id": "reading",
       "capability": "reading",
       "stages": [

@@ -146,7 +146,7 @@ export async function submitAttempt(input: AttemptInput): Promise<AttemptFeedbac
       response = choice.id;
       confusedWithId = correct ? undefined : choice.id;
       const translations = await getContentTranslations(db, [item.id], await getLocale());
-      expected = choiceLabel(item, translations.get(item.id));
+      expected = choiceLabel(item, translations.get(item.id), data.skill);
       break;
     }
     case "text": {

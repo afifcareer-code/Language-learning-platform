@@ -16,14 +16,14 @@ async function drawStroke(page: Page) {
   await page.mouse.up();
 }
 
-test("Practice is a skill gym apart from the course: five skills with their stage ladders", async ({
+test("Practice is a skill gym apart from the course: six skills with their stage ladders", async ({
   page,
 }) => {
   await page.goto("/practice");
   await expect(page.getByRole("heading", { level: 2, name: "Skill gym" })).toBeVisible();
   const cards = page.getByTestId("skill-gym-card");
-  await expect(cards).toHaveCount(5);
-  for (const skill of ["Writing", "Reading", "Listening", "Vocabulary", "Grammar"]) {
+  await expect(cards).toHaveCount(6);
+  for (const skill of ["Writing", "Kanji", "Reading", "Listening", "Vocabulary", "Grammar"]) {
     await expect(page.getByRole("heading", { level: 3, name: skill, exact: true })).toBeVisible();
   }
   const writing = page.getByRole("list", { name: "Stages for Writing" });
@@ -146,4 +146,30 @@ test("Practice follows the learner's level: published writing shows when it open
   await expect(reading).toContainText("Opens at N3");
   const response = await page.goto("/practice/session?kind=stage&practiceSkill=reading&stage=paragraph");
   expect(response?.status()).toBe(404);
+});
+
+test("kanji: meaning and reading are chosen, and writing shows the stroke order", async ({ page }) => {
+  await page.goto("/practice/session?kind=stage&practiceSkill=kanji&stage=kanji-meaning");
+  await expect(page.getByText("Which meaning matches this?")).toBeVisible();
+  await page.getByRole("group").last().getByRole("button").first().click();
+  await expect(page.getByRole("status")).toBeVisible();
+
+  await page.goto("/practice/session?kind=stage&practiceSkill=kanji&stage=kanji-reading");
+  await expect(page.getByText("How is this kanji read?")).toBeVisible();
+
+  await page.goto("/practice/session?kind=stage&practiceSkill=kanji&stage=kanji-writing");
+  await expect(page.getByText(/Write this kanji in the writing area/)).toBeVisible();
+  await expect(page.getByTestId("stroke-order")).toBeVisible();
+});
+
+test("the kanji reference lists N5 and N4 and shows how each kanji is written", async ({ page }) => {
+  await page.goto("/learn");
+  await page.getByRole("link", { name: "Kanji reference" }).click();
+  await expect(page.getByRole("heading", { level: 2, name: "N5 · 79 kanji" })).toBeVisible();
+  await expect(page.getByRole("heading", { level: 2, name: "N4 · 166 kanji" })).toBeVisible();
+  await page.getByRole("button", { name: /^水 · water/ }).click();
+  const detail = page.getByTestId("kanji-detail");
+  await expect(detail).toContainText("water");
+  await expect(detail.getByRole("img", { name: "How to write 水: 4 strokes, in order" })).toBeVisible();
+  await expect(detail.locator("path[data-stroke]")).toHaveCount(4);
 });

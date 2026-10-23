@@ -1,3 +1,11 @@
+import {
+  KANJI_CONTENT_TYPE,
+  kanjiFileSchema,
+  kanjiItemId,
+  kanjiItemKey,
+  type KanjiItemData,
+  type KanjiTranslation,
+} from "@/languages/japanese/kanji/schema";
 import { readdir, readFile } from "node:fs/promises";
 import { join } from "node:path";
 import { and, eq, notInArray } from "drizzle-orm";
@@ -232,6 +240,22 @@ async function readItems(root: string): Promise<SeedItem[]> {
         display: passageSpeech(passage),
         translations: Object.fromEntries(
           Object.entries(comprehension).map(([l, c]) => [l, c satisfies PassageTranslation]),
+        ),
+      });
+    }
+  }
+  for (const file of await readFolder(join(root, "kanji"), (raw) => kanjiFileSchema.parse(raw))) {
+    for (const { meanings, ...kanji } of file.items) {
+      items.push({
+        id: kanjiItemId(kanji.character),
+        key: kanjiItemKey(kanji.character),
+        type: KANJI_CONTENT_TYPE,
+        data: kanji satisfies KanjiItemData,
+        tags: ["kanji"],
+        level: file.level,
+        display: kanji.character,
+        translations: Object.fromEntries(
+          Object.entries(meanings).map(([l, meaning]) => [l, { meaning } satisfies KanjiTranslation]),
         ),
       });
     }

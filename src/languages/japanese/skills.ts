@@ -17,6 +17,9 @@ export const JA_SKILLS = {
   dialogueListening: "ja.listening.dialogue",
   nativeReading: "ja.reading.native",
   nativeListening: "ja.listening.native",
+  kanjiMeaning: "ja.kanji.meaning",
+  kanjiReading: "ja.kanji.reading",
+  kanjiWriting: "ja.kanji.writing",
 } as const;
 
 /** Ordered along the learning loop within each area. Labels live in ./locales. */
@@ -37,4 +40,7 @@ export const japaneseSkills: readonly SkillDefinition[] = [
   { id: JA_SKILLS.dialogueListening, stage: "understanding", capability: "listening" },
   { id: JA_SKILLS.nativeReading, stage: "understanding", capability: "reading" },
   { id: JA_SKILLS.nativeListening, stage: "understanding", capability: "listening" },
+  { id: JA_SKILLS.kanjiMeaning, stage: "recognition", capability: "character-recognition" },
+  { id: JA_SKILLS.kanjiReading, stage: "recall", capability: "character-recognition" },
+  { id: JA_SKILLS.kanjiWriting, stage: "production", capability: "character-writing" },
 ];

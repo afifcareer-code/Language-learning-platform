@@ -65,5 +65,16 @@
     },
     "readiness": "{ready} of {total} ready",
     "tapToHear": "Tap a character to hear how it sounds."
+  },
+  "kanji": {
+    "title": "Kanji",
+    "description": "Every kanji of N5 and N4: its meaning, its readings and how it is written, stroke by stroke.",
+    "level": "{level} · {count} kanji",
+    "notYet": "Practice opens at {level}; you can already look at them here.",
+    "onyomi": "On reading",
+    "kunyomi": "Kun reading",
+    "strokes": "Strokes",
+    "credit": "Readings: KANJIDIC2 (EDRDG, CC BY-SA 4.0). Stroke order: KanjiVG by Ulrich Apel (CC BY-SA 3.0). Level lists: Jonathan Waller, tanos.co.uk (CC BY). Meanings written for this project.",
+    "open": "Kanji reference"
   }
 }
