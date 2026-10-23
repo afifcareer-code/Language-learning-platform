@@ -48,6 +48,199 @@
         "sentence:anata-gakusei-ka",
         "sentence:ani-isha"
       ]
+    },
+    {
+      "slug": "n5-02-numbers-shopping",
+      "title": {
+        "en": "Numbers and shopping",
+        "id": "Angka dan berbelanja"
+      },
+      "situation": {
+        "en": "You are in a small shop in Japan. You point at things, ask how much they cost and ask for what you want.",
+        "id": "Anda berada di toko kecil di Jepang. Anda menunjuk barang, menanyakan harganya, dan meminta barang yang Anda inginkan."
+      },
+      "objective": {
+        "en": "By the end of this lesson, you can name basic numbers, ask the price of something and ask for it politely.",
+        "id": "Setelah menyelesaikan lesson ini, Anda mampu menyebut angka dasar, menanyakan harga, dan memintanya dengan sopan."
+      },
+      "items": [
+        "vocabulary:いち",
+        "vocabulary:に",
+        "vocabulary:ご",
+        "vocabulary:じゅう",
+        "vocabulary:ひゃく",
+        "vocabulary:えん",
+        "vocabulary:いくら",
+        "vocabulary:これ",
+        "vocabulary:それ",
+        "vocabulary:あれ",
+        "vocabulary:ほん",
+        "vocabulary:みず",
+        "vocabulary:パン",
+        "vocabulary:ください",
+        "grammar:n5-kore-sore-are",
+        "grammar:n5-ikura",
+        "grammar:n5-wo-kudasai",
+        "sentence:kore-wa-hon",
+        "sentence:sore-wa-pan-ka",
+        "sentence:are-wa-hon-ja-arimasen",
+        "sentence:mizu-wa-ikura",
+        "sentence:kore-hyaku-en",
+        "sentence:pan-o-kudasai"
+      ]
+    },
+    {
+      "slug": "n5-03-time-daily-life",
+      "title": {
+        "en": "Time and daily life",
+        "id": "Waktu dan kehidupan sehari-hari"
+      },
+      "situation": {
+        "en": "You and a classmate compare your days: what time you get up, when you go to bed and when you come home.",
+        "id": "Anda dan teman sekelas membandingkan hari Anda: jam berapa bangun, tidur, dan pulang."
+      },
+      "objective": {
+        "en": "By the end of this lesson, you can ask and tell the time and say what you do at what time using polite verbs.",
+        "id": "Setelah menyelesaikan lesson ini, Anda mampu menanyakan dan menyebut jam serta menyatakan kegiatan pada jam tertentu dengan kata kerja sopan."
+      },
+      "items": [
+        "vocabulary:いま",
+        "vocabulary:なんじ",
+        "vocabulary:〜じ",
+        "vocabulary:ごぜん",
+        "vocabulary:ごご",
+        "vocabulary:まいにち",
+        "vocabulary:がっこう",
+        "vocabulary:おきます",
+        "vocabulary:ねます",
+        "vocabulary:いきます",
+        "vocabulary:かえります",
+        "vocabulary:ろく",
+        "vocabulary:はち",
+        "grammar:n5-masu",
+        "grammar:n5-ni-time",
+        "grammar:n5-nanji",
+        "sentence:ima-nanji",
+        "sentence:ima-gogo-goji",
+        "sentence:rokuji-ni-okimasu",
+        "sentence:juuji-ni-nemasu",
+        "sentence:gogo-niji-ni-kaerimasu",
+        "sentence:hachiji-ni-nemasen"
+      ]
+    },
+    {
+      "slug": "n5-04-places-directions",
+      "title": {
+        "en": "Places and directions",
+        "id": "Tempat dan arah"
+      },
+      "situation": {
+        "en": "You are new in town and ask where things are: the station, the bank, the hospital and the toilet.",
+        "id": "Anda baru di kota ini dan menanyakan letak berbagai tempat: stasiun, bank, rumah sakit, dan toilet."
+      },
+      "objective": {
+        "en": "By the end of this lesson, you can ask where a place is, say where something or someone is, and say where you are going.",
+        "id": "Setelah menyelesaikan lesson ini, Anda mampu menanyakan letak suatu tempat, menyatakan letak benda atau orang, dan menyatakan tujuan Anda."
+      },
+      "items": [
+        "vocabulary:ここ",
+        "vocabulary:そこ",
+        "vocabulary:あそこ",
+        "vocabulary:どこ",
+        "vocabulary:えき",
+        "vocabulary:ぎんこう",
+        "vocabulary:びょういん",
+        "vocabulary:トイレ",
+        "vocabulary:ちかい",
+        "vocabulary:とおい",
+        "vocabulary:あります",
+        "vocabulary:います",
+        "grammar:n5-doko",
+        "grammar:n5-ni-arimasu",
+        "grammar:n5-he-ikimasu",
+        "sentence:toire-doko",
+        "sentence:toire-asoko",
+        "sentence:eki-chikai",
+        "sentence:ginkou-tooi",
+        "sentence:byouin-asoko-arimasu",
+        "sentence:sensei-koko-imasu",
+        "sentence:eki-e-ikimasu"
+      ]
+    },
+    {
+      "slug": "n5-05-food-restaurant",
+      "title": {
+        "en": "Food and ordering",
+        "id": "Makanan dan memesan"
+      },
+      "situation": {
+        "en": "You are at a restaurant with friends. You say what you eat and drink, what you like, and whether it is good.",
+        "id": "Anda makan di restoran bersama teman. Anda menyatakan apa yang Anda makan dan minum, apa yang Anda suka, dan apakah rasanya enak."
+      },
+      "objective": {
+        "en": "By the end of this lesson, you can say what you eat and drink, what you like, and describe food as delicious.",
+        "id": "Setelah menyelesaikan lesson ini, Anda mampu menyatakan apa yang Anda makan dan minum, apa yang Anda suka, dan menyebut makanan enak."
+      },
+      "items": [
+        "vocabulary:ごはん",
+        "vocabulary:おちゃ",
+        "vocabulary:さかな",
+        "vocabulary:にく",
+        "vocabulary:りんご",
+        "vocabulary:たべます",
+        "vocabulary:のみます",
+        "vocabulary:おいしい",
+        "vocabulary:すき",
+        "vocabulary:なに",
+        "vocabulary:いただきます",
+        "vocabulary:ごちそうさまでした",
+        "grammar:n5-wo-tabemasu",
+        "grammar:n5-suki",
+        "grammar:n5-oishii",
+        "sentence:ringo-o-tabemasu",
+        "sentence:ocha-o-nomimasu",
+        "sentence:nani-o-tabemasu-ka",
+        "sentence:gohan-o-tabemasen",
+        "sentence:niku-ga-suki",
+        "sentence:sakana-oishii"
+      ]
+    },
+    {
+      "slug": "n5-06-family-people",
+      "title": {
+        "en": "Family and people",
+        "id": "Keluarga dan orang"
+      },
+      "situation": {
+        "en": "You show a friend photos of your family and ask about theirs: who is who, and what they do.",
+        "id": "Anda menunjukkan foto keluarga kepada seorang teman dan menanyakan keluarganya: siapa siapa, dan apa pekerjaan mereka."
+      },
+      "objective": {
+        "en": "By the end of this lesson, you can talk about your family and friends: who they are, what they do and whose they are.",
+        "id": "Setelah menyelesaikan lesson ini, Anda mampu membicarakan keluarga dan teman: siapa mereka, apa pekerjaan mereka, dan milik siapa."
+      },
+      "items": [
+        "vocabulary:かぞく",
+        "vocabulary:ちち",
+        "vocabulary:はは",
+        "vocabulary:あに",
+        "vocabulary:あね",
+        "vocabulary:ともだち",
+        "vocabulary:ひと",
+        "vocabulary:おとうさん",
+        "vocabulary:おかあさん",
+        "vocabulary:なまえ",
+        "vocabulary:だれ",
+        "grammar:n5-no",
+        "grammar:n5-dare",
+        "grammar:n5-ga-imasu",
+        "sentence:kore-watashi-no-kazoku",
+        "sentence:watashi-no-namae-ani",
+        "sentence:anata-no-tomodachi-dare",
+        "sentence:chichi-isha",
+        "sentence:haha-kaishain",
+        "sentence:koko-ni-tomodachi"
+      ]
     }
   ]
 }

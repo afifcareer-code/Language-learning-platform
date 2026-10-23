@@ -67,7 +67,13 @@ export function RecognitionExercise({
         </div>
       )}
 
-      {audioFirst && <p className="mt-6 text-muted">{t("practice.recognition.audioQuestion")}</p>}
+      {audioFirst && (
+        <p className="mt-6 text-muted">
+          {item.answerKind === "meaning"
+            ? t("practice.recognition.audioQuestionMeaning")
+            : t("practice.recognition.audioQuestion")}
+        </p>
+      )}
       <div
         className={cn(
           "grid gap-3",
@@ -76,7 +82,13 @@ export function RecognitionExercise({
           longLabels ? "grid-cols-1 sm:grid-cols-2" : "grid-cols-2",
         )}
         role="group"
-        aria-label={audioFirst ? t("practice.recognition.audioQuestion") : prompt}
+        aria-label={
+          audioFirst
+            ? item.answerKind === "meaning"
+              ? t("practice.recognition.audioQuestionMeaning")
+              : t("practice.recognition.audioQuestion")
+            : prompt
+        }
       >
         {item.choices.map((choice) => {
           const isAnswer = choice.id === item.id;

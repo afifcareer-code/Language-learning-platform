@@ -102,8 +102,8 @@ from practice, in the same `learning_attempts` log.
 - **Assessment Ready**: every available skill secure. The mock assessment is
   the next step, and retention is still to be shown.
 - **Certification Ready**: prerequisite, every skill retained, a passed mock
-  assessment **and no planned domain left**. While reading or listening content
-  does not exist, N5 cannot reach this state, and the page says why.
+  assessment **and no planned domain left**. While writing content does not exist
+  (and reading and listening are measured on single sentences only), N5 cannot reach this state, and the page says why.
 
 Defaults (configurable in `data/japanese/proficiency/n5.json`): secure 80%,
 retained 60% mastered, prerequisite 80%, mock section pass 60%, overall 70%.

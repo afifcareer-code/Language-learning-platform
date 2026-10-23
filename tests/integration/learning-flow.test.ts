@@ -64,9 +64,7 @@ describe.each(TEST_DIALECTS)("learning flow on $dialect", ({ dialect, serverUrl 
     const empty = await getProficiency(db, learner, "en", "n5");
     expect(empty).not.toBeNull();
     expect(empty!.readiness.state).toBe("not_ready");
-    expect(empty!.competencies.find((c) => c.id === "n5.listening.slow-conversation")!.status).toBe(
-      "planned",
-    );
+    expect(empty!.competencies.find((c) => c.id === "n5.writing.production")!.status).toBe("planned");
 
     const curriculum = await getCurriculum(db, "ja", "en");
     const n5 = curriculum.levels.find((l) => l.slug === "n5")!;
@@ -147,8 +145,8 @@ describe.each(TEST_DIALECTS)("learning flow on $dialect", ({ dialect, serverUrl 
     expect(en.levels[1]?.courses.map((c) => c.title)).toEqual(["N5 Core"]);
     expect(id.levels[1]?.courses.map((c) => c.title)).toEqual(["Inti N5"]);
     expect(en.levels.slice(2).every((l) => l.courses.length === 0)).toBe(true);
-    expect(en.lessons).toHaveLength(41);
-    expect(en.activities).toHaveLength(123);
+    expect(en.lessons).toHaveLength(46);
+    expect(en.activities).toHaveLength(150);
     expect(en.lessons[1]?.title).toBe("Hiragana: K row");
     expect(id.lessons[1]?.title).toBe("Hiragana: Baris K");
 
@@ -167,7 +165,7 @@ describe.each(TEST_DIALECTS)("learning flow on $dialect", ({ dialect, serverUrl 
     const overview = await getLearningOverview(db, learner, "en");
     expect(overview.nextActivity?.id).toBe("ja.activity.hiragana-vowels.recognition");
     expect(overview.recommendations).toEqual([expect.objectContaining({ kind: "activity" })]);
-    expect(overview.courseProgress).toMatchObject({ completedActivities: 0, totalActivities: 123 });
+    expect(overview.courseProgress).toMatchObject({ completedActivities: 0, totalActivities: 150 });
     expect(overview.overallMastery.ratio).toBe(0);
     expect(overview.readiness).toMatchObject({ ratio: 0, isReady: false });
   });
@@ -183,6 +181,8 @@ describe.each(TEST_DIALECTS)("learning flow on $dialect", ({ dialect, serverUrl 
       ["recognition", JA_SKILLS.vocabularyRecognition, 12],
       ["recall", JA_SKILLS.vocabularyRecall, 12],
       ["sentence_building", JA_SKILLS.sentenceBuilding, 6],
+      ["reading", JA_SKILLS.sentenceReading, 6],
+      ["listening", JA_SKILLS.sentenceListening, 6],
     ]);
     // Kana lessons get their objective from the course, with the characters filled in.
     expect(en.lessons[0]?.objective).toBe("Read and write あ い う え お from memory.");

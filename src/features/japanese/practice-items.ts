@@ -1,3 +1,4 @@
+import { JA_SKILLS } from "@/languages/japanese/skills";
 import type { ContentItem } from "@/core/learning";
 import type { WritingStage } from "@/handwriting/guidance";
 import { acceptedStrokeCounts, isKanaItemData, type KanaItemData } from "@/languages/japanese";
@@ -39,6 +40,8 @@ export interface PracticeItem {
    * character is not shown before answering. Only kana are asked this way today.
    */
   audioPrompt: boolean;
+  /** What the options are: the character that was heard, or the meaning of what was read or heard. */
+  answerKind: "character" | "meaning";
   /** For writing: the cue the learner writes from, and what kind of character to write. */
   cue: string;
   cueKind: string;
@@ -65,11 +68,14 @@ export function choiceLabel(item: ContentItem, translation: unknown): string {
   if (isKanaItemData(item.data)) return item.data.romaji;
   if (isVocabularyData(item.data))
     return (translation as VocabularyTranslation | undefined)?.meaning ?? item.data.romaji;
+  if (isSentenceData(item.data))
+    return (translation as SentenceTranslation | undefined)?.translation ?? item.data.text;
   return itemDisplay(item);
 }
 
 /** The character an option shows when the question is "which character?" (kana only). */
-export function choiceGlyph(item: ContentItem): string {
+export function choiceGlyph(item: ContentItem, translation?: unknown): string {
+  if (isSentenceData(item.data)) return choiceLabel(item, translation);
   return isKanaItemData(item.data) ? item.data.kana : "";
 }
 
@@ -89,6 +95,8 @@ export function toPracticeItem(
   item: ContentItem,
   options: {
     kind: "recognition" | "recall" | "writing" | "sentence";
+    /** The skill being practised, to tell reading from listening on the same sentences. */
+    skill?: string;
     locale: string;
     translation: unknown;
     choiceItems: { item: ContentItem; translation: unknown }[];
@@ -105,11 +113,12 @@ export function toPracticeItem(
     choices: options.choiceItems.map((c) => ({
       id: c.item.id,
       label: choiceLabel(c.item, c.translation),
-      glyph: choiceGlyph(c.item),
+      glyph: choiceGlyph(c.item, c.translation),
     })),
     speechLang: "ja",
     reading: "",
     audioPrompt: false,
+    answerKind: "character" as const,
     tokens: [] as string[],
   };
 
@@ -145,6 +154,19 @@ export function toPracticeItem(
           displayStyle: "word",
           speech: item.data.kana,
         };
+  }
+  if (isSentenceData(item.data) && options.kind === "recognition") {
+    // Reading shows the sentence; listening plays it and shows nothing (the text is the fallback
+    // when the device cannot play audio). Either way the options are meanings.
+    return {
+      ...base,
+      display: item.data.text,
+      displayLang: "ja",
+      displayStyle: "word",
+      speech: item.data.text,
+      audioPrompt: options.skill === JA_SKILLS.sentenceListening,
+      answerKind: "meaning" as const,
+    };
   }
   if (isSentenceData(item.data)) {
     const translation =

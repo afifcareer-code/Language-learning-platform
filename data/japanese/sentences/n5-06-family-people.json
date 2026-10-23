@@ -1,0 +1,72 @@
+{
+  "source": "Original practice sentences for N5 · Family and people.",
+  "level": "n5",
+  "items": [
+    {
+      "slug": "kore-watashi-no-kazoku",
+      "text": "これは わたしの かぞくです。",
+      "tokens": ["これ", "は", "わたし", "の", "かぞく", "です"],
+      "romaji": "kore wa watashi no kazoku desu",
+      "grammar": "n5-no",
+      "translation": {
+        "en": "This is my family.",
+        "id": "Ini keluarga saya."
+      }
+    },
+    {
+      "slug": "watashi-no-namae-ani",
+      "text": "わたしの なまえは アニです。",
+      "tokens": ["わたし", "の", "なまえ", "は", "アニ", "です"],
+      "romaji": "watashi no namae wa ani desu",
+      "grammar": "n5-no",
+      "translation": {
+        "en": "My name is Ani.",
+        "id": "Nama saya Ani."
+      }
+    },
+    {
+      "slug": "anata-no-tomodachi-dare",
+      "text": "あなたの ともだちは だれですか。",
+      "tokens": ["あなた", "の", "ともだち", "は", "だれ", "です", "か"],
+      "romaji": "anata no tomodachi wa dare desu ka",
+      "grammar": "n5-dare",
+      "translation": {
+        "en": "Who is your friend?",
+        "id": "Siapa teman Anda?"
+      }
+    },
+    {
+      "slug": "chichi-isha",
+      "text": "ちちは いしゃです。",
+      "tokens": ["ちち", "は", "いしゃ", "です"],
+      "romaji": "chichi wa isha desu",
+      "grammar": "n5-no",
+      "translation": {
+        "en": "My father is a doctor.",
+        "id": "Ayah saya dokter."
+      }
+    },
+    {
+      "slug": "haha-kaishain",
+      "text": "ははは かいしゃいんです。",
+      "tokens": ["はは", "は", "かいしゃいん", "です"],
+      "romaji": "haha wa kaishain desu",
+      "grammar": "n5-no",
+      "translation": {
+        "en": "My mother is a company employee.",
+        "id": "Ibu saya karyawan perusahaan."
+      }
+    },
+    {
+      "slug": "koko-ni-tomodachi",
+      "text": "ここに ともだちが います。",
+      "tokens": ["ここ", "に", "ともだち", "が", "います"],
+      "romaji": "koko ni tomodachi ga imasu",
+      "grammar": "n5-ga-imasu",
+      "translation": {
+        "en": "There is a friend here.",
+        "id": "Ada teman di sini."
+      }
+    }
+  ]
+}

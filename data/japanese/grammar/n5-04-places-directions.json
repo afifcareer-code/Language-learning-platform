@@ -1,0 +1,103 @@
+{
+  "source": "Original grammar explanations for N5 · Places and directions, written for this project.",
+  "level": "n5",
+  "items": [
+    {
+      "slug": "n5-doko",
+      "pattern": "N は どこですか",
+      "meaning": {
+        "en": "Where is N?",
+        "id": "N di mana?"
+      },
+      "explanation": {
+        "en": "どこ asks for a place. Answer with ここ, そこ or あそこ, or with a place name: トイレは あそこです.",
+        "id": "どこ menanyakan tempat. Jawab dengan ここ, そこ, atau あそこ, atau nama tempat: トイレは あそこです."
+      },
+      "examples": [
+        {
+          "ja": "トイレは どこですか。",
+          "romaji": "toire wa doko desu ka",
+          "translation": {
+            "en": "Where is the toilet?",
+            "id": "Toilet di mana?"
+          }
+        },
+        {
+          "ja": "トイレは あそこです。",
+          "romaji": "toire wa asoko desu",
+          "translation": {
+            "en": "The toilet is over there.",
+            "id": "Toilet ada di sana."
+          }
+        }
+      ],
+      "related": ["n5-wa-desu"]
+    },
+    {
+      "slug": "n5-ni-arimasu",
+      "pattern": "Place に N が あります / います",
+      "meaning": {
+        "en": "There is N at (place)",
+        "id": "Ada N di (tempat)"
+      },
+      "explanation": {
+        "en": "あります is for things and います is for people and animals. に marks the place. When you only say where something is, N は Place に あります/います is also natural.",
+        "id": "あります untuk benda dan います untuk orang dan hewan. に menandai tempat. Untuk menyatakan letak, N は Place に あります/います juga wajar."
+      },
+      "examples": [
+        {
+          "ja": "びょういんは あそこに あります。",
+          "romaji": "byouin wa asoko ni arimasu",
+          "translation": {
+            "en": "The hospital is over there.",
+            "id": "Rumah sakit ada di sana."
+          }
+        },
+        {
+          "ja": "せんせいは ここに います。",
+          "romaji": "sensei wa koko ni imasu",
+          "translation": {
+            "en": "The teacher is here.",
+            "id": "Guru ada di sini."
+          }
+        }
+      ],
+      "commonErrors": [
+        {
+          "en": "Using います for a building: use あります.",
+          "id": "Memakai います untuk bangunan: pakai あります."
+        }
+      ],
+      "related": ["n5-masu"]
+    },
+    {
+      "slug": "n5-he-ikimasu",
+      "pattern": "Place へ いきます / かえります",
+      "meaning": {
+        "en": "go / return to (place)",
+        "id": "pergi / pulang ke (tempat)"
+      },
+      "explanation": {
+        "en": "へ marks the direction you go in. It is written へ but read \"e\".",
+        "id": "へ menandai arah tujuan. Ditulis へ tetapi dibaca \"e\"."
+      },
+      "examples": [
+        {
+          "ja": "わたしは えきへ いきます。",
+          "romaji": "watashi wa eki e ikimasu",
+          "translation": {
+            "en": "I go to the station.",
+            "id": "Saya pergi ke stasiun."
+          }
+        }
+      ],
+      "commonErrors": [
+        {
+          "en": "Reading へ as \"he\": say \"e\".",
+          "id": "Membaca へ sebagai \"he\": ucapkan \"e\"."
+        }
+      ],
+      "related": ["n5-masu"]
+    }
+  ]
+}

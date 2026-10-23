@@ -27,6 +27,14 @@
     "ja.grammar.sentence": {
       "label": "Sentence building",
       "description": "Put words and particles in the right order to express a meaning with the lesson's grammar."
+    },
+    "ja.reading.sentence": {
+      "label": "Sentence reading",
+      "description": "Read a Japanese sentence and pick its meaning."
+    },
+    "ja.listening.sentence": {
+      "label": "Sentence listening",
+      "description": "Hear a Japanese sentence and pick its meaning."
     }
   }
 }

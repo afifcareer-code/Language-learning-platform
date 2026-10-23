@@ -1,0 +1,125 @@
+{
+  "source": "Original vocabulary list for N5 · Time and daily life. Meanings written for this project.",
+  "level": "n5",
+  "items": [
+    {
+      "kana": "いま",
+      "romaji": "ima",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "now",
+        "id": "sekarang"
+      }
+    },
+    {
+      "kana": "なんじ",
+      "romaji": "nanji",
+      "partOfSpeech": "pronoun",
+      "meaning": {
+        "en": "what time",
+        "id": "jam berapa"
+      }
+    },
+    {
+      "kana": "じ",
+      "romaji": "ji",
+      "affix": "suffix",
+      "partOfSpeech": "suffix",
+      "meaning": {
+        "en": "o'clock (after a number)",
+        "id": "jam (setelah angka)"
+      }
+    },
+    {
+      "kana": "ごぜん",
+      "romaji": "gozen",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "a.m., morning",
+        "id": "pagi (sebelum tengah hari)"
+      }
+    },
+    {
+      "kana": "ごご",
+      "romaji": "gogo",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "p.m., afternoon",
+        "id": "siang/sore (setelah tengah hari)"
+      }
+    },
+    {
+      "kana": "まいにち",
+      "romaji": "mainichi",
+      "partOfSpeech": "adverb",
+      "meaning": {
+        "en": "every day",
+        "id": "setiap hari"
+      }
+    },
+    {
+      "kana": "がっこう",
+      "romaji": "gakkou",
+      "alternateRomaji": ["gakko"],
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "school",
+        "id": "sekolah"
+      }
+    },
+    {
+      "kana": "おきます",
+      "romaji": "okimasu",
+      "partOfSpeech": "verb",
+      "meaning": {
+        "en": "get up",
+        "id": "bangun"
+      }
+    },
+    {
+      "kana": "ねます",
+      "romaji": "nemasu",
+      "partOfSpeech": "verb",
+      "meaning": {
+        "en": "go to bed, sleep",
+        "id": "tidur"
+      }
+    },
+    {
+      "kana": "いきます",
+      "romaji": "ikimasu",
+      "partOfSpeech": "verb",
+      "meaning": {
+        "en": "go",
+        "id": "pergi"
+      }
+    },
+    {
+      "kana": "かえります",
+      "romaji": "kaerimasu",
+      "partOfSpeech": "verb",
+      "meaning": {
+        "en": "return, go home",
+        "id": "pulang"
+      }
+    },
+    {
+      "kana": "ろく",
+      "romaji": "roku",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "six",
+        "id": "enam"
+      }
+    },
+    {
+      "kana": "はち",
+      "romaji": "hachi",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "eight",
+        "id": "delapan"
+      }
+    }
+  ]
+}

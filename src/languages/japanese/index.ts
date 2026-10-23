@@ -12,10 +12,11 @@ import { isVocabularyData, vocabularyDisplay } from "./vocabulary/schema";
 export const japanese: LanguageModule = {
   code: "ja",
   nativeName: "日本語",
-  // Declare only what is implemented. Listening, speaking and kanji are
-  // added here as their features land.
+  // Declare only what is implemented. Speaking and kanji are added here
+  // as their features land.
   capabilities: [
     "reading",
+    "listening",
     "writing",
     "pronunciation",
     "character-recognition",

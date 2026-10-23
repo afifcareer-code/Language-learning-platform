@@ -6,7 +6,7 @@
   "internalStandardNote": "Thresholds on this page are the platform's own standard. They are not the official {framework} score, and passing here does not guarantee passing the exam.",
   "entry": {
     "learnTitle": "What you will learn",
-    "learnBody": "Everyday basics: recognizing words, building simple sentences, and later reading and listening to short texts.",
+    "learnBody": "Everyday basics: recognizing words, building simple sentences, and reading and listening to short sentences.",
     "needTitle": "What you need first",
     "needBody": "You can read and recognize hiragana and katakana ({level}).",
     "knowTitle": "How we know you learned it",
@@ -84,7 +84,9 @@
     "notTaken": "Not taken yet.",
     "sections": {
       "vocabulary": "Vocabulary",
-      "grammar": "Grammar"
+      "grammar": "Grammar",
+      "reading": "Reading",
+      "listening": "Listening"
     }
   },
   "views": {

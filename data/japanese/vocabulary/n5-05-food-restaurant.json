@@ -1,0 +1,115 @@
+{
+  "source": "Original vocabulary list for N5 · Food and ordering. Meanings written for this project.",
+  "level": "n5",
+  "items": [
+    {
+      "kana": "ごはん",
+      "romaji": "gohan",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "cooked rice, meal",
+        "id": "nasi, makanan"
+      }
+    },
+    {
+      "kana": "おちゃ",
+      "romaji": "ocha",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "tea",
+        "id": "teh"
+      }
+    },
+    {
+      "kana": "さかな",
+      "romaji": "sakana",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "fish",
+        "id": "ikan"
+      }
+    },
+    {
+      "kana": "にく",
+      "romaji": "niku",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "meat",
+        "id": "daging"
+      }
+    },
+    {
+      "kana": "りんご",
+      "romaji": "ringo",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "apple",
+        "id": "apel"
+      }
+    },
+    {
+      "kana": "たべます",
+      "romaji": "tabemasu",
+      "partOfSpeech": "verb",
+      "meaning": {
+        "en": "eat",
+        "id": "makan"
+      }
+    },
+    {
+      "kana": "のみます",
+      "romaji": "nomimasu",
+      "partOfSpeech": "verb",
+      "meaning": {
+        "en": "drink",
+        "id": "minum"
+      }
+    },
+    {
+      "kana": "おいしい",
+      "romaji": "oishii",
+      "partOfSpeech": "adjective",
+      "meaning": {
+        "en": "delicious",
+        "id": "enak"
+      }
+    },
+    {
+      "kana": "すき",
+      "romaji": "suki",
+      "partOfSpeech": "adjective",
+      "meaning": {
+        "en": "like, fond of",
+        "id": "suka"
+      }
+    },
+    {
+      "kana": "なに",
+      "romaji": "nani",
+      "partOfSpeech": "pronoun",
+      "meaning": {
+        "en": "what",
+        "id": "apa"
+      }
+    },
+    {
+      "kana": "いただきます",
+      "romaji": "itadakimasu",
+      "partOfSpeech": "expression",
+      "meaning": {
+        "en": "said before eating",
+        "id": "ucapan sebelum makan"
+      }
+    },
+    {
+      "kana": "ごちそうさまでした",
+      "romaji": "gochisousama deshita",
+      "alternateRomaji": ["gochisosama deshita"],
+      "partOfSpeech": "expression",
+      "meaning": {
+        "en": "said after eating",
+        "id": "ucapan setelah makan"
+      }
+    }
+  ]
+}

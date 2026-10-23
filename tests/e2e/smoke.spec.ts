@@ -1,3 +1,4 @@
+import { readFileSync } from "node:fs";
 import { expect, test } from "@playwright/test";
 import {
   ensureLearning,
@@ -332,7 +333,7 @@ test("the N5 proficiency page explains the level, evidence and readiness, and st
   await expect(page.getByText("What you will learn")).toBeVisible();
   await expect(page.getByTestId("readiness-state")).toBeVisible();
   // Skills without content are shown honestly rather than hidden or faked.
-  await expect(page.getByTestId("competency-n5.listening.slow-conversation")).toContainText("Coming later");
+  await expect(page.getByTestId("competency-n5.writing.production")).toContainText("Coming later");
   await expect(page.getByTestId("assessment-result")).toContainText("Platform Mock Assessment Result");
 
   await page.getByRole("link", { name: "Start Vocabulary" }).click();
@@ -362,4 +363,40 @@ test("sound questions play the shipped audio clip, even on a device with no Japa
   const target = Object.entries(manifest).find(([, file]) => clip!.endsWith(file))![0];
   const choices = page.getByRole("group", { name: "Which character did you hear?" }).getByRole("button");
   await expect(choices.filter({ hasText: target })).toHaveCount(1);
+});
+
+const SENTENCES = Object.fromEntries(
+  (
+    JSON.parse(readFileSync("data/japanese/sentences/n5-introductions.json", "utf8")) as {
+      items: { text: string; translation: { en: string } }[];
+    }
+  ).items.map((i) => [i.text, i.translation.en]),
+);
+
+test("N5 reading: a Japanese sentence is shown and the options are meanings", async ({ page }) => {
+  await ensureLearning(page);
+  await useEnglish(page);
+  await page.goto("/activities/ja.activity.n5-01-introductions.sentence-reading");
+  await expect(page.getByText("Read the Japanese sentence, then choose its meaning.")).toBeVisible();
+  const shown = await page.locator("[lang=ja]").filter({ hasText: /。$/ }).first().innerText();
+  const meaning = SENTENCES[shown.trim()];
+  expect(meaning, shown).toBeTruthy();
+  await page.getByRole("button", { name: meaning!, exact: true }).click();
+  await expect(page.getByRole("status")).toContainText("Correct");
+});
+
+test("N5 listening: the sentence is played, not shown, and the options are meanings", async ({ page }) => {
+  await recordClips(page);
+  await page.goto("/activities/ja.activity.n5-01-introductions.sentence-listening");
+  await expect(page.getByText("Listen to the sentence, then choose its meaning.")).toBeVisible();
+  await expect(page.locator("[lang=ja]").filter({ hasText: /。$/ })).toHaveCount(0);
+  await page.getByRole("button", { name: "Play sound" }).click();
+  const manifest = (await (await page.request.get("/audio/ja/manifest.json")).json()) as Record<
+    string,
+    string
+  >;
+  const [clip] = await playedClips(page);
+  const text = Object.entries(manifest).find(([, file]) => clip!.endsWith(file))![0];
+  await page.getByRole("button", { name: SENTENCES[text]!, exact: true }).click();
+  await expect(page.getByRole("status")).toContainText("Correct");
 });

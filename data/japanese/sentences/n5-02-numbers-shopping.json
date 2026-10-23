@@ -1,0 +1,72 @@
+{
+  "source": "Original practice sentences for N5 · Numbers and shopping.",
+  "level": "n5",
+  "items": [
+    {
+      "slug": "kore-wa-hon",
+      "text": "これは ほんです。",
+      "tokens": ["これ", "は", "ほん", "です"],
+      "romaji": "kore wa hon desu",
+      "grammar": "n5-kore-sore-are",
+      "translation": {
+        "en": "This is a book.",
+        "id": "Ini buku."
+      }
+    },
+    {
+      "slug": "sore-wa-pan-ka",
+      "text": "それは パンですか。",
+      "tokens": ["それ", "は", "パン", "です", "か"],
+      "romaji": "sore wa pan desu ka",
+      "grammar": "n5-kore-sore-are",
+      "translation": {
+        "en": "Is that bread?",
+        "id": "Itu roti?"
+      }
+    },
+    {
+      "slug": "are-wa-hon-ja-arimasen",
+      "text": "あれは ほんじゃ ありません。",
+      "tokens": ["あれ", "は", "ほん", "じゃ", "ありません"],
+      "romaji": "are wa hon ja arimasen",
+      "grammar": "n5-kore-sore-are",
+      "translation": {
+        "en": "That over there is not a book.",
+        "id": "Itu di sana bukan buku."
+      }
+    },
+    {
+      "slug": "mizu-wa-ikura",
+      "text": "みずは いくらですか。",
+      "tokens": ["みず", "は", "いくら", "です", "か"],
+      "romaji": "mizu wa ikura desu ka",
+      "grammar": "n5-ikura",
+      "translation": {
+        "en": "How much is the water?",
+        "id": "Berapa harga airnya?"
+      }
+    },
+    {
+      "slug": "kore-hyaku-en",
+      "text": "これは ひゃくえんです。",
+      "tokens": ["これ", "は", "ひゃく", "えん", "です"],
+      "romaji": "kore wa hyaku en desu",
+      "grammar": "n5-ikura",
+      "translation": {
+        "en": "This is 100 yen.",
+        "id": "Ini seratus yen."
+      }
+    },
+    {
+      "slug": "pan-o-kudasai",
+      "text": "パンを ください。",
+      "tokens": ["パン", "を", "ください"],
+      "romaji": "pan o kudasai",
+      "grammar": "n5-wo-kudasai",
+      "translation": {
+        "en": "Please give me bread.",
+        "id": "Tolong beri saya roti."
+      }
+    }
+  ]
+}

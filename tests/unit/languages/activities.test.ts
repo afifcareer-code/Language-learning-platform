@@ -66,7 +66,13 @@ describe("N5 lesson activity templates", () => {
         "ja.sentence": { ids: ["ja.sentence.watashi-gakusei"], characters: "" },
       },
     });
-    expect(activities.map((a) => a.definition.type)).toEqual(["recognition", "recall", "sentence_building"]);
+    expect(activities.map((a) => a.definition.type)).toEqual([
+      "recognition",
+      "recall",
+      "sentence_building",
+      "reading",
+      "listening",
+    ]);
     expect(activities[0]!.definition.contentItemIds).toEqual(["ja.vocab.watashi", "ja.vocab.sensei"]);
     expect(activities[2]!.definition.contentItemIds).toEqual(["ja.sentence.watashi-gakusei"]);
     for (const { text } of activities) expect(JSON.stringify(text)).not.toMatch(/\{\w+\}/);

@@ -1,0 +1,102 @@
+{
+  "source": "Original grammar explanations for N5 · Numbers and shopping, written for this project.",
+  "level": "n5",
+  "items": [
+    {
+      "slug": "n5-kore-sore-are",
+      "pattern": "これ / それ / あれ は N です",
+      "meaning": {
+        "en": "This/That is N",
+        "id": "Ini/Itu adalah N"
+      },
+      "explanation": {
+        "en": "これ points to something near the speaker, それ to something near the listener, あれ to something far from both. They work like N1 in N1 は N2 です.",
+        "id": "これ menunjuk benda dekat pembicara, それ benda dekat lawan bicara, dan あれ benda yang jauh dari keduanya. Pola ini sama seperti N1 pada N1 は N2 です."
+      },
+      "examples": [
+        {
+          "ja": "これは ほんです。",
+          "romaji": "kore wa hon desu",
+          "translation": {
+            "en": "This is a book.",
+            "id": "Ini buku."
+          }
+        },
+        {
+          "ja": "それは パンですか。",
+          "romaji": "sore wa pan desu ka",
+          "translation": {
+            "en": "Is that bread?",
+            "id": "Itu roti?"
+          }
+        }
+      ],
+      "commonErrors": [
+        {
+          "en": "Using これ for something near the listener: use それ.",
+          "id": "Memakai これ untuk benda yang dekat lawan bicara: pakai それ."
+        }
+      ],
+      "related": ["n5-wa-desu"]
+    },
+    {
+      "slug": "n5-ikura",
+      "pattern": "N は いくらですか",
+      "meaning": {
+        "en": "How much is N?",
+        "id": "Berapa harga N?"
+      },
+      "explanation": {
+        "en": "いくら asks for a price. The answer is a number plus えん: ひゃくえん is 100 yen.",
+        "id": "いくら menanyakan harga. Jawabannya angka ditambah えん: ひゃくえん berarti 100 yen."
+      },
+      "examples": [
+        {
+          "ja": "みずは いくらですか。",
+          "romaji": "mizu wa ikura desu ka",
+          "translation": {
+            "en": "How much is the water?",
+            "id": "Berapa harga airnya?"
+          }
+        },
+        {
+          "ja": "これは ひゃくえんです。",
+          "romaji": "kore wa hyaku en desu",
+          "translation": {
+            "en": "This is 100 yen.",
+            "id": "Ini seratus yen."
+          }
+        }
+      ],
+      "related": ["n5-kore-sore-are"]
+    },
+    {
+      "slug": "n5-wo-kudasai",
+      "pattern": "N を ください",
+      "meaning": {
+        "en": "Please give me N",
+        "id": "Tolong beri saya N"
+      },
+      "explanation": {
+        "en": "を marks what you want, and ください asks for it politely. It is the simplest way to order or ask for things. を is written を but read \"o\".",
+        "id": "を menandai benda yang Anda minta, dan ください memintanya dengan sopan. Ini cara paling sederhana untuk memesan. を ditulis を tetapi dibaca \"o\"."
+      },
+      "examples": [
+        {
+          "ja": "パンを ください。",
+          "romaji": "pan o kudasai",
+          "translation": {
+            "en": "Please give me bread.",
+            "id": "Tolong beri saya roti."
+          }
+        }
+      ],
+      "commonErrors": [
+        {
+          "en": "Reading を as \"wo\": say \"o\".",
+          "id": "Membaca を sebagai \"wo\": ucapkan \"o\"."
+        }
+      ]
+    }
+  ]
+}

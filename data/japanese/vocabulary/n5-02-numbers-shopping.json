@@ -1,0 +1,133 @@
+{
+  "source": "Original vocabulary list for N5 · Numbers and shopping. Meanings written for this project.",
+  "level": "n5",
+  "items": [
+    {
+      "kana": "いち",
+      "romaji": "ichi",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "one",
+        "id": "satu"
+      }
+    },
+    {
+      "kana": "に",
+      "romaji": "ni",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "two",
+        "id": "dua"
+      }
+    },
+    {
+      "kana": "ご",
+      "romaji": "go",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "five",
+        "id": "lima"
+      }
+    },
+    {
+      "kana": "じゅう",
+      "romaji": "juu",
+      "alternateRomaji": ["ju", "juu"],
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "ten",
+        "id": "sepuluh"
+      }
+    },
+    {
+      "kana": "ひゃく",
+      "romaji": "hyaku",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "one hundred",
+        "id": "seratus"
+      }
+    },
+    {
+      "kana": "えん",
+      "romaji": "en",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "yen (Japanese money)",
+        "id": "yen (mata uang Jepang)"
+      }
+    },
+    {
+      "kana": "いくら",
+      "romaji": "ikura",
+      "partOfSpeech": "pronoun",
+      "meaning": {
+        "en": "how much",
+        "id": "berapa harganya"
+      }
+    },
+    {
+      "kana": "これ",
+      "romaji": "kore",
+      "partOfSpeech": "pronoun",
+      "meaning": {
+        "en": "this (near me)",
+        "id": "ini (dekat saya)"
+      }
+    },
+    {
+      "kana": "それ",
+      "romaji": "sore",
+      "partOfSpeech": "pronoun",
+      "meaning": {
+        "en": "that (near you)",
+        "id": "itu (dekat Anda)"
+      }
+    },
+    {
+      "kana": "あれ",
+      "romaji": "are",
+      "partOfSpeech": "pronoun",
+      "meaning": {
+        "en": "that over there",
+        "id": "itu (di sana, jauh dari kita)"
+      }
+    },
+    {
+      "kana": "ほん",
+      "romaji": "hon",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "book",
+        "id": "buku"
+      }
+    },
+    {
+      "kana": "みず",
+      "romaji": "mizu",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "water",
+        "id": "air"
+      }
+    },
+    {
+      "kana": "パン",
+      "romaji": "pan",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "bread",
+        "id": "roti"
+      }
+    },
+    {
+      "kana": "ください",
+      "romaji": "kudasai",
+      "partOfSpeech": "expression",
+      "meaning": {
+        "en": "please give me",
+        "id": "tolong beri saya"
+      }
+    }
+  ]
+}

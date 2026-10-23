@@ -4,8 +4,12 @@ Path: Foundation (hiragana, katakana) → N5 → N4 → N3 → N2 → N1, define
 `data/japanese/curriculum/levels.json` (courses and lessons) and
 `data/japanese/proficiency/framework.json` (the proficiency map).
 
-Implemented: Foundation, and N5 as the reference level: lesson 1
-(Introductions) with its competencies, evidence, readiness and mock
-assessment. Not implemented, by design: N5 lessons 2+, reading and listening
-content, and all of N4–N1. Those levels appear in the map as "planned" and are
-not selectable until they have curriculum.
+Implemented: Foundation (basic, voiced, semi-voiced and combination kana), and N5
+lessons 1-6 (Introductions, Numbers and shopping, Time and daily life, Places and
+directions, Food and ordering, Family and people), each with vocabulary,
+grammar, sentences, and activities for word recognition, word recall, sentence
+building, sentence reading and sentence listening (the listening audio is the
+shipped clip set, see `docs/development/audio.md`). Reading and listening are
+measured on single sentences, not passages or conversations. Not implemented,
+by design: the rest of N5 (kanji, counters, adjectives and verb forms beyond
+the polite present), writing production, and all of N4-N1.
