@@ -5,6 +5,7 @@ import { acceptedStrokeCounts, isKanaItemData, type KanaItemData } from "@/langu
 import { isGrammarData, type GrammarTranslation } from "@/languages/japanese/grammar/schema";
 import { isPassageData, passageSpeech, type PassageTranslation } from "@/languages/japanese/passages/schema";
 import { isSentenceData, type SentenceTranslation } from "@/languages/japanese/sentences/schema";
+import { isNativeData, tatoebaSentenceUrl, type NativeTranslation } from "@/languages/japanese/native/schema";
 import { isSituationData, type SituationTranslation } from "@/languages/japanese/situations/schema";
 import {
   isVocabularyData,
@@ -54,6 +55,16 @@ export interface PracticeItem {
   /** For sentence building: the pieces to arrange, shuffled. */
   tokens: string[];
   /** For comprehension: the text or dialogue lines, the question and the shuffled options (with their original index). */
+  /** Where the item comes from, when it must be credited (CC BY). */
+  attribution: {
+    source: string;
+    license: string;
+    url: string;
+    sentenceId: number;
+    sentenceAuthor: string;
+    translationId: number;
+    translationAuthor: string;
+  } | null;
   passage: {
     form: "text" | "dialogue";
     lines: string[];
@@ -67,6 +78,7 @@ export function itemDisplay(item: ContentItem | undefined): string {
   if (!item) return "";
   if (isKanaItemData(item.data)) return item.data.kana;
   if (isVocabularyData(item.data)) return vocabularyDisplay(item.data);
+  if (isNativeData(item.data)) return item.data.text;
   if (isSentenceData(item.data)) return item.data.text;
   if (isGrammarData(item.data)) return item.data.pattern;
   return item.key;
@@ -77,6 +89,8 @@ export function choiceLabel(item: ContentItem, translation: unknown): string {
   if (isKanaItemData(item.data)) return item.data.romaji;
   if (isVocabularyData(item.data))
     return (translation as VocabularyTranslation | undefined)?.meaning ?? item.data.romaji;
+  if (isNativeData(item.data))
+    return (translation as NativeTranslation | undefined)?.translation ?? item.data.text;
   if (isSentenceData(item.data))
     return (translation as SentenceTranslation | undefined)?.translation ?? item.data.text;
   return itemDisplay(item);
@@ -84,7 +98,7 @@ export function choiceLabel(item: ContentItem, translation: unknown): string {
 
 /** The character an option shows when the question is "which character?" (kana only). */
 export function choiceGlyph(item: ContentItem, translation?: unknown): string {
-  if (isSentenceData(item.data)) return choiceLabel(item, translation);
+  if (isSentenceData(item.data) || isNativeData(item.data)) return choiceLabel(item, translation);
   return isKanaItemData(item.data) ? item.data.kana : "";
 }
 
@@ -130,6 +144,7 @@ export function toPracticeItem(
     answerKind: "character" as const,
     tokens: [] as string[],
     passage: null,
+    attribution: null,
   };
 
   if (isPassageData(item.data)) {
@@ -210,6 +225,28 @@ export function toPracticeItem(
           audioPrompt: options.skill === JA_SKILLS.wordListening,
           answerKind: options.skill === JA_SKILLS.wordListening ? ("meaning" as const) : base.answerKind,
         };
+  }
+  if (isNativeData(item.data)) {
+    const source = item.data.source;
+    const translationCredit = source.translations[options.locale] ?? source.translations.en!;
+    return {
+      ...base,
+      display: item.data.text,
+      displayLang: "ja",
+      displayStyle: "word",
+      speech: item.data.text,
+      audioPrompt: options.skill === JA_SKILLS.nativeListening,
+      answerKind: "meaning" as const,
+      attribution: {
+        source: source.name,
+        license: source.license,
+        url: tatoebaSentenceUrl(source.sentence.id),
+        sentenceId: source.sentence.id,
+        sentenceAuthor: source.sentence.author,
+        translationId: translationCredit.id,
+        translationAuthor: translationCredit.author,
+      },
+    };
   }
   if (isSentenceData(item.data) && options.kind === "recognition") {
     // Reading shows the sentence; listening plays it and shows nothing (the text is the fallback

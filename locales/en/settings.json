@@ -12,6 +12,8 @@
   "credits": {
     "title": "Credits",
     "audio": "Japanese sounds are synthesised with Open JTalk and the “Mei” voice © Nagoya Institute of Technology (MMDAgent Project Team), licensed under CC BY 3.0. They are not recordings of a person.",
-    "details": "Full credits"
+    "details": "Full credits",
+    "content": "Native example sentences and their translations come from Tatoeba contributors and are licensed CC BY 2.0 FR. Each sentence is credited to its authors when it is shown.",
+    "contentLink": "About Tatoeba"
   }
 }

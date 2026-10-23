@@ -14,7 +14,8 @@
     "audioQuestion": "Which character did you hear?",
     "visualPrompt": "Look at the character, then choose the matching sound.",
     "noAudio": "Audio is not available on this device, so this question shows the character instead.",
-    "audioQuestionMeaning": "Which meaning did you hear?"
+    "audioQuestionMeaning": "Which meaning did you hear?",
+    "meaningPrompt": "Which meaning matches this?"
   },
   "recall": {
     "label": "Recall this character's sound without options, then type it in romaji."
@@ -172,7 +173,8 @@
     "usage": "Usage",
     "automatic": "Automatic recall",
     "construction": "Sentence construction",
-    "production": "Production"
+    "production": "Production",
+    "native": "Native sentences"
   },
   "stageStatus": {
     "planned": "Planned",
@@ -219,5 +221,9 @@
     "readInstruction": "Read the text, then answer the question.",
     "listenInstruction": "Listen to the conversation, then answer the question.",
     "noAudio": "Audio is not available on this device, so the conversation is shown as text."
+  },
+  "attribution": {
+    "text": "{source} sentence #{sentenceId} by {sentenceAuthor}; translation #{translationId} by {translationAuthor}. {license}.",
+    "link": "View source"
   }
 }

@@ -33,6 +33,9 @@ def texts():
     for f in sorted((DATA / "sentences").glob("*.json")):
         for s in json.loads(f.read_text())["items"]:
             found.append((s["text"], False))
+    for f in sorted((DATA / "native").glob("*.json")):
+        for s in json.loads(f.read_text())["items"]:
+            found.append((s["text"], False))
     for f in sorted((DATA / "situations").glob("*.json")):
         for s in json.loads(f.read_text())["items"]:
             found.append((s["model"], False))

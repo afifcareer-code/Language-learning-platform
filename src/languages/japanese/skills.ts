@@ -15,6 +15,8 @@ export const JA_SKILLS = {
   situationWriting: "ja.situation.writing",
   passageReading: "ja.reading.passage",
   dialogueListening: "ja.listening.dialogue",
+  nativeReading: "ja.reading.native",
+  nativeListening: "ja.listening.native",
 } as const;
 
 /** Ordered along the learning loop within each area. Labels live in ./locales. */
@@ -33,4 +35,6 @@ export const japaneseSkills: readonly SkillDefinition[] = [
   { id: JA_SKILLS.situationWriting, stage: "production", capability: "writing" },
   { id: JA_SKILLS.passageReading, stage: "understanding", capability: "reading" },
   { id: JA_SKILLS.dialogueListening, stage: "understanding", capability: "listening" },
+  { id: JA_SKILLS.nativeReading, stage: "understanding", capability: "reading" },
+  { id: JA_SKILLS.nativeListening, stage: "understanding", capability: "listening" },
 ];

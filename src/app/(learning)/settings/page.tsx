@@ -107,6 +107,15 @@ export default async function SettingsPage() {
         >
           {t("settings.credits.details")}
         </a>
+        <p className="mt-4 text-sm text-muted">{t("settings.credits.content")}</p>
+        <a
+          href="https://tatoeba.org/"
+          target="_blank"
+          rel="noreferrer"
+          className="mt-2 inline-flex min-h-11 items-center text-sm font-medium text-accent"
+        >
+          {t("settings.credits.contentLink")}
+        </a>
       </Card>
     </>
   );

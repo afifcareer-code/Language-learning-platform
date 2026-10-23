@@ -184,6 +184,22 @@
           }
         },
         {
+          "id": "native",
+          "focus": "native",
+          "availability": "available",
+          "requirement": {
+            "minAttempts": 6,
+            "window": 10,
+            "promoteAt": 0.8,
+            "demoteBelow": 0.6
+          },
+          "session": {
+            "skill": "ja.reading.native",
+            "type": "reading",
+            "itemType": "ja.native"
+          }
+        },
+        {
           "id": "text",
           "focus": "text",
           "availability": "available",
@@ -296,6 +312,22 @@
             "skill": "ja.listening.sentence",
             "type": "listening",
             "itemType": "ja.sentence"
+          }
+        },
+        {
+          "id": "native",
+          "focus": "native",
+          "availability": "available",
+          "requirement": {
+            "minAttempts": 6,
+            "window": 10,
+            "promoteAt": 0.8,
+            "demoteBelow": 0.6
+          },
+          "session": {
+            "skill": "ja.listening.native",
+            "type": "listening",
+            "itemType": "ja.native"
           }
         },
         {

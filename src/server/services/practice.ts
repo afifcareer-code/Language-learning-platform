@@ -64,6 +64,8 @@ export async function getPracticeSession(
   let practiceStage: string | null = null;
   let stageType: ActivityType | null = null;
   let itemsHaveOwnOptions = false;
+  /** Practice is not bound to lessons, so a stage draws its answer options from all items of its type. */
+  let stageOptionPool: ContentItem[] | null = null;
   let promptIds: string[];
 
   switch (request.kind) {
@@ -132,7 +134,8 @@ export async function getPracticeSession(
       const progress = await getLearnerProgress(db, learner.id, now);
       const met = new Set([...progress.values()].map((p) => p.contentItemId));
       // Practice is not bound to the curriculum: any content of the stage's kind will do.
-      const matching = (await listContentItemsByType(db, learner.targetLanguage, spec.itemType))
+      stageOptionPool = await listContentItemsByType(db, learner.targetLanguage, spec.itemType);
+      const matching = stageOptionPool
         .filter((i) =>
           Object.entries(spec.dataEquals ?? {}).every(
             ([key, value]) => (i.data as Record<string, unknown>)[key] === value,
@@ -180,7 +183,9 @@ export async function getPracticeSession(
     !itemsHaveOwnOptions &&
     (type === "recognition" || type === "multiple_choice" || type === "listening" || type === "reading")
   ) {
-    const pool = await getContentItems(db, [...new Set(curriculum.lessons.flatMap((l) => l.itemIds))]);
+    const pool =
+      stageOptionPool ??
+      (await getContentItems(db, [...new Set(curriculum.lessons.flatMap((l) => l.itemIds))]));
     const learnerPairs = await getConfusionPairs(db, learner.id);
     for (const item of prompts) {
       if (choices[item.id]) continue;

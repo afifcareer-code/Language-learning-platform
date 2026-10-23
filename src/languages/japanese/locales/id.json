@@ -59,6 +59,14 @@
     "ja.listening.dialogue": {
       "label": "Mendengarkan percakapan",
       "description": "Dengarkan percakapan pendek dan jawab pertanyaan tentangnya."
+    },
+    "ja.reading.native": {
+      "label": "Membaca kalimat penutur asli",
+      "description": "Baca kalimat yang ditulis penutur Jepang dan pilih artinya."
+    },
+    "ja.listening.native": {
+      "label": "Mendengarkan kalimat penutur asli",
+      "description": "Dengarkan kalimat yang ditulis penutur Jepang dan pilih artinya."
     }
   }
 }

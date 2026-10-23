@@ -14,7 +14,8 @@
     "audioQuestion": "Karakter apa yang kamu dengar?",
     "visualPrompt": "Lihat karakternya, lalu pilih bunyi yang sesuai.",
     "noAudio": "Audio tidak tersedia di perangkat ini, jadi soal ini menampilkan karakternya.",
-    "audioQuestionMeaning": "Arti mana yang Anda dengar?"
+    "audioQuestionMeaning": "Arti mana yang Anda dengar?",
+    "meaningPrompt": "Arti mana yang cocok dengan ini?"
   },
   "recall": {
     "label": "Ingat bunyi karakter ini tanpa pilihan, lalu ketik dalam romaji."
@@ -169,7 +170,8 @@
     "usage": "Pemakaian",
     "automatic": "Ingatan otomatis",
     "construction": "Menyusun kalimat",
-    "production": "Produksi"
+    "production": "Produksi",
+    "native": "Kalimat penutur asli"
   },
   "stageStatus": {
     "planned": "Direncanakan",
@@ -216,5 +218,9 @@
     "readInstruction": "Baca teksnya, lalu jawab pertanyaannya.",
     "listenInstruction": "Dengarkan percakapannya, lalu jawab pertanyaannya.",
     "noAudio": "Audio tidak tersedia di perangkat ini, jadi percakapan ditampilkan sebagai teks."
+  },
+  "attribution": {
+    "text": "Kalimat {source} #{sentenceId} oleh {sentenceAuthor}; terjemahan #{translationId} oleh {translationAuthor}. {license}.",
+    "link": "Lihat sumber"
   }
 }

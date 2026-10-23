@@ -16,6 +16,9 @@ describe("shipped Japanese audio clips", () => {
       ...readdirSync("data/japanese/sentences").flatMap((f) =>
         read(`data/japanese/sentences/${f}`).items.map((s: { text: string }) => s.text),
       ),
+      ...readdirSync("data/japanese/native")
+        .filter((f) => f.endsWith(".json"))
+        .flatMap((f) => read(`data/japanese/native/${f}`).items.map((s: { text: string }) => s.text)),
       ...readdirSync("data/japanese/situations").flatMap((f) =>
         read(`data/japanese/situations/${f}`).items.map((s: { model: string }) => s.model),
       ),
