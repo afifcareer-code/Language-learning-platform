@@ -1,5 +1,5 @@
 import { expect, test } from "@playwright/test";
-import { useEnglish, switchUiLanguage } from "./helpers";
+import { fakeJapaneseVoice, spoken, useEnglish, switchUiLanguage } from "./helpers";
 
 // Runs first, against a fresh database: the learner has not chosen a language yet.
 test.describe.serial("choosing what to learn", () => {
@@ -61,7 +61,8 @@ test.describe.serial("choosing what to learn", () => {
       .first()
       .click();
     await expect(page.getByRole("heading", { level: 1 })).toHaveText("Your learning path");
-    await page.getByRole("link", { name: "Change learning language" }).click();
+    // The shell has its own control, and the path page repeats the link.
+    await page.getByRole("link", { name: "Change learning language" }).first().click();
     await expect(page.getByRole("heading", { level: 1 })).toHaveText("Your learning languages");
     await expect(page.getByText("Foundation · In progress")).toBeVisible();
     await page.getByRole("button", { name: "Continue" }).click();
@@ -89,5 +90,36 @@ test.describe.serial("choosing what to learn", () => {
     await expect(page.getByRole("heading", { name: "Menulis Hiragana あ い う え お" })).toBeVisible();
     await useEnglish(page);
     await expect(page.getByRole("link", { name: "Dashboard" })).toBeVisible();
+  });
+
+  // Fresh learner: no character has been practiced yet, so each one is introduced first.
+  test("a new learner is shown each sound with its character before any question about them", async ({
+    page,
+  }) => {
+    await fakeJapaneseVoice(page);
+    await page.goto("/activities/ja.activity.hiragana-vowels.recognition");
+    await expect(page.getByRole("heading", { name: "Meet the characters" })).toBeVisible();
+    await expect(page.getByText("This is not a test: nothing here is scored.")).toBeVisible();
+    for (const [kana, romaji] of [
+      ["あ", "a"],
+      ["い", "i"],
+      ["う", "u"],
+      ["え", "e"],
+      ["お", "o"],
+    ]) {
+      await expect(page.getByText(`${kana} is read as “${romaji}”`)).toBeVisible();
+    }
+    // Nothing is asked yet: no question, no answer options.
+    await expect(page.getByRole("group", { name: "Which character did you hear?" })).toHaveCount(0);
+
+    // Hearing a character plays that character's sound.
+    await page.getByRole("button", { name: "Play pronunciation of う" }).click();
+    expect(await spoken(page)).toEqual(["う"]);
+
+    // Then practice starts with the sound-first question.
+    await page.getByRole("button", { name: "Start practice" }).click();
+    await expect(page.getByRole("heading", { name: "Meet the characters" })).toHaveCount(0);
+    await expect(page.getByRole("button", { name: "Play sound" })).toBeVisible();
+    await expect(page.getByRole("group", { name: "Which character did you hear?" })).toBeVisible();
   });
 });

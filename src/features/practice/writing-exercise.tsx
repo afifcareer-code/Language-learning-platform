@@ -7,8 +7,11 @@ import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { HandwritingCanvas } from "@/handwriting/canvas/handwriting-canvas";
 import { GUIDE_OPACITY } from "@/handwriting/guidance";
+import { glyphReference } from "@/handwriting/recognition/glyph-reference";
+import { shapeSimilarity } from "@/handwriting/recognition/shape";
 import { StrokeCountAnalyzer } from "@/handwriting/recognition/stroke-count-analyzer";
 import type { WritingCheck } from "@/handwriting/recognition/types";
+import { evaluateWriting, type WritingQuality } from "@/handwriting/scoring/quality";
 import type { SelfAssessment } from "@/handwriting/scoring/score";
 import type { Stroke, WritingSample } from "@/handwriting/strokes/types";
 import { useT } from "@/localization/client";
@@ -17,9 +20,9 @@ import type { PracticeItem } from "@/features/japanese/practice-items";
 
 const analyzer = new StrokeCountAnalyzer();
 
-const SELF_OPTIONS: { value: SelfAssessment; variant: "primary" | "secondary" }[] = [
+/** Is this the character? The learner decides after comparing with the model. */
+const SELF_OPTIONS: { value: "correct" | "incorrect"; variant: "primary" | "secondary" }[] = [
   { value: "incorrect", variant: "secondary" },
-  { value: "close", variant: "secondary" },
   { value: "correct", variant: "primary" },
 ];
 
@@ -42,8 +45,10 @@ export function useCheckLabel() {
 
 /**
  * Handwriting: the guide fades with mastery. After writing, the learner
- * compares with the model and grades themselves; automatic checks can only
- * lower that grade.
+ * compares with the model and says whether it is the same character; the
+ * measured stroke count and shape then set how precise it was. The result keeps
+ * the two apart: a correct character with imprecise handwriting can be improved
+ * or accepted, it is not a failure.
  */
 export function WritingExercise({
   item,
@@ -54,7 +59,8 @@ export function WritingExercise({
   item: PracticeItem;
   instruction: string;
   disabled: boolean;
-  onSubmit: (sample: WritingSample, self: SelfAssessment) => void;
+  /** `retry`: the character was not right, so the attempt is recorded and the learner writes it again. */
+  onSubmit: (sample: WritingSample, self: SelfAssessment, shapeScore: number | null, retry: boolean) => void;
 }) {
   const t = useT();
   const checkLabel = useCheckLabel();
@@ -63,6 +69,7 @@ export function WritingExercise({
   const hasAudio = speech.status !== "unavailable";
   const [strokes, setStrokes] = useState<Stroke[]>([]);
   const [checked, setChecked] = useState(false);
+  const [self, setSelf] = useState<SelfAssessment | null>(null);
   const [hintShown, setHintShown] = useState(false);
   const box = useRef<HTMLDivElement>(null);
 
@@ -77,19 +84,34 @@ export function WritingExercise({
     [checked, strokes, item],
   );
 
+  // How closely the drawing follows the model, measured against the glyph in the learner's fonts.
+  // Null when the device cannot draw that glyph; precision then rests on the stroke count.
+  const shapeScore = useMemo(() => {
+    if (!checked) return null;
+    const family = getComputedStyle(document.documentElement).getPropertyValue("--font-jp").trim() || "serif";
+    const reference = glyphReference(item.display, family);
+    return reference ? shapeSimilarity({ strokes, width: 1, height: 1, capturedAt: "" }, reference) : null;
+  }, [checked, strokes, item.display]);
+
+  const evaluation = analysis && self ? evaluateWriting({ checks: analysis.checks, shapeScore, self }) : null;
+
   const guideOpacity = checked ? 0.35 : hintShown ? 0.18 : GUIDE_OPACITY[item.stage];
 
-  function grade(self: SelfAssessment) {
+  function sample(): WritingSample {
     const rect = box.current?.getBoundingClientRect();
-    onSubmit(
-      {
-        strokes,
-        width: Math.max(1, Math.round(rect?.width ?? 1)),
-        height: Math.max(1, Math.round(rect?.height ?? 1)),
-        capturedAt: new Date().toISOString(),
-      },
-      self,
-    );
+    return {
+      strokes,
+      width: Math.max(1, Math.round(rect?.width ?? 1)),
+      height: Math.max(1, Math.round(rect?.height ?? 1)),
+      capturedAt: new Date().toISOString(),
+    };
+  }
+
+  /** "Perbaiki tulisan": back to the writing area for the same character, with the same guide. */
+  function improve() {
+    setStrokes([]);
+    setChecked(false);
+    setSelf(null);
   }
 
   return (
@@ -161,26 +183,95 @@ export function WritingExercise({
                 ))}
               </ul>
             </div>
-            <p className="text-sm text-muted">{t("practice.writing.compare")}</p>
-            <div className="grid grid-cols-3 gap-2">
-              {SELF_OPTIONS.map((o) => (
-                <Button
-                  key={o.value}
-                  variant={o.variant}
-                  className="px-2"
-                  onClick={() => grade(o.value)}
-                  disabled={disabled}
-                >
-                  {t(`practice.writing.self.${o.value}`)}
+
+            {!evaluation ? (
+              <>
+                <p className="text-sm text-muted">{t("practice.writing.compare")}</p>
+                <div className="grid grid-cols-2 gap-2">
+                  {SELF_OPTIONS.map((o) => (
+                    <Button
+                      key={o.value}
+                      variant={o.variant}
+                      className="px-2"
+                      onClick={() => setSelf(o.value)}
+                      disabled={disabled}
+                    >
+                      {t(`practice.writing.self.${o.value}`)}
+                    </Button>
+                  ))}
+                </div>
+                <Button variant="ghost" onClick={() => setChecked(false)} disabled={disabled}>
+                  {t("practice.writing.keepWriting")}
                 </Button>
-              ))}
-            </div>
-            <Button variant="ghost" onClick={() => setChecked(false)} disabled={disabled}>
-              {t("practice.writing.keepWriting")}
-            </Button>
+              </>
+            ) : (
+              <WritingResult
+                quality={evaluation.quality}
+                character={item.display}
+                disabled={disabled}
+                onImprove={improve}
+                onSubmit={(retry) => onSubmit(sample(), self!, shapeScore, retry)}
+              />
+            )}
           </div>
         )}
       </Card>
+    </div>
+  );
+}
+
+/**
+ * The outcome of one writing attempt: is it the character, and how precise
+ * was it. Correct but imprecise offers a choice instead of forcing a rewrite.
+ */
+function WritingResult({
+  quality,
+  character,
+  disabled,
+  onImprove,
+  onSubmit,
+}: {
+  quality: WritingQuality;
+  character: string;
+  disabled: boolean;
+  onImprove: () => void;
+  onSubmit: (retry: boolean) => void;
+}) {
+  const t = useT();
+  const correct = quality !== "incorrect";
+  return (
+    <div role="group" aria-label={t("practice.writing.result.label")} className="flex flex-col gap-3">
+      <p
+        className={cn("text-lg font-medium", correct ? "text-success" : "text-danger")}
+        data-testid="writing-character-result"
+      >
+        <span aria-hidden="true">{correct ? "✓ " : "✕ "}</span>
+        {correct
+          ? t("practice.writing.result.characterCorrect")
+          : t("practice.writing.result.characterIncorrect")}
+      </p>
+      <p className="text-sm">
+        {correct && <span className="font-medium">{t("practice.writing.result.shapeLabel")} </span>}
+        {t(`practice.writing.result.quality.${quality}`, { character })}
+      </p>
+      {quality === "incorrect" ? (
+        <Button onClick={() => onSubmit(true)} disabled={disabled}>
+          {t("practice.writing.result.retry")}
+        </Button>
+      ) : quality === "needs_improvement" ? (
+        <>
+          <Button onClick={onImprove} disabled={disabled}>
+            {t("practice.writing.result.improve")}
+          </Button>
+          <Button variant="secondary" onClick={() => onSubmit(false)} disabled={disabled}>
+            {t("practice.writing.result.continueAnyway")}
+          </Button>
+        </>
+      ) : (
+        <Button onClick={() => onSubmit(false)} disabled={disabled}>
+          {t("practice.writing.result.continue")}
+        </Button>
+      )}
     </div>
   );
 }

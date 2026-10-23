@@ -103,7 +103,8 @@
     "uiLanguage": "Interface language",
     "learningLanguage": "Learning language",
     "changeLearningLanguage": "Change learning language",
-    "learningPath": "Open learning path"
+    "learningPath": "Open learning path",
+    "changeLanguageShort": "Change language"
   },
   "audio": {
     "play": "Play pronunciation of {text}",

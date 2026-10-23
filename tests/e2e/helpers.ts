@@ -74,3 +74,16 @@ export async function fakeJapaneseVoice(page: Page, available = true) {
 export async function spoken(page: Page): Promise<string[]> {
   return page.evaluate(() => (window as unknown as { __spoken: string[] }).__spoken);
 }
+
+/**
+ * Get past the introduction that precedes the first question about characters
+ * the learner has not practiced yet. It is a teaching screen, not a question.
+ * Does nothing once those characters have been practiced.
+ */
+export async function skipIntroduction(page: Page) {
+  const intro = page.getByRole("heading", { name: "Meet the characters" });
+  for (let i = 0; i < 6 && (await intro.isVisible()); i++) {
+    await page.getByRole("button", { name: /^(Next characters|Start practice)$/ }).click();
+  }
+  await expect(intro).toHaveCount(0);
+}

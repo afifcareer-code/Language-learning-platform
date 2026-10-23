@@ -20,8 +20,10 @@ import {
   listLanguages,
   listLearnerLanguages,
   listLevels,
+  resumeLanguage,
   startLearning,
 } from "@/server/services/learning-context";
+import { evaluateWriting, selfAssessmentOf } from "@/handwriting";
 import { createTestDatabase, TEST_DIALECTS, type TestDatabase } from "./databases";
 
 const quiet = { log: () => undefined };
@@ -378,6 +380,85 @@ describe.each(TEST_DIALECTS)("learning flow on $dialect", ({ dialect, serverUrl 
     expect(weak?.prompts.map((i) => i.id)).toContain("ja.hiragana.a");
     expect(weak!.choices["ja.hiragana.a"]).toContain("ja.hiragana.a");
   });
+
+  it("persists writing correctness and precision separately, and never records an imprecise character as a failure", async () => {
+    const at = new Date("2026-02-02T09:00:00.000Z");
+    const sample = {
+      strokes: [{ index: 0, pointerType: "pen" as const, points: [{ x: 0.2, y: 0.2, t: 0, pressure: 0.5 }] }],
+      width: 400,
+      height: 400,
+    };
+    const checks = [{ id: "stroke-count", passed: true, values: { count: 2, expected: [2] } }];
+    const record = async (item: string, shapeScore: number | null, self: "correct" | "incorrect") => {
+      // The same evaluation the server action applies before recording.
+      const evaluation = evaluateWriting({ checks, shapeScore, self });
+      const result = await recordAttempt(db, {
+        learnerId: learner.id,
+        contentItemId: item,
+        skill: JA_SKILLS.kanaWriting,
+        mode: "practice",
+        activityId: "ja.activity.hiragana-vowels.writing",
+        correct: evaluation.characterCorrect,
+        score: evaluation.score,
+        response: evaluation.quality,
+        at,
+        writingSample: {
+          ...sample,
+          guidanceStage: "full_example",
+          selfAssessment: selfAssessmentOf(evaluation.quality),
+          analysis: { checks, evaluation, learnerJudgement: self },
+        },
+      });
+      const [attempt] = await db
+        .select()
+        .from(db.t.learningAttempts)
+        .where(sql`${db.t.learningAttempts.id} = ${result.attemptId}`);
+      const [stored] = await db
+        .select()
+        .from(db.t.writingSamples)
+        .where(sql`${db.t.writingSamples.attemptId} = ${result.attemptId}`);
+      return { result, attempt: attempt!, stored: stored! };
+    };
+
+    // Correct character, imprecise shape: counted as correct, with a lower score and the quality kept.
+    const imprecise = await record("ja.hiragana.i", 0.3, "correct");
+    expect(imprecise.attempt).toMatchObject({ correct: true, score: 0.65, response: "needs_improvement" });
+    expect(imprecise.stored.selfAssessment).toBe("close");
+    expect(imprecise.stored.analysis).toMatchObject({
+      checks,
+      learnerJudgement: "correct",
+      evaluation: {
+        characterCorrect: true,
+        strokeCountCorrect: true,
+        shapeScore: 0.3,
+        quality: "needs_improvement",
+      },
+    });
+    expect(imprecise.result.masteryState).toBe("learning");
+
+    // A precise one is stored as excellent; a wrong character is an incorrect attempt.
+    const precise = await record("ja.hiragana.u", 0.9, "correct");
+    expect(precise.attempt).toMatchObject({ correct: true, score: 1, response: "excellent" });
+    const wrong = await record("ja.hiragana.e", 0.9, "incorrect");
+    expect(wrong.attempt).toMatchObject({ correct: false, score: 0, response: "incorrect" });
+
+    // Shape that could not be measured: stored as null, so it can be told apart from a bad score.
+    const unmeasured = await record("ja.hiragana.o", null, "correct");
+    expect(unmeasured.stored.analysis).toMatchObject({ evaluation: { shapeScore: null, quality: "good" } });
+
+    // The imprecise-but-correct attempt counts toward mastery (consecutive correct), the wrong one does not.
+    const progress = await getLearnerProgress(db, learner.id, at);
+    expect(progress.get(progressKey("ja.hiragana.i", JA_SKILLS.kanaWriting))?.mastery).toMatchObject({
+      attempts: 1,
+      correct: 1,
+      consecutiveCorrect: 1,
+    });
+    expect(progress.get(progressKey("ja.hiragana.e", JA_SKILLS.kanaWriting))?.mastery).toMatchObject({
+      attempts: 1,
+      correct: 0,
+      consecutiveCorrect: 0,
+    });
+  });
 });
 
 describe.each(TEST_DIALECTS)("upgrading an existing $dialect database", ({ dialect, serverUrl }) => {
@@ -593,5 +674,40 @@ describe.each(TEST_DIALECTS)("choosing what to learn on $dialect", ({ dialect, s
     const overview = await getLearningOverview(db, learner, "en", new Date(), context.level.id);
     expect(overview.courseProgress.totalActivities).toBe(54);
     expect(overview.nextActivity?.id).toBe("ja.activity.hiragana-vowels.recognition");
+  });
+
+  it("keeps Japanese progress when the learner leaves for the language list and comes back", async () => {
+    const at = new Date("2026-02-03T09:00:00.000Z");
+    await recordAttempt(db, {
+      learnerId: learner.id,
+      contentItemId: "ja.hiragana.a",
+      skill: JA_SKILLS.kanaRecognition,
+      mode: "practice",
+      correct: true,
+      score: 1,
+      at,
+    });
+    const key = progressKey("ja.hiragana.a", JA_SKILLS.kanaRecognition);
+    const before = (await getLearnerProgress(db, learner.id, at)).get(key);
+    expect(before?.mastery.attempts).toBe(1);
+
+    // Opening the language list changes nothing; only a started language can be resumed.
+    await db
+      .update(db.t.learners)
+      .set({ targetLanguage: "en" })
+      .where(sql`${db.t.learners.id} = ${learner.id}`);
+    expect(await getLearningContext(db, await ensureLocalLearner(db), "en")).toBeNull();
+    expect(await resumeLanguage(db, await ensureLocalLearner(db), "en")).toBe(false);
+
+    expect(await resumeLanguage(db, await ensureLocalLearner(db), "ja")).toBe(true);
+    const resumed = await ensureLocalLearner(db);
+    expect(resumed.targetLanguage).toBe("ja");
+    expect(await getLearningContext(db, resumed, "en")).toMatchObject({
+      language: { code: "ja" },
+      level: { slug: "foundation" },
+    });
+    const after = (await getLearnerProgress(db, learner.id, at)).get(key);
+    expect(after?.mastery).toEqual(before?.mastery);
+    expect((await listLearnerLanguages(db, learner.id)).map((r) => r.languageCode)).toEqual(["ja"]);
   });
 });

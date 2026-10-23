@@ -100,7 +100,8 @@
     "uiLanguage": "Bahasa antarmuka",
     "learningLanguage": "Bahasa yang dipelajari",
     "changeLearningLanguage": "Ganti bahasa yang dipelajari",
-    "learningPath": "Buka jalur belajar"
+    "learningPath": "Buka jalur belajar",
+    "changeLanguageShort": "Ganti bahasa"
   },
   "audio": {
     "play": "Putar pelafalan {text}",

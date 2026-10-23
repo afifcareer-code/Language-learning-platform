@@ -52,3 +52,10 @@ PLAYWRIGHT_CHROMIUM_EXECUTABLE=/path/to/chromium npm run test:e2e
 - Put new domain logic in `src/core` or a module, and unit-test it there.
 - Use fixed dates (`new Date("2026-01-01T09:00:00Z")`) and pass `at` or `now` explicitly; never depend on the wall clock.
 - Prefer behaviour-level assertions ("cannot reach proficiency by cramming") over implementation details.
+
+## Foundation flow, writing and navigation
+
+- `tests/unit/practice/introduction.test.ts`: the introduction is resolved from content data, skips practiced characters, and its copy exists in every locale.
+- `tests/unit/handwriting/writing-quality.test.ts`: correctness and precision stay separate; an imprecise but correct character is never a failure; shape similarity is scale- and position-independent.
+- `tests/integration/learning-flow.test.ts`: writing attempts persist quality and shape score, and progress survives leaving for the language list and returning.
+- e2e: introduction before the first question, retry / improve / continue after writing, and the language switcher from a lesson page. Kana activity tests call `skipIntroduction` because the shared test database makes the introduction appear only for characters not practiced yet.
