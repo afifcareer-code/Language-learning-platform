@@ -23,9 +23,9 @@ describe("shipped Japanese audio clips", () => {
         read(`data/japanese/situations/${f}`).items.map((s: { model: string }) => s.model),
       ),
       ...readdirSync("data/japanese/passages").flatMap((f) =>
-        read(`data/japanese/passages/${f}`).items.map((p: { lines: { text: string }[] }) =>
-          p.lines.map((l) => l.text).join(" "),
-        ),
+        read(`data/japanese/passages/${f}`)
+          .items.filter((p: { form: string }) => p.form === "text" || p.form === "dialogue")
+          .map((p: { lines: { text: string }[] }) => p.lines.map((l) => l.text).join(" ")),
       ),
     ];
     expect(texts.filter((t) => !manifest[t])).toEqual([]);

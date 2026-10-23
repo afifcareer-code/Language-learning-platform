@@ -41,6 +41,8 @@ def texts():
             found.append((s["model"], False))
     for f in sorted((DATA / "passages").glob("*.json")):
         for p in json.loads(f.read_text())["items"]:
+            if p["form"] not in ("text", "dialogue"):
+                continue  # excerpts of published writing are read, not played
             # One clip per passage, keyed by the lines joined with a space (what the app speaks).
             found.append((" ".join(line["text"] for line in p["lines"]), False))
     for f in sorted((DATA / "listening").glob("*.json")) if (DATA / "listening").exists() else []:

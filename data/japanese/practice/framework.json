@@ -222,23 +222,41 @@
         {
           "id": "paragraph",
           "focus": "paragraph",
-          "availability": "planned",
+          "availability": "available",
           "requirement": {
             "minAttempts": 6,
             "window": 10,
             "promoteAt": 0.8,
             "demoteBelow": 0.6
+          },
+          "session": {
+            "skill": "ja.reading.passage",
+            "type": "reading",
+            "itemType": "ja.passage",
+            "dataEquals": {
+              "form": "paragraph"
+            },
+            "ownOptions": true
           }
         },
         {
           "id": "real-world",
           "focus": "real-world",
-          "availability": "planned",
+          "availability": "available",
           "requirement": {
             "minAttempts": 6,
             "window": 10,
             "promoteAt": 0.8,
             "demoteBelow": 0.6
+          },
+          "session": {
+            "skill": "ja.reading.passage",
+            "type": "reading",
+            "itemType": "ja.passage",
+            "dataEquals": {
+              "form": "authentic"
+            },
+            "ownOptions": true
           }
         }
       ]

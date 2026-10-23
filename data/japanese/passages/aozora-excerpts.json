@@ -1,0 +1,338 @@
+{
+  "source": "Aozora Bunko (https://www.aozora.gr.jp/)",
+  "level": "n5",
+  "items": [
+    {
+      "slug": "gon-storyteller",
+      "form": "paragraph",
+      "lines": [
+        {
+          "text": "これは、私《わたし》が小さいときに、村の茂平《もへい》というおじいさんからきいたお話です。\rむかしは、私たちの村のちかくの、中山《なかやま》というところに小さなお城があって、中山さまというおとのさまが、おられたそうです。"
+        }
+      ],
+      "answer": 0,
+      "credit": {
+        "author": "新美南吉",
+        "work": "ごん狐",
+        "url": "https://www.aozora.gr.jp/cards/000121/card628.html",
+        "license": "Public domain (Aozora Bunko)"
+      },
+      "comprehension": {
+        "en": {
+          "question": "Who told the writer this story?",
+          "options": [
+            "An old man from the village called Mohei",
+            "The writer's mother",
+            "A lord named Nakayama",
+            "A fox named Gon"
+          ],
+          "gloss": "This is a story I heard when I was little from an old man in our village called Mohei. Long ago, near our village, in a place called Nakayama, there was a small castle, and they say a lord called Lord Nakayama lived there."
+        },
+        "id": {
+          "question": "Siapa yang menceritakan kisah ini kepada penulis?",
+          "options": [
+            "Seorang kakek dari desa bernama Mohei",
+            "Ibu penulis",
+            "Seorang tuan tanah bernama Nakayama",
+            "Seekor rubah bernama Gon"
+          ],
+          "gloss": "Ini cerita yang saya dengar waktu kecil dari seorang kakek di desa kami bernama Mohei. Dahulu kala, di dekat desa kami, di tempat bernama Nakayama, ada sebuah kastil kecil, dan konon di sana tinggal seorang tuan bernama Tuan Nakayama."
+        }
+      }
+    },
+    {
+      "slug": "tebukuro-snow",
+      "form": "paragraph",
+      "lines": [
+        {
+          "text": "母さん狐は洞穴の入口から外へ出て始めてわけが解《わか》りました。昨夜のうちに、真白な雪がどっさり降ったのです。その雪の上からお陽《ひ》さまがキラキラと照《てら》していたので、雪は眩《まぶ》しいほど反射していたのです。雪を知らなかった子供の狐は、あまり強い反射をうけたので、眼に何か刺さったと思ったのでした。"
+        }
+      ],
+      "answer": 0,
+      "credit": {
+        "author": "新美南吉",
+        "work": "手袋を買いに",
+        "url": "https://www.aozora.gr.jp/cards/000121/card637.html",
+        "license": "Public domain (Aozora Bunko)"
+      },
+      "comprehension": {
+        "en": {
+          "question": "Why did the little fox think something had stuck in his eye?",
+          "options": [
+            "The sun reflected very strongly off the fresh snow",
+            "A branch hit him",
+            "Snow fell into his eye",
+            "His mother touched his eye"
+          ],
+          "gloss": "Mother fox went outside the burrow and only then understood. A great deal of pure white snow had fallen during the night. The sun was shining down on it, so the snow reflected dazzlingly. The little fox, who had never seen snow, got such a strong glare that he thought something had pricked his eye."
+        },
+        "id": {
+          "question": "Mengapa anak rubah mengira ada sesuatu yang menusuk matanya?",
+          "options": [
+            "Matahari memantul sangat terang dari salju yang baru turun",
+            "Sebuah ranting mengenainya",
+            "Salju masuk ke matanya",
+            "Ibunya menyentuh matanya"
+          ],
+          "gloss": "Rubah ibu keluar dari pintu liang dan baru saat itu mengerti. Semalam salju putih bersih turun begitu banyak. Matahari menyinarinya dengan cerah, sehingga salju memantulkan cahaya sampai menyilaukan. Anak rubah yang belum pernah melihat salju terkena pantulan yang begitu kuat, jadi ia mengira ada sesuatu yang menusuk matanya."
+        }
+      }
+    },
+    {
+      "slug": "tebukuro-mother",
+      "form": "paragraph",
+      "lines": [
+        {
+          "text": "「お母ちゃん、お手々が冷たい、お手々がちんちんする」と言って、濡《ぬ》れて牡丹色《ぼたんいろ》になった両手を母さん狐の前にさしだしました。母さん狐は、その手に、は――っと息をふっかけて、ぬくとい母さんの手でやんわり包んでやりながら、\r「もうすぐ暖《あたたか》くなるよ、雪をさわると、すぐ暖くなるもんだよ」といいましたが、かあいい坊やの手に霜焼《しもやけ》ができてはかわいそうだから、夜になったら、町まで行って、坊《ぼう》やのお手々にあうような毛糸の手袋を買ってやろうと思いました。"
+        }
+      ],
+      "answer": 0,
+      "credit": {
+        "author": "新美南吉",
+        "work": "手袋を買いに",
+        "url": "https://www.aozora.gr.jp/cards/000121/card637.html",
+        "license": "Public domain (Aozora Bunko)"
+      },
+      "comprehension": {
+        "en": {
+          "question": "What did the mother fox decide to do?",
+          "options": [
+            "Buy woolen mittens for her child in town that night",
+            "Take her child to a doctor",
+            "Stay in the burrow all winter",
+            "Dry her child's hands by the fire"
+          ],
+          "gloss": "“Mama, my hands are cold, my hands are tingling,” he said, holding out his wet, peony-pink hands to mother fox. She breathed warm breath on them and wrapped them gently in her own warm hands. “They'll be warm soon. Touching snow always makes you warm,” she said, but she thought it would be a pity if her dear little one got chilblains, so when night came she would go to town and buy him woolen mittens that fit his little hands."
+        },
+        "id": {
+          "question": "Apa yang diputuskan ibu rubah?",
+          "options": [
+            "Membelikan sarung tangan wol untuk anaknya di kota malam itu",
+            "Membawa anaknya ke dokter",
+            "Tinggal di liang sepanjang musim dingin",
+            "Mengeringkan tangan anaknya di dekat api"
+          ],
+          "gloss": "“Ibu, tanganku dingin, tanganku perih,” katanya sambil mengulurkan kedua tangannya yang basah dan berwarna merah muda ke depan ibu rubah. Ibu rubah menghembuskan napas hangat ke tangan itu dan membungkusnya dengan lembut dalam tangannya yang hangat. “Sebentar lagi hangat. Kalau menyentuh salju, nanti pasti jadi hangat,” katanya. Tetapi ia khawatir tangan anaknya yang manis akan melepuh karena dingin, jadi begitu malam tiba ia berniat pergi ke kota dan membelikan sarung tangan wol yang pas untuk tangan kecil anaknya."
+        }
+      }
+    },
+    {
+      "slug": "gon-rain",
+      "form": "paragraph",
+      "lines": [
+        {
+          "text": "或《ある》秋《あき》のことでした。二、三日雨がふりつづいたその間《あいだ》、ごんは、外へも出られなくて穴の中にしゃがんでいました。\r雨があがると、ごんは、ほっとして穴からはい出ました。空はからっと晴れていて、百舌鳥《もず》の声がきんきん、ひびいていました。"
+        }
+      ],
+      "answer": 0,
+      "credit": {
+        "author": "新美南吉",
+        "work": "ごん狐",
+        "url": "https://www.aozora.gr.jp/cards/000121/card628.html",
+        "license": "Public domain (Aozora Bunko)"
+      },
+      "comprehension": {
+        "en": {
+          "question": "What did Gon do when the rain stopped?",
+          "options": [
+            "He crawled out of his hole",
+            "He went to the village",
+            "He stayed in his hole",
+            "He went fishing"
+          ],
+          "gloss": "It was one autumn day. For two or three days the rain kept falling, and Gon could not even go outside, crouching in his hole. When the rain cleared, Gon crawled out of the hole, relieved. The sky was perfectly clear, and the shrikes' calls rang out sharply."
+        },
+        "id": {
+          "question": "Apa yang dilakukan Gon setelah hujan berhenti?",
+          "options": [
+            "Ia merangkak keluar dari liangnya",
+            "Ia pergi ke desa",
+            "Ia tetap di dalam liang",
+            "Ia pergi memancing"
+          ],
+          "gloss": "Pada suatu hari di musim gugur. Hujan turun terus selama dua tiga hari, dan selama itu Gon tidak bisa keluar sama sekali dan meringkuk di dalam liangnya. Begitu hujan reda, Gon merasa lega dan merangkak keluar dari liang. Langit cerah sekali, dan suara burung bentet terdengar nyaring."
+        }
+      }
+    },
+    {
+      "slug": "gon-fish",
+      "form": "paragraph",
+      "lines": [
+        {
+          "text": "兵十がいなくなると、ごんは、ぴょいと草の中からとび出して、びくのそばへかけつけました。ちょいと、いたずらがしたくなったのです。ごんはびくの中の魚をつかみ出しては、はりきり網のかかっているところより下手《しもて》の川の中を目がけて、ぽんぽんなげこみました。"
+        }
+      ],
+      "answer": 0,
+      "credit": {
+        "author": "新美南吉",
+        "work": "ごん狐",
+        "url": "https://www.aozora.gr.jp/cards/000121/card628.html",
+        "license": "Public domain (Aozora Bunko)"
+      },
+      "comprehension": {
+        "en": {
+          "question": "What did Gon do with Hyoju's fish?",
+          "options": ["Threw them into the river", "Ate them", "Carried them home", "Hid them in the grass"],
+          "gloss": "When Hyoju was gone, Gon leapt out of the grass and dashed over to the fish basket. He felt like playing a little prank. Gon grabbed the fish from the basket and tossed them one after another, plop, into the river below where the fishing net was set."
+        },
+        "id": {
+          "question": "Apa yang Gon lakukan pada ikan milik Hyoju?",
+          "options": [
+            "Melemparkannya kembali ke sungai",
+            "Memakannya",
+            "Membawanya pulang",
+            "Menyembunyikannya di rumput"
+          ],
+          "gloss": "Begitu Hyoju pergi, Gon melompat keluar dari rumput dan berlari ke dekat keranjang ikan. Ia tiba-tiba ingin berbuat iseng. Gon menyambar ikan-ikan dari dalam keranjang dan melemparkannya satu per satu, plop, ke sungai di sebelah hilir tempat jaring dipasang."
+        }
+      }
+    },
+    {
+      "slug": "kumo-lotus",
+      "form": "authentic",
+      "lines": [
+        {
+          "text": "ある日の事でございます。御釈迦様《おしゃかさま》は極楽の蓮池《はすいけ》のふちを、独りでぶらぶら御歩きになっていらっしゃいました。池の中に咲いている蓮《はす》の花は、みんな玉のようにまっ白で、そのまん中にある金色《きんいろ》の蕊《ずい》からは、何とも云えない好《よ》い匂《におい》が、絶間《たえま》なくあたりへ溢《あふ》れて居ります。極楽は丁度朝なのでございましょう。"
+        }
+      ],
+      "answer": 0,
+      "credit": {
+        "author": "芥川龍之介",
+        "work": "蜘蛛の糸",
+        "url": "https://www.aozora.gr.jp/cards/000879/card92.html",
+        "license": "Public domain (Aozora Bunko)"
+      },
+      "comprehension": {
+        "en": {
+          "question": "Where is the Buddha walking?",
+          "options": [
+            "Beside a lotus pond in paradise",
+            "On the bottom of hell",
+            "In a forest",
+            "In a village"
+          ],
+          "gloss": "It happened one day. The Buddha was strolling alone along the edge of the lotus pond in paradise. The lotus flowers blooming in the pond were all pure white like jewels, and from the golden centres a wonderful fragrance beyond words overflowed ceaselessly. It must have been just morning in paradise."
+        },
+        "id": {
+          "question": "Di mana Sang Buddha berjalan?",
+          "options": [
+            "Di tepi kolam teratai di surga",
+            "Di dasar neraka",
+            "Di dalam hutan",
+            "Di sebuah desa"
+          ],
+          "gloss": "Pada suatu hari. Sang Buddha berjalan-jalan seorang diri di tepi kolam teratai di surga. Bunga-bunga teratai yang mekar di kolam semuanya putih bersih bagaikan permata, dan dari putik emas di tengahnya mengalir wangi harum tak terkatakan tanpa henti ke sekelilingnya. Di surga saat itu tampaknya sedang pagi."
+        }
+      }
+    },
+    {
+      "slug": "kumo-hell-view",
+      "form": "authentic",
+      "lines": [
+        {
+          "text": "やがて御釈迦様はその池のふちに御佇《おたたず》みになって、水の面《おもて》を蔽《おお》っている蓮の葉の間から、ふと下の容子《ようす》を御覧になりました。この極楽の蓮池の下は、丁度｜地獄《じごく》の底に当って居りますから、水晶《すいしよう》のような水を透き徹して、三途《さんず》の河や針の山の景色が、丁度｜覗《のぞ》き眼鏡《めがね》を見るように、はっきりと見えるのでございます。"
+        }
+      ],
+      "answer": 0,
+      "credit": {
+        "author": "芥川龍之介",
+        "work": "蜘蛛の糸",
+        "url": "https://www.aozora.gr.jp/cards/000879/card92.html",
+        "license": "Public domain (Aozora Bunko)"
+      },
+      "comprehension": {
+        "en": {
+          "question": "What could the Buddha see through the water of the pond?",
+          "options": [
+            "The bottom of hell, with the river and the mountain of needles",
+            "The village below",
+            "The sky",
+            "Only his own face"
+          ],
+          "gloss": "Soon the Buddha stopped at the edge of the pond and happened to look at the scene below between the lotus leaves covering the water's surface. The bottom of this paradise lotus pond lies exactly over the bottom of hell, so through the crystal-like water the River of Three Crossings and the Mountain of Needles can be seen clearly, as if through a peep-glass."
+        },
+        "id": {
+          "question": "Apa yang dapat dilihat Sang Buddha melalui air kolam?",
+          "options": [
+            "Dasar neraka, dengan sungai dan gunung jarumnya",
+            "Desa di bawah",
+            "Langit",
+            "Hanya wajahnya sendiri"
+          ],
+          "gloss": "Tak lama Sang Buddha berhenti di tepi kolam itu dan secara kebetulan melihat pemandangan di bawah, di antara daun-daun teratai yang menutupi permukaan air. Dasar kolam teratai di surga ini tepat berada di atas dasar neraka, sehingga melalui air yang jernih bagai kristal, Sungai Sanzu dan Gunung Jarum tampak jelas, seperti dilihat lewat kaca pengintai."
+        }
+      }
+    },
+    {
+      "slug": "tebukuro-night",
+      "form": "authentic",
+      "lines": [
+        {
+          "text": "暗い暗い夜が風呂敷《ふろしき》のような影をひろげて野原や森を包みにやって来ましたが、雪はあまり白いので、包んでも包んでも白く浮びあがっていました。"
+        }
+      ],
+      "answer": 0,
+      "credit": {
+        "author": "新美南吉",
+        "work": "手袋を買いに",
+        "url": "https://www.aozora.gr.jp/cards/000121/card637.html",
+        "license": "Public domain (Aozora Bunko)"
+      },
+      "comprehension": {
+        "en": {
+          "question": "Why did the snow still look white at night?",
+          "options": [
+            "It was so white that it stood out even wrapped in darkness",
+            "The moon was full",
+            "The fox lit a lamp",
+            "It kept snowing"
+          ],
+          "gloss": "The dark, dark night spread a shadow like a wrapping cloth and came to wrap the fields and woods, but the snow was so white that however much it was wrapped, it still stood out white."
+        },
+        "id": {
+          "question": "Mengapa salju tetap tampak putih di malam hari?",
+          "options": [
+            "Salju begitu putih sehingga tetap tampak walau diselimuti gelap",
+            "Bulan sedang purnama",
+            "Rubah menyalakan lampu",
+            "Salju terus turun"
+          ],
+          "gloss": "Malam yang sangat gelap datang menebarkan bayangan bagaikan kain pembungkus untuk menyelimuti ladang dan hutan, tetapi salju begitu putih sehingga walau diselimuti berkali-kali, ia tetap tampak putih."
+        }
+      }
+    },
+    {
+      "slug": "tebukuro-avalanche",
+      "form": "authentic",
+      "lines": [
+        {
+          "text": "すると突然、うしろで、\r「どたどた、ざーっ」と物凄《ものすご》い音がして、パン粉のような粉雪《こなゆき》が、ふわーっと子狐におっかぶさって来ました。子狐はびっくりして、雪の中にころがるようにして十｜米《メートル》も向こうへ逃げました。何だろうと思ってふり返って見ましたが何もいませんでした。それは樅《もみ》の枝から雪がなだれ落ちたのでした。まだ枝と枝の間から白い絹糸のように雪がこぼれていました。"
+        }
+      ],
+      "answer": 0,
+      "credit": {
+        "author": "新美南吉",
+        "work": "手袋を買いに",
+        "url": "https://www.aozora.gr.jp/cards/000121/card637.html",
+        "license": "Public domain (Aozora Bunko)"
+      },
+      "comprehension": {
+        "en": {
+          "question": "What made the loud noise behind the little fox?",
+          "options": ["Snow sliding off a fir branch", "A hunter", "His mother", "A falling tree"],
+          "gloss": "Suddenly, behind him, there was a tremendous sound, “thud thud, swoosh,” and powder snow like breadcrumbs fell softly over the little fox. Startled, he rolled through the snow and ran ten metres away. He wondered what it was and looked back, but nothing was there. It was snow that had slid off a fir branch. Snow was still spilling down between the branches like white silk thread."
+        },
+        "id": {
+          "question": "Apa yang menimbulkan suara keras di belakang anak rubah?",
+          "options": [
+            "Salju yang longsor dari ranting pohon cemara",
+            "Seorang pemburu",
+            "Ibunya",
+            "Pohon tumbang"
+          ],
+          "gloss": "Tiba-tiba di belakangnya terdengar bunyi dahsyat, “dubrak, sraaak”, dan salju halus seperti remah roti jatuh menimpa anak rubah. Terkejut, ia berguling di salju dan lari sepuluh meter jauhnya. Ia bertanya-tanya apa itu dan menoleh ke belakang, tetapi tidak ada apa-apa. Rupanya salju longsor dari ranting pohon cemara. Di sela-sela ranting, salju masih tumpah seperti benang sutra putih."
+        }
+      }
+    }
+  ]
+}

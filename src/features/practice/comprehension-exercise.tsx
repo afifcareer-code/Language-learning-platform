@@ -60,7 +60,20 @@ export function ComprehensionExercise({
           data-testid="passage-text"
         >
           {passage.lines.map((line, i) => (
-            <p key={i}>{line}</p>
+            <p key={i}>
+              {line.map((segment, j) =>
+                segment.reading ? (
+                  <ruby key={j}>
+                    {segment.text}
+                    <rp>(</rp>
+                    <rt>{segment.reading}</rt>
+                    <rp>)</rp>
+                  </ruby>
+                ) : (
+                  <span key={j}>{segment.text}</span>
+                ),
+              )}
+            </p>
           ))}
         </div>
       )}
@@ -98,6 +111,23 @@ export function ComprehensionExercise({
           );
         })}
       </div>
+      {feedback !== null && passage.gloss && (
+        <p className="mt-5 text-left text-sm" data-testid="passage-gloss">
+          <span className="font-medium">{t("practice.comprehension.gloss")}</span> {passage.gloss}
+        </p>
+      )}
+      {passage.credit && (
+        <p className="mt-3 text-left text-xs text-muted">
+          {t("practice.comprehension.credit", {
+            author: passage.credit.author,
+            work: passage.credit.work,
+            license: passage.credit.license,
+          })}{" "}
+          <a href={passage.credit.url} target="_blank" rel="noreferrer" className="underline">
+            {t("practice.attribution.link")}
+          </a>
+        </p>
+      )}
     </>
   );
 }

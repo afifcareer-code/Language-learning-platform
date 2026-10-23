@@ -33,7 +33,7 @@ test("Practice is a skill gym apart from the course: five skills with their stag
   await expect(writing).toContainText("Stage 4: Sentence");
   // Stages that are not built yet are listed, honestly marked, and never offered.
   await expect(
-    page.getByRole("list", { name: "Stages for Reading" }).getByRole("listitem").last(),
+    page.getByRole("list", { name: "Stages for Listening" }).getByRole("listitem").last(),
   ).toContainText("Planned");
   // Stages are ranked by complexity, not by JLPT level.
   await expect(page.getByTestId("skill-gym-card").first()).not.toContainText(/\bN[1-5]\b/);
@@ -76,7 +76,7 @@ test("writing a word by hand: the app does not read it, the learner compares and
 test("sentence writing is a stage, and planned stages cannot be opened", async ({ page }) => {
   await page.goto("/practice/session?kind=stage&practiceSkill=writing&stage=sentence");
   await expect(page.getByText("Write this sentence by hand in the writing area.")).toBeVisible();
-  const response = await page.goto("/practice/session?kind=stage&practiceSkill=reading&stage=paragraph");
+  const response = await page.goto("/practice/session?kind=stage&practiceSkill=listening&stage=real-world");
   expect(response?.status()).toBe(404);
 });
 
@@ -135,4 +135,22 @@ test("native sentences: a real speaker's sentence is read, and its authors are c
     "href",
     /tatoeba\.org\/.*sentences\/show\/\d+/,
   );
+});
+
+test("published writing is read with furigana, its meaning appears after the answer, and it is credited", async ({
+  page,
+}) => {
+  for (const stage of ["paragraph", "real-world"]) {
+    await page.goto(`/practice/session?kind=stage&practiceSkill=reading&stage=${stage}`);
+    const text = page.getByTestId("passage-text");
+    await expect(text).toBeVisible();
+    await expect(text.locator("ruby rt").first()).not.toBeEmpty();
+    await expect(page.getByTestId("passage-gloss")).toHaveCount(0);
+    await page.getByRole("group").last().getByRole("button").first().click();
+    await expect(page.getByTestId("passage-gloss")).toBeVisible();
+    await expect(page.getByRole("link", { name: "View source" })).toHaveAttribute(
+      "href",
+      /aozora\.gr\.jp\/cards\//,
+    );
+  }
 });

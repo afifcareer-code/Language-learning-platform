@@ -217,7 +217,9 @@
   "comprehension": {
     "readInstruction": "Baca teksnya, lalu jawab pertanyaannya.",
     "listenInstruction": "Dengarkan percakapannya, lalu jawab pertanyaannya.",
-    "noAudio": "Audio tidak tersedia di perangkat ini, jadi percakapan ditampilkan sebagai teks."
+    "noAudio": "Audio tidak tersedia di perangkat ini, jadi percakapan ditampilkan sebagai teks.",
+    "gloss": "Artinya:",
+    "credit": "{author}, “{work}”. {license}."
   },
   "attribution": {
     "text": "Kalimat {source} #{sentenceId} oleh {sentenceAuthor}; terjemahan #{translationId} oleh {translationAuthor}. {license}.",

@@ -3,6 +3,7 @@ import type { ContentItem } from "@/core/learning";
 import type { WritingStage } from "@/handwriting/guidance";
 import { acceptedStrokeCounts, isKanaItemData, type KanaItemData } from "@/languages/japanese";
 import { isGrammarData, type GrammarTranslation } from "@/languages/japanese/grammar/schema";
+import { parseRuby } from "@/languages/japanese/ruby";
 import { isPassageData, passageSpeech, type PassageTranslation } from "@/languages/japanese/passages/schema";
 import { isSentenceData, type SentenceTranslation } from "@/languages/japanese/sentences/schema";
 import { isNativeData, tatoebaSentenceUrl, type NativeTranslation } from "@/languages/japanese/native/schema";
@@ -66,9 +67,13 @@ export interface PracticeItem {
     translationAuthor: string;
   } | null;
   passage: {
-    form: "text" | "dialogue";
-    lines: string[];
+    form: "text" | "dialogue" | "paragraph" | "authentic";
+    /** Each line as segments; a segment with `reading` is shown with furigana above it. */
+    lines: { text: string; reading?: string }[][];
     question: string;
+    /** What the text says, shown after the answer. */
+    gloss: string | null;
+    credit: { author: string; work: string; url: string; license: string } | null;
     options: { index: number; text: string }[];
   } | null;
 }
@@ -160,7 +165,9 @@ export function toPracticeItem(
       answerKind: "meaning" as const,
       passage: {
         form: item.data.form,
-        lines: item.data.lines.map((l) => l.text),
+        lines: item.data.lines.map((l) => parseRuby(l.text)),
+        gloss: c?.gloss ?? null,
+        credit: item.data.credit ?? null,
         question: c?.question ?? "",
         options: shuffle((c?.options ?? []).map((text, index) => ({ index, text }))),
       },

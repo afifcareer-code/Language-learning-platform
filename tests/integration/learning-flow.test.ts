@@ -709,7 +709,7 @@ describe.each(TEST_DIALECTS)("learning flow on $dialect", ({ dialect, serverUrl 
     expect(talk!.prompts.every((p) => (p.data as { form: string }).form === "dialogue")).toBe(true);
 
     // A stage that is not built yet is never offered.
-    expect(await stageSession("reading", "paragraph")).toBeNull();
+    expect(await stageSession("listening", "real-world")).toBeNull();
     expect(await stageSession("nope", "word")).toBeNull();
   });
 });
