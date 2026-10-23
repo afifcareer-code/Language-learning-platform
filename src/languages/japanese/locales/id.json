@@ -47,6 +47,18 @@
     "ja.sentence.writing": {
       "label": "Menulis kalimat",
       "description": "Tulis kalimat Jepang dengan tangan dari artinya, lalu cocokkan dengan contoh."
+    },
+    "ja.situation.writing": {
+      "label": "Menulis dalam konteks",
+      "description": "Tanggapi sebuah situasi dengan menulis dalam bahasa Jepang, lalu bandingkan dengan contoh."
+    },
+    "ja.reading.passage": {
+      "label": "Membaca teks pendek",
+      "description": "Baca teks Jepang yang pendek dan jawab pertanyaan tentangnya."
+    },
+    "ja.listening.dialogue": {
+      "label": "Mendengarkan percakapan",
+      "description": "Dengarkan percakapan pendek dan jawab pertanyaan tentangnya."
     }
   }
 }

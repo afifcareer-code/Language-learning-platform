@@ -685,19 +685,32 @@ describe.each(TEST_DIALECTS)("learning flow on $dialect", ({ dialect, serverUrl 
         expect(session!.prompts.length, `${skill.id}/${stage.id}`).toBeGreaterThan(0);
         expect(session!.type).toBe(stage.session!.type);
         expect(session!.practiceStage).toBe(`${skill.id}.${stage.id}`);
-        if (["recognition", "listening", "reading"].includes(session!.type)) {
+        if (!stage.session!.ownOptions && ["recognition", "listening", "reading"].includes(session!.type)) {
           for (const p of session!.prompts) expect(session!.choices[p.id]).toContain(p.id);
         }
       }
     }
 
+    // Situations to write about, texts to read and conversations to listen to.
+    const stageSession = (skillId: string, stageId: string) =>
+      getPracticeSession(db, learner, "en", { kind: "stage", skillId, stageId });
+    const context = await stageSession("writing", "context");
+    expect(
+      context!.prompts.every(
+        (p) => p.type === "ja.situation" && (p.data as { kind: string }).kind === "context",
+      ),
+    ).toBe(true);
+    const free = await stageSession("writing", "free");
+    expect(free!.prompts.every((p) => (p.data as { kind: string }).kind === "free")).toBe(true);
+    const text = await stageSession("reading", "text");
+    expect(text!.prompts.every((p) => (p.data as { form: string }).form === "text")).toBe(true);
+    expect(text!.choices).toEqual({});
+    const talk = await stageSession("listening", "conversation");
+    expect(talk!.prompts.every((p) => (p.data as { form: string }).form === "dialogue")).toBe(true);
+
     // A stage that is not built yet is never offered.
-    expect(
-      await getPracticeSession(db, learner, "en", { kind: "stage", skillId: "writing", stageId: "free" }),
-    ).toBeNull();
-    expect(
-      await getPracticeSession(db, learner, "en", { kind: "stage", skillId: "nope", stageId: "word" }),
-    ).toBeNull();
+    expect(await stageSession("reading", "paragraph")).toBeNull();
+    expect(await stageSession("nope", "word")).toBeNull();
   });
 });
 

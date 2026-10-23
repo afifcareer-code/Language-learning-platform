@@ -1,0 +1,290 @@
+{
+  "source": "Original reading texts and dialogues for N5-level learners. Written for this project.",
+  "level": "n5",
+  "items": [
+    {
+      "slug": "morning-routine",
+      "form": "text",
+      "lines": [
+        {
+          "text": "わたしは まいあさ ろくじに おきます。それから あさごはんを たべます。"
+        }
+      ],
+      "answer": 0,
+      "comprehension": {
+        "en": {
+          "question": "What does the writer do after getting up?",
+          "options": ["Eats breakfast", "Goes to school", "Watches TV", "Goes back to sleep"]
+        },
+        "id": {
+          "question": "Apa yang penulis lakukan setelah bangun?",
+          "options": ["Sarapan", "Pergi ke sekolah", "Menonton TV", "Tidur lagi"]
+        }
+      }
+    },
+    {
+      "slug": "sunday-movie",
+      "form": "text",
+      "lines": [
+        {
+          "text": "きょうは にちようびです。わたしは ともだちと えいがを みます。"
+        }
+      ],
+      "answer": 2,
+      "comprehension": {
+        "en": {
+          "question": "What will the writer do with a friend?",
+          "options": ["Study", "Go shopping", "Watch a movie", "Cook dinner"]
+        },
+        "id": {
+          "question": "Apa yang akan penulis lakukan bersama teman?",
+          "options": ["Belajar", "Berbelanja", "Menonton film", "Memasak makan malam"]
+        }
+      }
+    },
+    {
+      "slug": "family-photo",
+      "form": "text",
+      "lines": [
+        {
+          "text": "これは わたしの かぞくの しゃしんです。ちちと ははと あにが います。"
+        }
+      ],
+      "answer": 1,
+      "comprehension": {
+        "en": {
+          "question": "Who is in the family photo?",
+          "options": [
+            "Mother and sister",
+            "Father, mother and older brother",
+            "Grandfather and grandmother",
+            "Only the writer"
+          ]
+        },
+        "id": {
+          "question": "Siapa yang ada di foto keluarga?",
+          "options": [
+            "Ibu dan kakak perempuan",
+            "Ayah, ibu, dan kakak laki-laki",
+            "Kakek dan nenek",
+            "Hanya penulis"
+          ]
+        }
+      }
+    },
+    {
+      "slug": "water-price",
+      "form": "text",
+      "lines": [
+        {
+          "text": "みせで みずを かいました。ひゃくごじゅうえんでした。"
+        }
+      ],
+      "answer": 3,
+      "comprehension": {
+        "en": {
+          "question": "How much was the water?",
+          "options": ["50 yen", "100 yen", "1500 yen", "150 yen"]
+        },
+        "id": {
+          "question": "Berapa harga air putihnya?",
+          "options": ["50 yen", "100 yen", "1500 yen", "150 yen"]
+        }
+      }
+    },
+    {
+      "slug": "walk-to-station",
+      "form": "text",
+      "lines": [
+        {
+          "text": "えきは がっこうの ちかくに あります。わたしは あるいて いきます。"
+        }
+      ],
+      "answer": 0,
+      "comprehension": {
+        "en": {
+          "question": "How does the writer go to the station?",
+          "options": ["On foot", "By bus", "By bicycle", "By car"]
+        },
+        "id": {
+          "question": "Bagaimana penulis pergi ke stasiun?",
+          "options": ["Berjalan kaki", "Naik bus", "Naik sepeda", "Naik mobil"]
+        }
+      }
+    },
+    {
+      "slug": "rainy-tomorrow",
+      "form": "text",
+      "lines": [
+        {
+          "text": "あしたは あめです。わたしは かさを もって いきます。"
+        }
+      ],
+      "answer": 2,
+      "comprehension": {
+        "en": {
+          "question": "What will the writer take along?",
+          "options": ["A hat", "A camera", "An umbrella", "A book"]
+        },
+        "id": {
+          "question": "Apa yang akan penulis bawa?",
+          "options": ["Topi", "Kamera", "Payung", "Buku"]
+        }
+      }
+    },
+    {
+      "slug": "restaurant-order",
+      "form": "dialogue",
+      "lines": [
+        {
+          "speaker": "A",
+          "text": "いらっしゃいませ。"
+        },
+        {
+          "speaker": "B",
+          "text": "みずを ください。"
+        },
+        {
+          "speaker": "A",
+          "text": "はい、どうぞ。"
+        }
+      ],
+      "answer": 1,
+      "comprehension": {
+        "en": {
+          "question": "What does the customer ask for?",
+          "options": ["Tea", "Water", "Rice", "The menu"]
+        },
+        "id": {
+          "question": "Apa yang diminta pelanggan?",
+          "options": ["Teh", "Air putih", "Nasi", "Menu"]
+        }
+      }
+    },
+    {
+      "slug": "price-question",
+      "form": "dialogue",
+      "lines": [
+        {
+          "speaker": "A",
+          "text": "これは いくらですか。"
+        },
+        {
+          "speaker": "B",
+          "text": "ごひゃくえんです。"
+        }
+      ],
+      "answer": 3,
+      "comprehension": {
+        "en": {
+          "question": "How much is it?",
+          "options": ["50 yen", "150 yen", "1000 yen", "500 yen"]
+        },
+        "id": {
+          "question": "Berapa harganya?",
+          "options": ["50 yen", "150 yen", "1000 yen", "500 yen"]
+        }
+      }
+    },
+    {
+      "slug": "station-question",
+      "form": "dialogue",
+      "lines": [
+        {
+          "speaker": "A",
+          "text": "すみません、えきは どこですか。"
+        },
+        {
+          "speaker": "B",
+          "text": "あそこです。"
+        }
+      ],
+      "answer": 0,
+      "comprehension": {
+        "en": {
+          "question": "What is A looking for?",
+          "options": ["The station", "A shop", "The school", "A restaurant"]
+        },
+        "id": {
+          "question": "Apa yang dicari A?",
+          "options": ["Stasiun", "Toko", "Sekolah", "Restoran"]
+        }
+      }
+    },
+    {
+      "slug": "time-question",
+      "form": "dialogue",
+      "lines": [
+        {
+          "speaker": "A",
+          "text": "いま なんじですか。"
+        },
+        {
+          "speaker": "B",
+          "text": "さんじです。"
+        }
+      ],
+      "answer": 2,
+      "comprehension": {
+        "en": {
+          "question": "What time is it?",
+          "options": ["1 o'clock", "2 o'clock", "3 o'clock", "4 o'clock"]
+        },
+        "id": {
+          "question": "Jam berapa sekarang?",
+          "options": ["Jam 1", "Jam 2", "Jam 3", "Jam 4"]
+        }
+      }
+    },
+    {
+      "slug": "name-question",
+      "form": "dialogue",
+      "lines": [
+        {
+          "speaker": "A",
+          "text": "おなまえは なんですか。"
+        },
+        {
+          "speaker": "B",
+          "text": "たなかです。"
+        }
+      ],
+      "answer": 1,
+      "comprehension": {
+        "en": {
+          "question": "What is B's name?",
+          "options": ["Suzuki", "Tanaka", "Sato", "Ito"]
+        },
+        "id": {
+          "question": "Siapa nama B?",
+          "options": ["Suzuki", "Tanaka", "Sato", "Ito"]
+        }
+      }
+    },
+    {
+      "slug": "school-tomorrow",
+      "form": "dialogue",
+      "lines": [
+        {
+          "speaker": "A",
+          "text": "あしたは がっこうへ いきますか。"
+        },
+        {
+          "speaker": "B",
+          "text": "いいえ、いきません。"
+        }
+      ],
+      "answer": 3,
+      "comprehension": {
+        "en": {
+          "question": "Will B go to school tomorrow?",
+          "options": ["Yes, in the morning", "Yes, in the afternoon", "Maybe", "No"]
+        },
+        "id": {
+          "question": "Apakah B akan pergi ke sekolah besok?",
+          "options": ["Ya, pagi hari", "Ya, sore hari", "Mungkin", "Tidak"]
+        }
+      }
+    }
+  ]
+}

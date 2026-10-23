@@ -3,7 +3,9 @@ import type { ContentItem } from "@/core/learning";
 import type { WritingStage } from "@/handwriting/guidance";
 import { acceptedStrokeCounts, isKanaItemData, type KanaItemData } from "@/languages/japanese";
 import { isGrammarData, type GrammarTranslation } from "@/languages/japanese/grammar/schema";
+import { isPassageData, passageSpeech, type PassageTranslation } from "@/languages/japanese/passages/schema";
 import { isSentenceData, type SentenceTranslation } from "@/languages/japanese/sentences/schema";
+import { isSituationData, type SituationTranslation } from "@/languages/japanese/situations/schema";
 import {
   isVocabularyData,
   vocabularyDisplay,
@@ -51,6 +53,13 @@ export interface PracticeItem {
   choices: { id: string; label: string; glyph: string }[];
   /** For sentence building: the pieces to arrange, shuffled. */
   tokens: string[];
+  /** For comprehension: the text or dialogue lines, the question and the shuffled options (with their original index). */
+  passage: {
+    form: "text" | "dialogue";
+    lines: string[];
+    question: string;
+    options: { index: number; text: string }[];
+  } | null;
 }
 
 /** The text that represents an item, e.g. "あ", "〜さん", or a sentence. */
@@ -120,8 +129,40 @@ export function toPracticeItem(
     audioPrompt: false,
     answerKind: "character" as const,
     tokens: [] as string[],
+    passage: null,
   };
 
+  if (isPassageData(item.data)) {
+    const c = options.translation as PassageTranslation | undefined;
+    const speech = passageSpeech(item.data);
+    return {
+      ...base,
+      display: speech,
+      displayLang: "ja",
+      displayStyle: "text",
+      speech,
+      audioPrompt: item.data.form === "dialogue",
+      answerKind: "meaning" as const,
+      passage: {
+        form: item.data.form,
+        lines: item.data.lines.map((l) => l.text),
+        question: c?.question ?? "",
+        options: shuffle((c?.options ?? []).map((text, index) => ({ index, text }))),
+      },
+    };
+  }
+  if (isSituationData(item.data)) {
+    const prompt = (options.translation as SituationTranslation | undefined)?.prompt ?? item.data.model;
+    return {
+      ...base,
+      display: item.data.model,
+      displayLang: "ja",
+      displayStyle: "word",
+      speech: item.data.model,
+      cue: prompt,
+      cueKind: item.data.kind,
+    };
+  }
   if (isKanaItemData(item.data)) {
     return {
       ...base,

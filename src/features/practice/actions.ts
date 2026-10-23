@@ -13,7 +13,9 @@ import {
   type WritingEvaluation,
 } from "@/handwriting";
 import { acceptedStrokeCounts, isKanaItemData } from "@/languages/japanese";
+import { isPassageData, type PassageTranslation } from "@/languages/japanese/passages/schema";
 import { isSentenceData } from "@/languages/japanese/sentences/schema";
+import { isSituationData } from "@/languages/japanese/situations/schema";
 import { isVocabularyData } from "@/languages/japanese/vocabulary/schema";
 import { getLanguageModule } from "@/languages/registry";
 import { choiceLabel, itemDisplay } from "@/features/japanese/practice-items";
@@ -61,6 +63,8 @@ const attemptSchema = z.object({
   response: z.discriminatedUnion("kind", [
     z.object({ kind: z.literal("choice"), choiceId: id }),
     z.object({ kind: z.literal("text"), answer: z.string().max(50) }),
+    // A comprehension question: the learner picks one of the item's own four options.
+    z.object({ kind: z.literal("option"), index: z.number().int().min(0).max(3) }),
     // Writing a word or sentence by hand: the learner compares with the model and rates it.
     // Nothing reads the handwriting; the rating is the evidence.
     z.object({ kind: z.literal("self_writing"), rating: z.enum(SELF_WRITING_RATINGS) }),
@@ -155,14 +159,28 @@ export async function submitAttempt(input: AttemptInput): Promise<AttemptFeedbac
       break;
     }
     case "self_writing": {
-      if (!isVocabularyData(item.data) && !isSentenceData(item.data)) {
+      if (!isVocabularyData(item.data) && !isSentenceData(item.data) && !isSituationData(item.data)) {
         throw new Error("This item cannot be written by hand yet");
       }
       const { rating } = data.response;
-      expected = isVocabularyData(item.data) ? item.data.kana : item.data.text;
+      expected = isVocabularyData(item.data)
+        ? item.data.kana
+        : isSituationData(item.data)
+          ? item.data.model
+          : item.data.text;
       correct = rating === "correct";
       score = SELF_WRITING_SCORE[rating];
       response = rating;
+      break;
+    }
+    case "option": {
+      if (!isPassageData(item.data)) throw new Error("This item has no answer options");
+      const translations = await getContentTranslations(db, [item.id], await getLocale());
+      const options = (translations.get(item.id) as PassageTranslation | undefined)?.options ?? [];
+      correct = data.response.index === item.data.answer;
+      score = correct ? 1 : 0;
+      response = String(data.response.index);
+      expected = options[item.data.answer] ?? "";
       break;
     }
     case "sequence": {

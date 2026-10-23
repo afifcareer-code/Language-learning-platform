@@ -33,6 +33,7 @@ export const practiceFileSchema = z.object({
                   type: z.enum(ACTIVITY_TYPES),
                   itemType: z.string().min(1),
                   dataEquals: z.record(z.string(), z.string()).optional(),
+                  ownOptions: z.boolean().optional(),
                 })
                 .optional(),
             }),

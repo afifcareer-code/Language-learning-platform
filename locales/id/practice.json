@@ -189,7 +189,9 @@
   "textWriting": {
     "instruction": {
       "word": "Tulis kata ini dengan tangan di area menulis.",
-      "sentence": "Tulis kalimat ini dengan tangan di area menulis."
+      "sentence": "Tulis kalimat ini dengan tangan di area menulis.",
+      "context": "Baca situasinya dan tulis balasan yang sesuai dengan tangan di area menulis.",
+      "free": "Tulis pesan singkat Anda sendiri dengan tangan di area menulis. Contohnya hanya salah satu kemungkinan."
     },
     "meaning": "Arti",
     "canvasLabel": "Area menulis untuk {prompt}",
@@ -202,6 +204,17 @@
       "correct": "Saya menulis dengan benar",
       "partly": "Hampir: ada kesalahan kecil",
       "incorrect": "Belum"
-    }
+    },
+    "ratingFree": {
+      "correct": "Jelas dan alami",
+      "partly": "Bisa dipahami, ada kesalahan",
+      "incorrect": "Belum"
+    },
+    "modelFree": "Contoh"
+  },
+  "comprehension": {
+    "readInstruction": "Baca teksnya, lalu jawab pertanyaannya.",
+    "listenInstruction": "Dengarkan percakapannya, lalu jawab pertanyaannya.",
+    "noAudio": "Audio tidak tersedia di perangkat ini, jadi percakapan ditampilkan sebagai teks."
   }
 }

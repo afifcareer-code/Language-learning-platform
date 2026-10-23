@@ -12,6 +12,7 @@ import { getCurriculum, locateLesson } from "@/server/repositories/curriculum";
 import { requireLearningContext } from "@/server/learning-context";
 import { getLearnerProgress, progressKey } from "@/server/repositories/progress";
 import type { PracticeSession as Session } from "@/server/services/practice";
+import { isPassageData } from "@/languages/japanese/passages/schema";
 import { itemDisplay, toPracticeItem, type PracticeItem } from "@/features/japanese/practice-items";
 import { introductionItems } from "./introduction";
 import type { IntroductionItem } from "./introduction-step";
@@ -112,14 +113,23 @@ export async function SessionPage({
     .filter(Boolean)
     .join(" · ");
 
-  const kind = EXERCISE[session.type];
+  // Texts and conversations carry their own question and options.
+  const kind =
+    session.prompts.every((p) => isPassageData(p.data)) && session.prompts.length > 0
+      ? "comprehension"
+      : EXERCISE[session.type];
   const progress = kind ? await getLearnerProgress(db, learner.id) : null;
   // Meanings and translations in the learner's interface language.
   const translations = await getContentTranslations(db, Object.keys(session.items), t.locale);
   const items = session.prompts
     .map((item) =>
       toPracticeItem(item, {
-        kind: kind === "textwriting" ? "production" : (kind ?? "recall"),
+        kind:
+          kind === "textwriting"
+            ? "production"
+            : kind === "comprehension"
+              ? "recognition"
+              : (kind ?? "recall"),
         skill: session.skill,
         locale: t.locale,
         translation: translations.get(item.id),
