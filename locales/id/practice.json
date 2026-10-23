@@ -13,7 +13,8 @@
     "audioPrompt": "Dengarkan bunyinya, lalu pilih karakter yang sesuai.",
     "audioQuestion": "Karakter apa yang kamu dengar?",
     "visualPrompt": "Lihat karakternya, lalu pilih bunyi yang sesuai.",
-    "noAudio": "Audio tidak tersedia di perangkat ini, jadi soal ini menampilkan karakternya."
+    "noAudio": "Audio tidak tersedia di perangkat ini, jadi soal ini menampilkan karakternya.",
+    "audioQuestionMeaning": "Arti mana yang Anda dengar?"
   },
   "recall": {
     "label": "Ingat bunyi karakter ini tanpa pilihan, lalu ketik dalam romaji."

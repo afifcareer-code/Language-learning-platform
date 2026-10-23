@@ -1,0 +1,107 @@
+{
+  "source": "Original vocabulary list for N5 · Family and people. Meanings written for this project.",
+  "level": "n5",
+  "items": [
+    {
+      "kana": "かぞく",
+      "romaji": "kazoku",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "family",
+        "id": "keluarga"
+      }
+    },
+    {
+      "kana": "ちち",
+      "romaji": "chichi",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "my father",
+        "id": "ayah saya"
+      }
+    },
+    {
+      "kana": "はは",
+      "romaji": "haha",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "my mother",
+        "id": "ibu saya"
+      }
+    },
+    {
+      "kana": "あに",
+      "romaji": "ani",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "my older brother",
+        "id": "kakak laki-laki saya"
+      }
+    },
+    {
+      "kana": "あね",
+      "romaji": "ane",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "my older sister",
+        "id": "kakak perempuan saya"
+      }
+    },
+    {
+      "kana": "ともだち",
+      "romaji": "tomodachi",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "friend",
+        "id": "teman"
+      }
+    },
+    {
+      "kana": "ひと",
+      "romaji": "hito",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "person",
+        "id": "orang"
+      }
+    },
+    {
+      "kana": "おとうさん",
+      "romaji": "otousan",
+      "alternateRomaji": ["otosan"],
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "(someone's) father",
+        "id": "ayah (orang lain)"
+      }
+    },
+    {
+      "kana": "おかあさん",
+      "romaji": "okaasan",
+      "alternateRomaji": ["okasan"],
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "(someone's) mother",
+        "id": "ibu (orang lain)"
+      }
+    },
+    {
+      "kana": "なまえ",
+      "romaji": "namae",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "name",
+        "id": "nama"
+      }
+    },
+    {
+      "kana": "だれ",
+      "romaji": "dare",
+      "partOfSpeech": "pronoun",
+      "meaning": {
+        "en": "who",
+        "id": "siapa"
+      }
+    }
+  ]
+}

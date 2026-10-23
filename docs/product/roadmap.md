@@ -4,16 +4,16 @@ The roadmap is intentionally incremental. Each milestone should leave the produc
 
 ## Languages
 
-| Order | Language                           | Framework | Status                                                        |
-| ----- | ---------------------------------- | --------- | ------------------------------------------------------------- |
-| 1     | Japanese                           | JLPT      | Available (Foundation, first N5 lesson; N4–N1 in development) |
-| 2     | English                            | CEFR      | Coming soon                                                   |
-| 3     | Mandarin Chinese                   | HSK       | Coming soon                                                   |
-| 4     | Spanish                            | CEFR      | Coming soon                                                   |
-| 5     | German                             | CEFR      | Coming soon                                                   |
-| 6     | French                             | CEFR      | Coming soon                                                   |
-| 7     | Korean                             | TOPIK     | Coming soon                                                   |
-| 8–11  | Portuguese, Arabic, Italian, Hindi | —         | Planned (not yet in the catalog)                              |
+| Order | Language                           | Framework | Status                                                       |
+| ----- | ---------------------------------- | --------- | ------------------------------------------------------------ |
+| 1     | Japanese                           | JLPT      | Available (Foundation, N5 lessons 1–6; N4–N1 in development) |
+| 2     | English                            | CEFR      | Coming soon                                                  |
+| 3     | Mandarin Chinese                   | HSK       | Coming soon                                                  |
+| 4     | Spanish                            | CEFR      | Coming soon                                                  |
+| 5     | German                             | CEFR      | Coming soon                                                  |
+| 6     | French                             | CEFR      | Coming soon                                                  |
+| 7     | Korean                             | TOPIK     | Coming soon                                                  |
+| 8–11  | Portuguese, Arabic, Italian, Hindi | —         | Planned (not yet in the catalog)                             |
 
 ## v0.1: Foundation (current)
 
@@ -39,7 +39,7 @@ The roadmap is intentionally incremental. Each milestone should leave the produc
 ## v0.2: Kana complete, N5 begins
 
 - [ ] Kana assessment and an Assessment page (uses the existing definition / attempt / result model)
-- [ ] N5 curriculum, structured as situation → vocabulary → grammar → pattern practice → listening → reading → production → review (original content). Lesson 1 (Introductions) is done
+- [ ] N5 curriculum, structured as situation → vocabulary → grammar → pattern practice → listening → reading → production → review (original content). Lessons 1-6 are done (sentence-level reading and listening included); passages and conversations are not
 - [x] Basic vocabulary written in kana, with localized meanings; word recognition, word recall and sentence building
 - [x] Dakuten and handakuten (が, ぱ, …) and combination kana (きゃ, …)
 - [ ] Audio pronunciation assets (beyond browser speech synthesis)

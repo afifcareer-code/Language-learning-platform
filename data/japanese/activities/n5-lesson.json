@@ -72,6 +72,54 @@
           "explanation": "Menyusun kata dan partikel sendiri adalah latihan terkontrol: langkah antara memahami pola dan menggunakannya dengan bebas."
         }
       }
+    },
+    {
+      "key": "sentence-reading",
+      "type": "reading",
+      "skill": "ja.reading.sentence",
+      "contentType": "ja.sentence",
+      "difficulty": 2,
+      "successCriteria": ["word_identification", "contextual_usage"],
+      "passScore": 0.8,
+      "targetMastery": "proficient",
+      "text": {
+        "en": {
+          "title": "Read the sentences of {lesson}",
+          "objective": "Read the {count} sentences of this lesson and say what each one means.",
+          "instruction": "Read the Japanese sentence, then choose its meaning.",
+          "explanation": "Reading a whole sentence checks that you can use the words and patterns together, not only one at a time."
+        },
+        "id": {
+          "title": "Baca kalimat {lesson}",
+          "objective": "Membaca {count} kalimat pelajaran ini dan menyebutkan artinya.",
+          "instruction": "Baca kalimat bahasa Jepang, lalu pilih artinya.",
+          "explanation": "Membaca kalimat utuh memeriksa apakah Anda dapat memakai kata dan pola bersama-sama, bukan satu per satu."
+        }
+      }
+    },
+    {
+      "key": "sentence-listening",
+      "type": "listening",
+      "skill": "ja.listening.sentence",
+      "contentType": "ja.sentence",
+      "difficulty": 3,
+      "successCriteria": ["audio_recognition", "contextual_usage"],
+      "passScore": 0.8,
+      "targetMastery": "proficient",
+      "text": {
+        "en": {
+          "title": "Listen to the sentences of {lesson}",
+          "objective": "Understand the {count} sentences of this lesson when you hear them, without seeing them.",
+          "instruction": "Listen to the sentence, then choose its meaning.",
+          "explanation": "Hearing a sentence without the text is what real conversation is like: you connect sound and meaning directly."
+        },
+        "id": {
+          "title": "Simak kalimat {lesson}",
+          "objective": "Memahami {count} kalimat pelajaran ini saat mendengarnya, tanpa melihat teksnya.",
+          "instruction": "Dengarkan kalimat, lalu pilih artinya.",
+          "explanation": "Mendengar kalimat tanpa teks seperti percakapan sungguhan: Anda menghubungkan bunyi dengan makna secara langsung."
+        }
+      }
     }
   ]
 }

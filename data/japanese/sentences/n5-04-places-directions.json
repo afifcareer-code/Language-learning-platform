@@ -1,0 +1,83 @@
+{
+  "source": "Original practice sentences for N5 · Places and directions.",
+  "level": "n5",
+  "items": [
+    {
+      "slug": "toire-doko",
+      "text": "トイレは どこですか。",
+      "tokens": ["トイレ", "は", "どこ", "です", "か"],
+      "romaji": "toire wa doko desu ka",
+      "grammar": "n5-doko",
+      "translation": {
+        "en": "Where is the toilet?",
+        "id": "Toilet di mana?"
+      }
+    },
+    {
+      "slug": "toire-asoko",
+      "text": "トイレは あそこです。",
+      "tokens": ["トイレ", "は", "あそこ", "です"],
+      "romaji": "toire wa asoko desu",
+      "grammar": "n5-doko",
+      "translation": {
+        "en": "The toilet is over there.",
+        "id": "Toilet ada di sana."
+      }
+    },
+    {
+      "slug": "eki-chikai",
+      "text": "えきは ちかいです。",
+      "tokens": ["えき", "は", "ちかい", "です"],
+      "romaji": "eki wa chikai desu",
+      "grammar": "n5-doko",
+      "translation": {
+        "en": "The station is near.",
+        "id": "Stasiun dekat."
+      }
+    },
+    {
+      "slug": "ginkou-tooi",
+      "text": "ぎんこうは とおいです。",
+      "tokens": ["ぎんこう", "は", "とおい", "です"],
+      "romaji": "ginkou wa tooi desu",
+      "grammar": "n5-doko",
+      "translation": {
+        "en": "The bank is far.",
+        "id": "Bank jauh."
+      }
+    },
+    {
+      "slug": "byouin-asoko-arimasu",
+      "text": "びょういんは あそこに あります。",
+      "tokens": ["びょういん", "は", "あそこ", "に", "あります"],
+      "romaji": "byouin wa asoko ni arimasu",
+      "grammar": "n5-ni-arimasu",
+      "translation": {
+        "en": "The hospital is over there.",
+        "id": "Rumah sakit ada di sana."
+      }
+    },
+    {
+      "slug": "sensei-koko-imasu",
+      "text": "せんせいは ここに います。",
+      "tokens": ["せんせい", "は", "ここ", "に", "います"],
+      "romaji": "sensei wa koko ni imasu",
+      "grammar": "n5-ni-arimasu",
+      "translation": {
+        "en": "The teacher is here.",
+        "id": "Guru ada di sini."
+      }
+    },
+    {
+      "slug": "eki-e-ikimasu",
+      "text": "わたしは えきへ いきます。",
+      "tokens": ["わたし", "は", "えき", "へ", "いきます"],
+      "romaji": "watashi wa eki e ikimasu",
+      "grammar": "n5-he-ikimasu",
+      "translation": {
+        "en": "I go to the station.",
+        "id": "Saya pergi ke stasiun."
+      }
+    }
+  ]
+}

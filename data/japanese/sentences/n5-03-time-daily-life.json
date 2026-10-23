@@ -1,0 +1,72 @@
+{
+  "source": "Original practice sentences for N5 · Time and daily life.",
+  "level": "n5",
+  "items": [
+    {
+      "slug": "ima-nanji",
+      "text": "いま なんじですか。",
+      "tokens": ["いま", "なんじ", "です", "か"],
+      "romaji": "ima nanji desu ka",
+      "grammar": "n5-nanji",
+      "translation": {
+        "en": "What time is it now?",
+        "id": "Sekarang jam berapa?"
+      }
+    },
+    {
+      "slug": "ima-gogo-goji",
+      "text": "いまは ごご ごじです。",
+      "tokens": ["いま", "は", "ごご", "ごじ", "です"],
+      "romaji": "ima wa gogo goji desu",
+      "grammar": "n5-nanji",
+      "translation": {
+        "en": "It is five p.m. now.",
+        "id": "Sekarang jam lima sore."
+      }
+    },
+    {
+      "slug": "rokuji-ni-okimasu",
+      "text": "わたしは ろくじに おきます。",
+      "tokens": ["わたし", "は", "ろくじ", "に", "おきます"],
+      "romaji": "watashi wa rokuji ni okimasu",
+      "grammar": "n5-ni-time",
+      "translation": {
+        "en": "I get up at six.",
+        "id": "Saya bangun jam enam."
+      }
+    },
+    {
+      "slug": "juuji-ni-nemasu",
+      "text": "わたしは じゅうじに ねます。",
+      "tokens": ["わたし", "は", "じゅうじ", "に", "ねます"],
+      "romaji": "watashi wa juuji ni nemasu",
+      "grammar": "n5-ni-time",
+      "translation": {
+        "en": "I go to bed at ten.",
+        "id": "Saya tidur jam sepuluh."
+      }
+    },
+    {
+      "slug": "gogo-niji-ni-kaerimasu",
+      "text": "わたしは ごご にじに かえります。",
+      "tokens": ["わたし", "は", "ごご", "にじ", "に", "かえります"],
+      "romaji": "watashi wa gogo niji ni kaerimasu",
+      "grammar": "n5-ni-time",
+      "translation": {
+        "en": "I go home at two p.m.",
+        "id": "Saya pulang jam dua siang."
+      }
+    },
+    {
+      "slug": "hachiji-ni-nemasen",
+      "text": "わたしは はちじに ねません。",
+      "tokens": ["わたし", "は", "はちじ", "に", "ねません"],
+      "romaji": "watashi wa hachiji ni nemasen",
+      "grammar": "n5-masu",
+      "translation": {
+        "en": "I do not go to bed at eight.",
+        "id": "Saya tidak tidur jam delapan."
+      }
+    }
+  ]
+}

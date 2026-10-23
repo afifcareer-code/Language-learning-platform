@@ -127,7 +127,7 @@ export async function getPracticeSession(
 
   const items: Record<string, ContentItem> = Object.fromEntries(prompts.map((p) => [p.id, p]));
   const choices: Record<string, string[]> = {};
-  if (type === "recognition" || type === "multiple_choice" || type === "listening") {
+  if (type === "recognition" || type === "multiple_choice" || type === "listening" || type === "reading") {
     const pool = await getContentItems(db, [...new Set(curriculum.lessons.flatMap((l) => l.itemIds))]);
     const learnerPairs = await getConfusionPairs(db, learner.id);
     for (const item of prompts) {

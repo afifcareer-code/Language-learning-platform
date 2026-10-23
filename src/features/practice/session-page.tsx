@@ -20,6 +20,8 @@ import { PracticeSession, type ExerciseKind } from "./practice-session";
 const EXERCISE: Partial<Record<Session["type"], ExerciseKind>> = {
   recognition: "recognition",
   multiple_choice: "recognition",
+  reading: "recognition",
+  listening: "recognition",
   recall: "recall",
   writing: "writing",
   sentence_building: "sentence",
@@ -103,6 +105,7 @@ export async function SessionPage({
     .map((item) =>
       toPracticeItem(item, {
         kind: kind ?? "recall",
+        skill: session.skill,
         locale: t.locale,
         translation: translations.get(item.id),
         choiceItems: (session.choices[item.id] ?? [])

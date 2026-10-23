@@ -6,7 +6,7 @@
   "internalStandardNote": "Ambang batas di halaman ini adalah standar internal platform. Ini bukan skor resmi {framework}, dan lulus di sini tidak menjamin lulus ujian.",
   "entry": {
     "learnTitle": "Apa yang akan Anda pelajari",
-    "learnBody": "Dasar sehari-hari: mengenali kata, menyusun kalimat sederhana, lalu membaca dan mendengarkan teks pendek.",
+    "learnBody": "Dasar sehari-hari: mengenali kata, menyusun kalimat sederhana, serta membaca dan menyimak kalimat pendek.",
     "needTitle": "Yang dibutuhkan lebih dulu",
     "needBody": "Anda bisa membaca dan mengenali hiragana dan katakana ({level}).",
     "knowTitle": "Bagaimana kami tahu Anda sudah belajar",
@@ -84,7 +84,9 @@
     "notTaken": "Belum dikerjakan.",
     "sections": {
       "vocabulary": "Kosakata",
-      "grammar": "Tata bahasa"
+      "grammar": "Tata bahasa",
+      "reading": "Membaca",
+      "listening": "Menyimak"
     }
   },
   "views": {

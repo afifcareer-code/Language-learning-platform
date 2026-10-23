@@ -1,0 +1,89 @@
+{
+  "source": "Original grammar explanations for N5 · Food and ordering, written for this project.",
+  "level": "n5",
+  "items": [
+    {
+      "slug": "n5-wo-tabemasu",
+      "pattern": "N を V ます",
+      "meaning": {
+        "en": "does V to N",
+        "id": "melakukan V pada N"
+      },
+      "explanation": {
+        "en": "を marks what the verb acts on: りんごを たべます is eat an apple. In writing and speech, を is read \"o\".",
+        "id": "を menandai objek dari kata kerja: りんごを たべます berarti makan apel. を dibaca \"o\"."
+      },
+      "examples": [
+        {
+          "ja": "わたしは りんごを たべます。",
+          "romaji": "watashi wa ringo o tabemasu",
+          "translation": {
+            "en": "I eat an apple.",
+            "id": "Saya makan apel."
+          }
+        },
+        {
+          "ja": "わたしは おちゃを のみます。",
+          "romaji": "watashi wa ocha o nomimasu",
+          "translation": {
+            "en": "I drink tea.",
+            "id": "Saya minum teh."
+          }
+        }
+      ],
+      "related": ["n5-wo-kudasai", "n5-masu"]
+    },
+    {
+      "slug": "n5-suki",
+      "pattern": "N が すきです",
+      "meaning": {
+        "en": "likes N",
+        "id": "suka N"
+      },
+      "explanation": {
+        "en": "Say what you like with が. The thing you like takes が, not を: にくが すきです.",
+        "id": "Nyatakan apa yang Anda suka dengan が. Hal yang disukai memakai が, bukan を: にくが すきです."
+      },
+      "examples": [
+        {
+          "ja": "わたしは にくが すきです。",
+          "romaji": "watashi wa niku ga suki desu",
+          "translation": {
+            "en": "I like meat.",
+            "id": "Saya suka daging."
+          }
+        }
+      ],
+      "commonErrors": [
+        {
+          "en": "Using を with すき: use が.",
+          "id": "Memakai を dengan すき: pakai が."
+        }
+      ],
+      "related": ["n5-wa-desu"]
+    },
+    {
+      "slug": "n5-oishii",
+      "pattern": "N は おいしいです",
+      "meaning": {
+        "en": "N is delicious",
+        "id": "N enak"
+      },
+      "explanation": {
+        "en": "Adjectives that end in い, like おいしい, can end a polite sentence directly with です.",
+        "id": "Kata sifat berakhiran い, seperti おいしい, dapat mengakhiri kalimat sopan langsung dengan です."
+      },
+      "examples": [
+        {
+          "ja": "さかなは おいしいです。",
+          "romaji": "sakana wa oishii desu",
+          "translation": {
+            "en": "The fish is delicious.",
+            "id": "Ikannya enak."
+          }
+        }
+      ],
+      "related": ["n5-wa-desu"]
+    }
+  ]
+}

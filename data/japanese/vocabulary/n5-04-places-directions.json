@@ -1,0 +1,117 @@
+{
+  "source": "Original vocabulary list for N5 · Places and directions. Meanings written for this project.",
+  "level": "n5",
+  "items": [
+    {
+      "kana": "ここ",
+      "romaji": "koko",
+      "partOfSpeech": "pronoun",
+      "meaning": {
+        "en": "here",
+        "id": "di sini"
+      }
+    },
+    {
+      "kana": "そこ",
+      "romaji": "soko",
+      "partOfSpeech": "pronoun",
+      "meaning": {
+        "en": "there (near you)",
+        "id": "di situ"
+      }
+    },
+    {
+      "kana": "あそこ",
+      "romaji": "asoko",
+      "partOfSpeech": "pronoun",
+      "meaning": {
+        "en": "over there",
+        "id": "di sana"
+      }
+    },
+    {
+      "kana": "どこ",
+      "romaji": "doko",
+      "partOfSpeech": "pronoun",
+      "meaning": {
+        "en": "where",
+        "id": "di mana"
+      }
+    },
+    {
+      "kana": "えき",
+      "romaji": "eki",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "station",
+        "id": "stasiun"
+      }
+    },
+    {
+      "kana": "ぎんこう",
+      "romaji": "ginkou",
+      "alternateRomaji": ["ginko"],
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "bank",
+        "id": "bank"
+      }
+    },
+    {
+      "kana": "びょういん",
+      "romaji": "byouin",
+      "alternateRomaji": ["byoin"],
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "hospital",
+        "id": "rumah sakit"
+      }
+    },
+    {
+      "kana": "トイレ",
+      "romaji": "toire",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "toilet",
+        "id": "toilet"
+      }
+    },
+    {
+      "kana": "ちかい",
+      "romaji": "chikai",
+      "partOfSpeech": "adjective",
+      "meaning": {
+        "en": "near",
+        "id": "dekat"
+      }
+    },
+    {
+      "kana": "とおい",
+      "romaji": "tooi",
+      "alternateRomaji": ["toi"],
+      "partOfSpeech": "adjective",
+      "meaning": {
+        "en": "far",
+        "id": "jauh"
+      }
+    },
+    {
+      "kana": "あります",
+      "romaji": "arimasu",
+      "partOfSpeech": "verb",
+      "meaning": {
+        "en": "there is (things)",
+        "id": "ada (benda)"
+      }
+    },
+    {
+      "kana": "います",
+      "romaji": "imasu",
+      "partOfSpeech": "verb",
+      "meaning": {
+        "en": "there is (people, animals)",
+        "id": "ada (orang, hewan)"
+      }
+    }
+  ]
+}

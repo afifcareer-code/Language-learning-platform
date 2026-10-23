@@ -1,0 +1,81 @@
+{
+  "source": "Original grammar explanations for N5 · Family and people, written for this project.",
+  "level": "n5",
+  "items": [
+    {
+      "slug": "n5-no",
+      "pattern": "N1 の N2",
+      "meaning": {
+        "en": "N1's N2",
+        "id": "N2 milik N1"
+      },
+      "explanation": {
+        "en": "の links two nouns. N1 can be the owner (わたしの かぞく) or give more information about N2.",
+        "id": "の menghubungkan dua kata benda. N1 bisa pemilik (わたしの かぞく) atau memberi keterangan tentang N2."
+      },
+      "examples": [
+        {
+          "ja": "これは わたしの かぞくです。",
+          "romaji": "kore wa watashi no kazoku desu",
+          "translation": {
+            "en": "This is my family.",
+            "id": "Ini keluarga saya."
+          }
+        }
+      ],
+      "commonErrors": [
+        {
+          "en": "Leaving out の: say わたしの なまえ, not わたし なまえ.",
+          "id": "Menghilangkan の: katakan わたしの なまえ, bukan わたし なまえ."
+        }
+      ],
+      "related": ["n5-wa-desu"]
+    },
+    {
+      "slug": "n5-dare",
+      "pattern": "N は だれですか",
+      "meaning": {
+        "en": "Who is N?",
+        "id": "Siapa N?"
+      },
+      "explanation": {
+        "en": "だれ asks who someone is. Answer with a name or a role: ともだちは アニさんです.",
+        "id": "だれ menanyakan siapa seseorang. Jawab dengan nama atau peran: ともだちは アニさんです."
+      },
+      "examples": [
+        {
+          "ja": "あなたの ともだちは だれですか。",
+          "romaji": "anata no tomodachi wa dare desu ka",
+          "translation": {
+            "en": "Who is your friend?",
+            "id": "Siapa teman Anda?"
+          }
+        }
+      ],
+      "related": ["n5-wa-desu"]
+    },
+    {
+      "slug": "n5-ga-imasu",
+      "pattern": "Place に N が います",
+      "meaning": {
+        "en": "There is N (a person) at (place)",
+        "id": "Ada N (orang) di (tempat)"
+      },
+      "explanation": {
+        "en": "To say that a person exists somewhere, use に for the place and が for the person, then います.",
+        "id": "Untuk menyatakan seseorang ada di suatu tempat, pakai に untuk tempat dan が untuk orangnya, lalu います."
+      },
+      "examples": [
+        {
+          "ja": "ここに ともだちが います。",
+          "romaji": "koko ni tomodachi ga imasu",
+          "translation": {
+            "en": "There is a friend here.",
+            "id": "Ada teman di sini."
+          }
+        }
+      ],
+      "related": ["n5-ni-arimasu"]
+    }
+  ]
+}

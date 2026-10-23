@@ -1,0 +1,72 @@
+{
+  "source": "Original practice sentences for N5 · Food and ordering.",
+  "level": "n5",
+  "items": [
+    {
+      "slug": "ringo-o-tabemasu",
+      "text": "わたしは りんごを たべます。",
+      "tokens": ["わたし", "は", "りんご", "を", "たべます"],
+      "romaji": "watashi wa ringo o tabemasu",
+      "grammar": "n5-wo-tabemasu",
+      "translation": {
+        "en": "I eat an apple.",
+        "id": "Saya makan apel."
+      }
+    },
+    {
+      "slug": "ocha-o-nomimasu",
+      "text": "わたしは おちゃを のみます。",
+      "tokens": ["わたし", "は", "おちゃ", "を", "のみます"],
+      "romaji": "watashi wa ocha o nomimasu",
+      "grammar": "n5-wo-tabemasu",
+      "translation": {
+        "en": "I drink tea.",
+        "id": "Saya minum teh."
+      }
+    },
+    {
+      "slug": "nani-o-tabemasu-ka",
+      "text": "なにを たべますか。",
+      "tokens": ["なに", "を", "たべます", "か"],
+      "romaji": "nani o tabemasu ka",
+      "grammar": "n5-wo-tabemasu",
+      "translation": {
+        "en": "What do you eat?",
+        "id": "Anda makan apa?"
+      }
+    },
+    {
+      "slug": "gohan-o-tabemasen",
+      "text": "ごはんを たべません。",
+      "tokens": ["ごはん", "を", "たべません"],
+      "romaji": "gohan o tabemasen",
+      "grammar": "n5-wo-tabemasu",
+      "translation": {
+        "en": "I do not eat rice.",
+        "id": "Saya tidak makan nasi."
+      }
+    },
+    {
+      "slug": "niku-ga-suki",
+      "text": "わたしは にくが すきです。",
+      "tokens": ["わたし", "は", "にく", "が", "すき", "です"],
+      "romaji": "watashi wa niku ga suki desu",
+      "grammar": "n5-suki",
+      "translation": {
+        "en": "I like meat.",
+        "id": "Saya suka daging."
+      }
+    },
+    {
+      "slug": "sakana-oishii",
+      "text": "さかなは おいしいです。",
+      "tokens": ["さかな", "は", "おいしい", "です"],
+      "romaji": "sakana wa oishii desu",
+      "grammar": "n5-oishii",
+      "translation": {
+        "en": "The fish is delicious.",
+        "id": "Ikannya enak."
+      }
+    }
+  ]
+}

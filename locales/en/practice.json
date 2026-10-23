@@ -13,7 +13,8 @@
     "audioPrompt": "Listen to the sound, then choose the matching character.",
     "audioQuestion": "Which character did you hear?",
     "visualPrompt": "Look at the character, then choose the matching sound.",
-    "noAudio": "Audio is not available on this device, so this question shows the character instead."
+    "noAudio": "Audio is not available on this device, so this question shows the character instead.",
+    "audioQuestionMeaning": "Which meaning did you hear?"
   },
   "recall": {
     "label": "Recall this character's sound without options, then type it in romaji."

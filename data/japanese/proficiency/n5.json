@@ -1,5 +1,5 @@
 {
-  "source": "N5 proficiency specification. Thresholds are the platform's own internal standard, not the JLPT's. Competencies marked planned have no content yet and keep readiness below Certification Ready.",
+  "source": "N5 proficiency specification. Thresholds are the platform's own internal standard, not the JLPT's. Competencies marked planned have no content yet and keep readiness below Certification Ready. Reading and listening are measured on single sentences, not on passages or conversations.",
   "level": "n5",
   "prerequisiteLevel": "foundation",
   "prerequisiteSkills": ["ja.kana.recognition", "ja.kana.reading"],
@@ -18,7 +18,10 @@
       "skills": ["ja.vocab.recognition"],
       "availability": "available",
       "examAligned": true,
-      "title": { "en": "Recognize everyday words", "id": "Mengenali kata sehari-hari" }
+      "title": {
+        "en": "Recognize everyday words",
+        "id": "Mengenali kata sehari-hari"
+      }
     },
     {
       "id": "n5.vocab.recall",
@@ -26,7 +29,10 @@
       "skills": ["ja.vocab.recall"],
       "availability": "available",
       "examAligned": false,
-      "title": { "en": "Recall words from their meaning", "id": "Mengingat kata dari maknanya" }
+      "title": {
+        "en": "Recall words from their meaning",
+        "id": "Mengingat kata dari maknanya"
+      }
     },
     {
       "id": "n5.grammar.sentence",
@@ -34,23 +40,32 @@
       "skills": ["ja.grammar.sentence"],
       "availability": "available",
       "examAligned": true,
-      "title": { "en": "Build simple sentences", "id": "Menyusun kalimat sederhana" }
+      "title": {
+        "en": "Build simple sentences",
+        "id": "Menyusun kalimat sederhana"
+      }
     },
     {
-      "id": "n5.reading.short-text",
+      "id": "n5.reading.sentence",
       "domain": "reading",
-      "skills": [],
-      "availability": "planned",
+      "skills": ["ja.reading.sentence"],
+      "availability": "available",
       "examAligned": true,
-      "title": { "en": "Read short everyday texts", "id": "Membaca teks sehari-hari yang pendek" }
+      "title": {
+        "en": "Read short sentences",
+        "id": "Membaca kalimat pendek"
+      }
     },
     {
-      "id": "n5.listening.slow-conversation",
+      "id": "n5.listening.sentence",
       "domain": "listening",
-      "skills": [],
-      "availability": "planned",
+      "skills": ["ja.listening.sentence"],
+      "availability": "available",
       "examAligned": true,
-      "title": { "en": "Follow short, slow conversations", "id": "Mengikuti percakapan pendek yang lambat" }
+      "title": {
+        "en": "Understand short spoken sentences",
+        "id": "Memahami kalimat pendek yang diucapkan"
+      }
     },
     {
       "id": "n5.writing.production",
@@ -58,13 +73,38 @@
       "skills": [],
       "availability": "planned",
       "examAligned": false,
-      "title": { "en": "Write your own simple sentences", "id": "Menulis kalimat sederhana sendiri" }
+      "title": {
+        "en": "Write your own simple sentences",
+        "id": "Menulis kalimat sederhana sendiri"
+      }
     }
   ],
   "assessment": {
     "sections": [
-      { "id": "vocabulary", "domain": "vocabulary", "skill": "ja.vocab.recognition", "questionCount": 8 },
-      { "id": "grammar", "domain": "grammar", "skill": "ja.grammar.sentence", "questionCount": 5 }
+      {
+        "id": "vocabulary",
+        "domain": "vocabulary",
+        "skill": "ja.vocab.recognition",
+        "questionCount": 8
+      },
+      {
+        "id": "grammar",
+        "domain": "grammar",
+        "skill": "ja.grammar.sentence",
+        "questionCount": 5
+      },
+      {
+        "id": "reading",
+        "domain": "reading",
+        "skill": "ja.reading.sentence",
+        "questionCount": 5
+      },
+      {
+        "id": "listening",
+        "domain": "listening",
+        "skill": "ja.listening.sentence",
+        "questionCount": 5
+      }
     ]
   }
 }

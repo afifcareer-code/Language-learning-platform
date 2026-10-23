@@ -1,0 +1,101 @@
+{
+  "source": "Original grammar explanations for N5 · Time and daily life, written for this project.",
+  "level": "n5",
+  "items": [
+    {
+      "slug": "n5-masu",
+      "pattern": "V ます / V ません",
+      "meaning": {
+        "en": "does V / does not do V",
+        "id": "melakukan V / tidak melakukan V"
+      },
+      "explanation": {
+        "en": "ます makes a verb polite, and ません is its negative. The same form is used for I, you, he, she and they, and for now or habit.",
+        "id": "ます membuat kata kerja menjadi sopan, dan ません adalah bentuk negatifnya. Bentuk yang sama dipakai untuk saya, Anda, dia, dan mereka, untuk saat ini maupun kebiasaan."
+      },
+      "examples": [
+        {
+          "ja": "わたしは おきます。",
+          "romaji": "watashi wa okimasu",
+          "translation": {
+            "en": "I get up.",
+            "id": "Saya bangun."
+          }
+        },
+        {
+          "ja": "わたしは ねません。",
+          "romaji": "watashi wa nemasen",
+          "translation": {
+            "en": "I do not go to bed.",
+            "id": "Saya tidak tidur."
+          }
+        }
+      ],
+      "commonErrors": [
+        {
+          "en": "Adding the subject twice: Japanese often drops わたし when it is clear.",
+          "id": "Menyebut subjek terus-menerus: bahasa Jepang sering menghilangkan わたし jika sudah jelas."
+        }
+      ]
+    },
+    {
+      "slug": "n5-ni-time",
+      "pattern": "Time に V",
+      "meaning": {
+        "en": "does V at (time)",
+        "id": "melakukan V pada (waktu)"
+      },
+      "explanation": {
+        "en": "Put に after a clock time to say when something happens: ろくじに おきます means get up at six.",
+        "id": "Letakkan に setelah jam untuk menyatakan kapan sesuatu terjadi: ろくじに おきます berarti bangun pada jam enam."
+      },
+      "examples": [
+        {
+          "ja": "わたしは ろくじに おきます。",
+          "romaji": "watashi wa rokuji ni okimasu",
+          "translation": {
+            "en": "I get up at six.",
+            "id": "Saya bangun jam enam."
+          }
+        }
+      ],
+      "commonErrors": [
+        {
+          "en": "Forgetting に after the time.",
+          "id": "Lupa memberi に setelah jam."
+        }
+      ],
+      "related": ["n5-masu"]
+    },
+    {
+      "slug": "n5-nanji",
+      "pattern": "いま なんじですか",
+      "meaning": {
+        "en": "What time is it now?",
+        "id": "Sekarang jam berapa?"
+      },
+      "explanation": {
+        "en": "なんじ asks for the time. Answer with the number plus じ: ごじ is five o'clock. Put ごぜん (a.m.) or ごご (p.m.) before it when needed.",
+        "id": "なんじ menanyakan jam. Jawab dengan angka ditambah じ: ごじ berarti jam lima. Tambahkan ごぜん (pagi) atau ごご (siang/sore) di depannya bila perlu."
+      },
+      "examples": [
+        {
+          "ja": "いま なんじですか。",
+          "romaji": "ima nanji desu ka",
+          "translation": {
+            "en": "What time is it now?",
+            "id": "Sekarang jam berapa?"
+          }
+        },
+        {
+          "ja": "いまは ごご ごじです。",
+          "romaji": "ima wa gogo goji desu",
+          "translation": {
+            "en": "It is five p.m. now.",
+            "id": "Sekarang jam lima sore."
+          }
+        }
+      ]
+    }
+  ]
+}

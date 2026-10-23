@@ -57,12 +57,23 @@ describe("mock assessment", () => {
     Array.from({ length: n }, (_, i) => ({ correct: i < ok, practicedBefore }));
 
   it("passes only when every section and the overall score pass", () => {
-    const [a, b] = sections;
-    const good = scoreMockAssessment(sections, { [a!.id]: answers(8, 8), [b!.id]: answers(5, 4) }, th);
+    const all = (ok: (i: number) => number) =>
+      Object.fromEntries(
+        sections.map((x, i) => [x.id, answers(x.questionCount, ok(i) === 1 ? x.questionCount : 0)]),
+      );
+    const good = scoreMockAssessment(
+      sections,
+      all(() => 1),
+      th,
+    );
     expect(good.passed).toBe(true);
-    const weakSection = scoreMockAssessment(sections, { [a!.id]: answers(8, 8), [b!.id]: answers(5, 1) }, th);
-    expect(weakSection.passed).toBe(false);
-    expect(weakSection.sections.find((s) => s.id === b!.id)!.passed).toBe(false);
+    const weak = scoreMockAssessment(
+      sections,
+      all((i) => (i === 0 ? 0 : 1)),
+      th,
+    );
+    expect(weak.passed).toBe(false);
+    expect(weak.sections[0]!.passed).toBe(false);
   });
 
   it("reports how many questions were on unseen items, and fails an empty sitting", () => {

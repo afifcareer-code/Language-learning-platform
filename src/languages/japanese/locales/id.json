@@ -27,6 +27,14 @@
     "ja.grammar.sentence": {
       "label": "Menyusun kalimat",
       "description": "Menyusun kata dan partikel dalam urutan yang benar untuk menyatakan suatu makna dengan tata bahasa lesson ini."
+    },
+    "ja.reading.sentence": {
+      "label": "Membaca kalimat",
+      "description": "Baca kalimat bahasa Jepang dan pilih artinya."
+    },
+    "ja.listening.sentence": {
+      "label": "Menyimak kalimat",
+      "description": "Dengarkan kalimat bahasa Jepang dan pilih artinya."
     }
   }
 }
