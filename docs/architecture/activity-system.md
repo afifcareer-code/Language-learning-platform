@@ -75,7 +75,7 @@ Objectives must be measurable and stated as what the learner can do:
 - ✗ "Learn hiragana."
 - ✓ "Write か き く け こ from memory with the correct shape and number of strokes, without relying on a visual reference."
 
-Only promise what the activity evaluates. The writing activity says "correct shape and number of strokes" because stroke count is checked automatically and shape is self-assessed. It does not yet promise stroke order, because that is not measured yet.
+Only promise what the activity evaluates. The writing activity says "correct shape and number of strokes" because stroke count is checked automatically, the shape's precision is measured against the model, and whether it is the right character is the learner's confirmation. It does not promise stroke order, because that is not measured.
 
 ## Activity templates
 
@@ -90,6 +90,33 @@ Writing every activity by hand would repeat the same objectives across dozens of
 Each stage therefore tests a different skill (`ja.kana.recognition`, `ja.kana.reading`, `ja.kana.writing`) and states its direction in its instruction: what the learner receives, what to do, and what answer is expected.
 
 Templates contain localized text with placeholders (`{script}`, `{characters}`, `{lesson}`) that `npm run content:validate` checks.
+
+## Introduction (teaching before assessing)
+
+Principle: **never assess a relationship the learner has not been shown.** Before the first question of a kana activity, a session shows an introduction for the characters the learner has not practiced in any skill: each character next to its reading ("あ is read as “a”") with a Play button, five per screen, then "Start practice". It is teaching, not an activity: nothing is answered, scored or recorded as an attempt, and it adds no activity type or schema.
+
+- What is shown comes from the content data through the practice item (`introductionItems` in `src/features/practice/introduction.ts`): character, reading, speech text and language. Components hold no character facts.
+- It appears for curriculum activities in practice mode only, never for review or recent-mistakes sessions, and only for characters with no attempt in any skill, so a learner who has already practiced a character is not shown it again.
+- Without a Japanese voice the Play buttons are not shown and the screen says the sounds are shown as text.
+
+## Writing feedback
+
+Writing keeps two questions apart (`src/handwriting/scoring/quality.ts`):
+
+- **Is it the right character?** The learner confirms after comparing with the model ("Did you write this character?"). The engine cannot decide this: measured against real fonts, a sloppy copy of the right character scores no higher than a neat copy of another one, so shape similarity is never used to decide which character was written.
+- **How precise is it?** The stroke count (re-checked on the server) and the shape similarity (`shapeSimilarity`, measured on the device against the glyph in the learner's fonts) rate a confirmed character as `excellent`, `good` or `needs_improvement`. They can only lower the rating, never raise it. When the device cannot draw the glyph, the shape is not measured and precision rests on the stroke count.
+
+Results and what follows:
+
+| Result              | Shown                                      | Learner can                         |
+| ------------------- | ------------------------------------------ | ----------------------------------- |
+| `excellent`, `good` | ✓ character correct, shape feedback        | Continue                            |
+| `needs_improvement` | ✓ character correct, "can be more precise" | Improve writing, or Continue anyway |
+| `incorrect`         | ✕ character does not match yet             | Try again (the attempt is recorded) |
+
+A correct but imprecise character is **never** recorded as a failure: it counts as correct (score 0.65) and its quality is kept. "Improve writing" returns to the same character with the same guide and records nothing; "Continue anyway" records the attempt. The quality, the measured shape score and the learner's judgement are stored in the existing `writing_samples.analysis` JSON (no schema change), so thresholds can be tuned later against real data; older rows hold only `checks`.
+
+The shape thresholds were calibrated on synthetic variations of kana in a single font, not on learners' handwriting.
 
 ## Audio
 

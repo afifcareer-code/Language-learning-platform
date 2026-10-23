@@ -13,6 +13,8 @@ import { requireLearningContext } from "@/server/learning-context";
 import { getLearnerProgress, progressKey } from "@/server/repositories/progress";
 import type { PracticeSession as Session } from "@/server/services/practice";
 import { itemDisplay, toPracticeItem, type PracticeItem } from "@/features/japanese/practice-items";
+import { introductionItems } from "./introduction";
+import type { IntroductionItem } from "./introduction-step";
 import { PracticeSession, type ExerciseKind } from "./practice-session";
 
 const EXERCISE: Partial<Record<Session["type"], ExerciseKind>> = {
@@ -86,7 +88,7 @@ export async function SessionPage({
     .join(" · ");
 
   const kind = EXERCISE[session.type];
-  const progress = kind === "writing" ? await getLearnerProgress(db, learner.id) : null;
+  const progress = kind ? await getLearnerProgress(db, learner.id) : null;
   // Meanings and translations in the learner's interface language.
   const translations = await getContentTranslations(db, Object.keys(session.items), t.locale);
   const items = session.prompts
@@ -104,6 +106,17 @@ export async function SessionPage({
       }),
     )
     .filter((i): i is PracticeItem => i !== null);
+
+  // Never assess a relationship the learner has not been shown: characters they have not
+  // practiced in any skill are introduced (sound ↔ character) before the first question.
+  const introduction: IntroductionItem[] =
+    kind && kind !== "sentence" && request.kind === "activity" && session.mode === "practice"
+      ? introductionItems(
+          session.activity?.contentItemIds ?? [],
+          items,
+          new Set([...(progress?.values() ?? [])].map((p) => p.contentItemId)),
+        )
+      : [];
 
   return (
     <>
@@ -132,6 +145,7 @@ export async function SessionPage({
           passScore={session.passScore}
           objective={header.objective}
           instruction={header.instruction}
+          introduction={introduction}
         />
       ) : (
         <EmptyState title={t("practice.empty")} />

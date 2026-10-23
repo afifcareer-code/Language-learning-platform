@@ -7,8 +7,10 @@ import {
   SELF_ASSESSMENTS,
   StrokeCountAnalyzer,
   WRITING_STAGES,
-  scoreWriting,
+  evaluateWriting,
+  selfAssessmentOf,
   type WritingCheck,
+  type WritingEvaluation,
 } from "@/handwriting";
 import { acceptedStrokeCounts, isKanaItemData } from "@/languages/japanese";
 import { getLanguageModule } from "@/languages/registry";
@@ -59,7 +61,10 @@ const attemptSchema = z.object({
     z.object({
       kind: z.literal("writing"),
       stage: z.enum(WRITING_STAGES),
+      // The learner's judgement after comparing with the model: did they write this character?
       selfAssessment: z.enum(SELF_ASSESSMENTS),
+      // Measured on the learner's device against the glyph in their fonts; null when it could not be.
+      shapeScore: z.number().min(0).max(1).nullable().optional(),
       sample: sampleSchema,
     }),
   ]),
@@ -76,6 +81,8 @@ export interface AttemptFeedback {
   /** The other item the learner's answer belongs to, when they mixed two up. */
   confusedWith: { id: string; display: string } | null;
   checks: WritingCheck[];
+  /** For writing: correctness and precision, kept apart. */
+  writing: WritingEvaluation | null;
 }
 
 const analyzer = new StrokeCountAnalyzer();
@@ -104,6 +111,7 @@ export async function submitAttempt(input: AttemptInput): Promise<AttemptFeedbac
   let expected = "";
   let confusedWithId: string | undefined;
   let checks: WritingCheck[] = [];
+  let writing: WritingEvaluation | null = null;
   let writingSample: Parameters<typeof recordAttempt>[1]["writingSample"];
 
   switch (data.response.kind) {
@@ -138,22 +146,31 @@ export async function submitAttempt(input: AttemptInput): Promise<AttemptFeedbac
     case "writing": {
       // Re-run analysis on the server; the client's copy is for immediate feedback only.
       if (!isKanaItemData(item.data)) throw new Error("This item cannot be written by hand yet");
-      const { sample, selfAssessment, stage } = data.response;
+      const { sample, selfAssessment, stage, shapeScore } = data.response;
       expected = item.data.kana;
       const analysis = analyzer.analyze(sample, {
         text: item.data.kana,
         strokeCounts: acceptedStrokeCounts(item.data),
       });
-      ({ correct, score } = scoreWriting(analysis, selfAssessment));
+      // Correctness is the learner's confirmation; stroke count is re-checked here and,
+      // with the measured shape, can only lower the rating of a correct character.
+      writing = evaluateWriting({
+        checks: analysis.checks,
+        shapeScore: shapeScore ?? null,
+        self: selfAssessment,
+      });
+      correct = writing.characterCorrect;
+      score = writing.score;
       checks = analysis.checks;
-      response = selfAssessment;
+      response = writing.quality;
       writingSample = {
         strokes: sample.strokes,
         width: sample.width,
         height: sample.height,
         guidanceStage: stage,
-        selfAssessment,
-        analysis,
+        selfAssessment: selfAssessmentOf(writing.quality),
+        // Same JSON column as before: older rows hold only `checks`.
+        analysis: { ...analysis, evaluation: writing, learnerJudgement: selfAssessment },
       };
       break;
     }
@@ -182,5 +199,6 @@ export async function submitAttempt(input: AttemptInput): Promise<AttemptFeedbac
     nextReviewAt: result.review.dueAt.toISOString(),
     confusedWith: confused ? { id: confused.id, display: itemDisplay(confused) } : null,
     checks,
+    writing,
   };
 }

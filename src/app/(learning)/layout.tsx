@@ -3,6 +3,7 @@ import Link from "next/link";
 import { BottomNav, MobileSettingsLink, SettingsNavLink, SideNav } from "@/components/app-nav";
 import { LogoMark } from "@/components/logo";
 import { LearningContextChip } from "@/features/shell/learning-context-chip";
+import { LearningLanguageSwitcher } from "@/features/shell/learning-language-switcher";
 import { UiLocaleSwitcher } from "@/features/shell/ui-locale-switcher";
 import { languageName } from "@/localization/labels";
 import { getI18n } from "@/localization/server";
@@ -28,6 +29,10 @@ export default async function LearningLayout({ children }: { children: ReactNode
       : undefined,
     srLabel: t("common.shell.learningPath"),
   };
+  const switcher = {
+    label: t("common.shell.changeLanguageShort"),
+    srLabel: t("common.shell.changeLearningLanguage"),
+  };
 
   return (
     <>
@@ -45,6 +50,7 @@ export default async function LearningLayout({ children }: { children: ReactNode
               compact
               className="flex-col justify-center gap-1 px-2 xl:flex-row xl:justify-start xl:gap-3 xl:px-3"
             />
+            <LearningLanguageSwitcher {...switcher} className="xl:justify-start" />
             <UiLocaleSwitcher compact="below-xl" placement="up" />
             <SettingsNavLink />
           </div>
@@ -55,6 +61,7 @@ export default async function LearningLayout({ children }: { children: ReactNode
               <LogoMark />
             </Link>
             <LearningContextChip {...chip} className="min-h-11 min-w-0 flex-1 py-1" />
+            <LearningLanguageSwitcher {...switcher} compact />
             <UiLocaleSwitcher compact="always" />
             <MobileSettingsLink />
           </header>

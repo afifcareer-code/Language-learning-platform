@@ -47,17 +47,32 @@
     "undo": "Urungkan",
     "clear": "Hapus",
     "showHint": "Tampilkan petunjuk",
-    "compare": "Bandingkan tulisan Anda dengan contohnya. Bagaimana hasilnya?",
+    "compare": "Bandingkan tulisanmu dengan contoh. Apakah kamu menulis karakter ini?",
     "self": {
       "incorrect": "Belum",
-      "close": "Hampir",
-      "correct": "Benar"
+      "correct": "Ya, sudah sama"
     },
     "keepWriting": "Lanjut menulis",
     "canvasLabel": "Area menulis untuk {prompt}",
     "previousItem": "Item sebelumnya:",
     "instruction": "Dengarkan bunyinya, lalu tulis karakter yang sesuai di area menulis.",
-    "instructionVisual": "Baca bunyi yang ditampilkan, lalu tulis karakter yang sesuai di area menulis."
+    "instructionVisual": "Baca bunyi yang ditampilkan, lalu tulis karakter yang sesuai di area menulis.",
+    "result": {
+      "label": "Hasil tulisan",
+      "characterCorrect": "Karakter benar",
+      "characterIncorrect": "Karakter belum sesuai",
+      "shapeLabel": "Bentuk tulisan:",
+      "quality": {
+        "excellent": "Tulisanmu sudah sesuai dengan contoh.",
+        "good": "Bentuk tulisan sudah cukup baik.",
+        "needs_improvement": "Karakter benar, tetapi bentuk tulisan masih perlu diperbaiki.",
+        "incorrect": "Tulisanmu belum sama dengan {character}. Perhatikan kembali bentuk contoh, lalu coba lagi."
+      },
+      "retry": "Coba lagi",
+      "improve": "Perbaiki tulisan",
+      "continueAnyway": "Tetap lanjut",
+      "continue": "Lanjut"
+    }
   },
   "checks": {
     "stroke-count": {
@@ -93,5 +108,14 @@
       "weak": "Memperbaiki item yang baru saja salah.",
       "confusion": "Membedakan {a} dan {b} dengan andal."
     }
+  },
+  "introduction": {
+    "title": "Kenali karakternya",
+    "prompt": "Setiap karakter mewakili satu bunyi. Lihat dan dengarkan sebelum berlatih. Ini bukan ujian: tidak ada yang dinilai di sini.",
+    "readAs": "{character} dibaca “{reading}”",
+    "noAudio": "Perangkat ini tidak punya suara Jepang, jadi bunyi ditampilkan sebagai teks.",
+    "group": "Karakter {from}–{to} dari {total}",
+    "next": "Karakter berikutnya",
+    "start": "Mulai berlatih"
   }
 }

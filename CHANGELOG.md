@@ -5,8 +5,15 @@ The format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/), and
 
 ## [Unreleased]
 
+### Added
+
+- **Introduction before assessment.** Before the first question about characters the learner has not practiced, a teaching screen shows each character with its reading and a Play button ("あ is read as “a”"). Nothing is scored or recorded as an attempt. It is resolved from content data and needs no schema change.
+- **Writing feedback separates correctness from precision.** After comparing with the model the learner confirms whether it is the character; the measured stroke count and shape similarity rate it excellent, good or needs improvement. A correct but imprecise character offers **Improve writing** or **Continue anyway** and is never recorded as a failure; a wrong one offers **Try again** and is recorded. Quality and shape score are kept in the existing `writing_samples.analysis` JSON.
+- **Change learning language** control (generic `LearningLanguageSwitcher`) in the sidebar and phone header of every learning page. It opens language selection and never touches progress; the interface-language menu stays separate.
+
 ### Changed
 
+- Writing no longer asks for a three-way self-grade: it asks whether the character matches the model (Not yet / Yes, it matches).
 - Foundation sound recognition is now sound → character: a large labelled **Play sound** button (replayable, never autoplayed) and character options, instead of showing the character and asking for its romaji. Without a Japanese voice on the device it falls back to character → sound and says so.
 - Every kana activity instruction states what the learner receives, what to do and what answer is expected (ID/EN). Recall no longer plays the sound before answering; writing is prompted by the sound with a labelled audio button.
 - Feedback shows the character with its sound ("あ = a"), one short hint, and "Listen again". The recognition activity's success criteria are now `audio_recognition` and `recognition`; re-run `npm run db:seed` to update existing databases (no schema change).

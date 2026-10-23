@@ -1,5 +1,5 @@
 import { expect, test } from "@playwright/test";
-import { ensureLearning, fakeJapaneseVoice, spoken, useEnglish } from "./helpers";
+import { ensureLearning, fakeJapaneseVoice, skipIntroduction, spoken, useEnglish } from "./helpers";
 
 test.beforeEach(async ({ page }) => {
   await ensureLearning(page);
@@ -95,6 +95,7 @@ test("lesson characters can be tapped to hear them before any question", async (
 test("sound recognition plays the target's sound and asks which character it was", async ({ page }) => {
   await fakeJapaneseVoice(page);
   await page.goto("/activities/ja.activity.hiragana-vowels.recognition");
+  await skipIntroduction(page);
   // Where the learner is, in one line, above the objective.
   await expect(
     page.getByText("Japanese · Foundation · Lesson 1 · Hiragana: Vowels", { exact: true }),
@@ -126,6 +127,7 @@ test("a wrong sound-recognition answer shows the character, its sound and a way 
 }) => {
   await fakeJapaneseVoice(page);
   await page.goto("/activities/ja.activity.hiragana-vowels.recognition");
+  await skipIntroduction(page);
   await page.getByRole("button", { name: "Play sound" }).click();
   const [target] = await spoken(page);
   const choices = page.getByRole("group", { name: "Which character did you hear?" }).getByRole("button");
@@ -141,6 +143,7 @@ test("a wrong sound-recognition answer shows the character, its sound and a way 
 test("recognition activity ends with a learning outcome", async ({ page }) => {
   await fakeJapaneseVoice(page);
   await page.goto("/activities/ja.activity.hiragana-vowels.recognition");
+  await skipIntroduction(page);
   await expect(page.getByText("Objective").first()).toBeVisible();
   for (let i = 0; i < 5; i++) {
     await page.getByRole("button", { name: "Play sound" }).click();
@@ -161,6 +164,7 @@ test("without a Japanese voice, recognition falls back to character → sound an
 }) => {
   await fakeJapaneseVoice(page, false);
   await page.goto("/activities/ja.activity.hiragana-vowels.recognition");
+  await skipIntroduction(page);
   await expect(page.getByText("Look at the character, then choose the matching sound.")).toBeVisible();
   await expect(page.getByText(/Audio is not available on this device/)).toBeVisible();
   await expect(page.getByRole("button", { name: /Play sound|Preparing audio/ })).toHaveCount(0);
@@ -172,6 +176,7 @@ test("without a Japanese voice, recognition falls back to character → sound an
 
 test("recall activity grades a typed answer", async ({ page }) => {
   await page.goto("/activities/ja.activity.hiragana-vowels.recall");
+  await skipIntroduction(page);
   await page.getByLabel("Recall this character's sound without options, then type it in romaji.").fill("zzz");
   await page.getByRole("button", { name: "Check" }).click();
   await expect(page.getByRole("status")).toContainText("Answer:");
@@ -182,6 +187,7 @@ test("recall activity grades a typed answer", async ({ page }) => {
 test("recall keeps the sound back until after the answer, then offers it", async ({ page }) => {
   await fakeJapaneseVoice(page);
   await page.goto("/activities/ja.activity.hiragana-vowels.recall");
+  await skipIntroduction(page);
   await expect(page.getByRole("button", { name: /Play sound|Listen again/ })).toHaveCount(0);
   await page.getByLabel("Recall this character's sound without options, then type it in romaji.").fill("zzz");
   await page.getByRole("button", { name: "Check" }).click();
@@ -195,6 +201,7 @@ test("writing is prompted by sound: instruction, a labelled Play button and the 
 }) => {
   await fakeJapaneseVoice(page);
   await page.goto("/activities/ja.activity.hiragana-vowels.writing");
+  await skipIntroduction(page);
   await expect(
     page.getByText("Listen to the sound, then write the matching character in the writing area."),
   ).toBeVisible();
@@ -203,21 +210,90 @@ test("writing is prompted by sound: instruction, a labelled Play button and the 
   await expect(page.getByRole("img", { name: /Writing area/ })).toBeVisible();
 });
 
-test("writing activity captures strokes and records a self-assessment", async ({ page }) => {
-  await page.goto("/activities/ja.activity.hiragana-vowels.writing");
-  const canvas = page.getByRole("img", { name: /Writing area/ });
-  const box = (await canvas.boundingBox())!;
+/** Draw one stroke across the writing area. */
+async function drawStroke(page: import("@playwright/test").Page) {
+  const box = (await page.getByRole("img", { name: /Writing area/ }).boundingBox())!;
   await page.mouse.move(box.x + box.width * 0.2, box.y + box.height * 0.3);
   await page.mouse.down();
   await page.mouse.move(box.x + box.width * 0.5, box.y + box.height * 0.35, { steps: 8 });
   await page.mouse.move(box.x + box.width * 0.8, box.y + box.height * 0.3, { steps: 8 });
   await page.mouse.up();
+}
+
+test("writing: a character that is not right is recorded, and the learner writes it again", async ({
+  page,
+}) => {
+  await page.goto("/activities/ja.activity.hiragana-vowels.writing");
+  await skipIntroduction(page);
+  await drawStroke(page);
   await page.getByRole("button", { name: "Check" }).click();
   await expect(page.getByText(/1 drawn, expected \d/)).toBeVisible();
+  await expect(page.getByText("Did you write this character?")).toBeVisible();
+
   await page.getByRole("button", { name: "Not yet" }).click();
-  await expect(page.getByRole("status")).toBeVisible();
+  await expect(page.getByTestId("writing-character-result")).toContainText("Character doesn't match yet");
+  await expect(page.getByRole("button", { name: "Improve writing" })).toHaveCount(0);
+  await page.getByRole("button", { name: "Try again" }).click();
+
+  // Same character, fresh writing area; nothing to give feedback on yet.
+  await expect(page.getByText("1 of 5").first()).toBeVisible();
+  await expect(page.getByRole("button", { name: "Check" })).toBeDisabled();
+  await expect(page.getByRole("status")).toHaveCount(0);
+});
+
+test("writing: a correct but imprecise character can be improved or accepted, never forced", async ({
+  page,
+}) => {
+  await page.goto("/activities/ja.activity.hiragana-vowels.writing");
+  await skipIntroduction(page);
+  await drawStroke(page);
+  await page.getByRole("button", { name: "Check" }).click();
+  await page.getByRole("button", { name: "Yes, it matches" }).click();
+
+  // One stroke where more are expected: still the character, but the handwriting can be more precise.
+  const result = page.getByRole("group", { name: "Writing result" });
+  await expect(page.getByTestId("writing-character-result")).toContainText("Character is correct");
+  await expect(result).toContainText("The character is correct, but the handwriting can be more precise.");
+
+  // "Improve writing" returns to the writing area for the same character.
+  await result.getByRole("button", { name: "Improve writing" }).click();
+  await expect(page.getByRole("img", { name: /Writing area/ })).toBeVisible();
+  await expect(page.getByText("1 of 5").first()).toBeVisible();
+  await expect(page.getByRole("button", { name: "Check" })).toBeDisabled();
+
+  // "Continue anyway" keeps the attempt and moves on.
+  await drawStroke(page);
+  await page.getByRole("button", { name: "Check" }).click();
+  await page.getByRole("button", { name: "Yes, it matches" }).click();
+  await page.getByRole("button", { name: "Continue anyway" }).click();
+  await expect(page.getByRole("status")).toContainText("Correct");
   await page.getByRole("button", { name: "Next" }).click();
   await expect(page.getByText("2 of 5").first()).toBeVisible();
+});
+
+test("the learning language can be changed from any learning page without losing progress", async ({
+  page,
+}) => {
+  await page.goto("/learn/hiragana-vowels");
+  // Separate from the interface-language menu, and one step from language selection.
+  await expect(page.getByRole("button", { name: /^Interface language: / })).toBeVisible();
+  await page.getByRole("link", { name: "Change learning language" }).click();
+  await expect(page).toHaveURL(/\/languages$/);
+  await expect(page.getByRole("heading", { level: 1 })).toHaveText("Your learning languages");
+
+  // Japanese is available and in progress; the others are shown as coming soon and cannot be opened.
+  await expect(page.getByText("Foundation · In progress")).toBeVisible();
+  for (const name of ["English", "Mandarin Chinese", "Spanish", "German", "French", "Korean"]) {
+    await expect(page.getByText(name, { exact: true }).first()).toBeVisible();
+    await expect(page.getByRole("link", { name: new RegExp(name) })).toHaveCount(0);
+  }
+  await expect(page.getByText("Coming soon").first()).toBeVisible();
+
+  await page.getByRole("button", { name: "Continue" }).click();
+  await expect(page).toHaveURL(/\/dashboard$/);
+  await expect(page.getByText("Continue learning")).toBeVisible();
+  // Still Japanese Foundation, with the interface language untouched.
+  await expect(page.getByText(/Japanese · Foundation/).first()).toBeVisible();
 });
 
 test("Settings still changes the interface language and shows the learning language", async ({ page }) => {

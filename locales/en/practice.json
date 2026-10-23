@@ -47,17 +47,32 @@
     "undo": "Undo",
     "clear": "Clear",
     "showHint": "Show hint",
-    "compare": "Compare your writing with the model. How did you do?",
+    "compare": "Compare your writing with the model. Did you write this character?",
     "self": {
       "incorrect": "Not yet",
-      "close": "Close",
-      "correct": "Correct"
+      "correct": "Yes, it matches"
     },
     "keepWriting": "Keep writing",
     "canvasLabel": "Writing area for {prompt}",
     "previousItem": "Previous item:",
     "instruction": "Listen to the sound, then write the matching character in the writing area.",
-    "instructionVisual": "Read the sound shown, then write the matching character in the writing area."
+    "instructionVisual": "Read the sound shown, then write the matching character in the writing area.",
+    "result": {
+      "label": "Writing result",
+      "characterCorrect": "Character is correct",
+      "characterIncorrect": "Character doesn't match yet",
+      "shapeLabel": "Handwriting shape:",
+      "quality": {
+        "excellent": "Your writing matches the model well.",
+        "good": "The shape is good enough.",
+        "needs_improvement": "The character is correct, but the handwriting can be more precise.",
+        "incorrect": "Your writing doesn't match {character} yet. Look at the model again, then try once more."
+      },
+      "retry": "Try again",
+      "improve": "Improve writing",
+      "continueAnyway": "Continue anyway",
+      "continue": "Continue"
+    }
   },
   "checks": {
     "stroke-count": {
@@ -96,5 +111,14 @@
       "weak": "Correct the items you missed recently.",
       "confusion": "Reliably tell {a} and {b} apart."
     }
+  },
+  "introduction": {
+    "title": "Meet the characters",
+    "prompt": "Each character stands for a sound. Look at it and listen to it before you practice. This is not a test: nothing here is scored.",
+    "readAs": "{character} is read as “{reading}”",
+    "noAudio": "No Japanese voice was found on this device, so the sounds are shown as text.",
+    "group": "Characters {from}–{to} of {total}",
+    "next": "Next characters",
+    "start": "Start practice"
   }
 }

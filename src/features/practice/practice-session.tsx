@@ -11,6 +11,7 @@ import { useT } from "@/localization/client";
 import { useStopwatch } from "@/shared/use-stopwatch";
 import type { PracticeItem } from "@/features/japanese/practice-items";
 import { FeedbackPanel } from "./feedback-panel";
+import { IntroductionStep, type IntroductionItem } from "./introduction-step";
 import { RecallExercise } from "./recall-exercise";
 import { SentenceExercise } from "./sentence-exercise";
 import { RecognitionExercise } from "./recognition-exercise";
@@ -30,6 +31,11 @@ export interface PracticeSessionProps {
   passScore: number;
   objective: string;
   instruction: string;
+  /**
+   * Characters the learner has never practiced, to be introduced (sound and
+   * character together) before the first question. Empty when there is nothing new.
+   */
+  introduction?: IntroductionItem[];
 }
 
 /**
@@ -46,10 +52,23 @@ export function PracticeSession(props: PracticeSessionProps) {
   const [chosen, setChosen] = useState<string | null>(null);
   const [feedback, setFeedback] = useState<AttemptFeedback | null>(null);
   const [results, setResults] = useState<SessionResult[]>([]);
+  // Bumped when the learner writes the same character again, so the writing area starts clean.
+  const [attempt, setAttempt] = useState(0);
+  const [introduced, setIntroduced] = useState(!props.introduction?.length);
   const [error, setError] = useState<string | null>(null);
   const [pending, startTransition] = useTransition();
   const elapsed = useStopwatch(index);
   const item = items[index];
+
+  if (!introduced && props.introduction) {
+    return (
+      <div className="mx-auto max-w-xl">
+        <Card>
+          <IntroductionStep items={props.introduction} onDone={() => setIntroduced(true)} />
+        </Card>
+      </div>
+    );
+  }
 
   if (!item) {
     return (
@@ -64,13 +83,15 @@ export function PracticeSession(props: PracticeSessionProps) {
     );
   }
 
-  function submit(response: AttemptInput["response"]) {
+  /** `retry`: record the attempt but stay on this item (a character that was not right is written again). */
+  function submit(response: AttemptInput["response"], options: { retry?: boolean } = {}) {
     if (!item) return;
     const responseMs = elapsed();
     startTransition(async () => {
       try {
         const fb = await submitAttempt({ itemId: item.id, skill, activityId, mode, responseMs, response });
-        setFeedback(fb);
+        if (options.retry) setAttempt((a) => a + 1);
+        else setFeedback(fb);
         setResults((r) => [
           ...r,
           {
@@ -94,6 +115,7 @@ export function PracticeSession(props: PracticeSessionProps) {
     setPlaced([]);
     setChosen(null);
     setFeedback(null);
+    setAttempt(0);
   }
 
   function onRecallSubmit(e: FormEvent) {
@@ -120,12 +142,20 @@ export function PracticeSession(props: PracticeSessionProps) {
         <>
           {!feedback ? (
             <WritingExercise
-              key={`${item.id}-${index}`}
+              key={`${item.id}-${index}-${attempt}`}
               item={item}
               instruction={props.instruction}
               disabled={pending}
-              onSubmit={(sample: WritingSample, self: SelfAssessment) =>
-                submit({ kind: "writing", sample, selfAssessment: self, stage: item.stage })
+              onSubmit={(
+                sample: WritingSample,
+                self: SelfAssessment,
+                shapeScore: number | null,
+                retry: boolean,
+              ) =>
+                submit(
+                  { kind: "writing", sample, selfAssessment: self, shapeScore, stage: item.stage },
+                  { retry },
+                )
               }
             />
           ) : (
