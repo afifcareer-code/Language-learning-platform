@@ -78,6 +78,19 @@ export default async function SettingsPage() {
           <Button type="submit">{t("common.actions.save")}</Button>
         </div>
       </form>
+
+      <Card className="mt-6" aria-labelledby="credits-title">
+        <h2 id="credits-title" className="text-lg font-semibold">
+          {t("settings.credits.title")}
+        </h2>
+        <p className="mt-1 text-sm text-muted">{t("settings.credits.audio")}</p>
+        <a
+          href="/audio/CREDITS.md"
+          className="mt-2 inline-flex min-h-11 items-center text-sm font-medium text-accent"
+        >
+          {t("settings.credits.details")}
+        </a>
+      </Card>
     </>
   );
 }

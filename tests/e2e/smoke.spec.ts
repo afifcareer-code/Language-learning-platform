@@ -1,5 +1,13 @@
 import { expect, test } from "@playwright/test";
-import { ensureLearning, fakeJapaneseVoice, skipIntroduction, spoken, useEnglish } from "./helpers";
+import {
+  ensureLearning,
+  fakeJapaneseVoice,
+  playedClips,
+  recordClips,
+  skipIntroduction,
+  spoken,
+  useEnglish,
+} from "./helpers";
 
 test.beforeEach(async ({ page }) => {
   await ensureLearning(page);
@@ -335,4 +343,23 @@ test("the N5 proficiency page explains the level, evidence and readiness, and st
   await page.goto("/proficiency?level=n5");
   const overflow = await page.evaluate(() => document.documentElement.scrollWidth > window.innerWidth);
   expect(overflow).toBe(false);
+});
+
+test("sound questions play the shipped audio clip, even on a device with no Japanese voice", async ({
+  page,
+}) => {
+  await recordClips(page);
+  await page.goto("/activities/ja.activity.hiragana-vowels.recognition");
+  await skipIntroduction(page);
+  const manifest = (await (await page.request.get("/audio/ja/manifest.json")).json()) as Record<
+    string,
+    string
+  >;
+
+  await page.getByRole("button", { name: "Play sound" }).click();
+  const [clip] = await playedClips(page);
+  expect(clip).toMatch(/^\/audio\/ja\/[0-9a-f]{12}\.mp3$/);
+  const target = Object.entries(manifest).find(([, file]) => clip!.endsWith(file))![0];
+  const choices = page.getByRole("group", { name: "Which character did you hear?" }).getByRole("button");
+  await expect(choices.filter({ hasText: target })).toHaveCount(1);
 });
