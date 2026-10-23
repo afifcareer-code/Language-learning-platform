@@ -52,7 +52,9 @@ Single kana keep the existing writing flow. For words, phrases and sentences the
 - **Free production** asks for a short message in the learner's own words. The model is only an example, and the self-rating is _clear and natural_, _understandable, with mistakes_, or _not yet_.
 - **Short text** (reading) and **conversation** (listening) show or play original material and ask one comprehension question with four options. A conversation is played and its text appears only after answering; if the device cannot play audio, the text is shown and the screen says so. All voices are one synthetic voice (see `public/audio/CREDITS.md`).
 
-Content lives in `data/japanese/situations/` and `data/japanese/passages/`; see `docs/development/content-authoring.md`.
+Reading and Listening also have a **native** stage: 137 short kana-only sentences written by Japanese speakers, imported from Tatoeba (CC BY 2.0 FR) with per-item credit shown after each answer. They are single utterances, not paragraphs; real texts with kanji need furigana support first.
+
+Content lives in `data/japanese/situations/`, `data/japanese/passages/` and `data/japanese/native/`; see `docs/development/content-authoring.md`.
 
 ## What is not built
 

@@ -1,0 +1,3568 @@
+{
+  "source": "Native sentences from Tatoeba contributors, CC BY 2.0 FR (https://tatoeba.org). Selected by scripts/content/import-tatoeba.py.",
+  "level": "n5",
+  "items": [
+    {
+      "slug": "tatoeba-4712",
+      "text": "きりがない。",
+      "translation": {
+        "en": "This is never going to end.",
+        "id": "Tiada akhir"
+      },
+      "source": {
+        "name": "Tatoeba",
+        "license": "CC BY 2.0 FR",
+        "sentence": {
+          "id": 4712,
+          "author": "bunbuku"
+        },
+        "translations": {
+          "en": {
+            "id": 1287,
+            "author": "CK"
+          },
+          "id": {
+            "id": 4230565,
+            "author": "ver50n"
+          }
+        }
+      }
+    },
+    {
+      "slug": "tatoeba-192734",
+      "text": "やめなさい。",
+      "translation": {
+        "en": "Cut it out!",
+        "id": "Hentikan!"
+      },
+      "source": {
+        "name": "Tatoeba",
+        "license": "CC BY 2.0 FR",
+        "sentence": {
+          "id": 192734,
+          "author": "Kalamunda"
+        },
+        "translations": {
+          "en": {
+            "id": 29900,
+            "author": "CK"
+          },
+          "id": {
+            "id": 4611894,
+            "author": "yatyayat"
+          }
+        }
+      }
+    },
+    {
+      "slug": "tatoeba-198627",
+      "text": "ネコがいる。",
+      "translation": {
+        "en": "There is a cat.",
+        "id": "Ada kucing."
+      },
+      "source": {
+        "name": "Tatoeba",
+        "license": "CC BY 2.0 FR",
+        "sentence": {
+          "id": 198627,
+          "author": "bunbuku"
+        },
+        "translations": {
+          "en": {
+            "id": 35821,
+            "author": "CK"
+          },
+          "id": {
+            "id": 3871956,
+            "author": "orion17"
+          }
+        }
+      }
+    },
+    {
+      "slug": "tatoeba-373351",
+      "text": "こんにちは。",
+      "translation": {
+        "en": "Hello!",
+        "id": "Selamat siang."
+      },
+      "source": {
+        "name": "Tatoeba",
+        "license": "CC BY 2.0 FR",
+        "sentence": {
+          "id": 373351,
+          "author": "tommy_san"
+        },
+        "translations": {
+          "en": {
+            "id": 373330,
+            "author": "CK"
+          },
+          "id": {
+            "id": 1019433,
+            "author": "pryo"
+          }
+        }
+      }
+    },
+    {
+      "slug": "tatoeba-426889",
+      "text": "さようなら！",
+      "translation": {
+        "en": "Good-bye!",
+        "id": "Sampai jumpa!"
+      },
+      "source": {
+        "name": "Tatoeba",
+        "license": "CC BY 2.0 FR",
+        "sentence": {
+          "id": 426889,
+          "author": "qahwa"
+        },
+        "translations": {
+          "en": {
+            "id": 64336,
+            "author": "Zifre"
+          },
+          "id": {
+            "id": 4556792,
+            "author": "dbahasa"
+          }
+        }
+      }
+    },
+    {
+      "slug": "tatoeba-640569",
+      "text": "さようなら。",
+      "translation": {
+        "en": "See you again.",
+        "id": "Sampai jumpa."
+      },
+      "source": {
+        "name": "Tatoeba",
+        "license": "CC BY 2.0 FR",
+        "sentence": {
+          "id": 640569,
+          "author": "arihato"
+        },
+        "translations": {
+          "en": {
+            "id": 32635,
+            "author": "CK"
+          },
+          "id": {
+            "id": 4722430,
+            "author": "Bilmanda"
+          }
+        }
+      }
+    },
+    {
+      "slug": "tatoeba-753463",
+      "text": "じゃまたね。",
+      "translation": {
+        "en": "I'll see you later.",
+        "id": "Sampai jumpa lagi."
+      },
+      "source": {
+        "name": "Tatoeba",
+        "license": "CC BY 2.0 FR",
+        "sentence": {
+          "id": 753463,
+          "author": "modelqueen13"
+        },
+        "translations": {
+          "en": {
+            "id": 32706,
+            "author": "CK"
+          },
+          "id": {
+            "id": 2082782,
+            "author": "timgreig"
+          }
+        }
+      }
+    },
+    {
+      "slug": "tatoeba-1068623",
+      "text": "おめでとう！",
+      "translation": {
+        "en": "Congratulations!",
+        "id": "Selamat!"
+      },
+      "source": {
+        "name": "Tatoeba",
+        "license": "CC BY 2.0 FR",
+        "sentence": {
+          "id": 1068623,
+          "author": "bunbuku"
+        },
+        "translations": {
+          "en": {
+            "id": 1437,
+            "author": "CK"
+          },
+          "id": {
+            "id": 952963,
+            "author": "windra"
+          }
+        }
+      }
+    },
+    {
+      "slug": "tatoeba-1484772",
+      "text": "うまかった。",
+      "translation": {
+        "en": "That was good.",
+        "id": "Enak."
+      },
+      "source": {
+        "name": "Tatoeba",
+        "license": "CC BY 2.0 FR",
+        "sentence": {
+          "id": 1484772,
+          "author": "marshmallowcat"
+        },
+        "translations": {
+          "en": {
+            "id": 619639,
+            "author": "ulyssemc1"
+          },
+          "id": {
+            "id": 4733168,
+            "author": "Bilmanda"
+          }
+        }
+      }
+    },
+    {
+      "slug": "tatoeba-1507522",
+      "text": "じっとして！",
+      "translation": {
+        "en": "Hold it!",
+        "id": "Tahan!"
+      },
+      "source": {
+        "name": "Tatoeba",
+        "license": "CC BY 2.0 FR",
+        "sentence": {
+          "id": 1507522,
+          "author": "bunbuku"
+        },
+        "translations": {
+          "en": {
+            "id": 280203,
+            "author": "CK"
+          },
+          "id": {
+            "id": 4701255,
+            "author": "Bilmanda"
+          }
+        }
+      }
+    },
+    {
+      "slug": "tatoeba-1531875",
+      "text": "ありがとう！",
+      "translation": {
+        "en": "Thank you!",
+        "id": "Terima kasih!"
+      },
+      "source": {
+        "name": "Tatoeba",
+        "license": "CC BY 2.0 FR",
+        "sentence": {
+          "id": 1531875,
+          "author": "cc_neko"
+        },
+        "translations": {
+          "en": {
+            "id": 374827,
+            "author": "sysko"
+          },
+          "id": {
+            "id": 2684648,
+            "author": "Ricardo14"
+          }
+        }
+      }
+    },
+    {
+      "slug": "tatoeba-1532832",
+      "text": "ありがとう。",
+      "translation": {
+        "en": "Thank you!",
+        "id": "Terima kasih."
+      },
+      "source": {
+        "name": "Tatoeba",
+        "license": "CC BY 2.0 FR",
+        "sentence": {
+          "id": 1532832,
+          "author": "bunbuku"
+        },
+        "translations": {
+          "en": {
+            "id": 374827,
+            "author": "sysko"
+          },
+          "id": {
+            "id": 3362871,
+            "author": "dbahasa"
+          }
+        }
+      }
+    },
+    {
+      "slug": "tatoeba-2196376",
+      "text": "どうしたの。",
+      "translation": {
+        "en": "What's going on?",
+        "id": "Ada apa?"
+      },
+      "source": {
+        "name": "Tatoeba",
+        "license": "CC BY 2.0 FR",
+        "sentence": {
+          "id": 2196376,
+          "author": "bunbuku"
+        },
+        "translations": {
+          "en": {
+            "id": 25125,
+            "author": "CK"
+          },
+          "id": {
+            "id": 5177558,
+            "author": "Bilmanda"
+          }
+        }
+      }
+    },
+    {
+      "slug": "tatoeba-3488188",
+      "text": "よくやった！",
+      "translation": {
+        "en": "Well done!",
+        "id": "Kerja yang bagus!"
+      },
+      "source": {
+        "name": "Tatoeba",
+        "license": "CC BY 2.0 FR",
+        "sentence": {
+          "id": 3488188,
+          "author": "arnab"
+        },
+        "translations": {
+          "en": {
+            "id": 464478,
+            "author": "lukaszpp"
+          },
+          "id": {
+            "id": 4345389,
+            "author": "Bilmanda"
+          }
+        }
+      }
+    },
+    {
+      "slug": "tatoeba-4443353",
+      "text": "わかったぞ！",
+      "translation": {
+        "en": "I understand.",
+        "id": "Aku mengerti!"
+      },
+      "source": {
+        "name": "Tatoeba",
+        "license": "CC BY 2.0 FR",
+        "sentence": {
+          "id": 4443353,
+          "author": "chihiro"
+        },
+        "translations": {
+          "en": {
+            "id": 433468,
+            "author": "CK"
+          },
+          "id": {
+            "id": 4701352,
+            "author": "Bilmanda"
+          }
+        }
+      }
+    },
+    {
+      "slug": "tatoeba-10157623",
+      "text": "ママはどこ？",
+      "translation": {
+        "en": "Where's my mama?",
+        "id": "Mama di mana?"
+      },
+      "source": {
+        "name": "Tatoeba",
+        "license": "CC BY 2.0 FR",
+        "sentence": {
+          "id": 10157623,
+          "author": "small_snow"
+        },
+        "translations": {
+          "en": {
+            "id": 2254644,
+            "author": "CK"
+          },
+          "id": {
+            "id": 12324364,
+            "author": "HAGNi"
+          }
+        }
+      }
+    },
+    {
+      "slug": "tatoeba-12032366",
+      "text": "クレイジー！",
+      "translation": {
+        "en": "Crazy!",
+        "id": "Gila!"
+      },
+      "source": {
+        "name": "Tatoeba",
+        "license": "CC BY 2.0 FR",
+        "sentence": {
+          "id": 12032366,
+          "author": "ewanf"
+        },
+        "translations": {
+          "en": {
+            "id": 460198,
+            "author": "jeanne"
+          },
+          "id": {
+            "id": 4556789,
+            "author": "dbahasa"
+          }
+        }
+      }
+    },
+    {
+      "slug": "tatoeba-5332",
+      "text": "いくらですか？",
+      "translation": {
+        "en": "How much is it?",
+        "id": "Berapa harganya?"
+      },
+      "source": {
+        "name": "Tatoeba",
+        "license": "CC BY 2.0 FR",
+        "sentence": {
+          "id": 5332,
+          "author": "bunbuku"
+        },
+        "translations": {
+          "en": {
+            "id": 2418,
+            "author": "brauliobezerra"
+          },
+          "id": {
+            "id": 1503804,
+            "author": "menyo"
+          }
+        }
+      }
+    },
+    {
+      "slug": "tatoeba-193377",
+      "text": "もちろんだよ！",
+      "translation": {
+        "en": "Definitely!",
+        "id": "Tentu saja!"
+      },
+      "source": {
+        "name": "Tatoeba",
+        "license": "CC BY 2.0 FR",
+        "sentence": {
+          "id": 193377,
+          "author": "mookeee"
+        },
+        "translations": {
+          "en": {
+            "id": 30542,
+            "author": "CM"
+          },
+          "id": {
+            "id": 4345500,
+            "author": "Bilmanda"
+          }
+        }
+      }
+    },
+    {
+      "slug": "tatoeba-1627173",
+      "text": "がっかりだよ。",
+      "translation": {
+        "en": "I'm disappointed.",
+        "id": "Aku kecewa."
+      },
+      "source": {
+        "name": "Tatoeba",
+        "license": "CC BY 2.0 FR",
+        "sentence": {
+          "id": 1627173,
+          "author": "mookeee"
+        },
+        "translations": {
+          "en": {
+            "id": 1356775,
+            "author": "sacredceltic"
+          },
+          "id": {
+            "id": 7153015,
+            "author": "purichan"
+          }
+        }
+      }
+    },
+    {
+      "slug": "tatoeba-2063347",
+      "text": "やってみたい？",
+      "translation": {
+        "en": "Do you want to try it?",
+        "id": "Mau coba?"
+      },
+      "source": {
+        "name": "Tatoeba",
+        "license": "CC BY 2.0 FR",
+        "sentence": {
+          "id": 2063347,
+          "author": "bunbuku"
+        },
+        "translations": {
+          "en": {
+            "id": 1886032,
+            "author": "CK"
+          },
+          "id": {
+            "id": 5230983,
+            "author": "Bilmanda"
+          }
+        }
+      }
+    },
+    {
+      "slug": "tatoeba-2177578",
+      "text": "どこにいるの？",
+      "translation": {
+        "en": "Where are you?",
+        "id": "Kamu di mana?"
+      },
+      "source": {
+        "name": "Tatoeba",
+        "license": "CC BY 2.0 FR",
+        "sentence": {
+          "id": 2177578,
+          "author": "regambit"
+        },
+        "translations": {
+          "en": {
+            "id": 2168,
+            "author": "CK"
+          },
+          "id": {
+            "id": 3806662,
+            "author": "orion17"
+          }
+        }
+      }
+    },
+    {
+      "slug": "tatoeba-2270779",
+      "text": "わかりません。",
+      "translation": {
+        "en": "I have no idea.",
+        "id": "Saya tidak tahu."
+      },
+      "source": {
+        "name": "Tatoeba",
+        "license": "CC BY 2.0 FR",
+        "sentence": {
+          "id": 2270779,
+          "author": "Ianagisacos"
+        },
+        "translations": {
+          "en": {
+            "id": 273786,
+            "author": "CK"
+          },
+          "id": {
+            "id": 1109561,
+            "author": "Archangelix"
+          }
+        }
+      }
+    },
+    {
+      "slug": "tatoeba-2310116",
+      "text": "みんなはどこ？",
+      "translation": {
+        "en": "Where is everybody?",
+        "id": "Di mana semua orang?"
+      },
+      "source": {
+        "name": "Tatoeba",
+        "license": "CC BY 2.0 FR",
+        "sentence": {
+          "id": 2310116,
+          "author": "tommy_san"
+        },
+        "translations": {
+          "en": {
+            "id": 1690476,
+            "author": "Spamster"
+          },
+          "id": {
+            "id": 13376725,
+            "author": "mashiro10"
+          }
+        }
+      }
+    },
+    {
+      "slug": "tatoeba-2570653",
+      "text": "それはすごい。",
+      "translation": {
+        "en": "That's great.",
+        "id": "Itu luar biasa."
+      },
+      "source": {
+        "name": "Tatoeba",
+        "license": "CC BY 2.0 FR",
+        "sentence": {
+          "id": 2570653,
+          "author": "bunbuku"
+        },
+        "translations": {
+          "en": {
+            "id": 462546,
+            "author": "lukaszpp"
+          },
+          "id": {
+            "id": 4701349,
+            "author": "Bilmanda"
+          }
+        }
+      }
+    },
+    {
+      "slug": "tatoeba-2972360",
+      "text": "どこにいたの？",
+      "translation": {
+        "en": "Where have you been?",
+        "id": "Tadi kamu di mana?"
+      },
+      "source": {
+        "name": "Tatoeba",
+        "license": "CC BY 2.0 FR",
+        "sentence": {
+          "id": 2972360,
+          "author": "Fukuko"
+        },
+        "translations": {
+          "en": {
+            "id": 6026,
+            "author": "CK"
+          },
+          "id": {
+            "id": 3806661,
+            "author": "orion17"
+          }
+        }
+      }
+    },
+    {
+      "slug": "tatoeba-2975833",
+      "text": "こっちおいで。",
+      "translation": {
+        "en": "Come here.",
+        "id": "Kemari."
+      },
+      "source": {
+        "name": "Tatoeba",
+        "license": "CC BY 2.0 FR",
+        "sentence": {
+          "id": 2975833,
+          "author": "tommy_san"
+        },
+        "translations": {
+          "en": {
+            "id": 39944,
+            "author": "Swift"
+          },
+          "id": {
+            "id": 3864928,
+            "author": "orion17"
+          }
+        }
+      }
+    },
+    {
+      "slug": "tatoeba-3553284",
+      "text": "どういうこと？",
+      "translation": {
+        "en": "What do you mean?",
+        "id": "Maksudnya?"
+      },
+      "source": {
+        "name": "Tatoeba",
+        "license": "CC BY 2.0 FR",
+        "sentence": {
+          "id": 3553284,
+          "author": "tommy_san"
+        },
+        "translations": {
+          "en": {
+            "id": 24706,
+            "author": "CK"
+          },
+          "id": {
+            "id": 5865102,
+            "author": "Bilmanda"
+          }
+        }
+      }
+    },
+    {
+      "slug": "tatoeba-4562226",
+      "text": "ほっといてよ！",
+      "translation": {
+        "en": "Leave me alone!",
+        "id": "Tinggalkan aku sendiri!"
+      },
+      "source": {
+        "name": "Tatoeba",
+        "license": "CC BY 2.0 FR",
+        "sentence": {
+          "id": 4562226,
+          "author": "Kiraness"
+        },
+        "translations": {
+          "en": {
+            "id": 25534,
+            "author": "CK"
+          },
+          "id": {
+            "id": 7836370,
+            "author": "Bilmanda"
+          }
+        }
+      }
+    },
+    {
+      "slug": "tatoeba-11563854",
+      "text": "スキーできる？",
+      "translation": {
+        "en": "Can you ski?",
+        "id": "Apakah kamu bisa bermain ski?"
+      },
+      "source": {
+        "name": "Tatoeba",
+        "license": "CC BY 2.0 FR",
+        "sentence": {
+          "id": 11563854,
+          "author": "small_snow"
+        },
+        "translations": {
+          "en": {
+            "id": 2748477,
+            "author": "CM"
+          },
+          "id": {
+            "id": 13576086,
+            "author": "Krisna68"
+          }
+        }
+      }
+    },
+    {
+      "slug": "tatoeba-5075",
+      "text": "ひとりにさせて！",
+      "translation": {
+        "en": "Leave me alone!",
+        "id": "Biarkan aku sendiri!"
+      },
+      "source": {
+        "name": "Tatoeba",
+        "license": "CC BY 2.0 FR",
+        "sentence": {
+          "id": 5075,
+          "author": "bunbuku"
+        },
+        "translations": {
+          "en": {
+            "id": 25534,
+            "author": "CK"
+          },
+          "id": {
+            "id": 7836372,
+            "author": "Bilmanda"
+          }
+        }
+      }
+    },
+    {
+      "slug": "tatoeba-201303",
+      "text": "どうぞよろしく。",
+      "translation": {
+        "en": "Pleased to meet you.",
+        "id": "Senang bertemu denganmu."
+      },
+      "source": {
+        "name": "Tatoeba",
+        "license": "CC BY 2.0 FR",
+        "sentence": {
+          "id": 201303,
+          "author": "SeeVogel"
+        },
+        "translations": {
+          "en": {
+            "id": 456635,
+            "author": "lukaszpp"
+          },
+          "id": {
+            "id": 331470,
+            "author": "umarsaid"
+          }
+        }
+      }
+    },
+    {
+      "slug": "tatoeba-778975",
+      "text": "どうしてですか？",
+      "translation": {
+        "en": "Why?",
+        "id": "Mengapa?"
+      },
+      "source": {
+        "name": "Tatoeba",
+        "license": "CC BY 2.0 FR",
+        "sentence": {
+          "id": 778975,
+          "author": "marloncori"
+        },
+        "translations": {
+          "en": {
+            "id": 36419,
+            "author": "Eldad"
+          },
+          "id": {
+            "id": 4556751,
+            "author": "dbahasa"
+          }
+        }
+      }
+    },
+    {
+      "slug": "tatoeba-2152589",
+      "text": "こっちへおいで。",
+      "translation": {
+        "en": "Come here.",
+        "id": "Kemari."
+      },
+      "source": {
+        "name": "Tatoeba",
+        "license": "CC BY 2.0 FR",
+        "sentence": {
+          "id": 2152589,
+          "author": "nihonjin"
+        },
+        "translations": {
+          "en": {
+            "id": 39944,
+            "author": "Swift"
+          },
+          "id": {
+            "id": 3864928,
+            "author": "orion17"
+          }
+        }
+      }
+    },
+    {
+      "slug": "tatoeba-2196378",
+      "text": "どうなってるの。",
+      "translation": {
+        "en": "What's going on?",
+        "id": "Ada apa?"
+      },
+      "source": {
+        "name": "Tatoeba",
+        "license": "CC BY 2.0 FR",
+        "sentence": {
+          "id": 2196378,
+          "author": "bunbuku"
+        },
+        "translations": {
+          "en": {
+            "id": 25125,
+            "author": "CK"
+          },
+          "id": {
+            "id": 5177558,
+            "author": "Bilmanda"
+          }
+        }
+      }
+    },
+    {
+      "slug": "tatoeba-2242480",
+      "text": "トムはのんきだ。",
+      "translation": {
+        "en": "Tom is easygoing.",
+        "id": "Tom itu santai."
+      },
+      "source": {
+        "name": "Tatoeba",
+        "license": "CC BY 2.0 FR",
+        "sentence": {
+          "id": 2242480,
+          "author": "wool"
+        },
+        "translations": {
+          "en": {
+            "id": 1025050,
+            "author": "CK"
+          },
+          "id": {
+            "id": 5889018,
+            "author": "Bilmanda"
+          }
+        }
+      }
+    },
+    {
+      "slug": "tatoeba-2249871",
+      "text": "やってみようよ。",
+      "translation": {
+        "en": "Let's give it a try.",
+        "id": "Mari kita mencoba melakukannya."
+      },
+      "source": {
+        "name": "Tatoeba",
+        "license": "CC BY 2.0 FR",
+        "sentence": {
+          "id": 2249871,
+          "author": "bunbuku"
+        },
+        "translations": {
+          "en": {
+            "id": 1039389,
+            "author": "CK"
+          },
+          "id": {
+            "id": 4713447,
+            "author": "Bilmanda"
+          }
+        }
+      }
+    },
+    {
+      "slug": "tatoeba-2744751",
+      "text": "そうなんですか？",
+      "translation": {
+        "en": "Is that so?",
+        "id": "Apa benar begitu?"
+      },
+      "source": {
+        "name": "Tatoeba",
+        "license": "CC BY 2.0 FR",
+        "sentence": {
+          "id": 2744751,
+          "author": "tommy_san"
+        },
+        "translations": {
+          "en": {
+            "id": 1120776,
+            "author": "cntrational"
+          },
+          "id": {
+            "id": 4708601,
+            "author": "Bilmanda"
+          }
+        }
+      }
+    },
+    {
+      "slug": "tatoeba-8647502",
+      "text": "どっちがトムの？",
+      "translation": {
+        "en": "Which ones are Tom's?",
+        "id": "Yang mana yang punya Tom?"
+      },
+      "source": {
+        "name": "Tatoeba",
+        "license": "CC BY 2.0 FR",
+        "sentence": {
+          "id": 8647502,
+          "author": "bunbuku"
+        },
+        "translations": {
+          "en": {
+            "id": 4574684,
+            "author": "Wierdmin"
+          },
+          "id": {
+            "id": 12432473,
+            "author": "HAGNi"
+          }
+        }
+      }
+    },
+    {
+      "slug": "tatoeba-11541426",
+      "text": "ロープはどこだ？",
+      "translation": {
+        "en": "Where's the rope?",
+        "id": "Di mana talinya?"
+      },
+      "source": {
+        "name": "Tatoeba",
+        "license": "CC BY 2.0 FR",
+        "sentence": {
+          "id": 11541426,
+          "author": "megamanenm"
+        },
+        "translations": {
+          "en": {
+            "id": 2549199,
+            "author": "CK"
+          },
+          "id": {
+            "id": 12470951,
+            "author": "HAGNi"
+          }
+        }
+      }
+    },
+    {
+      "slug": "tatoeba-12432468",
+      "text": "トムのはどっち？",
+      "translation": {
+        "en": "Which one is Tom's?",
+        "id": "Punya Tom yang mana?"
+      },
+      "source": {
+        "name": "Tatoeba",
+        "license": "CC BY 2.0 FR",
+        "sentence": {
+          "id": 12432468,
+          "author": "small_snow"
+        },
+        "translations": {
+          "en": {
+            "id": 12338191,
+            "author": "CK"
+          },
+          "id": {
+            "id": 12432471,
+            "author": "HAGNi"
+          }
+        }
+      }
+    },
+    {
+      "slug": "tatoeba-13662196",
+      "text": "これはカニです。",
+      "translation": {
+        "en": "This is a crab.",
+        "id": "Ini kepiting."
+      },
+      "source": {
+        "name": "Tatoeba",
+        "license": "CC BY 2.0 FR",
+        "sentence": {
+          "id": 13662196,
+          "author": "HAGNi"
+        },
+        "translations": {
+          "en": {
+            "id": 12268570,
+            "author": "Miktsoanit"
+          },
+          "id": {
+            "id": 12273493,
+            "author": "Pacific"
+          }
+        }
+      }
+    },
+    {
+      "slug": "tatoeba-194365",
+      "text": "もうヘトヘトです。",
+      "translation": {
+        "en": "I'm exhausted.",
+        "id": "Aku sudah capek sekali."
+      },
+      "source": {
+        "name": "Tatoeba",
+        "license": "CC BY 2.0 FR",
+        "sentence": {
+          "id": 194365,
+          "author": "mookeee"
+        },
+        "translations": {
+          "en": {
+            "id": 20405,
+            "author": "CK"
+          },
+          "id": {
+            "id": 7846716,
+            "author": "Bilmanda"
+          }
+        }
+      }
+    },
+    {
+      "slug": "tatoeba-217296",
+      "text": "こんにちは、トム。",
+      "translation": {
+        "en": "Hello, Tom.",
+        "id": "Halo, Tom!"
+      },
+      "source": {
+        "name": "Tatoeba",
+        "license": "CC BY 2.0 FR",
+        "sentence": {
+          "id": 217296,
+          "author": "bunbuku"
+        },
+        "translations": {
+          "en": {
+            "id": 54604,
+            "author": "Zifre"
+          },
+          "id": {
+            "id": 2189056,
+            "author": "menyo"
+          }
+        }
+      }
+    },
+    {
+      "slug": "tatoeba-224934",
+      "text": "コーヒーください。",
+      "translation": {
+        "en": "I'd like to have a coffee.",
+        "id": "Saya mau kopi."
+      },
+      "source": {
+        "name": "Tatoeba",
+        "license": "CC BY 2.0 FR",
+        "sentence": {
+          "id": 224934,
+          "author": "bunbuku"
+        },
+        "translations": {
+          "en": {
+            "id": 62269,
+            "author": "CK"
+          },
+          "id": {
+            "id": 5861248,
+            "author": "Bilmanda"
+          }
+        }
+      }
+    },
+    {
+      "slug": "tatoeba-338114",
+      "text": "いらっしゃいませ。",
+      "translation": {
+        "en": "Welcome.",
+        "id": "Selamat datang."
+      },
+      "source": {
+        "name": "Tatoeba",
+        "license": "CC BY 2.0 FR",
+        "sentence": {
+          "id": 338114,
+          "author": "shiboy"
+        },
+        "translations": {
+          "en": {
+            "id": 138919,
+            "author": "CM"
+          },
+          "id": {
+            "id": 4556759,
+            "author": "dbahasa"
+          }
+        }
+      }
+    },
+    {
+      "slug": "tatoeba-344899",
+      "text": "やってみましょう。",
+      "translation": {
+        "en": "Let's do it.",
+        "id": "Mari kita mencoba melakukannya."
+      },
+      "source": {
+        "name": "Tatoeba",
+        "license": "CC BY 2.0 FR",
+        "sentence": {
+          "id": 344899,
+          "author": "zhouj1955"
+        },
+        "translations": {
+          "en": {
+            "id": 413788,
+            "author": "Scott"
+          },
+          "id": {
+            "id": 4713447,
+            "author": "Bilmanda"
+          }
+        }
+      }
+    },
+    {
+      "slug": "tatoeba-992088",
+      "text": "もうくたくただよ。",
+      "translation": {
+        "en": "I'm exhausted.",
+        "id": "Aku sudah capek."
+      },
+      "source": {
+        "name": "Tatoeba",
+        "license": "CC BY 2.0 FR",
+        "sentence": {
+          "id": 992088,
+          "author": "mookeee"
+        },
+        "translations": {
+          "en": {
+            "id": 20405,
+            "author": "CK"
+          },
+          "id": {
+            "id": 7846711,
+            "author": "Bilmanda"
+          }
+        }
+      }
+    },
+    {
+      "slug": "tatoeba-1326963",
+      "text": "どちらさまですか？",
+      "translation": {
+        "en": "May I ask who you are?",
+        "id": "Bolehkah saya tahu siapa Anda?"
+      },
+      "source": {
+        "name": "Tatoeba",
+        "license": "CC BY 2.0 FR",
+        "sentence": {
+          "id": 1326963,
+          "author": "Scott"
+        },
+        "translations": {
+          "en": {
+            "id": 1327070,
+            "author": "bmaynard87"
+          },
+          "id": {
+            "id": 4261567,
+            "author": "Bilmanda"
+          }
+        }
+      }
+    },
+    {
+      "slug": "tatoeba-1430229",
+      "text": "リサイクルするの？",
+      "translation": {
+        "en": "Do you recycle?",
+        "id": "Apakah kamu akan mendaur ulangnya?"
+      },
+      "source": {
+        "name": "Tatoeba",
+        "license": "CC BY 2.0 FR",
+        "sentence": {
+          "id": 1430229,
+          "author": "bunbuku"
+        },
+        "translations": {
+          "en": {
+            "id": 953208,
+            "author": "CK"
+          },
+          "id": {
+            "id": 11462698,
+            "author": "Batozar"
+          }
+        }
+      }
+    },
+    {
+      "slug": "tatoeba-1751998",
+      "text": "まだここにいたい。",
+      "translation": {
+        "en": "I still want to be here.",
+        "id": "Aku masih ingin di sini."
+      },
+      "source": {
+        "name": "Tatoeba",
+        "license": "CC BY 2.0 FR",
+        "sentence": {
+          "id": 1751998,
+          "author": "kino"
+        },
+        "translations": {
+          "en": {
+            "id": 1754382,
+            "author": "mookeee"
+          },
+          "id": {
+            "id": 7429271,
+            "author": "purichan"
+          }
+        }
+      }
+    },
+    {
+      "slug": "tatoeba-2173972",
+      "text": "いいかげんにして。",
+      "translation": {
+        "en": "Give me a break.",
+        "id": "Sudah hentikan."
+      },
+      "source": {
+        "name": "Tatoeba",
+        "license": "CC BY 2.0 FR",
+        "sentence": {
+          "id": 2173972,
+          "author": "bunbuku"
+        },
+        "translations": {
+          "en": {
+            "id": 21097,
+            "author": "CK"
+          },
+          "id": {
+            "id": 4688326,
+            "author": "Bilmanda"
+          }
+        }
+      }
+    },
+    {
+      "slug": "tatoeba-2530541",
+      "text": "かくれんぼしよう。",
+      "translation": {
+        "en": "Let's play hide and seek.",
+        "id": "Ayo main petak umpet!"
+      },
+      "source": {
+        "name": "Tatoeba",
+        "license": "CC BY 2.0 FR",
+        "sentence": {
+          "id": 2530541,
+          "author": "tommy_san"
+        },
+        "translations": {
+          "en": {
+            "id": 2007528,
+            "author": "CK"
+          },
+          "id": {
+            "id": 11959765,
+            "author": "Pacific"
+          }
+        }
+      }
+    },
+    {
+      "slug": "tatoeba-2742206",
+      "text": "おなかペコペコだ。",
+      "translation": {
+        "en": "I am hungry.",
+        "id": "Aku lapar."
+      },
+      "source": {
+        "name": "Tatoeba",
+        "license": "CC BY 2.0 FR",
+        "sentence": {
+          "id": 2742206,
+          "author": "arnab"
+        },
+        "translations": {
+          "en": {
+            "id": 409602,
+            "author": "CC"
+          },
+          "id": {
+            "id": 4568452,
+            "author": "Bilmanda"
+          }
+        }
+      }
+    },
+    {
+      "slug": "tatoeba-3507419",
+      "text": "トムっていいヤツ？",
+      "translation": {
+        "en": "Is Tom good?",
+        "id": "Tom orangnya baik?"
+      },
+      "source": {
+        "name": "Tatoeba",
+        "license": "CC BY 2.0 FR",
+        "sentence": {
+          "id": 3507419,
+          "author": "arnab"
+        },
+        "translations": {
+          "en": {
+            "id": 2244601,
+            "author": "CK"
+          },
+          "id": {
+            "id": 5889022,
+            "author": "Bilmanda"
+          }
+        }
+      }
+    },
+    {
+      "slug": "tatoeba-8509123",
+      "text": "かくれんぼしたい？",
+      "translation": {
+        "en": "Do you want to play hide and seek?",
+        "id": "Apakah kalian mau main petak umpet?"
+      },
+      "source": {
+        "name": "Tatoeba",
+        "license": "CC BY 2.0 FR",
+        "sentence": {
+          "id": 8509123,
+          "author": "small_snow"
+        },
+        "translations": {
+          "en": {
+            "id": 2530543,
+            "author": "CK"
+          },
+          "id": {
+            "id": 12417549,
+            "author": "HAGNi"
+          }
+        }
+      }
+    },
+    {
+      "slug": "tatoeba-9672957",
+      "text": "どうもありがとう。",
+      "translation": {
+        "en": "Thanks a million.",
+        "id": "Terima kasih banyak."
+      },
+      "source": {
+        "name": "Tatoeba",
+        "license": "CC BY 2.0 FR",
+        "sentence": {
+          "id": 9672957,
+          "author": "bunbuku"
+        },
+        "translations": {
+          "en": {
+            "id": 2250081,
+            "author": "CK"
+          },
+          "id": {
+            "id": 3363322,
+            "author": "dbahasa"
+          }
+        }
+      }
+    },
+    {
+      "slug": "tatoeba-10626981",
+      "text": "すみませんでした。",
+      "translation": {
+        "en": "I'm sorry.",
+        "id": "Saya minta maaf."
+      },
+      "source": {
+        "name": "Tatoeba",
+        "license": "CC BY 2.0 FR",
+        "sentence": {
+          "id": 10626981,
+          "author": "nihonjin"
+        },
+        "translations": {
+          "en": {
+            "id": 38387,
+            "author": "CK"
+          },
+          "id": {
+            "id": 11244526,
+            "author": "Pacific"
+          }
+        }
+      }
+    },
+    {
+      "slug": "tatoeba-192595",
+      "text": "ラジオをつけなさい。",
+      "translation": {
+        "en": "Turn on the radio.",
+        "id": "Nyalakan radionya."
+      },
+      "source": {
+        "name": "Tatoeba",
+        "license": "CC BY 2.0 FR",
+        "sentence": {
+          "id": 192595,
+          "author": "bunbuku"
+        },
+        "translations": {
+          "en": {
+            "id": 29763,
+            "author": "CK"
+          },
+          "id": {
+            "id": 4449351,
+            "author": "Bilmanda"
+          }
+        }
+      }
+    },
+    {
+      "slug": "tatoeba-192599",
+      "text": "ラジオをつけてくれ。",
+      "translation": {
+        "en": "Turn on the radio.",
+        "id": "Nyalakan radionya."
+      },
+      "source": {
+        "name": "Tatoeba",
+        "license": "CC BY 2.0 FR",
+        "sentence": {
+          "id": 192599,
+          "author": "bunbuku"
+        },
+        "translations": {
+          "en": {
+            "id": 29763,
+            "author": "CK"
+          },
+          "id": {
+            "id": 4449351,
+            "author": "Bilmanda"
+          }
+        }
+      }
+    },
+    {
+      "slug": "tatoeba-1172753",
+      "text": "くつろいでください。",
+      "translation": {
+        "en": "Make yourselves comfortable.",
+        "id": "Anggap saja seperti rumah sendiri."
+      },
+      "source": {
+        "name": "Tatoeba",
+        "license": "CC BY 2.0 FR",
+        "sentence": {
+          "id": 1172753,
+          "author": "bunbuku"
+        },
+        "translations": {
+          "en": {
+            "id": 22118,
+            "author": "CK"
+          },
+          "id": {
+            "id": 4381870,
+            "author": "Bilmanda"
+          }
+        }
+      }
+    },
+    {
+      "slug": "tatoeba-1200901",
+      "text": "もうそれはいらない。",
+      "translation": {
+        "en": "I don't want it anymore.",
+        "id": "Aku sudah tidak menginginkannya."
+      },
+      "source": {
+        "name": "Tatoeba",
+        "license": "CC BY 2.0 FR",
+        "sentence": {
+          "id": 1200901,
+          "author": "bunbuku"
+        },
+        "translations": {
+          "en": {
+            "id": 2389,
+            "author": "CK"
+          },
+          "id": {
+            "id": 5087852,
+            "author": "Bilmanda"
+          }
+        }
+      }
+    },
+    {
+      "slug": "tatoeba-1576172",
+      "text": "おはようございます！",
+      "translation": {
+        "en": "Good morning!",
+        "id": "Selamat pagi!"
+      },
+      "source": {
+        "name": "Tatoeba",
+        "license": "CC BY 2.0 FR",
+        "sentence": {
+          "id": 1576172,
+          "author": "elencw"
+        },
+        "translations": {
+          "en": {
+            "id": 329713,
+            "author": "YURY0608"
+          },
+          "id": {
+            "id": 373358,
+            "author": "jizzomaru"
+          }
+        }
+      }
+    },
+    {
+      "slug": "tatoeba-1954104",
+      "text": "タトエバへようこそ。",
+      "translation": {
+        "en": "Welcome to Tatoeba!",
+        "id": "Selamat datang di Tatoeba."
+      },
+      "source": {
+        "name": "Tatoeba",
+        "license": "CC BY 2.0 FR",
+        "sentence": {
+          "id": 1954104,
+          "author": "sharptoothed"
+        },
+        "translations": {
+          "en": {
+            "id": 1205289,
+            "author": "bart"
+          },
+          "id": {
+            "id": 5079091,
+            "author": "Bilmanda"
+          }
+        }
+      }
+    },
+    {
+      "slug": "tatoeba-2764100",
+      "text": "ママ、おなかすいた。",
+      "translation": {
+        "en": "Mom, I'm hungry.",
+        "id": "Mama, perutku lapar."
+      },
+      "source": {
+        "name": "Tatoeba",
+        "license": "CC BY 2.0 FR",
+        "sentence": {
+          "id": 2764100,
+          "author": "tommy_san"
+        },
+        "translations": {
+          "en": {
+            "id": 2764199,
+            "author": "CK"
+          },
+          "id": {
+            "id": 5032673,
+            "author": "Bilmanda"
+          }
+        }
+      }
+    },
+    {
+      "slug": "tatoeba-3455737",
+      "text": "まかせてちょうだい。",
+      "translation": {
+        "en": "Consider it done.",
+        "id": "Serahkan padaku."
+      },
+      "source": {
+        "name": "Tatoeba",
+        "license": "CC BY 2.0 FR",
+        "sentence": {
+          "id": 3455737,
+          "author": "tomo"
+        },
+        "translations": {
+          "en": {
+            "id": 3163268,
+            "author": "Hybrid"
+          },
+          "id": {
+            "id": 8558427,
+            "author": "Jepang"
+          }
+        }
+      }
+    },
+    {
+      "slug": "tatoeba-4760435",
+      "text": "あなたのおかげです。",
+      "translation": {
+        "en": "It's thanks to you.",
+        "id": "Itu berkat dirimu."
+      },
+      "source": {
+        "name": "Tatoeba",
+        "license": "CC BY 2.0 FR",
+        "sentence": {
+          "id": 4760435,
+          "author": "small_snow"
+        },
+        "translations": {
+          "en": {
+            "id": 4767215,
+            "author": "Stalwartlover"
+          },
+          "id": {
+            "id": 5141730,
+            "author": "Bilmanda"
+          }
+        }
+      }
+    },
+    {
+      "slug": "tatoeba-5348327",
+      "text": "ホテルはどこですか。",
+      "translation": {
+        "en": "Where is the hotel?",
+        "id": "Di mana hotelnya?"
+      },
+      "source": {
+        "name": "Tatoeba",
+        "license": "CC BY 2.0 FR",
+        "sentence": {
+          "id": 5348327,
+          "author": "pekerappo"
+        },
+        "translations": {
+          "en": {
+            "id": 2499505,
+            "author": "CM"
+          },
+          "id": {
+            "id": 13669566,
+            "author": "HAGNi"
+          }
+        }
+      }
+    },
+    {
+      "slug": "tatoeba-9998976",
+      "text": "トムんちにいるんだ。",
+      "translation": {
+        "en": "I'm at Tom's house.",
+        "id": "Aku di rumah Tom."
+      },
+      "source": {
+        "name": "Tatoeba",
+        "license": "CC BY 2.0 FR",
+        "sentence": {
+          "id": 9998976,
+          "author": "small_snow"
+        },
+        "translations": {
+          "en": {
+            "id": 2548734,
+            "author": "CK"
+          },
+          "id": {
+            "id": 12869090,
+            "author": "HAGNi"
+          }
+        }
+      }
+    },
+    {
+      "slug": "tatoeba-12708747",
+      "text": "トムはふざけてるの？",
+      "translation": {
+        "en": "Is Tom joking?",
+        "id": "Apakah Tom bercanda?"
+      },
+      "source": {
+        "name": "Tatoeba",
+        "license": "CC BY 2.0 FR",
+        "sentence": {
+          "id": 12708747,
+          "author": "small_snow"
+        },
+        "translations": {
+          "en": {
+            "id": 2244615,
+            "author": "CK"
+          },
+          "id": {
+            "id": 12713817,
+            "author": "HAGNi"
+          }
+        }
+      }
+    },
+    {
+      "slug": "tatoeba-4854",
+      "text": "おめでとうございます。",
+      "translation": {
+        "en": "Congratulations!",
+        "id": "Selamat!"
+      },
+      "source": {
+        "name": "Tatoeba",
+        "license": "CC BY 2.0 FR",
+        "sentence": {
+          "id": 4854,
+          "author": "bunbuku"
+        },
+        "translations": {
+          "en": {
+            "id": 1437,
+            "author": "CK"
+          },
+          "id": {
+            "id": 952963,
+            "author": "windra"
+          }
+        }
+      }
+    },
+    {
+      "slug": "tatoeba-4971",
+      "text": "ありがとうございます！",
+      "translation": {
+        "en": "Thank you very much!",
+        "id": "Terima kasih!"
+      },
+      "source": {
+        "name": "Tatoeba",
+        "license": "CC BY 2.0 FR",
+        "sentence": {
+          "id": 4971,
+          "author": "bunbuku"
+        },
+        "translations": {
+          "en": {
+            "id": 1564,
+            "author": "adjusting"
+          },
+          "id": {
+            "id": 2684648,
+            "author": "Ricardo14"
+          }
+        }
+      }
+    },
+    {
+      "slug": "tatoeba-227480",
+      "text": "おやすみなさい、ママ。",
+      "translation": {
+        "en": "Good night, Mom.",
+        "id": "Selamat tidur, Bu."
+      },
+      "source": {
+        "name": "Tatoeba",
+        "license": "CC BY 2.0 FR",
+        "sentence": {
+          "id": 227480,
+          "author": "bunbuku"
+        },
+        "translations": {
+          "en": {
+            "id": 64833,
+            "author": "shanghainese"
+          },
+          "id": {
+            "id": 366002,
+            "author": "hayabusa_future"
+          }
+        }
+      }
+    },
+    {
+      "slug": "tatoeba-1057382",
+      "text": "メアリーはどうしてる？",
+      "translation": {
+        "en": "How is Mary?",
+        "id": "Bagaimana keadaan Mary?"
+      },
+      "source": {
+        "name": "Tatoeba",
+        "license": "CC BY 2.0 FR",
+        "sentence": {
+          "id": 1057382,
+          "author": "bunbuku"
+        },
+        "translations": {
+          "en": {
+            "id": 31942,
+            "author": "CN"
+          },
+          "id": {
+            "id": 3872002,
+            "author": "orion17"
+          }
+        }
+      }
+    },
+    {
+      "slug": "tatoeba-1369122",
+      "text": "ドアをしめてください。",
+      "translation": {
+        "en": "Close the door, please.",
+        "id": "Tolong tutup pintunya."
+      },
+      "source": {
+        "name": "Tatoeba",
+        "license": "CC BY 2.0 FR",
+        "sentence": {
+          "id": 1369122,
+          "author": "boscowitch"
+        },
+        "translations": {
+          "en": {
+            "id": 38524,
+            "author": "CK"
+          },
+          "id": {
+            "id": 5868237,
+            "author": "Bilmanda"
+          }
+        }
+      }
+    },
+    {
+      "slug": "tatoeba-3488193",
+      "text": "どなたさまでしょうか。",
+      "translation": {
+        "en": "Who is it?",
+        "id": "Anda siapa, ya?"
+      },
+      "source": {
+        "name": "Tatoeba",
+        "license": "CC BY 2.0 FR",
+        "sentence": {
+          "id": 3488193,
+          "author": "arnab"
+        },
+        "translations": {
+          "en": {
+            "id": 428379,
+            "author": "witbrock"
+          },
+          "id": {
+            "id": 11412539,
+            "author": "Batozar"
+          }
+        }
+      }
+    },
+    {
+      "slug": "tatoeba-10879024",
+      "text": "やりたいことがあるの。",
+      "translation": {
+        "en": "There are things I want to do.",
+        "id": "Ada yang mau kulakukan."
+      },
+      "source": {
+        "name": "Tatoeba",
+        "license": "CC BY 2.0 FR",
+        "sentence": {
+          "id": 10879024,
+          "author": "small_snow"
+        },
+        "translations": {
+          "en": {
+            "id": 8746654,
+            "author": "shekitten"
+          },
+          "id": {
+            "id": 13742688,
+            "author": "HAGNi"
+          }
+        }
+      }
+    },
+    {
+      "slug": "tatoeba-12024147",
+      "text": "レシートはいりません。",
+      "translation": {
+        "en": "I don't need a receipt.",
+        "id": "Saya tidak perlu struknya."
+      },
+      "source": {
+        "name": "Tatoeba",
+        "license": "CC BY 2.0 FR",
+        "sentence": {
+          "id": 12024147,
+          "author": "small_snow"
+        },
+        "translations": {
+          "en": {
+            "id": 9337557,
+            "author": "CK"
+          },
+          "id": {
+            "id": 12146985,
+            "author": "HAGNi"
+          }
+        }
+      }
+    },
+    {
+      "slug": "tatoeba-12134429",
+      "text": "このチーズはおいしい。",
+      "translation": {
+        "en": "This cheese is delicious.",
+        "id": "Keju ini enak."
+      },
+      "source": {
+        "name": "Tatoeba",
+        "license": "CC BY 2.0 FR",
+        "sentence": {
+          "id": 12134429,
+          "author": "HAGNi"
+        },
+        "translations": {
+          "en": {
+            "id": 11964628,
+            "author": "CK"
+          },
+          "id": {
+            "id": 11964641,
+            "author": "Pacific"
+          }
+        }
+      }
+    },
+    {
+      "slug": "tatoeba-12396789",
+      "text": "おもちゃじゃないのよ！",
+      "translation": {
+        "en": "This is not a toy!",
+        "id": "Ini bukan mainan!"
+      },
+      "source": {
+        "name": "Tatoeba",
+        "license": "CC BY 2.0 FR",
+        "sentence": {
+          "id": 12396789,
+          "author": "small_snow"
+        },
+        "translations": {
+          "en": {
+            "id": 1516994,
+            "author": "voxbubnya"
+          },
+          "id": {
+            "id": 11520036,
+            "author": "Pacific"
+          }
+        }
+      }
+    },
+    {
+      "slug": "tatoeba-12608170",
+      "text": "みんなここにいるよね？",
+      "translation": {
+        "en": "Everyone is here, right?",
+        "id": "Semuanya sudah di sini, kan?"
+      },
+      "source": {
+        "name": "Tatoeba",
+        "license": "CC BY 2.0 FR",
+        "sentence": {
+          "id": 12608170,
+          "author": "bunbuku"
+        },
+        "translations": {
+          "en": {
+            "id": 5466592,
+            "author": "CK"
+          },
+          "id": {
+            "id": 12895648,
+            "author": "HAGNi"
+          }
+        }
+      }
+    },
+    {
+      "slug": "tatoeba-13771984",
+      "text": "それはタンタンですか？",
+      "translation": {
+        "en": "Is that Tintin?",
+        "id": "Itu Tintin?"
+      },
+      "source": {
+        "name": "Tatoeba",
+        "license": "CC BY 2.0 FR",
+        "sentence": {
+          "id": 13771984,
+          "author": "rul"
+        },
+        "translations": {
+          "en": {
+            "id": 13722712,
+            "author": "rul"
+          },
+          "id": {
+            "id": 13776201,
+            "author": "HAGNi"
+          }
+        }
+      }
+    },
+    {
+      "slug": "tatoeba-192600",
+      "text": "ラジオをつけてください。",
+      "translation": {
+        "en": "Turn on the radio.",
+        "id": "Tolong nyalakan radionya."
+      },
+      "source": {
+        "name": "Tatoeba",
+        "license": "CC BY 2.0 FR",
+        "sentence": {
+          "id": 192600,
+          "author": "bunbuku"
+        },
+        "translations": {
+          "en": {
+            "id": 29763,
+            "author": "CK"
+          },
+          "id": {
+            "id": 4449350,
+            "author": "Bilmanda"
+          }
+        }
+      }
+    },
+    {
+      "slug": "tatoeba-199246",
+      "text": "なぜそんなことをしたの？",
+      "translation": {
+        "en": "Why did you do that?",
+        "id": "Kenapa kau melakukan hal semacam itu?"
+      },
+      "source": {
+        "name": "Tatoeba",
+        "license": "CC BY 2.0 FR",
+        "sentence": {
+          "id": 199246,
+          "author": "small_snow"
+        },
+        "translations": {
+          "en": {
+            "id": 401801,
+            "author": "CK"
+          },
+          "id": {
+            "id": 4454830,
+            "author": "Bilmanda"
+          }
+        }
+      }
+    },
+    {
+      "slug": "tatoeba-1538013",
+      "text": "エアコンがないんですか。",
+      "translation": {
+        "en": "Don't you have an air conditioner?",
+        "id": "Kau tidak punya AC?"
+      },
+      "source": {
+        "name": "Tatoeba",
+        "license": "CC BY 2.0 FR",
+        "sentence": {
+          "id": 1538013,
+          "author": "bunbuku"
+        },
+        "translations": {
+          "en": {
+            "id": 953252,
+            "author": "CK"
+          },
+          "id": {
+            "id": 5224414,
+            "author": "Bilmanda"
+          }
+        }
+      }
+    },
+    {
+      "slug": "tatoeba-2871722",
+      "text": "なんでこんなことしたの？",
+      "translation": {
+        "en": "What made you do this?",
+        "id": "Kenapa kau melakukan hal semacam ini?"
+      },
+      "source": {
+        "name": "Tatoeba",
+        "license": "CC BY 2.0 FR",
+        "sentence": {
+          "id": 2871722,
+          "author": "tommy_san"
+        },
+        "translations": {
+          "en": {
+            "id": 2871715,
+            "author": "CK"
+          },
+          "id": {
+            "id": 4454832,
+            "author": "Bilmanda"
+          }
+        }
+      }
+    },
+    {
+      "slug": "tatoeba-3024841",
+      "text": "がっかりさせてごめんね。",
+      "translation": {
+        "en": "I'm sorry I let you down.",
+        "id": "Maaf sudah mengecewakanmu."
+      },
+      "source": {
+        "name": "Tatoeba",
+        "license": "CC BY 2.0 FR",
+        "sentence": {
+          "id": 3024841,
+          "author": "tommy_san"
+        },
+        "translations": {
+          "en": {
+            "id": 2545296,
+            "author": "CK"
+          },
+          "id": {
+            "id": 5241190,
+            "author": "Bilmanda"
+          }
+        }
+      }
+    },
+    {
+      "slug": "tatoeba-4772853",
+      "text": "これなんていうんですか？",
+      "translation": {
+        "en": "What's this called?",
+        "id": "Disebut apa ini?"
+      },
+      "source": {
+        "name": "Tatoeba",
+        "license": "CC BY 2.0 FR",
+        "sentence": {
+          "id": 4772853,
+          "author": "tommy_san"
+        },
+        "translations": {
+          "en": {
+            "id": 2835775,
+            "author": "CK"
+          },
+          "id": {
+            "id": 5898222,
+            "author": "Bilmanda"
+          }
+        }
+      }
+    },
+    {
+      "slug": "tatoeba-4817731",
+      "text": "このカメラいくらですか？",
+      "translation": {
+        "en": "How much is this camera?",
+        "id": "Kamera ini berapa harganya?"
+      },
+      "source": {
+        "name": "Tatoeba",
+        "license": "CC BY 2.0 FR",
+        "sentence": {
+          "id": 4817731,
+          "author": "tommy_san"
+        },
+        "translations": {
+          "en": {
+            "id": 61222,
+            "author": "CK"
+          },
+          "id": {
+            "id": 5881914,
+            "author": "Bilmanda"
+          }
+        }
+      }
+    },
+    {
+      "slug": "tatoeba-7492731",
+      "text": "これはトリックじゃない。",
+      "translation": {
+        "en": "This isn't a trick.",
+        "id": "Ini bukan tipuan."
+      },
+      "source": {
+        "name": "Tatoeba",
+        "license": "CC BY 2.0 FR",
+        "sentence": {
+          "id": 7492731,
+          "author": "Ninja"
+        },
+        "translations": {
+          "en": {
+            "id": 7492657,
+            "author": "CK"
+          },
+          "id": {
+            "id": 4710810,
+            "author": "Bilmanda"
+          }
+        }
+      }
+    },
+    {
+      "slug": "tatoeba-9448697",
+      "text": "このカップはトムのだよ。",
+      "translation": {
+        "en": "This cup is Tom's.",
+        "id": "Cangkir ini milik Tom."
+      },
+      "source": {
+        "name": "Tatoeba",
+        "license": "CC BY 2.0 FR",
+        "sentence": {
+          "id": 9448697,
+          "author": "small_snow"
+        },
+        "translations": {
+          "en": {
+            "id": 9282214,
+            "author": "Ergulis"
+          },
+          "id": {
+            "id": 13659598,
+            "author": "HAGNi"
+          }
+        }
+      }
+    },
+    {
+      "slug": "tatoeba-10898023",
+      "text": "やわらかくておいしいね。",
+      "translation": {
+        "en": "It's deliciously tender, isn't it.",
+        "id": "Empuk dan enak ya."
+      },
+      "source": {
+        "name": "Tatoeba",
+        "license": "CC BY 2.0 FR",
+        "sentence": {
+          "id": 10898023,
+          "author": "small_snow"
+        },
+        "translations": {
+          "en": {
+            "id": 13721674,
+            "author": "terrywallwork"
+          },
+          "id": {
+            "id": 13028807,
+            "author": "Bilmanda"
+          }
+        }
+      }
+    },
+    {
+      "slug": "tatoeba-11543197",
+      "text": "これはおもちゃじゃない！",
+      "translation": {
+        "en": "This is not a toy!",
+        "id": "Ini bukan mainan!"
+      },
+      "source": {
+        "name": "Tatoeba",
+        "license": "CC BY 2.0 FR",
+        "sentence": {
+          "id": 11543197,
+          "author": "HAGNi"
+        },
+        "translations": {
+          "en": {
+            "id": 1516994,
+            "author": "voxbubnya"
+          },
+          "id": {
+            "id": 11520036,
+            "author": "Pacific"
+          }
+        }
+      }
+    },
+    {
+      "slug": "tatoeba-200385",
+      "text": "どのチームのファンですか。",
+      "translation": {
+        "en": "Which is your favorite team?",
+        "id": "Anda penggemar dari tim mana?"
+      },
+      "source": {
+        "name": "Tatoeba",
+        "license": "CC BY 2.0 FR",
+        "sentence": {
+          "id": 200385,
+          "author": "KK_kaku_"
+        },
+        "translations": {
+          "en": {
+            "id": 37586,
+            "author": "mamat"
+          },
+          "id": {
+            "id": 4549953,
+            "author": "Bilmanda"
+          }
+        }
+      }
+    },
+    {
+      "slug": "tatoeba-201383",
+      "text": "どうぞ、おすわりください。",
+      "translation": {
+        "en": "Please take a seat.",
+        "id": "Silakan duduk."
+      },
+      "source": {
+        "name": "Tatoeba",
+        "license": "CC BY 2.0 FR",
+        "sentence": {
+          "id": 201383,
+          "author": "bunbuku"
+        },
+        "translations": {
+          "en": {
+            "id": 38593,
+            "author": "CK"
+          },
+          "id": {
+            "id": 3864925,
+            "author": "orion17"
+          }
+        }
+      }
+    },
+    {
+      "slug": "tatoeba-224944",
+      "text": "コーヒーがこぼれましたよ。",
+      "translation": {
+        "en": "You've spilt your coffee.",
+        "id": "Kopinya tumpah."
+      },
+      "source": {
+        "name": "Tatoeba",
+        "license": "CC BY 2.0 FR",
+        "sentence": {
+          "id": 224944,
+          "author": "bunbuku"
+        },
+        "translations": {
+          "en": {
+            "id": 62279,
+            "author": "CK"
+          },
+          "id": {
+            "id": 331491,
+            "author": "umarsaid"
+          }
+        }
+      }
+    },
+    {
+      "slug": "tatoeba-388348",
+      "text": "コメントはまだありません。",
+      "translation": {
+        "en": "There are no comments yet.",
+        "id": "Belum ada komentar."
+      },
+      "source": {
+        "name": "Tatoeba",
+        "license": "CC BY 2.0 FR",
+        "sentence": {
+          "id": 388348,
+          "author": "mookeee"
+        },
+        "translations": {
+          "en": {
+            "id": 388349,
+            "author": "CK"
+          },
+          "id": {
+            "id": 7429576,
+            "author": "purichan"
+          }
+        }
+      }
+    },
+    {
+      "slug": "tatoeba-1142909",
+      "text": "エレベーターはありますか？",
+      "translation": {
+        "en": "Is there an elevator?",
+        "id": "Apakah ada elevator?"
+      },
+      "source": {
+        "name": "Tatoeba",
+        "license": "CC BY 2.0 FR",
+        "sentence": {
+          "id": 1142909,
+          "author": "bunbuku"
+        },
+        "translations": {
+          "en": {
+            "id": 383819,
+            "author": "MUIRIEL"
+          },
+          "id": {
+            "id": 13024139,
+            "author": "Bilmanda"
+          }
+        }
+      }
+    },
+    {
+      "slug": "tatoeba-2794517",
+      "text": "オーストラリアへようこそ。",
+      "translation": {
+        "en": "Welcome to Australia.",
+        "id": "Selamat datang di Australia."
+      },
+      "source": {
+        "name": "Tatoeba",
+        "license": "CC BY 2.0 FR",
+        "sentence": {
+          "id": 2794517,
+          "author": "tommy_san"
+        },
+        "translations": {
+          "en": {
+            "id": 2254495,
+            "author": "CK"
+          },
+          "id": {
+            "id": 11324954,
+            "author": "Pacific"
+          }
+        }
+      }
+    },
+    {
+      "slug": "tatoeba-4300739",
+      "text": "これほんとにスパゲッティ？",
+      "translation": {
+        "en": "Is this really spaghetti?",
+        "id": "Ini beneran spageti?"
+      },
+      "source": {
+        "name": "Tatoeba",
+        "license": "CC BY 2.0 FR",
+        "sentence": {
+          "id": 4300739,
+          "author": "tommy_san"
+        },
+        "translations": {
+          "en": {
+            "id": 4300736,
+            "author": "Incursio"
+          },
+          "id": {
+            "id": 5885785,
+            "author": "Bilmanda"
+          }
+        }
+      }
+    },
+    {
+      "slug": "tatoeba-4751183",
+      "text": "コンサートはどうでしたか？",
+      "translation": {
+        "en": "How was the concert?",
+        "id": "Konsernya bagaimana?"
+      },
+      "source": {
+        "name": "Tatoeba",
+        "license": "CC BY 2.0 FR",
+        "sentence": {
+          "id": 4751183,
+          "author": "tommy_san"
+        },
+        "translations": {
+          "en": {
+            "id": 895660,
+            "author": "pauldhunt"
+          },
+          "id": {
+            "id": 13028815,
+            "author": "Bilmanda"
+          }
+        }
+      }
+    },
+    {
+      "slug": "tatoeba-6962935",
+      "text": "このシャツはいくらですか？",
+      "translation": {
+        "en": "How much is this shirt?",
+        "id": "Baju ini harganya berapa?"
+      },
+      "source": {
+        "name": "Tatoeba",
+        "license": "CC BY 2.0 FR",
+        "sentence": {
+          "id": 6962935,
+          "author": "jiwajiwa"
+        },
+        "translations": {
+          "en": {
+            "id": 6962936,
+            "author": "jiwajiwa"
+          },
+          "id": {
+            "id": 6997877,
+            "author": "reitnorf"
+          }
+        }
+      }
+    },
+    {
+      "slug": "tatoeba-10901831",
+      "text": "そのコップはあなたのです。",
+      "translation": {
+        "en": "That cup is yours.",
+        "id": "Gelas itu punya Anda."
+      },
+      "source": {
+        "name": "Tatoeba",
+        "license": "CC BY 2.0 FR",
+        "sentence": {
+          "id": 10901831,
+          "author": "small_snow"
+        },
+        "translations": {
+          "en": {
+            "id": 10901833,
+            "author": "CK"
+          },
+          "id": {
+            "id": 13071386,
+            "author": "Bilmanda"
+          }
+        }
+      }
+    },
+    {
+      "slug": "tatoeba-10990609",
+      "text": "わりとサービスいいじゃん。",
+      "translation": {
+        "en": "Relatively speaking service is good, isn't it.",
+        "id": "Ternyata pelayanannya bagus juga ya."
+      },
+      "source": {
+        "name": "Tatoeba",
+        "license": "CC BY 2.0 FR",
+        "sentence": {
+          "id": 10990609,
+          "author": "small_snow"
+        },
+        "translations": {
+          "en": {
+            "id": 13865027,
+            "author": "terrywallwork"
+          },
+          "id": {
+            "id": 13061879,
+            "author": "Bilmanda"
+          }
+        }
+      }
+    },
+    {
+      "slug": "tatoeba-11022996",
+      "text": "これはさすがにヤバすぎる。",
+      "translation": {
+        "en": "This is awful indeed.",
+        "id": "Ini parah banget sih."
+      },
+      "source": {
+        "name": "Tatoeba",
+        "license": "CC BY 2.0 FR",
+        "sentence": {
+          "id": 11022996,
+          "author": "small_snow"
+        },
+        "translations": {
+          "en": {
+            "id": 11827706,
+            "author": "nana2capriccio"
+          },
+          "id": {
+            "id": 13055770,
+            "author": "Bilmanda"
+          }
+        }
+      }
+    },
+    {
+      "slug": "tatoeba-12501983",
+      "text": "これはどういうキノコなの？",
+      "translation": {
+        "en": "What kind of mushroom is this?",
+        "id": "Ini jamur apa?"
+      },
+      "source": {
+        "name": "Tatoeba",
+        "license": "CC BY 2.0 FR",
+        "sentence": {
+          "id": 12501983,
+          "author": "bunbuku"
+        },
+        "translations": {
+          "en": {
+            "id": 11038663,
+            "author": "CK"
+          },
+          "id": {
+            "id": 12502446,
+            "author": "HAGNi"
+          }
+        }
+      }
+    },
+    {
+      "slug": "tatoeba-138736",
+      "text": "あなたはどこにいたのですか。",
+      "translation": {
+        "en": "Where were you?",
+        "id": "Tadi kau ada di mana?"
+      },
+      "source": {
+        "name": "Tatoeba",
+        "license": "CC BY 2.0 FR",
+        "sentence": {
+          "id": 138736,
+          "author": "KK_kaku_"
+        },
+        "translations": {
+          "en": {
+            "id": 16486,
+            "author": "CK"
+          },
+          "id": {
+            "id": 4622921,
+            "author": "Bilmanda"
+          }
+        }
+      }
+    },
+    {
+      "slug": "tatoeba-198454",
+      "text": "パーティーはいかがでしたか。",
+      "translation": {
+        "en": "How did you like the party?",
+        "id": "Bagaimana menurut Anda pestanya?"
+      },
+      "source": {
+        "name": "Tatoeba",
+        "license": "CC BY 2.0 FR",
+        "sentence": {
+          "id": 198454,
+          "author": "small_snow"
+        },
+        "translations": {
+          "en": {
+            "id": 35645,
+            "author": "CK"
+          },
+          "id": {
+            "id": 4453112,
+            "author": "Bilmanda"
+          }
+        }
+      }
+    },
+    {
+      "slug": "tatoeba-224963",
+      "text": "コートをおかけしましょうか。",
+      "translation": {
+        "en": "May I hang up your coat?",
+        "id": "Boleh kugantungkan jasmu?"
+      },
+      "source": {
+        "name": "Tatoeba",
+        "license": "CC BY 2.0 FR",
+        "sentence": {
+          "id": 224963,
+          "author": "bunbuku"
+        },
+        "translations": {
+          "en": {
+            "id": 62298,
+            "author": "CK"
+          },
+          "id": {
+            "id": 331509,
+            "author": "umarsaid"
+          }
+        }
+      }
+    },
+    {
+      "slug": "tatoeba-1136595",
+      "text": "どうもありがとうございます！",
+      "translation": {
+        "en": "Thank you very much!",
+        "id": "Terima kasih banyak!"
+      },
+      "source": {
+        "name": "Tatoeba",
+        "license": "CC BY 2.0 FR",
+        "sentence": {
+          "id": 1136595,
+          "author": "bunbuku"
+        },
+        "translations": {
+          "en": {
+            "id": 1564,
+            "author": "adjusting"
+          },
+          "id": {
+            "id": 365991,
+            "author": "hayabusa_future"
+          }
+        }
+      }
+    },
+    {
+      "slug": "tatoeba-4452942",
+      "text": "いつからコンタクトしてるの？",
+      "translation": {
+        "en": "Since when are you wearing contacts?",
+        "id": "Sejak kapan kamu menggunakan lensa kontak?"
+      },
+      "source": {
+        "name": "Tatoeba",
+        "license": "CC BY 2.0 FR",
+        "sentence": {
+          "id": 4452942,
+          "author": "tommy_san"
+        },
+        "translations": {
+          "en": {
+            "id": 4459803,
+            "author": "Raizin"
+          },
+          "id": {
+            "id": 7153008,
+            "author": "purichan"
+          }
+        }
+      }
+    },
+    {
+      "slug": "tatoeba-4751184",
+      "text": "どうでしたか、コンサートは？",
+      "translation": {
+        "en": "How was the concert?",
+        "id": "Bagaimana konsernya?"
+      },
+      "source": {
+        "name": "Tatoeba",
+        "license": "CC BY 2.0 FR",
+        "sentence": {
+          "id": 4751184,
+          "author": "tommy_san"
+        },
+        "translations": {
+          "en": {
+            "id": 895660,
+            "author": "pauldhunt"
+          },
+          "id": {
+            "id": 13028812,
+            "author": "Bilmanda"
+          }
+        }
+      }
+    },
+    {
+      "slug": "tatoeba-10952585",
+      "text": "これからどうすればいいのか？",
+      "translation": {
+        "en": "What should we do now?",
+        "id": "Setelah ini baiknya gimana?"
+      },
+      "source": {
+        "name": "Tatoeba",
+        "license": "CC BY 2.0 FR",
+        "sentence": {
+          "id": 10952585,
+          "author": "small_snow"
+        },
+        "translations": {
+          "en": {
+            "id": 3365377,
+            "author": "CK"
+          },
+          "id": {
+            "id": 13067497,
+            "author": "Bilmanda"
+          }
+        }
+      }
+    },
+    {
+      "slug": "tatoeba-11045144",
+      "text": "データはあればあるほどいい。",
+      "translation": {
+        "en": "The more data we have, the better.",
+        "id": "Data itu semakin banyak semakin bagus."
+      },
+      "source": {
+        "name": "Tatoeba",
+        "license": "CC BY 2.0 FR",
+        "sentence": {
+          "id": 11045144,
+          "author": "KK_kaku_"
+        },
+        "translations": {
+          "en": {
+            "id": 11045595,
+            "author": "CK"
+          },
+          "id": {
+            "id": 13079526,
+            "author": "Bilmanda"
+          }
+        }
+      }
+    },
+    {
+      "slug": "tatoeba-11831589",
+      "text": "どうもありがとうございます。",
+      "translation": {
+        "en": "Thank you very much.",
+        "id": "Terima kasih banyak!"
+      },
+      "source": {
+        "name": "Tatoeba",
+        "license": "CC BY 2.0 FR",
+        "sentence": {
+          "id": 11831589,
+          "author": "small_snow"
+        },
+        "translations": {
+          "en": {
+            "id": 1839560,
+            "author": "CK"
+          },
+          "id": {
+            "id": 365991,
+            "author": "hayabusa_future"
+          }
+        }
+      }
+    },
+    {
+      "slug": "tatoeba-201362",
+      "text": "どうぞおかけになってください。",
+      "translation": {
+        "en": "Sit down, please.",
+        "id": "Silakan duduk."
+      },
+      "source": {
+        "name": "Tatoeba",
+        "license": "CC BY 2.0 FR",
+        "sentence": {
+          "id": 201362,
+          "author": "bunbuku"
+        },
+        "translations": {
+          "en": {
+            "id": 38571,
+            "author": "CK"
+          },
+          "id": {
+            "id": 3864925,
+            "author": "orion17"
+          }
+        }
+      }
+    },
+    {
+      "slug": "tatoeba-227679",
+      "text": "おそらくインフルエンザですね。",
+      "translation": {
+        "en": "I think you've got the flu.",
+        "id": "Kemungkinan Anda terkena flu."
+      },
+      "source": {
+        "name": "Tatoeba",
+        "license": "CC BY 2.0 FR",
+        "sentence": {
+          "id": 227679,
+          "author": "tommy__san"
+        },
+        "translations": {
+          "en": {
+            "id": 65032,
+            "author": "CK"
+          },
+          "id": {
+            "id": 5196266,
+            "author": "Bilmanda"
+          }
+        }
+      }
+    },
+    {
+      "slug": "tatoeba-997207",
+      "text": "フェイスブックはやってますか？",
+      "translation": {
+        "en": "Are you on Facebook?",
+        "id": "Apa kau punya Facebook?"
+      },
+      "source": {
+        "name": "Tatoeba",
+        "license": "CC BY 2.0 FR",
+        "sentence": {
+          "id": 997207,
+          "author": "mookeee"
+        },
+        "translations": {
+          "en": {
+            "id": 953107,
+            "author": "CK"
+          },
+          "id": {
+            "id": 5087873,
+            "author": "Bilmanda"
+          }
+        }
+      }
+    },
+    {
+      "slug": "tatoeba-4438542",
+      "text": "コメントありがとうございます。",
+      "translation": {
+        "en": "Thanks for the comment.",
+        "id": "Terima kasih untuk komentarnya."
+      },
+      "source": {
+        "name": "Tatoeba",
+        "license": "CC BY 2.0 FR",
+        "sentence": {
+          "id": 4438542,
+          "author": "tommy_san"
+        },
+        "translations": {
+          "en": {
+            "id": 1840167,
+            "author": "luca22"
+          },
+          "id": {
+            "id": 5891468,
+            "author": "Bilmanda"
+          }
+        }
+      }
+    },
+    {
+      "slug": "tatoeba-10899748",
+      "text": "どうもありがとうございました。",
+      "translation": {
+        "en": "Thank you very much.",
+        "id": "Terima kasih banyak."
+      },
+      "source": {
+        "name": "Tatoeba",
+        "license": "CC BY 2.0 FR",
+        "sentence": {
+          "id": 10899748,
+          "author": "small_snow"
+        },
+        "translations": {
+          "en": {
+            "id": 1839560,
+            "author": "CK"
+          },
+          "id": {
+            "id": 3363322,
+            "author": "dbahasa"
+          }
+        }
+      }
+    },
+    {
+      "slug": "tatoeba-11879085",
+      "text": "アイスクリームとけちゃったよ。",
+      "translation": {
+        "en": "The ice cream melted.",
+        "id": "Es krimnya mencair."
+      },
+      "source": {
+        "name": "Tatoeba",
+        "license": "CC BY 2.0 FR",
+        "sentence": {
+          "id": 11879085,
+          "author": "small_snow"
+        },
+        "translations": {
+          "en": {
+            "id": 9937711,
+            "author": "ddnktr"
+          },
+          "id": {
+            "id": 11461607,
+            "author": "Pacific"
+          }
+        }
+      }
+    },
+    {
+      "slug": "tatoeba-12886234",
+      "text": "このドライヤーはいくらですか。",
+      "translation": {
+        "en": "How much is this hair dryer?",
+        "id": "Pengering rambut ini berapa harganya?"
+      },
+      "source": {
+        "name": "Tatoeba",
+        "license": "CC BY 2.0 FR",
+        "sentence": {
+          "id": 12886234,
+          "author": "Josephlingo"
+        },
+        "translations": {
+          "en": {
+            "id": 12886235,
+            "author": "Josephlingo"
+          },
+          "id": {
+            "id": 12886635,
+            "author": "HAGNi"
+          }
+        }
+      }
+    },
+    {
+      "slug": "tatoeba-232414",
+      "text": "あなたはピアノをやるそうですね。",
+      "translation": {
+        "en": "I hear that you play the piano.",
+        "id": "Aku dengar kau bermain piano."
+      },
+      "source": {
+        "name": "Tatoeba",
+        "license": "CC BY 2.0 FR",
+        "sentence": {
+          "id": 232414,
+          "author": "bunbuku"
+        },
+        "translations": {
+          "en": {
+            "id": 69786,
+            "author": "CK"
+          },
+          "id": {
+            "id": 4582594,
+            "author": "Bilmanda"
+          }
+        }
+      }
+    },
+    {
+      "slug": "tatoeba-3281203",
+      "text": "こちらにサインをいただけますか？",
+      "translation": {
+        "en": "Could you sign here, please?",
+        "id": "Bisa tolong Anda tanda tangan di sini?"
+      },
+      "source": {
+        "name": "Tatoeba",
+        "license": "CC BY 2.0 FR",
+        "sentence": {
+          "id": 3281203,
+          "author": "tommy_san"
+        },
+        "translations": {
+          "en": {
+            "id": 61518,
+            "author": "CK"
+          },
+          "id": {
+            "id": 5894633,
+            "author": "Bilmanda"
+          }
+        }
+      }
+    },
+    {
+      "slug": "tatoeba-4593679",
+      "text": "すみません、トイレはどこですか？",
+      "translation": {
+        "en": "Excuse me, where is the toilet?",
+        "id": "Permisi, toiletnya di mana ya?"
+      },
+      "source": {
+        "name": "Tatoeba",
+        "license": "CC BY 2.0 FR",
+        "sentence": {
+          "id": 4593679,
+          "author": "tommy_san"
+        },
+        "translations": {
+          "en": {
+            "id": 4596886,
+            "author": "slyfin"
+          },
+          "id": {
+            "id": 8945879,
+            "author": "ngimoel"
+          }
+        }
+      }
+    },
+    {
+      "slug": "tatoeba-10098358",
+      "text": "メアリーはトムのフィアンセだよ。",
+      "translation": {
+        "en": "Mary is Tom's fiancée.",
+        "id": "Mary adalah tunangan Tom."
+      },
+      "source": {
+        "name": "Tatoeba",
+        "license": "CC BY 2.0 FR",
+        "sentence": {
+          "id": 10098358,
+          "author": "small_snow"
+        },
+        "translations": {
+          "en": {
+            "id": 5670523,
+            "author": "CK"
+          },
+          "id": {
+            "id": 11227555,
+            "author": "Pi31415i"
+          }
+        }
+      }
+    },
+    {
+      "slug": "tatoeba-12779138",
+      "text": "このチーズ、すごくおいしいんだ。",
+      "translation": {
+        "en": "This cheese is really good.",
+        "id": "Keju ini enak sekali."
+      },
+      "source": {
+        "name": "Tatoeba",
+        "license": "CC BY 2.0 FR",
+        "sentence": {
+          "id": 12779138,
+          "author": "bunbuku"
+        },
+        "translations": {
+          "en": {
+            "id": 11965773,
+            "author": "CK"
+          },
+          "id": {
+            "id": 12780446,
+            "author": "HAGNi"
+          }
+        }
+      }
+    },
+    {
+      "slug": "tatoeba-224923",
+      "text": "コーヒーのおかわりはいかがですか。",
+      "translation": {
+        "en": "Would you like another cup of coffee?",
+        "id": "Anda ingin segelas kopi lagi?"
+      },
+      "source": {
+        "name": "Tatoeba",
+        "license": "CC BY 2.0 FR",
+        "sentence": {
+          "id": 224923,
+          "author": "tommy_san"
+        },
+        "translations": {
+          "en": {
+            "id": 62256,
+            "author": "CK"
+          },
+          "id": {
+            "id": 5881912,
+            "author": "Bilmanda"
+          }
+        }
+      }
+    },
+    {
+      "slug": "tatoeba-2311946",
+      "text": "そんなことしたらクビにするからな。",
+      "translation": {
+        "en": "You do that and I'll fire you.",
+        "id": "Kalau kamu melakukan hal tersebut, aku akan memecat mu."
+      },
+      "source": {
+        "name": "Tatoeba",
+        "license": "CC BY 2.0 FR",
+        "sentence": {
+          "id": 2311946,
+          "author": "tommy_san"
+        },
+        "translations": {
+          "en": {
+            "id": 1841508,
+            "author": "CK"
+          },
+          "id": {
+            "id": 13376756,
+            "author": "mashiro10"
+          }
+        }
+      }
+    },
+    {
+      "slug": "tatoeba-3368847",
+      "text": "トムだったらこういうときどうする？",
+      "translation": {
+        "en": "What would you do in a situation like this, Tom?",
+        "id": "Kalau Tom, apa yang akan dia lakukan di waktu seperti ini?"
+      },
+      "source": {
+        "name": "Tatoeba",
+        "license": "CC BY 2.0 FR",
+        "sentence": {
+          "id": 3368847,
+          "author": "tommy_san"
+        },
+        "translations": {
+          "en": {
+            "id": 3371011,
+            "author": "CK"
+          },
+          "id": {
+            "id": 5889007,
+            "author": "Bilmanda"
+          }
+        }
+      }
+    },
+    {
+      "slug": "tatoeba-198311",
+      "text": "ハウスダストにアレルギーがあります。",
+      "translation": {
+        "en": "He is allergic to house dust.",
+        "id": "Dia punya alergi pada debu rumah."
+      },
+      "source": {
+        "name": "Tatoeba",
+        "license": "CC BY 2.0 FR",
+        "sentence": {
+          "id": 198311,
+          "author": "KK_kaku_"
+        },
+        "translations": {
+          "en": {
+            "id": 35502,
+            "author": "CK"
+          },
+          "id": {
+            "id": 4453108,
+            "author": "Bilmanda"
+          }
+        }
+      }
+    },
+    {
+      "slug": "tatoeba-3563143",
+      "text": "そうしないほうがいいんじゃないかな。",
+      "translation": {
+        "en": "Maybe you'd better not do that.",
+        "id": "Kamu sebaiknya tidak melakukan itu."
+      },
+      "source": {
+        "name": "Tatoeba",
+        "license": "CC BY 2.0 FR",
+        "sentence": {
+          "id": 3563143,
+          "author": "arnab"
+        },
+        "translations": {
+          "en": {
+            "id": 3563095,
+            "author": "CK"
+          },
+          "id": {
+            "id": 13376865,
+            "author": "mashiro10"
+          }
+        }
+      }
+    },
+    {
+      "slug": "tatoeba-9640808",
+      "text": "トムとメアリーはホッケーをしたんだ。",
+      "translation": {
+        "en": "Tom and Mary played hockey.",
+        "id": "Tom dan Mary bermain hoki."
+      },
+      "source": {
+        "name": "Tatoeba",
+        "license": "CC BY 2.0 FR",
+        "sentence": {
+          "id": 9640808,
+          "author": "small_snow"
+        },
+        "translations": {
+          "en": {
+            "id": 9640592,
+            "author": "Hybrid"
+          },
+          "id": {
+            "id": 11053139,
+            "author": "HAGNi"
+          }
+        }
+      }
+    },
+    {
+      "slug": "tatoeba-2973702",
+      "text": "トムとメアリーはしょっちゅうケンカしてる。",
+      "translation": {
+        "en": "Tom and Mary fight constantly.",
+        "id": "Tom dan Mary selalu bertengkar."
+      },
+      "source": {
+        "name": "Tatoeba",
+        "license": "CC BY 2.0 FR",
+        "sentence": {
+          "id": 2973702,
+          "author": "Fukuko"
+        },
+        "translations": {
+          "en": {
+            "id": 2973691,
+            "author": "Hybrid"
+          },
+          "id": {
+            "id": 7153012,
+            "author": "purichan"
+          }
+        }
+      }
+    },
+    {
+      "slug": "tatoeba-387454",
+      "text": "あなたのクレジットカードはどこにありますか。",
+      "translation": {
+        "en": "Where are your credit cards?",
+        "id": "Di mana kartu kredit Anda?"
+      },
+      "source": {
+        "name": "Tatoeba",
+        "license": "CC BY 2.0 FR",
+        "sentence": {
+          "id": 387454,
+          "author": "mookeee"
+        },
+        "translations": {
+          "en": {
+            "id": 62770,
+            "author": "CK"
+          },
+          "id": {
+            "id": 11565234,
+            "author": "Pacific"
+          }
+        }
+      }
+    },
+    {
+      "slug": "tatoeba-202430",
+      "text": "テーブルクロスにコーヒーをこぼしてしまいました。",
+      "translation": {
+        "en": "I spilled coffee on your tablecloth.",
+        "id": "Aku menumpahkan kopi ke taplak meja."
+      },
+      "source": {
+        "name": "Tatoeba",
+        "license": "CC BY 2.0 FR",
+        "sentence": {
+          "id": 202430,
+          "author": "bunbuku"
+        },
+        "translations": {
+          "en": {
+            "id": 39641,
+            "author": "CK"
+          },
+          "id": {
+            "id": 9665366,
+            "author": "HAGNi"
+          }
+        }
+      }
+    },
+    {
+      "slug": "tatoeba-1091086",
+      "text": "おじいちゃんとおばあちゃんになってもラブラブでいたいね。",
+      "translation": {
+        "en": "I want to still love you passionately even after we become elderly.",
+        "id": "Meskipun menjadi kakek nenek, kita harus tetap saling mencinta."
+      },
+      "source": {
+        "name": "Tatoeba",
+        "license": "CC BY 2.0 FR",
+        "sentence": {
+          "id": 1091086,
+          "author": "bunbuku"
+        },
+        "translations": {
+          "en": {
+            "id": 9987639,
+            "author": "tsp_2"
+          },
+          "id": {
+            "id": 4306364,
+            "author": "Bilmanda"
+          }
+        }
+      }
+    }
+  ]
+}

@@ -65,6 +65,21 @@ export function FeedbackPanel({ feedback, item }: { feedback: AttemptFeedback; i
           />
         </div>
       )}
+      {item.attribution && (
+        <p className="mt-3 text-xs">
+          {t("practice.attribution.text", {
+            source: item.attribution.source,
+            sentenceId: item.attribution.sentenceId,
+            sentenceAuthor: item.attribution.sentenceAuthor,
+            translationId: item.attribution.translationId,
+            translationAuthor: item.attribution.translationAuthor,
+            license: item.attribution.license,
+          })}{" "}
+          <a href={item.attribution.url} target="_blank" rel="noreferrer" className="underline">
+            {t("practice.attribution.link")}
+          </a>
+        </p>
+      )}
       <div className="mt-3 flex items-center justify-center gap-2 text-sm">
         {feedback.previousMastery !== feedback.mastery && (
           <>

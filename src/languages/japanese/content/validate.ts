@@ -19,6 +19,7 @@ import {
   tokensMatchText,
 } from "../sentences/schema";
 import { PASSAGE_CONTENT_TYPE, passageFileSchema, passageItemKey } from "../passages/schema";
+import { NATIVE_CONTENT_TYPE, nativeFileSchema, nativeItemKey } from "../native/schema";
 import { SITUATION_CONTENT_TYPE, situationFileSchema, situationItemKey } from "../situations/schema";
 import { VOCABULARY_CONTENT_TYPE, vocabularyFileSchema, vocabularyItemKey } from "../vocabulary/schema";
 
@@ -156,6 +157,26 @@ export async function validateJapaneseContent(dataDir: string): Promise<string[]
         if (new Set(c.options).size !== c.options.length)
           problems.push(`${where} "${locale}": options must be different from each other`);
       }
+    }
+  }
+
+  for (const file of await folder("native")) {
+    const parsed = nativeFileSchema.safeParse(await readJson(join(root, "native", file)));
+    if (!parsed.success) {
+      problems.push(`native/${file}: ${parsed.error.message}`);
+      continue;
+    }
+    for (const sentence of parsed.data.items) {
+      const where = `native/${file} "${sentence.slug}"`;
+      addKey(where, nativeItemKey(sentence.slug), NATIVE_CONTENT_TYPE);
+      checkLocales(`${where} translation`, sentence.translation);
+      for (const locale of Object.keys(sentence.translation)) {
+        if (!sentence.source.translations[locale])
+          problems.push(`${where}: translation "${locale}" has no credit`);
+      }
+      // Beginners are not taught kanji yet: native sentences are kana only.
+      if (!/^[\u3041-\u3096\u30a1-\u30fa\u30fc。、？！\s]+$/.test(sentence.text))
+        problems.push(`${where}: contains characters other than kana and punctuation`);
     }
   }
 

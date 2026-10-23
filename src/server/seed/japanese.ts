@@ -43,6 +43,14 @@ import {
   type PassageTranslation,
 } from "@/languages/japanese/passages/schema";
 import {
+  NATIVE_CONTENT_TYPE,
+  nativeFileSchema,
+  nativeItemId,
+  nativeItemKey,
+  type NativeItemData,
+  type NativeTranslation,
+} from "@/languages/japanese/native/schema";
+import {
   SITUATION_CONTENT_TYPE,
   situationFileSchema,
   situationItemId,
@@ -223,6 +231,25 @@ async function readItems(root: string): Promise<SeedItem[]> {
         display: passage.lines.map((l) => l.text).join(" "),
         translations: Object.fromEntries(
           Object.entries(comprehension).map(([l, c]) => [l, c satisfies PassageTranslation]),
+        ),
+      });
+    }
+  }
+  for (const file of await readFolder(join(root, "native"), (raw) => nativeFileSchema.parse(raw))) {
+    for (const { translation, ...sentence } of file.items) {
+      items.push({
+        id: nativeItemId(sentence.slug),
+        key: nativeItemKey(sentence.slug),
+        type: NATIVE_CONTENT_TYPE,
+        data: sentence satisfies NativeItemData,
+        tags: ["native"],
+        level: file.level,
+        display: sentence.text,
+        translations: Object.fromEntries(
+          Object.entries(translation).map(([l, text]) => [
+            l,
+            { translation: text } satisfies NativeTranslation,
+          ]),
         ),
       });
     }

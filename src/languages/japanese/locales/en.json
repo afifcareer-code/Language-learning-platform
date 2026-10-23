@@ -59,6 +59,14 @@
     "ja.listening.dialogue": {
       "label": "Listening to a conversation",
       "description": "Listen to a short conversation and answer a question about it."
+    },
+    "ja.reading.native": {
+      "label": "Native sentence reading",
+      "description": "Read a sentence written by a Japanese speaker and pick its meaning."
+    },
+    "ja.listening.native": {
+      "label": "Native sentence listening",
+      "description": "Hear a sentence written by a Japanese speaker and pick its meaning."
     }
   }
 }

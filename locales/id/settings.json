@@ -12,6 +12,8 @@
   "credits": {
     "title": "Kredit",
     "audio": "Bunyi bahasa Jepang disintesis dengan Open JTalk dan suara “Mei” © Nagoya Institute of Technology (MMDAgent Project Team), berlisensi CC BY 3.0. Ini bukan rekaman suara manusia.",
-    "details": "Kredit lengkap"
+    "details": "Kredit lengkap",
+    "content": "Contoh kalimat penutur asli dan terjemahannya berasal dari kontributor Tatoeba dan berlisensi CC BY 2.0 FR. Setiap kalimat dicantumkan penulisnya saat ditampilkan.",
+    "contentLink": "Tentang Tatoeba"
   }
 }

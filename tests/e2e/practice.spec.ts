@@ -33,7 +33,7 @@ test("Practice is a skill gym apart from the course: five skills with their stag
   await expect(writing).toContainText("Stage 4: Sentence");
   // Stages that are not built yet are listed, honestly marked, and never offered.
   await expect(
-    page.getByRole("list", { name: "Stages for Reading" }).getByRole("listitem").nth(5),
+    page.getByRole("list", { name: "Stages for Reading" }).getByRole("listitem").last(),
   ).toContainText("Planned");
   // Stages are ranked by complexity, not by JLPT level.
   await expect(page.getByTestId("skill-gym-card").first()).not.toContainText(/\bN[1-5]\b/);
@@ -121,4 +121,18 @@ test("listening to a conversation: it is played, not shown, until the question i
   await expect(page.getByRole("button", { name: /Play sound/ })).toBeVisible();
   await page.getByRole("group").last().getByRole("button").first().click();
   await expect(page.getByTestId("passage-text")).toBeVisible();
+});
+
+test("native sentences: a real speaker's sentence is read, and its authors are credited after the answer", async ({
+  page,
+}) => {
+  await page.goto("/practice/session?kind=stage&practiceSkill=reading&stage=native");
+  await expect(page.getByRole("group").last().getByRole("button").first()).toBeVisible();
+  await page.getByRole("group").last().getByRole("button").first().click();
+  await expect(page.getByRole("status")).toBeVisible();
+  await expect(page.getByText(/Tatoeba sentence #[\d,]+ by/)).toBeVisible();
+  await expect(page.getByRole("link", { name: "View source" })).toHaveAttribute(
+    "href",
+    /tatoeba\.org\/.*sentences\/show\/\d+/,
+  );
 });
