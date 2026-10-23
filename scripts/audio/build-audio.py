@@ -33,6 +33,13 @@ def texts():
     for f in sorted((DATA / "sentences").glob("*.json")):
         for s in json.loads(f.read_text())["items"]:
             found.append((s["text"], False))
+    for f in sorted((DATA / "situations").glob("*.json")):
+        for s in json.loads(f.read_text())["items"]:
+            found.append((s["model"], False))
+    for f in sorted((DATA / "passages").glob("*.json")):
+        for p in json.loads(f.read_text())["items"]:
+            # One clip per passage, keyed by the lines joined with a space (what the app speaks).
+            found.append((" ".join(line["text"] for line in p["lines"]), False))
     for f in sorted((DATA / "listening").glob("*.json")) if (DATA / "listening").exists() else []:
         for d in json.loads(f.read_text())["items"]:
             for line in d["lines"]:

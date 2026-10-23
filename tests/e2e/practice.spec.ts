@@ -32,7 +32,9 @@ test("Practice is a skill gym apart from the course: five skills with their stag
   await expect(writing).toContainText("Stage 2: Word");
   await expect(writing).toContainText("Stage 4: Sentence");
   // Stages that are not built yet are listed, honestly marked, and never offered.
-  await expect(writing.getByRole("listitem").nth(5)).toContainText("Planned");
+  await expect(
+    page.getByRole("list", { name: "Stages for Reading" }).getByRole("listitem").nth(5),
+  ).toContainText("Planned");
   // Stages are ranked by complexity, not by JLPT level.
   await expect(page.getByTestId("skill-gym-card").first()).not.toContainText(/\bN[1-5]\b/);
   // The dashboard shows the same, separate from course progress.
@@ -74,6 +76,49 @@ test("writing a word by hand: the app does not read it, the learner compares and
 test("sentence writing is a stage, and planned stages cannot be opened", async ({ page }) => {
   await page.goto("/practice/session?kind=stage&practiceSkill=writing&stage=sentence");
   await expect(page.getByText("Write this sentence by hand in the writing area.")).toBeVisible();
-  const response = await page.goto("/practice/session?kind=stage&practiceSkill=writing&stage=free");
+  const response = await page.goto("/practice/session?kind=stage&practiceSkill=reading&stage=paragraph");
   expect(response?.status()).toBe(404);
+});
+
+test("writing in context and free production are self-rated against a model, and say so", async ({
+  page,
+}) => {
+  await page.goto("/practice/session?kind=stage&practiceSkill=writing&stage=context");
+  await expect(page.getByText("Read the situation and write an appropriate reply")).toBeVisible();
+  await drawStroke(page);
+  await page.getByRole("button", { name: "Show the model" }).click();
+  await expect(page.getByTestId("writing-model")).not.toBeEmpty();
+  await expect(page.getByRole("button", { name: "I wrote it correctly" })).toBeVisible();
+
+  await page.goto("/practice/session?kind=stage&practiceSkill=writing&stage=free");
+  await expect(page.getByText("The model is only one example.").first()).toBeVisible();
+  await drawStroke(page);
+  await page.getByRole("button", { name: "Show the model" }).click();
+  await expect(page.getByText("Example", { exact: true })).toBeVisible();
+  await page.getByRole("button", { name: "Understandable, with mistakes" }).click();
+  await expect(page.getByRole("status")).toContainText("Not quite yet");
+});
+
+test("reading a short text: the text is shown, one question, the answer is recorded", async ({ page }) => {
+  await page.goto("/practice/session?kind=stage&practiceSkill=reading&stage=text");
+  await expect(page.getByText("Read the text, then answer the question.")).toBeVisible();
+  await expect(page.getByTestId("passage-text")).not.toBeEmpty();
+  const options = page.getByRole("group").last().getByRole("button");
+  await expect(options).toHaveCount(4);
+  await options.first().click();
+  await expect(page.getByRole("status")).toBeVisible();
+  await page.getByRole("button", { name: "Next" }).click();
+  await expect(page.getByText(/2 of \d+/).first()).toBeVisible();
+});
+
+test("listening to a conversation: it is played, not shown, until the question is answered", async ({
+  page,
+}) => {
+  await fakeJapaneseVoice(page);
+  await page.goto("/practice/session?kind=stage&practiceSkill=listening&stage=conversation");
+  await expect(page.getByText("Listen to the conversation, then answer the question.")).toBeVisible();
+  await expect(page.getByTestId("passage-text")).toHaveCount(0);
+  await expect(page.getByRole("button", { name: /Play sound/ })).toBeVisible();
+  await page.getByRole("group").last().getByRole("button").first().click();
+  await expect(page.getByTestId("passage-text")).toBeVisible();
 });

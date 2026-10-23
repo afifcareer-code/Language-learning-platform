@@ -18,6 +18,8 @@ import {
   sentenceItemKey,
   tokensMatchText,
 } from "../sentences/schema";
+import { PASSAGE_CONTENT_TYPE, passageFileSchema, passageItemKey } from "../passages/schema";
+import { SITUATION_CONTENT_TYPE, situationFileSchema, situationItemKey } from "../situations/schema";
 import { VOCABULARY_CONTENT_TYPE, vocabularyFileSchema, vocabularyItemKey } from "../vocabulary/schema";
 
 async function readJson(path: string): Promise<unknown> {
@@ -121,6 +123,39 @@ export async function validateJapaneseContent(dataDir: string): Promise<string[]
       if (!grammarSlugs.has(sentence.grammar))
         problems.push(`${where}: unknown grammar "${sentence.grammar}"`);
       checkLocales(`${where} translation`, sentence.translation);
+    }
+  }
+
+  for (const file of await folder("situations")) {
+    const parsed = situationFileSchema.safeParse(await readJson(join(root, "situations", file)));
+    if (!parsed.success) {
+      problems.push(`situations/${file}: ${parsed.error.message}`);
+      continue;
+    }
+    for (const situation of parsed.data.items) {
+      const where = `situations/${file} "${situation.slug}"`;
+      addKey(where, situationItemKey(situation.slug), SITUATION_CONTENT_TYPE);
+      checkLocales(`${where} prompt`, situation.prompt);
+    }
+  }
+
+  for (const file of await folder("passages")) {
+    const parsed = passageFileSchema.safeParse(await readJson(join(root, "passages", file)));
+    if (!parsed.success) {
+      problems.push(`passages/${file}: ${parsed.error.message}`);
+      continue;
+    }
+    for (const passage of parsed.data.items) {
+      const where = `passages/${file} "${passage.slug}"`;
+      addKey(where, passageItemKey(passage.slug), PASSAGE_CONTENT_TYPE);
+      checkLocales(
+        `${where} question`,
+        Object.fromEntries(Object.entries(passage.comprehension).map(([l, c]) => [l, c.question])),
+      );
+      for (const [locale, c] of Object.entries(passage.comprehension)) {
+        if (new Set(c.options).size !== c.options.length)
+          problems.push(`${where} "${locale}": options must be different from each other`);
+      }
     }
   }
 

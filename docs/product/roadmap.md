@@ -49,7 +49,8 @@ The roadmap is intentionally incremental. Each milestone should leave the produc
 
 - [x] Practice skill gym: Writing, Reading, Listening, Vocabulary and Grammar stages with adaptive progression
 - [x] Word, phrase and sentence writing with self-rating (no automatic recognition)
-- [ ] Practice stages: context and free production writing, short texts, conversations, real-world audio
+- [x] Practice stages: context and free production writing, short texts, conversations
+- [ ] Practice stages: paragraphs, real-world text and audio, vocabulary and grammar in context
 - [ ] Automatic recognition of handwritten words and sentences
 
 ## v0.3: Writing quality

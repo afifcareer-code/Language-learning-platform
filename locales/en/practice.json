@@ -192,7 +192,9 @@
   "textWriting": {
     "instruction": {
       "word": "Write this word by hand in the writing area.",
-      "sentence": "Write this sentence by hand in the writing area."
+      "sentence": "Write this sentence by hand in the writing area.",
+      "context": "Read the situation and write an appropriate reply by hand in the writing area.",
+      "free": "Write your own short message by hand in the writing area. The model is only one example."
     },
     "meaning": "Meaning",
     "canvasLabel": "Writing area for {prompt}",
@@ -205,6 +207,17 @@
       "correct": "I wrote it correctly",
       "partly": "Almost: small mistakes",
       "incorrect": "Not yet"
-    }
+    },
+    "ratingFree": {
+      "correct": "Clear and natural",
+      "partly": "Understandable, with mistakes",
+      "incorrect": "Not yet"
+    },
+    "modelFree": "Example"
+  },
+  "comprehension": {
+    "readInstruction": "Read the text, then answer the question.",
+    "listenInstruction": "Listen to the conversation, then answer the question.",
+    "noAudio": "Audio is not available on this device, so the conversation is shown as text."
   }
 }

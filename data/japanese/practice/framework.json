@@ -75,23 +75,39 @@
         {
           "id": "context",
           "focus": "context",
-          "availability": "planned",
+          "availability": "available",
           "requirement": {
             "minAttempts": 6,
             "window": 10,
             "promoteAt": 0.8,
             "demoteBelow": 0.6
+          },
+          "session": {
+            "skill": "ja.situation.writing",
+            "type": "production",
+            "itemType": "ja.situation",
+            "dataEquals": {
+              "kind": "context"
+            }
           }
         },
         {
           "id": "free",
           "focus": "free",
-          "availability": "planned",
+          "availability": "available",
           "requirement": {
             "minAttempts": 6,
             "window": 10,
             "promoteAt": 0.8,
             "demoteBelow": 0.6
+          },
+          "session": {
+            "skill": "ja.situation.writing",
+            "type": "production",
+            "itemType": "ja.situation",
+            "dataEquals": {
+              "kind": "free"
+            }
           }
         }
       ]
@@ -170,12 +186,21 @@
         {
           "id": "text",
           "focus": "text",
-          "availability": "planned",
+          "availability": "available",
           "requirement": {
             "minAttempts": 6,
             "window": 10,
             "promoteAt": 0.8,
             "demoteBelow": 0.6
+          },
+          "session": {
+            "skill": "ja.reading.passage",
+            "type": "reading",
+            "itemType": "ja.passage",
+            "dataEquals": {
+              "form": "text"
+            },
+            "ownOptions": true
           }
         },
         {
@@ -276,12 +301,21 @@
         {
           "id": "conversation",
           "focus": "conversation",
-          "availability": "planned",
+          "availability": "available",
           "requirement": {
             "minAttempts": 6,
             "window": 10,
             "promoteAt": 0.8,
             "demoteBelow": 0.6
+          },
+          "session": {
+            "skill": "ja.listening.dialogue",
+            "type": "listening",
+            "itemType": "ja.passage",
+            "dataEquals": {
+              "form": "dialogue"
+            },
+            "ownOptions": true
           }
         },
         {

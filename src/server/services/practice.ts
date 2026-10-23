@@ -4,7 +4,7 @@ import { getLanguageModule } from "@/languages/registry";
 import type { Locale } from "@/localization/config";
 import { shuffle } from "@/shared/format";
 import type { Database } from "../db/client";
-import { getContentItems } from "../repositories/content";
+import { getContentItems, listContentItemsByType } from "../repositories/content";
 import { getCurriculum, type ActivityView } from "../repositories/curriculum";
 import type { Learner } from "../repositories/learners";
 import { getConfusionPairs, getDueReviews, getLearnerProgress, progressKey } from "../repositories/progress";
@@ -63,6 +63,7 @@ export async function getPracticeSession(
   let assessment: PracticeSession["assessment"] = null;
   let practiceStage: string | null = null;
   let stageType: ActivityType | null = null;
+  let itemsHaveOwnOptions = false;
   let promptIds: string[];
 
   switch (request.kind) {
@@ -126,17 +127,16 @@ export async function getPracticeSession(
       const spec = stage.session;
       skill = spec.skill;
       stageType = spec.type;
+      itemsHaveOwnOptions = spec.ownOptions ?? false;
       practiceStage = `${request.skillId}.${request.stageId}`;
       const progress = await getLearnerProgress(db, learner.id, now);
       const met = new Set([...progress.values()].map((p) => p.contentItemId));
-      const poolIds = [...new Set(curriculum.lessons.flatMap((l) => l.itemIds))];
-      const matching = (await getContentItems(db, poolIds))
-        .filter(
-          (i) =>
-            i.type === spec.itemType &&
-            Object.entries(spec.dataEquals ?? {}).every(
-              ([key, value]) => (i.data as Record<string, unknown>)[key] === value,
-            ),
+      // Practice is not bound to the curriculum: any content of the stage's kind will do.
+      const matching = (await listContentItemsByType(db, learner.targetLanguage, spec.itemType))
+        .filter((i) =>
+          Object.entries(spec.dataEquals ?? {}).every(
+            ([key, value]) => (i.data as Record<string, unknown>)[key] === value,
+          ),
         )
         .map((i) => i.id);
       const practised = (id: string) => progress.get(progressKey(id, skill))?.mastery.attempts ?? 0;
@@ -176,7 +176,10 @@ export async function getPracticeSession(
 
   const items: Record<string, ContentItem> = Object.fromEntries(prompts.map((p) => [p.id, p]));
   const choices: Record<string, string[]> = {};
-  if (type === "recognition" || type === "multiple_choice" || type === "listening" || type === "reading") {
+  if (
+    !itemsHaveOwnOptions &&
+    (type === "recognition" || type === "multiple_choice" || type === "listening" || type === "reading")
+  ) {
     const pool = await getContentItems(db, [...new Set(curriculum.lessons.flatMap((l) => l.itemIds))]);
     const learnerPairs = await getConfusionPairs(db, learner.id);
     for (const item of prompts) {

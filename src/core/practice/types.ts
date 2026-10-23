@@ -33,6 +33,8 @@ export interface StageSession {
   itemType: string;
   /** Optional filter on `item.data` fields, e.g. `{ partOfSpeech: "expression" }`. */
   dataEquals?: Readonly<Record<string, string>>;
+  /** The items carry their own answer options (a comprehension question), so none are drawn from other items. */
+  ownOptions?: boolean;
 }
 
 export interface PracticeStageSpec {

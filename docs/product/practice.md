@@ -14,13 +14,13 @@ Course progress, skill mastery, learning readiness and Practice stages are separ
 
 ## Skills and stages (Japanese)
 
-| Skill      | Stages available now                 | Planned                                |
-| ---------- | ------------------------------------ | -------------------------------------- |
-| Writing    | character → word → phrase → sentence | context, free production               |
-| Reading    | character → word → phrase → sentence | short text, paragraph, real-world text |
-| Listening  | sound → word → phrase → sentence     | conversation, real-world audio         |
-| Vocabulary | recognition → recall                 | context, usage, automatic recall       |
-| Grammar    | recognition → sentence construction  | context, production                    |
+| Skill      | Stages available now                                  | Planned                          |
+| ---------- | ----------------------------------------------------- | -------------------------------- |
+| Writing    | character → word → phrase → sentence → context → free | (none)                           |
+| Reading    | character → word → phrase → sentence → short text     | paragraph, real-world text       |
+| Listening  | sound → word → phrase → sentence → conversation       | real-world audio                 |
+| Vocabulary | recognition → recall                                  | context, usage, automatic recall |
+| Grammar    | recognition → sentence construction                   | context, production              |
 
 Planned stages are listed on the Practice page, marked _Planned_, and never offered. Practice uses content the learner has met in Learn, least practised first, and tops up with the earliest unmet content so a new learner can start. It does not depend on a lesson.
 
@@ -46,6 +46,14 @@ Every recommendation carries its reason, so it can be explained.
 
 Single kana keep the existing writing flow. For words, phrases and sentences the app **does not read handwriting**. The learner writes in a wide area from the meaning (and the sound, when the device can play it), taps **Show the model**, compares, and rates their own writing: _correct_ (1.0), _almost_ (0.6, credit but not a pass), or _not yet_ (0). The rating is the evidence; the screen says so. There is no stroke-order, stroke-direction, word-level or kanji handwriting evaluation.
 
+## Situations, texts and conversations
+
+- **Context writing** gives a situation ("you want to order water") and the learner writes an appropriate reply; the model is one good reply.
+- **Free production** asks for a short message in the learner's own words. The model is only an example, and the self-rating is _clear and natural_, _understandable, with mistakes_, or _not yet_.
+- **Short text** (reading) and **conversation** (listening) show or play original material and ask one comprehension question with four options. A conversation is played and its text appears only after answering; if the device cannot play audio, the text is shown and the screen says so. All voices are one synthetic voice (see `public/audio/CREDITS.md`).
+
+Content lives in `data/japanese/situations/` and `data/japanese/passages/`; see `docs/development/content-authoring.md`.
+
 ## What is not built
 
-Free production and context writing, short texts, conversations, real-world audio, kanji, speaking, spaced-repetition scheduling specific to stages, and any automatic handwriting recognition.
+Paragraphs and real-world text and audio (they need authentic material), vocabulary and grammar in context, kanji, speaking, spaced-repetition scheduling specific to stages, and any automatic handwriting recognition.

@@ -47,6 +47,18 @@
     "ja.sentence.writing": {
       "label": "Sentence writing",
       "description": "Write a Japanese sentence by hand from its meaning, then check it against the model."
+    },
+    "ja.situation.writing": {
+      "label": "Writing in context",
+      "description": "Respond to a situation by writing in Japanese, then compare with a model."
+    },
+    "ja.reading.passage": {
+      "label": "Reading a short text",
+      "description": "Read a short Japanese text and answer a question about it."
+    },
+    "ja.listening.dialogue": {
+      "label": "Listening to a conversation",
+      "description": "Listen to a short conversation and answer a question about it."
     }
   }
 }

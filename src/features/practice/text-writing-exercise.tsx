@@ -77,7 +77,11 @@ export function TextWritingExercise({
         ) : (
           <div className="flex flex-col gap-4">
             <div>
-              <p className="text-sm text-muted">{t("practice.textWriting.model")}</p>
+              <p className="text-sm text-muted">
+                {item.cueKind === "free"
+                  ? t("practice.textWriting.modelFree")
+                  : t("practice.textWriting.model")}
+              </p>
               <p lang="ja" className="font-jp text-3xl leading-snug" data-testid="writing-model">
                 {item.display}
               </p>
@@ -91,7 +95,9 @@ export function TextWritingExercise({
                   onClick={() => onSubmit(rating)}
                   disabled={disabled}
                 >
-                  {t(`practice.textWriting.rating.${rating}`)}
+                  {item.cueKind === "free"
+                    ? t(`practice.textWriting.ratingFree.${rating}`)
+                    : t(`practice.textWriting.rating.${rating}`)}
                 </Button>
               ))}
             </div>

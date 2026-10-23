@@ -16,6 +16,14 @@ describe("shipped Japanese audio clips", () => {
       ...readdirSync("data/japanese/sentences").flatMap((f) =>
         read(`data/japanese/sentences/${f}`).items.map((s: { text: string }) => s.text),
       ),
+      ...readdirSync("data/japanese/situations").flatMap((f) =>
+        read(`data/japanese/situations/${f}`).items.map((s: { model: string }) => s.model),
+      ),
+      ...readdirSync("data/japanese/passages").flatMap((f) =>
+        read(`data/japanese/passages/${f}`).items.map((p: { lines: { text: string }[] }) =>
+          p.lines.map((l) => l.text).join(" "),
+        ),
+      ),
     ];
     expect(texts.filter((t) => !manifest[t])).toEqual([]);
   });

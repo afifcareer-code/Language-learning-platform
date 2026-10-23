@@ -17,10 +17,12 @@ import { SentenceExercise } from "./sentence-exercise";
 import { RecognitionExercise } from "./recognition-exercise";
 import { SessionOutcome } from "./session-outcome";
 import { SessionProgress } from "./session-progress";
+import { ComprehensionExercise } from "./comprehension-exercise";
 import { TextWritingExercise } from "./text-writing-exercise";
 import { WritingExercise } from "./writing-exercise";
 
-export type ExerciseKind = "recognition" | "recall" | "writing" | "sentence" | "textwriting";
+export type ExerciseKind =
+  "recognition" | "recall" | "writing" | "sentence" | "textwriting" | "comprehension";
 
 export interface PracticeSessionProps {
   kind: ExerciseKind;
@@ -63,6 +65,7 @@ export function PracticeSession(props: PracticeSessionProps) {
   const [answer, setAnswer] = useState("");
   const [placed, setPlaced] = useState<number[]>([]);
   const [chosen, setChosen] = useState<string | null>(null);
+  const [chosenOption, setChosenOption] = useState<number | null>(null);
   const [feedback, setFeedback] = useState<AttemptFeedback | null>(null);
   const [results, setResults] = useState<SessionResult[]>([]);
   // Bumped when the learner writes the same character again, so the writing area starts clean.
@@ -153,6 +156,7 @@ export function PracticeSession(props: PracticeSessionProps) {
     setAnswer("");
     setPlaced([]);
     setChosen(null);
+    setChosenOption(null);
     setFeedback(null);
     setAttempt(0);
   }
@@ -230,7 +234,19 @@ export function PracticeSession(props: PracticeSessionProps) {
         </>
       ) : (
         <Card className="text-center">
-          {kind === "recognition" ? (
+          {kind === "comprehension" ? (
+            <ComprehensionExercise
+              key={`${item.id}-${index}`}
+              item={item}
+              feedback={feedback}
+              chosen={chosenOption}
+              disabled={pending}
+              onChoose={(optionIndex) => {
+                setChosenOption(optionIndex);
+                submit({ kind: "option", index: optionIndex });
+              }}
+            />
+          ) : kind === "recognition" ? (
             <RecognitionExercise
               key={`${item.id}-${index}`}
               item={item}

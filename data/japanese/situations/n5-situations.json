@@ -1,0 +1,166 @@
+{
+  "source": "Original writing situations for N5-level learners. Written for this project.",
+  "level": "n5",
+  "items": [
+    {
+      "slug": "order-water",
+      "kind": "context",
+      "model": "みずを ください。",
+      "romaji": "mizu o kudasai",
+      "prompt": {
+        "en": "You are in a restaurant and want to order water. Write what you say.",
+        "id": "Anda di restoran dan ingin memesan air putih. Tulis apa yang Anda katakan."
+      }
+    },
+    {
+      "slug": "ask-price",
+      "kind": "context",
+      "model": "これは いくらですか。",
+      "romaji": "kore wa ikura desu ka",
+      "prompt": {
+        "en": "You are in a shop and want to know the price of something you are holding. Write your question.",
+        "id": "Anda di toko dan ingin tahu harga barang yang Anda pegang. Tulis pertanyaan Anda."
+      }
+    },
+    {
+      "slug": "morning-greeting",
+      "kind": "context",
+      "model": "おはようございます。",
+      "romaji": "ohayou gozaimasu",
+      "prompt": {
+        "en": "You meet your teacher in the morning. Write your greeting.",
+        "id": "Anda bertemu guru di pagi hari. Tulis salam Anda."
+      }
+    },
+    {
+      "slug": "introduce-yourself",
+      "kind": "context",
+      "model": "はじめまして。わたしは たなかです。",
+      "romaji": "hajimemashite. watashi wa tanaka desu",
+      "prompt": {
+        "en": "You meet someone for the first time and your name is Tanaka. Write your introduction.",
+        "id": "Anda bertemu seseorang untuk pertama kalinya dan nama Anda Tanaka. Tulis perkenalan Anda."
+      }
+    },
+    {
+      "slug": "ask-station",
+      "kind": "context",
+      "model": "えきは どこですか。",
+      "romaji": "eki wa doko desu ka",
+      "prompt": {
+        "en": "You are lost and want to find the station. Write your question.",
+        "id": "Anda tersesat dan ingin mencari stasiun. Tulis pertanyaan Anda."
+      }
+    },
+    {
+      "slug": "say-thanks",
+      "kind": "context",
+      "model": "ありがとうございます。",
+      "romaji": "arigatou gozaimasu",
+      "prompt": {
+        "en": "Someone helped you carry your bag. Write what you say.",
+        "id": "Seseorang membantu membawakan tas Anda. Tulis apa yang Anda katakan."
+      }
+    },
+    {
+      "slug": "ask-time",
+      "kind": "context",
+      "model": "いま なんじですか。",
+      "romaji": "ima nanji desu ka",
+      "prompt": {
+        "en": "You want to know what time it is. Write your question.",
+        "id": "Anda ingin tahu jam berapa sekarang. Tulis pertanyaan Anda."
+      }
+    },
+    {
+      "slug": "excuse-yourself",
+      "kind": "context",
+      "model": "すみません。",
+      "romaji": "sumimasen",
+      "prompt": {
+        "en": "You bump into someone on the train. Write what you say.",
+        "id": "Anda menyenggol seseorang di kereta. Tulis apa yang Anda katakan."
+      }
+    },
+    {
+      "slug": "buy-this",
+      "kind": "context",
+      "model": "これを ください。",
+      "romaji": "kore o kudasai",
+      "prompt": {
+        "en": "You have chosen something in a shop and want to buy it. Write what you say.",
+        "id": "Anda sudah memilih barang di toko dan ingin membelinya. Tulis apa yang Anda katakan."
+      }
+    },
+    {
+      "slug": "say-goodbye",
+      "kind": "context",
+      "model": "また あした。",
+      "romaji": "mata ashita",
+      "prompt": {
+        "en": "You are leaving a friend and will see them tomorrow. Write what you say.",
+        "id": "Anda berpisah dengan teman dan akan bertemu lagi besok. Tulis apa yang Anda katakan."
+      }
+    },
+    {
+      "slug": "today",
+      "kind": "free",
+      "model": "きょう わたしは がっこうへ いきました。",
+      "romaji": "kyou watashi wa gakkou e ikimashita",
+      "prompt": {
+        "en": "Write a short message about what you did today, in your own words. The model is only one example.",
+        "id": "Tulis pesan singkat tentang apa yang Anda lakukan hari ini, dengan kata Anda sendiri. Contohnya hanya salah satu kemungkinan."
+      }
+    },
+    {
+      "slug": "daily-study",
+      "kind": "free",
+      "model": "わたしは まいにち にほんごを べんきょうします。",
+      "romaji": "watashi wa mainichi nihongo o benkyou shimasu",
+      "prompt": {
+        "en": "Write what you do every day, in your own words. The model is only one example.",
+        "id": "Tulis apa yang Anda lakukan setiap hari, dengan kata Anda sendiri. Contohnya hanya salah satu kemungkinan."
+      }
+    },
+    {
+      "slug": "my-family",
+      "kind": "free",
+      "model": "わたしの かぞくは よにんです。",
+      "romaji": "watashi no kazoku wa yonin desu",
+      "prompt": {
+        "en": "Write a short sentence about your family, in your own words. The model is only one example.",
+        "id": "Tulis kalimat singkat tentang keluarga Anda, dengan kata Anda sendiri. Contohnya hanya salah satu kemungkinan."
+      }
+    },
+    {
+      "slug": "what-i-like",
+      "kind": "free",
+      "model": "わたしは コーヒーが すきです。",
+      "romaji": "watashi wa koohii ga suki desu",
+      "prompt": {
+        "en": "Write something you like, in your own words. The model is only one example.",
+        "id": "Tulis sesuatu yang Anda sukai, dengan kata Anda sendiri. Contohnya hanya salah satu kemungkinan."
+      }
+    },
+    {
+      "slug": "tomorrow",
+      "kind": "free",
+      "model": "あしたは にちようびです。わたしは うちに います。",
+      "romaji": "ashita wa nichiyoubi desu. watashi wa uchi ni imasu",
+      "prompt": {
+        "en": "Write what you will do tomorrow, in your own words. The model is only one example.",
+        "id": "Tulis apa yang akan Anda lakukan besok, dengan kata Anda sendiri. Contohnya hanya salah satu kemungkinan."
+      }
+    },
+    {
+      "slug": "where-from",
+      "kind": "free",
+      "model": "わたしは インドネシアから きました。",
+      "romaji": "watashi wa indonesia kara kimashita",
+      "prompt": {
+        "en": "Write where you are from, in your own words. The model is only one example.",
+        "id": "Tulis dari mana Anda berasal, dengan kata Anda sendiri. Contohnya hanya salah satu kemungkinan."
+      }
+    }
+  ]
+}

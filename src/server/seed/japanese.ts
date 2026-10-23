@@ -35,6 +35,22 @@ import {
   type SentenceTranslation,
 } from "@/languages/japanese/sentences/schema";
 import {
+  PASSAGE_CONTENT_TYPE,
+  passageFileSchema,
+  passageItemId,
+  passageItemKey,
+  type PassageItemData,
+  type PassageTranslation,
+} from "@/languages/japanese/passages/schema";
+import {
+  SITUATION_CONTENT_TYPE,
+  situationFileSchema,
+  situationItemId,
+  situationItemKey,
+  type SituationItemData,
+  type SituationTranslation,
+} from "@/languages/japanese/situations/schema";
+import {
   VOCABULARY_CONTENT_TYPE,
   vocabularyDisplay,
   vocabularyFileSchema,
@@ -175,6 +191,38 @@ async function readItems(root: string): Promise<SeedItem[]> {
             l,
             { translation: text } satisfies SentenceTranslation,
           ]),
+        ),
+      });
+    }
+  }
+  for (const file of await readFolder(join(root, "situations"), (raw) => situationFileSchema.parse(raw))) {
+    for (const { prompt, ...situation } of file.items) {
+      items.push({
+        id: situationItemId(situation.slug),
+        key: situationItemKey(situation.slug),
+        type: SITUATION_CONTENT_TYPE,
+        data: situation satisfies SituationItemData,
+        tags: [`situation:${situation.kind}`],
+        level: file.level,
+        display: situation.model,
+        translations: Object.fromEntries(
+          Object.entries(prompt).map(([l, text]) => [l, { prompt: text } satisfies SituationTranslation]),
+        ),
+      });
+    }
+  }
+  for (const file of await readFolder(join(root, "passages"), (raw) => passageFileSchema.parse(raw))) {
+    for (const { comprehension, ...passage } of file.items) {
+      items.push({
+        id: passageItemId(passage.slug),
+        key: passageItemKey(passage.slug),
+        type: PASSAGE_CONTENT_TYPE,
+        data: passage satisfies PassageItemData,
+        tags: [`passage:${passage.form}`],
+        level: file.level,
+        display: passage.lines.map((l) => l.text).join(" "),
+        translations: Object.fromEntries(
+          Object.entries(comprehension).map(([l, c]) => [l, c satisfies PassageTranslation]),
         ),
       });
     }
