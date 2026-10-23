@@ -27,7 +27,7 @@ export interface PracticeSessionProps {
   skill: string;
   skillLabel: string;
   activityId: string | null;
-  mode: "practice" | "review";
+  mode: "practice" | "review" | "assessment";
   passScore: number;
   objective: string;
   instruction: string;

@@ -1,0 +1,70 @@
+{
+  "source": "N5 proficiency specification. Thresholds are the platform's own internal standard, not the JLPT's. Competencies marked planned have no content yet and keep readiness below Certification Ready.",
+  "level": "n5",
+  "prerequisiteLevel": "foundation",
+  "prerequisiteSkills": ["ja.kana.recognition", "ja.kana.reading"],
+  "domains": ["vocabulary", "grammar", "reading", "listening", "writing"],
+  "thresholds": {
+    "secureShare": 0.8,
+    "retainedShare": 0.6,
+    "prerequisiteShare": 0.8,
+    "sectionPass": 0.6,
+    "overallPass": 0.7
+  },
+  "competencies": [
+    {
+      "id": "n5.vocab.meaning",
+      "domain": "vocabulary",
+      "skills": ["ja.vocab.recognition"],
+      "availability": "available",
+      "examAligned": true,
+      "title": { "en": "Recognize everyday words", "id": "Mengenali kata sehari-hari" }
+    },
+    {
+      "id": "n5.vocab.recall",
+      "domain": "vocabulary",
+      "skills": ["ja.vocab.recall"],
+      "availability": "available",
+      "examAligned": false,
+      "title": { "en": "Recall words from their meaning", "id": "Mengingat kata dari maknanya" }
+    },
+    {
+      "id": "n5.grammar.sentence",
+      "domain": "grammar",
+      "skills": ["ja.grammar.sentence"],
+      "availability": "available",
+      "examAligned": true,
+      "title": { "en": "Build simple sentences", "id": "Menyusun kalimat sederhana" }
+    },
+    {
+      "id": "n5.reading.short-text",
+      "domain": "reading",
+      "skills": [],
+      "availability": "planned",
+      "examAligned": true,
+      "title": { "en": "Read short everyday texts", "id": "Membaca teks sehari-hari yang pendek" }
+    },
+    {
+      "id": "n5.listening.slow-conversation",
+      "domain": "listening",
+      "skills": [],
+      "availability": "planned",
+      "examAligned": true,
+      "title": { "en": "Follow short, slow conversations", "id": "Mengikuti percakapan pendek yang lambat" }
+    },
+    {
+      "id": "n5.writing.production",
+      "domain": "writing",
+      "skills": [],
+      "availability": "planned",
+      "examAligned": false,
+      "title": { "en": "Write your own simple sentences", "id": "Menulis kalimat sederhana sendiri" }
+    }
+  ],
+  "assessment": {
+    "sections": [
+      { "id": "vocabulary", "domain": "vocabulary", "skill": "ja.vocab.recognition", "questionCount": 8 },
+      { "id": "grammar", "domain": "grammar", "skill": "ja.grammar.sentence", "questionCount": 5 }
+    ]
+  }
+}

@@ -2,6 +2,7 @@ import { readdir, readFile } from "node:fs/promises";
 import { join } from "node:path";
 import { missingLocales, placeholdersIn } from "@/localization/content";
 import { LOCALES } from "@/localization/config";
+import { japaneseLevelSpec } from "../proficiency";
 import { japaneseSkills } from "../skills";
 import {
   activityTemplateFileSchema,
@@ -241,6 +242,21 @@ export async function validateJapaneseContent(dataDir: string): Promise<string[]
         problems.push(`confusion/kana.json: invalid pair ${JSON.stringify(pair)}`);
       }
     }
+
+  // Proficiency: every skill a competency or section names must be a skill the module declares.
+  const known = new Set<string>(japaneseSkills.map((k) => k.id));
+  for (const level of ["n5"]) {
+    const spec = japaneseLevelSpec(level);
+    if (!spec) continue;
+    const named = [
+      ...spec.prerequisiteSkills,
+      ...spec.competencies.flatMap((c) => c.skills),
+      ...spec.assessment.sections.map((x) => x.skill),
+    ];
+    for (const skill of named)
+      if (!known.has(skill)) problems.push(`proficiency ${level}: unknown skill "${skill}"`);
+    for (const c of spec.competencies) checkLocales(`proficiency ${level} ${c.id} title`, c.title);
+  }
 
   return problems;
 }

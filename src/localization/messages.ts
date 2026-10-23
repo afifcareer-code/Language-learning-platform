@@ -4,6 +4,7 @@ import enLanguages from "../../locales/en/languages.json";
 import enLearning from "../../locales/en/learning.json";
 import enOnboarding from "../../locales/en/onboarding.json";
 import enPractice from "../../locales/en/practice.json";
+import enProficiency from "../../locales/en/proficiency.json";
 import enProgress from "../../locales/en/progress.json";
 import enReview from "../../locales/en/review.json";
 import enSettings from "../../locales/en/settings.json";
@@ -13,6 +14,7 @@ import idLanguages from "../../locales/id/languages.json";
 import idLearning from "../../locales/id/learning.json";
 import idOnboarding from "../../locales/id/onboarding.json";
 import idPractice from "../../locales/id/practice.json";
+import idProficiency from "../../locales/id/proficiency.json";
 import idProgress from "../../locales/id/progress.json";
 import idReview from "../../locales/id/review.json";
 import idSettings from "../../locales/id/settings.json";
@@ -35,6 +37,7 @@ const platform = {
     practice: enPractice,
     review: enReview,
     progress: enProgress,
+    proficiency: enProficiency,
     settings: enSettings,
   },
   id: {
@@ -46,6 +49,7 @@ const platform = {
     practice: idPractice,
     review: idReview,
     progress: idProgress,
+    proficiency: idProficiency,
     settings: idSettings,
   },
 } satisfies Record<Locale, MessageTree>;

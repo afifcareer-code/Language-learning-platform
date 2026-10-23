@@ -7,13 +7,15 @@ import type { Database } from "../db/client";
 import { getContentItems } from "../repositories/content";
 import { getCurriculum, type ActivityView } from "../repositories/curriculum";
 import type { Learner } from "../repositories/learners";
-import { getConfusionPairs, getDueReviews, getLearnerProgress } from "../repositories/progress";
+import { getConfusionPairs, getDueReviews, getLearnerProgress, progressKey } from "../repositories/progress";
+import { sectionItemIds } from "./proficiency";
 
 /** What a practice session is for. Every session traces back to an objective. */
 export type SessionRequest =
   | { kind: "activity"; activityId: string }
   | { kind: "review"; skill: SkillId }
   | { kind: "weak"; skill: SkillId }
+  | { kind: "assessment"; level: string; section: string }
   | { kind: "confusion"; itemA: string; itemB: string };
 
 export interface PracticeSession {
@@ -43,6 +45,7 @@ export async function getPracticeSession(
   request: SessionRequest,
   now = new Date(),
 ): Promise<PracticeSession | null> {
+  const languageModule = getLanguageModule(learner.targetLanguage);
   const curriculum = await getCurriculum(db, learner.targetLanguage, locale);
   const typeForSkill = (skill: SkillId): ActivityType =>
     curriculum.activities.find((a) => a.skill === skill)?.type ?? "recall";
@@ -80,6 +83,23 @@ export async function getPracticeSession(
       );
       break;
     }
+    case "assessment": {
+      // A mock assessment section: items of the level on that skill the learner knows least,
+      // so the questions are as new to them as the content allows. Recorded as "assessment".
+      const section = languageModule
+        .proficiencyLevel?.(request.level)
+        ?.assessment.sections.find((s) => s.id === request.section);
+      if (!section) return null;
+      skill = section.skill;
+      mode = "assessment";
+      const progress = await getLearnerProgress(db, learner.id, now);
+      const ids = sectionItemIds(curriculum, request.level, skill);
+      const attempts = (id: string) => progress.get(progressKey(id, skill))?.mastery.attempts ?? 0;
+      promptIds = shuffle(ids)
+        .sort((a, b) => attempts(a) - attempts(b))
+        .slice(0, section.questionCount);
+      break;
+    }
     case "confusion": {
       // Discrimination practice: recognize each item of the pair twice.
       skill = curriculum.activities.find((a) => a.type === "recognition")?.skill ?? "";
@@ -108,7 +128,6 @@ export async function getPracticeSession(
   const items: Record<string, ContentItem> = Object.fromEntries(prompts.map((p) => [p.id, p]));
   const choices: Record<string, string[]> = {};
   if (type === "recognition" || type === "multiple_choice" || type === "listening") {
-    const languageModule = getLanguageModule(learner.targetLanguage);
     const pool = await getContentItems(db, [...new Set(curriculum.lessons.flatMap((l) => l.itemIds))]);
     const learnerPairs = await getConfusionPairs(db, learner.id);
     for (const item of prompts) {

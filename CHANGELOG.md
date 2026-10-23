@@ -11,6 +11,9 @@ The format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/), and
 - **Writing feedback separates correctness from precision.** After comparing with the model the learner confirms whether it is the character; the measured stroke count and shape similarity rate it excellent, good or needs improvement. A correct but imprecise character offers **Improve writing** or **Continue anyway** and is never recorded as a failure; a wrong one offers **Try again** and is recorded. Quality and shape score are kept in the existing `writing_samples.analysis` JSON.
 - **Change learning language** control (generic `LearningLanguageSwitcher`) in the sidebar and phone header of every learning page. It opens language selection and never touches progress; the interface-language menu stays separate.
 
+- **Proficiency framework (N5 reference implementation).** A language-agnostic engine (`src/core/proficiency`) turns existing mastery and attempts into competency progress, a prerequisite check (Foundation → N5 from kana evidence), a mock assessment result and a readiness recommendation (Not Ready, Developing, Assessment Ready, Certification Ready). New `/proficiency` page with an N5 entry explanation, evidence per competency, exam-aligned vs platform-only skills, and honest "coming later" skills. Thresholds are labelled _Platform Internal Standard_; the mock result is _Platform Mock Assessment Result_, never an official JLPT score. No schema change: proficiency is derived, assessment attempts use the existing `mode = "assessment"`. See `docs/product/proficiency-framework.md`.
+- **Mock assessment sessions** (`/practice/session?kind=assessment`): items the learner has practiced least, reported with how many were new to them.
+
 ### Changed
 
 - Writing no longer asks for a three-way self-grade: it asks whether the character matches the model (Not yet / Yes, it matches).

@@ -6,6 +6,7 @@ import { EmptyState } from "@/components/ui/empty-state";
 import { PageHeader } from "@/components/ui/page-header";
 import { switchLevel } from "@/features/learning-path/actions";
 import { activityHref } from "@/features/practice/routes";
+import { getLanguageModule } from "@/languages/registry";
 import { languageName } from "@/localization/labels";
 import { getI18n } from "@/localization/server";
 import { getCurrentOverview, requireLearningContext } from "@/server/learning-context";
@@ -61,12 +62,22 @@ export default async function LearnPage({ searchParams }: Props) {
           framework: (context.language.proficiencyFramework ?? "").toUpperCase(),
         })}
         actions={
-          <Link
-            href="/languages"
-            className="inline-flex min-h-11 items-center text-sm font-medium text-accent"
-          >
-            {t("common.shell.changeLearningLanguage")}
-          </Link>
+          <div className="flex flex-wrap gap-x-4">
+            {viewed && getLanguageModule(context.language.code).proficiencyLevel?.(viewed.level.slug) && (
+              <Link
+                href={`/proficiency?${new URLSearchParams({ level: viewed.level.slug })}`}
+                className="inline-flex min-h-11 items-center text-sm font-medium text-accent"
+              >
+                {t("learning.path.viewProficiency")}
+              </Link>
+            )}
+            <Link
+              href="/languages"
+              className="inline-flex min-h-11 items-center text-sm font-medium text-accent"
+            >
+              {t("common.shell.changeLearningLanguage")}
+            </Link>
+          </div>
         }
       />
       {path.length === 0 && <EmptyState title={t("learning.noCourses")} />}

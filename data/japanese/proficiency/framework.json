@@ -1,0 +1,65 @@
+{
+  "source": "Platform proficiency map for Japanese, aligned to the published JLPT level descriptions (jlpt.jp). The CEFR column repeats the JLPT organisers' reference table (shown to examinees who pass) and is not a platform claim. Only the level marked implemented has content and thresholds; the rest is the planned path.",
+  "levels": [
+    {
+      "level": "n5",
+      "frameworkLevel": "N5",
+      "prerequisite": "foundation",
+      "cefrReference": "A1",
+      "status": "implemented",
+      "domains": ["vocabulary", "grammar", "reading", "listening", "writing"],
+      "summary": {
+        "en": "Understand and use basic everyday Japanese: simple texts in kana and basic kanji, and short slow conversations.",
+        "id": "Memahami dan menggunakan bahasa Jepang dasar sehari-hari: teks sederhana dalam kana dan kanji dasar, serta percakapan pendek yang lambat."
+      }
+    },
+    {
+      "level": "n4",
+      "frameworkLevel": "N4",
+      "prerequisite": "n5",
+      "cefrReference": "A2",
+      "status": "planned",
+      "domains": ["vocabulary", "grammar", "reading", "listening", "writing"],
+      "summary": {
+        "en": "Understand basic Japanese on familiar daily topics and follow slow everyday conversation.",
+        "id": "Memahami bahasa Jepang dasar tentang topik sehari-hari yang akrab dan mengikuti percakapan sehari-hari yang lambat."
+      }
+    },
+    {
+      "level": "n3",
+      "frameworkLevel": "N3",
+      "prerequisite": "n4",
+      "cefrReference": "A2-B1",
+      "status": "planned",
+      "domains": ["vocabulary", "grammar", "reading", "listening", "writing"],
+      "summary": {
+        "en": "Read everyday texts with specific detail and follow conversation at near-natural speed.",
+        "id": "Membaca teks sehari-hari yang memuat detail dan mengikuti percakapan dengan kecepatan hampir alami."
+      }
+    },
+    {
+      "level": "n2",
+      "frameworkLevel": "N2",
+      "prerequisite": "n3",
+      "cefrReference": "B1-B2",
+      "status": "planned",
+      "domains": ["vocabulary", "grammar", "reading", "listening", "writing"],
+      "summary": {
+        "en": "Understand clear material such as articles and reviews, and natural-speed conversation and news.",
+        "id": "Memahami materi yang jelas seperti artikel dan ulasan, serta percakapan dan berita dengan kecepatan alami."
+      }
+    },
+    {
+      "level": "n1",
+      "frameworkLevel": "N1",
+      "prerequisite": "n2",
+      "cefrReference": "B2-C1",
+      "status": "planned",
+      "domains": ["vocabulary", "grammar", "reading", "listening", "writing"],
+      "summary": {
+        "en": "Understand logically complex and abstract writing, and lectures and news at natural speed.",
+        "id": "Memahami tulisan yang kompleks dan abstrak secara logis, serta kuliah dan berita dengan kecepatan alami."
+      }
+    }
+  ]
+}

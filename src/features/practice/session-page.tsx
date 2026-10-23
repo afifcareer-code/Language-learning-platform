@@ -58,14 +58,22 @@ export async function SessionPage({
         title:
           request.kind === "confusion"
             ? t("practice.sessions.confusion", pairText)
-            : t(request.kind === "review" ? "practice.sessions.review" : "practice.sessions.weak"),
+            : t(
+                request.kind === "review"
+                  ? "practice.sessions.review"
+                  : request.kind === "assessment"
+                    ? "practice.sessions.assessment"
+                    : "practice.sessions.weak",
+              ),
         objective:
           request.kind === "confusion"
             ? t("practice.sessions.objectives.confusion", pairText)
             : t(
                 request.kind === "review"
                   ? "practice.sessions.objectives.review"
-                  : "practice.sessions.objectives.weak",
+                  : request.kind === "assessment"
+                    ? "practice.sessions.objectives.assessment"
+                    : "practice.sessions.objectives.weak",
               ),
         instruction: "",
         explanation: undefined,
@@ -141,7 +149,7 @@ export async function SessionPage({
           skill={session.skill}
           skillLabel={skill}
           activityId={session.activity?.id ?? null}
-          mode={session.mode === "review" ? "review" : "practice"}
+          mode={session.mode === "review" || session.mode === "assessment" ? session.mode : "practice"}
           passScore={session.passScore}
           objective={header.objective}
           instruction={header.instruction}

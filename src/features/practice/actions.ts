@@ -51,7 +51,7 @@ const attemptSchema = z.object({
   itemId: id,
   skill: id,
   activityId: id.nullable(),
-  mode: z.enum(["practice", "review"]),
+  mode: z.enum(["practice", "review", "assessment"]),
   responseMs: z.number().int().nonnegative().max(3_600_000).nullable(),
   response: z.discriminatedUnion("kind", [
     z.object({ kind: z.literal("choice"), choiceId: id }),
