@@ -44,9 +44,11 @@ export function RecognitionExercise({
     : noAudio
       ? t("practice.recognition.visualPrompt")
       : instruction ||
-        (item.answerKind === "meaning"
-          ? t("practice.recognition.meaningPrompt")
-          : t("practice.recognition.prompt"));
+        (item.answerKind === "reading"
+          ? t("practice.recognition.readingPrompt")
+          : item.answerKind === "meaning"
+            ? t("practice.recognition.meaningPrompt")
+            : t("practice.recognition.prompt"));
   const labelOf = (choice: PracticeItem["choices"][number]) => (audioFirst ? choice.glyph : choice.label);
 
   // One size for every option, so long meanings and short words line up.

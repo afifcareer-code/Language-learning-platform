@@ -30,3 +30,7 @@ After adding or changing Japanese text, rebuild the audio (`python3 scripts/audi
 ## Levels of Practice content
 
 A passage file has a `level`; an excerpt may override it with its own `level` (used for the Aozora excerpts, set in `LEVEL` in `import-aozora.py`). Practice only offers content up to the learner's current level, so set it to the level needed to read the text with furigana and the meaning.
+
+## Kanji
+
+`data/japanese/kanji/{n5,n4}.json` come from `python3 scripts/content/import-kanji.py` (see the README in that folder for sources and licences). Meanings are in `scripts/content/kanji_meanings.py`; edit them there and re-run. The validator checks one stroke path per stroke, a reading, and every locale.

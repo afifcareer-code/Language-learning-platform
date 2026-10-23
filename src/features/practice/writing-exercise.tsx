@@ -5,6 +5,7 @@ import { AudioPlayButton } from "@/audio/audio-play-button";
 import { useSpeech } from "@/audio/use-speech";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
+import { StrokeOrder } from "@/components/learning/stroke-order";
 import { HandwritingCanvas } from "@/handwriting/canvas/handwriting-canvas";
 import { GUIDE_OPACITY } from "@/handwriting/guidance";
 import { glyphReference } from "@/handwriting/recognition/glyph-reference";
@@ -130,20 +131,44 @@ export function WritingExercise({
       <Card className="flex flex-col gap-5">
         <div>
           <p className="text-lg font-medium">
-            {hasAudio
-              ? instruction || t("practice.writing.instruction")
-              : t("practice.writing.instructionVisual")}
+            {item.strokeOrder
+              ? t("practice.writing.kanjiInstruction")
+              : hasAudio
+                ? instruction || t("practice.writing.instruction")
+                : t("practice.writing.instructionVisual")}
           </p>
           <p className="mt-3 text-sm text-muted">
             {t("practice.writing.writeFor", { script: item.cueKind })}
           </p>
           <div className="mt-1 flex flex-wrap items-center gap-3">
             <p className="text-4xl font-semibold">{item.cue}</p>
-            {hasAudio && <AudioPlayButton speech={speech} text={item.speech} variant="compact" />}
+            {hasAudio && item.speech && (
+              <AudioPlayButton speech={speech} text={item.speech} variant="compact" />
+            )}
           </div>
+          {item.strokeOrder && item.reading && (
+            <p lang="ja" className="mt-1 text-lg">
+              {item.reading}
+            </p>
+          )}
           <p className="mt-2 text-sm text-muted">
             {t("practice.writing.guide", { stage: t(`practice.writing.stages.${item.stage}`) })}
           </p>
+          {item.strokeOrder && (checked || item.stage !== "recall" || hintShown) && (
+            <div className="mt-4">
+              <p className="mb-2 text-sm font-medium">{t("practice.writing.strokeOrder")}</p>
+              <StrokeOrder
+                strokes={item.strokeOrder.strokes}
+                viewBox={item.strokeOrder.viewBox}
+                label={t("practice.writing.strokeOrderLabel", {
+                  character: item.display,
+                  count: item.strokeOrder.strokes.length,
+                })}
+                replayLabel={t("practice.writing.replay")}
+                size={144}
+              />
+            </div>
+          )}
         </div>
 
         {!checked ? (

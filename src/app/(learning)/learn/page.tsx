@@ -71,6 +71,14 @@ export default async function LearnPage({ searchParams }: Props) {
                 {t("learning.path.viewProficiency")}
               </Link>
             )}
+            {context.language.code === "ja" && (
+              <Link
+                href="/learn/kanji"
+                className="inline-flex min-h-11 items-center text-sm font-medium text-accent"
+              >
+                {t("learning.kanji.open")}
+              </Link>
+            )}
             <Link
               href="/languages"
               className="inline-flex min-h-11 items-center text-sm font-medium text-accent"

@@ -15,7 +15,8 @@
     "visualPrompt": "Lihat karakternya, lalu pilih bunyi yang sesuai.",
     "noAudio": "Audio tidak tersedia di perangkat ini, jadi soal ini menampilkan karakternya.",
     "audioQuestionMeaning": "Arti mana yang Anda dengar?",
-    "meaningPrompt": "Arti mana yang cocok dengan ini?"
+    "meaningPrompt": "Arti mana yang cocok dengan ini?",
+    "readingPrompt": "Bagaimana kanji ini dibaca?"
   },
   "recall": {
     "label": "Ingat bunyi karakter ini tanpa pilihan, lalu ketik dalam romaji."
@@ -74,7 +75,11 @@
       "improve": "Perbaiki tulisan",
       "continueAnyway": "Tetap lanjut",
       "continue": "Lanjut"
-    }
+    },
+    "kanjiInstruction": "Tulis kanji ini di area menulis, goresan demi goresan sesuai urutan yang ditunjukkan.",
+    "strokeOrder": "Urutan goresan",
+    "strokeOrderLabel": "Cara menulis {character}: {count} goresan, berurutan",
+    "replay": "Putar lagi"
   },
   "checks": {
     "stroke-count": {
@@ -153,7 +158,8 @@
     "reading": "Membaca",
     "listening": "Mendengarkan",
     "vocabulary": "Kosakata",
-    "grammar": "Tata bahasa"
+    "grammar": "Tata bahasa",
+    "kanji": "Kanji"
   },
   "focus": {
     "character": "Huruf",
@@ -173,7 +179,10 @@
     "automatic": "Ingatan otomatis",
     "construction": "Menyusun kalimat",
     "production": "Produksi",
-    "native": "Kalimat penutur asli"
+    "native": "Kalimat penutur asli",
+    "kanji-meaning": "Arti",
+    "kanji-reading": "Bacaan",
+    "kanji-writing": "Menulis dengan urutan goresan"
   },
   "stageStatus": {
     "planned": "Direncanakan",

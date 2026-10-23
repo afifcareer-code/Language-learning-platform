@@ -67,6 +67,18 @@
     "ja.listening.native": {
       "label": "Mendengarkan kalimat penutur asli",
       "description": "Dengarkan kalimat yang ditulis penutur Jepang dan pilih artinya."
+    },
+    "ja.kanji.meaning": {
+      "label": "Arti kanji",
+      "description": "Lihat kanji lalu pilih artinya."
+    },
+    "ja.kanji.reading": {
+      "label": "Bacaan kanji",
+      "description": "Lihat kanji lalu pilih cara membacanya."
+    },
+    "ja.kanji.writing": {
+      "label": "Menulis kanji",
+      "description": "Tulis kanji dengan tangan, mengikuti urutan goresannya."
     }
   }
 }
