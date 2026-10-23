@@ -293,7 +293,7 @@ test("the learning language can be changed from any learning page without losing
   await expect(page).toHaveURL(/\/dashboard$/);
   await expect(page.getByText("Continue learning")).toBeVisible();
   // Still Japanese Foundation, with the interface language untouched.
-  await expect(page.getByText(/Japanese · Foundation/).first()).toBeVisible();
+  await expect(page.getByText(/You are here: Japanese · Foundation/)).toBeVisible();
 });
 
 test("Settings still changes the interface language and shows the learning language", async ({ page }) => {
