@@ -51,10 +51,10 @@ Working in v0.1:
 
 ## Current language
 
-| Language                                                   | Status               | Scope                                                                                                                                                                                                         |
-| ---------------------------------------------------------- | -------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Japanese (日本語)                                          | **Available** (JLPT) | Foundation: hiragana and katakana (46 + 46) with recognition, reading and writing. N5: first lesson (Introductions: words, grammar, sentence building). N4–N1 are defined; their curriculum is in development |
-| English, Mandarin Chinese, Spanish, German, French, Korean | Coming soon          | Listed in the catalog with their frameworks (CEFR, HSK, TOPIK); no curriculum yet                                                                                                                             |
+| Language                                                   | Status               | Scope                                                                                                                                                                                                                                                           |
+| ---------------------------------------------------------- | -------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Japanese (日本語)                                          | **Available** (JLPT) | Foundation: hiragana and katakana (basic, voiced, semi-voiced and combination kana: 104 each) with recognition, reading and writing. N5: first lesson (Introductions: words, grammar, sentence building). N4–N1 are defined; their curriculum is in development |
+| English, Mandarin Chinese, Spanish, German, French, Korean | Coming soon          | Listed in the catalog with their frameworks (CEFR, HSK, TOPIK); no curriculum yet                                                                                                                                                                               |
 
 The core engine is language-agnostic. Japanese concepts such as kana, kanji and JLPT live only in the Japanese module; the catalog of languages lives in [`data/languages.json`](data/languages.json). See [Language system](docs/architecture/language-system.md).
 

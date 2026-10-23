@@ -1,6 +1,6 @@
 {
   "script": "hiragana",
-  "source": "Basic gojūon (46 characters). Stroke counts follow common textbook forms; alternates list widely taught variants.",
+  "source": "Basic gojūon (46 characters). Stroke counts follow common textbook forms; alternates list widely taught variants. Voiced and semi-voiced kana add the dakuten (2 strokes) or handakuten (1 stroke) to the base character; combination kana add the small ya, yu or yo.",
   "characters": [
     {
       "kana": "あ",
@@ -287,6 +287,378 @@
       "alternateRomaji": ["nn"],
       "row": "n",
       "strokeCount": 1
+    },
+    {
+      "kana": "が",
+      "romaji": "ga",
+      "row": "ga",
+      "strokeCount": 5
+    },
+    {
+      "kana": "ぎ",
+      "romaji": "gi",
+      "row": "ga",
+      "strokeCount": 6,
+      "alternateStrokeCounts": [5]
+    },
+    {
+      "kana": "ぐ",
+      "romaji": "gu",
+      "row": "ga",
+      "strokeCount": 3
+    },
+    {
+      "kana": "げ",
+      "romaji": "ge",
+      "row": "ga",
+      "strokeCount": 5
+    },
+    {
+      "kana": "ご",
+      "romaji": "go",
+      "row": "ga",
+      "strokeCount": 4
+    },
+    {
+      "kana": "ざ",
+      "romaji": "za",
+      "row": "za",
+      "strokeCount": 5,
+      "alternateStrokeCounts": [4]
+    },
+    {
+      "kana": "じ",
+      "romaji": "ji",
+      "row": "za",
+      "strokeCount": 3,
+      "alternateRomaji": ["zi"]
+    },
+    {
+      "kana": "ず",
+      "romaji": "zu",
+      "row": "za",
+      "strokeCount": 4
+    },
+    {
+      "kana": "ぜ",
+      "romaji": "ze",
+      "row": "za",
+      "strokeCount": 5
+    },
+    {
+      "kana": "ぞ",
+      "romaji": "zo",
+      "row": "za",
+      "strokeCount": 3,
+      "alternateStrokeCounts": [4]
+    },
+    {
+      "kana": "だ",
+      "romaji": "da",
+      "row": "da",
+      "strokeCount": 6
+    },
+    {
+      "kana": "ぢ",
+      "romaji": "di",
+      "row": "da",
+      "strokeCount": 4,
+      "alternateRomaji": ["ji"]
+    },
+    {
+      "kana": "づ",
+      "romaji": "du",
+      "row": "da",
+      "strokeCount": 3,
+      "alternateRomaji": ["zu"]
+    },
+    {
+      "kana": "で",
+      "romaji": "de",
+      "row": "da",
+      "strokeCount": 3
+    },
+    {
+      "kana": "ど",
+      "romaji": "do",
+      "row": "da",
+      "strokeCount": 4
+    },
+    {
+      "kana": "ば",
+      "romaji": "ba",
+      "row": "ba",
+      "strokeCount": 5
+    },
+    {
+      "kana": "び",
+      "romaji": "bi",
+      "row": "ba",
+      "strokeCount": 3
+    },
+    {
+      "kana": "ぶ",
+      "romaji": "bu",
+      "row": "ba",
+      "strokeCount": 6
+    },
+    {
+      "kana": "べ",
+      "romaji": "be",
+      "row": "ba",
+      "strokeCount": 3
+    },
+    {
+      "kana": "ぼ",
+      "romaji": "bo",
+      "row": "ba",
+      "strokeCount": 6
+    },
+    {
+      "kana": "ぱ",
+      "romaji": "pa",
+      "row": "pa",
+      "strokeCount": 4
+    },
+    {
+      "kana": "ぴ",
+      "romaji": "pi",
+      "row": "pa",
+      "strokeCount": 2
+    },
+    {
+      "kana": "ぷ",
+      "romaji": "pu",
+      "row": "pa",
+      "strokeCount": 5
+    },
+    {
+      "kana": "ぺ",
+      "romaji": "pe",
+      "row": "pa",
+      "strokeCount": 2
+    },
+    {
+      "kana": "ぽ",
+      "romaji": "po",
+      "row": "pa",
+      "strokeCount": 5
+    },
+    {
+      "kana": "きゃ",
+      "romaji": "kya",
+      "row": "kya",
+      "strokeCount": 7,
+      "alternateStrokeCounts": [6]
+    },
+    {
+      "kana": "きゅ",
+      "romaji": "kyu",
+      "row": "kya",
+      "strokeCount": 6,
+      "alternateStrokeCounts": [5]
+    },
+    {
+      "kana": "きょ",
+      "romaji": "kyo",
+      "row": "kya",
+      "strokeCount": 6,
+      "alternateStrokeCounts": [5]
+    },
+    {
+      "kana": "しゃ",
+      "romaji": "sha",
+      "row": "sha",
+      "strokeCount": 4,
+      "alternateRomaji": ["sya"]
+    },
+    {
+      "kana": "しゅ",
+      "romaji": "shu",
+      "row": "sha",
+      "strokeCount": 3,
+      "alternateRomaji": ["syu"]
+    },
+    {
+      "kana": "しょ",
+      "romaji": "sho",
+      "row": "sha",
+      "strokeCount": 3,
+      "alternateRomaji": ["syo"]
+    },
+    {
+      "kana": "ちゃ",
+      "romaji": "cha",
+      "row": "cha",
+      "strokeCount": 5,
+      "alternateRomaji": ["tya"]
+    },
+    {
+      "kana": "ちゅ",
+      "romaji": "chu",
+      "row": "cha",
+      "strokeCount": 4,
+      "alternateRomaji": ["tyu"]
+    },
+    {
+      "kana": "ちょ",
+      "romaji": "cho",
+      "row": "cha",
+      "strokeCount": 4,
+      "alternateRomaji": ["tyo"]
+    },
+    {
+      "kana": "にゃ",
+      "romaji": "nya",
+      "row": "nya",
+      "strokeCount": 6
+    },
+    {
+      "kana": "にゅ",
+      "romaji": "nyu",
+      "row": "nya",
+      "strokeCount": 5
+    },
+    {
+      "kana": "にょ",
+      "romaji": "nyo",
+      "row": "nya",
+      "strokeCount": 5
+    },
+    {
+      "kana": "ひゃ",
+      "romaji": "hya",
+      "row": "hya",
+      "strokeCount": 4
+    },
+    {
+      "kana": "ひゅ",
+      "romaji": "hyu",
+      "row": "hya",
+      "strokeCount": 3
+    },
+    {
+      "kana": "ひょ",
+      "romaji": "hyo",
+      "row": "hya",
+      "strokeCount": 3
+    },
+    {
+      "kana": "みゃ",
+      "romaji": "mya",
+      "row": "mya",
+      "strokeCount": 5
+    },
+    {
+      "kana": "みゅ",
+      "romaji": "myu",
+      "row": "mya",
+      "strokeCount": 4
+    },
+    {
+      "kana": "みょ",
+      "romaji": "myo",
+      "row": "mya",
+      "strokeCount": 4
+    },
+    {
+      "kana": "りゃ",
+      "romaji": "rya",
+      "row": "rya",
+      "strokeCount": 5,
+      "alternateStrokeCounts": [4]
+    },
+    {
+      "kana": "りゅ",
+      "romaji": "ryu",
+      "row": "rya",
+      "strokeCount": 4,
+      "alternateStrokeCounts": [3]
+    },
+    {
+      "kana": "りょ",
+      "romaji": "ryo",
+      "row": "rya",
+      "strokeCount": 4,
+      "alternateStrokeCounts": [3]
+    },
+    {
+      "kana": "ぎゃ",
+      "romaji": "gya",
+      "row": "gya",
+      "strokeCount": 9,
+      "alternateStrokeCounts": [8]
+    },
+    {
+      "kana": "ぎゅ",
+      "romaji": "gyu",
+      "row": "gya",
+      "strokeCount": 8,
+      "alternateStrokeCounts": [7]
+    },
+    {
+      "kana": "ぎょ",
+      "romaji": "gyo",
+      "row": "gya",
+      "strokeCount": 8,
+      "alternateStrokeCounts": [7]
+    },
+    {
+      "kana": "じゃ",
+      "romaji": "ja",
+      "row": "ja",
+      "strokeCount": 6,
+      "alternateRomaji": ["jya", "zya"]
+    },
+    {
+      "kana": "じゅ",
+      "romaji": "ju",
+      "row": "ja",
+      "strokeCount": 5,
+      "alternateRomaji": ["jyu", "zyu"]
+    },
+    {
+      "kana": "じょ",
+      "romaji": "jo",
+      "row": "ja",
+      "strokeCount": 5,
+      "alternateRomaji": ["jyo", "zyo"]
+    },
+    {
+      "kana": "びゃ",
+      "romaji": "bya",
+      "row": "bya",
+      "strokeCount": 6
+    },
+    {
+      "kana": "びゅ",
+      "romaji": "byu",
+      "row": "bya",
+      "strokeCount": 5
+    },
+    {
+      "kana": "びょ",
+      "romaji": "byo",
+      "row": "bya",
+      "strokeCount": 5
+    },
+    {
+      "kana": "ぴゃ",
+      "romaji": "pya",
+      "row": "pya",
+      "strokeCount": 5
+    },
+    {
+      "kana": "ぴゅ",
+      "romaji": "pyu",
+      "row": "pya",
+      "strokeCount": 4
+    },
+    {
+      "kana": "ぴょ",
+      "romaji": "pyo",
+      "row": "pya",
+      "strokeCount": 4
     }
   ]
 }

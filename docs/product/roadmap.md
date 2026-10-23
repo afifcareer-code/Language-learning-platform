@@ -41,7 +41,7 @@ The roadmap is intentionally incremental. Each milestone should leave the produc
 - [ ] Kana assessment and an Assessment page (uses the existing definition / attempt / result model)
 - [ ] N5 curriculum, structured as situation → vocabulary → grammar → pattern practice → listening → reading → production → review (original content). Lesson 1 (Introductions) is done
 - [x] Basic vocabulary written in kana, with localized meanings; word recognition, word recall and sentence building
-- [ ] Dakuten and handakuten (が, ぱ, …) and combination kana (きゃ, …)
+- [x] Dakuten and handakuten (が, ぱ, …) and combination kana (きゃ, …)
 - [ ] Audio pronunciation assets (beyond browser speech synthesis)
 - [ ] Docker image for self-hosting
 

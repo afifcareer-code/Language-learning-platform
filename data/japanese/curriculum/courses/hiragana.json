@@ -5,7 +5,7 @@
     "id": "Hiragana"
   },
   "description": {
-    "en": "Read and write the 46 basic hiragana from memory: the script for native Japanese words and grammar.",
+    "en": "Read and write the 46 basic hiragana, their voiced forms and combinations, from memory: the script for native Japanese words and grammar.",
     "id": "Membaca dan menulis 46 hiragana dasar dari ingatan: aksara untuk kata asli dan tata bahasa Jepang."
   },
   "lessonObjective": {
@@ -94,6 +94,129 @@
         "id": "Hiragana: Baris W dan ん"
       },
       "items": ["hiragana:わ", "hiragana:を", "hiragana:ん"]
+    },
+    {
+      "slug": "hiragana-v-g-row",
+      "title": {
+        "en": "Hiragana: G row (voiced)",
+        "id": "Hiragana: Baris G (bersuara)"
+      },
+      "items": ["hiragana:が", "hiragana:ぎ", "hiragana:ぐ", "hiragana:げ", "hiragana:ご"]
+    },
+    {
+      "slug": "hiragana-v-z-row",
+      "title": {
+        "en": "Hiragana: Z row (voiced)",
+        "id": "Hiragana: Baris Z (bersuara)"
+      },
+      "items": ["hiragana:ざ", "hiragana:じ", "hiragana:ず", "hiragana:ぜ", "hiragana:ぞ"]
+    },
+    {
+      "slug": "hiragana-v-d-row",
+      "title": {
+        "en": "Hiragana: D row (voiced)",
+        "id": "Hiragana: Baris D (bersuara)"
+      },
+      "items": ["hiragana:だ", "hiragana:ぢ", "hiragana:づ", "hiragana:で", "hiragana:ど"]
+    },
+    {
+      "slug": "hiragana-v-b-row",
+      "title": {
+        "en": "Hiragana: B row (voiced)",
+        "id": "Hiragana: Baris B (bersuara)"
+      },
+      "items": ["hiragana:ば", "hiragana:び", "hiragana:ぶ", "hiragana:べ", "hiragana:ぼ"]
+    },
+    {
+      "slug": "hiragana-v-p-row",
+      "title": {
+        "en": "Hiragana: P row (semi-voiced)",
+        "id": "Hiragana: Baris P (setengah bersuara)"
+      },
+      "items": ["hiragana:ぱ", "hiragana:ぴ", "hiragana:ぷ", "hiragana:ぺ", "hiragana:ぽ"]
+    },
+    {
+      "slug": "hiragana-c-combo-ky-sh",
+      "title": {
+        "en": "Hiragana: KY and SH (combinations)",
+        "id": "Hiragana: KY dan SH (gabungan)"
+      },
+      "items": [
+        "hiragana:きゃ",
+        "hiragana:きゅ",
+        "hiragana:きょ",
+        "hiragana:しゃ",
+        "hiragana:しゅ",
+        "hiragana:しょ"
+      ]
+    },
+    {
+      "slug": "hiragana-c-combo-ch-ny",
+      "title": {
+        "en": "Hiragana: CH and NY (combinations)",
+        "id": "Hiragana: CH dan NY (gabungan)"
+      },
+      "items": [
+        "hiragana:ちゃ",
+        "hiragana:ちゅ",
+        "hiragana:ちょ",
+        "hiragana:にゃ",
+        "hiragana:にゅ",
+        "hiragana:にょ"
+      ]
+    },
+    {
+      "slug": "hiragana-c-combo-hy-my",
+      "title": {
+        "en": "Hiragana: HY and MY (combinations)",
+        "id": "Hiragana: HY dan MY (gabungan)"
+      },
+      "items": [
+        "hiragana:ひゃ",
+        "hiragana:ひゅ",
+        "hiragana:ひょ",
+        "hiragana:みゃ",
+        "hiragana:みゅ",
+        "hiragana:みょ"
+      ]
+    },
+    {
+      "slug": "hiragana-c-combo-ry-gy",
+      "title": {
+        "en": "Hiragana: RY and GY (combinations)",
+        "id": "Hiragana: RY dan GY (gabungan)"
+      },
+      "items": [
+        "hiragana:りゃ",
+        "hiragana:りゅ",
+        "hiragana:りょ",
+        "hiragana:ぎゃ",
+        "hiragana:ぎゅ",
+        "hiragana:ぎょ"
+      ]
+    },
+    {
+      "slug": "hiragana-c-combo-j-by",
+      "title": {
+        "en": "Hiragana: J and BY (combinations)",
+        "id": "Hiragana: J dan BY (gabungan)"
+      },
+      "items": [
+        "hiragana:じゃ",
+        "hiragana:じゅ",
+        "hiragana:じょ",
+        "hiragana:びゃ",
+        "hiragana:びゅ",
+        "hiragana:びょ"
+      ]
+    },
+    {
+      "slug": "hiragana-c-combo-py",
+      "title": {
+        "en": "Hiragana: PY (combinations)",
+        "id": "Hiragana: PY (gabungan)"
+      },
+      "items": ["hiragana:ぴゃ", "hiragana:ぴゅ", "hiragana:ぴょ"]
     }
   ]
 }

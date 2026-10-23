@@ -7,7 +7,7 @@ export type KanaScript = (typeof KANA_SCRIPTS)[number];
 export const KANA_CONTENT_TYPE = "ja.kana";
 
 export const kanaCharacterSchema = z.object({
-  kana: z.string().length(1),
+  kana: z.string().min(1).max(2),
   romaji: z.string().regex(/^[a-z]+$/),
   alternateRomaji: z.array(z.string().regex(/^[a-z]+$/)).optional(),
   /** Gojūon row, identified by its first romaji syllable ("a", "ka", ...). */
