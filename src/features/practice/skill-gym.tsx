@@ -6,11 +6,11 @@ import type { Translator } from "@/localization/translator";
 import type { PracticeSkillOverview } from "@/server/services/practice-skills";
 import { stageHref } from "./routes";
 
-/** The Practice skills with their stage ladders. Independent of the course and its levels. */
+/** The Practice skills with their stage ladders. Content follows the learner's level; progress is its own. */
 export function SkillGym({ overview, t }: { overview: PracticeSkillOverview[]; t: Translator<Messages> }) {
   return (
     <div className="grid gap-4 md:grid-cols-2 md:gap-6 xl:grid-cols-3">
-      {overview.map(({ skill, progress }) => {
+      {overview.map(({ skill, progress, opensAt }) => {
         const skillName = t.dynamic(["practice", "skills", skill.id], undefined, skill.id);
         const focusOf = (stageId: string) => t.dynamic(["practice", "focus", stageId], undefined, stageId);
         const nextFocus = focusOf(progress.nextStageId);
@@ -28,7 +28,9 @@ export function SkillGym({ overview, t }: { overview: PracticeSkillOverview[]; t
               const p = progress.stages.find((s) => s.stageId === spec.id)!;
               const detail =
                 p.status === "planned"
-                  ? t("practice.hub.plannedNote")
+                  ? opensAt[spec.id]
+                    ? t("practice.hub.opensAtNote", { level: opensAt[spec.id]! })
+                    : t("practice.hub.plannedNote")
                   : p.mastery !== null
                     ? `${t("practice.hub.recentScore", { percent: Math.round(p.mastery * 100) })} · ${t("practice.hub.attempts", { count: p.attempts })}`
                     : p.attempts > 0
@@ -40,7 +42,9 @@ export function SkillGym({ overview, t }: { overview: PracticeSkillOverview[]; t
                 id: spec.id,
                 heading: t("practice.hub.stageHeading", { n: index + 1, focus: focusOf(spec.id) }),
                 status: p.status,
-                statusLabel: t(`practice.stageStatus.${p.status}`),
+                statusLabel: opensAt[spec.id]
+                  ? t("practice.hub.opensAt", { level: opensAt[spec.id]! })
+                  : t(`practice.stageStatus.${p.status}`),
                 detail,
                 isNext: spec.id === progress.nextStageId,
               };

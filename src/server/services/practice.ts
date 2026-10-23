@@ -8,6 +8,7 @@ import { getContentItems, listContentItemsByType } from "../repositories/content
 import { getCurriculum, type ActivityView } from "../repositories/curriculum";
 import type { Learner } from "../repositories/learners";
 import { getConfusionPairs, getDueReviews, getLearnerProgress, progressKey } from "../repositories/progress";
+import { getPracticeLevels } from "./practice-level";
 import { sectionItemIds } from "./proficiency";
 
 /** What a practice session is for. Every session traces back to an objective. */
@@ -135,13 +136,18 @@ export async function getPracticeSession(
       const met = new Set([...progress.values()].map((p) => p.contentItemId));
       // Practice is not bound to the curriculum: any content of the stage's kind will do.
       stageOptionPool = await listContentItemsByType(db, learner.targetLanguage, spec.itemType);
+      const levels = await getPracticeLevels(db, learner);
       const matching = stageOptionPool
-        .filter((i) =>
-          Object.entries(spec.dataEquals ?? {}).every(
-            ([key, value]) => (i.data as Record<string, unknown>)[key] === value,
-          ),
+        .filter(
+          (i) =>
+            levels.allows(i) &&
+            Object.entries(spec.dataEquals ?? {}).every(
+              ([key, value]) => (i.data as Record<string, unknown>)[key] === value,
+            ),
         )
         .map((i) => i.id);
+      // Nothing at the learner's level yet: the stage is not open to them.
+      if (matching.length === 0) return null;
       const practised = (id: string) => progress.get(progressKey(id, skill))?.mastery.attempts ?? 0;
       const seen = matching.filter((id) => met.has(id)).sort((a, b) => practised(a) - practised(b));
       const unmet = matching.filter((id) => !met.has(id));

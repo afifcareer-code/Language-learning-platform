@@ -144,7 +144,9 @@
     "passedNote": "Lulus",
     "nextLabel": "Berikutnya",
     "masteredAll": "Semua tahap yang tersedia sudah lulus. Jaga tetap segar lewat ulasan.",
-    "ladder": "Tahap {skill}"
+    "ladder": "Tahap {skill}",
+    "opensAt": "Dibuka di {level}",
+    "opensAtNote": "Materi untuk tahap ini mulai di {level}."
   },
   "skills": {
     "writing": "Menulis",

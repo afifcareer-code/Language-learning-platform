@@ -14,6 +14,7 @@ function toContentItem(row: ContentRow): ContentItem {
     key: row.key,
     data: row.data,
     tags: row.tags,
+    levelId: row.levelId,
   };
 }
 

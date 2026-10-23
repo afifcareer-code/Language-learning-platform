@@ -147,7 +147,9 @@
     "passedNote": "Passed",
     "nextLabel": "Next",
     "masteredAll": "All available stages passed. Keep them fresh with review.",
-    "ladder": "Stages for {skill}"
+    "ladder": "Stages for {skill}",
+    "opensAt": "Opens at {level}",
+    "opensAtNote": "Content for this stage starts at {level}."
   },
   "skills": {
     "writing": "Writing",

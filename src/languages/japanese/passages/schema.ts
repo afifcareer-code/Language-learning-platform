@@ -37,6 +37,8 @@ export const passageEntrySchema = z
   .object({
     slug,
     form: z.enum(PASSAGE_FORMS),
+    /** Overrides the file's level, for an excerpt harder than the rest of its file. */
+    level: slug.optional(),
     /** Only for texts that are not ours. */
     credit: passageCreditSchema.optional(),
     lines: z.array(z.object({ speaker: z.string().optional(), text: z.string().min(2) })).min(1),
