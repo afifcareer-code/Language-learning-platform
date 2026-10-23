@@ -38,6 +38,8 @@ export async function useEnglish(page: Page) {
  * Call before navigating. Pass `false` for a device with no Japanese voice.
  */
 export async function fakeJapaneseVoice(page: Page, available = true) {
+  // These tests exercise the device-voice path, so the shipped audio clips are made unavailable.
+  await page.route("**/audio/*/manifest.json", (route) => route.fulfill({ status: 404, body: "" }));
   await page.addInitScript((hasVoice) => {
     const w = window as unknown as { __spoken: string[] };
     w.__spoken = [];
@@ -86,4 +88,37 @@ export async function skipIntroduction(page: Page) {
     await page.getByRole("button", { name: /^(Next characters|Start practice)$/ }).click();
   }
   await expect(intro).toHaveCount(0);
+}
+
+/**
+ * Record which shipped audio clips are played instead of playing them. Use with
+ * `fakeJapaneseVoice(page, false)`-less pages: the clip manifest is served for real.
+ */
+export async function recordClips(page: Page) {
+  await page.addInitScript(() => {
+    const w = window as unknown as { __clips: string[] };
+    w.__clips = [];
+    class FakeAudio {
+      src: string;
+      onplaying: (() => void) | null = null;
+      onended: (() => void) | null = null;
+      onerror: (() => void) | null = null;
+      constructor(src: string) {
+        this.src = src;
+      }
+      pause() {}
+      play() {
+        w.__clips.push(this.src);
+        this.onplaying?.();
+        setTimeout(() => this.onended?.(), 0);
+        return Promise.resolve();
+      }
+    }
+    Object.defineProperty(window, "Audio", { value: FakeAudio, configurable: true });
+    Object.defineProperty(window, "speechSynthesis", { value: undefined, configurable: true });
+  });
+}
+
+export async function playedClips(page: Page): Promise<string[]> {
+  return page.evaluate(() => (window as unknown as { __clips: string[] }).__clips);
 }

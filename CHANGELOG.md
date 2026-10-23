@@ -7,6 +7,7 @@ The format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/), and
 
 ### Added
 
+- **Complete kana.** Voiced (dakuten), semi-voiced (handakuten) and combination kana for hiragana and katakana (104 each), 11 new lessons per script, confusable pairs (は/ば/ぱ, し/じ, ず/づ, …), and ぢ/づ accepted as ji/zu. Kana items may now be two characters. Sounds that read the same (じ/ぢ, ず/づ) are never offered as options for each other in sound questions.
 - **Introduction before assessment.** Before the first question about characters the learner has not practiced, a teaching screen shows each character with its reading and a Play button ("あ is read as “a”"). Nothing is scored or recorded as an attempt. It is resolved from content data and needs no schema change.
 - **Writing feedback separates correctness from precision.** After comparing with the model the learner confirms whether it is the character; the measured stroke count and shape similarity rate it excellent, good or needs improvement. A correct but imprecise character offers **Improve writing** or **Continue anyway** and is never recorded as a failure; a wrong one offers **Try again** and is recorded. Quality and shape score are kept in the existing `writing_samples.analysis` JSON.
 - **Change learning language** control (generic `LearningLanguageSwitcher`) in the sidebar and phone header of every learning page. It opens language selection and never touches progress; the interface-language menu stays separate.

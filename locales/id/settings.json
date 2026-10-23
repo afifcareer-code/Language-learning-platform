@@ -8,5 +8,10 @@
   "name": {
     "label": "Nama Anda"
   },
-  "saved": "Pengaturan disimpan"
+  "saved": "Pengaturan disimpan",
+  "credits": {
+    "title": "Kredit",
+    "audio": "Bunyi bahasa Jepang disintesis dengan Open JTalk dan suara “Mei” © Nagoya Institute of Technology (MMDAgent Project Team), berlisensi CC BY 3.0. Ini bukan rekaman suara manusia.",
+    "details": "Kredit lengkap"
+  }
 }

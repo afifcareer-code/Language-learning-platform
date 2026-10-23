@@ -57,7 +57,7 @@ const view = (item: ContentItem, kind: "recognition" | "recall" | "writing", cho
 
 describe("kana audio metadata", () => {
   it("resolves character, reading, audio text and language for every kana", () => {
-    expect(all).toHaveLength(92);
+    expect(all).toHaveLength(208);
     for (const item of all) {
       const p = view(item, "recognition", [item]);
       expect(p.display, item.key).toBe(item.data.kana);
@@ -89,13 +89,13 @@ describe("kana audio metadata", () => {
 });
 
 describe("kana that sound the same", () => {
-  it("are exactly お/を and オ/ヲ, which a sound cannot tell apart", () => {
+  it("are exactly お/を, じ/ぢ, ず/づ (and their katakana), which a sound cannot tell apart", () => {
     const pairs: string[] = [];
     for (const a of all)
       for (const b of all)
         if (a.id < b.id && a.data.script === b.data.script && soundsAlike(a.data, b.data))
           pairs.push(`${a.data.kana}${b.data.kana}`);
-    expect(pairs.sort()).toEqual(["おを", "オヲ"].sort());
+    expect(pairs.sort()).toEqual(["おを", "オヲ", "ぢじ", "ヂジ", "づず", "ヅズ"].sort());
   });
 
   it("are never offered as options for each other", () => {
@@ -143,7 +143,7 @@ describe("answer options for sound → character", () => {
     const shi = all.find((i) => i.key === "katakana:シ")!;
     const positions = new Set<number>();
     for (let run = 0; run < 30; run++) {
-      const options = buildChoices(shi.id, pool(shi), knownConfusables(shi.id), 4, seeded(run + 1));
+      const options = buildChoices(shi.id, pool(shi), knownConfusables(shi.id), 4, seeded(run * 7919 + 13));
       expect(options).toContain(kanaItemId("katakana", "tsu"));
       expect(options).toContain(kanaItemId("katakana", "n"));
       positions.add(options.indexOf(shi.id));

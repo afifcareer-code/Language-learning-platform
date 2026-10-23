@@ -147,8 +147,8 @@ describe.each(TEST_DIALECTS)("learning flow on $dialect", ({ dialect, serverUrl 
     expect(en.levels[1]?.courses.map((c) => c.title)).toEqual(["N5 Core"]);
     expect(id.levels[1]?.courses.map((c) => c.title)).toEqual(["Inti N5"]);
     expect(en.levels.slice(2).every((l) => l.courses.length === 0)).toBe(true);
-    expect(en.lessons).toHaveLength(19);
-    expect(en.activities).toHaveLength(57);
+    expect(en.lessons).toHaveLength(41);
+    expect(en.activities).toHaveLength(123);
     expect(en.lessons[1]?.title).toBe("Hiragana: K row");
     expect(id.lessons[1]?.title).toBe("Hiragana: Baris K");
 
@@ -167,7 +167,7 @@ describe.each(TEST_DIALECTS)("learning flow on $dialect", ({ dialect, serverUrl 
     const overview = await getLearningOverview(db, learner, "en");
     expect(overview.nextActivity?.id).toBe("ja.activity.hiragana-vowels.recognition");
     expect(overview.recommendations).toEqual([expect.objectContaining({ kind: "activity" })]);
-    expect(overview.courseProgress).toMatchObject({ completedActivities: 0, totalActivities: 57 });
+    expect(overview.courseProgress).toMatchObject({ completedActivities: 0, totalActivities: 123 });
     expect(overview.overallMastery.ratio).toBe(0);
     expect(overview.readiness).toMatchObject({ ratio: 0, isReady: false });
   });
@@ -747,7 +747,7 @@ describe.each(TEST_DIALECTS)("choosing what to learn on $dialect", ({ dialect, s
   it("scopes the dashboard to the current level", async () => {
     const context = (await getLearningContext(db, await ensureLocalLearner(db), "en"))!;
     const overview = await getLearningOverview(db, learner, "en", new Date(), context.level.id);
-    expect(overview.courseProgress.totalActivities).toBe(54);
+    expect(overview.courseProgress.totalActivities).toBe(120);
     expect(overview.nextActivity?.id).toBe("ja.activity.hiragana-vowels.recognition");
   });
 

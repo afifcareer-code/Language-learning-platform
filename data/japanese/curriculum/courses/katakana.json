@@ -94,6 +94,129 @@
         "id": "Katakana: Baris W dan ン"
       },
       "items": ["katakana:ワ", "katakana:ヲ", "katakana:ン"]
+    },
+    {
+      "slug": "katakana-v-g-row",
+      "title": {
+        "en": "Katakana: G row (voiced)",
+        "id": "Katakana: Baris G (bersuara)"
+      },
+      "items": ["katakana:ガ", "katakana:ギ", "katakana:グ", "katakana:ゲ", "katakana:ゴ"]
+    },
+    {
+      "slug": "katakana-v-z-row",
+      "title": {
+        "en": "Katakana: Z row (voiced)",
+        "id": "Katakana: Baris Z (bersuara)"
+      },
+      "items": ["katakana:ザ", "katakana:ジ", "katakana:ズ", "katakana:ゼ", "katakana:ゾ"]
+    },
+    {
+      "slug": "katakana-v-d-row",
+      "title": {
+        "en": "Katakana: D row (voiced)",
+        "id": "Katakana: Baris D (bersuara)"
+      },
+      "items": ["katakana:ダ", "katakana:ヂ", "katakana:ヅ", "katakana:デ", "katakana:ド"]
+    },
+    {
+      "slug": "katakana-v-b-row",
+      "title": {
+        "en": "Katakana: B row (voiced)",
+        "id": "Katakana: Baris B (bersuara)"
+      },
+      "items": ["katakana:バ", "katakana:ビ", "katakana:ブ", "katakana:ベ", "katakana:ボ"]
+    },
+    {
+      "slug": "katakana-v-p-row",
+      "title": {
+        "en": "Katakana: P row (semi-voiced)",
+        "id": "Katakana: Baris P (setengah bersuara)"
+      },
+      "items": ["katakana:パ", "katakana:ピ", "katakana:プ", "katakana:ペ", "katakana:ポ"]
+    },
+    {
+      "slug": "katakana-c-combo-ky-sh",
+      "title": {
+        "en": "Katakana: KY and SH (combinations)",
+        "id": "Katakana: KY dan SH (gabungan)"
+      },
+      "items": [
+        "katakana:キャ",
+        "katakana:キュ",
+        "katakana:キョ",
+        "katakana:シャ",
+        "katakana:シュ",
+        "katakana:ショ"
+      ]
+    },
+    {
+      "slug": "katakana-c-combo-ch-ny",
+      "title": {
+        "en": "Katakana: CH and NY (combinations)",
+        "id": "Katakana: CH dan NY (gabungan)"
+      },
+      "items": [
+        "katakana:チャ",
+        "katakana:チュ",
+        "katakana:チョ",
+        "katakana:ニャ",
+        "katakana:ニュ",
+        "katakana:ニョ"
+      ]
+    },
+    {
+      "slug": "katakana-c-combo-hy-my",
+      "title": {
+        "en": "Katakana: HY and MY (combinations)",
+        "id": "Katakana: HY dan MY (gabungan)"
+      },
+      "items": [
+        "katakana:ヒャ",
+        "katakana:ヒュ",
+        "katakana:ヒョ",
+        "katakana:ミャ",
+        "katakana:ミュ",
+        "katakana:ミョ"
+      ]
+    },
+    {
+      "slug": "katakana-c-combo-ry-gy",
+      "title": {
+        "en": "Katakana: RY and GY (combinations)",
+        "id": "Katakana: RY dan GY (gabungan)"
+      },
+      "items": [
+        "katakana:リャ",
+        "katakana:リュ",
+        "katakana:リョ",
+        "katakana:ギャ",
+        "katakana:ギュ",
+        "katakana:ギョ"
+      ]
+    },
+    {
+      "slug": "katakana-c-combo-j-by",
+      "title": {
+        "en": "Katakana: J and BY (combinations)",
+        "id": "Katakana: J dan BY (gabungan)"
+      },
+      "items": [
+        "katakana:ジャ",
+        "katakana:ジュ",
+        "katakana:ジョ",
+        "katakana:ビャ",
+        "katakana:ビュ",
+        "katakana:ビョ"
+      ]
+    },
+    {
+      "slug": "katakana-c-combo-py",
+      "title": {
+        "en": "Katakana: PY (combinations)",
+        "id": "Katakana: PY (gabungan)"
+      },
+      "items": ["katakana:ピャ", "katakana:ピュ", "katakana:ピョ"]
     }
   ]
 }
