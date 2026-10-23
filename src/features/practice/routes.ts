@@ -15,3 +15,7 @@ export function weakItemsHref(skill: string): string {
 export function confusionHref(itemA: string, itemB: string): string {
   return `/practice/session?${new URLSearchParams({ kind: "confusion", a: itemA, b: itemB })}`;
 }
+
+export function assessmentHref(level: string, section: string): string {
+  return `/practice/session?${new URLSearchParams({ kind: "assessment", level, section })}`;
+}

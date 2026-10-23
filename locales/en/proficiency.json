@@ -1,0 +1,95 @@
+{
+  "title": "Proficiency",
+  "description": "What you can do at this level, how we know, and what to do next.",
+  "levelTitle": "{framework} proficiency",
+  "internalStandard": "Platform Internal Standard",
+  "internalStandardNote": "Thresholds on this page are the platform's own standard. They are not the official {framework} score, and passing here does not guarantee passing the exam.",
+  "entry": {
+    "learnTitle": "What you will learn",
+    "learnBody": "Everyday basics: recognizing words, building simple sentences, and later reading and listening to short texts.",
+    "needTitle": "What you need first",
+    "needBody": "You can read and recognize hiragana and katakana ({level}).",
+    "knowTitle": "How we know you learned it",
+    "knowBody": "Every question you answer is evidence. A skill counts as secure only after you recalled it correctly across several sessions, not when a lesson is finished.",
+    "readyTitle": "When you are ready",
+    "readyBody": "When every available skill is secure, you can take a mock assessment with questions you practiced least. It shows what to review before the real exam."
+  },
+  "prerequisite": {
+    "title": "Prerequisite: {level}",
+    "met": "Met: your kana skills show you are ready to start {target}.",
+    "unmet": "Not yet: keep practicing {level} until most characters are recognized reliably."
+  },
+  "domains": {
+    "vocabulary": "Vocabulary",
+    "grammar": "Grammar",
+    "reading": "Reading",
+    "listening": "Listening",
+    "writing": "Writing"
+  },
+  "competencies": {
+    "title": "Skills for this level",
+    "examTitle": "Measured by the exam",
+    "platformTitle": "Language mastery beyond the exam",
+    "platformNote": "The exam does not test these directly, but they help you actually use the language.",
+    "evidence": "{secure} of {total} items secure · {retained} retained",
+    "planned": "Content for this skill is not available yet, so it cannot be measured.",
+    "status": {
+      "planned": "Coming later",
+      "not_started": "Not started",
+      "developing": "Developing",
+      "secure": "Secure",
+      "retained": "Retained"
+    }
+  },
+  "readiness": {
+    "title": "Readiness",
+    "examNote": "A recommendation based on your evidence, not an official result.",
+    "state": {
+      "not_ready": "Not Ready",
+      "developing": "Developing",
+      "assessment_ready": "Assessment Ready",
+      "certification_ready": "Certification Ready"
+    },
+    "summary": {
+      "not_ready": "Start with the prerequisite and the first skills below.",
+      "developing": "You are building the skills. Focus on the gaps below.",
+      "assessment_ready": "Your available skills are secure. Take the mock assessment, and keep reviewing so they last.",
+      "certification_ready": "Your evidence supports sitting the exam. This is a recommendation, not a guarantee."
+    },
+    "strengths": "Strengths",
+    "gaps": "What to work on",
+    "none": "Nothing yet.",
+    "reasons": {
+      "prerequisite_unmet": "Finish the prerequisite level first.",
+      "competency_not_secure": "Make this skill secure: {competency}.",
+      "competency_not_retained": "Keep reviewing until it is retained: {competency}.",
+      "competency_planned": "Not measurable yet (content planned): {competency}.",
+      "assessment_not_taken": "Take the mock assessment.",
+      "assessment_failed": "The last mock assessment did not meet the platform standard.",
+      "assessment_section_failed": "Review the {section} section."
+    }
+  },
+  "assessment": {
+    "title": "Mock assessment",
+    "mockLabel": "Platform Mock Assessment Result",
+    "notOfficial": "This is not an official score. It is the platform's own check, scored per section and overall.",
+    "intro": "Each section uses the items you have practiced least, with answer feedback only after each question. Do all sections to get a result.",
+    "start": "Start {section}",
+    "noItems": "No items available",
+    "section": "{section}: {correct} of {total} correct ({score})",
+    "novel": "{novel} of {total} questions were on items you had not practiced before.",
+    "overall": "Overall: {correct} of {total} ({score})",
+    "passed": "Meets the platform standard",
+    "failed": "Below the platform standard",
+    "notTaken": "Not taken yet.",
+    "sections": {
+      "vocabulary": "Vocabulary",
+      "grammar": "Grammar"
+    }
+  },
+  "views": {
+    "examTitle": "Exam readiness",
+    "masteryTitle": "Language mastery"
+  },
+  "disclaimer": "No result here means you are fluent, and none guarantees passing the exam."
+}

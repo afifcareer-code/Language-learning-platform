@@ -109,8 +109,10 @@
     "objectives": {
       "review": "Recall these items correctly now that they are due, so they move to longer review intervals.",
       "weak": "Correct the items you missed recently.",
-      "confusion": "Reliably tell {a} and {b} apart."
-    }
+      "confusion": "Reliably tell {a} and {b} apart.",
+      "assessment": "Answer questions on the items you have practiced least. This is a check, not new learning."
+    },
+    "assessment": "Mock assessment"
   },
   "introduction": {
     "title": "Meet the characters",

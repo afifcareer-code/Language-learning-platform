@@ -312,3 +312,27 @@ test("progress shows confusions and learning history", async ({ page }) => {
   await expect(page.getByRole("heading", { name: "Commonly confused" })).toBeVisible();
   await expect(page.getByRole("heading", { name: "Learning history" })).toBeVisible();
 });
+
+test("the N5 proficiency page explains the level, evidence and readiness, and starts a mock assessment", async ({
+  page,
+}) => {
+  await page.goto("/learn?level=n5");
+  await page.getByRole("link", { name: "Proficiency for this level" }).first().click();
+  await expect(page).toHaveURL(/\/proficiency\?level=n5/);
+  await expect(page.getByRole("heading", { level: 1 })).toHaveText("N5 proficiency");
+  await expect(page.getByText("Platform Internal Standard")).toBeVisible();
+  await expect(page.getByText("What you will learn")).toBeVisible();
+  await expect(page.getByTestId("readiness-state")).toBeVisible();
+  // Skills without content are shown honestly rather than hidden or faked.
+  await expect(page.getByTestId("competency-n5.listening.slow-conversation")).toContainText("Coming later");
+  await expect(page.getByTestId("assessment-result")).toContainText("Platform Mock Assessment Result");
+
+  await page.getByRole("link", { name: "Start Vocabulary" }).click();
+  await expect(page).toHaveURL(/kind=assessment/);
+  await expect(page.getByText("Mock assessment").first()).toBeVisible();
+
+  // No horizontal overflow at this width.
+  await page.goto("/proficiency?level=n5");
+  const overflow = await page.evaluate(() => document.documentElement.scrollWidth > window.innerWidth);
+  expect(overflow).toBe(false);
+});

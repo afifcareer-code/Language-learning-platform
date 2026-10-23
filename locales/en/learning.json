@@ -31,7 +31,8 @@
       "recommended": "Recommended next",
       "available": "Available",
       "locked": "In development"
-    }
+    },
+    "viewProficiency": "Proficiency for this level"
   },
   "lesson": {
     "breadcrumb": "Breadcrumb",

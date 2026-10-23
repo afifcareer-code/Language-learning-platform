@@ -31,7 +31,8 @@
       "recommended": "Disarankan berikutnya",
       "available": "Tersedia",
       "locked": "Sedang dikembangkan"
-    }
+    },
+    "viewProficiency": "Kemampuan untuk level ini"
   },
   "lesson": {
     "breadcrumb": "Navigasi",

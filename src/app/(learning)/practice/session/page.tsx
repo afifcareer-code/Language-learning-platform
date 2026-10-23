@@ -11,6 +11,9 @@ function toRequest(params: Record<string, string | string[] | undefined>): Sessi
   const kind = get("kind");
   const skill = get("skill");
   if ((kind === "review" || kind === "weak") && skill) return { kind, skill };
+  const level = get("level");
+  const section = get("section");
+  if (kind === "assessment" && level && section) return { kind, level, section };
   const a = get("a");
   const b = get("b");
   if (kind === "confusion" && a && b) return { kind, itemA: a, itemB: b };

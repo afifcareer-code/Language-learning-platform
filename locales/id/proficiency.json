@@ -1,0 +1,95 @@
+{
+  "title": "Kemampuan",
+  "description": "Apa yang bisa Anda lakukan di level ini, bagaimana kami tahu, dan apa langkah berikutnya.",
+  "levelTitle": "Kemampuan {framework}",
+  "internalStandard": "Standar Internal Platform",
+  "internalStandardNote": "Ambang batas di halaman ini adalah standar internal platform. Ini bukan skor resmi {framework}, dan lulus di sini tidak menjamin lulus ujian.",
+  "entry": {
+    "learnTitle": "Apa yang akan Anda pelajari",
+    "learnBody": "Dasar sehari-hari: mengenali kata, menyusun kalimat sederhana, lalu membaca dan mendengarkan teks pendek.",
+    "needTitle": "Yang dibutuhkan lebih dulu",
+    "needBody": "Anda bisa membaca dan mengenali hiragana dan katakana ({level}).",
+    "knowTitle": "Bagaimana kami tahu Anda sudah belajar",
+    "knowBody": "Setiap jawaban adalah bukti. Sebuah kemampuan dianggap kokoh hanya setelah Anda mengingatnya dengan benar di beberapa sesi, bukan saat pelajaran selesai.",
+    "readyTitle": "Saat Anda siap",
+    "readyBody": "Jika semua kemampuan yang tersedia sudah kokoh, Anda bisa mengikuti asesmen tiruan dengan soal yang paling jarang Anda latih. Hasilnya menunjukkan apa yang perlu diulang sebelum ujian asli."
+  },
+  "prerequisite": {
+    "title": "Prasyarat: {level}",
+    "met": "Terpenuhi: kemampuan kana Anda menunjukkan Anda siap memulai {target}.",
+    "unmet": "Belum: teruskan berlatih {level} sampai sebagian besar karakter dikenali dengan andal."
+  },
+  "domains": {
+    "vocabulary": "Kosakata",
+    "grammar": "Tata bahasa",
+    "reading": "Membaca",
+    "listening": "Mendengarkan",
+    "writing": "Menulis"
+  },
+  "competencies": {
+    "title": "Kemampuan untuk level ini",
+    "examTitle": "Diukur oleh ujian",
+    "platformTitle": "Penguasaan bahasa di luar ujian",
+    "platformNote": "Ujian tidak mengujinya secara langsung, tetapi membantu Anda benar-benar menggunakan bahasa ini.",
+    "evidence": "{secure} dari {total} butir kokoh · {retained} bertahan",
+    "planned": "Konten untuk kemampuan ini belum tersedia, jadi belum bisa diukur.",
+    "status": {
+      "planned": "Menyusul",
+      "not_started": "Belum mulai",
+      "developing": "Berkembang",
+      "secure": "Kokoh",
+      "retained": "Bertahan"
+    }
+  },
+  "readiness": {
+    "title": "Kesiapan",
+    "examNote": "Rekomendasi berdasarkan bukti belajar Anda, bukan hasil resmi.",
+    "state": {
+      "not_ready": "Belum Siap",
+      "developing": "Berkembang",
+      "assessment_ready": "Siap Asesmen",
+      "certification_ready": "Siap Sertifikasi"
+    },
+    "summary": {
+      "not_ready": "Mulai dari prasyarat dan kemampuan pertama di bawah.",
+      "developing": "Anda sedang membangun kemampuan. Fokus pada celah di bawah.",
+      "assessment_ready": "Kemampuan yang tersedia sudah kokoh. Ikuti asesmen tiruan, dan teruskan mengulang agar bertahan.",
+      "certification_ready": "Bukti Anda mendukung untuk mengikuti ujian. Ini rekomendasi, bukan jaminan."
+    },
+    "strengths": "Kekuatan",
+    "gaps": "Yang perlu dikerjakan",
+    "none": "Belum ada.",
+    "reasons": {
+      "prerequisite_unmet": "Selesaikan level prasyarat lebih dulu.",
+      "competency_not_secure": "Buat kemampuan ini kokoh: {competency}.",
+      "competency_not_retained": "Terus ulang sampai bertahan: {competency}.",
+      "competency_planned": "Belum bisa diukur (konten direncanakan): {competency}.",
+      "assessment_not_taken": "Ikuti asesmen tiruan.",
+      "assessment_failed": "Asesmen tiruan terakhir belum memenuhi standar platform.",
+      "assessment_section_failed": "Ulangi bagian {section}."
+    }
+  },
+  "assessment": {
+    "title": "Asesmen tiruan",
+    "mockLabel": "Hasil Asesmen Tiruan Platform",
+    "notOfficial": "Ini bukan skor resmi. Ini pemeriksaan internal platform, dinilai per bagian dan secara keseluruhan.",
+    "intro": "Setiap bagian memakai butir yang paling jarang Anda latih, dengan umpan balik hanya setelah setiap soal. Kerjakan semua bagian untuk mendapat hasil.",
+    "start": "Mulai {section}",
+    "noItems": "Belum ada butir",
+    "section": "{section}: {correct} dari {total} benar ({score})",
+    "novel": "{novel} dari {total} soal berasal dari butir yang belum pernah Anda latih.",
+    "overall": "Keseluruhan: {correct} dari {total} ({score})",
+    "passed": "Memenuhi standar platform",
+    "failed": "Di bawah standar platform",
+    "notTaken": "Belum dikerjakan.",
+    "sections": {
+      "vocabulary": "Kosakata",
+      "grammar": "Tata bahasa"
+    }
+  },
+  "views": {
+    "examTitle": "Kesiapan ujian",
+    "masteryTitle": "Penguasaan bahasa"
+  },
+  "disclaimer": "Tidak ada hasil di sini yang berarti Anda fasih, dan tidak ada yang menjamin lulus ujian."
+}

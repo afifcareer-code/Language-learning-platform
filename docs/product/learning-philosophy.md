@@ -93,3 +93,7 @@ When a wrong answer is the right answer for another item (for example, reading ã
 2. **Confused pairs**, to practise telling similar items apart.
 3. **Recent mistakes**, to fix errors while they are fresh.
 4. **The next activity** in the curriculum.
+
+## Proficiency is evidence, not completion
+
+A level's competencies are secure only when the learner has recalled the items correctly across real review gaps. Finishing lessons never counts. Exam readiness and language mastery are shown separately, and the platform never claims fluency or a guaranteed pass. See [proficiency-framework.md](proficiency-framework.md).

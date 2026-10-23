@@ -10,10 +10,16 @@ import { migrationsFolder, runMigrations } from "@/server/db/migrate";
 import { getContentTranslations } from "@/server/repositories/content";
 import { getCurriculum } from "@/server/repositories/curriculum";
 import { ensureLocalLearner, type Learner } from "@/server/repositories/learners";
-import { getConfusionPairs, getLearnerProgress, progressKey } from "@/server/repositories/progress";
+import {
+  getConfusionPairs,
+  getLearnerProgress,
+  getRecentAttempts,
+  progressKey,
+} from "@/server/repositories/progress";
 import { recordAttempt } from "@/server/services/learning";
 import { getLearningOverview } from "@/server/services/overview";
 import { getPracticeSession } from "@/server/services/practice";
+import { getProficiency } from "@/server/services/proficiency";
 import {
   getLearningContext,
   LearningContextError,
@@ -52,6 +58,75 @@ describe.each(TEST_DIALECTS)("learning flow on $dialect", ({ dialect, serverUrl 
   afterAll(async () => {
     await db?.close();
     await testDb?.drop();
+  });
+
+  it("derives N5 proficiency from attempts, not from lesson completion", async () => {
+    const empty = await getProficiency(db, learner, "en", "n5");
+    expect(empty).not.toBeNull();
+    expect(empty!.readiness.state).toBe("not_ready");
+    expect(empty!.competencies.find((c) => c.id === "n5.listening.slow-conversation")!.status).toBe(
+      "planned",
+    );
+
+    const curriculum = await getCurriculum(db, "ja", "en");
+    const n5 = curriculum.levels.find((l) => l.slug === "n5")!;
+    const activities = n5.courses.flatMap((c) => c.lessons.flatMap((l) => l.activities));
+    const recognition = activities.find((a) => a.skill === JA_SKILLS.vocabularyRecognition)!;
+
+    // A few attempts show up as started evidence on the matching competency only.
+    await recordAttempt(db, {
+      learnerId: learner.id,
+      contentItemId: recognition.contentItemIds[0]!,
+      skill: recognition.skill,
+      mode: "practice",
+      correct: true,
+      score: 1,
+      activityId: recognition.id,
+    });
+    const started = await getProficiency(db, learner, "en", "n5");
+    const meaning = started!.competencies.find((c) => c.id === "n5.vocab.meaning")!;
+    expect(meaning.started).toBe(1);
+    expect(meaning.status).toBe("developing");
+    expect(started!.competencies.find((c) => c.id === "n5.grammar.sentence")!.started).toBe(0);
+  });
+
+  it("scores the latest mock assessment from assessment attempts and flags unseen items", async () => {
+    const curriculum = await getCurriculum(db, "ja", "en");
+    const session = await getPracticeSession(db, learner, "en", {
+      kind: "assessment",
+      level: "n5",
+      section: "vocabulary",
+    });
+    expect(session).not.toBeNull();
+    expect(session!.mode).toBe("assessment");
+    expect(session!.prompts.length).toBeGreaterThan(0);
+    // Assessment prefers what the learner has seen least, so the one practiced item is left out.
+    const practiced = curriculum.activities.find((a) => a.skill === JA_SKILLS.vocabularyRecognition)!
+      .contentItemIds[0]!;
+    expect(session!.prompts).toHaveLength(8);
+    expect(session!.prompts.map((p) => p.id)).not.toContain(practiced);
+
+    for (const prompt of session!.prompts) {
+      await recordAttempt(db, {
+        learnerId: learner.id,
+        contentItemId: prompt.id,
+        skill: session!.skill,
+        mode: "assessment",
+        correct: true,
+        score: 1,
+      });
+    }
+    const view = await getProficiency(db, learner, "en", "n5");
+    const result = view!.assessment.result!;
+    const vocab = result.sections.find((s) => s.id === "vocabulary")!;
+    expect(vocab.correct).toBe(session!.prompts.length);
+    expect(vocab.novel).toBeGreaterThan(0);
+    // The grammar section was not taken, so the sitting as a whole is not passed.
+    expect(result.passed).toBe(false);
+    expect(view!.readiness.state).not.toBe("certification_ready");
+    // Assessment attempts are kept apart from practice in the evidence trail.
+    const modes = await getRecentAttempts(db, learner.id, { limit: 50 });
+    expect(modes.some((a) => a.mode === "assessment")).toBe(true);
   });
 
   it("seeds a localized curriculum idempotently: level → course → lesson → activities", async () => {

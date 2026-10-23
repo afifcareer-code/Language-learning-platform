@@ -106,8 +106,10 @@
     "objectives": {
       "review": "Mengingat item-item ini dengan benar saat jadwalnya tiba, agar interval review-nya semakin panjang.",
       "weak": "Memperbaiki item yang baru saja salah.",
-      "confusion": "Membedakan {a} dan {b} dengan andal."
-    }
+      "confusion": "Membedakan {a} dan {b} dengan andal.",
+      "assessment": "Jawab soal tentang butir yang paling jarang Anda latih. Ini pemeriksaan, bukan pembelajaran baru."
+    },
+    "assessment": "Asesmen tiruan"
   },
   "introduction": {
     "title": "Kenali karakternya",
