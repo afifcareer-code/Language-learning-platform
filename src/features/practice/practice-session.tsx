@@ -1,9 +1,9 @@
 "use client";
 
-import { useState, useTransition, type FormEvent } from "react";
+import { useEffect, useState, useTransition, type FormEvent } from "react";
 import { submitAttempt, type AttemptFeedback, type AttemptInput } from "@/features/practice/actions";
 import type { SessionResult } from "@/core/activities";
-import { Button } from "@/components/ui/button";
+import { Button, ButtonLink } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import type { SelfAssessment } from "@/handwriting/scoring/score";
 import type { WritingSample } from "@/handwriting/strokes/types";
@@ -36,6 +36,16 @@ export interface PracticeSessionProps {
    * character together) before the first question. Empty when there is nothing new.
    */
   introduction?: IntroductionItem[];
+  /**
+   * Exam conditions (mock assessment): no answer feedback until the end, an optional
+   * countdown, and a link to the result. Unanswered questions count as wrong.
+   */
+  exam?: { timeLimitSeconds: number | null; resultHref: string };
+}
+
+function formatTime(seconds: number): string {
+  const m = Math.floor(seconds / 60);
+  return `${m}:${String(seconds % 60).padStart(2, "0")}`;
 }
 
 /**
@@ -58,7 +68,16 @@ export function PracticeSession(props: PracticeSessionProps) {
   const [error, setError] = useState<string | null>(null);
   const [pending, startTransition] = useTransition();
   const elapsed = useStopwatch(index);
-  const item = items[index];
+  const exam = props.exam;
+  const [secondsLeft, setSecondsLeft] = useState<number | null>(exam?.timeLimitSeconds ?? null);
+  const timeUp = secondsLeft !== null && secondsLeft <= 0;
+  const item = timeUp ? undefined : items[index];
+
+  useEffect(() => {
+    if (secondsLeft === null || secondsLeft <= 0 || index >= items.length) return;
+    const timer = window.setTimeout(() => setSecondsLeft((s) => (s === null ? s : s - 1)), 1000);
+    return () => window.clearTimeout(timer);
+  }, [secondsLeft, index, items.length]);
 
   if (!introduced && props.introduction) {
     return (
@@ -72,14 +91,22 @@ export function PracticeSession(props: PracticeSessionProps) {
 
   if (!item) {
     return (
-      <SessionOutcome
-        results={results}
-        passScore={props.passScore}
-        objective={props.objective}
-        skillLabel={props.skillLabel}
-        displayOf={Object.fromEntries(items.map((i) => [i.id, i.speech]))}
-        displayLang="ja"
-      />
+      <>
+        {exam && (
+          <div className="mx-auto mb-4 flex max-w-2xl flex-col gap-2">
+            {timeUp && <p role="status">{t("practice.exam.timeUp")}</p>}
+            <ButtonLink href={exam.resultHref}>{t("practice.exam.seeResult")}</ButtonLink>
+          </div>
+        )}
+        <SessionOutcome
+          results={results}
+          passScore={props.passScore}
+          objective={props.objective}
+          skillLabel={props.skillLabel}
+          displayOf={Object.fromEntries(items.map((i) => [i.id, i.speech]))}
+          displayLang="ja"
+        />
+      </>
     );
   }
 
@@ -91,6 +118,7 @@ export function PracticeSession(props: PracticeSessionProps) {
       try {
         const fb = await submitAttempt({ itemId: item.id, skill, activityId, mode, responseMs, response });
         if (options.retry) setAttempt((a) => a + 1);
+        else if (exam) next();
         else setFeedback(fb);
         setResults((r) => [
           ...r,
@@ -132,6 +160,16 @@ export function PracticeSession(props: PracticeSessionProps) {
 
   return (
     <div className={kind === "writing" ? "mx-auto max-w-5xl" : "mx-auto max-w-xl"}>
+      {exam && (
+        <div className="mb-3 flex flex-wrap items-center justify-between gap-2 text-sm text-muted">
+          <p>{t("practice.exam.conditions")}</p>
+          {secondsLeft !== null && (
+            <p role="timer" aria-live="off" className="font-semibold text-ink">
+              {t("practice.exam.timeLeft", { time: formatTime(Math.max(0, secondsLeft)) })}
+            </p>
+          )}
+        </div>
+      )}
       <SessionProgress
         index={index}
         total={items.length}

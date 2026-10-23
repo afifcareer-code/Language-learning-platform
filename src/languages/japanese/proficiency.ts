@@ -49,7 +49,13 @@ export const levelSpecFileSchema = z
       .min(1),
     assessment: z.object({
       sections: z.array(
-        z.object({ id: slug, domain: slug, skill, questionCount: z.number().int().positive() }),
+        z.object({
+          id: slug,
+          domain: slug,
+          skill,
+          questionCount: z.number().int().positive(),
+          timeLimitSeconds: z.number().int().positive().optional(),
+        }),
       ),
     }),
   })

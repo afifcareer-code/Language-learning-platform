@@ -85,25 +85,29 @@
         "id": "vocabulary",
         "domain": "vocabulary",
         "skill": "ja.vocab.recognition",
-        "questionCount": 8
+        "questionCount": 8,
+        "timeLimitSeconds": 180
       },
       {
         "id": "grammar",
         "domain": "grammar",
         "skill": "ja.grammar.sentence",
-        "questionCount": 5
+        "questionCount": 5,
+        "timeLimitSeconds": 240
       },
       {
         "id": "reading",
         "domain": "reading",
         "skill": "ja.reading.sentence",
-        "questionCount": 5
+        "questionCount": 5,
+        "timeLimitSeconds": 150
       },
       {
         "id": "listening",
         "domain": "listening",
         "skill": "ja.listening.sentence",
-        "questionCount": 5
+        "questionCount": 5,
+        "timeLimitSeconds": 150
       }
     ]
   }

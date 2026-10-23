@@ -7,6 +7,7 @@ The format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/), and
 
 ### Added
 
+- **Exam conditions for the mock assessment.** No per-question feedback, a countdown per section (configurable in the level spec), unanswered questions count as wrong, and a link to the result. Practice sessions are unchanged.
 - **N5 lessons 2-6** (numbers and shopping, time and daily life, places and directions, food and ordering, family and people): 63 words, 15 grammar points and 31 sentences, all original, ID/EN. New **sentence reading** and **sentence listening** activities and skills (`ja.reading.sentence`, `ja.listening.sentence`) with meaning options; the proficiency page now measures N5 reading and listening on sentences, and the mock assessment has reading and listening sections. Writing production remains planned, so Certification Ready stays out of reach.
 - **Complete kana.** Voiced (dakuten), semi-voiced (handakuten) and combination kana for hiragana and katakana (104 each), 11 new lessons per script, confusable pairs (は/ば/ぱ, し/じ, ず/づ, …), and ぢ/づ accepted as ji/zu. Kana items may now be two characters. Sounds that read the same (じ/ぢ, ず/づ) are never offered as options for each other in sound questions.
 - **Introduction before assessment.** Before the first question about characters the learner has not practiced, a teaching screen shows each character with its reading and a Play button ("あ is read as “a”"). Nothing is scored or recorded as an attempt. It is resolved from content data and needs no schema change.
