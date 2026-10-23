@@ -106,6 +106,10 @@
     "learningPath": "Open learning path"
   },
   "audio": {
-    "play": "Play pronunciation of {text}"
+    "play": "Play pronunciation of {text}",
+    "playSound": "Play sound",
+    "playAgain": "Listen again",
+    "playing": "Playing…",
+    "preparing": "Preparing audio…"
   }
 }

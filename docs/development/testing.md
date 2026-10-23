@@ -39,7 +39,7 @@ CI runs all three engines.
 Playwright builds the app, seeds a separate database (`.data/e2e.db`) and runs on an iPad Pro landscape profile and a Pixel 7 profile, one test at a time because tests share that database.
 
 - `onboarding.spec.ts` runs first (tablet only), against the fresh database. It covers language selection, coming-soon languages (shown, not startable, 404), level selection (only levels with curriculum), persistence, the learning path link, and the global interface-language menu (including Escape to close).
-- `smoke.spec.ts` covers the learning flows: the learning path and level statuses, kana and N5 lesson pages, recognition, recall (kana and words), sentence building, and drawing on the handwriting canvas. Its tests complete onboarding themselves if needed (`helpers.ts`).
+- `smoke.spec.ts` covers the learning flows: the learning path and level statuses, kana and N5 lesson pages, sound-first recognition (what is played, replay, feedback, and the no-voice fallback), recall (kana and words), sentence building, and drawing on the handwriting canvas. Headless browsers have no speech voices, so audio tests install a fake Japanese voice (`fakeJapaneseVoice` in `helpers.ts`) that records what the page asks it to say. Its tests complete onboarding themselves if needed (`helpers.ts`).
 
 The first time, install a browser with `npx playwright install chromium`. To use an existing Chromium instead, set:
 

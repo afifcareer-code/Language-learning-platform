@@ -103,6 +103,10 @@
     "learningPath": "Buka jalur belajar"
   },
   "audio": {
-    "play": "Putar pelafalan {text}"
+    "play": "Putar pelafalan {text}",
+    "playSound": "Putar bunyi",
+    "playAgain": "Dengarkan lagi",
+    "playing": "Memutar…",
+    "preparing": "Menyiapkan audio…"
   }
 }

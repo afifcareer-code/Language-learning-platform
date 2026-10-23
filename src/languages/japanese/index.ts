@@ -2,7 +2,7 @@ import type { LanguageModule } from "@/core/learning";
 import en from "./locales/en.json";
 import id from "./locales/id.json";
 import { kanaIdForRomaji, knownConfusables } from "./scripts/catalog";
-import { checkRomaji, isKanaItemData } from "./scripts/kana";
+import { checkRomaji, isKanaItemData, soundsAlike } from "./scripts/kana";
 import { isSentenceData } from "./sentences/schema";
 import { JA_SKILLS, japaneseSkills } from "./skills";
 import { checkVocabularyAnswer } from "./vocabulary/answers";
@@ -53,9 +53,14 @@ export const japanese: LanguageModule = {
     return null;
   },
   knownConfusables,
+  // Kana are compared within one script, and never with a character that sounds the same
+  // (お/を), because then neither the sound nor the typed reading could tell the answer.
   isComparable: (a, b) =>
     a.type === b.type &&
-    (!isKanaItemData(a.data) || (isKanaItemData(b.data) && a.data.script === b.data.script)),
+    (!isKanaItemData(a.data) ||
+      (isKanaItemData(b.data) &&
+        a.data.script === b.data.script &&
+        (a.id === b.id || !soundsAlike(a.data, b.data)))),
 };
 
 export { JA_SKILLS } from "./skills";

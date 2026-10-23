@@ -62,6 +62,7 @@
         "description": "You are ready for the next lesson when {threshold} of this lesson's items hold up from memory."
       }
     },
-    "readiness": "{ready} of {total} ready"
+    "readiness": "{ready} of {total} ready",
+    "tapToHear": "Tap a character to hear how it sounds."
   }
 }

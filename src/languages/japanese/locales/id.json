@@ -6,7 +6,7 @@
   "skills": {
     "ja.kana.recognition": {
       "label": "Mengenali kana",
-      "description": "Melihat karakter kana dan memilih bunyinya."
+      "description": "Mendengar bunyi dan memilih karakter kana yang sesuai."
     },
     "ja.kana.reading": {
       "label": "Membaca kana",

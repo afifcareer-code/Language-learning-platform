@@ -9,10 +9,14 @@
   "empty": "Belum ada yang perlu dilatih di sini.",
   "progress": "{current} dari {total}",
   "recognition": {
-    "prompt": "Bunyi mana yang sesuai dengan karakter ini?"
+    "prompt": "Bunyi mana yang sesuai dengan karakter ini?",
+    "audioPrompt": "Dengarkan bunyinya, lalu pilih karakter yang sesuai.",
+    "audioQuestion": "Karakter apa yang kamu dengar?",
+    "visualPrompt": "Lihat karakternya, lalu pilih bunyi yang sesuai.",
+    "noAudio": "Audio tidak tersedia di perangkat ini, jadi soal ini menampilkan karakternya."
   },
   "recall": {
-    "label": "Ketik cara bacanya dalam romaji"
+    "label": "Ingat bunyi karakter ini tanpa pilihan, lalu ketik dalam romaji."
   },
   "sentence": {
     "instruction": "Susun potongan-potongan berikut menjadi kalimat bahasa Jepang.",
@@ -25,7 +29,11 @@
     "correct": "Benar",
     "answer": "Jawaban: {answer}",
     "confusedWith": "Itu jawaban untuk {item}. Keduanya mudah tertukar.",
-    "saveError": "Jawaban tidak dapat disimpan. Silakan coba lagi."
+    "saveError": "Jawaban tidak dapat disimpan. Silakan coba lagi.",
+    "incorrect": "Belum tepat",
+    "audioCorrect": "Bagus. Kamu mengenali bunyi dan karakter dengan tepat.",
+    "audioIncorrect": "Dengarkan sekali lagi dan coba ingat hubungan bunyi dengan bentuknya.",
+    "confusedWithChosen": "Kamu memilih {item}. Keduanya mudah tertukar."
   },
   "writing": {
     "writeFor": "Tulis {script} untuk",
@@ -47,7 +55,9 @@
     },
     "keepWriting": "Lanjut menulis",
     "canvasLabel": "Area menulis untuk {prompt}",
-    "previousItem": "Item sebelumnya:"
+    "previousItem": "Item sebelumnya:",
+    "instruction": "Dengarkan bunyinya, lalu tulis karakter yang sesuai di area menulis.",
+    "instructionVisual": "Baca bunyi yang ditampilkan, lalu tulis karakter yang sesuai di area menulis."
   },
   "checks": {
     "stroke-count": {

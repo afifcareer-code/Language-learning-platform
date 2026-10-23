@@ -151,6 +151,73 @@ describe.each(TEST_DIALECTS)("learning flow on $dialect", ({ dialect, serverUrl 
     expect(shi.every((id) => id.startsWith("ja.katakana."))).toBe(true);
   });
 
+  it("seeds sound recognition as audio → character, in both languages", async () => {
+    for (const [locale, instruction] of [
+      ["en", "Listen to the sound, then choose the matching character."],
+      ["id", "Dengarkan bunyinya, lalu pilih karakter yang sesuai."],
+    ] as const) {
+      const curriculum = await getCurriculum(db, "ja", locale);
+      const recognition = curriculum.activities.find(
+        (a) => a.id === "ja.activity.hiragana-vowels.recognition",
+      )!;
+      expect(recognition.text.instruction).toBe(instruction);
+      expect(recognition.successCriteria).toEqual(["audio_recognition", "recognition"]);
+      // Each stage trains a different skill, so mastery says which kind of knowing is built.
+      const lesson = curriculum.lessons[0]!;
+      expect(lesson.activities.map((a) => a.skill)).toEqual([
+        JA_SKILLS.kanaRecognition,
+        JA_SKILLS.kanaReading,
+        JA_SKILLS.kanaWriting,
+      ]);
+    }
+  });
+
+  it("offers sound-recognition options a learner can tell apart by sound and by shape", async () => {
+    const session = await getPracticeSession(db, learner, "id", {
+      kind: "activity",
+      activityId: "ja.activity.hiragana-vowels.recognition",
+    });
+    const lesson = (await getCurriculum(db, "ja", "id")).lessons[0]!;
+    for (const prompt of session!.prompts) {
+      const options = session!.choices[prompt.id]!;
+      expect(options).toHaveLength(4);
+      expect(new Set(options).size).toBe(4);
+      expect(options).toContain(prompt.id);
+      // Mostly what is being learned together (or known to be confused), not unrelated characters.
+      const related = options.filter((id) => id !== prompt.id && lesson.itemIds.includes(id));
+      expect(related.length).toBeGreaterThanOrEqual(2);
+      expect(options.every((id) => id.startsWith("ja.hiragana."))).toBe(true);
+    }
+    expect(session!.choices["ja.hiragana.i"]).toContain("ja.hiragana.ri");
+  });
+
+  it("never offers を for お or お for を, because the sound is the same", async () => {
+    const lesson = (await getCurriculum(db, "ja", "en")).lessons.find((l) => l.slug === "hiragana-w-row-n")!;
+    const session = await getPracticeSession(db, learner, "en", {
+      kind: "activity",
+      activityId: lesson.activities.find((a) => a.type === "recognition")!.id,
+    });
+    expect(session!.choices["ja.hiragana.wo"]).not.toContain("ja.hiragana.o");
+    for (let run = 0; run < 25; run++) {
+      const again = await getPracticeSession(db, learner, "en", {
+        kind: "activity",
+        activityId: session!.activity!.id,
+      });
+      expect(again!.choices["ja.hiragana.wo"]).not.toContain("ja.hiragana.o");
+    }
+    const vowels = await getPracticeSession(db, learner, "en", {
+      kind: "activity",
+      activityId: "ja.activity.hiragana-vowels.recognition",
+    });
+    for (let run = 0; run < 25; run++) {
+      const again = await getPracticeSession(db, learner, "en", {
+        kind: "activity",
+        activityId: vowels!.activity!.id,
+      });
+      expect(again!.choices["ja.hiragana.o"]).not.toContain("ja.hiragana.wo");
+    }
+  });
+
   it("records attempts, schedules reviews, updates mastery and links the activity", async () => {
     const t0 = new Date("2026-01-01T09:00:00.123Z");
     const base = { learnerId: learner.id, skill: JA_SKILLS.kanaReading, mode: "practice" as const };
@@ -274,6 +341,42 @@ describe.each(TEST_DIALECTS)("learning flow on $dialect", ({ dialect, serverUrl 
       .set({ uiLocale: "id" })
       .where(sql`${db.t.learners.id} = ${learner.id}`);
     expect((await ensureLocalLearner(db)).uiLocale).toBe("id");
+  });
+
+  // Last in this suite: it adds attempts and a confusion pair that the earlier scenarios must not see.
+  it("keeps a wrong sound-recognition answer as an attempt that feeds mastery, review and Recent mistakes", async () => {
+    const at = new Date("2026-02-01T09:00:00.000Z");
+    // Heard あ, chose お: the same attempt path as every other activity.
+    const attempt = await recordAttempt(db, {
+      learnerId: learner.id,
+      contentItemId: "ja.hiragana.a",
+      skill: JA_SKILLS.kanaRecognition,
+      mode: "practice",
+      activityId: "ja.activity.hiragana-vowels.recognition",
+      correct: false,
+      score: 0,
+      response: "ja.hiragana.o",
+      confusedWithItemId: "ja.hiragana.o",
+      at,
+    });
+    expect(attempt.masteryState).toBe("learning");
+    const progress = await getLearnerProgress(db, learner.id, at);
+    const recorded = progress.get(progressKey("ja.hiragana.a", JA_SKILLS.kanaRecognition));
+    expect(recorded?.review).toBeTruthy();
+    expect(recorded?.mastery).toMatchObject({ attempts: 1, consecutiveCorrect: 0 });
+
+    // "Recent mistakes" reuses the recognition activity: it plays the sound and asks for the character.
+    const weak = await getPracticeSession(
+      db,
+      learner,
+      "id",
+      { kind: "weak", skill: JA_SKILLS.kanaRecognition },
+      at,
+    );
+    expect(weak?.type).toBe("recognition");
+    expect(weak?.mode).toBe("practice");
+    expect(weak?.prompts.map((i) => i.id)).toContain("ja.hiragana.a");
+    expect(weak!.choices["ja.hiragana.a"]).toContain("ja.hiragana.a");
   });
 });
 

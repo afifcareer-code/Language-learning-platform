@@ -55,6 +55,19 @@ export function acceptedRomaji(item: Pick<KanaCharacter, "romaji" | "alternateRo
   return [item.romaji, ...(item.alternateRomaji ?? [])];
 }
 
+/**
+ * True when two characters can be read the same way (お and を are both "o"),
+ * so hearing the sound cannot tell them apart. They must never be offered as
+ * options for each other in a question that plays the sound.
+ */
+export function soundsAlike(
+  a: Pick<KanaCharacter, "romaji" | "alternateRomaji">,
+  b: Pick<KanaCharacter, "romaji" | "alternateRomaji">,
+): boolean {
+  const accepted = acceptedRomaji(a);
+  return acceptedRomaji(b).some((r) => accepted.includes(r));
+}
+
 export function checkRomaji(
   item: Pick<KanaCharacter, "romaji" | "alternateRomaji">,
   answer: string,

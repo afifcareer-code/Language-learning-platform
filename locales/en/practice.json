@@ -9,10 +9,14 @@
   "empty": "There is nothing to practice here right now.",
   "progress": "{current} of {total}",
   "recognition": {
-    "prompt": "Which sound matches this character?"
+    "prompt": "Which sound matches this character?",
+    "audioPrompt": "Listen to the sound, then choose the matching character.",
+    "audioQuestion": "Which character did you hear?",
+    "visualPrompt": "Look at the character, then choose the matching sound.",
+    "noAudio": "Audio is not available on this device, so this question shows the character instead."
   },
   "recall": {
-    "label": "Type the reading in romaji"
+    "label": "Recall this character's sound without options, then type it in romaji."
   },
   "sentence": {
     "instruction": "Arrange the pieces to say the sentence in Japanese.",
@@ -25,7 +29,11 @@
     "correct": "Correct",
     "answer": "Answer: {answer}",
     "confusedWith": "That is the answer for {item}. These two are easy to mix up.",
-    "saveError": "Could not save your answer. Please try again."
+    "saveError": "Could not save your answer. Please try again.",
+    "incorrect": "Not quite yet",
+    "audioCorrect": "Good. You matched the sound to the right character.",
+    "audioIncorrect": "Listen once more and try to remember how the sound and the shape go together.",
+    "confusedWithChosen": "You chose {item}. These two are easy to mix up."
   },
   "writing": {
     "writeFor": "Write the {script} for",
@@ -47,7 +55,9 @@
     },
     "keepWriting": "Keep writing",
     "canvasLabel": "Writing area for {prompt}",
-    "previousItem": "Previous item:"
+    "previousItem": "Previous item:",
+    "instruction": "Listen to the sound, then write the matching character in the writing area.",
+    "instructionVisual": "Read the sound shown, then write the matching character in the writing area."
   },
   "checks": {
     "stroke-count": {

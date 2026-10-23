@@ -139,6 +139,7 @@ export function PracticeSession(props: PracticeSessionProps) {
         <Card className="text-center">
           {kind === "recognition" ? (
             <RecognitionExercise
+              key={`${item.id}-${index}`}
               item={item}
               instruction={props.instruction}
               feedback={feedback}

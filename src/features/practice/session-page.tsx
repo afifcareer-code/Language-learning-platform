@@ -2,12 +2,14 @@ import { randomUUID } from "node:crypto";
 import { PracticePrompt } from "@/components/learning/practice-prompt";
 import { EmptyState } from "@/components/ui/empty-state";
 import { writingStageFor } from "@/handwriting/guidance";
-import { criterionLabel, skillLabel } from "@/localization/labels";
+import { criterionLabel, languageName, skillLabel } from "@/localization/labels";
 import type { Messages } from "@/localization/messages";
 import type { Translator } from "@/localization/translator";
 import type { Database } from "@/server/db/client";
 import type { Learner } from "@/server/repositories/learners";
 import { getContentTranslations } from "@/server/repositories/content";
+import { getCurriculum, locateLesson } from "@/server/repositories/curriculum";
+import { requireLearningContext } from "@/server/learning-context";
 import { getLearnerProgress, progressKey } from "@/server/repositories/progress";
 import type { PracticeSession as Session } from "@/server/services/practice";
 import { itemDisplay, toPracticeItem, type PracticeItem } from "@/features/japanese/practice-items";
@@ -68,6 +70,21 @@ export async function SessionPage({
         criteria: undefined,
       };
 
+  // Where the learner is, kept to one line: "Japanese · Foundation · Lesson 1 · Hiragana: Vowels".
+  const learning = await requireLearningContext();
+  const lessonId = session.activity?.lessonId;
+  const where = lessonId
+    ? locateLesson(await getCurriculum(db, learner.targetLanguage, t.locale), lessonId)
+    : null;
+  const level = where?.level ?? learning.level;
+  const context = [
+    languageName(t, learning.language.code),
+    level.frameworkLevel ?? level.title,
+    where ? `${t("learning.lessonNumber", { n: where.number })} · ${where.lesson.title}` : null,
+  ]
+    .filter(Boolean)
+    .join(" · ");
+
   const kind = EXERCISE[session.type];
   const progress = kind === "writing" ? await getLearnerProgress(db, learner.id) : null;
   // Meanings and translations in the learner's interface language.
@@ -91,6 +108,7 @@ export async function SessionPage({
   return (
     <>
       <PracticePrompt
+        context={context}
         eyebrow={header.eyebrow}
         title={header.title}
         objective={header.objective}

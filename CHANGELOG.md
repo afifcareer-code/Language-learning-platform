@@ -7,6 +7,11 @@ The format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/), and
 
 ### Changed
 
+- Foundation sound recognition is now sound → character: a large labelled **Play sound** button (replayable, never autoplayed) and character options, instead of showing the character and asking for its romaji. Without a Japanese voice on the device it falls back to character → sound and says so.
+- Every kana activity instruction states what the learner receives, what to do and what answer is expected (ID/EN). Recall no longer plays the sound before answering; writing is prompted by the sound with a labelled audio button.
+- Feedback shows the character with its sound ("あ = a"), one short hint, and "Listen again". The recognition activity's success criteria are now `audio_recognition` and `recognition`; re-run `npm run db:seed` to update existing databases (no schema change).
+- Answer options: commonly confused characters first, then the other items of the same lesson. Characters that sound the same (お/を, オ/ヲ) are never offered for each other.
+- Practice pages show where the learner is ("Japanese · Foundation · Lesson 1 · Hiragana: Vowels"). Lesson characters can be tapped to hear them. A new learner who chooses a level opens its first lesson instead of the dashboard.
 - The interface-language switch is now a menu (`🌐 Bahasa Indonesia ▾`, `🌐 ID ▾` on phones) with radio options; it closes on Escape or outside click.
 - The learning-context chip shows language · level · lesson and opens the learning path; the learning language is changed from there.
 - `/learn` is now the learning path: where you are, every level with its status, and the lessons of a selected level (`?level=`), with switching between levels that have curriculum.

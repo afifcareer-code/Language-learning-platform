@@ -3,6 +3,7 @@
  * should be able to do afterwards, and how success is judged.
  */
 export function PracticePrompt({
+  context,
   eyebrow,
   title,
   objective,
@@ -10,6 +11,8 @@ export function PracticePrompt({
   criteria,
   explanation,
 }: {
+  /** Where the learner is, e.g. "Japanese · Foundation · Lesson 1 · Hiragana: Vowels". */
+  context?: string;
   eyebrow: string;
   title: string;
   objective: string;
@@ -19,7 +22,8 @@ export function PracticePrompt({
 }) {
   return (
     <header className="mb-6">
-      <p className="text-sm font-medium text-muted">{eyebrow}</p>
+      {context && <p className="text-sm leading-snug text-muted">{context}</p>}
+      <p className="mt-1 text-sm font-medium text-muted">{eyebrow}</p>
       <h1 className="mt-1 text-2xl font-semibold tracking-tight md:text-3xl">{title}</h1>
       <div className="mt-3 rounded-xl bg-accent-soft px-4 py-3 text-accent">
         <p className="text-xs font-semibold tracking-wide uppercase">{labels.objective}</p>
