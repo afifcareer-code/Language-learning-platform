@@ -27,12 +27,25 @@ export interface PracticeItem {
   displayStyle: "glyph" | "word" | "text";
   /** Text to speak for this item (always Japanese), when audio helps. */
   speech: string;
+  /** BCP 47 tag of `speech`. Components never assume the language. */
+  speechLang: string;
+  /**
+   * The sound of the item in romaji (kana only), for feedback such as "あ = a".
+   * Empty when the item has no single reading.
+   */
+  reading: string;
+  /**
+   * Recognition asks "which character is this sound?": the sound is played and the
+   * character is not shown before answering. Only kana are asked this way today.
+   */
+  audioPrompt: boolean;
   /** For writing: the cue the learner writes from, and what kind of character to write. */
   cue: string;
   cueKind: string;
   strokeCounts: number[];
   stage: WritingStage;
-  choices: { id: string; label: string }[];
+  /** `label` is what the option means (a sound or a meaning); `glyph` is the character itself, for kana. */
+  choices: { id: string; label: string; glyph: string }[];
   /** For sentence building: the pieces to arrange, shuffled. */
   tokens: string[];
 }
@@ -53,6 +66,11 @@ export function choiceLabel(item: ContentItem, translation: unknown): string {
   if (isVocabularyData(item.data))
     return (translation as VocabularyTranslation | undefined)?.meaning ?? item.data.romaji;
   return itemDisplay(item);
+}
+
+/** The character an option shows when the question is "which character?" (kana only). */
+export function choiceGlyph(item: ContentItem): string {
+  return isKanaItemData(item.data) ? item.data.kana : "";
 }
 
 /** What the learner should have answered, shown in feedback. */
@@ -84,7 +102,14 @@ export function toPracticeItem(
     cueKind: "",
     strokeCounts: [] as number[],
     stage: options.stage,
-    choices: options.choiceItems.map((c) => ({ id: c.item.id, label: choiceLabel(c.item, c.translation) })),
+    choices: options.choiceItems.map((c) => ({
+      id: c.item.id,
+      label: choiceLabel(c.item, c.translation),
+      glyph: choiceGlyph(c.item),
+    })),
+    speechLang: "ja",
+    reading: "",
+    audioPrompt: false,
     tokens: [] as string[],
   };
 
@@ -95,6 +120,8 @@ export function toPracticeItem(
       displayLang: "ja",
       displayStyle: "glyph",
       speech: item.data.kana,
+      reading: item.data.romaji,
+      audioPrompt: options.kind === "recognition",
       cue: item.data.romaji,
       cueKind: options.scriptName(item.data.script),
       strokeCounts: acceptedStrokeCounts(item.data),

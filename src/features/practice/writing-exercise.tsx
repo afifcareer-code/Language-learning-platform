@@ -1,7 +1,8 @@
 "use client";
 
 import { useMemo, useRef, useState } from "react";
-import { SpeakButton } from "@/audio/speak-button";
+import { AudioPlayButton } from "@/audio/audio-play-button";
+import { useSpeech } from "@/audio/use-speech";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { HandwritingCanvas } from "@/handwriting/canvas/handwriting-canvas";
@@ -57,6 +58,9 @@ export function WritingExercise({
 }) {
   const t = useT();
   const checkLabel = useCheckLabel();
+  const speech = useSpeech(item.speechLang);
+  // Without a voice the sound is still shown in romaji; the instruction says so honestly.
+  const hasAudio = speech.status !== "unavailable";
   const [strokes, setStrokes] = useState<Stroke[]>([]);
   const [checked, setChecked] = useState(false);
   const [hintShown, setHintShown] = useState(false);
@@ -103,15 +107,21 @@ export function WritingExercise({
       </div>
       <Card className="flex flex-col gap-5">
         <div>
-          <p className="text-sm text-muted">{t("practice.writing.writeFor", { script: item.cueKind })}</p>
-          <div className="mt-1 flex items-center gap-3">
+          <p className="text-lg font-medium">
+            {hasAudio
+              ? instruction || t("practice.writing.instruction")
+              : t("practice.writing.instructionVisual")}
+          </p>
+          <p className="mt-3 text-sm text-muted">
+            {t("practice.writing.writeFor", { script: item.cueKind })}
+          </p>
+          <div className="mt-1 flex flex-wrap items-center gap-3">
             <p className="text-4xl font-semibold">{item.cue}</p>
-            <SpeakButton text={item.speech} lang="ja" />
+            {hasAudio && <AudioPlayButton speech={speech} text={item.speech} variant="compact" />}
           </div>
           <p className="mt-2 text-sm text-muted">
             {t("practice.writing.guide", { stage: t(`practice.writing.stages.${item.stage}`) })}
           </p>
-          {instruction && <p className="mt-2 text-sm text-muted">{instruction}</p>}
         </div>
 
         {!checked ? (

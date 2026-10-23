@@ -117,7 +117,15 @@ export async function getPracticeSession(
       const learnerConfusions = learnerPairs
         .filter((p) => p.status !== "resolved" && (p.itemA === item.id || p.itemB === item.id))
         .map((p) => (p.itemA === item.id ? p.itemB : p.itemA));
-      const preferred = [...learnerConfusions, ...(languageModule.knownConfusables?.(item.id) ?? [])];
+      // Meaningful options first: what this learner mixes up, what learners commonly mix up,
+      // then the other items of the same lesson (what is being learned together). Only then
+      // anything else from the pool, so options are rarely unrelated characters.
+      const lessonMates = shuffle(curriculum.lessons.find((l) => l.itemIds.includes(item.id))?.itemIds ?? []);
+      const preferred = [
+        ...learnerConfusions,
+        ...(languageModule.knownConfusables?.(item.id) ?? []),
+        ...lessonMates,
+      ];
       choices[item.id] = buildChoices(
         item.id,
         comparable.map((p) => p.id),

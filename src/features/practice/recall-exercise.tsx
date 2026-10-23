@@ -7,7 +7,10 @@ import { cn } from "@/shared/cn";
 import { PromptDisplay } from "./prompt-display";
 import type { PracticeItem } from "@/features/japanese/practice-items";
 
-/** Active recall: see the item and type the answer. No options to pick from. */
+/**
+ * Active recall: see the item and type the answer. No options to pick from, and
+ * no sound before answering when the sound is the answer (it is offered in feedback).
+ */
 export function RecallExercise({
   item,
   instruction,
@@ -29,10 +32,12 @@ export function RecallExercise({
 
   return (
     <>
-      <PromptDisplay item={item} />
-      <label htmlFor="answer" className="mt-8 block text-muted">
+      <label htmlFor="answer" className="block text-lg font-medium">
         {instruction || t("practice.recall.label")}
       </label>
+      <div className="mt-5">
+        <PromptDisplay item={item} />
+      </div>
       <input
         id="answer"
         ref={input}
@@ -44,7 +49,7 @@ export function RecallExercise({
         autoCorrect="off"
         spellCheck={false}
         className={cn(
-          "mt-3 min-h-14 w-full rounded-xl border bg-paper px-4 text-center text-2xl outline-none focus:border-accent",
+          "mt-6 min-h-14 w-full rounded-xl border bg-paper px-4 text-center text-2xl outline-none focus:border-accent",
           feedback === null && "border-line",
           feedback?.correct && "border-success",
           feedback && !feedback.correct && "border-danger",

@@ -1,7 +1,7 @@
 import { SpeakButton } from "@/audio/speak-button";
 import type { ContentItem } from "@/core/learning";
 import { Card, CardTitle } from "@/components/ui/card";
-import { KanaGrid } from "@/features/kana/kana-grid";
+import { PlayableKanaGrid } from "@/features/kana/playable-kana-grid";
 import { toKanaViews } from "@/features/kana/kana-view";
 import { isGrammarData, type GrammarTranslation } from "@/languages/japanese/grammar/schema";
 import {
@@ -41,7 +41,7 @@ export function JapaneseLessonContent({
         <Card>
           <CardTitle className="mb-4">{labels.characters}</CardTitle>
           <div className="max-w-md">
-            <KanaGrid items={kana} />
+            <PlayableKanaGrid items={kana} />
           </div>
         </Card>
       )}

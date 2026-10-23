@@ -40,8 +40,12 @@ test.describe.serial("choosing what to learn", () => {
     await expect(page.getByText("In development")).toHaveCount(4);
     await expect(page.getByRole("button", { name: "Start here" })).toHaveCount(2);
 
+    // A new learner goes straight into the first lesson (its Learn section comes first),
+    // not to a dashboard with nothing to show yet.
     await page.getByRole("button", { name: "Start here" }).first().click();
-    await expect(page).toHaveURL(/\/dashboard$/);
+    await expect(page).toHaveURL(/\/learn\/hiragana-vowels$/);
+    await expect(page.getByRole("heading", { level: 1, name: "Hiragana: Vowels" })).toBeVisible();
+    await page.goto("/dashboard");
     await expect(
       page.getByText("You are here: Japanese · Foundation · Lesson 1 · Hiragana: Vowels"),
     ).toBeVisible();

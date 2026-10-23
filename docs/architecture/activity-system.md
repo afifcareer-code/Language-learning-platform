@@ -83,11 +83,25 @@ Each template declares the `contentType` it uses (`ja.kana`, `ja.vocabulary`, `j
 
 Writing every activity by hand would repeat the same objectives across dozens of lessons. Instead, a language provides **templates** as data (for kana: [`data/japanese/activities/kana.json`](../../data/japanese/activities/kana.json)). The seeder creates one activity per template for each lesson, in template order, which follows the learning loop:
 
-1. **Recognize**: choose the sound for a character (distractors favour commonly confused characters).
-2. **Recall**: type the sound with no options.
-3. **Write**: write the character, with guidance that fades as writing mastery grows.
+1. **Recognize** (sound → character): the sound is played and the learner chooses the matching character. The character is not shown before answering. Options are characters: commonly confused ones first, then the other items of the same lesson, never a character that sounds the same (お/を, オ/ヲ), because then neither the sound nor the answer could tell them apart.
+2. **Recall** (character → sound): the character is shown and the learner types its sound in romaji, with no options. The sound is never played before answering, because the sound is the answer; it is offered in feedback.
+3. **Write** (sound → handwriting): the sound is played (and shown in romaji) and the learner writes the character, with guidance that fades as writing mastery grows.
+
+Each stage therefore tests a different skill (`ja.kana.recognition`, `ja.kana.reading`, `ja.kana.writing`) and states its direction in its instruction: what the learner receives, what to do, and what answer is expected.
 
 Templates contain localized text with placeholders (`{script}`, `{characters}`, `{lesson}`) that `npm run content:validate` checks.
+
+## Audio
+
+There are no recorded audio files yet. Sound comes from the Web Speech API: a Japanese voice installed on the learner's device speaks the item's `speech` text (for kana, the character itself, resolved from content data in `src/features/japanese/practice-items.ts`, never hard-coded in a component).
+
+`useSpeech` reports `checking`, `ready` or `unavailable`:
+
+- A sound-first question shows one large, labelled **Play sound** button as its primary interaction; it never autoplays and can always be replayed ("Listen again"). Its accessible name never contains the spoken text, because that is the answer.
+- If the device has no Japanese voice, the question falls back to character → sound and says so; it never shows a Play button that cannot work. Writing then drops the audio button and tells the learner to read the sound shown.
+- The lesson's Learn section lets the learner tap every character to hear it before any question (exposure comes before recognition).
+
+Limitation: pronunciation quality depends on the device's voice. Adding recorded audio later means resolving a file per item in the same place as `speech`; components do not change.
 
 ## Sessions outside the curriculum
 

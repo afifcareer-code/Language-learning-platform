@@ -1,26 +1,26 @@
 {
-  "source": "Activity templates for kana lessons. The seeder creates one activity per template for every lesson, in this order (recognize → recall → write). Placeholders: {script}, {characters}, {lesson}, {count}.",
+  "source": "Activity templates for kana lessons. The seeder creates one activity per template for every lesson, in this order (recognize → recall → write). Each stage tests a different skill: recognize = hear a sound and choose its character (audio → character); recall = see a character and type its sound with no options (character → sound); write = hear/read the sound and write the character (sound → handwriting). Placeholders: {script}, {characters}, {lesson}, {count}.",
   "templates": [
     {
       "key": "recognition",
       "type": "recognition",
       "skill": "ja.kana.recognition",
       "difficulty": 1,
-      "successCriteria": ["recognition", "sound_recall"],
+      "successCriteria": ["audio_recognition", "recognition"],
       "passScore": 0.8,
       "targetMastery": "proficient",
       "text": {
         "en": {
           "title": "Recognize {script} {characters}",
-          "objective": "Recognize the {script} characters {characters} and match each one to its correct sound.",
-          "instruction": "Select the sound that matches the character.",
-          "explanation": "Recognition is the first step: you learn to tell the characters apart before you have to recall them on your own."
+          "objective": "Recognize the {script} characters {characters} from their sound: hear a sound, then choose the matching character.",
+          "instruction": "Listen to the sound, then choose the matching character.",
+          "explanation": "Recognition is the first step: you connect each sound to the shape that stands for it before you have to recall it on your own."
         },
         "id": {
           "title": "Kenali {script} {characters}",
-          "objective": "Mengenali karakter {script} {characters} dan mencocokkan masing-masing dengan bunyi yang tepat.",
-          "instruction": "Pilih bunyi yang sesuai dengan karakter.",
-          "explanation": "Mengenali adalah langkah pertama: Anda belajar membedakan karakter sebelum harus mengingatnya sendiri."
+          "objective": "Mengenali karakter {script} {characters} dari bunyinya: mendengar bunyi, lalu memilih karakter yang sesuai.",
+          "instruction": "Dengarkan bunyinya, lalu pilih karakter yang sesuai.",
+          "explanation": "Mengenali adalah langkah pertama: Anda menghubungkan setiap bunyi dengan bentuk yang mewakilinya sebelum harus mengingatnya sendiri."
         }
       },
       "contentType": "ja.kana"
@@ -37,13 +37,13 @@
         "en": {
           "title": "Read {script} {characters} from memory",
           "objective": "Recall the sound of each character in {characters} on sight, without answer choices.",
-          "instruction": "Type the sound of the character in romaji.",
+          "instruction": "Recall this character's sound without options, then type it in romaji.",
           "explanation": "Recalling without choices is harder than recognizing, and that effort is what makes the memory last."
         },
         "id": {
           "title": "Baca {script} {characters} dari ingatan",
           "objective": "Mengingat bunyi setiap karakter {characters} hanya dengan melihatnya, tanpa pilihan jawaban.",
-          "instruction": "Ketik bunyi karakter dalam romaji.",
+          "instruction": "Ingat bunyi karakter ini tanpa pilihan, lalu ketik dalam romaji.",
           "explanation": "Mengingat tanpa pilihan lebih sulit daripada mengenali, dan usaha itulah yang membuat ingatan bertahan lama."
         }
       },
@@ -61,13 +61,13 @@
         "en": {
           "title": "Write {script} {characters}",
           "objective": "Write {characters} from memory with the correct shape and number of strokes, without relying on a visual reference.",
-          "instruction": "Write the character for the sound shown, in the writing area.",
+          "instruction": "Listen to the sound, then write the matching character in the writing area.",
           "explanation": "Writing by hand is production: you rebuild the character from memory, which strengthens both reading and writing. The guide fades as your writing improves."
         },
         "id": {
           "title": "Menulis {script} {characters}",
           "objective": "Menulis {characters} dari ingatan dengan bentuk dan jumlah goresan yang benar, tanpa bergantung pada contoh visual.",
-          "instruction": "Tulis karakter untuk bunyi yang ditampilkan pada area menulis.",
+          "instruction": "Dengarkan bunyinya, lalu tulis karakter yang sesuai di area menulis.",
           "explanation": "Menulis dengan tangan adalah produksi: Anda menyusun ulang karakter dari ingatan, yang memperkuat kemampuan membaca dan menulis. Panduan akan memudar seiring tulisan Anda membaik."
         }
       },

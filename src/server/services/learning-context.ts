@@ -74,7 +74,7 @@ export async function listLearnerLanguages(db: Database, learnerId: string) {
   return db.select().from(t).where(eq(t.learnerId, learnerId));
 }
 
-async function hasProgressIn(db: Database, learnerId: string, languageCode: string): Promise<boolean> {
+export async function hasProgressIn(db: Database, learnerId: string, languageCode: string): Promise<boolean> {
   const { learningAttempts: a, contentItems: c } = db.t;
   const [row] = await db
     .select({ id: a.id })
@@ -166,6 +166,22 @@ export async function startLearning(
       .set({ targetLanguage: languageCode })
       .where(eq(db.t.learners.id, learner.id));
   });
+}
+
+/**
+ * The slug of the first lesson of a level, so a brand-new learner can start
+ * with the lesson (its Learn section comes before any activity) instead of a
+ * dashboard that has nothing to show yet.
+ */
+export async function firstLessonSlug(
+  db: Database,
+  languageCode: string,
+  levelSlug: string,
+  locale: Locale,
+): Promise<string | null> {
+  const curriculum = await getCurriculum(db, languageCode, locale);
+  const level = curriculum.levels.find((l) => l.slug === levelSlug);
+  return level?.courses.flatMap((c) => c.lessons)[0]?.slug ?? null;
 }
 
 /** Switch the active learning language to one the learner has already started. */

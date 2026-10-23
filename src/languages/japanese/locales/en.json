@@ -6,7 +6,7 @@
   "skills": {
     "ja.kana.recognition": {
       "label": "Kana recognition",
-      "description": "See a kana character and pick its sound."
+      "description": "Hear a sound and pick the matching kana character."
     },
     "ja.kana.reading": {
       "label": "Kana reading",

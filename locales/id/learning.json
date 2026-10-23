@@ -62,6 +62,7 @@
         "description": "Anda siap untuk pelajaran berikutnya jika {threshold} item pelajaran ini sudah melekat di ingatan."
       }
     },
-    "readiness": "{ready} dari {total} siap"
+    "readiness": "{ready} dari {total} siap",
+    "tapToHear": "Ketuk karakter untuk mendengar bunyinya."
   }
 }

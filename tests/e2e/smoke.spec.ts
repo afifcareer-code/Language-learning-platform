@@ -1,5 +1,5 @@
 import { expect, test } from "@playwright/test";
-import { ensureLearning, useEnglish } from "./helpers";
+import { ensureLearning, fakeJapaneseVoice, spoken, useEnglish } from "./helpers";
 
 test.beforeEach(async ({ page }) => {
   await ensureLearning(page);
@@ -82,11 +82,73 @@ test("sentence building is checked once every piece is placed", async ({ page })
   await expect(page.getByRole("status")).toBeVisible();
 });
 
+const KANA = /^[ぁ-ゟ]$/;
+
+test("lesson characters can be tapped to hear them before any question", async ({ page }) => {
+  await fakeJapaneseVoice(page);
+  await page.goto("/learn/hiragana-vowels");
+  await expect(page.getByText("Tap a character to hear how it sounds.")).toBeVisible();
+  await page.getByRole("button", { name: "Play pronunciation of う" }).click();
+  expect(await spoken(page)).toEqual(["う"]);
+});
+
+test("sound recognition plays the target's sound and asks which character it was", async ({ page }) => {
+  await fakeJapaneseVoice(page);
+  await page.goto("/activities/ja.activity.hiragana-vowels.recognition");
+  // Where the learner is, in one line, above the objective.
+  await expect(
+    page.getByText("Japanese · Foundation · Lesson 1 · Hiragana: Vowels", { exact: true }),
+  ).toBeVisible();
+  await expect(page.getByText("Listen to the sound, then choose the matching character.")).toBeVisible();
+
+  const choices = page.getByRole("group", { name: "Which character did you hear?" }).getByRole("button");
+  await expect(choices).toHaveCount(4);
+  for (const choice of await choices.all()) await expect(choice).toHaveText(KANA);
+
+  // Nothing is shown as the question: the sound is, and only after pressing Play.
+  expect(await spoken(page)).toEqual([]);
+  await page.getByRole("button", { name: "Play sound" }).click();
+  const [target] = await spoken(page);
+  await expect(choices.filter({ hasText: target! })).toHaveCount(1);
+
+  // Replay without leaving the question; it is the same target.
+  await page.getByRole("button", { name: "Listen again" }).click();
+  expect(await spoken(page)).toEqual([target, target]);
+
+  await choices.filter({ hasText: target! }).click();
+  const status = page.getByRole("status");
+  await expect(status).toContainText("Correct");
+  await expect(status).toContainText(`${target} =`);
+});
+
+test("a wrong sound-recognition answer shows the character, its sound and a way to listen again", async ({
+  page,
+}) => {
+  await fakeJapaneseVoice(page);
+  await page.goto("/activities/ja.activity.hiragana-vowels.recognition");
+  await page.getByRole("button", { name: "Play sound" }).click();
+  const [target] = await spoken(page);
+  const choices = page.getByRole("group", { name: "Which character did you hear?" }).getByRole("button");
+  await choices.filter({ hasNotText: target! }).first().click();
+  const status = page.getByRole("status");
+  await expect(status).toContainText("Not quite yet");
+  await expect(status).toContainText(`Answer: ${target}`);
+  await expect(status).toContainText(`${target} =`);
+  await status.getByRole("button", { name: "Listen again" }).click();
+  expect(await spoken(page)).toEqual([target, target]);
+});
+
 test("recognition activity ends with a learning outcome", async ({ page }) => {
+  await fakeJapaneseVoice(page);
   await page.goto("/activities/ja.activity.hiragana-vowels.recognition");
   await expect(page.getByText("Objective").first()).toBeVisible();
   for (let i = 0; i < 5; i++) {
-    await page.getByRole("group", { name: /sound/ }).getByRole("button").first().click();
+    await page.getByRole("button", { name: "Play sound" }).click();
+    await page
+      .getByRole("group", { name: "Which character did you hear?" })
+      .getByRole("button")
+      .first()
+      .click();
     await expect(page.getByRole("status")).toBeVisible();
     await page.getByRole("button", { name: "Next" }).click();
   }
@@ -94,13 +156,51 @@ test("recognition activity ends with a learning outcome", async ({ page }) => {
   await expect(page.getByText("Next review")).toBeVisible();
 });
 
+test("without a Japanese voice, recognition falls back to character → sound and says so", async ({
+  page,
+}) => {
+  await fakeJapaneseVoice(page, false);
+  await page.goto("/activities/ja.activity.hiragana-vowels.recognition");
+  await expect(page.getByText("Look at the character, then choose the matching sound.")).toBeVisible();
+  await expect(page.getByText(/Audio is not available on this device/)).toBeVisible();
+  await expect(page.getByRole("button", { name: /Play sound|Preparing audio/ })).toHaveCount(0);
+  await page.getByRole("group", { name: /sound/ }).getByRole("button").first().click();
+  await expect(page.getByRole("status")).toBeVisible();
+  await page.getByRole("button", { name: "Next" }).click();
+  await expect(page.getByText("2 of 5").first()).toBeVisible();
+});
+
 test("recall activity grades a typed answer", async ({ page }) => {
   await page.goto("/activities/ja.activity.hiragana-vowels.recall");
-  await page.getByLabel("Type the sound of the character in romaji.").fill("zzz");
+  await page.getByLabel("Recall this character's sound without options, then type it in romaji.").fill("zzz");
   await page.getByRole("button", { name: "Check" }).click();
   await expect(page.getByRole("status")).toContainText("Answer:");
   await page.getByRole("button", { name: "Next" }).click();
   await expect(page.getByText("2 of 5").first()).toBeVisible();
+});
+
+test("recall keeps the sound back until after the answer, then offers it", async ({ page }) => {
+  await fakeJapaneseVoice(page);
+  await page.goto("/activities/ja.activity.hiragana-vowels.recall");
+  await expect(page.getByRole("button", { name: /Play sound|Listen again/ })).toHaveCount(0);
+  await page.getByLabel("Recall this character's sound without options, then type it in romaji.").fill("zzz");
+  await page.getByRole("button", { name: "Check" }).click();
+  await expect(page.getByRole("status")).toContainText("Answer:");
+  await page.getByRole("status").getByRole("button", { name: "Listen again" }).click();
+  expect(await spoken(page)).toHaveLength(1);
+});
+
+test("writing is prompted by sound: instruction, a labelled Play button and the writing area", async ({
+  page,
+}) => {
+  await fakeJapaneseVoice(page);
+  await page.goto("/activities/ja.activity.hiragana-vowels.writing");
+  await expect(
+    page.getByText("Listen to the sound, then write the matching character in the writing area."),
+  ).toBeVisible();
+  await page.getByRole("button", { name: "Play sound" }).click();
+  expect(await spoken(page)).toHaveLength(1);
+  await expect(page.getByRole("img", { name: /Writing area/ })).toBeVisible();
 });
 
 test("writing activity captures strokes and records a self-assessment", async ({ page }) => {
