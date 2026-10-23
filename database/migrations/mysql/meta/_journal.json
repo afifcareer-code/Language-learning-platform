@@ -36,6 +36,13 @@
       "when": 1792558431414,
       "tag": "0004_content_translations_lesson_objective",
       "breakpoints": true
+    },
+    {
+      "idx": 5,
+      "version": "5",
+      "when": 1792746325027,
+      "tag": "0005_accounts",
+      "breakpoints": true
     }
   ]
 }

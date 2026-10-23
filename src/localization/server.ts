@@ -1,7 +1,7 @@
 import "server-only";
 import { cache } from "react";
 import { headers } from "next/headers";
-import { getContext } from "@/server/context";
+import { getContextOrNull } from "@/server/context";
 import { FALLBACK_LOCALE, isLocale, negotiateLocale, type Locale } from "./config";
 import { getMessages, type Messages } from "./messages";
 import { createTranslator, type Translator } from "./translator";
@@ -16,8 +16,8 @@ function defaultLocale(): Locale {
  * browser's Accept-Language, else DEFAULT_LOCALE.
  */
 export const getLocale = cache(async (): Promise<Locale> => {
-  const { learner } = await getContext();
-  if (isLocale(learner.uiLocale)) return learner.uiLocale;
+  const { learner } = await getContextOrNull();
+  if (isLocale(learner?.uiLocale)) return learner.uiLocale;
   return negotiateLocale((await headers()).get("accept-language")) ?? defaultLocale();
 });
 
