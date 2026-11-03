@@ -1,0 +1,66 @@
+{
+  "source": "Original practice sentences for N4 · Making plans.",
+  "level": "n4",
+  "items": [
+    {
+      "slug": "n4-umi-ni-ikou",
+      "text": "しゅうまつ うみに いこうと おもいます。",
+      "tokens": ["しゅうまつ", "うみ", "に", "いこう", "と", "おもいます"],
+      "grammar": "n4-volitional-to-omou",
+      "translation": {
+        "en": "I'm thinking of going to the sea this weekend.",
+        "id": "Akhir pekan ini saya berencana pergi ke laut."
+      }
+    },
+    {
+      "slug": "n4-ryokou-ni-sasou",
+      "text": "ともだちを りょこうに さそおうと おもいます。",
+      "tokens": ["ともだち", "を", "りょこう", "に", "さそおう", "と", "おもいます"],
+      "grammar": "n4-volitional-to-omou",
+      "translation": {
+        "en": "I'm thinking of inviting a friend on a trip.",
+        "id": "Saya berpikir untuk mengajak teman jalan-jalan."
+      }
+    },
+    {
+      "slug": "n4-nihon-e-iku-tsumori",
+      "text": "なつやすみに にほんへ いく つもりです。",
+      "tokens": ["なつやすみ", "に", "にほん", "へ", "いく", "つもり", "です"],
+      "grammar": "n4-tsumori",
+      "translation": {
+        "en": "I intend to go to Japan in the summer holidays.",
+        "id": "Saya berniat pergi ke Jepang saat libur musim panas."
+      }
+    },
+    {
+      "slug": "n4-nanimo-shinai-tsumori",
+      "text": "らいしゅうは なにも しない つもりです。",
+      "tokens": ["らいしゅう", "は", "なにも", "しない", "つもり", "です"],
+      "grammar": "n4-tsumori",
+      "translation": {
+        "en": "I don't intend to do anything next week.",
+        "id": "Minggu depan saya tidak berniat melakukan apa-apa."
+      }
+    },
+    {
+      "slug": "n4-hoteru-yoyaku-yotei",
+      "text": "あした ホテルを よやくする よていです。",
+      "tokens": ["あした", "ホテル", "を", "よやくする", "よてい", "です"],
+      "grammar": "n4-yotei",
+      "translation": {
+        "en": "I'm scheduled to book the hotel tomorrow.",
+        "id": "Rencananya besok saya memesan hotel."
+      }
+    },
+    {
+      "slug": "n4-densha-deru-yotei",
+      "text": "でんしゃは くじに でる よていです。",
+      "tokens": ["でんしゃ", "は", "くじ", "に", "でる", "よてい", "です"],
+      "grammar": "n4-yotei",
+      "translation": {
+        "en": "The train is scheduled to leave at nine.",
+        "id": "Kereta dijadwalkan berangkat pukul sembilan."
+      }
+    }
+  ]
+}

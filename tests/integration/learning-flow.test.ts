@@ -202,9 +202,10 @@ describe.each(TEST_DIALECTS)("learning flow on $dialect", ({ dialect, serverUrl 
     expect(en.levels[0]?.courses.map((c) => c.title)).toEqual(["Hiragana", "Katakana"]);
     expect(en.levels[1]?.courses.map((c) => c.title)).toEqual(["N5 Core"]);
     expect(id.levels[1]?.courses.map((c) => c.title)).toEqual(["Inti N5"]);
-    expect(en.levels.slice(2).every((l) => l.courses.length === 0)).toBe(true);
-    expect(en.lessons).toHaveLength(46);
-    expect(en.activities).toHaveLength(150);
+    expect(en.levels[2]?.courses.map((c) => c.title)).toEqual(["N4 Core"]);
+    expect(en.levels.slice(3).every((l) => l.courses.length === 0)).toBe(true);
+    expect(en.lessons).toHaveLength(56);
+    expect(en.activities).toHaveLength(220);
     expect(en.lessons[1]?.title).toBe("Hiragana: K row");
     expect(id.lessons[1]?.title).toBe("Hiragana: Baris K");
 
@@ -223,7 +224,7 @@ describe.each(TEST_DIALECTS)("learning flow on $dialect", ({ dialect, serverUrl 
     const overview = await getLearningOverview(db, learner, "en");
     expect(overview.nextActivity?.id).toBe("ja.activity.hiragana-vowels.recognition");
     expect(overview.recommendations).toEqual([expect.objectContaining({ kind: "activity" })]);
-    expect(overview.courseProgress).toMatchObject({ completedActivities: 0, totalActivities: 150 });
+    expect(overview.courseProgress).toMatchObject({ completedActivities: 0, totalActivities: 220 });
     expect(overview.overallMastery.ratio).toBe(0);
     expect(overview.readiness).toMatchObject({ ratio: 0, isReady: false });
   });
@@ -932,12 +933,12 @@ describe.each(TEST_DIALECTS)("choosing what to learn on $dialect", ({ dialect, s
     ]);
   });
 
-  it("lists Japanese levels along JLPT, with Foundation and N5 open", async () => {
+  it("lists Japanese levels along JLPT, with Foundation, N5 and N4 open", async () => {
     const levels = await listLevels(db, "ja", "id");
     expect(levels.map((l) => [l.slug, l.frameworkLevel, l.hasContent])).toEqual([
       ["foundation", null, true],
       ["n5", "N5", true],
-      ["n4", "N4", false],
+      ["n4", "N4", true],
       ["n3", "N3", false],
       ["n2", "N2", false],
       ["n1", "N1", false],
@@ -969,6 +970,39 @@ describe.each(TEST_DIALECTS)("choosing what to learn on $dialect", ({ dialect, s
     const overview = await getLearningOverview(db, learner, "en", new Date(), context.level.id);
     expect(overview.courseProgress.totalActivities).toBe(120);
     expect(overview.nextActivity?.id).toBe("ja.activity.hiragana-vowels.recognition");
+  });
+
+  it("starts N4: kanji in its lessons, an N4 mock assessment, and Practice opens up to N4", async () => {
+    await startLearning(db, learner, "ja", "n4", "en");
+    const me = await ensureLocalLearner(db);
+    const context = (await getLearningContext(db, me, "en"))!;
+    expect(context.level.slug).toBe("n4");
+    const curriculum = await getCurriculum(db, "ja", "en");
+    const first = curriculum.lessons.find((l) => l.slug === "n4-01-plans")!;
+    const activities = curriculum.activities.filter((a) => a.lessonId === first.id);
+    expect(activities.map((a) => a.skill)).toEqual(
+      expect.arrayContaining([
+        JA_SKILLS.kanjiMeaning,
+        JA_SKILLS.kanjiReading,
+        JA_SKILLS.vocabularyRecognition,
+      ]),
+    );
+    const kanji = activities.find((a) => a.skill === JA_SKILLS.kanjiMeaning)!;
+    const session = await getPracticeSession(db, me, "en", { kind: "activity", activityId: kanji.id });
+    expect(session!.prompts.every((p) => p.type === "ja.kanji")).toBe(true);
+    const exam = await getPracticeSession(db, me, "en", {
+      kind: "assessment",
+      level: "n4",
+      section: "kanji",
+    });
+    expect(exam!.prompts.length).toBeGreaterThan(0);
+    const paragraph = await getPracticeSession(db, me, "en", {
+      kind: "stage",
+      skillId: "reading",
+      stageId: "paragraph",
+    });
+    expect(paragraph!.prompts.length).toBeGreaterThan(0);
+    await startLearning(db, learner, "ja", "foundation", "en");
   });
 
   it("keeps Japanese progress when the learner leaves for the language list and comes back", async () => {

@@ -1,0 +1,108 @@
+{
+  "source": "Original grammar explanations for N4 · Abilities, written for this project.",
+  "level": "n4",
+  "items": [
+    {
+      "slug": "n4-potential",
+      "pattern": "V(potential): よめる, たべられる",
+      "meaning": {
+        "en": "can V",
+        "id": "bisa V"
+      },
+      "explanation": {
+        "en": "Ru-verbs: drop る and add られる (たべる → たべられる). U-verbs: change the last u-sound to e and add る (よむ → よめる, およぐ → およげる). する → できる, くる → こられる. What you can do is usually marked with が: かんじが よめます.",
+        "id": "Kata kerja ru: buang る lalu tambah られる (たべる → たべられる). Kata kerja u: ubah bunyi u terakhir menjadi e lalu tambah る (よむ → よめる, およぐ → およげる). する → できる, くる → こられる. Hal yang bisa dilakukan biasanya ditandai が: かんじが よめます."
+      },
+      "examples": [
+        {
+          "ja": "わたしは およげます。",
+          "translation": {
+            "en": "I can swim.",
+            "id": "Saya bisa berenang."
+          }
+        },
+        {
+          "ja": "かんじが すこし よめます。",
+          "translation": {
+            "en": "I can read a little kanji.",
+            "id": "Saya bisa membaca sedikit kanji."
+          }
+        }
+      ],
+      "commonErrors": [
+        {
+          "en": "を is heard with the potential in speech, but が is the standard form taught at this level.",
+          "id": "を sering terdengar bersama bentuk potensial dalam percakapan, tetapi が adalah bentuk baku di tingkat ini."
+        }
+      ]
+    },
+    {
+      "slug": "n4-koto-ga-dekiru",
+      "pattern": "V(dictionary) ことが できます",
+      "meaning": {
+        "en": "can V; it is possible to V",
+        "id": "bisa V; boleh V"
+      },
+      "explanation": {
+        "en": "A more formal way to say 'can'. It also says what is possible or allowed in a place: ここで しゃしんを とる ことが できません.",
+        "id": "Cara yang lebih formal untuk mengatakan 'bisa'. Pola ini juga menyatakan apa yang mungkin atau diperbolehkan di suatu tempat: ここで しゃしんを とる ことが できません."
+      },
+      "examples": [
+        {
+          "ja": "ピアノを ひく ことが できます。",
+          "translation": {
+            "en": "I can play the piano.",
+            "id": "Saya bisa bermain piano."
+          }
+        },
+        {
+          "ja": "ここで しゃしんを とる ことが できません。",
+          "translation": {
+            "en": "You cannot take photos here.",
+            "id": "Di sini Anda tidak bisa memotret."
+          }
+        }
+      ],
+      "commonErrors": [
+        {
+          "en": "Putting the ます form before こと: ひきます ことが is wrong; use the dictionary form ひく.",
+          "id": "Memakai bentuk ます sebelum こと: ひきます ことが salah; pakai bentuk kamus ひく."
+        }
+      ]
+    },
+    {
+      "slug": "n4-you-ni-naru",
+      "pattern": "V(dictionary / potential) ように なる",
+      "meaning": {
+        "en": "come to (be able to) V",
+        "id": "menjadi bisa V; mulai V"
+      },
+      "explanation": {
+        "en": "ように なる describes a change over time: something you could not do before and now can, or a new habit.",
+        "id": "ように なる menggambarkan perubahan seiring waktu: sesuatu yang dulu tidak bisa dan sekarang bisa, atau kebiasaan baru."
+      },
+      "examples": [
+        {
+          "ja": "にほんごが はなせるように なりました。",
+          "translation": {
+            "en": "I have become able to speak Japanese.",
+            "id": "Sekarang saya sudah bisa berbicara bahasa Jepang."
+          }
+        },
+        {
+          "ja": "くるまを うんてん できるように なりたいです。",
+          "translation": {
+            "en": "I want to become able to drive a car.",
+            "id": "Saya ingin bisa menyetir mobil."
+          }
+        }
+      ],
+      "commonErrors": [
+        {
+          "en": "Using it for a single sudden event: it is for a gradual change.",
+          "id": "Memakainya untuk kejadian mendadak sekali saja: pola ini untuk perubahan bertahap."
+        }
+      ]
+    }
+  ]
+}

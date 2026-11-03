@@ -1,0 +1,66 @@
+{
+  "source": "Original practice sentences for N4 · Experiences.",
+  "level": "n4",
+  "items": [
+    {
+      "slug": "n4-fujisan-nobotta",
+      "text": "ふじさんに のぼった ことが あります。",
+      "tokens": ["ふじさん", "に", "のぼった", "こと", "が", "あります"],
+      "grammar": "n4-ta-koto-ga-aru",
+      "translation": {
+        "en": "I have climbed Mount Fuji.",
+        "id": "Saya pernah mendaki Gunung Fuji."
+      }
+    },
+    {
+      "slug": "n4-kimono-kita-koto-nai",
+      "text": "きものを きた ことが ありません。",
+      "tokens": ["きもの", "を", "きた", "こと", "が", "ありません"],
+      "grammar": "n4-ta-koto-ga-aru",
+      "translation": {
+        "en": "I have never worn a kimono.",
+        "id": "Saya belum pernah memakai kimono."
+      }
+    },
+    {
+      "slug": "n4-souji-sentaku",
+      "text": "しゅうまつは そうじを したり せんたくを したり します。",
+      "tokens": ["しゅうまつ", "は", "そうじ", "を", "したり", "せんたく", "を", "したり", "します"],
+      "grammar": "n4-tari-tari",
+      "translation": {
+        "en": "On weekends I do things like cleaning and laundry.",
+        "id": "Akhir pekan saya bersih-bersih, mencuci pakaian, dan sebagainya."
+      }
+    },
+    {
+      "slug": "n4-utattari-odottari",
+      "text": "パーティーで うたったり おどったり しました。",
+      "tokens": ["パーティー", "で", "うたったり", "おどったり", "しました"],
+      "grammar": "n4-tari-tari",
+      "translation": {
+        "en": "At the party we sang, danced and so on.",
+        "id": "Di pesta kami bernyanyi, menari, dan lain-lain."
+      }
+    },
+    {
+      "slug": "n4-ongaku-kikinagara",
+      "text": "おんがくを ききながら べんきょうします。",
+      "tokens": ["おんがく", "を", "ききながら", "べんきょうします"],
+      "grammar": "n4-nagara",
+      "translation": {
+        "en": "I study while listening to music.",
+        "id": "Saya belajar sambil mendengarkan musik."
+      }
+    },
+    {
+      "slug": "n4-arukinagara-denwa",
+      "text": "あるきながら でんわを しないで ください。",
+      "tokens": ["あるきながら", "でんわ", "を", "しないで", "ください"],
+      "grammar": "n4-nagara",
+      "translation": {
+        "en": "Please don't talk on the phone while walking.",
+        "id": "Tolong jangan menelepon sambil berjalan."
+      }
+    }
+  ]
+}

@@ -1,0 +1,144 @@
+{
+  "source": "Original vocabulary list for N4 · Advice and rules. Meanings written for this project.",
+  "level": "n4",
+  "items": [
+    {
+      "kana": "びょうき",
+      "kanji": "病気",
+      "romaji": "byouki",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "illness",
+        "id": "sakit, penyakit"
+      }
+    },
+    {
+      "kana": "かぜ",
+      "kanji": "風邪",
+      "romaji": "kaze",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "cold (illness)",
+        "id": "pilek, flu"
+      }
+    },
+    {
+      "kana": "ねつ",
+      "kanji": "熱",
+      "romaji": "netsu",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "fever",
+        "id": "demam"
+      }
+    },
+    {
+      "kana": "くすり",
+      "kanji": "薬",
+      "romaji": "kusuri",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "medicine",
+        "id": "obat"
+      }
+    },
+    {
+      "kana": "しょうじょう",
+      "kanji": "症状",
+      "romaji": "shoujou",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "symptom",
+        "id": "gejala"
+      }
+    },
+    {
+      "kana": "むり",
+      "kanji": "無理",
+      "romaji": "muri",
+      "partOfSpeech": "adjective",
+      "meaning": {
+        "en": "too much, impossible",
+        "id": "berlebihan, mustahil"
+      }
+    },
+    {
+      "kana": "うんどう",
+      "kanji": "運動",
+      "romaji": "undou",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "exercise",
+        "id": "olahraga"
+      }
+    },
+    {
+      "kana": "たばこ",
+      "romaji": "tabako",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "cigarette",
+        "id": "rokok"
+      }
+    },
+    {
+      "kana": "すう",
+      "kanji": "吸う",
+      "romaji": "suu",
+      "partOfSpeech": "verb",
+      "meaning": {
+        "en": "to smoke, to breathe in",
+        "id": "mengisap, menghirup"
+      }
+    },
+    {
+      "kana": "ちゅうい",
+      "kanji": "注意",
+      "romaji": "chuui",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "caution, care",
+        "id": "perhatian, hati-hati"
+      }
+    },
+    {
+      "kana": "きそく",
+      "kanji": "規則",
+      "romaji": "kisoku",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "rule",
+        "id": "aturan"
+      }
+    },
+    {
+      "kana": "まもる",
+      "kanji": "守る",
+      "romaji": "mamoru",
+      "partOfSpeech": "verb",
+      "meaning": {
+        "en": "to keep, to follow (a rule)",
+        "id": "menaati, menjaga"
+      }
+    },
+    {
+      "kana": "だす",
+      "kanji": "出す",
+      "romaji": "dasu",
+      "partOfSpeech": "verb",
+      "meaning": {
+        "en": "to hand in, to take out",
+        "id": "menyerahkan, mengeluarkan"
+      }
+    },
+    {
+      "kana": "レポート",
+      "romaji": "repooto",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "report",
+        "id": "laporan"
+      }
+    }
+  ]
+}

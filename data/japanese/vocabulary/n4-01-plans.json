@@ -1,0 +1,144 @@
+{
+  "source": "Original vocabulary list for N4 · Making plans. Meanings written for this project.",
+  "level": "n4",
+  "items": [
+    {
+      "kana": "よてい",
+      "kanji": "予定",
+      "romaji": "yotei",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "plan, schedule",
+        "id": "rencana, jadwal"
+      }
+    },
+    {
+      "kana": "りょこう",
+      "kanji": "旅行",
+      "romaji": "ryokou",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "trip, travel",
+        "id": "perjalanan wisata"
+      }
+    },
+    {
+      "kana": "しゅうまつ",
+      "kanji": "週末",
+      "romaji": "shuumatsu",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "weekend",
+        "id": "akhir pekan"
+      }
+    },
+    {
+      "kana": "らいしゅう",
+      "kanji": "来週",
+      "romaji": "raishuu",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "next week",
+        "id": "minggu depan"
+      }
+    },
+    {
+      "kana": "なつやすみ",
+      "kanji": "夏休み",
+      "romaji": "natsuyasumi",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "summer holidays",
+        "id": "libur musim panas"
+      }
+    },
+    {
+      "kana": "けいかく",
+      "kanji": "計画",
+      "romaji": "keikaku",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "plan, project",
+        "id": "rencana, program"
+      }
+    },
+    {
+      "kana": "きめる",
+      "kanji": "決める",
+      "romaji": "kimeru",
+      "partOfSpeech": "verb",
+      "meaning": {
+        "en": "to decide",
+        "id": "memutuskan"
+      }
+    },
+    {
+      "kana": "さそう",
+      "kanji": "誘う",
+      "romaji": "sasou",
+      "partOfSpeech": "verb",
+      "meaning": {
+        "en": "to invite",
+        "id": "mengajak"
+      }
+    },
+    {
+      "kana": "つもり",
+      "romaji": "tsumori",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "intention",
+        "id": "niat"
+      }
+    },
+    {
+      "kana": "ホテル",
+      "romaji": "hoteru",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "hotel",
+        "id": "hotel"
+      }
+    },
+    {
+      "kana": "よやく",
+      "kanji": "予約",
+      "romaji": "yoyaku",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "reservation, booking",
+        "id": "reservasi, pemesanan"
+      }
+    },
+    {
+      "kana": "きっぷ",
+      "kanji": "切符",
+      "romaji": "kippu",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "ticket",
+        "id": "tiket"
+      }
+    },
+    {
+      "kana": "うみ",
+      "kanji": "海",
+      "romaji": "umi",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "sea",
+        "id": "laut"
+      }
+    },
+    {
+      "kana": "ちず",
+      "kanji": "地図",
+      "romaji": "chizu",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "map",
+        "id": "peta"
+      }
+    }
+  ]
+}

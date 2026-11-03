@@ -167,8 +167,11 @@ describe("japanese proficiency data", () => {
     expect(frameworkFileSchema.safeParse(f).success).toBe(true);
   });
 
-  it("only N5 has a specification, and thresholds are the platform's own", () => {
+  it("N5 and N4 have a specification, and thresholds are the platform's own", () => {
     expect(japaneseLevelSpec("n5")).not.toBeNull();
-    expect(japaneseLevelSpec("n4")).toBeNull();
+    const n4 = japaneseLevelSpec("n4")!;
+    expect(n4.prerequisiteLevel).toBe("n5");
+    expect(n4.assessment.sections.map((s) => s.id)).toContain("kanji");
+    expect(japaneseLevelSpec("n3")).toBeNull();
   });
 });

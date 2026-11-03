@@ -17,6 +17,8 @@ export interface IntroductionItem {
   /** Text to speak, and its language. */
   speech: string;
   speechLang: string;
+  /** For characters that carry a meaning (kanji); empty for sound-only characters. */
+  meaning: string;
 }
 
 /** Characters per screen: enough to see the set, few enough to look at each one. */
@@ -43,7 +45,11 @@ export function IntroductionStep({ items, onDone }: { items: IntroductionItem[];
       <h2 id="introduction-title" className="text-xl font-semibold">
         {t("practice.introduction.title")}
       </h2>
-      <p className="mt-1 text-muted">{t("practice.introduction.prompt")}</p>
+      <p className="mt-1 text-muted">
+        {items.some((i) => i.meaning)
+          ? t("practice.introduction.promptMeaning")
+          : t("practice.introduction.prompt")}
+      </p>
       {speech.status === "unavailable" && (
         <p role="note" className="mt-2 text-sm text-muted">
           {t("practice.introduction.noAudio")}
@@ -60,9 +66,15 @@ export function IntroductionStep({ items, onDone }: { items: IntroductionItem[];
               {item.display}
             </span>
             <span className="min-w-0 flex-1 text-lg">
-              {t("practice.introduction.readAs", { character: item.display, reading: item.reading })}
+              {item.meaning
+                ? t("practice.introduction.meaningAs", {
+                    character: item.display,
+                    meaning: item.meaning,
+                    reading: item.reading,
+                  })
+                : t("practice.introduction.readAs", { character: item.display, reading: item.reading })}
             </span>
-            {canPlay && (
+            {canPlay && item.speech && (
               <button
                 type="button"
                 onClick={() => speech.speak(item.speech)}

@@ -60,7 +60,7 @@ test("the learning path shows every level with its status and opens a level's le
   await expect(page.getByRole("heading", { level: 1 })).toHaveText("Your learning path");
   await expect(page.getByText("You are here")).toBeVisible();
   await expect(page.getByText("Current level")).toBeVisible();
-  await expect(page.getByText("In development")).toHaveCount(4);
+  await expect(page.getByText("In development")).toHaveCount(3);
   await page.getByRole("link", { name: /^N5/ }).click();
   await expect(page).toHaveURL(/level=n5$/);
   await expect(page.getByRole("heading", { name: "Lessons in N5" })).toBeVisible();
@@ -416,4 +416,19 @@ test("a mock assessment runs under exam conditions and reports the result afterw
   await page.getByRole("link", { name: "See your mock assessment result" }).click();
   await expect(page).toHaveURL(/\/proficiency\?level=n5/);
   await expect(page.getByTestId("assessment-result")).toContainText(/Vocabulary: \d+ of 8 correct/);
+});
+
+test("N4 is a level with its own lessons, and its first lesson teaches kanji", async ({ page }) => {
+  await page.goto("/learn?level=n4");
+  await expect(page.getByRole("heading", { name: "Lessons in N4" })).toBeVisible();
+  await expect(page.getByText("Making plans").first()).toBeVisible();
+  await page.goto("/activities/ja.activity.n4-01-plans.kanji-meaning");
+  // New kanji are shown with their meaning and readings before any question.
+  await expect(page.getByText(/means “.+” and is read/).first()).toBeVisible();
+  while (await page.getByRole("button", { name: "Next characters" }).isVisible())
+    await page.getByRole("button", { name: "Next characters" }).click();
+  await page.getByRole("button", { name: "Start practice" }).click();
+  await expect(page.getByText("Choose the meaning of the kanji.")).toBeVisible();
+  await page.getByRole("group").last().getByRole("button").first().click();
+  await expect(page.getByRole("status")).toBeVisible();
 });

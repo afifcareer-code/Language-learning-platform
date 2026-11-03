@@ -1,0 +1,66 @@
+{
+  "source": "Original practice sentences for N4 · Abilities.",
+  "level": "n4",
+  "items": [
+    {
+      "slug": "n4-oyogemasu",
+      "text": "わたしは およげます。",
+      "tokens": ["わたし", "は", "およげます"],
+      "grammar": "n4-potential",
+      "translation": {
+        "en": "I can swim.",
+        "id": "Saya bisa berenang."
+      }
+    },
+    {
+      "slug": "n4-kanji-yomemasu",
+      "text": "かんじが すこし よめます。",
+      "tokens": ["かんじ", "が", "すこし", "よめます"],
+      "grammar": "n4-potential",
+      "translation": {
+        "en": "I can read a little kanji.",
+        "id": "Saya bisa membaca sedikit kanji."
+      }
+    },
+    {
+      "slug": "n4-piano-hiku-koto",
+      "text": "ピアノを ひく ことが できます。",
+      "tokens": ["ピアノ", "を", "ひく", "こと", "が", "できます"],
+      "grammar": "n4-koto-ga-dekiru",
+      "translation": {
+        "en": "I can play the piano.",
+        "id": "Saya bisa bermain piano."
+      }
+    },
+    {
+      "slug": "n4-shashin-dekimasen",
+      "text": "ここで しゃしんを とる ことが できません。",
+      "tokens": ["ここ", "で", "しゃしん", "を", "とる", "こと", "が", "できません"],
+      "grammar": "n4-koto-ga-dekiru",
+      "translation": {
+        "en": "You cannot take photos here.",
+        "id": "Di sini Anda tidak bisa memotret."
+      }
+    },
+    {
+      "slug": "n4-hanaseru-you-ni",
+      "text": "にほんごが はなせるように なりました。",
+      "tokens": ["にほんご", "が", "はなせる", "ように", "なりました"],
+      "grammar": "n4-you-ni-naru",
+      "translation": {
+        "en": "I have become able to speak Japanese.",
+        "id": "Sekarang saya sudah bisa berbicara bahasa Jepang."
+      }
+    },
+    {
+      "slug": "n4-unten-dekiru-you-ni",
+      "text": "くるまを うんてん できるように なりたいです。",
+      "tokens": ["くるま", "を", "うんてん", "できる", "ように", "なりたいです"],
+      "grammar": "n4-you-ni-naru",
+      "translation": {
+        "en": "I want to become able to drive a car.",
+        "id": "Saya ingin bisa menyetir mobil."
+      }
+    }
+  ]
+}

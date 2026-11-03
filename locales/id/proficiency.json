@@ -24,7 +24,8 @@
     "grammar": "Tata bahasa",
     "reading": "Membaca",
     "listening": "Mendengarkan",
-    "writing": "Menulis"
+    "writing": "Menulis",
+    "kanji": "Kanji"
   },
   "competencies": {
     "title": "Kemampuan untuk level ini",
@@ -86,7 +87,8 @@
       "vocabulary": "Kosakata",
       "grammar": "Tata bahasa",
       "reading": "Membaca",
-      "listening": "Menyimak"
+      "listening": "Menyimak",
+      "kanji": "Kanji"
     }
   },
   "views": {

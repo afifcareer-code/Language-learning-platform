@@ -1,0 +1,108 @@
+{
+  "source": "Original grammar explanations for N4 · Making plans, written for this project.",
+  "level": "n4",
+  "items": [
+    {
+      "slug": "n4-volitional-to-omou",
+      "pattern": "V(よ)う と おもいます",
+      "meaning": {
+        "en": "I think I will V; I'm thinking of V-ing",
+        "id": "Saya berpikir untuk V; saya berencana V"
+      },
+      "explanation": {
+        "en": "The volitional form says 'let's' or 'I will'. Ru-verbs: drop る and add よう (たべる → たべよう). U-verbs: change the last u-sound to o and add う (いく → いこう, さそう → さそおう). する → しよう, くる → こよう. Followed by と おもいます, it is a plan you are thinking about.",
+        "id": "Bentuk volitional berarti 'ayo' atau 'saya akan'. Kata kerja ru: buang る lalu tambah よう (たべる → たべよう). Kata kerja u: ubah bunyi u terakhir menjadi o lalu tambah う (いく → いこう, さそう → さそおう). する → しよう, くる → こよう. Diikuti と おもいます, artinya rencana yang sedang Anda pikirkan."
+      },
+      "examples": [
+        {
+          "ja": "しゅうまつ うみに いこうと おもいます。",
+          "translation": {
+            "en": "I'm thinking of going to the sea this weekend.",
+            "id": "Akhir pekan ini saya berencana pergi ke laut."
+          }
+        },
+        {
+          "ja": "ともだちを りょこうに さそおうと おもいます。",
+          "translation": {
+            "en": "I'm thinking of inviting a friend on a trip.",
+            "id": "Saya berpikir untuk mengajak teman jalan-jalan."
+          }
+        }
+      ],
+      "commonErrors": [
+        {
+          "en": "Using the dictionary form: いくと おもいます means 'I think (someone) will go', not 'I'm thinking of going'.",
+          "id": "Memakai bentuk kamus: いくと おもいます berarti 'saya kira (seseorang) akan pergi', bukan 'saya berencana pergi'."
+        }
+      ]
+    },
+    {
+      "slug": "n4-tsumori",
+      "pattern": "V(dictionary) つもりです",
+      "meaning": {
+        "en": "I intend to V",
+        "id": "Saya berniat V"
+      },
+      "explanation": {
+        "en": "つもり is an intention you have already decided on. Use the dictionary form for 'intend to' and the ない form for 'intend not to': いく つもり, いかない つもり.",
+        "id": "つもり adalah niat yang sudah Anda putuskan. Pakai bentuk kamus untuk 'berniat' dan bentuk ない untuk 'berniat tidak': いく つもり, いかない つもり."
+      },
+      "examples": [
+        {
+          "ja": "なつやすみに にほんへ いく つもりです。",
+          "translation": {
+            "en": "I intend to go to Japan in the summer holidays.",
+            "id": "Saya berniat pergi ke Jepang saat libur musim panas."
+          }
+        },
+        {
+          "ja": "らいしゅうは なにも しない つもりです。",
+          "translation": {
+            "en": "I don't intend to do anything next week.",
+            "id": "Minggu depan saya tidak berniat melakukan apa-apa."
+          }
+        }
+      ],
+      "commonErrors": [
+        {
+          "en": "Asking a superior 〜つもりですか can sound blunt, because it asks directly about their intentions.",
+          "id": "Bertanya 〜つもりですか kepada atasan bisa terdengar kurang sopan, karena langsung menanyakan niatnya."
+        }
+      ]
+    },
+    {
+      "slug": "n4-yotei",
+      "pattern": "V(dictionary) / N の よていです",
+      "meaning": {
+        "en": "is scheduled to V; the plan is N",
+        "id": "dijadwalkan V; rencananya N"
+      },
+      "explanation": {
+        "en": "よてい is a plan fixed in a schedule, often not only by you: trains, meetings, trips. After a noun use の: かいぎの よてい.",
+        "id": "よてい adalah rencana yang sudah masuk jadwal, sering kali bukan hanya keputusan Anda: kereta, rapat, perjalanan. Setelah kata benda pakai の: かいぎの よてい."
+      },
+      "examples": [
+        {
+          "ja": "あした ホテルを よやくする よていです。",
+          "translation": {
+            "en": "I'm scheduled to book the hotel tomorrow.",
+            "id": "Rencananya besok saya memesan hotel."
+          }
+        },
+        {
+          "ja": "でんしゃは くじに でる よていです。",
+          "translation": {
+            "en": "The train is scheduled to leave at nine.",
+            "id": "Kereta dijadwalkan berangkat pukul sembilan."
+          }
+        }
+      ],
+      "commonErrors": [
+        {
+          "en": "For a personal wish, つもり sounds more natural; よてい sounds like a fixed schedule.",
+          "id": "Untuk keinginan pribadi, つもり lebih wajar; よてい terdengar seperti jadwal yang sudah pasti."
+        }
+      ]
+    }
+  ]
+}

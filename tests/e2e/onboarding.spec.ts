@@ -36,9 +36,9 @@ test.describe.serial("choosing what to learn", () => {
     for (const level of ["Foundation", "N5", "N4", "N3", "N2", "N1"]) {
       await expect(page.getByText(level, { exact: true }).first()).toBeVisible();
     }
-    // Foundation and N5 have curriculum; N4–N1 are in development.
-    await expect(page.getByText("In development")).toHaveCount(4);
-    await expect(page.getByRole("button", { name: "Start here" })).toHaveCount(2);
+    // Foundation, N5 and N4 have curriculum; N3–N1 are in development.
+    await expect(page.getByText("In development")).toHaveCount(3);
+    await expect(page.getByRole("button", { name: "Start here" })).toHaveCount(3);
 
     // A new learner goes straight into the first lesson (its Learn section comes first),
     // not to a dashboard with nothing to show yet.

@@ -1,0 +1,132 @@
+{
+  "source": "N4 proficiency specification. Thresholds are the platform's own internal standard, not the JLPT's. Competencies marked planned have no content yet and keep readiness below Certification Ready. Reading and listening are measured on single sentences, not on passages or conversations.",
+  "level": "n4",
+  "prerequisiteLevel": "n5",
+  "prerequisiteSkills": ["ja.vocab.recognition", "ja.reading.sentence"],
+  "domains": ["vocabulary", "kanji", "grammar", "reading", "listening", "writing"],
+  "thresholds": {
+    "secureShare": 0.8,
+    "retainedShare": 0.6,
+    "prerequisiteShare": 0.8,
+    "sectionPass": 0.6,
+    "overallPass": 0.7
+  },
+  "competencies": [
+    {
+      "id": "n4.vocab.meaning",
+      "domain": "vocabulary",
+      "skills": ["ja.vocab.recognition"],
+      "availability": "available",
+      "examAligned": true,
+      "title": {
+        "en": "Recognize everyday words",
+        "id": "Mengenali kata sehari-hari"
+      }
+    },
+    {
+      "id": "n4.vocab.recall",
+      "domain": "vocabulary",
+      "skills": ["ja.vocab.recall"],
+      "availability": "available",
+      "examAligned": false,
+      "title": {
+        "en": "Recall words from their meaning",
+        "id": "Mengingat kata dari maknanya"
+      }
+    },
+    {
+      "id": "n4.kanji.meaning",
+      "domain": "kanji",
+      "skills": ["ja.kanji.meaning", "ja.kanji.reading"],
+      "availability": "available",
+      "examAligned": true,
+      "title": {
+        "en": "Recognize the N4 kanji and their readings",
+        "id": "Mengenali kanji N4 dan bacaannya"
+      }
+    },
+    {
+      "id": "n4.grammar.sentence",
+      "domain": "grammar",
+      "skills": ["ja.grammar.sentence"],
+      "availability": "available",
+      "examAligned": true,
+      "title": {
+        "en": "Build simple sentences",
+        "id": "Menyusun kalimat sederhana"
+      }
+    },
+    {
+      "id": "n4.reading.sentence",
+      "domain": "reading",
+      "skills": ["ja.reading.sentence"],
+      "availability": "available",
+      "examAligned": true,
+      "title": {
+        "en": "Read short sentences",
+        "id": "Membaca kalimat pendek"
+      }
+    },
+    {
+      "id": "n4.listening.sentence",
+      "domain": "listening",
+      "skills": ["ja.listening.sentence"],
+      "availability": "available",
+      "examAligned": true,
+      "title": {
+        "en": "Understand short spoken sentences",
+        "id": "Memahami kalimat pendek yang diucapkan"
+      }
+    },
+    {
+      "id": "n4.writing.production",
+      "domain": "writing",
+      "skills": [],
+      "availability": "planned",
+      "examAligned": false,
+      "title": {
+        "en": "Write your own simple sentences",
+        "id": "Menulis kalimat sederhana sendiri"
+      }
+    }
+  ],
+  "assessment": {
+    "sections": [
+      {
+        "id": "vocabulary",
+        "domain": "vocabulary",
+        "skill": "ja.vocab.recognition",
+        "questionCount": 8,
+        "timeLimitSeconds": 180
+      },
+      {
+        "id": "kanji",
+        "domain": "kanji",
+        "skill": "ja.kanji.meaning",
+        "questionCount": 8,
+        "timeLimitSeconds": 180
+      },
+      {
+        "id": "grammar",
+        "domain": "grammar",
+        "skill": "ja.grammar.sentence",
+        "questionCount": 5,
+        "timeLimitSeconds": 240
+      },
+      {
+        "id": "reading",
+        "domain": "reading",
+        "skill": "ja.reading.sentence",
+        "questionCount": 5,
+        "timeLimitSeconds": 150
+      },
+      {
+        "id": "listening",
+        "domain": "listening",
+        "skill": "ja.listening.sentence",
+        "questionCount": 5,
+        "timeLimitSeconds": 150
+      }
+    ]
+  }
+}

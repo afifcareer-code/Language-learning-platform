@@ -1,0 +1,108 @@
+{
+  "source": "Original grammar explanations for N4 · If and when, written for this project.",
+  "level": "n4",
+  "items": [
+    {
+      "slug": "n4-tara",
+      "pattern": "V(た)ら",
+      "meaning": {
+        "en": "if / when V",
+        "id": "kalau / setelah V"
+      },
+      "explanation": {
+        "en": "Add ら to the た form: ふった → ふったら, ついた → ついたら. It is the most flexible 'if' and also means 'once (something) happens'. The second part can be a request, a plan or a wish.",
+        "id": "Tambahkan ら pada bentuk た: ふった → ふったら, ついた → ついたら. Ini 'kalau' yang paling luwes dan juga berarti 'setelah (sesuatu) terjadi'. Bagian keduanya boleh berupa permintaan, rencana, atau keinginan."
+      },
+      "examples": [
+        {
+          "ja": "えきに ついたら れんらくして ください。",
+          "translation": {
+            "en": "Please get in touch when you arrive at the station.",
+            "id": "Tolong kabari saya setelah sampai di stasiun."
+          }
+        },
+        {
+          "ja": "もし あめが ふったら いきません。",
+          "translation": {
+            "en": "If it rains, I won't go.",
+            "id": "Kalau hujan, saya tidak pergi."
+          }
+        }
+      ],
+      "commonErrors": [
+        {
+          "en": "Building it from the dictionary form: つくら is wrong; build it from the た form: ついたら.",
+          "id": "Membentuknya dari bentuk kamus: つくら salah; bentuk dari bentuk た: ついたら."
+        }
+      ]
+    },
+    {
+      "slug": "n4-ba",
+      "pattern": "V(ば) / い-adj ければ",
+      "meaning": {
+        "en": "if V",
+        "id": "jika V"
+      },
+      "explanation": {
+        "en": "U-verbs: change the last u-sound to e and add ば (なる → なれば). Ru-verbs: drop る and add れば (たべる → たべれば). い-adjectives: drop い and add ければ (やすい → やすければ). It sets a condition for a general or expected result.",
+        "id": "Kata kerja u: ubah bunyi u terakhir menjadi e lalu tambah ば (なる → なれば). Kata kerja ru: buang る lalu tambah れば (たべる → たべれば). Kata sifat い: buang い lalu tambah ければ (やすい → やすければ). Pola ini menyatakan syarat untuk hasil yang umum atau diharapkan."
+      },
+      "examples": [
+        {
+          "ja": "はるに なれば さくらが さきます。",
+          "translation": {
+            "en": "When spring comes, the cherry blossoms bloom.",
+            "id": "Kalau musim semi tiba, bunga sakura mekar."
+          }
+        },
+        {
+          "ja": "ねだんが やすければ かいます。",
+          "translation": {
+            "en": "If the price is low, I'll buy it.",
+            "id": "Kalau harganya murah, saya beli."
+          }
+        }
+      ],
+      "commonErrors": [
+        {
+          "en": "For a one-off request after a condition, 〜たら is more natural than 〜ば.",
+          "id": "Untuk permintaan sekali saja setelah suatu syarat, 〜たら lebih wajar daripada 〜ば."
+        }
+      ]
+    },
+    {
+      "slug": "n4-to-condition",
+      "pattern": "V(dictionary) と, result",
+      "meaning": {
+        "en": "whenever / when V, (always) result",
+        "id": "kalau V, (pasti) …"
+      },
+      "explanation": {
+        "en": "と after the dictionary form means the result always or naturally follows: machines, nature, directions. The second part cannot be a request, an invitation or your intention.",
+        "id": "と setelah bentuk kamus berarti hasilnya selalu atau otomatis terjadi: mesin, alam, petunjuk arah. Bagian keduanya tidak boleh berupa permintaan, ajakan, atau niat Anda."
+      },
+      "examples": [
+        {
+          "ja": "この ボタンを おすと ドアが あきます。",
+          "translation": {
+            "en": "When you press this button, the door opens.",
+            "id": "Kalau tombol ini ditekan, pintunya terbuka."
+          }
+        },
+        {
+          "ja": "かどを みぎに まがると えきが あります。",
+          "translation": {
+            "en": "Turn right at the corner and you'll find the station.",
+            "id": "Belok kanan di tikungan, di situ ada stasiun."
+          }
+        }
+      ],
+      "commonErrors": [
+        {
+          "en": "Ending with a request: えきに つくと れんらくして ください is wrong; use ついたら.",
+          "id": "Mengakhiri dengan permintaan: えきに つくと れんらくして ください salah; pakai ついたら."
+        }
+      ]
+    }
+  ]
+}

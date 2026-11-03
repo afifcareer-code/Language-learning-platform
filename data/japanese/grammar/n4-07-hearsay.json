@@ -1,0 +1,108 @@
+{
+  "source": "Original grammar explanations for N4 · What people say and how things look, written for this project.",
+  "level": "n4",
+  "items": [
+    {
+      "slug": "n4-sou-hearsay",
+      "pattern": "plain form + そうです",
+      "meaning": {
+        "en": "I hear that…; they say…",
+        "id": "katanya…; konon…"
+      },
+      "explanation": {
+        "en": "After a plain form (ふる, けっこんする, たかい), そうです passes on information you heard or read. Name the source with 〜に よると.",
+        "id": "Setelah bentuk biasa (ふる, けっこんする, たかい), そうです menyampaikan informasi yang Anda dengar atau baca. Sebutkan sumbernya dengan 〜に よると."
+      },
+      "examples": [
+        {
+          "ja": "てんきよほうに よると あしたは ゆきが ふるそうです。",
+          "translation": {
+            "en": "According to the weather forecast, it will snow tomorrow.",
+            "id": "Menurut prakiraan cuaca, besok akan turun salju."
+          }
+        },
+        {
+          "ja": "たなかさんは らいげつ けっこんするそうです。",
+          "translation": {
+            "en": "I hear Mr Tanaka is getting married next month.",
+            "id": "Katanya Pak Tanaka akan menikah bulan depan."
+          }
+        }
+      ],
+      "commonErrors": [
+        {
+          "en": "Mixing it up with the 'looks like' そう: ふるそうです (I hear it will snow) vs ふりそうです (it looks like it will).",
+          "id": "Tertukar dengan そう yang berarti 'kelihatannya': ふるそうです (katanya akan turun) dan ふりそうです (kelihatannya akan turun)."
+        }
+      ]
+    },
+    {
+      "slug": "n4-sou-appearance",
+      "pattern": "V(ます stem) / adjective stem + そうです",
+      "meaning": {
+        "en": "looks (like it will) …",
+        "id": "kelihatannya…; sepertinya akan…"
+      },
+      "explanation": {
+        "en": "Join the ます stem of a verb (ふり-) or the stem of an adjective (おいし-, かんたん-) to そうです. It is your impression from what you see. いい becomes よさそう.",
+        "id": "Sambungkan bentuk ます tanpa ます (ふり-) atau kata sifat tanpa akhirannya (おいし-, かんたん-) dengan そうです. Ini kesan Anda dari apa yang terlihat. いい menjadi よさそう."
+      },
+      "examples": [
+        {
+          "ja": "この ケーキは おいしそうです。",
+          "translation": {
+            "en": "This cake looks delicious.",
+            "id": "Kue ini kelihatannya enak."
+          }
+        },
+        {
+          "ja": "いまにも あめが ふりそうです。",
+          "translation": {
+            "en": "It looks like it will rain at any moment.",
+            "id": "Sepertinya sebentar lagi hujan turun."
+          }
+        }
+      ],
+      "commonErrors": [
+        {
+          "en": "Using it for something obvious to everyone: of a beautiful view you can clearly see, say きれいです, not きれいそうです.",
+          "id": "Memakainya untuk hal yang sudah jelas: untuk pemandangan indah yang jelas terlihat, katakan きれいです, bukan きれいそうです."
+        }
+      ]
+    },
+    {
+      "slug": "n4-you-da",
+      "pattern": "plain form + ようです (N の ようです)",
+      "meaning": {
+        "en": "it seems that…",
+        "id": "sepertinya…"
+      },
+      "explanation": {
+        "en": "ようです is a judgement from what you have observed or reasoned, based on more than looks. Nouns take の: あめの ようです.",
+        "id": "ようです adalah dugaan dari apa yang Anda amati atau pikirkan, bukan hanya dari tampilan. Kata benda memakai の: あめの ようです."
+      },
+      "examples": [
+        {
+          "ja": "だれも いない ようです。",
+          "translation": {
+            "en": "It seems nobody is there.",
+            "id": "Sepertinya tidak ada siapa-siapa."
+          }
+        },
+        {
+          "ja": "その みせは にんきが ある ようです。",
+          "translation": {
+            "en": "That shop seems to be popular.",
+            "id": "Toko itu sepertinya populer."
+          }
+        }
+      ],
+      "commonErrors": [
+        {
+          "en": "Leaving out の after a noun: あめ ようです is wrong; say あめの ようです.",
+          "id": "Melupakan の setelah kata benda: あめ ようです salah; katakan あめの ようです."
+        }
+      ]
+    }
+  ]
+}

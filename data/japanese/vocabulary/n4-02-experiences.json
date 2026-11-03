@@ -1,0 +1,145 @@
+{
+  "source": "Original vocabulary list for N4 · Experiences. Meanings written for this project.",
+  "level": "n4",
+  "items": [
+    {
+      "kana": "けいけん",
+      "kanji": "経験",
+      "romaji": "keiken",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "experience",
+        "id": "pengalaman"
+      }
+    },
+    {
+      "kana": "いちど",
+      "kanji": "一度",
+      "romaji": "ichido",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "once",
+        "id": "sekali"
+      }
+    },
+    {
+      "kana": "はじめて",
+      "kanji": "初めて",
+      "romaji": "hajimete",
+      "partOfSpeech": "adverb",
+      "meaning": {
+        "en": "for the first time",
+        "id": "pertama kali"
+      }
+    },
+    {
+      "kana": "のぼる",
+      "kanji": "登る",
+      "romaji": "noboru",
+      "partOfSpeech": "verb",
+      "meaning": {
+        "en": "to climb",
+        "id": "mendaki"
+      }
+    },
+    {
+      "kana": "ふじさん",
+      "kanji": "富士山",
+      "romaji": "fujisan",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "Mount Fuji",
+        "id": "Gunung Fuji"
+      }
+    },
+    {
+      "kana": "きもの",
+      "kanji": "着物",
+      "romaji": "kimono",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "kimono",
+        "id": "kimono"
+      }
+    },
+    {
+      "kana": "きる",
+      "kanji": "着る",
+      "romaji": "kiru",
+      "partOfSpeech": "verb",
+      "meaning": {
+        "en": "to wear (clothes)",
+        "id": "memakai (baju)"
+      }
+    },
+    {
+      "kana": "そうじ",
+      "kanji": "掃除",
+      "romaji": "souji",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "cleaning",
+        "id": "bersih-bersih"
+      }
+    },
+    {
+      "kana": "せんたく",
+      "kanji": "洗濯",
+      "romaji": "sentaku",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "laundry",
+        "id": "mencuci pakaian"
+      }
+    },
+    {
+      "kana": "おんがく",
+      "kanji": "音楽",
+      "romaji": "ongaku",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "music",
+        "id": "musik"
+      }
+    },
+    {
+      "kana": "うたう",
+      "kanji": "歌う",
+      "romaji": "utau",
+      "partOfSpeech": "verb",
+      "meaning": {
+        "en": "to sing",
+        "id": "bernyanyi"
+      }
+    },
+    {
+      "kana": "おどる",
+      "kanji": "踊る",
+      "romaji": "odoru",
+      "partOfSpeech": "verb",
+      "meaning": {
+        "en": "to dance",
+        "id": "menari"
+      }
+    },
+    {
+      "kana": "ゆうめい",
+      "kanji": "有名",
+      "romaji": "yuumei",
+      "partOfSpeech": "adjective",
+      "meaning": {
+        "en": "famous",
+        "id": "terkenal"
+      }
+    },
+    {
+      "kana": "パーティー",
+      "romaji": "paatii",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "party",
+        "id": "pesta"
+      }
+    }
+  ]
+}

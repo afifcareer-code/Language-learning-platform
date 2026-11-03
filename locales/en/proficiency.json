@@ -24,7 +24,8 @@
     "grammar": "Grammar",
     "reading": "Reading",
     "listening": "Listening",
-    "writing": "Writing"
+    "writing": "Writing",
+    "kanji": "Kanji"
   },
   "competencies": {
     "title": "Skills for this level",
@@ -86,7 +87,8 @@
       "vocabulary": "Vocabulary",
       "grammar": "Grammar",
       "reading": "Reading",
-      "listening": "Listening"
+      "listening": "Listening",
+      "kanji": "Kanji"
     }
   },
   "views": {

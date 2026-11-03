@@ -1,0 +1,66 @@
+{
+  "source": "Original practice sentences for N4 · Reasons and purposes.",
+  "level": "n4",
+  "items": [
+    {
+      "slug": "n4-jiko-ga-atta-node",
+      "text": "じこが あったので でんしゃが おくれました。",
+      "tokens": ["じこ", "が", "あった", "ので", "でんしゃ", "が", "おくれました"],
+      "grammar": "n4-node",
+      "translation": {
+        "en": "The train was late because there was an accident.",
+        "id": "Keretanya terlambat karena ada kecelakaan."
+      }
+    },
+    {
+      "slug": "n4-michi-konde-ita-node",
+      "text": "みちが こんで いたので ちこくしました。",
+      "tokens": ["みち", "が", "こんで", "いた", "ので", "ちこくしました"],
+      "grammar": "n4-node",
+      "translation": {
+        "en": "I was late because the road was crowded.",
+        "id": "Saya terlambat karena jalannya macet."
+      }
+    },
+    {
+      "slug": "n4-kenkou-no-tame",
+      "text": "けんこうの ために まいにち あるきます。",
+      "tokens": ["けんこう", "の", "ために", "まいにち", "あるきます"],
+      "grammar": "n4-tame-ni",
+      "translation": {
+        "en": "I walk every day for my health.",
+        "id": "Saya berjalan kaki setiap hari demi kesehatan."
+      }
+    },
+    {
+      "slug": "n4-goukaku-suru-tame",
+      "text": "しけんに ごうかくする ために がんばって います。",
+      "tokens": ["しけん", "に", "ごうかくする", "ために", "がんばって", "います"],
+      "grammar": "n4-tame-ni",
+      "translation": {
+        "en": "I'm working hard to pass the exam.",
+        "id": "Saya berusaha keras supaya lulus ujian."
+      }
+    },
+    {
+      "slug": "n4-benkyou-shita-noni",
+      "text": "いっしょうけんめい べんきょうしたのに ごうかくできませんでした。",
+      "tokens": ["いっしょうけんめい", "べんきょうした", "のに", "ごうかく", "できませんでした"],
+      "grammar": "n4-noni",
+      "translation": {
+        "en": "Even though I studied as hard as I could, I couldn't pass.",
+        "id": "Padahal saya sudah belajar sekuat tenaga, tetapi tidak lulus."
+      }
+    },
+    {
+      "slug": "n4-hayaku-deta-noni",
+      "text": "はやく でたのに まにあいませんでした。",
+      "tokens": ["はやく", "でた", "のに", "まにあいませんでした"],
+      "grammar": "n4-noni",
+      "translation": {
+        "en": "Although I left early, I didn't make it in time.",
+        "id": "Padahal saya berangkat lebih awal, tetapi tetap tidak sempat."
+      }
+    }
+  ]
+}

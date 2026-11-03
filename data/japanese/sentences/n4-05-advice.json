@@ -1,0 +1,66 @@
+{
+  "source": "Original practice sentences for N4 · Advice and rules.",
+  "level": "n4",
+  "items": [
+    {
+      "slug": "n4-kusuri-nonda-hou",
+      "text": "くすりを のんだ ほうが いいですよ。",
+      "tokens": ["くすり", "を", "のんだ", "ほう", "が", "いいです", "よ"],
+      "grammar": "n4-ta-hou-ga-ii",
+      "translation": {
+        "en": "You'd better take some medicine.",
+        "id": "Sebaiknya Anda minum obat."
+      }
+    },
+    {
+      "slug": "n4-tabako-suwanai-hou",
+      "text": "たばこは すわない ほうが いいです。",
+      "tokens": ["たばこ", "は", "すわない", "ほう", "が", "いいです"],
+      "grammar": "n4-ta-hou-ga-ii",
+      "translation": {
+        "en": "You'd better not smoke.",
+        "id": "Sebaiknya Anda tidak merokok."
+      }
+    },
+    {
+      "slug": "n4-repooto-dasanakereba",
+      "text": "あしたまでに レポートを ださなければ なりません。",
+      "tokens": ["あした", "まで", "に", "レポート", "を", "ださなければ", "なりません"],
+      "grammar": "n4-nakereba-naranai",
+      "translation": {
+        "en": "I have to hand in the report by tomorrow.",
+        "id": "Saya harus menyerahkan laporan paling lambat besok."
+      }
+    },
+    {
+      "slug": "n4-kisoku-mamoranakereba",
+      "text": "きそくを まもらなければ なりません。",
+      "tokens": ["きそく", "を", "まもらなければ", "なりません"],
+      "grammar": "n4-nakereba-naranai",
+      "translation": {
+        "en": "We have to follow the rules.",
+        "id": "Kita harus menaati aturan."
+      }
+    },
+    {
+      "slug": "n4-ikanakute-mo-ii",
+      "text": "あしたは がっこうへ いかなくても いいです。",
+      "tokens": ["あした", "は", "がっこう", "へ", "いかなくても", "いいです"],
+      "grammar": "n4-nakute-mo-ii",
+      "translation": {
+        "en": "You don't have to go to school tomorrow.",
+        "id": "Besok kamu tidak perlu pergi ke sekolah."
+      }
+    },
+    {
+      "slug": "n4-muri-shinakute-mo",
+      "text": "むりを しなくても いいですよ。",
+      "tokens": ["むり", "を", "しなくても", "いいです", "よ"],
+      "grammar": "n4-nakute-mo-ii",
+      "translation": {
+        "en": "You don't have to push yourself.",
+        "id": "Tidak perlu memaksakan diri."
+      }
+    }
+  ]
+}
