@@ -30,7 +30,7 @@
     {
       "slug": "n4",
       "frameworkLevel": "N4",
-      "courses": [],
+      "courses": ["n4-core"],
       "title": {
         "en": "N4",
         "id": "N4"

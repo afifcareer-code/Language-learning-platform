@@ -26,5 +26,6 @@ export function introductionItems(
       reading: i.reading,
       speech: i.speech,
       speechLang: i.speechLang,
+      meaning: i.strokeOrder ? i.cue : "",
     }));
 }

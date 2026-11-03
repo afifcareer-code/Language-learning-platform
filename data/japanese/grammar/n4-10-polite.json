@@ -1,0 +1,108 @@
+{
+  "source": "Original grammar explanations for N4 · Polite language, written for this project.",
+  "level": "n4",
+  "items": [
+    {
+      "slug": "n4-o-ni-naru",
+      "pattern": "お V(ます stem) に なる",
+      "meaning": {
+        "en": "(honorific) a respected person does V",
+        "id": "(hormat) orang yang dihormati melakukan V"
+      },
+      "explanation": {
+        "en": "To raise the person you talk about, put お before the ます stem and add に なります: かえる → おかえりに なります, よむ → およみに なります. Some verbs have their own honorific word: いらっしゃる, めしあがる.",
+        "id": "Untuk meninggikan orang yang dibicarakan, letakkan お sebelum bentuk ます tanpa ます lalu tambah に なります: かえる → おかえりに なります, よむ → およみに なります. Beberapa kata kerja punya kata hormat sendiri: いらっしゃる, めしあがる."
+      },
+      "examples": [
+        {
+          "ja": "しゃちょうは もう おかえりに なりました。",
+          "translation": {
+            "en": "The president has already gone home.",
+            "id": "Bapak direktur sudah pulang."
+          }
+        },
+        {
+          "ja": "せんせいは この ほんを およみに なりましたか。",
+          "translation": {
+            "en": "Have you read this book, sensei?",
+            "id": "Apakah Bapak/Ibu guru sudah membaca buku ini?"
+          }
+        }
+      ],
+      "commonErrors": [
+        {
+          "en": "Using it about yourself: わたしは おかえりに なります is wrong; honorific forms are for others.",
+          "id": "Memakainya untuk diri sendiri: わたしは おかえりに なります salah; bentuk hormat untuk orang lain."
+        }
+      ]
+    },
+    {
+      "slug": "n4-o-suru",
+      "pattern": "お V(ます stem) します / ご N します",
+      "meaning": {
+        "en": "(humble) I do V for you",
+        "id": "(merendah) saya melakukan V untuk Anda"
+      },
+      "explanation": {
+        "en": "To lower yourself when your action affects the listener, put お before the ます stem (or ご before a noun of Chinese origin) and add します: もつ → おもちします, あんない → ごあんないします.",
+        "id": "Untuk merendahkan diri ketika tindakan Anda menyangkut lawan bicara, letakkan お sebelum bentuk ます tanpa ます (atau ご sebelum kata benda asal Tionghoa) lalu tambah します: もつ → おもちします, あんない → ごあんないします."
+      },
+      "examples": [
+        {
+          "ja": "かいぎしつへ ごあんないします。",
+          "translation": {
+            "en": "I will show you to the meeting room.",
+            "id": "Saya akan mengantar Anda ke ruang rapat."
+          }
+        },
+        {
+          "ja": "しりょうを おもちします。",
+          "translation": {
+            "en": "I will bring you the documents.",
+            "id": "Saya akan membawakan dokumennya."
+          }
+        }
+      ],
+      "commonErrors": [
+        {
+          "en": "Using it for an action that does not involve the listener: it is for things you do for or towards them.",
+          "id": "Memakainya untuk tindakan yang tidak menyangkut lawan bicara: pola ini untuk hal yang Anda lakukan bagi mereka."
+        }
+      ]
+    },
+    {
+      "slug": "n4-te-itadakemasenka",
+      "pattern": "V(て) いただけませんか",
+      "meaning": {
+        "en": "could you please V?",
+        "id": "bisakah Anda V?"
+      },
+      "explanation": {
+        "en": "A very polite request: the て form + いただけませんか (literally 'could I not receive your V-ing?'). It is softer than 〜て ください and suits strangers, customers and superiors.",
+        "id": "Permintaan yang sangat sopan: bentuk て + いただけませんか (harfiah 'bolehkah saya menerima V dari Anda?'). Lebih halus daripada 〜て ください dan cocok untuk orang asing, pelanggan, dan atasan."
+      },
+      "examples": [
+        {
+          "ja": "しょうしょう まって いただけませんか。",
+          "translation": {
+            "en": "Could you wait a moment, please?",
+            "id": "Bisakah Anda menunggu sebentar?"
+          }
+        },
+        {
+          "ja": "もう いちど せつめいして いただけませんか。",
+          "translation": {
+            "en": "Could you explain it once more, please?",
+            "id": "Bisakah Anda menjelaskannya sekali lagi?"
+          }
+        }
+      ],
+      "commonErrors": [
+        {
+          "en": "Answering with いただけます: the listener replies いいですよ or かしこまりました.",
+          "id": "Menjawab dengan いただけます: lawan bicara menjawab いいですよ atau かしこまりました."
+        }
+      ]
+    }
+  ]
+}

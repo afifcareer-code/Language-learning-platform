@@ -1,0 +1,108 @@
+{
+  "source": "Original grammar explanations for N4 · Experiences, written for this project.",
+  "level": "n4",
+  "items": [
+    {
+      "slug": "n4-ta-koto-ga-aru",
+      "pattern": "V(た) ことが あります",
+      "meaning": {
+        "en": "have V-ed (before)",
+        "id": "pernah V"
+      },
+      "explanation": {
+        "en": "The た form + ことが あります talks about experience: something you have done at least once in your life. ことが ありません means you never have.",
+        "id": "Bentuk た + ことが あります menyatakan pengalaman: sesuatu yang pernah Anda lakukan setidaknya sekali seumur hidup. ことが ありません berarti belum pernah."
+      },
+      "examples": [
+        {
+          "ja": "ふじさんに のぼった ことが あります。",
+          "translation": {
+            "en": "I have climbed Mount Fuji.",
+            "id": "Saya pernah mendaki Gunung Fuji."
+          }
+        },
+        {
+          "ja": "きものを きた ことが ありません。",
+          "translation": {
+            "en": "I have never worn a kimono.",
+            "id": "Saya belum pernah memakai kimono."
+          }
+        }
+      ],
+      "commonErrors": [
+        {
+          "en": "Using it for something that just happened: きのう たべた ことが あります is wrong; say きのう たべました.",
+          "id": "Memakainya untuk kejadian yang baru terjadi: きのう たべた ことが あります salah; katakan きのう たべました."
+        }
+      ]
+    },
+    {
+      "slug": "n4-tari-tari",
+      "pattern": "V1(た)り V2(た)り します",
+      "meaning": {
+        "en": "do things like V1 and V2",
+        "id": "melakukan V1, V2, dan sebagainya"
+      },
+      "explanation": {
+        "en": "Add り to the た form of two or more actions and end with します. It gives examples, not a complete list or an order.",
+        "id": "Tambahkan り pada bentuk た dari dua kegiatan atau lebih, lalu akhiri dengan します. Pola ini memberi contoh, bukan daftar lengkap atau urutan."
+      },
+      "examples": [
+        {
+          "ja": "しゅうまつは そうじを したり せんたくを したり します。",
+          "translation": {
+            "en": "On weekends I do things like cleaning and laundry.",
+            "id": "Akhir pekan saya bersih-bersih, mencuci pakaian, dan sebagainya."
+          }
+        },
+        {
+          "ja": "パーティーで うたったり おどったり しました。",
+          "translation": {
+            "en": "At the party we sang, danced and so on.",
+            "id": "Di pesta kami bernyanyi, menari, dan lain-lain."
+          }
+        }
+      ],
+      "commonErrors": [
+        {
+          "en": "Leaving out the final します: うたったり おどったり。 is incomplete.",
+          "id": "Melupakan します di akhir: うたったり おどったり。 belum lengkap."
+        }
+      ]
+    },
+    {
+      "slug": "n4-nagara",
+      "pattern": "V1(ます stem) ながら V2",
+      "meaning": {
+        "en": "V2 while V1",
+        "id": "V2 sambil V1"
+      },
+      "explanation": {
+        "en": "ながら joins the ます stem (きき-, あるき-) to the main action that comes last. One person does both at the same time.",
+        "id": "ながら menyambungkan bentuk ます tanpa ます (きき-, あるき-) dengan kegiatan utama di akhir kalimat. Satu orang melakukan keduanya pada saat yang sama."
+      },
+      "examples": [
+        {
+          "ja": "おんがくを ききながら べんきょうします。",
+          "translation": {
+            "en": "I study while listening to music.",
+            "id": "Saya belajar sambil mendengarkan musik."
+          }
+        },
+        {
+          "ja": "あるきながら でんわを しないで ください。",
+          "translation": {
+            "en": "Please don't talk on the phone while walking.",
+            "id": "Tolong jangan menelepon sambil berjalan."
+          }
+        }
+      ],
+      "commonErrors": [
+        {
+          "en": "Using ながら for two different people: it only works when the same person does both.",
+          "id": "Memakai ながら untuk dua orang berbeda: pola ini hanya untuk satu orang yang melakukan keduanya."
+        }
+      ]
+    }
+  ]
+}

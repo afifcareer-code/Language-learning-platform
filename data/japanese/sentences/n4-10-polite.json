@@ -1,0 +1,66 @@
+{
+  "source": "Original practice sentences for N4 · Polite language.",
+  "level": "n4",
+  "items": [
+    {
+      "slug": "n4-okaeri-ni-narimashita",
+      "text": "しゃちょうは もう おかえりに なりました。",
+      "tokens": ["しゃちょう", "は", "もう", "おかえりに", "なりました"],
+      "grammar": "n4-o-ni-naru",
+      "translation": {
+        "en": "The president has already gone home.",
+        "id": "Bapak direktur sudah pulang."
+      }
+    },
+    {
+      "slug": "n4-oyomi-ni-narimashita",
+      "text": "せんせいは この ほんを およみに なりましたか。",
+      "tokens": ["せんせい", "は", "この", "ほん", "を", "およみに", "なりました", "か"],
+      "grammar": "n4-o-ni-naru",
+      "translation": {
+        "en": "Have you read this book, sensei?",
+        "id": "Apakah Bapak/Ibu guru sudah membaca buku ini?"
+      }
+    },
+    {
+      "slug": "n4-goannai-shimasu",
+      "text": "かいぎしつへ ごあんないします。",
+      "tokens": ["かいぎしつ", "へ", "ごあんないします"],
+      "grammar": "n4-o-suru",
+      "translation": {
+        "en": "I will show you to the meeting room.",
+        "id": "Saya akan mengantar Anda ke ruang rapat."
+      }
+    },
+    {
+      "slug": "n4-omochi-shimasu",
+      "text": "しりょうを おもちします。",
+      "tokens": ["しりょう", "を", "おもちします"],
+      "grammar": "n4-o-suru",
+      "translation": {
+        "en": "I will bring you the documents.",
+        "id": "Saya akan membawakan dokumennya."
+      }
+    },
+    {
+      "slug": "n4-matte-itadakemasenka",
+      "text": "しょうしょう まって いただけませんか。",
+      "tokens": ["しょうしょう", "まって", "いただけません", "か"],
+      "grammar": "n4-te-itadakemasenka",
+      "translation": {
+        "en": "Could you wait a moment, please?",
+        "id": "Bisakah Anda menunggu sebentar?"
+      }
+    },
+    {
+      "slug": "n4-setsumei-itadakemasenka",
+      "text": "もう いちど せつめいして いただけませんか。",
+      "tokens": ["もう", "いちど", "せつめいして", "いただけません", "か"],
+      "grammar": "n4-te-itadakemasenka",
+      "translation": {
+        "en": "Could you explain it once more, please?",
+        "id": "Bisakah Anda menjelaskannya sekali lagi?"
+      }
+    }
+  ]
+}

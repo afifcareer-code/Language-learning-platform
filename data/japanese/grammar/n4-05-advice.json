@@ -1,0 +1,108 @@
+{
+  "source": "Original grammar explanations for N4 · Advice and rules, written for this project.",
+  "level": "n4",
+  "items": [
+    {
+      "slug": "n4-ta-hou-ga-ii",
+      "pattern": "V(た) ほうが いい / V(ない) ほうが いい",
+      "meaning": {
+        "en": "you had better (not) V",
+        "id": "sebaiknya (tidak) V"
+      },
+      "explanation": {
+        "en": "Advice. To do something, use the た form: のんだ ほうが いい. To not do it, use the ない form: すわない ほうが いい. Adding よ makes it friendly advice.",
+        "id": "Saran. Untuk melakukan sesuatu, pakai bentuk た: のんだ ほうが いい. Untuk tidak melakukannya, pakai bentuk ない: すわない ほうが いい. Tambahan よ membuatnya terdengar seperti saran yang ramah."
+      },
+      "examples": [
+        {
+          "ja": "くすりを のんだ ほうが いいですよ。",
+          "translation": {
+            "en": "You'd better take some medicine.",
+            "id": "Sebaiknya Anda minum obat."
+          }
+        },
+        {
+          "ja": "たばこは すわない ほうが いいです。",
+          "translation": {
+            "en": "You'd better not smoke.",
+            "id": "Sebaiknya Anda tidak merokok."
+          }
+        }
+      ],
+      "commonErrors": [
+        {
+          "en": "Using the past negative: すわなかった ほうが is wrong; use すわない ほうが.",
+          "id": "Memakai bentuk lampau negatif: すわなかった ほうが salah; pakai すわない ほうが."
+        }
+      ]
+    },
+    {
+      "slug": "n4-nakereba-naranai",
+      "pattern": "V(ない) → なければ なりません",
+      "meaning": {
+        "en": "must V",
+        "id": "harus V"
+      },
+      "explanation": {
+        "en": "Take the ない form, change ない to なければ and add なりません: だす → ださない → ださなければ なりません. It states an obligation from rules or circumstances. In speech it is often shortened to 〜なきゃ.",
+        "id": "Ambil bentuk ない, ganti ない menjadi なければ, lalu tambah なりません: だす → ださない → ださなければ なりません. Pola ini menyatakan kewajiban karena aturan atau keadaan. Dalam percakapan sering disingkat 〜なきゃ."
+      },
+      "examples": [
+        {
+          "ja": "あしたまでに レポートを ださなければ なりません。",
+          "translation": {
+            "en": "I have to hand in the report by tomorrow.",
+            "id": "Saya harus menyerahkan laporan paling lambat besok."
+          }
+        },
+        {
+          "ja": "きそくを まもらなければ なりません。",
+          "translation": {
+            "en": "We have to follow the rules.",
+            "id": "Kita harus menaati aturan."
+          }
+        }
+      ],
+      "commonErrors": [
+        {
+          "en": "Leaving out なりません: ださなければ alone means 'if I don't hand it in'.",
+          "id": "Melupakan なりません: ださなければ saja berarti 'kalau tidak diserahkan'."
+        }
+      ]
+    },
+    {
+      "slug": "n4-nakute-mo-ii",
+      "pattern": "V(ない) → なくても いい",
+      "meaning": {
+        "en": "don't have to V",
+        "id": "tidak perlu V"
+      },
+      "explanation": {
+        "en": "Change ない to なくても and add いい: いかない → いかなくても いいです. It says something is not necessary, and answers 〜なければ なりませんか.",
+        "id": "Ganti ない menjadi なくても lalu tambah いい: いかない → いかなくても いいです. Pola ini menyatakan sesuatu tidak perlu dilakukan, dan menjawab pertanyaan 〜なければ なりませんか."
+      },
+      "examples": [
+        {
+          "ja": "あしたは がっこうへ いかなくても いいです。",
+          "translation": {
+            "en": "You don't have to go to school tomorrow.",
+            "id": "Besok kamu tidak perlu pergi ke sekolah."
+          }
+        },
+        {
+          "ja": "むりを しなくても いいですよ。",
+          "translation": {
+            "en": "You don't have to push yourself.",
+            "id": "Tidak perlu memaksakan diri."
+          }
+        }
+      ],
+      "commonErrors": [
+        {
+          "en": "Confusing it with 〜ては いけない (must not): いかなくても いい means you need not go, not that you must not.",
+          "id": "Tertukar dengan 〜ては いけない (tidak boleh): いかなくても いい berarti tidak perlu pergi, bukan tidak boleh pergi."
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,108 @@
+{
+  "source": "Original grammar explanations for N4 · Reasons and purposes, written for this project.",
+  "level": "n4",
+  "items": [
+    {
+      "slug": "n4-node",
+      "pattern": "plain form + ので",
+      "meaning": {
+        "en": "because…, so…",
+        "id": "karena…"
+      },
+      "explanation": {
+        "en": "ので gives a reason in a softer, more objective way than から, so it suits explanations and apologies. Nouns and な-adjectives take な: あめなので.",
+        "id": "ので memberi alasan dengan cara yang lebih halus dan objektif daripada から, sehingga cocok untuk penjelasan dan permintaan maaf. Kata benda dan kata sifat な memakai な: あめなので."
+      },
+      "examples": [
+        {
+          "ja": "じこが あったので でんしゃが おくれました。",
+          "translation": {
+            "en": "The train was late because there was an accident.",
+            "id": "Keretanya terlambat karena ada kecelakaan."
+          }
+        },
+        {
+          "ja": "みちが こんで いたので ちこくしました。",
+          "translation": {
+            "en": "I was late because the road was crowded.",
+            "id": "Saya terlambat karena jalannya macet."
+          }
+        }
+      ],
+      "commonErrors": [
+        {
+          "en": "Using ので before a strong command; there use から, or turn it into a request.",
+          "id": "Memakai ので sebelum perintah keras; dalam hal itu pakai から, atau ubah menjadi permintaan."
+        }
+      ]
+    },
+    {
+      "slug": "n4-tame-ni",
+      "pattern": "V(dictionary) / N の ために",
+      "meaning": {
+        "en": "in order to V; for N",
+        "id": "untuk / demi …"
+      },
+      "explanation": {
+        "en": "ために after the dictionary form gives a purpose you act towards: ごうかくする ために. After a noun with の it means 'for the sake of': けんこうの ために. The verb before ために must be something you control.",
+        "id": "ために setelah bentuk kamus menyatakan tujuan yang Anda upayakan: ごうかくする ために. Setelah kata benda dengan の artinya 'demi': けんこうの ために. Kata kerja sebelum ために harus sesuatu yang bisa Anda kendalikan."
+      },
+      "examples": [
+        {
+          "ja": "けんこうの ために まいにち あるきます。",
+          "translation": {
+            "en": "I walk every day for my health.",
+            "id": "Saya berjalan kaki setiap hari demi kesehatan."
+          }
+        },
+        {
+          "ja": "しけんに ごうかくする ために がんばって います。",
+          "translation": {
+            "en": "I'm working hard to pass the exam.",
+            "id": "Saya berusaha keras supaya lulus ujian."
+          }
+        }
+      ],
+      "commonErrors": [
+        {
+          "en": "Using a potential verb: はなせる ために is wrong; use はなせるように.",
+          "id": "Memakai kata kerja potensial: はなせる ために salah; pakai はなせるように."
+        }
+      ]
+    },
+    {
+      "slug": "n4-noni",
+      "pattern": "plain form + のに",
+      "meaning": {
+        "en": "even though…",
+        "id": "padahal…"
+      },
+      "explanation": {
+        "en": "のに joins two facts when the result is the opposite of what you expected, often with disappointment or surprise. Nouns and な-adjectives take な: やすみなのに.",
+        "id": "のに menyambungkan dua fakta ketika hasilnya berlawanan dengan harapan, sering dengan rasa kecewa atau heran. Kata benda dan kata sifat な memakai な: やすみなのに."
+      },
+      "examples": [
+        {
+          "ja": "いっしょうけんめい べんきょうしたのに ごうかくできませんでした。",
+          "translation": {
+            "en": "Even though I studied as hard as I could, I couldn't pass.",
+            "id": "Padahal saya sudah belajar sekuat tenaga, tetapi tidak lulus."
+          }
+        },
+        {
+          "ja": "はやく でたのに まにあいませんでした。",
+          "translation": {
+            "en": "Although I left early, I didn't make it in time.",
+            "id": "Padahal saya berangkat lebih awal, tetapi tetap tidak sempat."
+          }
+        }
+      ],
+      "commonErrors": [
+        {
+          "en": "Using のに for a neutral contrast; for that use が or けど.",
+          "id": "Memakai のに untuk perbandingan netral; untuk itu pakai が atau けど."
+        }
+      ]
+    }
+  ]
+}

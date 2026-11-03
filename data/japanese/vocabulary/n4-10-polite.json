@@ -1,0 +1,145 @@
+{
+  "source": "Original vocabulary list for N4 · Polite language. Meanings written for this project.",
+  "level": "n4",
+  "items": [
+    {
+      "kana": "おきゃくさま",
+      "kanji": "お客様",
+      "romaji": "okyakusama",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "customer, guest (polite)",
+        "id": "tamu, pelanggan (sopan)"
+      }
+    },
+    {
+      "kana": "うけつけ",
+      "kanji": "受付",
+      "romaji": "uketsuke",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "reception desk",
+        "id": "meja resepsionis"
+      }
+    },
+    {
+      "kana": "しょうしょう",
+      "kanji": "少々",
+      "romaji": "shoushou",
+      "partOfSpeech": "adverb",
+      "meaning": {
+        "en": "a moment, a little (polite)",
+        "id": "sebentar, sedikit (sopan)"
+      }
+    },
+    {
+      "kana": "いらっしゃる",
+      "romaji": "irassharu",
+      "partOfSpeech": "verb",
+      "meaning": {
+        "en": "to be, to come, to go (honorific)",
+        "id": "ada, datang, pergi (hormat)"
+      }
+    },
+    {
+      "kana": "めしあがる",
+      "kanji": "召し上がる",
+      "romaji": "meshiagaru",
+      "partOfSpeech": "verb",
+      "meaning": {
+        "en": "to eat, to drink (honorific)",
+        "id": "makan, minum (hormat)"
+      }
+    },
+    {
+      "kana": "まいる",
+      "kanji": "参る",
+      "romaji": "mairu",
+      "partOfSpeech": "verb",
+      "meaning": {
+        "en": "to go, to come (humble)",
+        "id": "pergi, datang (merendah)"
+      }
+    },
+    {
+      "kana": "もうす",
+      "kanji": "申す",
+      "romaji": "mousu",
+      "partOfSpeech": "verb",
+      "meaning": {
+        "en": "to say, to be called (humble)",
+        "id": "berkata, bernama (merendah)"
+      }
+    },
+    {
+      "kana": "いただく",
+      "kanji": "頂く",
+      "romaji": "itadaku",
+      "partOfSpeech": "verb",
+      "meaning": {
+        "en": "to receive, to eat (humble)",
+        "id": "menerima, makan (merendah)"
+      }
+    },
+    {
+      "kana": "しつれい",
+      "kanji": "失礼",
+      "romaji": "shitsurei",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "rudeness; excuse me",
+        "id": "ketidaksopanan; permisi"
+      }
+    },
+    {
+      "kana": "あんない",
+      "kanji": "案内",
+      "romaji": "annai",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "guidance, showing the way",
+        "id": "pemanduan, petunjuk"
+      }
+    },
+    {
+      "kana": "しりょう",
+      "kanji": "資料",
+      "romaji": "shiryou",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "documents, materials",
+        "id": "dokumen, bahan"
+      }
+    },
+    {
+      "kana": "かいぎしつ",
+      "kanji": "会議室",
+      "romaji": "kaigishitsu",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "meeting room",
+        "id": "ruang rapat"
+      }
+    },
+    {
+      "kana": "しゃちょう",
+      "kanji": "社長",
+      "romaji": "shachou",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "company president",
+        "id": "direktur utama"
+      }
+    },
+    {
+      "kana": "せつめい",
+      "kanji": "説明",
+      "romaji": "setsumei",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "explanation",
+        "id": "penjelasan"
+      }
+    }
+  ]
+}

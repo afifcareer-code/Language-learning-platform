@@ -1,0 +1,142 @@
+{
+  "source": "Original vocabulary list for N4 · Giving and receiving. Meanings written for this project.",
+  "level": "n4",
+  "items": [
+    {
+      "kana": "プレゼント",
+      "romaji": "purezento",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "present, gift",
+        "id": "hadiah"
+      }
+    },
+    {
+      "kana": "たんじょうび",
+      "kanji": "誕生日",
+      "romaji": "tanjoubi",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "birthday",
+        "id": "ulang tahun"
+      }
+    },
+    {
+      "kana": "あげる",
+      "romaji": "ageru",
+      "partOfSpeech": "verb",
+      "meaning": {
+        "en": "to give (to someone else)",
+        "id": "memberi (kepada orang lain)"
+      }
+    },
+    {
+      "kana": "くれる",
+      "romaji": "kureru",
+      "partOfSpeech": "verb",
+      "meaning": {
+        "en": "to give (to me)",
+        "id": "memberi (kepada saya)"
+      }
+    },
+    {
+      "kana": "もらう",
+      "romaji": "morau",
+      "partOfSpeech": "verb",
+      "meaning": {
+        "en": "to receive",
+        "id": "menerima"
+      }
+    },
+    {
+      "kana": "てがみ",
+      "kanji": "手紙",
+      "romaji": "tegami",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "letter",
+        "id": "surat"
+      }
+    },
+    {
+      "kana": "おくる",
+      "kanji": "送る",
+      "romaji": "okuru",
+      "partOfSpeech": "verb",
+      "meaning": {
+        "en": "to send",
+        "id": "mengirim"
+      }
+    },
+    {
+      "kana": "てつだう",
+      "kanji": "手伝う",
+      "romaji": "tetsudau",
+      "partOfSpeech": "verb",
+      "meaning": {
+        "en": "to help",
+        "id": "membantu"
+      }
+    },
+    {
+      "kana": "かす",
+      "kanji": "貸す",
+      "romaji": "kasu",
+      "partOfSpeech": "verb",
+      "meaning": {
+        "en": "to lend",
+        "id": "meminjamkan"
+      }
+    },
+    {
+      "kana": "かりる",
+      "kanji": "借りる",
+      "romaji": "kariru",
+      "partOfSpeech": "verb",
+      "meaning": {
+        "en": "to borrow",
+        "id": "meminjam"
+      }
+    },
+    {
+      "kana": "かさ",
+      "kanji": "傘",
+      "romaji": "kasa",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "umbrella",
+        "id": "payung"
+      }
+    },
+    {
+      "kana": "おれい",
+      "kanji": "お礼",
+      "romaji": "orei",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "thanks, a thank-you",
+        "id": "ucapan terima kasih"
+      }
+    },
+    {
+      "kana": "せんぱい",
+      "kanji": "先輩",
+      "romaji": "senpai",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "senior (at school or work)",
+        "id": "senior"
+      }
+    },
+    {
+      "kana": "ひっこし",
+      "kanji": "引っ越し",
+      "romaji": "hikkoshi",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "moving house",
+        "id": "pindahan rumah"
+      }
+    }
+  ]
+}

@@ -1,0 +1,146 @@
+{
+  "source": "Original vocabulary list for N4 · Passive and causative. Meanings written for this project.",
+  "level": "n4",
+  "items": [
+    {
+      "kana": "しかる",
+      "kanji": "叱る",
+      "romaji": "shikaru",
+      "partOfSpeech": "verb",
+      "meaning": {
+        "en": "to scold",
+        "id": "memarahi"
+      }
+    },
+    {
+      "kana": "ほめる",
+      "kanji": "褒める",
+      "romaji": "homeru",
+      "partOfSpeech": "verb",
+      "meaning": {
+        "en": "to praise",
+        "id": "memuji"
+      }
+    },
+    {
+      "kana": "ぬすむ",
+      "kanji": "盗む",
+      "romaji": "nusumu",
+      "partOfSpeech": "verb",
+      "meaning": {
+        "en": "to steal",
+        "id": "mencuri"
+      }
+    },
+    {
+      "kana": "さいふ",
+      "kanji": "財布",
+      "romaji": "saifu",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "wallet",
+        "id": "dompet"
+      }
+    },
+    {
+      "kana": "ぶちょう",
+      "kanji": "部長",
+      "romaji": "buchou",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "department manager",
+        "id": "kepala bagian"
+      }
+    },
+    {
+      "kana": "ざんぎょう",
+      "kanji": "残業",
+      "romaji": "zangyou",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "overtime",
+        "id": "lembur"
+      }
+    },
+    {
+      "kana": "むすこ",
+      "kanji": "息子",
+      "romaji": "musuko",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "son",
+        "id": "anak laki-laki"
+      }
+    },
+    {
+      "kana": "むすめ",
+      "kanji": "娘",
+      "romaji": "musume",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "daughter",
+        "id": "anak perempuan"
+      }
+    },
+    {
+      "kana": "ならう",
+      "kanji": "習う",
+      "romaji": "narau",
+      "partOfSpeech": "verb",
+      "meaning": {
+        "en": "to learn (from someone)",
+        "id": "belajar (dari seseorang)"
+      }
+    },
+    {
+      "kana": "じゅく",
+      "kanji": "塾",
+      "romaji": "juku",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "cram school",
+        "id": "bimbingan belajar"
+      }
+    },
+    {
+      "kana": "かんがえる",
+      "kanji": "考える",
+      "romaji": "kangaeru",
+      "partOfSpeech": "verb",
+      "meaning": {
+        "en": "to think, to consider",
+        "id": "berpikir, mempertimbangkan"
+      }
+    },
+    {
+      "kana": "たのむ",
+      "kanji": "頼む",
+      "romaji": "tanomu",
+      "partOfSpeech": "verb",
+      "meaning": {
+        "en": "to ask (a favour)",
+        "id": "meminta tolong"
+      }
+    },
+    {
+      "kana": "こまる",
+      "kanji": "困る",
+      "romaji": "komaru",
+      "partOfSpeech": "verb",
+      "meaning": {
+        "en": "to be in trouble",
+        "id": "kesulitan, kerepotan"
+      }
+    },
+    {
+      "kana": "さくぶん",
+      "kanji": "作文",
+      "romaji": "sakubun",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "essay, composition",
+        "id": "karangan"
+      }
+    }
+  ]
+}

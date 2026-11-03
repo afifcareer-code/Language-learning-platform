@@ -127,7 +127,9 @@
     "noAudio": "Perangkat ini tidak punya suara Jepang, jadi bunyi ditampilkan sebagai teks.",
     "group": "Karakter {from}–{to} dari {total}",
     "next": "Karakter berikutnya",
-    "start": "Mulai berlatih"
+    "start": "Mulai berlatih",
+    "promptMeaning": "Setiap kanji punya arti dan satu atau lebih cara baca. Perhatikan masing-masing sebelum berlatih. Ini bukan ujian: tidak ada yang dinilai di sini.",
+    "meaningAs": "{character} berarti “{meaning}” dan dibaca “{reading}”"
   },
   "exam": {
     "conditions": "Kondisi ujian: jawaban tidak ditampilkan sampai selesai.",

@@ -1,0 +1,143 @@
+{
+  "source": "Original vocabulary list for N4 · If and when. Meanings written for this project.",
+  "level": "n4",
+  "items": [
+    {
+      "kana": "もし",
+      "romaji": "moshi",
+      "partOfSpeech": "adverb",
+      "meaning": {
+        "en": "if, by any chance",
+        "id": "seandainya, jika"
+      }
+    },
+    {
+      "kana": "ボタン",
+      "romaji": "botan",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "button",
+        "id": "tombol"
+      }
+    },
+    {
+      "kana": "おす",
+      "kanji": "押す",
+      "romaji": "osu",
+      "partOfSpeech": "verb",
+      "meaning": {
+        "en": "to push, to press",
+        "id": "menekan, mendorong"
+      }
+    },
+    {
+      "kana": "かど",
+      "kanji": "角",
+      "romaji": "kado",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "corner",
+        "id": "sudut, tikungan"
+      }
+    },
+    {
+      "kana": "しんごう",
+      "kanji": "信号",
+      "romaji": "shingou",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "traffic light",
+        "id": "lampu lalu lintas"
+      }
+    },
+    {
+      "kana": "わたる",
+      "kanji": "渡る",
+      "romaji": "wataru",
+      "partOfSpeech": "verb",
+      "meaning": {
+        "en": "to cross",
+        "id": "menyeberang"
+      }
+    },
+    {
+      "kana": "つく",
+      "kanji": "着く",
+      "romaji": "tsuku",
+      "partOfSpeech": "verb",
+      "meaning": {
+        "en": "to arrive",
+        "id": "tiba, sampai"
+      }
+    },
+    {
+      "kana": "れんらく",
+      "kanji": "連絡",
+      "romaji": "renraku",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "contact, getting in touch",
+        "id": "kabar, menghubungi"
+      }
+    },
+    {
+      "kana": "ねだん",
+      "kanji": "値段",
+      "romaji": "nedan",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "price",
+        "id": "harga"
+      }
+    },
+    {
+      "kana": "はる",
+      "kanji": "春",
+      "romaji": "haru",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "spring",
+        "id": "musim semi"
+      }
+    },
+    {
+      "kana": "さく",
+      "kanji": "咲く",
+      "romaji": "saku",
+      "partOfSpeech": "verb",
+      "meaning": {
+        "en": "to bloom",
+        "id": "mekar"
+      }
+    },
+    {
+      "kana": "さくら",
+      "kanji": "桜",
+      "romaji": "sakura",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "cherry blossom",
+        "id": "bunga sakura"
+      }
+    },
+    {
+      "kana": "あたたかい",
+      "kanji": "暖かい",
+      "romaji": "atatakai",
+      "partOfSpeech": "adjective",
+      "meaning": {
+        "en": "warm",
+        "id": "hangat"
+      }
+    },
+    {
+      "kana": "ドア",
+      "romaji": "doa",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "door",
+        "id": "pintu"
+      }
+    }
+  ]
+}

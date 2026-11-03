@@ -1,0 +1,108 @@
+{
+  "source": "Original grammar explanations for N4 · Giving and receiving, written for this project.",
+  "level": "n4",
+  "items": [
+    {
+      "slug": "n4-ageru-morau",
+      "pattern": "A は B に N を あげる / B は A に N を もらう",
+      "meaning": {
+        "en": "give N / receive N",
+        "id": "memberi N / menerima N"
+      },
+      "explanation": {
+        "en": "あげる: the giver is the subject and gives to someone other than you. もらう: the receiver is the subject and the giver is marked with に (or から). When someone gives to you, use くれる: ともだちが わたしに くれました.",
+        "id": "あげる: pemberi menjadi subjek dan memberi kepada orang lain selain Anda. もらう: penerima menjadi subjek dan pemberi ditandai に (atau から). Kalau seseorang memberi kepada Anda, pakai くれる: ともだちが わたしに くれました."
+      },
+      "examples": [
+        {
+          "ja": "ともだちに はなを あげました。",
+          "translation": {
+            "en": "I gave flowers to a friend.",
+            "id": "Saya memberi bunga kepada teman."
+          }
+        },
+        {
+          "ja": "せんぱいに てがみを もらいました。",
+          "translation": {
+            "en": "I received a letter from my senior.",
+            "id": "Saya menerima surat dari senior saya."
+          }
+        }
+      ],
+      "commonErrors": [
+        {
+          "en": "Saying ともだちが わたしに あげました: when you are the receiver, use くれました.",
+          "id": "Mengatakan ともだちが わたしに あげました: kalau Anda penerimanya, pakai くれました."
+        }
+      ]
+    },
+    {
+      "slug": "n4-te-kureru",
+      "pattern": "V(て) くれる",
+      "meaning": {
+        "en": "someone does V for me",
+        "id": "seseorang melakukan V untuk saya"
+      },
+      "explanation": {
+        "en": "The て form + くれる says someone did something for you (or your family), and you are grateful. The doer is the subject, marked with が or は.",
+        "id": "Bentuk て + くれる menyatakan seseorang melakukan sesuatu untuk Anda (atau keluarga Anda), dan Anda berterima kasih. Pelakunya menjadi subjek, ditandai が atau は."
+      },
+      "examples": [
+        {
+          "ja": "あには わたしに かさを かして くれました。",
+          "translation": {
+            "en": "My older brother lent me an umbrella.",
+            "id": "Kakak laki-laki saya meminjamkan payung kepada saya."
+          }
+        },
+        {
+          "ja": "ともだちが ひっこしを てつだって くれました。",
+          "translation": {
+            "en": "My friend helped me move house.",
+            "id": "Teman saya membantu saya pindahan."
+          }
+        }
+      ],
+      "commonErrors": [
+        {
+          "en": "Using it for something done for someone else: then use 〜て あげる.",
+          "id": "Memakainya untuk kebaikan bagi orang lain: dalam hal itu pakai 〜て あげる."
+        }
+      ]
+    },
+    {
+      "slug": "n4-te-morau",
+      "pattern": "A に V(て) もらう",
+      "meaning": {
+        "en": "have A do V for me",
+        "id": "mendapat bantuan A untuk V"
+      },
+      "explanation": {
+        "en": "The て form + もらう makes you the subject: you receive the favour of A's action. A is marked with に. It often means you asked for it.",
+        "id": "Bentuk て + もらう menjadikan Anda subjek: Anda menerima kebaikan dari tindakan A. A ditandai に. Sering berarti Anda yang memintanya."
+      },
+      "examples": [
+        {
+          "ja": "せんせいに さくぶんを みて もらいました。",
+          "translation": {
+            "en": "I had my teacher look at my essay.",
+            "id": "Saya minta guru memeriksa karangan saya."
+          }
+        },
+        {
+          "ja": "たんじょうびに プレゼントを おくって もらいました。",
+          "translation": {
+            "en": "Someone sent me a present for my birthday.",
+            "id": "Saya dikirimi hadiah untuk ulang tahun saya."
+          }
+        }
+      ],
+      "commonErrors": [
+        {
+          "en": "Marking the helper with が: せんせいが みて もらいました is wrong; use せんせいに.",
+          "id": "Menandai penolong dengan が: せんせいが みて もらいました salah; pakai せんせいに."
+        }
+      ]
+    }
+  ]
+}

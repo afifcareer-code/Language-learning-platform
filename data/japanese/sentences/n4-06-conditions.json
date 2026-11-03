@@ -1,0 +1,66 @@
+{
+  "source": "Original practice sentences for N4 · If and when.",
+  "level": "n4",
+  "items": [
+    {
+      "slug": "n4-tsuitara-renraku",
+      "text": "えきに ついたら れんらくして ください。",
+      "tokens": ["えき", "に", "ついたら", "れんらくして", "ください"],
+      "grammar": "n4-tara",
+      "translation": {
+        "en": "Please get in touch when you arrive at the station.",
+        "id": "Tolong kabari saya setelah sampai di stasiun."
+      }
+    },
+    {
+      "slug": "n4-ame-futtara",
+      "text": "もし あめが ふったら いきません。",
+      "tokens": ["もし", "あめ", "が", "ふったら", "いきません"],
+      "grammar": "n4-tara",
+      "translation": {
+        "en": "If it rains, I won't go.",
+        "id": "Kalau hujan, saya tidak pergi."
+      }
+    },
+    {
+      "slug": "n4-haru-ni-nareba",
+      "text": "はるに なれば さくらが さきます。",
+      "tokens": ["はる", "に", "なれば", "さくら", "が", "さきます"],
+      "grammar": "n4-ba",
+      "translation": {
+        "en": "When spring comes, the cherry blossoms bloom.",
+        "id": "Kalau musim semi tiba, bunga sakura mekar."
+      }
+    },
+    {
+      "slug": "n4-yasukereba-kaimasu",
+      "text": "ねだんが やすければ かいます。",
+      "tokens": ["ねだん", "が", "やすければ", "かいます"],
+      "grammar": "n4-ba",
+      "translation": {
+        "en": "If the price is low, I'll buy it.",
+        "id": "Kalau harganya murah, saya beli."
+      }
+    },
+    {
+      "slug": "n4-botan-osu-to",
+      "text": "この ボタンを おすと ドアが あきます。",
+      "tokens": ["この", "ボタン", "を", "おすと", "ドア", "が", "あきます"],
+      "grammar": "n4-to-condition",
+      "translation": {
+        "en": "When you press this button, the door opens.",
+        "id": "Kalau tombol ini ditekan, pintunya terbuka."
+      }
+    },
+    {
+      "slug": "n4-kado-magaru-to",
+      "text": "かどを みぎに まがると えきが あります。",
+      "tokens": ["かど", "を", "みぎ", "に", "まがると", "えき", "が", "あります"],
+      "grammar": "n4-to-condition",
+      "translation": {
+        "en": "Turn right at the corner and you'll find the station.",
+        "id": "Belok kanan di tikungan, di situ ada stasiun."
+      }
+    }
+  ]
+}

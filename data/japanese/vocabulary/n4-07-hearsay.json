@@ -1,0 +1,144 @@
+{
+  "source": "Original vocabulary list for N4 · What people say and how things look. Meanings written for this project.",
+  "level": "n4",
+  "items": [
+    {
+      "kana": "てんきよほう",
+      "kanji": "天気予報",
+      "romaji": "tenkiyohou",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "weather forecast",
+        "id": "prakiraan cuaca"
+      }
+    },
+    {
+      "kana": "ニュース",
+      "romaji": "nyuusu",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "news",
+        "id": "berita"
+      }
+    },
+    {
+      "kana": "たいふう",
+      "kanji": "台風",
+      "romaji": "taifuu",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "typhoon",
+        "id": "topan"
+      }
+    },
+    {
+      "kana": "ゆき",
+      "kanji": "雪",
+      "romaji": "yuki",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "snow",
+        "id": "salju"
+      }
+    },
+    {
+      "kana": "けしき",
+      "kanji": "景色",
+      "romaji": "keshiki",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "scenery",
+        "id": "pemandangan"
+      }
+    },
+    {
+      "kana": "ケーキ",
+      "romaji": "keeki",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "cake",
+        "id": "kue"
+      }
+    },
+    {
+      "kana": "こわれる",
+      "kanji": "壊れる",
+      "romaji": "kowareru",
+      "partOfSpeech": "verb",
+      "meaning": {
+        "en": "to break, to be broken",
+        "id": "rusak, pecah"
+      }
+    },
+    {
+      "kana": "おちる",
+      "kanji": "落ちる",
+      "romaji": "ochiru",
+      "partOfSpeech": "verb",
+      "meaning": {
+        "en": "to fall, to drop",
+        "id": "jatuh"
+      }
+    },
+    {
+      "kana": "うわさ",
+      "kanji": "噂",
+      "romaji": "uwasa",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "rumour",
+        "id": "kabar burung"
+      }
+    },
+    {
+      "kana": "けっこん",
+      "kanji": "結婚",
+      "romaji": "kekkon",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "marriage",
+        "id": "pernikahan"
+      }
+    },
+    {
+      "kana": "にんき",
+      "kanji": "人気",
+      "romaji": "ninki",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "popularity",
+        "id": "popularitas"
+      }
+    },
+    {
+      "kana": "かんたん",
+      "kanji": "簡単",
+      "romaji": "kantan",
+      "partOfSpeech": "adjective",
+      "meaning": {
+        "en": "easy, simple",
+        "id": "mudah, sederhana"
+      }
+    },
+    {
+      "kana": "いまにも",
+      "kanji": "今にも",
+      "romaji": "imanimo",
+      "partOfSpeech": "adverb",
+      "meaning": {
+        "en": "at any moment",
+        "id": "sebentar lagi"
+      }
+    },
+    {
+      "kana": "らいげつ",
+      "kanji": "来月",
+      "romaji": "raigetsu",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "next month",
+        "id": "bulan depan"
+      }
+    }
+  ]
+}

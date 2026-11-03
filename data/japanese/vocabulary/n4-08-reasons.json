@@ -1,0 +1,146 @@
+{
+  "source": "Original vocabulary list for N4 · Reasons and purposes. Meanings written for this project.",
+  "level": "n4",
+  "items": [
+    {
+      "kana": "ちこく",
+      "kanji": "遅刻",
+      "romaji": "chikoku",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "being late",
+        "id": "keterlambatan"
+      }
+    },
+    {
+      "kana": "じこ",
+      "kanji": "事故",
+      "romaji": "jiko",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "accident",
+        "id": "kecelakaan"
+      }
+    },
+    {
+      "kana": "おくれる",
+      "kanji": "遅れる",
+      "romaji": "okureru",
+      "partOfSpeech": "verb",
+      "meaning": {
+        "en": "to be late, to be delayed",
+        "id": "terlambat"
+      }
+    },
+    {
+      "kana": "ちょきん",
+      "kanji": "貯金",
+      "romaji": "chokin",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "savings",
+        "id": "tabungan"
+      }
+    },
+    {
+      "kana": "けんこう",
+      "kanji": "健康",
+      "romaji": "kenkou",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "health",
+        "id": "kesehatan"
+      }
+    },
+    {
+      "kana": "りゆう",
+      "kanji": "理由",
+      "romaji": "riyuu",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "reason",
+        "id": "alasan"
+      }
+    },
+    {
+      "kana": "しけん",
+      "kanji": "試験",
+      "romaji": "shiken",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "exam",
+        "id": "ujian"
+      }
+    },
+    {
+      "kana": "ごうかく",
+      "kanji": "合格",
+      "romaji": "goukaku",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "passing (an exam)",
+        "id": "kelulusan"
+      }
+    },
+    {
+      "kana": "いっしょうけんめい",
+      "kanji": "一生懸命",
+      "romaji": "isshoukenmei",
+      "partOfSpeech": "adverb",
+      "meaning": {
+        "en": "as hard as one can",
+        "id": "sekuat tenaga"
+      }
+    },
+    {
+      "kana": "ねむい",
+      "kanji": "眠い",
+      "romaji": "nemui",
+      "partOfSpeech": "adjective",
+      "meaning": {
+        "en": "sleepy",
+        "id": "mengantuk"
+      }
+    },
+    {
+      "kana": "こむ",
+      "kanji": "込む",
+      "romaji": "komu",
+      "partOfSpeech": "verb",
+      "meaning": {
+        "en": "to be crowded",
+        "id": "ramai, penuh sesak"
+      }
+    },
+    {
+      "kana": "まにあう",
+      "kanji": "間に合う",
+      "romaji": "maniau",
+      "partOfSpeech": "verb",
+      "meaning": {
+        "en": "to be in time",
+        "id": "sempat, tepat waktu"
+      }
+    },
+    {
+      "kana": "がんばる",
+      "kanji": "頑張る",
+      "romaji": "ganbaru",
+      "partOfSpeech": "verb",
+      "meaning": {
+        "en": "to do one's best",
+        "id": "berusaha keras"
+      }
+    },
+    {
+      "kana": "みち",
+      "kanji": "道",
+      "romaji": "michi",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "road, way",
+        "id": "jalan"
+      }
+    }
+  ]
+}

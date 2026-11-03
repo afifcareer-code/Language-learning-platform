@@ -1,0 +1,144 @@
+{
+  "source": "Original vocabulary list for N4 · Abilities. Meanings written for this project.",
+  "level": "n4",
+  "items": [
+    {
+      "kana": "およぐ",
+      "kanji": "泳ぐ",
+      "romaji": "oyogu",
+      "partOfSpeech": "verb",
+      "meaning": {
+        "en": "to swim",
+        "id": "berenang"
+      }
+    },
+    {
+      "kana": "うんてん",
+      "kanji": "運転",
+      "romaji": "unten",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "driving",
+        "id": "menyetir"
+      }
+    },
+    {
+      "kana": "ピアノ",
+      "romaji": "piano",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "piano",
+        "id": "piano"
+      }
+    },
+    {
+      "kana": "ひく",
+      "kanji": "弾く",
+      "romaji": "hiku",
+      "partOfSpeech": "verb",
+      "meaning": {
+        "en": "to play (an instrument)",
+        "id": "memainkan (alat musik)"
+      }
+    },
+    {
+      "kana": "かんじ",
+      "kanji": "漢字",
+      "romaji": "kanji",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "kanji",
+        "id": "kanji"
+      }
+    },
+    {
+      "kana": "へた",
+      "kanji": "下手",
+      "romaji": "heta",
+      "partOfSpeech": "adjective",
+      "meaning": {
+        "en": "bad at",
+        "id": "tidak pandai"
+      }
+    },
+    {
+      "kana": "できる",
+      "romaji": "dekiru",
+      "partOfSpeech": "verb",
+      "meaning": {
+        "en": "can, to be able to",
+        "id": "bisa, dapat"
+      }
+    },
+    {
+      "kana": "めんせつ",
+      "kanji": "面接",
+      "romaji": "mensetsu",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "interview",
+        "id": "wawancara"
+      }
+    },
+    {
+      "kana": "とくい",
+      "kanji": "得意",
+      "romaji": "tokui",
+      "partOfSpeech": "adjective",
+      "meaning": {
+        "en": "good at",
+        "id": "mahir"
+      }
+    },
+    {
+      "kana": "おぼえる",
+      "kanji": "覚える",
+      "romaji": "oboeru",
+      "partOfSpeech": "verb",
+      "meaning": {
+        "en": "to memorise, to learn",
+        "id": "menghafal, mengingat"
+      }
+    },
+    {
+      "kana": "ことば",
+      "kanji": "言葉",
+      "romaji": "kotoba",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "word, language",
+        "id": "kata, bahasa"
+      }
+    },
+    {
+      "kana": "すこし",
+      "kanji": "少し",
+      "romaji": "sukoshi",
+      "partOfSpeech": "adverb",
+      "meaning": {
+        "en": "a little",
+        "id": "sedikit"
+      }
+    },
+    {
+      "kana": "しゃしん",
+      "kanji": "写真",
+      "romaji": "shashin",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "photograph",
+        "id": "foto"
+      }
+    },
+    {
+      "kana": "とる",
+      "kanji": "撮る",
+      "romaji": "toru",
+      "partOfSpeech": "verb",
+      "meaning": {
+        "en": "to take (a photo)",
+        "id": "mengambil (foto)"
+      }
+    }
+  ]
+}

@@ -2,6 +2,7 @@ import { z } from "zod";
 import type { ProficiencyLevelSpec } from "@/core/proficiency";
 import { localizedTextSchema } from "@/localization/content";
 import framework from "../../../data/japanese/proficiency/framework.json";
+import n4 from "../../../data/japanese/proficiency/n4.json";
 import n5 from "../../../data/japanese/proficiency/n5.json";
 
 const slug = z.string().regex(/^[a-z0-9-]+$/);
@@ -78,7 +79,10 @@ export const levelSpecFileSchema = z
 export type JapaneseFramework = z.infer<typeof frameworkFileSchema>;
 export type JapaneseLevelFile = z.infer<typeof levelSpecFileSchema>;
 
-const specs: Record<string, JapaneseLevelFile> = { n5: levelSpecFileSchema.parse(n5) };
+const specs: Record<string, JapaneseLevelFile> = {
+  n5: levelSpecFileSchema.parse(n5),
+  n4: levelSpecFileSchema.parse(n4),
+};
 
 export function japaneseFramework(): JapaneseFramework {
   return frameworkFileSchema.parse(framework);

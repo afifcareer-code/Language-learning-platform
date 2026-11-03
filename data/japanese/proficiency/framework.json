@@ -18,8 +18,8 @@
       "frameworkLevel": "N4",
       "prerequisite": "n5",
       "cefrReference": "A2",
-      "status": "planned",
-      "domains": ["vocabulary", "grammar", "reading", "listening", "writing"],
+      "status": "implemented",
+      "domains": ["vocabulary", "kanji", "grammar", "reading", "listening", "writing"],
       "summary": {
         "en": "Understand basic Japanese on familiar daily topics and follow slow everyday conversation.",
         "id": "Memahami bahasa Jepang dasar tentang topik sehari-hari yang akrab dan mengikuti percakapan sehari-hari yang lambat."

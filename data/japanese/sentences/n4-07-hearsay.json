@@ -1,0 +1,66 @@
+{
+  "source": "Original practice sentences for N4 · What people say and how things look.",
+  "level": "n4",
+  "items": [
+    {
+      "slug": "n4-yuki-ga-furu-sou",
+      "text": "てんきよほうに よると あしたは ゆきが ふるそうです。",
+      "tokens": ["てんきよほう", "に", "よると", "あした", "は", "ゆき", "が", "ふる", "そうです"],
+      "grammar": "n4-sou-hearsay",
+      "translation": {
+        "en": "According to the weather forecast, it will snow tomorrow.",
+        "id": "Menurut prakiraan cuaca, besok akan turun salju."
+      }
+    },
+    {
+      "slug": "n4-kekkon-suru-sou",
+      "text": "たなかさんは らいげつ けっこんするそうです。",
+      "tokens": ["たなか", "さん", "は", "らいげつ", "けっこんする", "そうです"],
+      "grammar": "n4-sou-hearsay",
+      "translation": {
+        "en": "I hear Mr Tanaka is getting married next month.",
+        "id": "Katanya Pak Tanaka akan menikah bulan depan."
+      }
+    },
+    {
+      "slug": "n4-keeki-oishisou",
+      "text": "この ケーキは おいしそうです。",
+      "tokens": ["この", "ケーキ", "は", "おいしそう", "です"],
+      "grammar": "n4-sou-appearance",
+      "translation": {
+        "en": "This cake looks delicious.",
+        "id": "Kue ini kelihatannya enak."
+      }
+    },
+    {
+      "slug": "n4-ame-furisou",
+      "text": "いまにも あめが ふりそうです。",
+      "tokens": ["いまにも", "あめ", "が", "ふりそう", "です"],
+      "grammar": "n4-sou-appearance",
+      "translation": {
+        "en": "It looks like it will rain at any moment.",
+        "id": "Sepertinya sebentar lagi hujan turun."
+      }
+    },
+    {
+      "slug": "n4-daremo-inai-you",
+      "text": "だれも いない ようです。",
+      "tokens": ["だれ", "も", "いない", "よう", "です"],
+      "grammar": "n4-you-da",
+      "translation": {
+        "en": "It seems nobody is there.",
+        "id": "Sepertinya tidak ada siapa-siapa."
+      }
+    },
+    {
+      "slug": "n4-ninki-ga-aru-you",
+      "text": "その みせは にんきが ある ようです。",
+      "tokens": ["その", "みせ", "は", "にんき", "が", "ある", "よう", "です"],
+      "grammar": "n4-you-da",
+      "translation": {
+        "en": "That shop seems to be popular.",
+        "id": "Toko itu sepertinya populer."
+      }
+    }
+  ]
+}

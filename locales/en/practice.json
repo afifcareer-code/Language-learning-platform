@@ -130,7 +130,9 @@
     "noAudio": "No Japanese voice was found on this device, so the sounds are shown as text.",
     "group": "Characters {from}–{to} of {total}",
     "next": "Next characters",
-    "start": "Start practice"
+    "start": "Start practice",
+    "promptMeaning": "Each kanji has a meaning and one or more readings. Look at each one before you practice. This is not a test: nothing here is scored.",
+    "meaningAs": "{character} means “{meaning}” and is read “{reading}”"
   },
   "exam": {
     "conditions": "Exam conditions: answers are not shown until the end.",
