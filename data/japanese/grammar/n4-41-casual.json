@@ -1,0 +1,108 @@
+{
+  "source": "Original grammar explanations for N4 · Casual Japanese, written for this project.",
+  "level": "n4",
+  "items": [
+    {
+      "slug": "n4-tte",
+      "pattern": "plain form + って",
+      "meaning": {
+        "en": "they say…; (topic) … (casual)",
+        "id": "katanya…; (topik) … (santai)"
+      },
+      "explanation": {
+        "en": "って is casual for と (quoting) or という: かれ、あした こないって (he says he isn't coming tomorrow). It also marks a topic: さくらって なに?",
+        "id": "って adalah bentuk santai dari と (kutipan) atau という: かれ、あした こないって (katanya dia besok tidak datang). Juga menandai topik: さくらって なに?"
+      },
+      "examples": [
+        {
+          "ja": "たなかさん、今日《きょう》 休《やす》むって。",
+          "translation": {
+            "en": "Tanaka says she's off today.",
+            "id": "Katanya Tanaka hari ini libur."
+          }
+        },
+        {
+          "ja": "ゆかたって なんですか。",
+          "translation": {
+            "en": "What's a yukata?",
+            "id": "Yukata itu apa?"
+          }
+        }
+      ],
+      "commonErrors": [
+        {
+          "en": "Using って with superiors: it is casual; say と いって いました.",
+          "id": "Memakai って kepada atasan: bentuk ini santai; katakan と いって いました."
+        }
+      ]
+    },
+    {
+      "slug": "n4-nai-to",
+      "pattern": "V(ない) と (いけない)",
+      "meaning": {
+        "en": "I've got to V (casual)",
+        "id": "harus V (santai)"
+      },
+      "explanation": {
+        "en": "〜ないと is a short way to say 〜ないと いけない: もう いかないと (I have to go now). It is common in conversation.",
+        "id": "〜ないと adalah cara singkat untuk 〜ないと いけない: もう いかないと (aku harus pergi sekarang). Sering dipakai dalam percakapan."
+      },
+      "examples": [
+        {
+          "ja": "明日《あした》は はやく 起《お》きないと。",
+          "translation": {
+            "en": "I've got to get up early tomorrow.",
+            "id": "Besok aku harus bangun pagi."
+          }
+        },
+        {
+          "ja": "くすりを 飲《の》まないと いけません。",
+          "translation": {
+            "en": "I have to take my medicine.",
+            "id": "Saya harus minum obat."
+          }
+        }
+      ],
+      "commonErrors": [
+        {
+          "en": "Confusing it with 〜ないと 'if not': context decides; at the end of a sentence it means 'must'.",
+          "id": "Tertukar dengan 〜ないと 'kalau tidak': konteks yang menentukan; di akhir kalimat artinya 'harus'."
+        }
+      ]
+    },
+    {
+      "slug": "n4-cha-dame",
+      "pattern": "V(て) は だめ / 〜ちゃ だめ",
+      "meaning": {
+        "en": "you mustn't V (casual)",
+        "id": "tidak boleh V (santai)"
+      },
+      "explanation": {
+        "en": "〜ちゃ だめ (from 〜ては だめ) is a casual prohibition, often to children or close friends: そこで あそんじゃ だめ. With で-verbs it is じゃ.",
+        "id": "〜ちゃ だめ (dari 〜ては だめ) adalah larangan santai, sering kepada anak atau teman dekat: そこで あそんじゃ だめ. Untuk kata kerja dengan で menjadi じゃ."
+      },
+      "examples": [
+        {
+          "ja": "ここで あそんじゃ だめですよ。",
+          "translation": {
+            "en": "You mustn't play here.",
+            "id": "Tidak boleh bermain di sini, ya."
+          }
+        },
+        {
+          "ja": "まだ たべちゃ だめ。",
+          "translation": {
+            "en": "Don't eat it yet.",
+            "id": "Belum boleh dimakan."
+          }
+        }
+      ],
+      "commonErrors": [
+        {
+          "en": "Using it to a superior: say 〜ないで ください instead.",
+          "id": "Memakainya kepada atasan: katakan 〜ないで ください sebagai gantinya."
+        }
+      ]
+    }
+  ]
+}

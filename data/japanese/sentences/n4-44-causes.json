@@ -1,0 +1,66 @@
+{
+  "source": "Original practice sentences for N4 · Causes and results.",
+  "level": "n4",
+  "items": [
+    {
+      "slug": "n4-okage-de-1",
+      "text": "先生《せんせい》の おかげで しけんに ごうかくしました。",
+      "tokens": ["先生《せんせい》", "の", "おかげで", "しけん", "に", "ごうかくしました"],
+      "grammar": "n4-okage-de",
+      "translation": {
+        "en": "Thanks to my teacher, I passed the exam.",
+        "id": "Berkat guru, saya lulus ujian."
+      }
+    },
+    {
+      "slug": "n4-okage-de-2",
+      "text": "くすりを 飲《の》んだ おかげで よく なりました。",
+      "tokens": ["くすり", "を", "飲《の》んだ", "おかげで", "よく", "なりました"],
+      "grammar": "n4-okage-de",
+      "translation": {
+        "en": "Thanks to the medicine, I got better.",
+        "id": "Berkat minum obat, saya membaik."
+      }
+    },
+    {
+      "slug": "n4-sei-de-1",
+      "text": "あめの せいで しあいが ちゅうしに なりました。",
+      "tokens": ["あめ", "の", "せいで", "しあい", "が", "ちゅうし", "に", "なりました"],
+      "grammar": "n4-sei-de",
+      "translation": {
+        "en": "Because of the rain, the match was cancelled.",
+        "id": "Gara-gara hujan, pertandingannya dibatalkan."
+      }
+    },
+    {
+      "slug": "n4-sei-de-2",
+      "text": "ねぼうした せいで でんしゃに おくれました。",
+      "tokens": ["ねぼうした", "せいで", "でんしゃ", "に", "おくれました"],
+      "grammar": "n4-sei-de",
+      "translation": {
+        "en": "I missed the train because I overslept.",
+        "id": "Gara-gara bangun kesiangan, saya ketinggalan kereta."
+      }
+    },
+    {
+      "slug": "n4-tara-discovery-1",
+      "text": "まどを 開《あ》けたら、ゆきが ふって いました。",
+      "tokens": ["まど", "を", "開《あ》けたら", "ゆき", "が", "ふって", "いました"],
+      "grammar": "n4-tara-discovery",
+      "translation": {
+        "en": "When I opened the window, it was snowing.",
+        "id": "Ketika saya membuka jendela, ternyata salju sedang turun."
+      }
+    },
+    {
+      "slug": "n4-tara-discovery-2",
+      "text": "駅《えき》に ついたら、電車《でんしゃ》は もう 出《で》て いました。",
+      "tokens": ["駅《えき》", "に", "ついたら", "電車《でんしゃ》", "は", "もう", "出《で》て", "いました"],
+      "grammar": "n4-tara-discovery",
+      "translation": {
+        "en": "When I got to the station, the train had already left.",
+        "id": "Ketika saya tiba di stasiun, ternyata keretanya sudah berangkat."
+      }
+    }
+  ]
+}

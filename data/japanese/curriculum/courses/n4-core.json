@@ -1873,6 +1873,165 @@
         "sentence:n4-kenjougo-1",
         "sentence:n4-kenjougo-2"
       ]
+    },
+    {
+      "slug": "n4-40-opinions",
+      "title": {
+        "en": "Opinions in conversation",
+        "id": "Pendapat dalam percakapan"
+      },
+      "situation": {
+        "en": "Over coffee, friends share opinions, soften disagreements and give examples.",
+        "id": "Sambil minum kopi, teman-teman berbagi pendapat, melunakkan ketidaksetujuan, dan memberi contoh."
+      },
+      "objective": {
+        "en": "By the end of this lesson, you can give opinions, soften what you say and list examples casually.",
+        "id": "Setelah menyelesaikan pelajaran ini, Anda mampu memberi pendapat, melunakkan ucapan, dan menyebut contoh dengan santai."
+      },
+      "items": [
+        "grammar:n4-to-omou-opinion",
+        "grammar:n4-kedo",
+        "grammar:n4-to-ka",
+        "sentence:n4-to-omou-opinion-1",
+        "sentence:n4-to-omou-opinion-2",
+        "sentence:n4-kedo-1",
+        "sentence:n4-kedo-2",
+        "sentence:n4-to-ka-1",
+        "sentence:n4-to-ka-2"
+      ]
+    },
+    {
+      "slug": "n4-41-casual",
+      "title": {
+        "en": "Casual Japanese",
+        "id": "Bahasa Jepang santai"
+      },
+      "situation": {
+        "en": "You hear how friends and families really talk: passing on news, saying what they must do and telling children what not to do.",
+        "id": "Anda mendengar cara teman dan keluarga benar-benar berbicara: menyampaikan kabar, mengatakan kewajiban, dan melarang anak."
+      },
+      "objective": {
+        "en": "By the end of this lesson, you can understand common casual forms.",
+        "id": "Setelah menyelesaikan pelajaran ini, Anda mampu memahami bentuk santai yang umum."
+      },
+      "items": [
+        "grammar:n4-tte",
+        "grammar:n4-nai-to",
+        "grammar:n4-cha-dame",
+        "sentence:n4-tte-1",
+        "sentence:n4-tte-2",
+        "sentence:n4-nai-to-1",
+        "sentence:n4-nai-to-2",
+        "sentence:n4-cha-dame-1",
+        "sentence:n4-cha-dame-2"
+      ]
+    },
+    {
+      "slug": "n4-42-requests",
+      "title": {
+        "en": "Requests, apologies and thanks",
+        "id": "Permintaan, maaf, dan terima kasih"
+      },
+      "situation": {
+        "en": "At a station and an office you hear polite requests, pass on instructions and apologise or thank people for what they did.",
+        "id": "Di stasiun dan kantor Anda mendengar permintaan sopan, menyampaikan instruksi, dan meminta maaf atau berterima kasih atas apa yang dilakukan orang."
+      },
+      "objective": {
+        "en": "By the end of this lesson, you can report instructions, understand very polite requests and say sorry or thank you for something.",
+        "id": "Setelah menyelesaikan pelajaran ini, Anda mampu melaporkan instruksi, memahami permintaan yang sangat sopan, dan meminta maaf atau berterima kasih atas sesuatu."
+      },
+      "items": [
+        "grammar:n4-you-ni-iu",
+        "grammar:n4-o-kudasai",
+        "grammar:n4-te-sumimasen",
+        "sentence:n4-you-ni-iu-1",
+        "sentence:n4-you-ni-iu-2",
+        "sentence:n4-o-kudasai-1",
+        "sentence:n4-o-kudasai-2",
+        "sentence:n4-te-sumimasen-1",
+        "sentence:n4-te-sumimasen-2"
+      ]
+    },
+    {
+      "slug": "n4-43-efforts",
+      "title": {
+        "en": "Efforts and habits",
+        "id": "Usaha dan kebiasaan"
+      },
+      "situation": {
+        "en": "You talk about what you are trying to do, what someone does all the time, and how practice pays off.",
+        "id": "Anda membicarakan apa yang sedang Anda usahakan, apa yang terus-terusan dilakukan seseorang, dan bagaimana latihan membuahkan hasil."
+      },
+      "objective": {
+        "en": "By the end of this lesson, you can describe attempts, repeated actions and 'the more…, the more…'.",
+        "id": "Setelah menyelesaikan pelajaran ini, Anda mampu menggambarkan usaha, tindakan yang terus diulang, dan 'makin…, makin…'."
+      },
+      "items": [
+        "grammar:n4-you-to-suru",
+        "grammar:n4-te-bakari",
+        "grammar:n4-ba-hodo",
+        "sentence:n4-you-to-suru-1",
+        "sentence:n4-you-to-suru-2",
+        "sentence:n4-te-bakari-1",
+        "sentence:n4-te-bakari-2",
+        "sentence:n4-ba-hodo-1",
+        "sentence:n4-ba-hodo-2"
+      ]
+    },
+    {
+      "slug": "n4-44-causes",
+      "title": {
+        "en": "Causes and results",
+        "id": "Sebab dan akibat"
+      },
+      "situation": {
+        "en": "Looking back on a busy week, you say what helped, what went wrong because of what, and what you found out.",
+        "id": "Menengok kembali minggu yang sibuk, Anda mengatakan apa yang membantu, apa yang salah gara-gara apa, dan apa yang ternyata terjadi."
+      },
+      "objective": {
+        "en": "By the end of this lesson, you can give causes with thanks or blame and describe discoveries.",
+        "id": "Setelah menyelesaikan pelajaran ini, Anda mampu menyebut sebab dengan rasa terima kasih atau menyalahkan, dan menggambarkan temuan."
+      },
+      "items": [
+        "grammar:n4-okage-de",
+        "grammar:n4-sei-de",
+        "grammar:n4-tara-discovery",
+        "sentence:n4-okage-de-1",
+        "sentence:n4-okage-de-2",
+        "sentence:n4-sei-de-1",
+        "sentence:n4-sei-de-2",
+        "sentence:n4-tara-discovery-1",
+        "sentence:n4-tara-discovery-2"
+      ]
+    },
+    {
+      "slug": "n4-45-senses",
+      "title": {
+        "en": "Senses and descriptions",
+        "id": "Indra dan gambaran"
+      },
+      "situation": {
+        "en": "On a trip you describe what you hear, smell and see, who made the things you visit and what happened on the way.",
+        "id": "Dalam perjalanan Anda menggambarkan apa yang Anda dengar, cium, dan lihat, siapa pembuat tempat yang Anda kunjungi, dan apa yang terjadi di jalan."
+      },
+      "objective": {
+        "en": "By the end of this lesson, you can describe sensations and appearances, name a creator and say what happened partway.",
+        "id": "Setelah menyelesaikan pelajaran ini, Anda mampu menggambarkan rasa dan penampilan, menyebut pencipta, dan mengatakan apa yang terjadi di tengah jalan."
+      },
+      "items": [
+        "grammar:n4-ga-suru",
+        "grammar:n4-ni-mieru",
+        "grammar:n4-ni-yotte",
+        "grammar:n4-tochuu-de",
+        "sentence:n4-ga-suru-1",
+        "sentence:n4-ga-suru-2",
+        "sentence:n4-ni-mieru-1",
+        "sentence:n4-ni-mieru-2",
+        "sentence:n4-ni-yotte-1",
+        "sentence:n4-ni-yotte-2",
+        "sentence:n4-tochuu-de-1",
+        "sentence:n4-tochuu-de-2"
+      ]
     }
   ]
 }

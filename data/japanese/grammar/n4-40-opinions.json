@@ -1,0 +1,108 @@
+{
+  "source": "Original grammar explanations for N4 · Opinions in conversation, written for this project.",
+  "level": "n4",
+  "items": [
+    {
+      "slug": "n4-to-omou-opinion",
+      "pattern": "plain form + と おもいます",
+      "meaning": {
+        "en": "I think that…",
+        "id": "menurut saya…; saya kira…"
+      },
+      "explanation": {
+        "en": "と おもいます after a plain form gives your opinion or guess: あしたは あめだと おもいます. For someone else's opinion use と おもって います or と いって いました.",
+        "id": "と おもいます setelah bentuk biasa menyatakan pendapat atau dugaan Anda: あしたは あめだと おもいます. Untuk pendapat orang lain pakai と おもって います atau と いって いました."
+      },
+      "examples": [
+        {
+          "ja": "この 映画《えいが》は おもしろいと 思《おも》います。",
+          "translation": {
+            "en": "I think this film is interesting.",
+            "id": "Menurut saya film ini menarik."
+          }
+        },
+        {
+          "ja": "かれは 来《こ》ないと 思《おも》います。",
+          "translation": {
+            "en": "I don't think he'll come.",
+            "id": "Saya kira dia tidak akan datang."
+          }
+        }
+      ],
+      "commonErrors": [
+        {
+          "en": "Leaving out だ after a noun: あめと おもいます is wrong; say あめだと おもいます.",
+          "id": "Melupakan だ setelah kata benda: あめと おもいます salah; katakan あめだと おもいます."
+        }
+      ]
+    },
+    {
+      "slug": "n4-kedo",
+      "pattern": "plain / polite form + けど",
+      "meaning": {
+        "en": "…, but; (softening)",
+        "id": "…, tetapi; (melunakkan)"
+      },
+      "explanation": {
+        "en": "けど (けれども in writing) joins two contrasting sentences like が, but sounds more conversational. At the end of a sentence it softens a statement: ちょっと わからないんですけど….",
+        "id": "けど (けれども dalam tulisan) menyambung dua kalimat yang berlawanan seperti が, tetapi lebih bernada percakapan. Di akhir kalimat ia melunakkan pernyataan: ちょっと わからないんですけど…."
+      },
+      "examples": [
+        {
+          "ja": "高《たか》いけど、買《か》います。",
+          "translation": {
+            "en": "It's expensive, but I'll buy it.",
+            "id": "Mahal, tapi saya beli."
+          }
+        },
+        {
+          "ja": "すみません、道《みち》が わからないんですけど。",
+          "translation": {
+            "en": "Excuse me, I don't know the way…",
+            "id": "Permisi, saya tidak tahu jalannya…"
+          }
+        }
+      ],
+      "commonErrors": [
+        {
+          "en": "Using けど in a formal letter: use が or しかし there.",
+          "id": "Memakai けど dalam surat resmi: di sana pakai が atau しかし."
+        }
+      ]
+    },
+    {
+      "slug": "n4-to-ka",
+      "pattern": "N / V とか N / V とか",
+      "meaning": {
+        "en": "things like… and…",
+        "id": "misalnya… atau…"
+      },
+      "explanation": {
+        "en": "とか gives a few examples in casual speech, like や, and also works with verbs: えいがを みるとか、かいものを するとか.",
+        "id": "とか memberi beberapa contoh dalam percakapan santai, seperti や, dan juga bisa dipakai dengan kata kerja: えいがを みるとか、かいものを するとか."
+      },
+      "examples": [
+        {
+          "ja": "休《やす》みの ひは 映画《えいが》を 見《み》るとか、買《か》い物《もの》を するとか します。",
+          "translation": {
+            "en": "On days off I do things like watching films and shopping.",
+            "id": "Di hari libur saya menonton film, berbelanja, dan semacamnya."
+          }
+        },
+        {
+          "ja": "りんごとか みかんとか、くだものが すきです。",
+          "translation": {
+            "en": "I like fruit, like apples and mandarins.",
+            "id": "Saya suka buah, seperti apel dan jeruk."
+          }
+        }
+      ],
+      "commonErrors": [
+        {
+          "en": "Using とか in formal writing: use や or など there.",
+          "id": "Memakai とか dalam tulisan resmi: di sana pakai や atau など."
+        }
+      ]
+    }
+  ]
+}

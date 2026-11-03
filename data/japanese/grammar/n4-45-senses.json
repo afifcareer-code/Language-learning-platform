@@ -1,0 +1,142 @@
+{
+  "source": "Original grammar explanations for N4 · Senses and descriptions, written for this project.",
+  "level": "n4",
+  "items": [
+    {
+      "slug": "n4-ga-suru",
+      "pattern": "N が します (おと / におい / あじ / こえ)",
+      "meaning": {
+        "en": "there is a sound / smell / taste of…",
+        "id": "terdengar / tercium / terasa…"
+      },
+      "explanation": {
+        "en": "Sensations take が する: いい においが します, へんな おとが しました, レモンの あじが します.",
+        "id": "Rasa yang ditangkap indra memakai が する: いい においが します, へんな おとが しました, レモンの あじが します."
+      },
+      "examples": [
+        {
+          "ja": "だいどころから いい においが します。",
+          "translation": {
+            "en": "There's a nice smell coming from the kitchen.",
+            "id": "Dari dapur tercium bau harum."
+          }
+        },
+        {
+          "ja": "外《そと》で へんな 音《おと》が しました。",
+          "translation": {
+            "en": "I heard a strange sound outside.",
+            "id": "Di luar terdengar suara aneh."
+          }
+        }
+      ],
+      "commonErrors": [
+        {
+          "en": "Using あります: においが あります is unnatural; say においが します.",
+          "id": "Memakai あります: においが あります tidak wajar; katakan においが します."
+        }
+      ]
+    },
+    {
+      "slug": "n4-ni-mieru",
+      "pattern": "N / な-adj に みえる / い-adj く みえる",
+      "meaning": {
+        "en": "look (like)…, seem…",
+        "id": "kelihatan…, tampak…"
+      },
+      "explanation": {
+        "en": "みえる with に or く says how something looks to you: かれは わかく みえます, あの ひとは せんせいに みえます.",
+        "id": "みえる dengan に atau く menyatakan bagaimana sesuatu tampak bagi Anda: かれは わかく みえます, あの ひとは せんせいに みえます."
+      },
+      "examples": [
+        {
+          "ja": "かれは 年《とし》より わかく 見《み》えます。",
+          "translation": {
+            "en": "He looks younger than his age.",
+            "id": "Dia kelihatan lebih muda dari umurnya."
+          }
+        },
+        {
+          "ja": "この ケーキは ほんものに 見《み》えます。",
+          "translation": {
+            "en": "This cake looks real.",
+            "id": "Kue ini kelihatan seperti sungguhan."
+          }
+        }
+      ],
+      "commonErrors": [
+        {
+          "en": "Using the plain adjective: わかい みえます is wrong; say わかく みえます.",
+          "id": "Memakai kata sifat biasa: わかい みえます salah; katakan わかく みえます."
+        }
+      ]
+    },
+    {
+      "slug": "n4-ni-yotte",
+      "pattern": "N に よって V(passive)",
+      "meaning": {
+        "en": "V-ed by N (creator, inventor)",
+        "id": "di-V oleh N (pencipta, penemu)"
+      },
+      "explanation": {
+        "en": "In passive sentences about works, inventions and discoveries, the maker is marked with に よって instead of に: この てらは 600ねんまえに つくられました.",
+        "id": "Dalam kalimat pasif tentang karya, penemuan, dan temuan, pembuatnya ditandai に よって sebagai pengganti に."
+      },
+      "examples": [
+        {
+          "ja": "この ほんは 有名《ゆうめい》な さっかに よって かかれました。",
+          "translation": {
+            "en": "This book was written by a famous author.",
+            "id": "Buku ini ditulis oleh pengarang terkenal."
+          }
+        },
+        {
+          "ja": "電話《でんわ》は ベルに よって はつめいされました。",
+          "translation": {
+            "en": "The telephone was invented by Bell.",
+            "id": "Telepon ditemukan oleh Bell."
+          }
+        }
+      ],
+      "commonErrors": [
+        {
+          "en": "Using に for a creator: ベルに はつめいされました sounds odd; use に よって.",
+          "id": "Memakai に untuk pencipta: ベルに はつめいされました terdengar aneh; pakai に よって."
+        }
+      ]
+    },
+    {
+      "slug": "n4-tochuu-de",
+      "pattern": "V(dictionary) / N の とちゅうで",
+      "meaning": {
+        "en": "on the way to…, in the middle of…",
+        "id": "di tengah jalan menuju…, di tengah…"
+      },
+      "explanation": {
+        "en": "とちゅうで means 'partway through' a trip or an activity: かえる とちゅうで ぎんこうに よりました, しあいの とちゅうで あめが ふりだしました.",
+        "id": "とちゅうで berarti 'di tengah-tengah' perjalanan atau kegiatan: かえる とちゅうで ぎんこうに よりました, しあいの とちゅうで あめが ふりだしました."
+      },
+      "examples": [
+        {
+          "ja": "会社《かいしゃ》へ 行《い》く とちゅうで ぎんこうに よりました。",
+          "translation": {
+            "en": "I dropped by the bank on the way to work.",
+            "id": "Saya mampir ke bank dalam perjalanan ke kantor."
+          }
+        },
+        {
+          "ja": "しあいの とちゅうで あめが ふりだしました。",
+          "translation": {
+            "en": "It started raining in the middle of the match.",
+            "id": "Di tengah pertandingan, hujan mulai turun."
+          }
+        }
+      ],
+      "commonErrors": [
+        {
+          "en": "Using the past before とちゅう: いった とちゅう is wrong; use the dictionary form.",
+          "id": "Memakai bentuk lampau sebelum とちゅう: いった とちゅう salah; pakai bentuk kamus."
+        }
+      ]
+    }
+  ]
+}

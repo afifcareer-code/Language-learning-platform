@@ -1,0 +1,108 @@
+{
+  "source": "Original grammar explanations for N4 · Efforts and habits, written for this project.",
+  "level": "n4",
+  "items": [
+    {
+      "slug": "n4-you-to-suru",
+      "pattern": "V(volitional) と します",
+      "meaning": {
+        "en": "try to V, be about to V",
+        "id": "mencoba V, hendak V"
+      },
+      "explanation": {
+        "en": "〜ようと する is an attempt or the moment just before an action: ねようと した とき、でんわが なりました. Compare 〜て みる (actually trying it out).",
+        "id": "〜ようと する adalah usaha atau saat tepat sebelum suatu tindakan: ねようと した とき、でんわが なりました. Bandingkan 〜て みる (benar-benar mencobanya)."
+      },
+      "examples": [
+        {
+          "ja": "ねようと した とき、電話《でんわ》が なりました。",
+          "translation": {
+            "en": "Just as I was about to go to sleep, the phone rang.",
+            "id": "Ketika saya hendak tidur, telepon berbunyi."
+          }
+        },
+        {
+          "ja": "毎日《まいにち》 はやく 起《お》きようと して います。",
+          "translation": {
+            "en": "I'm trying to get up early every day.",
+            "id": "Saya berusaha bangun pagi setiap hari."
+          }
+        }
+      ],
+      "commonErrors": [
+        {
+          "en": "Confusing it with 〜て みる: たべて みる is tasting something; たべようと する is trying (and maybe failing) to eat.",
+          "id": "Tertukar dengan 〜て みる: たべて みる berarti mencicipi; たべようと する berarti berusaha makan (dan mungkin gagal)."
+        }
+      ]
+    },
+    {
+      "slug": "n4-te-bakari",
+      "pattern": "V(て) ばかり います / N ばかり",
+      "meaning": {
+        "en": "do nothing but V, always V",
+        "id": "terus-terusan V, hanya V"
+      },
+      "explanation": {
+        "en": "〜て ばかり いる criticises doing the same thing all the time: あそんで ばかり いる. After a noun: あまい ものばかり たべる.",
+        "id": "〜て ばかり いる mengkritik orang yang terus melakukan hal yang sama: あそんで ばかり いる. Setelah kata benda: あまい ものばかり たべる."
+      },
+      "examples": [
+        {
+          "ja": "弟《おとうと》は ゲームを して ばかり います。",
+          "translation": {
+            "en": "My younger brother does nothing but play games.",
+            "id": "Adik laki-laki saya terus-terusan main game."
+          }
+        },
+        {
+          "ja": "あまい ものばかり たべないで ください。",
+          "translation": {
+            "en": "Don't eat nothing but sweet things.",
+            "id": "Jangan makan yang manis-manis saja."
+          }
+        }
+      ],
+      "commonErrors": [
+        {
+          "en": "Confusing it with 〜た ばかり (just did): たべた ばかり means 'have just eaten'.",
+          "id": "Tertukar dengan 〜た ばかり (baru saja): たべた ばかり berarti 'baru saja makan'."
+        }
+      ]
+    },
+    {
+      "slug": "n4-ba-hodo",
+      "pattern": "V(ば) V(dictionary) ほど",
+      "meaning": {
+        "en": "the more…, the more…",
+        "id": "makin…, makin…"
+      },
+      "explanation": {
+        "en": "The same verb or adjective in the ば form and then before ほど says that one thing grows with another: れんしゅうすれば するほど じょうずに なります.",
+        "id": "Kata kerja atau kata sifat yang sama dalam bentuk ば lalu sebelum ほど menyatakan bahwa satu hal bertambah seiring yang lain: れんしゅうすれば するほど じょうずに なります."
+      },
+      "examples": [
+        {
+          "ja": "れんしゅうすれば するほど 上手《じょうず》に なります。",
+          "translation": {
+            "en": "The more you practise, the better you get.",
+            "id": "Makin sering berlatih, makin mahir."
+          }
+        },
+        {
+          "ja": "この ほんは 読《よ》めば よむほど おもしろいです。",
+          "translation": {
+            "en": "The more I read this book, the more interesting it gets.",
+            "id": "Makin dibaca, buku ini makin menarik."
+          }
+        }
+      ],
+      "commonErrors": [
+        {
+          "en": "Using two different verbs: the pattern repeats the same word.",
+          "id": "Memakai dua kata kerja yang berbeda: pola ini mengulang kata yang sama."
+        }
+      ]
+    }
+  ]
+}

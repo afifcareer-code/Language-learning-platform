@@ -1,0 +1,66 @@
+{
+  "source": "Original practice sentences for N4 · Casual Japanese.",
+  "level": "n4",
+  "items": [
+    {
+      "slug": "n4-tte-1",
+      "text": "たなかさん、今日《きょう》 休《やす》むって。",
+      "tokens": ["たなか", "さん", "今日《きょう》", "休《やす》む", "って"],
+      "grammar": "n4-tte",
+      "translation": {
+        "en": "Tanaka says she's off today.",
+        "id": "Katanya Tanaka hari ini libur."
+      }
+    },
+    {
+      "slug": "n4-tte-2",
+      "text": "ゆかたって なんですか。",
+      "tokens": ["ゆかた", "って", "なん", "です", "か"],
+      "grammar": "n4-tte",
+      "translation": {
+        "en": "What's a yukata?",
+        "id": "Yukata itu apa?"
+      }
+    },
+    {
+      "slug": "n4-nai-to-1",
+      "text": "明日《あした》は はやく 起《お》きないと。",
+      "tokens": ["明日《あした》", "は", "はやく", "起《お》きない", "と"],
+      "grammar": "n4-nai-to",
+      "translation": {
+        "en": "I've got to get up early tomorrow.",
+        "id": "Besok aku harus bangun pagi."
+      }
+    },
+    {
+      "slug": "n4-nai-to-2",
+      "text": "くすりを 飲《の》まないと いけません。",
+      "tokens": ["くすり", "を", "飲《の》まない", "と", "いけません"],
+      "grammar": "n4-nai-to",
+      "translation": {
+        "en": "I have to take my medicine.",
+        "id": "Saya harus minum obat."
+      }
+    },
+    {
+      "slug": "n4-cha-dame-1",
+      "text": "ここで あそんじゃ だめですよ。",
+      "tokens": ["ここ", "で", "あそんじゃ", "だめです", "よ"],
+      "grammar": "n4-cha-dame",
+      "translation": {
+        "en": "You mustn't play here.",
+        "id": "Tidak boleh bermain di sini, ya."
+      }
+    },
+    {
+      "slug": "n4-cha-dame-2",
+      "text": "まだ たべちゃ だめ。",
+      "tokens": ["まだ", "たべちゃ", "だめ"],
+      "grammar": "n4-cha-dame",
+      "translation": {
+        "en": "Don't eat it yet.",
+        "id": "Belum boleh dimakan."
+      }
+    }
+  ]
+}

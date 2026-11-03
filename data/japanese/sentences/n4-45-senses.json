@@ -1,0 +1,86 @@
+{
+  "source": "Original practice sentences for N4 · Senses and descriptions.",
+  "level": "n4",
+  "items": [
+    {
+      "slug": "n4-ga-suru-1",
+      "text": "だいどころから いい においが します。",
+      "tokens": ["だいどころ", "から", "いい", "におい", "が", "します"],
+      "grammar": "n4-ga-suru",
+      "translation": {
+        "en": "There's a nice smell coming from the kitchen.",
+        "id": "Dari dapur tercium bau harum."
+      }
+    },
+    {
+      "slug": "n4-ga-suru-2",
+      "text": "外《そと》で へんな 音《おと》が しました。",
+      "tokens": ["外《そと》", "で", "へんな", "音《おと》", "が", "しました"],
+      "grammar": "n4-ga-suru",
+      "translation": {
+        "en": "I heard a strange sound outside.",
+        "id": "Di luar terdengar suara aneh."
+      }
+    },
+    {
+      "slug": "n4-ni-mieru-1",
+      "text": "かれは 年《とし》より わかく 見《み》えます。",
+      "tokens": ["かれ", "は", "年《とし》", "より", "わかく", "見《み》えます"],
+      "grammar": "n4-ni-mieru",
+      "translation": {
+        "en": "He looks younger than his age.",
+        "id": "Dia kelihatan lebih muda dari umurnya."
+      }
+    },
+    {
+      "slug": "n4-ni-mieru-2",
+      "text": "この ケーキは ほんものに 見《み》えます。",
+      "tokens": ["この", "ケーキ", "は", "ほんもの", "に", "見《み》えます"],
+      "grammar": "n4-ni-mieru",
+      "translation": {
+        "en": "This cake looks real.",
+        "id": "Kue ini kelihatan seperti sungguhan."
+      }
+    },
+    {
+      "slug": "n4-ni-yotte-1",
+      "text": "この ほんは 有名《ゆうめい》な さっかに よって かかれました。",
+      "tokens": ["この", "ほん", "は", "有名《ゆうめい》な", "さっか", "に", "よって", "かかれました"],
+      "grammar": "n4-ni-yotte",
+      "translation": {
+        "en": "This book was written by a famous author.",
+        "id": "Buku ini ditulis oleh pengarang terkenal."
+      }
+    },
+    {
+      "slug": "n4-ni-yotte-2",
+      "text": "電話《でんわ》は ベルに よって はつめいされました。",
+      "tokens": ["電話《でんわ》", "は", "ベル", "に", "よって", "はつめいされました"],
+      "grammar": "n4-ni-yotte",
+      "translation": {
+        "en": "The telephone was invented by Bell.",
+        "id": "Telepon ditemukan oleh Bell."
+      }
+    },
+    {
+      "slug": "n4-tochuu-de-1",
+      "text": "会社《かいしゃ》へ 行《い》く とちゅうで ぎんこうに よりました。",
+      "tokens": ["会社《かいしゃ》", "へ", "行《い》く", "とちゅうで", "ぎんこう", "に", "よりました"],
+      "grammar": "n4-tochuu-de",
+      "translation": {
+        "en": "I dropped by the bank on the way to work.",
+        "id": "Saya mampir ke bank dalam perjalanan ke kantor."
+      }
+    },
+    {
+      "slug": "n4-tochuu-de-2",
+      "text": "しあいの とちゅうで あめが ふりだしました。",
+      "tokens": ["しあい", "の", "とちゅうで", "あめ", "が", "ふりだしました"],
+      "grammar": "n4-tochuu-de",
+      "translation": {
+        "en": "It started raining in the middle of the match.",
+        "id": "Di tengah pertandingan, hujan mulai turun."
+      }
+    }
+  ]
+}

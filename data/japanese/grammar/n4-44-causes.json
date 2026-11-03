@@ -1,0 +1,108 @@
+{
+  "source": "Original grammar explanations for N4 · Causes and results, written for this project.",
+  "level": "n4",
+  "items": [
+    {
+      "slug": "n4-okage-de",
+      "pattern": "plain form / N の おかげで",
+      "meaning": {
+        "en": "thanks to…",
+        "id": "berkat…"
+      },
+      "explanation": {
+        "en": "おかげで gives a reason for a good result, with gratitude: せんせいの おかげで ごうかくしました.",
+        "id": "おかげで menyatakan alasan atas hasil yang baik, dengan rasa terima kasih: せんせいの おかげで ごうかくしました."
+      },
+      "examples": [
+        {
+          "ja": "先生《せんせい》の おかげで しけんに ごうかくしました。",
+          "translation": {
+            "en": "Thanks to my teacher, I passed the exam.",
+            "id": "Berkat guru, saya lulus ujian."
+          }
+        },
+        {
+          "ja": "くすりを 飲《の》んだ おかげで よく なりました。",
+          "translation": {
+            "en": "Thanks to the medicine, I got better.",
+            "id": "Berkat minum obat, saya membaik."
+          }
+        }
+      ],
+      "commonErrors": [
+        {
+          "en": "Using おかげで for a bad result: for blame use せいで.",
+          "id": "Memakai おかげで untuk hasil buruk: untuk menyalahkan pakai せいで."
+        }
+      ]
+    },
+    {
+      "slug": "n4-sei-de",
+      "pattern": "plain form / N の せいで",
+      "meaning": {
+        "en": "because of… (blame)",
+        "id": "gara-gara…"
+      },
+      "explanation": {
+        "en": "せいで gives the cause of a bad result and puts the blame on it: あめの せいで しあいが ちゅうしに なりました.",
+        "id": "せいで menyatakan penyebab hasil yang buruk dan menyalahkannya: あめの せいで しあいが ちゅうしに なりました."
+      },
+      "examples": [
+        {
+          "ja": "あめの せいで しあいが ちゅうしに なりました。",
+          "translation": {
+            "en": "Because of the rain, the match was cancelled.",
+            "id": "Gara-gara hujan, pertandingannya dibatalkan."
+          }
+        },
+        {
+          "ja": "ねぼうした せいで でんしゃに おくれました。",
+          "translation": {
+            "en": "I missed the train because I overslept.",
+            "id": "Gara-gara bangun kesiangan, saya ketinggalan kereta."
+          }
+        }
+      ],
+      "commonErrors": [
+        {
+          "en": "Using せいで to thank someone: for a good result use おかげで.",
+          "id": "Memakai せいで untuk berterima kasih: untuk hasil baik pakai おかげで."
+        }
+      ]
+    },
+    {
+      "slug": "n4-tara-discovery",
+      "pattern": "V(た)ら、… V(た)",
+      "meaning": {
+        "en": "when I V-ed, (I found that)…",
+        "id": "ketika saya V, ternyata…"
+      },
+      "explanation": {
+        "en": "〜たら followed by a past sentence describes what you found or what happened after you did something: まどを あけたら、ゆきが ふって いました.",
+        "id": "〜たら diikuti kalimat lampau menggambarkan apa yang Anda temukan atau yang terjadi setelah Anda melakukan sesuatu: まどを あけたら、ゆきが ふって いました."
+      },
+      "examples": [
+        {
+          "ja": "まどを 開《あ》けたら、ゆきが ふって いました。",
+          "translation": {
+            "en": "When I opened the window, it was snowing.",
+            "id": "Ketika saya membuka jendela, ternyata salju sedang turun."
+          }
+        },
+        {
+          "ja": "駅《えき》に ついたら、電車《でんしゃ》は もう 出《で》て いました。",
+          "translation": {
+            "en": "When I got to the station, the train had already left.",
+            "id": "Ketika saya tiba di stasiun, ternyata keretanya sudah berangkat."
+          }
+        }
+      ],
+      "commonErrors": [
+        {
+          "en": "Using it for your own planned next action: for 'after V-ing, I did…' with intent, use 〜て から.",
+          "id": "Memakainya untuk tindakan berikutnya yang Anda rencanakan: untuk 'setelah V, saya…' dengan sengaja, pakai 〜て から."
+        }
+      ]
+    }
+  ]
+}
