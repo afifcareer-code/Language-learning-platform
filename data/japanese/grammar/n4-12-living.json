@@ -1,0 +1,74 @@
+{
+  "source": "Original grammar explanations for N4 · Living in Japan, written for this project.",
+  "level": "n4",
+  "items": [
+    {
+      "slug": "n4-mama",
+      "pattern": "V(た) / N の まま",
+      "meaning": {
+        "en": "leaving it as it is, unchanged",
+        "id": "dengan tetap…, dibiarkan…"
+      },
+      "explanation": {
+        "en": "まま means a state does not change while something else happens: でんきを つけた まま ねました (went to sleep with the light on). After a noun use の: くつの まま.",
+        "id": "まま berarti suatu keadaan tidak berubah sementara hal lain terjadi: でんきを つけた まま ねました (tidur dengan lampu tetap menyala). Setelah kata benda pakai の: くつの まま."
+      },
+      "examples": [
+        {
+          "ja": "でんきを つけた まま ねて しまいました。",
+          "translation": {
+            "en": "I fell asleep with the light on.",
+            "id": "Saya ketiduran dengan lampu tetap menyala."
+          }
+        },
+        {
+          "ja": "くつの まま へやに はいらないで ください。",
+          "translation": {
+            "en": "Please don't come into the room with your shoes on.",
+            "id": "Tolong jangan masuk kamar dengan tetap memakai sepatu."
+          }
+        }
+      ],
+      "commonErrors": [
+        {
+          "en": "Using the dictionary form for a finished state: つける まま is wrong; say つけた まま.",
+          "id": "Memakai bentuk kamus untuk keadaan yang sudah terjadi: つける まま salah; katakan つけた まま."
+        }
+      ]
+    },
+    {
+      "slug": "n4-sugiru",
+      "pattern": "V(ます stem) / adj stem + すぎる",
+      "meaning": {
+        "en": "too much, too A",
+        "id": "terlalu…"
+      },
+      "explanation": {
+        "en": "すぎる after the ます stem means doing too much: たべすぎました. After an adjective stem it means 'too A': たかすぎる, しずかすぎる.",
+        "id": "すぎる setelah bentuk ます tanpa ます berarti melakukan secara berlebihan: たべすぎました. Setelah kata sifat tanpa akhiran berarti 'terlalu A': たかすぎる, しずかすぎる."
+      },
+      "examples": [
+        {
+          "ja": "きのうは のみすぎました。",
+          "translation": {
+            "en": "I drank too much yesterday.",
+            "id": "Kemarin saya terlalu banyak minum."
+          }
+        },
+        {
+          "ja": "この へやは せますぎて つかいにくいです。",
+          "translation": {
+            "en": "This room is too small and hard to use.",
+            "id": "Kamar ini terlalu sempit sehingga sulit dipakai."
+          }
+        }
+      ],
+      "commonErrors": [
+        {
+          "en": "Keeping い: たかいすぎる is wrong; say たかすぎる.",
+          "id": "Tetap memakai い: たかいすぎる salah; katakan たかすぎる."
+        }
+      ]
+    }
+  ]
+}

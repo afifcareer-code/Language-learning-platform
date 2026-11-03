@@ -1,0 +1,236 @@
+{
+  "source": "N4 · Talking it over: words from the JLPT N4 list by J. Waller (tanos.co.uk, CC BY) as compiled in open-anki-jlpt-decks (MIT). Meanings written for this project.",
+  "level": "n4",
+  "items": [
+    {
+      "kana": "いっぱい",
+      "kanji": "一杯",
+      "romaji": "ippai",
+      "partOfSpeech": "adverb",
+      "meaning": {
+        "en": "full; a cupful",
+        "id": "penuh; secangkir"
+      }
+    },
+    {
+      "kana": "あんな",
+      "romaji": "anna",
+      "partOfSpeech": "adjective",
+      "meaning": {
+        "en": "that kind of",
+        "id": "seperti itu"
+      }
+    },
+    {
+      "kana": "たとえば",
+      "kanji": "例えば",
+      "romaji": "tatoeba",
+      "partOfSpeech": "adverb",
+      "meaning": {
+        "en": "for example",
+        "id": "misalnya"
+      }
+    },
+    {
+      "kana": "なかなか",
+      "kanji": "中々",
+      "romaji": "nakanaka",
+      "partOfSpeech": "adverb",
+      "meaning": {
+        "en": "quite, considerably",
+        "id": "cukup, lumayan"
+      }
+    },
+    {
+      "kana": "ずいぶん",
+      "kanji": "随分",
+      "romaji": "zuibun",
+      "partOfSpeech": "adverb",
+      "meaning": {
+        "en": "very, quite a lot",
+        "id": "sangat, cukup banyak"
+      }
+    },
+    {
+      "kana": "とくに",
+      "kanji": "特に",
+      "romaji": "tokuni",
+      "partOfSpeech": "adverb",
+      "meaning": {
+        "en": "especially",
+        "id": "terutama"
+      }
+    },
+    {
+      "kana": "こう",
+      "romaji": "kou",
+      "partOfSpeech": "adverb",
+      "meaning": {
+        "en": "like this",
+        "id": "seperti ini"
+      }
+    },
+    {
+      "kana": "ぜひ",
+      "kanji": "是非",
+      "romaji": "zehi",
+      "partOfSpeech": "adverb",
+      "meaning": {
+        "en": "by all means",
+        "id": "bagaimanapun juga, sangat (berharap)"
+      }
+    },
+    {
+      "kana": "きっと",
+      "romaji": "kitto",
+      "partOfSpeech": "adverb",
+      "meaning": {
+        "en": "surely",
+        "id": "pasti"
+      }
+    },
+    {
+      "kana": "まず",
+      "romaji": "mazu",
+      "partOfSpeech": "adverb",
+      "meaning": {
+        "en": "first of all",
+        "id": "pertama-tama"
+      }
+    },
+    {
+      "kana": "だいたい",
+      "kanji": "大体",
+      "romaji": "daitai",
+      "partOfSpeech": "adverb",
+      "meaning": {
+        "en": "mostly, about",
+        "id": "kira-kira, pada umumnya"
+      }
+    },
+    {
+      "kana": "それほど",
+      "romaji": "sorehodo",
+      "partOfSpeech": "adverb",
+      "meaning": {
+        "en": "not so much",
+        "id": "tidak sebegitu"
+      }
+    },
+    {
+      "kana": "それで",
+      "romaji": "sorede",
+      "partOfSpeech": "expression",
+      "meaning": {
+        "en": "and so, therefore",
+        "id": "lalu, karena itu"
+      }
+    },
+    {
+      "kana": "そんなに",
+      "romaji": "sonnani",
+      "partOfSpeech": "adverb",
+      "meaning": {
+        "en": "that much",
+        "id": "sebegitu, begitu"
+      }
+    },
+    {
+      "kana": "わけ",
+      "kanji": "訳",
+      "romaji": "wake",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "reason, meaning",
+        "id": "alasan, maksud"
+      }
+    },
+    {
+      "kana": "なるほど",
+      "romaji": "naruhodo",
+      "partOfSpeech": "expression",
+      "meaning": {
+        "en": "I see",
+        "id": "oh begitu"
+      }
+    },
+    {
+      "kana": "あ",
+      "romaji": "a",
+      "partOfSpeech": "expression",
+      "meaning": {
+        "en": "ah, oh",
+        "id": "ah"
+      }
+    },
+    {
+      "kana": "もっとも",
+      "kanji": "最も",
+      "romaji": "mottomo",
+      "partOfSpeech": "adverb",
+      "meaning": {
+        "en": "the most",
+        "id": "paling"
+      }
+    },
+    {
+      "kana": "よう",
+      "kanji": "様",
+      "romaji": "you",
+      "homonym": 2,
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "way, manner",
+        "id": "cara, seperti"
+      }
+    },
+    {
+      "kana": "しかた",
+      "kanji": "仕方",
+      "romaji": "shikata",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "way (of doing)",
+        "id": "cara (melakukan)"
+      }
+    },
+    {
+      "kana": "けれども",
+      "romaji": "keredomo",
+      "partOfSpeech": "expression",
+      "meaning": {
+        "en": "but, although",
+        "id": "tetapi, walaupun"
+      }
+    },
+    {
+      "kana": "ぜんぜん",
+      "kanji": "全然",
+      "romaji": "zenzen",
+      "partOfSpeech": "adverb",
+      "meaning": {
+        "en": "not at all (with negative)",
+        "id": "sama sekali (tidak)"
+      }
+    },
+    {
+      "kana": "タイプ",
+      "romaji": "taipu",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "type",
+        "id": "tipe"
+      }
+    },
+    {
+      "kana": "だいぶ",
+      "kanji": "大分",
+      "romaji": "daibu",
+      "partOfSpeech": "adverb",
+      "meaning": {
+        "en": "considerably",
+        "id": "cukup banyak, jauh"
+      }
+    }
+  ]
+}

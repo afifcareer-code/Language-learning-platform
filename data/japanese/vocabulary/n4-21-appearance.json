@@ -1,0 +1,182 @@
+{
+  "source": "N4 · Clothes and appearance: words from the JLPT N4 list by J. Waller (tanos.co.uk, CC BY) as compiled in open-anki-jlpt-decks (MIT). Meanings written for this project.",
+  "level": "n4",
+  "items": [
+    {
+      "kana": "やわらかい",
+      "kanji": "柔らかい",
+      "romaji": "yawarakai",
+      "partOfSpeech": "adjective",
+      "meaning": {
+        "en": "soft",
+        "id": "lembut, empuk"
+      }
+    },
+    {
+      "kana": "ふくざつ",
+      "kanji": "複雑",
+      "romaji": "fukuzatsu",
+      "partOfSpeech": "adjective",
+      "meaning": {
+        "en": "complicated",
+        "id": "rumit"
+      }
+    },
+    {
+      "kana": "きぬ",
+      "kanji": "絹",
+      "romaji": "kinu",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "silk",
+        "id": "sutra"
+      }
+    },
+    {
+      "kana": "ふかい",
+      "kanji": "深い",
+      "romaji": "fukai",
+      "partOfSpeech": "adjective",
+      "meaning": {
+        "en": "deep",
+        "id": "dalam"
+      }
+    },
+    {
+      "kana": "あさい",
+      "kanji": "浅い",
+      "romaji": "asai",
+      "partOfSpeech": "adjective",
+      "meaning": {
+        "en": "shallow",
+        "id": "dangkal"
+      }
+    },
+    {
+      "kana": "オーバー",
+      "romaji": "oobaa",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "overcoat; exaggerated",
+        "id": "mantel; berlebihan"
+      }
+    },
+    {
+      "kana": "こまかい",
+      "kanji": "細かい",
+      "romaji": "komakai",
+      "partOfSpeech": "adjective",
+      "meaning": {
+        "en": "fine, small, detailed",
+        "id": "halus, kecil, rinci"
+      }
+    },
+    {
+      "kana": "かたち",
+      "kanji": "形",
+      "romaji": "katachi",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "shape",
+        "id": "bentuk"
+      }
+    },
+    {
+      "kana": "てぶくろ",
+      "kanji": "手袋",
+      "romaji": "tebukuro",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "gloves",
+        "id": "sarung tangan"
+      }
+    },
+    {
+      "kana": "サンダル",
+      "romaji": "sandaru",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "sandals",
+        "id": "sandal"
+      }
+    },
+    {
+      "kana": "したぎ",
+      "kanji": "下着",
+      "romaji": "shitagi",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "underwear",
+        "id": "pakaian dalam"
+      }
+    },
+    {
+      "kana": "かたい",
+      "kanji": "固い",
+      "romaji": "katai",
+      "partOfSpeech": "adjective",
+      "meaning": {
+        "en": "hard, firm",
+        "id": "keras, kokoh"
+      }
+    },
+    {
+      "kana": "スーツ",
+      "romaji": "suutsu",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "suit",
+        "id": "setelan jas"
+      }
+    },
+    {
+      "kana": "ゆびわ",
+      "kanji": "指輪",
+      "romaji": "yubiwa",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "ring (for a finger)",
+        "id": "cincin"
+      }
+    },
+    {
+      "kana": "かっこう",
+      "kanji": "格好",
+      "romaji": "kakkou",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "appearance, look",
+        "id": "penampilan"
+      }
+    },
+    {
+      "kana": "アクセサリー",
+      "romaji": "akusesarii",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "accessory",
+        "id": "aksesori"
+      }
+    },
+    {
+      "kana": "いと",
+      "kanji": "糸",
+      "romaji": "ito",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "thread",
+        "id": "benang"
+      }
+    },
+    {
+      "kana": "もめん",
+      "kanji": "木綿",
+      "romaji": "momen",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "cotton",
+        "id": "katun"
+      }
+    }
+  ]
+}

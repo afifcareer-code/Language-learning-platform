@@ -1,0 +1,215 @@
+{
+  "source": "N4 · At the hospital: words from the JLPT N4 list by J. Waller (tanos.co.uk, CC BY) as compiled in open-anki-jlpt-decks (MIT). Meanings written for this project.",
+  "level": "n4",
+  "items": [
+    {
+      "kana": "ちから",
+      "kanji": "力",
+      "romaji": "chikara",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "strength, power",
+        "id": "tenaga, kekuatan"
+      }
+    },
+    {
+      "kana": "やせる",
+      "kanji": "痩せる",
+      "romaji": "yaseru",
+      "partOfSpeech": "verb",
+      "meaning": {
+        "en": "to lose weight",
+        "id": "menjadi kurus"
+      }
+    },
+    {
+      "kana": "はいしゃ",
+      "kanji": "歯医者",
+      "romaji": "haisha",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "dentist",
+        "id": "dokter gigi"
+      }
+    },
+    {
+      "kana": "なおる",
+      "kanji": "治る",
+      "romaji": "naoru",
+      "partOfSpeech": "verb",
+      "meaning": {
+        "en": "to get better (from illness)",
+        "id": "sembuh"
+      }
+    },
+    {
+      "kana": "けが",
+      "romaji": "kega",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "injury",
+        "id": "luka, cedera"
+      }
+    },
+    {
+      "kana": "のど",
+      "kanji": "喉",
+      "romaji": "nodo",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "throat",
+        "id": "tenggorokan"
+      }
+    },
+    {
+      "kana": "ち",
+      "kanji": "血",
+      "romaji": "chi",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "blood",
+        "id": "darah"
+      }
+    },
+    {
+      "kana": "け",
+      "kanji": "毛",
+      "romaji": "ke",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "hair, fur",
+        "id": "bulu, rambut"
+      }
+    },
+    {
+      "kana": "ぐあい",
+      "kanji": "具合",
+      "romaji": "guai",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "condition, state (of health)",
+        "id": "keadaan, kondisi (kesehatan)"
+      }
+    },
+    {
+      "kana": "かみ",
+      "kanji": "髪",
+      "romaji": "kami",
+      "homonym": 2,
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "hair (on the head)",
+        "id": "rambut"
+      }
+    },
+    {
+      "kana": "うで",
+      "kanji": "腕",
+      "romaji": "ude",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "arm",
+        "id": "lengan"
+      }
+    },
+    {
+      "kana": "おみまい",
+      "kanji": "お見舞い",
+      "romaji": "omimai",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "visit to someone who is ill",
+        "id": "menjenguk orang sakit"
+      }
+    },
+    {
+      "kana": "たいいん",
+      "kanji": "退院",
+      "romaji": "taiin",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "leaving hospital",
+        "id": "keluar dari rumah sakit"
+      }
+    },
+    {
+      "kana": "ふとる",
+      "kanji": "太る",
+      "romaji": "futoru",
+      "partOfSpeech": "verb",
+      "meaning": {
+        "en": "to put on weight",
+        "id": "menjadi gemuk"
+      }
+    },
+    {
+      "kana": "ちゅうしゃ",
+      "kanji": "注射",
+      "romaji": "chuusha",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "injection",
+        "id": "suntikan"
+      }
+    },
+    {
+      "kana": "せなか",
+      "kanji": "背中",
+      "romaji": "senaka",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "back (of the body)",
+        "id": "punggung"
+      }
+    },
+    {
+      "kana": "くび",
+      "kanji": "首",
+      "romaji": "kubi",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "neck",
+        "id": "leher"
+      }
+    },
+    {
+      "kana": "ひげ",
+      "romaji": "hige",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "beard, moustache",
+        "id": "jenggot, kumis"
+      }
+    },
+    {
+      "kana": "にゅういん",
+      "kanji": "入院",
+      "romaji": "nyuuin",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "going into hospital",
+        "id": "masuk rumah sakit (rawat inap)"
+      }
+    },
+    {
+      "kana": "かんごし",
+      "kanji": "看護師",
+      "romaji": "kangoshi",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "nurse",
+        "id": "perawat"
+      }
+    },
+    {
+      "kana": "ゆび",
+      "kanji": "指",
+      "romaji": "yubi",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "finger",
+        "id": "jari"
+      }
+    }
+  ]
+}

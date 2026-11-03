@@ -1,0 +1,174 @@
+{
+  "source": "N4 · Getting the house ready: words from the JLPT N4 list by J. Waller (tanos.co.uk, CC BY) as compiled in open-anki-jlpt-decks (MIT). Meanings written for this project.",
+  "level": "n4",
+  "items": [
+    {
+      "kana": "ごみ",
+      "romaji": "gomi",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "rubbish, garbage",
+        "id": "sampah"
+      }
+    },
+    {
+      "kana": "たてる",
+      "kanji": "建てる",
+      "romaji": "tateru",
+      "partOfSpeech": "verb",
+      "meaning": {
+        "en": "to build",
+        "id": "membangun (rumah)"
+      }
+    },
+    {
+      "kana": "ふとん",
+      "kanji": "布団",
+      "romaji": "futon",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "futon (Japanese bedding)",
+        "id": "futon (kasur Jepang)"
+      }
+    },
+    {
+      "kana": "けん",
+      "kanji": "軒",
+      "romaji": "ken",
+      "affix": "suffix",
+      "partOfSpeech": "suffix",
+      "meaning": {
+        "en": "houses (counter)",
+        "id": "rumah (satuan)"
+      }
+    },
+    {
+      "kana": "ガラス",
+      "romaji": "garasu",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "glass (material)",
+        "id": "kaca"
+      }
+    },
+    {
+      "kana": "ガス",
+      "romaji": "gasu",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "gas",
+        "id": "gas"
+      }
+    },
+    {
+      "kana": "だて",
+      "kanji": "建て",
+      "romaji": "date",
+      "affix": "suffix",
+      "partOfSpeech": "suffix",
+      "meaning": {
+        "en": "-storey (building)",
+        "id": "bertingkat (akhiran)"
+      }
+    },
+    {
+      "kana": "たたみ",
+      "kanji": "畳",
+      "romaji": "tatami",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "tatami mat",
+        "id": "tikar tatami"
+      }
+    },
+    {
+      "kana": "こしょう",
+      "kanji": "故障",
+      "romaji": "koshou",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "breakdown (of a machine)",
+        "id": "kerusakan (mesin)"
+      }
+    },
+    {
+      "kana": "じゅうしょ",
+      "kanji": "住所",
+      "romaji": "juusho",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "address",
+        "id": "alamat"
+      }
+    },
+    {
+      "kana": "ねぼう",
+      "kanji": "寝坊",
+      "romaji": "nebou",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "oversleeping",
+        "id": "bangun kesiangan"
+      }
+    },
+    {
+      "kana": "すてる",
+      "kanji": "捨てる",
+      "romaji": "suteru",
+      "partOfSpeech": "verb",
+      "meaning": {
+        "en": "to throw away",
+        "id": "membuang"
+      }
+    },
+    {
+      "kana": "かべ",
+      "kanji": "壁",
+      "romaji": "kabe",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "wall",
+        "id": "dinding"
+      }
+    },
+    {
+      "kana": "すいどう",
+      "kanji": "水道",
+      "romaji": "suidou",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "water supply",
+        "id": "saluran air (ledeng)"
+      }
+    },
+    {
+      "kana": "ベル",
+      "romaji": "beru",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "bell",
+        "id": "bel"
+      }
+    },
+    {
+      "kana": "げしゅく",
+      "kanji": "下宿",
+      "romaji": "geshuku",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "boarding house, lodging",
+        "id": "kos, indekos"
+      }
+    },
+    {
+      "kana": "かがみ",
+      "kanji": "鏡",
+      "romaji": "kagami",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "mirror",
+        "id": "cermin"
+      }
+    }
+  ]
+}

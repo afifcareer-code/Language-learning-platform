@@ -1,0 +1,46 @@
+{
+  "source": "Original practice sentences for N4 · Feelings.",
+  "level": "n4",
+  "items": [
+    {
+      "slug": "n4-temo-1",
+      "text": "あめが ふっても しあいは あります。",
+      "tokens": ["あめ", "が", "ふって", "も", "しあい", "は", "あります"],
+      "grammar": "n4-temo",
+      "translation": {
+        "en": "Even if it rains, the match will go ahead.",
+        "id": "Walaupun hujan, pertandingan tetap ada."
+      }
+    },
+    {
+      "slug": "n4-temo-2",
+      "text": "いくら かんがえても わかりません。",
+      "tokens": ["いくら", "かんがえて", "も", "わかりません"],
+      "grammar": "n4-temo",
+      "translation": {
+        "en": "However much I think about it, I can't work it out.",
+        "id": "Sekeras apa pun saya pikirkan, tetap tidak mengerti."
+      }
+    },
+    {
+      "slug": "n4-ba-yokatta-1",
+      "text": "もっと べんきょうすれば よかったです。",
+      "tokens": ["もっと", "べんきょうすれば", "よかったです"],
+      "grammar": "n4-ba-yokatta",
+      "translation": {
+        "en": "I should have studied more.",
+        "id": "Seharusnya saya belajar lebih banyak."
+      }
+    },
+    {
+      "slug": "n4-ba-yokatta-2",
+      "text": "あんな ことを いわなければ よかったです。",
+      "tokens": ["あんな", "こと", "を", "いわなければ", "よかったです"],
+      "grammar": "n4-ba-yokatta",
+      "translation": {
+        "en": "I wish I hadn't said that.",
+        "id": "Seharusnya saya tidak mengatakan hal itu."
+      }
+    }
+  ]
+}

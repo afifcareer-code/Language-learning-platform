@@ -1,0 +1,46 @@
+{
+  "source": "Original practice sentences for N4 · Good habits.",
+  "level": "n4",
+  "items": [
+    {
+      "slug": "n4-you-ni-suru-1",
+      "text": "まいにち やさいを たべるように して います。",
+      "tokens": ["まいにち", "やさい", "を", "たべる", "ように", "して", "います"],
+      "grammar": "n4-you-ni-suru",
+      "translation": {
+        "en": "I make a point of eating vegetables every day.",
+        "id": "Saya berusaha makan sayur setiap hari."
+      }
+    },
+    {
+      "slug": "n4-you-ni-suru-2",
+      "text": "よる おそく ねないように して います。",
+      "tokens": ["よる", "おそく", "ねない", "ように", "して", "います"],
+      "grammar": "n4-you-ni-suru",
+      "translation": {
+        "en": "I try not to go to bed late.",
+        "id": "Saya berusaha tidak tidur larut malam."
+      }
+    },
+    {
+      "slug": "n4-you-ni-purpose-1",
+      "text": "わすれないように てちょうに かきます。",
+      "tokens": ["わすれない", "ように", "てちょう", "に", "かきます"],
+      "grammar": "n4-you-ni-purpose",
+      "translation": {
+        "en": "I'll write it in my planner so I don't forget.",
+        "id": "Saya menulisnya di agenda supaya tidak lupa."
+      }
+    },
+    {
+      "slug": "n4-you-ni-purpose-2",
+      "text": "よく きこえるように まえの せきに すわりました。",
+      "tokens": ["よく", "きこえる", "ように", "まえ", "の", "せき", "に", "すわりました"],
+      "grammar": "n4-you-ni-purpose",
+      "translation": {
+        "en": "I sat in the front seat so that I could hear well.",
+        "id": "Saya duduk di kursi depan supaya bisa mendengar dengan jelas."
+      }
+    }
+  ]
+}

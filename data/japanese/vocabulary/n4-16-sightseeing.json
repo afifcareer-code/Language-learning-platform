@@ -1,0 +1,228 @@
+{
+  "source": "N4 · Travel advice: words from the JLPT N4 list by J. Waller (tanos.co.uk, CC BY) as compiled in open-anki-jlpt-decks (MIT). Meanings written for this project.",
+  "level": "n4",
+  "items": [
+    {
+      "kana": "みなと",
+      "kanji": "港",
+      "romaji": "minato",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "port, harbour",
+        "id": "pelabuhan"
+      }
+    },
+    {
+      "kana": "とおり",
+      "kanji": "通り",
+      "romaji": "toori",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "street, avenue",
+        "id": "jalan (raya)"
+      }
+    },
+    {
+      "kana": "し",
+      "kanji": "市",
+      "romaji": "shi",
+      "homonym": 2,
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "city",
+        "id": "kota"
+      }
+    },
+    {
+      "kana": "と",
+      "kanji": "都",
+      "romaji": "to",
+      "homonym": 2,
+      "partOfSpeech": "suffix",
+      "meaning": {
+        "en": "metropolis (Tokyo)",
+        "id": "metropolitan (Tokyo)"
+      }
+    },
+    {
+      "kana": "とっきゅう",
+      "kanji": "特急",
+      "romaji": "tokkyuu",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "limited express (train)",
+        "id": "kereta ekspres terbatas"
+      }
+    },
+    {
+      "kana": "かえり",
+      "kanji": "帰り",
+      "romaji": "kaeri",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "return, way back",
+        "id": "kepulangan, perjalanan pulang"
+      }
+    },
+    {
+      "kana": "ちゅうしゃじょう",
+      "kanji": "駐車場",
+      "romaji": "chuushajou",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "car park",
+        "id": "tempat parkir"
+      }
+    },
+    {
+      "kana": "おりる",
+      "kanji": "下りる",
+      "romaji": "oriru",
+      "homonym": 2,
+      "partOfSpeech": "verb",
+      "meaning": {
+        "en": "to go down, to get off",
+        "id": "turun"
+      }
+    },
+    {
+      "kana": "せき",
+      "kanji": "席",
+      "romaji": "seki",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "seat",
+        "id": "tempat duduk"
+      }
+    },
+    {
+      "kana": "しゅっぱつ",
+      "kanji": "出発",
+      "romaji": "shuppatsu",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "departure",
+        "id": "keberangkatan"
+      }
+    },
+    {
+      "kana": "スーパー",
+      "romaji": "suupaa",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "supermarket",
+        "id": "supermarket"
+      }
+    },
+    {
+      "kana": "むかう",
+      "kanji": "向かう",
+      "romaji": "mukau",
+      "partOfSpeech": "verb",
+      "meaning": {
+        "en": "to head for, to face",
+        "id": "menuju, menghadap"
+      }
+    },
+    {
+      "kana": "うつる",
+      "kanji": "移る",
+      "romaji": "utsuru",
+      "partOfSpeech": "verb",
+      "meaning": {
+        "en": "to move (to another place)",
+        "id": "pindah"
+      }
+    },
+    {
+      "kana": "スーツケース",
+      "romaji": "suutsukeesu",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "suitcase",
+        "id": "koper"
+      }
+    },
+    {
+      "kana": "ふね",
+      "kanji": "舟",
+      "romaji": "fune",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "boat",
+        "id": "perahu"
+      }
+    },
+    {
+      "kana": "いそぐ",
+      "kanji": "急ぐ",
+      "romaji": "isogu",
+      "partOfSpeech": "verb",
+      "meaning": {
+        "en": "to hurry",
+        "id": "bergegas"
+      }
+    },
+    {
+      "kana": "もどる",
+      "kanji": "戻る",
+      "romaji": "modoru",
+      "partOfSpeech": "verb",
+      "meaning": {
+        "en": "to go back, to return",
+        "id": "kembali"
+      }
+    },
+    {
+      "kana": "たずねる",
+      "kanji": "訪ねる",
+      "romaji": "tazuneru",
+      "homonym": 2,
+      "partOfSpeech": "verb",
+      "meaning": {
+        "en": "to visit",
+        "id": "mengunjungi"
+      }
+    },
+    {
+      "kana": "とちゅう",
+      "kanji": "途中",
+      "romaji": "tochuu",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "on the way",
+        "id": "di tengah jalan"
+      }
+    },
+    {
+      "kana": "のりかえる",
+      "kanji": "乗り換える",
+      "romaji": "norikaeru",
+      "partOfSpeech": "verb",
+      "meaning": {
+        "en": "to change (trains)",
+        "id": "berganti (kereta)"
+      }
+    },
+    {
+      "kana": "ちょう",
+      "kanji": "町",
+      "romaji": "chou",
+      "affix": "suffix",
+      "partOfSpeech": "suffix",
+      "meaning": {
+        "en": "town (suffix in place names)",
+        "id": "kelurahan, kota kecil (akhiran)"
+      }
+    },
+    {
+      "kana": "ガソリンスタンド",
+      "romaji": "gasorinsutando",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "petrol station",
+        "id": "pom bensin"
+      }
+    }
+  ]
+}

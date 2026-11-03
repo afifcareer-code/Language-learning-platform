@@ -1,0 +1,209 @@
+{
+  "source": "N4 · Society and the news: words from the JLPT N4 list by J. Waller (tanos.co.uk, CC BY) as compiled in open-anki-jlpt-decks (MIT). Meanings written for this project.",
+  "level": "n4",
+  "items": [
+    {
+      "kana": "かい",
+      "kanji": "会",
+      "romaji": "kai",
+      "affix": "suffix",
+      "homonym": 3,
+      "partOfSpeech": "suffix",
+      "meaning": {
+        "en": "meeting, gathering (suffix)",
+        "id": "pertemuan, perkumpulan (akhiran)"
+      }
+    },
+    {
+      "kana": "アフリカ",
+      "romaji": "afurika",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "Africa",
+        "id": "Afrika"
+      }
+    },
+    {
+      "kana": "どろぼう",
+      "kanji": "泥棒",
+      "romaji": "dorobou",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "thief, burglar",
+        "id": "pencuri"
+      }
+    },
+    {
+      "kana": "せい",
+      "kanji": "製",
+      "romaji": "sei",
+      "affix": "suffix",
+      "homonym": 2,
+      "partOfSpeech": "suffix",
+      "meaning": {
+        "en": "made in, made of (suffix)",
+        "id": "buatan (akhiran)"
+      }
+    },
+    {
+      "kana": "じんこう",
+      "kanji": "人口",
+      "romaji": "jinkou",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "population",
+        "id": "jumlah penduduk"
+      }
+    },
+    {
+      "kana": "いのる",
+      "kanji": "祈る",
+      "romaji": "inoru",
+      "partOfSpeech": "verb",
+      "meaning": {
+        "en": "to pray",
+        "id": "berdoa"
+      }
+    },
+    {
+      "kana": "さかん",
+      "kanji": "盛ん",
+      "romaji": "sakan",
+      "partOfSpeech": "adjective",
+      "meaning": {
+        "en": "thriving, popular, active",
+        "id": "ramai, populer, giat"
+      }
+    },
+    {
+      "kana": "せいよう",
+      "kanji": "西洋",
+      "romaji": "seiyou",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "the West",
+        "id": "dunia Barat"
+      }
+    },
+    {
+      "kana": "じだい",
+      "kanji": "時代",
+      "romaji": "jidai",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "era, period",
+        "id": "zaman, era"
+      }
+    },
+    {
+      "kana": "しき",
+      "kanji": "式",
+      "romaji": "shiki",
+      "affix": "suffix",
+      "partOfSpeech": "suffix",
+      "meaning": {
+        "en": "ceremony; style (suffix)",
+        "id": "upacara; gaya (akhiran)"
+      }
+    },
+    {
+      "kana": "りよう",
+      "kanji": "利用",
+      "romaji": "riyou",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "use",
+        "id": "pemanfaatan, penggunaan"
+      }
+    },
+    {
+      "kana": "せかい",
+      "kanji": "世界",
+      "romaji": "sekai",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "world",
+        "id": "dunia"
+      }
+    },
+    {
+      "kana": "せんそう",
+      "kanji": "戦争",
+      "romaji": "sensou",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "war",
+        "id": "perang"
+      }
+    },
+    {
+      "kana": "げんいん",
+      "kanji": "原因",
+      "romaji": "gen'in",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "cause",
+        "id": "penyebab"
+      }
+    },
+    {
+      "kana": "ぎじゅつ",
+      "kanji": "技術",
+      "romaji": "gijutsu",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "technology, skill",
+        "id": "teknologi, keterampilan"
+      }
+    },
+    {
+      "kana": "ほうりつ",
+      "kanji": "法律",
+      "romaji": "houritsu",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "law",
+        "id": "hukum, undang-undang"
+      }
+    },
+    {
+      "kana": "ぼうえき",
+      "kanji": "貿易",
+      "romaji": "boueki",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "trade",
+        "id": "perdagangan"
+      }
+    },
+    {
+      "kana": "きょうかい",
+      "kanji": "教会",
+      "romaji": "kyoukai",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "church",
+        "id": "gereja"
+      }
+    },
+    {
+      "kana": "アメリカ",
+      "romaji": "amerika",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "America",
+        "id": "Amerika"
+      }
+    },
+    {
+      "kana": "せいさん",
+      "kanji": "生産",
+      "romaji": "seisan",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "production",
+        "id": "produksi"
+      }
+    }
+  ]
+}

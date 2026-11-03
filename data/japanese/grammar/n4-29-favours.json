@@ -1,0 +1,108 @@
+{
+  "source": "Original grammar explanations for N4 · Doing favours, written for this project.",
+  "level": "n4",
+  "items": [
+    {
+      "slug": "n4-te-ageru",
+      "pattern": "V(て) あげます",
+      "meaning": {
+        "en": "do V for someone",
+        "id": "melakukan V untuk orang lain"
+      },
+      "explanation": {
+        "en": "〜て あげる says you do a favour for someone else. To a superior it can sound condescending; offer with 〜ましょうか instead.",
+        "id": "〜て あげる menyatakan Anda melakukan kebaikan untuk orang lain. Kepada atasan bisa terdengar merendahkan; lebih baik menawarkan dengan 〜ましょうか."
+      },
+      "examples": [
+        {
+          "ja": "いもうとに しゅくだいを おしえて あげました。",
+          "translation": {
+            "en": "I helped my younger sister with her homework.",
+            "id": "Saya mengajari adik perempuan saya mengerjakan PR."
+          }
+        },
+        {
+          "ja": "おばあさんの にもつを もって あげました。",
+          "translation": {
+            "en": "I carried an old lady's bags for her.",
+            "id": "Saya membawakan barang seorang nenek."
+          }
+        }
+      ],
+      "commonErrors": [
+        {
+          "en": "Saying せんせい、もって あげます: to a superior say おもちしましょうか.",
+          "id": "Mengatakan せんせい、もって あげます: kepada atasan katakan おもちしましょうか."
+        }
+      ]
+    },
+    {
+      "slug": "n4-te-kudasaru",
+      "pattern": "V(て) くださいます / いただきます",
+      "meaning": {
+        "en": "(a superior) kindly does V for me / I receive the favour of V",
+        "id": "(atasan) berkenan melakukan V untuk saya / saya mendapat kebaikan V"
+      },
+      "explanation": {
+        "en": "くださる and いただく are the polite forms of くれる and もらう, used when a superior does something for you: せんせいが おしえて くださいました, せんせいに みて いただきました.",
+        "id": "くださる dan いただく adalah bentuk sopan dari くれる dan もらう, dipakai ketika atasan melakukan sesuatu untuk Anda: せんせいが おしえて くださいました, せんせいに みて いただきました."
+      },
+      "examples": [
+        {
+          "ja": "せんせいが じしょを かして くださいました。",
+          "translation": {
+            "en": "The teacher kindly lent me a dictionary.",
+            "id": "Guru berkenan meminjamkan kamus kepada saya."
+          }
+        },
+        {
+          "ja": "ぶちょうに しりょうを みて いただきました。",
+          "translation": {
+            "en": "I had the manager look over the documents.",
+            "id": "Saya mendapat bantuan kepala bagian untuk memeriksa dokumennya."
+          }
+        }
+      ],
+      "commonErrors": [
+        {
+          "en": "Using くれる for a superior: せんせいが おしえて くれました is casual; くださいました is respectful.",
+          "id": "Memakai くれる untuk atasan: せんせいが おしえて くれました terdengar santai; くださいました lebih hormat."
+        }
+      ]
+    },
+    {
+      "slug": "n4-te-kuremasenka",
+      "pattern": "V(て) くれませんか / くださいませんか",
+      "meaning": {
+        "en": "would you V (for me)?",
+        "id": "maukah Anda V (untuk saya)?"
+      },
+      "explanation": {
+        "en": "Asking with a negative is softer than 〜て ください: てつだって くれませんか. くださいませんか is more polite.",
+        "id": "Meminta dengan bentuk negatif lebih halus daripada 〜て ください: てつだって くれませんか. くださいませんか lebih sopan."
+      },
+      "examples": [
+        {
+          "ja": "ちょっと てつだって くれませんか。",
+          "translation": {
+            "en": "Could you help me a little?",
+            "id": "Maukah kamu membantu sebentar?"
+          }
+        },
+        {
+          "ja": "しゃしんを とって くださいませんか。",
+          "translation": {
+            "en": "Would you mind taking a photo for us?",
+            "id": "Maukah Anda memotret kami?"
+          }
+        }
+      ],
+      "commonErrors": [
+        {
+          "en": "Answering はい、くれません: to agree say いいですよ.",
+          "id": "Menjawab はい、くれません: untuk setuju katakan いいですよ."
+        }
+      ]
+    }
+  ]
+}

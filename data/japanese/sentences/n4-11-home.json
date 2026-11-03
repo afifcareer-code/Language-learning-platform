@@ -1,0 +1,66 @@
+{
+  "source": "Original practice sentences for N4 · Getting the house ready.",
+  "level": "n4",
+  "items": [
+    {
+      "slug": "n4-te-aru-1",
+      "text": "かべに えが かけて あります。",
+      "tokens": ["かべ", "に", "え", "が", "かけて", "あります"],
+      "grammar": "n4-te-aru",
+      "translation": {
+        "en": "A picture has been hung on the wall.",
+        "id": "Sebuah lukisan sudah digantung di dinding."
+      }
+    },
+    {
+      "slug": "n4-te-aru-2",
+      "text": "ビールは れいぞうこに いれて あります。",
+      "tokens": ["ビール", "は", "れいぞうこ", "に", "いれて", "あります"],
+      "grammar": "n4-te-aru",
+      "translation": {
+        "en": "The beer has been put in the fridge.",
+        "id": "Birnya sudah dimasukkan ke kulkas."
+      }
+    },
+    {
+      "slug": "n4-te-oku-1",
+      "text": "りょこうの まえに ホテルを よやくして おきます。",
+      "tokens": ["りょこう", "の", "まえに", "ホテル", "を", "よやくして", "おきます"],
+      "grammar": "n4-te-oku",
+      "translation": {
+        "en": "I'll book the hotel before the trip.",
+        "id": "Sebelum perjalanan, saya pesan hotel dulu."
+      }
+    },
+    {
+      "slug": "n4-te-oku-2",
+      "text": "まどを あけて おいて ください。",
+      "tokens": ["まど", "を", "あけて", "おいて", "ください"],
+      "grammar": "n4-te-oku",
+      "translation": {
+        "en": "Please leave the window open.",
+        "id": "Tolong biarkan jendelanya terbuka."
+      }
+    },
+    {
+      "slug": "n4-te-shimau-1",
+      "text": "さいふを なくして しまいました。",
+      "tokens": ["さいふ", "を", "なくして", "しまいました"],
+      "grammar": "n4-te-shimau",
+      "translation": {
+        "en": "I've gone and lost my wallet.",
+        "id": "Dompet saya terlanjur hilang."
+      }
+    },
+    {
+      "slug": "n4-te-shimau-2",
+      "text": "この ほんは もう ぜんぶ よんで しまいました。",
+      "tokens": ["この", "ほん", "は", "もう", "ぜんぶ", "よんで", "しまいました"],
+      "grammar": "n4-te-shimau",
+      "translation": {
+        "en": "I've already read this whole book.",
+        "id": "Buku ini sudah saya baca sampai habis."
+      }
+    }
+  ]
+}

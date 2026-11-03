@@ -1,0 +1,187 @@
+{
+  "source": "N4 · At university: words from the JLPT N4 list by J. Waller (tanos.co.uk, CC BY) as compiled in open-anki-jlpt-decks (MIT). Meanings written for this project.",
+  "level": "n4",
+  "items": [
+    {
+      "kana": "こうちょう",
+      "kanji": "校長",
+      "romaji": "kouchou",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "head teacher, principal",
+        "id": "kepala sekolah"
+      }
+    },
+    {
+      "kana": "かがく",
+      "kanji": "科学",
+      "romaji": "kagaku",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "science",
+        "id": "ilmu pengetahuan alam, sains"
+      }
+    },
+    {
+      "kana": "にゅうがく",
+      "kanji": "入学",
+      "romaji": "nyuugaku",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "entering a school",
+        "id": "masuk sekolah"
+      }
+    },
+    {
+      "kana": "うつす",
+      "kanji": "写す",
+      "romaji": "utsusu",
+      "partOfSpeech": "verb",
+      "meaning": {
+        "en": "to copy; to take a photo",
+        "id": "menyalin; memotret"
+      }
+    },
+    {
+      "kana": "きょういく",
+      "kanji": "教育",
+      "romaji": "kyouiku",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "education",
+        "id": "pendidikan"
+      }
+    },
+    {
+      "kana": "れきし",
+      "kanji": "歴史",
+      "romaji": "rekishi",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "history",
+        "id": "sejarah"
+      }
+    },
+    {
+      "kana": "こうどう",
+      "kanji": "講堂",
+      "romaji": "koudou",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "auditorium",
+        "id": "aula"
+      }
+    },
+    {
+      "kana": "そつぎょう",
+      "kanji": "卒業",
+      "romaji": "sotsugyou",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "graduation",
+        "id": "kelulusan"
+      }
+    },
+    {
+      "kana": "せんもん",
+      "kanji": "専門",
+      "romaji": "senmon",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "speciality, major",
+        "id": "bidang keahlian, jurusan"
+      }
+    },
+    {
+      "kana": "こうこうせい",
+      "kanji": "高校生",
+      "romaji": "koukousei",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "high school student",
+        "id": "siswa SMA"
+      }
+    },
+    {
+      "kana": "こうぎ",
+      "kanji": "講義",
+      "romaji": "kougi",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "lecture",
+        "id": "kuliah"
+      }
+    },
+    {
+      "kana": "こうこう",
+      "kanji": "高校",
+      "romaji": "koukou",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "high school",
+        "id": "sekolah menengah atas (SMA)"
+      }
+    },
+    {
+      "kana": "ぶんがく",
+      "kanji": "文学",
+      "romaji": "bungaku",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "literature",
+        "id": "sastra"
+      }
+    },
+    {
+      "kana": "じ",
+      "kanji": "字",
+      "romaji": "ji",
+      "homonym": 2,
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "letter, character",
+        "id": "huruf"
+      }
+    },
+    {
+      "kana": "すうがく",
+      "kanji": "数学",
+      "romaji": "suugaku",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "mathematics",
+        "id": "matematika"
+      }
+    },
+    {
+      "kana": "けんきゅうしつ",
+      "kanji": "研究室",
+      "romaji": "kenkyuushitsu",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "laboratory, professor's office",
+        "id": "laboratorium, ruang dosen"
+      }
+    },
+    {
+      "kana": "ふくしゅう",
+      "kanji": "復習",
+      "romaji": "fukushuu",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "review (of lessons)",
+        "id": "mengulang pelajaran"
+      }
+    },
+    {
+      "kana": "けんきゅう",
+      "kanji": "研究",
+      "romaji": "kenkyuu",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "research",
+        "id": "penelitian"
+      }
+    }
+  ]
+}

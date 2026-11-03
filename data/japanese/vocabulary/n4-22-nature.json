@@ -1,0 +1,277 @@
+{
+  "source": "N4 · Nature and the seasons: words from the JLPT N4 list by J. Waller (tanos.co.uk, CC BY) as compiled in open-anki-jlpt-decks (MIT). Meanings written for this project.",
+  "level": "n4",
+  "items": [
+    {
+      "kana": "やむ",
+      "kanji": "止む",
+      "romaji": "yamu",
+      "partOfSpeech": "verb",
+      "meaning": {
+        "en": "to stop (rain, wind)",
+        "id": "berhenti, reda (hujan, angin)"
+      }
+    },
+    {
+      "kana": "こうがい",
+      "kanji": "郊外",
+      "romaji": "kougai",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "suburbs",
+        "id": "pinggiran kota"
+      }
+    },
+    {
+      "kana": "は",
+      "kanji": "葉",
+      "romaji": "ha",
+      "homonym": 2,
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "leaf",
+        "id": "daun"
+      }
+    },
+    {
+      "kana": "じしん",
+      "kanji": "地震",
+      "romaji": "jishin",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "earthquake",
+        "id": "gempa bumi"
+      }
+    },
+    {
+      "kana": "きせつ",
+      "kanji": "季節",
+      "romaji": "kisetsu",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "season",
+        "id": "musim"
+      }
+    },
+    {
+      "kana": "ほし",
+      "kanji": "星",
+      "romaji": "hoshi",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "star",
+        "id": "bintang"
+      }
+    },
+    {
+      "kana": "はやし",
+      "kanji": "林",
+      "romaji": "hayashi",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "woods",
+        "id": "hutan kecil"
+      }
+    },
+    {
+      "kana": "ひかる",
+      "kanji": "光る",
+      "romaji": "hikaru",
+      "partOfSpeech": "verb",
+      "meaning": {
+        "en": "to shine",
+        "id": "bersinar"
+      }
+    },
+    {
+      "kana": "くも",
+      "kanji": "雲",
+      "romaji": "kumo",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "cloud",
+        "id": "awan"
+      }
+    },
+    {
+      "kana": "もり",
+      "kanji": "森",
+      "romaji": "mori",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "forest",
+        "id": "hutan"
+      }
+    },
+    {
+      "kana": "いし",
+      "kanji": "石",
+      "romaji": "ishi",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "stone",
+        "id": "batu"
+      }
+    },
+    {
+      "kana": "かいがん",
+      "kanji": "海岸",
+      "romaji": "kaigan",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "coast, seashore",
+        "id": "pantai"
+      }
+    },
+    {
+      "kana": "ひ",
+      "kanji": "火",
+      "romaji": "hi",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "fire",
+        "id": "api"
+      }
+    },
+    {
+      "kana": "ことり",
+      "kanji": "小鳥",
+      "romaji": "kotori",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "small bird",
+        "id": "burung kecil"
+      }
+    },
+    {
+      "kana": "くうき",
+      "kanji": "空気",
+      "romaji": "kuuki",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "air",
+        "id": "udara"
+      }
+    },
+    {
+      "kana": "おと",
+      "kanji": "音",
+      "romaji": "oto",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "sound",
+        "id": "suara, bunyi"
+      }
+    },
+    {
+      "kana": "しま",
+      "kanji": "島",
+      "romaji": "shima",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "island",
+        "id": "pulau"
+      }
+    },
+    {
+      "kana": "えだ",
+      "kanji": "枝",
+      "romaji": "eda",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "branch",
+        "id": "ranting, dahan"
+      }
+    },
+    {
+      "kana": "いなか",
+      "kanji": "田舎",
+      "romaji": "inaka",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "the countryside, home town",
+        "id": "desa, kampung halaman"
+      }
+    },
+    {
+      "kana": "ひかり",
+      "kanji": "光",
+      "romaji": "hikari",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "light",
+        "id": "cahaya"
+      }
+    },
+    {
+      "kana": "ひえる",
+      "kanji": "冷える",
+      "romaji": "hieru",
+      "partOfSpeech": "verb",
+      "meaning": {
+        "en": "to get cold",
+        "id": "menjadi dingin"
+      }
+    },
+    {
+      "kana": "ぬれる",
+      "kanji": "濡れる",
+      "romaji": "nureru",
+      "partOfSpeech": "verb",
+      "meaning": {
+        "en": "to get wet",
+        "id": "basah"
+      }
+    },
+    {
+      "kana": "むし",
+      "kanji": "虫",
+      "romaji": "mushi",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "insect",
+        "id": "serangga"
+      }
+    },
+    {
+      "kana": "うえる",
+      "kanji": "植える",
+      "romaji": "ueru",
+      "partOfSpeech": "verb",
+      "meaning": {
+        "en": "to plant",
+        "id": "menanam"
+      }
+    },
+    {
+      "kana": "すな",
+      "kanji": "砂",
+      "romaji": "suna",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "sand",
+        "id": "pasir"
+      }
+    },
+    {
+      "kana": "くさ",
+      "kanji": "草",
+      "romaji": "kusa",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "grass",
+        "id": "rumput"
+      }
+    },
+    {
+      "kana": "みずうみ",
+      "kanji": "湖",
+      "romaji": "mizuumi",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "lake",
+        "id": "danau"
+      }
+    }
+  ]
+}

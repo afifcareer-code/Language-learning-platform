@@ -1,0 +1,74 @@
+{
+  "source": "Original grammar explanations for N4 · Talking it over, written for this project.",
+  "level": "n4",
+  "items": [
+    {
+      "slug": "n4-ni-tsuite",
+      "pattern": "N に ついて",
+      "meaning": {
+        "en": "about N, concerning N",
+        "id": "tentang N, mengenai N"
+      },
+      "explanation": {
+        "en": "に ついて gives the topic of talking, writing or thinking: にほんの れきしに ついて しらべます. Before a noun: に ついての.",
+        "id": "に ついて menyatakan topik pembicaraan, tulisan, atau pemikiran: にほんの れきしに ついて しらべます. Sebelum kata benda: に ついての."
+      },
+      "examples": [
+        {
+          "ja": "にほんの れきしに ついて レポートを かきます。",
+          "translation": {
+            "en": "I'm writing a report about Japanese history.",
+            "id": "Saya menulis laporan tentang sejarah Jepang."
+          }
+        },
+        {
+          "ja": "その もんだいに ついて そうだんしました。",
+          "translation": {
+            "en": "We talked over that problem.",
+            "id": "Kami berunding tentang masalah itu."
+          }
+        }
+      ],
+      "commonErrors": [
+        {
+          "en": "Using の instead: れきしの はなす is wrong; say れきしに ついて はなす.",
+          "id": "Memakai の sebagai gantinya: れきしの はなす salah; katakan れきしに ついて はなす."
+        }
+      ]
+    },
+    {
+      "slug": "n4-passive-indirect",
+      "pattern": "N に V(passive) (suffering passive)",
+      "meaning": {
+        "en": "have N V (to my annoyance)",
+        "id": "kena…, ketiban… (merasa dirugikan)"
+      },
+      "explanation": {
+        "en": "Japanese uses the passive even with intransitive verbs to show that something annoyed you: あめに ふられました (I got rained on), こどもに なかれました.",
+        "id": "Bahasa Jepang memakai bentuk pasif bahkan dengan kata kerja intransitif untuk menunjukkan bahwa sesuatu merugikan Anda: あめに ふられました (saya kehujanan), こどもに なかれました."
+      },
+      "examples": [
+        {
+          "ja": "かえる とちゅうで あめに ふられました。",
+          "translation": {
+            "en": "I got caught in the rain on the way home.",
+            "id": "Saya kehujanan dalam perjalanan pulang."
+          }
+        },
+        {
+          "ja": "よる あかちゃんに なかれて ねられませんでした。",
+          "translation": {
+            "en": "The baby cried at night and I couldn't sleep.",
+            "id": "Malam hari bayi menangis sehingga saya tidak bisa tidur."
+          }
+        }
+      ],
+      "commonErrors": [
+        {
+          "en": "Using an active sentence: あめが ふりました is neutral and loses the sense of being affected.",
+          "id": "Memakai kalimat aktif: あめが ふりました netral dan kehilangan nuansa dirugikan."
+        }
+      ]
+    }
+  ]
+}

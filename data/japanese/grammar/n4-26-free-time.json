@@ -1,0 +1,74 @@
+{
+  "source": "Original grammar explanations for N4 · Free time, written for this project.",
+  "level": "n4",
+  "items": [
+    {
+      "slug": "n4-ka-dou-ka",
+      "pattern": "plain form + か どうか",
+      "meaning": {
+        "en": "whether or not…",
+        "id": "apakah… atau tidak"
+      },
+      "explanation": {
+        "en": "か どうか embeds a yes/no question: いけるか どうか わかりません (I don't know whether I can go).",
+        "id": "か どうか menyisipkan pertanyaan ya/tidak: いけるか どうか わかりません (saya tidak tahu apakah bisa pergi atau tidak)."
+      },
+      "examples": [
+        {
+          "ja": "パーティーに いけるか どうか わかりません。",
+          "translation": {
+            "en": "I don't know whether I can go to the party.",
+            "id": "Saya belum tahu apakah bisa ke pesta atau tidak."
+          }
+        },
+        {
+          "ja": "あじが いいか どうか たべて みて ください。",
+          "translation": {
+            "en": "Please taste it to see whether it's good.",
+            "id": "Coba cicipi, enak atau tidak."
+          }
+        }
+      ],
+      "commonErrors": [
+        {
+          "en": "Using か どうか with a question word: どこか どうか is wrong; with a question word use just か.",
+          "id": "Memakai か どうか bersama kata tanya: どこか どうか salah; dengan kata tanya pakai か saja."
+        }
+      ]
+    },
+    {
+      "slug": "n4-koto-ga-aru-sometimes",
+      "pattern": "V(dictionary / ない) ことが あります",
+      "meaning": {
+        "en": "sometimes V; there are times when…",
+        "id": "kadang-kadang V"
+      },
+      "explanation": {
+        "en": "After the dictionary form (not the た form), ことが ある means it sometimes happens: ときどき あさごはんを たべない ことが あります.",
+        "id": "Setelah bentuk kamus (bukan bentuk た), ことが ある berarti kadang-kadang terjadi: ときどき あさごはんを たべない ことが あります."
+      },
+      "examples": [
+        {
+          "ja": "ときどき あさごはんを たべない ことが あります。",
+          "translation": {
+            "en": "Sometimes I don't eat breakfast.",
+            "id": "Kadang-kadang saya tidak sarapan."
+          }
+        },
+        {
+          "ja": "この みちは あさ こむ ことが あります。",
+          "translation": {
+            "en": "This road is sometimes busy in the morning.",
+            "id": "Jalan ini kadang ramai di pagi hari."
+          }
+        }
+      ],
+      "commonErrors": [
+        {
+          "en": "Confusing it with 〜た ことが ある (experience): たべた ことが ある means 'have eaten (before)'.",
+          "id": "Tertukar dengan 〜た ことが ある (pengalaman): たべた ことが ある berarti 'pernah makan'."
+        }
+      ]
+    }
+  ]
+}

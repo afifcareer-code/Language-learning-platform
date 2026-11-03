@@ -1,0 +1,229 @@
+{
+  "source": "N4 · Useful words: words from the JLPT N4 list by J. Waller (tanos.co.uk, CC BY) as compiled in open-anki-jlpt-decks (MIT). Meanings written for this project.",
+  "level": "n4",
+  "items": [
+    {
+      "kana": "すっと",
+      "romaji": "sutto",
+      "partOfSpeech": "adverb",
+      "meaning": {
+        "en": "smoothly, quickly; refreshed",
+        "id": "dengan lancar; lega"
+      }
+    },
+    {
+      "kana": "しっかり",
+      "romaji": "shikkari",
+      "partOfSpeech": "adverb",
+      "meaning": {
+        "en": "firmly, properly",
+        "id": "dengan kuat, dengan sungguh-sungguh"
+      }
+    },
+    {
+      "kana": "やっぱり",
+      "romaji": "yappari",
+      "partOfSpeech": "adverb",
+      "meaning": {
+        "en": "as expected, after all",
+        "id": "sudah kuduga, ternyata memang"
+      }
+    },
+    {
+      "kana": "かならず",
+      "kanji": "必ず",
+      "romaji": "kanarazu",
+      "partOfSpeech": "adverb",
+      "meaning": {
+        "en": "without fail, surely",
+        "id": "pasti, tanpa kecuali"
+      }
+    },
+    {
+      "kana": "べつ",
+      "kanji": "別",
+      "romaji": "betsu",
+      "partOfSpeech": "adjective",
+      "meaning": {
+        "en": "different, separate",
+        "id": "lain, terpisah"
+      }
+    },
+    {
+      "kana": "ひじょうに",
+      "kanji": "非常に",
+      "romaji": "hijouni",
+      "partOfSpeech": "adverb",
+      "meaning": {
+        "en": "extremely",
+        "id": "sangat, amat"
+      }
+    },
+    {
+      "kana": "ほとんど",
+      "romaji": "hotondo",
+      "partOfSpeech": "adverb",
+      "meaning": {
+        "en": "almost, mostly",
+        "id": "hampir, sebagian besar"
+      }
+    },
+    {
+      "kana": "うん",
+      "romaji": "un",
+      "partOfSpeech": "expression",
+      "meaning": {
+        "en": "yeah (casual)",
+        "id": "iya (santai)"
+      }
+    },
+    {
+      "kana": "すると",
+      "romaji": "suruto",
+      "partOfSpeech": "expression",
+      "meaning": {
+        "en": "and then, thereupon",
+        "id": "lalu, kemudian"
+      }
+    },
+    {
+      "kana": "ちっとも",
+      "romaji": "chittomo",
+      "partOfSpeech": "adverb",
+      "meaning": {
+        "en": "not at all (with negative)",
+        "id": "sama sekali tidak"
+      }
+    },
+    {
+      "kana": "できるだけ",
+      "romaji": "dekirudake",
+      "partOfSpeech": "adverb",
+      "meaning": {
+        "en": "as much as possible",
+        "id": "sebisa mungkin"
+      }
+    },
+    {
+      "kana": "それに",
+      "romaji": "soreni",
+      "partOfSpeech": "expression",
+      "meaning": {
+        "en": "besides, moreover",
+        "id": "lagi pula, selain itu"
+      }
+    },
+    {
+      "kana": "だから",
+      "romaji": "dakara",
+      "partOfSpeech": "expression",
+      "meaning": {
+        "en": "so, therefore",
+        "id": "karena itu, jadi"
+      }
+    },
+    {
+      "kana": "なるべく",
+      "romaji": "narubeku",
+      "partOfSpeech": "adverb",
+      "meaning": {
+        "en": "as far as possible",
+        "id": "sedapat mungkin"
+      }
+    },
+    {
+      "kana": "そんな",
+      "romaji": "sonna",
+      "partOfSpeech": "adjective",
+      "meaning": {
+        "en": "such, like that",
+        "id": "seperti itu"
+      }
+    },
+    {
+      "kana": "ばあい",
+      "kanji": "場合",
+      "romaji": "baai",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "case, situation",
+        "id": "kasus, keadaan"
+      }
+    },
+    {
+      "kana": "けっして",
+      "kanji": "決して",
+      "romaji": "kesshite",
+      "partOfSpeech": "adverb",
+      "meaning": {
+        "en": "never (with negative)",
+        "id": "sama sekali tidak, tidak pernah"
+      }
+    },
+    {
+      "kana": "こと",
+      "kanji": "事",
+      "romaji": "koto",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "thing, matter",
+        "id": "hal"
+      }
+    },
+    {
+      "kana": "どんどん",
+      "romaji": "dondon",
+      "partOfSpeech": "adverb",
+      "meaning": {
+        "en": "rapidly, one after another",
+        "id": "terus-menerus, dengan cepat"
+      }
+    },
+    {
+      "kana": "もちろん",
+      "romaji": "mochiron",
+      "partOfSpeech": "adverb",
+      "meaning": {
+        "en": "of course",
+        "id": "tentu saja"
+      }
+    },
+    {
+      "kana": "または",
+      "romaji": "mataha",
+      "partOfSpeech": "expression",
+      "meaning": {
+        "en": "or",
+        "id": "atau"
+      }
+    },
+    {
+      "kana": "たしか",
+      "kanji": "確か",
+      "romaji": "tashika",
+      "partOfSpeech": "adverb",
+      "meaning": {
+        "en": "if I remember rightly; certain",
+        "id": "kalau tidak salah; pasti"
+      }
+    },
+    {
+      "kana": "すっかり",
+      "romaji": "sukkari",
+      "partOfSpeech": "adverb",
+      "meaning": {
+        "en": "completely",
+        "id": "sepenuhnya, sama sekali"
+      }
+    },
+    {
+      "kana": "はっきり",
+      "romaji": "hakkiri",
+      "partOfSpeech": "adverb",
+      "meaning": {
+        "en": "clearly",
+        "id": "dengan jelas"
+      }
+    }
+  ]
+}

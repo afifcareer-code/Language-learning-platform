@@ -1,0 +1,74 @@
+{
+  "source": "Original grammar explanations for N4 · Feelings, written for this project.",
+  "level": "n4",
+  "items": [
+    {
+      "slug": "n4-temo",
+      "pattern": "V(て) も / い-adj くても / N でも",
+      "meaning": {
+        "en": "even if…",
+        "id": "walaupun…, meskipun…"
+      },
+      "explanation": {
+        "en": "The て form + も means 'even if': あめが ふっても いきます. いくら + 〜ても means 'however much': いくら たべても ふとりません.",
+        "id": "Bentuk て + も berarti 'walaupun': あめが ふっても いきます. いくら + 〜ても berarti 'sebanyak apa pun': いくら たべても ふとりません."
+      },
+      "examples": [
+        {
+          "ja": "あめが ふっても しあいは あります。",
+          "translation": {
+            "en": "Even if it rains, the match will go ahead.",
+            "id": "Walaupun hujan, pertandingan tetap ada."
+          }
+        },
+        {
+          "ja": "いくら かんがえても わかりません。",
+          "translation": {
+            "en": "However much I think about it, I can't work it out.",
+            "id": "Sekeras apa pun saya pikirkan, tetap tidak mengerti."
+          }
+        }
+      ],
+      "commonErrors": [
+        {
+          "en": "Confusing it with 〜ても いい (permission): 〜ても いいですか asks may I; 〜ても alone means even if.",
+          "id": "Tertukar dengan 〜ても いい (izin): 〜ても いいですか meminta izin; 〜ても saja berarti walaupun."
+        }
+      ]
+    },
+    {
+      "slug": "n4-ba-yokatta",
+      "pattern": "V(ば) よかった",
+      "meaning": {
+        "en": "I should have V-ed (regret)",
+        "id": "seharusnya saya V (menyesal)"
+      },
+      "explanation": {
+        "en": "〜ば よかった expresses regret about what you did not do: もっと べんきょうすれば よかったです. The negative 〜なければ よかった regrets something you did.",
+        "id": "〜ば よかった menyatakan penyesalan atas hal yang tidak dilakukan: もっと べんきょうすれば よかったです. Bentuk negatif 〜なければ よかった menyesali hal yang dilakukan."
+      },
+      "examples": [
+        {
+          "ja": "もっと べんきょうすれば よかったです。",
+          "translation": {
+            "en": "I should have studied more.",
+            "id": "Seharusnya saya belajar lebih banyak."
+          }
+        },
+        {
+          "ja": "あんな ことを いわなければ よかったです。",
+          "translation": {
+            "en": "I wish I hadn't said that.",
+            "id": "Seharusnya saya tidak mengatakan hal itu."
+          }
+        }
+      ],
+      "commonErrors": [
+        {
+          "en": "Using いい instead of よかった: すれば いい is advice for now; regret needs よかった.",
+          "id": "Memakai いい sebagai ganti よかった: すれば いい adalah saran untuk sekarang; penyesalan memerlukan よかった."
+        }
+      ]
+    }
+  ]
+}

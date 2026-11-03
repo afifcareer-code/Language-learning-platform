@@ -1,0 +1,188 @@
+{
+  "source": "N4 · Doing favours: words from the JLPT N4 list by J. Waller (tanos.co.uk, CC BY) as compiled in open-anki-jlpt-decks (MIT). Meanings written for this project.",
+  "level": "n4",
+  "items": [
+    {
+      "kana": "だんせい",
+      "kanji": "男性",
+      "romaji": "dansei",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "man, male",
+        "id": "pria, laki-laki"
+      }
+    },
+    {
+      "kana": "ちゃん",
+      "romaji": "chan",
+      "affix": "suffix",
+      "partOfSpeech": "suffix",
+      "meaning": {
+        "en": "(familiar suffix for names)",
+        "id": "(akhiran akrab untuk nama)"
+      }
+    },
+    {
+      "kana": "あやまる",
+      "kanji": "謝る",
+      "romaji": "ayamaru",
+      "partOfSpeech": "verb",
+      "meaning": {
+        "en": "to apologise",
+        "id": "meminta maaf"
+      }
+    },
+    {
+      "kana": "じょせい",
+      "kanji": "女性",
+      "romaji": "josei",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "woman, female",
+        "id": "wanita, perempuan"
+      }
+    },
+    {
+      "kana": "こ",
+      "kanji": "子",
+      "romaji": "ko",
+      "homonym": 2,
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "child",
+        "id": "anak"
+      }
+    },
+    {
+      "kana": "おかねもち",
+      "kanji": "お金持ち",
+      "romaji": "okanemochi",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "rich person",
+        "id": "orang kaya"
+      }
+    },
+    {
+      "kana": "つま",
+      "kanji": "妻",
+      "romaji": "tsuma",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "wife (my)",
+        "id": "istri (saya)"
+      }
+    },
+    {
+      "kana": "かのじょ",
+      "kanji": "彼女",
+      "romaji": "kanojo",
+      "partOfSpeech": "pronoun",
+      "meaning": {
+        "en": "she; girlfriend",
+        "id": "dia (perempuan); pacar (perempuan)"
+      }
+    },
+    {
+      "kana": "にる",
+      "kanji": "似る",
+      "romaji": "niru",
+      "partOfSpeech": "verb",
+      "meaning": {
+        "en": "to resemble",
+        "id": "mirip"
+      }
+    },
+    {
+      "kana": "おこさん",
+      "kanji": "お子さん",
+      "romaji": "okosan",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "(someone's) child",
+        "id": "anak (orang lain)"
+      }
+    },
+    {
+      "kana": "さま",
+      "kanji": "様",
+      "romaji": "sama",
+      "affix": "suffix",
+      "partOfSpeech": "suffix",
+      "meaning": {
+        "en": "Mr, Ms (very polite suffix)",
+        "id": "Bapak, Ibu (akhiran sangat sopan)"
+      }
+    },
+    {
+      "kana": "せわ",
+      "kanji": "世話",
+      "romaji": "sewa",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "looking after",
+        "id": "merawat, mengurus"
+      }
+    },
+    {
+      "kana": "きみ",
+      "kanji": "君",
+      "romaji": "kimi",
+      "partOfSpeech": "pronoun",
+      "meaning": {
+        "en": "you (casual, used by men)",
+        "id": "kamu (santai, dipakai laki-laki)"
+      }
+    },
+    {
+      "kana": "いじめる",
+      "romaji": "ijimeru",
+      "partOfSpeech": "verb",
+      "meaning": {
+        "en": "to bully",
+        "id": "merundung"
+      }
+    },
+    {
+      "kana": "くん",
+      "kanji": "君",
+      "romaji": "kun",
+      "affix": "suffix",
+      "partOfSpeech": "suffix",
+      "meaning": {
+        "en": "(suffix for boys' names)",
+        "id": "(akhiran untuk nama anak laki-laki)"
+      }
+    },
+    {
+      "kana": "しょうかい",
+      "kanji": "紹介",
+      "romaji": "shoukai",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "introduction",
+        "id": "perkenalan"
+      }
+    },
+    {
+      "kana": "わかれる",
+      "kanji": "別れる",
+      "romaji": "wakareru",
+      "partOfSpeech": "verb",
+      "meaning": {
+        "en": "to part, to separate",
+        "id": "berpisah"
+      }
+    },
+    {
+      "kana": "かない",
+      "kanji": "家内",
+      "romaji": "kanai",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "wife (my)",
+        "id": "istri (saya)"
+      }
+    }
+  ]
+}

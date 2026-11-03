@@ -1,0 +1,74 @@
+{
+  "source": "Original grammar explanations for N4 · Useful words, written for this project.",
+  "level": "n4",
+  "items": [
+    {
+      "slug": "n4-oki-ni",
+      "pattern": "number + おきに",
+      "meaning": {
+        "en": "every other…, at intervals of…",
+        "id": "setiap selang…"
+      },
+      "explanation": {
+        "en": "おきに after a number means 'with that many in between': いちにちおきに (every other day), ごふんおきに (every five minutes).",
+        "id": "おきに setelah angka berarti 'dengan selang sebanyak itu': いちにちおきに (selang sehari), ごふんおきに (setiap lima menit)."
+      },
+      "examples": [
+        {
+          "ja": "バスは じゅっぷんおきに きます。",
+          "translation": {
+            "en": "The bus comes every ten minutes.",
+            "id": "Bus datang setiap sepuluh menit."
+          }
+        },
+        {
+          "ja": "いちにちおきに プールで およぎます。",
+          "translation": {
+            "en": "I swim in the pool every other day.",
+            "id": "Saya berenang di kolam renang selang sehari."
+          }
+        }
+      ],
+      "commonErrors": [
+        {
+          "en": "Mixing up おきに and ごとに: いちにちおきに is every other day; まいにち is every day.",
+          "id": "Tertukar antara おきに dan ごとに: いちにちおきに berarti selang sehari; まいにち berarti setiap hari."
+        }
+      ]
+    },
+    {
+      "slug": "n4-me-ordinal",
+      "pattern": "number + counter + め",
+      "meaning": {
+        "en": "the …th",
+        "id": "yang ke-…"
+      },
+      "explanation": {
+        "en": "め after a number and counter makes an ordinal: ふたつめ (the second one), さんにんめ (the third person), にかいめ (the second time).",
+        "id": "め setelah angka dan kata bantu bilangan membentuk bilangan urutan: ふたつめ (yang kedua), さんにんめ (orang ketiga), にかいめ (kali kedua)."
+      },
+      "examples": [
+        {
+          "ja": "ふたつめの かどを みぎに まがって ください。",
+          "translation": {
+            "en": "Please turn right at the second corner.",
+            "id": "Silakan belok kanan di tikungan kedua."
+          }
+        },
+        {
+          "ja": "にほんは にかいめです。",
+          "translation": {
+            "en": "This is my second time in Japan.",
+            "id": "Ini kedua kalinya saya ke Jepang."
+          }
+        }
+      ],
+      "commonErrors": [
+        {
+          "en": "Leaving out め: ふたつの かど means 'two corners', not 'the second corner'.",
+          "id": "Melupakan め: ふたつの かど berarti 'dua tikungan', bukan 'tikungan kedua'."
+        }
+      ]
+    }
+  ]
+}

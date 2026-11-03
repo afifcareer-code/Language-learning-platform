@@ -1,0 +1,74 @@
+{
+  "source": "Original grammar explanations for N4 · Family life, written for this project.",
+  "level": "n4",
+  "items": [
+    {
+      "slug": "n4-te-hoshii",
+      "pattern": "N に V(て) ほしい",
+      "meaning": {
+        "en": "I want N to V",
+        "id": "saya ingin N melakukan V"
+      },
+      "explanation": {
+        "en": "〜て ほしい says what you want someone else to do: ははに げんきで いて ほしいです. To a superior it sounds too direct; use 〜て いただけませんか.",
+        "id": "〜て ほしい menyatakan apa yang Anda ingin orang lain lakukan: ははに げんきで いて ほしいです. Kepada atasan terdengar terlalu langsung; pakai 〜て いただけませんか."
+      },
+      "examples": [
+        {
+          "ja": "ともだちに てつだって ほしいです。",
+          "translation": {
+            "en": "I want my friend to help me.",
+            "id": "Saya ingin teman membantu saya."
+          }
+        },
+        {
+          "ja": "はやく あめが やんで ほしいです。",
+          "translation": {
+            "en": "I want the rain to stop soon.",
+            "id": "Saya ingin hujan cepat reda."
+          }
+        }
+      ],
+      "commonErrors": [
+        {
+          "en": "Using 〜たい for someone else: ともだちに てつだいたい means 'I want to help my friend'.",
+          "id": "Memakai 〜たい untuk orang lain: ともだちに てつだいたい berarti 'saya ingin membantu teman'."
+        }
+      ]
+    },
+    {
+      "slug": "n4-garu",
+      "pattern": "adjective stem + がる / V(ます stem) たがる",
+      "meaning": {
+        "en": "(someone else) seems to feel / want…",
+        "id": "(orang lain) tampak merasa / ingin…"
+      },
+      "explanation": {
+        "en": "Feelings and wishes of other people are described with がる: いもうとは さむがって います, こどもは あそびたがって います. For your own feelings, use the adjective itself.",
+        "id": "Perasaan dan keinginan orang lain digambarkan dengan がる: いもうとは さむがって います, こどもは あそびたがって います. Untuk perasaan sendiri, pakai kata sifatnya langsung."
+      },
+      "examples": [
+        {
+          "ja": "こどもが そとで あそびたがって います。",
+          "translation": {
+            "en": "The child wants to play outside.",
+            "id": "Anak itu ingin bermain di luar."
+          }
+        },
+        {
+          "ja": "いもうとは いぬを こわがって います。",
+          "translation": {
+            "en": "My younger sister is scared of dogs.",
+            "id": "Adik perempuan saya takut anjing."
+          }
+        }
+      ],
+      "commonErrors": [
+        {
+          "en": "Saying かれは さむいです about someone else: that states his feeling as a fact; say さむがって います.",
+          "id": "Mengatakan かれは さむいです tentang orang lain: itu menyatakan perasaannya sebagai fakta; katakan さむがって います."
+        }
+      ]
+    }
+  ]
+}

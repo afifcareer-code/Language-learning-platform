@@ -1,0 +1,195 @@
+{
+  "source": "N4 · Culture and the world: words from the JLPT N4 list by J. Waller (tanos.co.uk, CC BY) as compiled in open-anki-jlpt-decks (MIT). Meanings written for this project.",
+  "level": "n4",
+  "items": [
+    {
+      "kana": "こくさい",
+      "kanji": "国際",
+      "romaji": "kokusai",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "international",
+        "id": "internasional"
+      }
+    },
+    {
+      "kana": "けいざい",
+      "kanji": "経済",
+      "romaji": "keizai",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "economy",
+        "id": "ekonomi"
+      }
+    },
+    {
+      "kana": "ゆにゅう",
+      "kanji": "輸入",
+      "romaji": "yunyuu",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "import",
+        "id": "impor"
+      }
+    },
+    {
+      "kana": "さんぎょう",
+      "kanji": "産業",
+      "romaji": "sangyou",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "industry",
+        "id": "industri"
+      }
+    },
+    {
+      "kana": "せいじ",
+      "kanji": "政治",
+      "romaji": "seiji",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "politics",
+        "id": "politik"
+      }
+    },
+    {
+      "kana": "しみん",
+      "kanji": "市民",
+      "romaji": "shimin",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "citizen",
+        "id": "warga kota"
+      }
+    },
+    {
+      "kana": "てら",
+      "kanji": "寺",
+      "romaji": "tera",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "Buddhist temple",
+        "id": "kuil Buddha"
+      }
+    },
+    {
+      "kana": "アジア",
+      "romaji": "ajia",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "Asia",
+        "id": "Asia"
+      }
+    },
+    {
+      "kana": "ぶんか",
+      "kanji": "文化",
+      "romaji": "bunka",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "culture",
+        "id": "budaya"
+      }
+    },
+    {
+      "kana": "しゅうかん",
+      "kanji": "習慣",
+      "romaji": "shuukan",
+      "homonym": 2,
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "custom, habit",
+        "id": "kebiasaan, adat"
+      }
+    },
+    {
+      "kana": "じゆう",
+      "kanji": "自由",
+      "romaji": "jiyuu",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "freedom",
+        "id": "kebebasan"
+      }
+    },
+    {
+      "kana": "こうぎょう",
+      "kanji": "工業",
+      "romaji": "kougyou",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "manufacturing industry",
+        "id": "industri manufaktur"
+      }
+    },
+    {
+      "kana": "けいさつ",
+      "kanji": "警察",
+      "romaji": "keisatsu",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "police",
+        "id": "polisi"
+      }
+    },
+    {
+      "kana": "きょうそう",
+      "kanji": "競争",
+      "romaji": "kyousou",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "competition",
+        "id": "persaingan, lomba"
+      }
+    },
+    {
+      "kana": "かんけい",
+      "kanji": "関係",
+      "romaji": "kankei",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "relation, connection",
+        "id": "hubungan"
+      }
+    },
+    {
+      "kana": "ゆしゅつ",
+      "kanji": "輸出",
+      "romaji": "yushutsu",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "export",
+        "id": "ekspor"
+      }
+    },
+    {
+      "kana": "すり",
+      "romaji": "suri",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "pickpocket",
+        "id": "pencopet"
+      }
+    },
+    {
+      "kana": "じんじゃ",
+      "kanji": "神社",
+      "romaji": "jinja",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "Shinto shrine",
+        "id": "kuil Shinto"
+      }
+    },
+    {
+      "kana": "しゃかい",
+      "kanji": "社会",
+      "romaji": "shakai",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "society",
+        "id": "masyarakat"
+      }
+    }
+  ]
+}

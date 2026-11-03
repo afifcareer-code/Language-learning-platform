@@ -1,0 +1,186 @@
+{
+  "source": "N4 · Classmates: words from the JLPT N4 list by J. Waller (tanos.co.uk, CC BY) as compiled in open-anki-jlpt-decks (MIT). Meanings written for this project.",
+  "level": "n4",
+  "items": [
+    {
+      "kana": "いがく",
+      "kanji": "医学",
+      "romaji": "igaku",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "medicine (the science)",
+        "id": "ilmu kedokteran"
+      }
+    },
+    {
+      "kana": "テキスト",
+      "romaji": "tekisuto",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "textbook",
+        "id": "buku pelajaran"
+      }
+    },
+    {
+      "kana": "だいがくせい",
+      "kanji": "大学生",
+      "romaji": "daigakusei",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "university student",
+        "id": "mahasiswa"
+      }
+    },
+    {
+      "kana": "よしゅう",
+      "kanji": "予習",
+      "romaji": "yoshuu",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "preparing for a lesson",
+        "id": "belajar persiapan (sebelum pelajaran)"
+      }
+    },
+    {
+      "kana": "はつおん",
+      "kanji": "発音",
+      "romaji": "hatsuon",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "pronunciation",
+        "id": "pelafalan"
+      }
+    },
+    {
+      "kana": "てん",
+      "kanji": "点",
+      "romaji": "ten",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "point, score, mark",
+        "id": "nilai, poin, titik"
+      }
+    },
+    {
+      "kana": "がくぶ",
+      "kanji": "学部",
+      "romaji": "gakubu",
+      "affix": "suffix",
+      "partOfSpeech": "suffix",
+      "meaning": {
+        "en": "faculty (of a university)",
+        "id": "fakultas"
+      }
+    },
+    {
+      "kana": "ちゅうがっこう",
+      "kanji": "中学校",
+      "romaji": "chuugakkou",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "junior high school",
+        "id": "sekolah menengah pertama (SMP)"
+      }
+    },
+    {
+      "kana": "しゅっせき",
+      "kanji": "出席",
+      "romaji": "shusseki",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "attendance",
+        "id": "kehadiran"
+      }
+    },
+    {
+      "kana": "ちり",
+      "kanji": "地理",
+      "romaji": "chiri",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "geography",
+        "id": "geografi"
+      }
+    },
+    {
+      "kana": "うける",
+      "kanji": "受ける",
+      "romaji": "ukeru",
+      "partOfSpeech": "verb",
+      "meaning": {
+        "en": "to take (an exam); to receive",
+        "id": "mengikuti (ujian); menerima"
+      }
+    },
+    {
+      "kana": "しらべる",
+      "kanji": "調べる",
+      "romaji": "shiraberu",
+      "partOfSpeech": "verb",
+      "meaning": {
+        "en": "to look up, to check",
+        "id": "mencari tahu, memeriksa"
+      }
+    },
+    {
+      "kana": "しょうがっこう",
+      "kanji": "小学校",
+      "romaji": "shougakkou",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "primary school",
+        "id": "sekolah dasar (SD)"
+      }
+    },
+    {
+      "kana": "ぶんぽう",
+      "kanji": "文法",
+      "romaji": "bunpou",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "grammar",
+        "id": "tata bahasa"
+      }
+    },
+    {
+      "kana": "じてん",
+      "kanji": "辞典",
+      "romaji": "jiten",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "dictionary",
+        "id": "kamus"
+      }
+    },
+    {
+      "kana": "こたえ",
+      "kanji": "答",
+      "romaji": "kotae",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "answer",
+        "id": "jawaban"
+      }
+    },
+    {
+      "kana": "けしゴム",
+      "kanji": "消しゴム",
+      "romaji": "keshigomu",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "eraser",
+        "id": "penghapus"
+      }
+    },
+    {
+      "kana": "かいわ",
+      "kanji": "会話",
+      "romaji": "kaiwa",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "conversation",
+        "id": "percakapan"
+      }
+    }
+  ]
+}

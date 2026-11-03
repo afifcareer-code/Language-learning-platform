@@ -1,0 +1,66 @@
+{
+  "source": "Original practice sentences for N4 · On the move.",
+  "level": "n4",
+  "items": [
+    {
+      "slug": "n4-tokoro-1",
+      "text": "いま うちを でる ところです。",
+      "tokens": ["いま", "うち", "を", "でる", "ところ", "です"],
+      "grammar": "n4-tokoro",
+      "translation": {
+        "en": "I'm just about to leave home.",
+        "id": "Saya baru akan berangkat dari rumah."
+      }
+    },
+    {
+      "slug": "n4-tokoro-2",
+      "text": "いま えきに ついた ところです。",
+      "tokens": ["いま", "えき", "に", "ついた", "ところ", "です"],
+      "grammar": "n4-tokoro",
+      "translation": {
+        "en": "I've just arrived at the station.",
+        "id": "Saya baru saja tiba di stasiun."
+      }
+    },
+    {
+      "slug": "n4-ta-bakari-1",
+      "text": "にほんに きた ばかりです。",
+      "tokens": ["にほん", "に", "きた", "ばかり", "です"],
+      "grammar": "n4-ta-bakari",
+      "translation": {
+        "en": "I've only just come to Japan.",
+        "id": "Saya baru saja datang ke Jepang."
+      }
+    },
+    {
+      "slug": "n4-ta-bakari-2",
+      "text": "かった ばかりの かさが こわれました。",
+      "tokens": ["かった", "ばかり", "の", "かさ", "が", "こわれました"],
+      "grammar": "n4-ta-bakari",
+      "translation": {
+        "en": "The umbrella I'd just bought broke.",
+        "id": "Payung yang baru saja saya beli rusak."
+      }
+    },
+    {
+      "slug": "n4-te-iku-kuru-1",
+      "text": "かさを もって いきます。",
+      "tokens": ["かさ", "を", "もって", "いきます"],
+      "grammar": "n4-te-iku-kuru",
+      "translation": {
+        "en": "I'll take an umbrella with me.",
+        "id": "Saya akan membawa payung."
+      }
+    },
+    {
+      "slug": "n4-te-iku-kuru-2",
+      "text": "コンビニで のみものを かって きます。",
+      "tokens": ["コンビニ", "で", "のみもの", "を", "かって", "きます"],
+      "grammar": "n4-te-iku-kuru",
+      "translation": {
+        "en": "I'll go and buy a drink at the convenience store.",
+        "id": "Saya mau beli minuman di minimarket dulu."
+      }
+    }
+  ]
+}

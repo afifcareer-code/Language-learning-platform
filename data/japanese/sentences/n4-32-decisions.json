@@ -1,0 +1,66 @@
+{
+  "source": "Original practice sentences for N4 · Decisions.",
+  "level": "n4",
+  "items": [
+    {
+      "slug": "n4-koto-ni-suru-1",
+      "text": "らいねん にほんへ りゅうがくする ことに しました。",
+      "tokens": ["らいねん", "にほん", "へ", "りゅうがくする", "こと", "に", "しました"],
+      "grammar": "n4-koto-ni-suru",
+      "translation": {
+        "en": "I've decided to study in Japan next year.",
+        "id": "Saya memutuskan untuk kuliah di Jepang tahun depan."
+      }
+    },
+    {
+      "slug": "n4-koto-ni-suru-2",
+      "text": "もう おさけを のまない ことに しました。",
+      "tokens": ["もう", "おさけ", "を", "のまない", "こと", "に", "しました"],
+      "grammar": "n4-koto-ni-suru",
+      "translation": {
+        "en": "I've decided not to drink any more.",
+        "id": "Saya memutuskan untuk tidak minum alkohol lagi."
+      }
+    },
+    {
+      "slug": "n4-koto-ni-naru-1",
+      "text": "らいげつ おおさかへ ひっこす ことに なりました。",
+      "tokens": ["らいげつ", "おおさか", "へ", "ひっこす", "こと", "に", "なりました"],
+      "grammar": "n4-koto-ni-naru",
+      "translation": {
+        "en": "It's been decided that I'll move to Osaka next month.",
+        "id": "Sudah diputuskan saya pindah ke Osaka bulan depan."
+      }
+    },
+    {
+      "slug": "n4-koto-ni-naru-2",
+      "text": "かいぎは もくようびに する ことに なりました。",
+      "tokens": ["かいぎ", "は", "もくようび", "に", "する", "こと", "に", "なりました"],
+      "grammar": "n4-koto-ni-naru",
+      "translation": {
+        "en": "It's been decided to hold the meeting on Thursday.",
+        "id": "Rapat sudah diputuskan diadakan hari Kamis."
+      }
+    },
+    {
+      "slug": "n4-ni-suru-1",
+      "text": "わたしは コーヒーに します。",
+      "tokens": ["わたし", "は", "コーヒー", "に", "します"],
+      "grammar": "n4-ni-suru",
+      "translation": {
+        "en": "I'll have coffee.",
+        "id": "Saya pesan kopi."
+      }
+    },
+    {
+      "slug": "n4-ni-suru-2",
+      "text": "プレゼントは とけいに しました。",
+      "tokens": ["プレゼント", "は", "とけい", "に", "しました"],
+      "grammar": "n4-ni-suru",
+      "translation": {
+        "en": "I decided on a watch for the present.",
+        "id": "Untuk hadiahnya saya memilih jam tangan."
+      }
+    }
+  ]
+}

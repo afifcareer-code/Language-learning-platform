@@ -1,0 +1,221 @@
+{
+  "source": "N4 · Things that happen and things you do: words from the JLPT N4 list by J. Waller (tanos.co.uk, CC BY) as compiled in open-anki-jlpt-decks (MIT). Meanings written for this project.",
+  "level": "n4",
+  "items": [
+    {
+      "kana": "ふむ",
+      "kanji": "踏む",
+      "romaji": "fumu",
+      "partOfSpeech": "verb",
+      "meaning": {
+        "en": "to step on",
+        "id": "menginjak"
+      }
+    },
+    {
+      "kana": "なる",
+      "kanji": "鳴る",
+      "romaji": "naru",
+      "homonym": 2,
+      "partOfSpeech": "verb",
+      "meaning": {
+        "en": "to ring, to sound",
+        "id": "berbunyi"
+      }
+    },
+    {
+      "kana": "おる",
+      "kanji": "折る",
+      "romaji": "oru",
+      "partOfSpeech": "verb",
+      "meaning": {
+        "en": "to break, to fold",
+        "id": "mematahkan, melipat"
+      }
+    },
+    {
+      "kana": "きこえる",
+      "kanji": "聞こえる",
+      "romaji": "kikoeru",
+      "partOfSpeech": "verb",
+      "meaning": {
+        "en": "to be heard",
+        "id": "terdengar"
+      }
+    },
+    {
+      "kana": "こわす",
+      "kanji": "壊す",
+      "romaji": "kowasu",
+      "partOfSpeech": "verb",
+      "meaning": {
+        "en": "to break (something)",
+        "id": "merusak, memecahkan"
+      }
+    },
+    {
+      "kana": "すぎる",
+      "kanji": "過ぎる",
+      "romaji": "sugiru",
+      "partOfSpeech": "verb",
+      "meaning": {
+        "en": "to pass, to exceed",
+        "id": "lewat, melampaui"
+      }
+    },
+    {
+      "kana": "やめる",
+      "kanji": "止める",
+      "romaji": "yameru",
+      "partOfSpeech": "verb",
+      "meaning": {
+        "en": "to quit, to stop (doing)",
+        "id": "berhenti (melakukan), keluar"
+      }
+    },
+    {
+      "kana": "ゆれる",
+      "kanji": "揺れる",
+      "romaji": "yureru",
+      "partOfSpeech": "verb",
+      "meaning": {
+        "en": "to shake, to sway",
+        "id": "bergoyang"
+      }
+    },
+    {
+      "kana": "おこす",
+      "kanji": "起こす",
+      "romaji": "okosu",
+      "partOfSpeech": "verb",
+      "meaning": {
+        "en": "to wake (someone) up",
+        "id": "membangunkan"
+      }
+    },
+    {
+      "kana": "きまる",
+      "kanji": "決まる",
+      "romaji": "kimaru",
+      "partOfSpeech": "verb",
+      "meaning": {
+        "en": "to be decided",
+        "id": "ditetapkan, sudah diputuskan"
+      }
+    },
+    {
+      "kana": "とめる",
+      "kanji": "止める",
+      "romaji": "tomeru",
+      "partOfSpeech": "verb",
+      "meaning": {
+        "en": "to stop (something), to park",
+        "id": "menghentikan, memarkir"
+      }
+    },
+    {
+      "kana": "なくなる",
+      "kanji": "無くなる",
+      "romaji": "nakunaru",
+      "partOfSpeech": "verb",
+      "meaning": {
+        "en": "to be lost, to run out",
+        "id": "hilang, habis"
+      }
+    },
+    {
+      "kana": "のこる",
+      "kanji": "残る",
+      "romaji": "nokoru",
+      "partOfSpeech": "verb",
+      "meaning": {
+        "en": "to remain, to be left",
+        "id": "tersisa, tertinggal"
+      }
+    },
+    {
+      "kana": "たてる",
+      "kanji": "立てる",
+      "romaji": "tateru",
+      "homonym": 2,
+      "partOfSpeech": "verb",
+      "meaning": {
+        "en": "to stand (something) up; to make (a plan)",
+        "id": "mendirikan; membuat (rencana)"
+      }
+    },
+    {
+      "kana": "ふえる",
+      "kanji": "増える",
+      "romaji": "fueru",
+      "partOfSpeech": "verb",
+      "meaning": {
+        "en": "to increase",
+        "id": "bertambah"
+      }
+    },
+    {
+      "kana": "かわく",
+      "kanji": "乾く",
+      "romaji": "kawaku",
+      "partOfSpeech": "verb",
+      "meaning": {
+        "en": "to get dry",
+        "id": "kering"
+      }
+    },
+    {
+      "kana": "かえる",
+      "kanji": "変える",
+      "romaji": "kaeru",
+      "homonym": 2,
+      "partOfSpeech": "verb",
+      "meaning": {
+        "en": "to change (something)",
+        "id": "mengubah, mengganti"
+      }
+    },
+    {
+      "kana": "あく",
+      "kanji": "空く",
+      "romaji": "aku",
+      "homonym": 2,
+      "partOfSpeech": "verb",
+      "meaning": {
+        "en": "to become empty, to open up",
+        "id": "menjadi kosong"
+      }
+    },
+    {
+      "kana": "かわる",
+      "kanji": "変わる",
+      "romaji": "kawaru",
+      "partOfSpeech": "verb",
+      "meaning": {
+        "en": "to change (by itself)",
+        "id": "berubah"
+      }
+    },
+    {
+      "kana": "すむ",
+      "kanji": "済む",
+      "romaji": "sumu",
+      "homonym": 2,
+      "partOfSpeech": "verb",
+      "meaning": {
+        "en": "to be finished, to be settled",
+        "id": "selesai, beres"
+      }
+    },
+    {
+      "kana": "みえる",
+      "kanji": "見える",
+      "romaji": "mieru",
+      "partOfSpeech": "verb",
+      "meaning": {
+        "en": "to be visible; to come (honorific)",
+        "id": "terlihat; datang (hormat)"
+      }
+    }
+  ]
+}

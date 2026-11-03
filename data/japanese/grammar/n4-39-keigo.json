@@ -1,0 +1,74 @@
+{
+  "source": "Original grammar explanations for N4 · Honorific and humble language, written for this project.",
+  "level": "n4",
+  "items": [
+    {
+      "slug": "n4-sonkeigo",
+      "pattern": "honorific verbs: いらっしゃる, おっしゃる, なさる, めしあがる, ごらんに なる, くださる",
+      "meaning": {
+        "en": "special respectful verbs",
+        "id": "kata kerja hormat khusus"
+      },
+      "explanation": {
+        "en": "Some common verbs have their own honorific word for what a superior does: いく/くる/いる → いらっしゃる, いう → おっしゃる, する → なさる, たべる/のむ → めしあがる, みる → ごらんに なる. いらっしゃる and おっしゃる have the ます form いらっしゃいます, おっしゃいます.",
+        "id": "Beberapa kata kerja umum punya kata hormat sendiri untuk tindakan atasan: いく/くる/いる → いらっしゃる, いう → おっしゃる, する → なさる, たべる/のむ → めしあがる, みる → ごらんに なる. いらっしゃる dan おっしゃる berbentuk ます いらっしゃいます, おっしゃいます."
+      },
+      "examples": [
+        {
+          "ja": "せんせいは なんと おっしゃいましたか。",
+          "translation": {
+            "en": "What did the teacher say?",
+            "id": "Bapak/Ibu guru bilang apa?"
+          }
+        },
+        {
+          "ja": "どうぞ めしあがって ください。",
+          "translation": {
+            "en": "Please, help yourself.",
+            "id": "Silakan dinikmati."
+          }
+        }
+      ],
+      "commonErrors": [
+        {
+          "en": "Using honorific verbs for yourself or your family when talking to outsiders: use humble verbs instead.",
+          "id": "Memakai kata hormat untuk diri sendiri atau keluarga ketika berbicara dengan orang luar: pakai kata merendah sebagai gantinya."
+        }
+      ]
+    },
+    {
+      "slug": "n4-kenjougo",
+      "pattern": "humble verbs: まいる, もうす, いたす, おる, いただく, うかがう, はいけんする",
+      "meaning": {
+        "en": "special humble verbs",
+        "id": "kata kerja merendah khusus"
+      },
+      "explanation": {
+        "en": "Humble verbs lower yourself (and your side) when talking to superiors or customers: いく/くる → まいる, いう → もうす, する → いたす, いる → おる, たべる/もらう → いただく, きく/たずねる → うかがう, みる → はいけんする.",
+        "id": "Kata merendah merendahkan diri sendiri (dan pihak Anda) ketika berbicara dengan atasan atau pelanggan: いく/くる → まいる, いう → もうす, する → いたす, いる → おる, たべる/もらう → いただく, きく/たずねる → うかがう, みる → はいけんする."
+      },
+      "examples": [
+        {
+          "ja": "わたしは アフィフと もうします。",
+          "translation": {
+            "en": "My name is Afif.",
+            "id": "Nama saya Afif."
+          }
+        },
+        {
+          "ja": "あした また まいります。",
+          "translation": {
+            "en": "I'll come again tomorrow.",
+            "id": "Besok saya akan datang lagi."
+          }
+        }
+      ],
+      "commonErrors": [
+        {
+          "en": "Using humble verbs for a superior's actions: せんせいが まいりました is wrong; say いらっしゃいました.",
+          "id": "Memakai kata merendah untuk tindakan atasan: せんせいが まいりました salah; katakan いらっしゃいました."
+        }
+      ]
+    }
+  ]
+}

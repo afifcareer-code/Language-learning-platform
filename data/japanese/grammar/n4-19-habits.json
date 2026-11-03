@@ -1,0 +1,74 @@
+{
+  "source": "Original grammar explanations for N4 · Good habits, written for this project.",
+  "level": "n4",
+  "items": [
+    {
+      "slug": "n4-you-ni-suru",
+      "pattern": "V(dictionary / ない) ように して います",
+      "meaning": {
+        "en": "make a point of V-ing (not V-ing)",
+        "id": "berusaha untuk (tidak) V"
+      },
+      "explanation": {
+        "en": "〜ように する means making an effort to do (or not do) something as a habit: まいにち あるくように して います, あまり あまい ものを たべないように して います.",
+        "id": "〜ように する berarti berusaha melakukan (atau tidak melakukan) sesuatu sebagai kebiasaan: まいにち あるくように して います, あまり あまい ものを たべないように して います."
+      },
+      "examples": [
+        {
+          "ja": "まいにち やさいを たべるように して います。",
+          "translation": {
+            "en": "I make a point of eating vegetables every day.",
+            "id": "Saya berusaha makan sayur setiap hari."
+          }
+        },
+        {
+          "ja": "よる おそく ねないように して います。",
+          "translation": {
+            "en": "I try not to go to bed late.",
+            "id": "Saya berusaha tidak tidur larut malam."
+          }
+        }
+      ],
+      "commonErrors": [
+        {
+          "en": "Confusing it with ように なる: なる is a change that happened, する is your effort.",
+          "id": "Tertukar dengan ように なる: なる adalah perubahan yang terjadi, する adalah usaha Anda."
+        }
+      ]
+    },
+    {
+      "slug": "n4-you-ni-purpose",
+      "pattern": "V(dictionary / potential / ない) ように、…",
+      "meaning": {
+        "en": "so that…, in order that…",
+        "id": "supaya…, agar…"
+      },
+      "explanation": {
+        "en": "ように gives a purpose when the verb before it is not fully in your control (potential, ない, or an intransitive verb): わすれないように メモします, よく みえるように まえに すわります.",
+        "id": "ように menyatakan tujuan ketika kata kerja sebelumnya tidak sepenuhnya bisa Anda kendalikan (bentuk potensial, ない, atau intransitif): わすれないように メモします, よく みえるように まえに すわります."
+      },
+      "examples": [
+        {
+          "ja": "わすれないように てちょうに かきます。",
+          "translation": {
+            "en": "I'll write it in my planner so I don't forget.",
+            "id": "Saya menulisnya di agenda supaya tidak lupa."
+          }
+        },
+        {
+          "ja": "よく きこえるように まえの せきに すわりました。",
+          "translation": {
+            "en": "I sat in the front seat so that I could hear well.",
+            "id": "Saya duduk di kursi depan supaya bisa mendengar dengan jelas."
+          }
+        }
+      ],
+      "commonErrors": [
+        {
+          "en": "Using ために with a potential verb: きこえる ために is wrong; say きこえるように.",
+          "id": "Memakai ために dengan kata kerja potensial: きこえる ために salah; katakan きこえるように."
+        }
+      ]
+    }
+  ]
+}

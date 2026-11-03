@@ -1,0 +1,220 @@
+{
+  "source": "N4 · Good habits: words from the JLPT N4 list by J. Waller (tanos.co.uk, CC BY) as compiled in open-anki-jlpt-decks (MIT). Meanings written for this project.",
+  "level": "n4",
+  "items": [
+    {
+      "kana": "おれる",
+      "kanji": "折れる",
+      "romaji": "oreru",
+      "partOfSpeech": "verb",
+      "meaning": {
+        "en": "to break, to snap",
+        "id": "patah"
+      }
+    },
+    {
+      "kana": "すべる",
+      "kanji": "滑る",
+      "romaji": "suberu",
+      "partOfSpeech": "verb",
+      "meaning": {
+        "en": "to slip, to slide",
+        "id": "tergelincir, meluncur"
+      }
+    },
+    {
+      "kana": "さがる",
+      "kanji": "下る",
+      "romaji": "sagaru",
+      "partOfSpeech": "verb",
+      "meaning": {
+        "en": "to go down, to fall back",
+        "id": "turun, mundur"
+      }
+    },
+    {
+      "kana": "すく",
+      "kanji": "空く",
+      "romaji": "suku",
+      "partOfSpeech": "verb",
+      "meaning": {
+        "en": "to be empty (crowd); to be hungry",
+        "id": "lengang, sepi; lapar"
+      }
+    },
+    {
+      "kana": "あう",
+      "kanji": "合う",
+      "romaji": "au",
+      "homonym": 2,
+      "partOfSpeech": "verb",
+      "meaning": {
+        "en": "to fit, to match",
+        "id": "cocok, pas"
+      }
+    },
+    {
+      "kana": "みつかる",
+      "kanji": "見つかる",
+      "romaji": "mitsukaru",
+      "partOfSpeech": "verb",
+      "meaning": {
+        "en": "to be found",
+        "id": "ditemukan"
+      }
+    },
+    {
+      "kana": "なおる",
+      "kanji": "直る",
+      "romaji": "naoru",
+      "homonym": 2,
+      "partOfSpeech": "verb",
+      "meaning": {
+        "en": "to be repaired",
+        "id": "diperbaiki, pulih"
+      }
+    },
+    {
+      "kana": "あつめる",
+      "kanji": "集める",
+      "romaji": "atsumeru",
+      "partOfSpeech": "verb",
+      "meaning": {
+        "en": "to collect",
+        "id": "mengumpulkan"
+      }
+    },
+    {
+      "kana": "なおす",
+      "kanji": "直す",
+      "romaji": "naosu",
+      "partOfSpeech": "verb",
+      "meaning": {
+        "en": "to repair, to correct",
+        "id": "memperbaiki"
+      }
+    },
+    {
+      "kana": "つづく",
+      "kanji": "続く",
+      "romaji": "tsuzuku",
+      "partOfSpeech": "verb",
+      "meaning": {
+        "en": "to continue (by itself)",
+        "id": "berlanjut"
+      }
+    },
+    {
+      "kana": "つく",
+      "kanji": "点く",
+      "romaji": "tsuku",
+      "homonym": 2,
+      "partOfSpeech": "verb",
+      "meaning": {
+        "en": "to be turned on",
+        "id": "menyala"
+      }
+    },
+    {
+      "kana": "つづける",
+      "kanji": "続ける",
+      "romaji": "tsuzukeru",
+      "homonym": 2,
+      "partOfSpeech": "verb",
+      "meaning": {
+        "en": "to continue (something)",
+        "id": "melanjutkan"
+      }
+    },
+    {
+      "kana": "おとす",
+      "kanji": "落す",
+      "romaji": "otosu",
+      "partOfSpeech": "verb",
+      "meaning": {
+        "en": "to drop; to lose",
+        "id": "menjatuhkan; menghilangkan"
+      }
+    },
+    {
+      "kana": "われる",
+      "kanji": "割れる",
+      "romaji": "wareru",
+      "partOfSpeech": "verb",
+      "meaning": {
+        "en": "to break (into pieces)",
+        "id": "pecah"
+      }
+    },
+    {
+      "kana": "まわる",
+      "kanji": "回る",
+      "romaji": "mawaru",
+      "partOfSpeech": "verb",
+      "meaning": {
+        "en": "to turn round, to go round",
+        "id": "berputar, berkeliling"
+      }
+    },
+    {
+      "kana": "たおれる",
+      "kanji": "倒れる",
+      "romaji": "taoreru",
+      "partOfSpeech": "verb",
+      "meaning": {
+        "en": "to fall over, to collapse",
+        "id": "jatuh, roboh"
+      }
+    },
+    {
+      "kana": "うごく",
+      "kanji": "動く",
+      "romaji": "ugoku",
+      "partOfSpeech": "verb",
+      "meaning": {
+        "en": "to move",
+        "id": "bergerak"
+      }
+    },
+    {
+      "kana": "よごれる",
+      "kanji": "汚れる",
+      "romaji": "yogoreru",
+      "partOfSpeech": "verb",
+      "meaning": {
+        "en": "to get dirty",
+        "id": "menjadi kotor"
+      }
+    },
+    {
+      "kana": "さげる",
+      "kanji": "下げる",
+      "romaji": "sageru",
+      "partOfSpeech": "verb",
+      "meaning": {
+        "en": "to lower; to hang",
+        "id": "menurunkan; menggantung"
+      }
+    },
+    {
+      "kana": "あがる",
+      "kanji": "上がる",
+      "romaji": "agaru",
+      "partOfSpeech": "verb",
+      "meaning": {
+        "en": "to go up, to rise",
+        "id": "naik"
+      }
+    },
+    {
+      "kana": "あつまる",
+      "kanji": "集まる",
+      "romaji": "atsumaru",
+      "partOfSpeech": "verb",
+      "meaning": {
+        "en": "to gather (by themselves)",
+        "id": "berkumpul"
+      }
+    }
+  ]
+}

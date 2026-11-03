@@ -1,0 +1,46 @@
+{
+  "source": "Original practice sentences for N4 · Clothes and appearance.",
+  "level": "n4",
+  "items": [
+    {
+      "slug": "n4-you-na-1",
+      "text": "それは ゆめの ような はなしです。",
+      "tokens": ["それ", "は", "ゆめ", "の", "ような", "はなし", "です"],
+      "grammar": "n4-you-na",
+      "translation": {
+        "en": "That's like a dream.",
+        "id": "Itu cerita seperti mimpi."
+      }
+    },
+    {
+      "slug": "n4-you-na-2",
+      "text": "かれは こどもの ように わらいました。",
+      "tokens": ["かれ", "は", "こども", "の", "ように", "わらいました"],
+      "grammar": "n4-you-na",
+      "translation": {
+        "en": "He laughed like a child.",
+        "id": "Dia tertawa seperti anak kecil."
+      }
+    },
+    {
+      "slug": "n4-to-onaji-1",
+      "text": "わたしの かばんは あなたのと おなじです。",
+      "tokens": ["わたし", "の", "かばん", "は", "あなた", "の", "と", "おなじです"],
+      "grammar": "n4-to-onaji",
+      "translation": {
+        "en": "My bag is the same as yours.",
+        "id": "Tas saya sama dengan tas Anda."
+      }
+    },
+    {
+      "slug": "n4-to-onaji-2",
+      "text": "にほんの しゅうかんは インドネシアと ちがいます。",
+      "tokens": ["にほん", "の", "しゅうかん", "は", "インドネシア", "と", "ちがいます"],
+      "grammar": "n4-to-onaji",
+      "translation": {
+        "en": "Japanese customs are different from Indonesian ones.",
+        "id": "Kebiasaan di Jepang berbeda dengan di Indonesia."
+      }
+    }
+  ]
+}

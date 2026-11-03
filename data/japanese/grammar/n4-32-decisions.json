@@ -1,0 +1,108 @@
+{
+  "source": "Original grammar explanations for N4 · Decisions, written for this project.",
+  "level": "n4",
+  "items": [
+    {
+      "slug": "n4-koto-ni-suru",
+      "pattern": "V(dictionary / ない) ことに します",
+      "meaning": {
+        "en": "decide to V",
+        "id": "memutuskan untuk V"
+      },
+      "explanation": {
+        "en": "〜ことに する is a decision you make yourself: らいねん にほんへ いく ことに しました. 〜ことに して いる is a rule you keep.",
+        "id": "〜ことに する adalah keputusan yang Anda buat sendiri: らいねん にほんへ いく ことに しました. 〜ことに して いる adalah aturan yang Anda pegang."
+      },
+      "examples": [
+        {
+          "ja": "らいねん にほんへ りゅうがくする ことに しました。",
+          "translation": {
+            "en": "I've decided to study in Japan next year.",
+            "id": "Saya memutuskan untuk kuliah di Jepang tahun depan."
+          }
+        },
+        {
+          "ja": "もう おさけを のまない ことに しました。",
+          "translation": {
+            "en": "I've decided not to drink any more.",
+            "id": "Saya memutuskan untuk tidak minum alkohol lagi."
+          }
+        }
+      ],
+      "commonErrors": [
+        {
+          "en": "Using ことに なる for your own choice: なる is decided by others or circumstances.",
+          "id": "Memakai ことに なる untuk pilihan sendiri: なる diputuskan oleh orang lain atau keadaan."
+        }
+      ]
+    },
+    {
+      "slug": "n4-koto-ni-naru",
+      "pattern": "V(dictionary / ない) ことに なりました",
+      "meaning": {
+        "en": "it has been decided that…",
+        "id": "sudah diputuskan bahwa…"
+      },
+      "explanation": {
+        "en": "〜ことに なる says something was decided, not by you alone: らいげつ おおさかに てんきんする ことに なりました.",
+        "id": "〜ことに なる menyatakan sesuatu sudah diputuskan, bukan oleh Anda sendiri: らいげつ おおさかに てんきんする ことに なりました."
+      },
+      "examples": [
+        {
+          "ja": "らいげつ おおさかへ ひっこす ことに なりました。",
+          "translation": {
+            "en": "It's been decided that I'll move to Osaka next month.",
+            "id": "Sudah diputuskan saya pindah ke Osaka bulan depan."
+          }
+        },
+        {
+          "ja": "かいぎは もくようびに する ことに なりました。",
+          "translation": {
+            "en": "It's been decided to hold the meeting on Thursday.",
+            "id": "Rapat sudah diputuskan diadakan hari Kamis."
+          }
+        }
+      ],
+      "commonErrors": [
+        {
+          "en": "Using the past before こと: ひっこした ことに is wrong here; use the dictionary form.",
+          "id": "Memakai bentuk lampau sebelum こと: ひっこした ことに salah di sini; pakai bentuk kamus."
+        }
+      ]
+    },
+    {
+      "slug": "n4-ni-suru",
+      "pattern": "N に します",
+      "meaning": {
+        "en": "decide on N, I'll have N",
+        "id": "memilih N, saya pesan N"
+      },
+      "explanation": {
+        "en": "N に する means choosing: わたしは コーヒーに します (I'll have coffee). It is common when ordering or deciding between options.",
+        "id": "N に する berarti memilih: わたしは コーヒーに します (saya pilih kopi). Sering dipakai saat memesan atau memilih di antara pilihan."
+      },
+      "examples": [
+        {
+          "ja": "わたしは コーヒーに します。",
+          "translation": {
+            "en": "I'll have coffee.",
+            "id": "Saya pesan kopi."
+          }
+        },
+        {
+          "ja": "プレゼントは とけいに しました。",
+          "translation": {
+            "en": "I decided on a watch for the present.",
+            "id": "Untuk hadiahnya saya memilih jam tangan."
+          }
+        }
+      ],
+      "commonErrors": [
+        {
+          "en": "Using を: コーヒーを します is wrong; say コーヒーに します.",
+          "id": "Memakai を: コーヒーを します salah; katakan コーヒーに します."
+        }
+      ]
+    }
+  ]
+}

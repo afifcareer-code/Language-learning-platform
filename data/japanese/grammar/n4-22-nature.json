@@ -1,0 +1,108 @@
+{
+  "source": "Original grammar explanations for N4 · Nature and the seasons, written for this project.",
+  "level": "n4",
+  "items": [
+    {
+      "slug": "n4-darou",
+      "pattern": "plain form + だろう / でしょう",
+      "meaning": {
+        "en": "probably… (casual / polite)",
+        "id": "mungkin…; pasti… (santai / sopan)"
+      },
+      "explanation": {
+        "en": "だろう is the plain form of でしょう. Men use it in casual speech and it appears in writing; with a rising tone でしょう? checks agreement: そうでしょう?",
+        "id": "だろう adalah bentuk biasa dari でしょう. Laki-laki memakainya dalam percakapan santai dan juga muncul dalam tulisan; dengan nada naik, でしょう? meminta persetujuan: そうでしょう?"
+      },
+      "examples": [
+        {
+          "ja": "かれは たぶん こないだろう。",
+          "translation": {
+            "en": "He probably won't come.",
+            "id": "Dia mungkin tidak datang."
+          }
+        },
+        {
+          "ja": "この しけんは むずかしいでしょう。",
+          "translation": {
+            "en": "This exam will probably be difficult.",
+            "id": "Ujian ini mungkin sulit."
+          }
+        }
+      ],
+      "commonErrors": [
+        {
+          "en": "Using だろう to a superior: it is casual; use でしょう.",
+          "id": "Memakai だろう kepada atasan: bentuk ini santai; pakai でしょう."
+        }
+      ]
+    },
+    {
+      "slug": "n4-mitai",
+      "pattern": "plain form / N + みたいです",
+      "meaning": {
+        "en": "it seems…, looks like… (casual)",
+        "id": "sepertinya…; kayaknya… (santai)"
+      },
+      "explanation": {
+        "en": "みたい is the conversational form of ようだ. Nouns and な-adjectives join directly: ゆめみたい, げんきみたい. Before a noun: みたいな.",
+        "id": "みたい adalah bentuk percakapan dari ようだ. Kata benda dan kata sifat な langsung disambung: ゆめみたい, げんきみたい. Sebelum kata benda: みたいな."
+      },
+      "examples": [
+        {
+          "ja": "そとは さむいみたいです。",
+          "translation": {
+            "en": "It seems cold outside.",
+            "id": "Di luar sepertinya dingin."
+          }
+        },
+        {
+          "ja": "まるで ゆめみたいです。",
+          "translation": {
+            "en": "It's just like a dream.",
+            "id": "Seperti mimpi saja."
+          }
+        }
+      ],
+      "commonErrors": [
+        {
+          "en": "Putting の before みたい: ゆめの みたい is wrong; say ゆめみたい.",
+          "id": "Menaruh の sebelum みたい: ゆめの みたい salah; katakan ゆめみたい."
+        }
+      ]
+    },
+    {
+      "slug": "n4-rashii",
+      "pattern": "plain form / N + らしい",
+      "meaning": {
+        "en": "apparently…, I gather…; typical of N",
+        "id": "kabarnya…; khas N"
+      },
+      "explanation": {
+        "en": "らしい passes on what you gathered from signs or hearsay, less directly than そうだ: あの みせは しまった らしい. After a noun it can also mean 'typical of': おとこらしい.",
+        "id": "らしい menyampaikan apa yang Anda simpulkan dari tanda-tanda atau kabar, tidak selangsung そうだ: あの みせは しまった らしい. Setelah kata benda juga bisa berarti 'khas': おとこらしい."
+      },
+      "examples": [
+        {
+          "ja": "あの みせは らいげつ しまる らしいです。",
+          "translation": {
+            "en": "Apparently that shop is closing next month.",
+            "id": "Kabarnya toko itu tutup bulan depan."
+          }
+        },
+        {
+          "ja": "きょうは はるらしい てんきですね。",
+          "translation": {
+            "en": "Today's weather is just like spring, isn't it?",
+            "id": "Hari ini cuacanya khas musim semi, ya."
+          }
+        }
+      ],
+      "commonErrors": [
+        {
+          "en": "Using らしい for your own direct experience: for what you saw yourself use ようだ or みたい.",
+          "id": "Memakai らしい untuk pengalaman langsung: untuk yang Anda lihat sendiri pakai ようだ atau みたい."
+        }
+      ]
+    }
+  ]
+}

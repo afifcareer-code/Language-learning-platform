@@ -1,0 +1,66 @@
+{
+  "source": "Original practice sentences for N4 · Travel advice.",
+  "level": "n4",
+  "items": [
+    {
+      "slug": "n4-nara-1",
+      "text": "きょうとへ いくなら、きんかくじが いいですよ。",
+      "tokens": ["きょうと", "へ", "いく", "なら", "きんかくじ", "が", "いいです", "よ"],
+      "grammar": "n4-nara",
+      "translation": {
+        "en": "If you're going to Kyoto, Kinkakuji is good.",
+        "id": "Kalau mau ke Kyoto, Kinkakuji bagus, lho."
+      }
+    },
+    {
+      "slug": "n4-nara-2",
+      "text": "カメラなら あの みせが やすいです。",
+      "tokens": ["カメラ", "なら", "あの", "みせ", "が", "やすいです"],
+      "grammar": "n4-nara",
+      "translation": {
+        "en": "If it's a camera you want, that shop is cheap.",
+        "id": "Kalau soal kamera, toko itu murah."
+      }
+    },
+    {
+      "slug": "n4-to-ii-1",
+      "text": "どう すれば いいですか。",
+      "tokens": ["どう", "すれば", "いいです", "か"],
+      "grammar": "n4-to-ii",
+      "translation": {
+        "en": "What should I do?",
+        "id": "Sebaiknya saya bagaimana?"
+      }
+    },
+    {
+      "slug": "n4-to-ii-2",
+      "text": "あした はれると いいですね。",
+      "tokens": ["あした", "はれる", "と", "いいです", "ね"],
+      "grammar": "n4-to-ii",
+      "translation": {
+        "en": "I hope it's sunny tomorrow.",
+        "id": "Semoga besok cerah, ya."
+      }
+    },
+    {
+      "slug": "n4-tara-dou-1",
+      "text": "すこし やすんだら どうですか。",
+      "tokens": ["すこし", "やすんだら", "どうです", "か"],
+      "grammar": "n4-tara-dou",
+      "translation": {
+        "en": "Why don't you take a little rest?",
+        "id": "Bagaimana kalau istirahat sebentar?"
+      }
+    },
+    {
+      "slug": "n4-tara-dou-2",
+      "text": "せんせいに そうだんしたら どうですか。",
+      "tokens": ["せんせい", "に", "そうだんしたら", "どうです", "か"],
+      "grammar": "n4-tara-dou",
+      "translation": {
+        "en": "Why don't you talk it over with your teacher?",
+        "id": "Bagaimana kalau berkonsultasi dengan guru?"
+      }
+    }
+  ]
+}

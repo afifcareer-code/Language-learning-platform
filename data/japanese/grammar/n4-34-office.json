@@ -1,0 +1,108 @@
+{
+  "source": "Original grammar explanations for N4 · At the office, written for this project.",
+  "level": "n4",
+  "items": [
+    {
+      "slug": "n4-te-mo-kamawanai",
+      "pattern": "V(て) も かまいません",
+      "meaning": {
+        "en": "it's all right to V; I don't mind if…",
+        "id": "tidak apa-apa kalau V"
+      },
+      "explanation": {
+        "en": "〜ても かまいません is a polite way to give permission, a little more formal than 〜ても いいです.",
+        "id": "〜ても かまいません adalah cara sopan memberi izin, sedikit lebih formal daripada 〜ても いいです."
+      },
+      "examples": [
+        {
+          "ja": "えんぴつで かいても かまいません。",
+          "translation": {
+            "en": "You may write in pencil.",
+            "id": "Boleh menulis dengan pensil."
+          }
+        },
+        {
+          "ja": "あした こなくても かまいません。",
+          "translation": {
+            "en": "It's all right if you don't come tomorrow.",
+            "id": "Tidak apa-apa kalau besok tidak datang."
+          }
+        }
+      ],
+      "commonErrors": [
+        {
+          "en": "Using かまいません without も: かいて かまいません is wrong; say かいても かまいません.",
+          "id": "Memakai かまいません tanpa も: かいて かまいません salah; katakan かいても かまいません."
+        }
+      ]
+    },
+    {
+      "slug": "n4-nakucha",
+      "pattern": "V(ない) → なくちゃ / なきゃ",
+      "meaning": {
+        "en": "I have to V (casual)",
+        "id": "harus V (santai)"
+      },
+      "explanation": {
+        "en": "なくちゃ and なきゃ are casual short forms of 〜なくては いけない / 〜なければ ならない: もう かえらなくちゃ.",
+        "id": "なくちゃ dan なきゃ adalah bentuk singkat santai dari 〜なくては いけない / 〜なければ ならない: もう かえらなくちゃ."
+      },
+      "examples": [
+        {
+          "ja": "もう かえらなくちゃ。",
+          "translation": {
+            "en": "I've got to go home now.",
+            "id": "Aku harus pulang sekarang."
+          }
+        },
+        {
+          "ja": "あした はやく おきなきゃ。",
+          "translation": {
+            "en": "I have to get up early tomorrow.",
+            "id": "Besok aku harus bangun pagi."
+          }
+        }
+      ],
+      "commonErrors": [
+        {
+          "en": "Using it in formal speech: with superiors say 〜なければ なりません.",
+          "id": "Memakainya dalam percakapan formal: kepada atasan katakan 〜なければ なりません."
+        }
+      ]
+    },
+    {
+      "slug": "n4-zu-ni",
+      "pattern": "V(ない) で / V(ない stem) ずに",
+      "meaning": {
+        "en": "without V-ing",
+        "id": "tanpa V"
+      },
+      "explanation": {
+        "en": "〜ないで and the more written 〜ずに both mean 'without doing': あさごはんを たべないで でかけました = たべずに. する becomes せずに.",
+        "id": "〜ないで dan 〜ずに yang lebih tertulis sama-sama berarti 'tanpa melakukan': あさごはんを たべないで でかけました = たべずに. する menjadi せずに."
+      },
+      "examples": [
+        {
+          "ja": "あさごはんを たべないで がっこうへ いきました。",
+          "translation": {
+            "en": "I went to school without eating breakfast.",
+            "id": "Saya pergi ke sekolah tanpa sarapan."
+          }
+        },
+        {
+          "ja": "じしょを つかわずに よみました。",
+          "translation": {
+            "en": "I read it without using a dictionary.",
+            "id": "Saya membacanya tanpa memakai kamus."
+          }
+        }
+      ],
+      "commonErrors": [
+        {
+          "en": "Saying しずに for する: the form is せずに.",
+          "id": "Mengatakan しずに untuk する: bentuknya せずに."
+        }
+      ]
+    }
+  ]
+}

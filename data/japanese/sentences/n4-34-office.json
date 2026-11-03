@@ -1,0 +1,66 @@
+{
+  "source": "Original practice sentences for N4 · At the office.",
+  "level": "n4",
+  "items": [
+    {
+      "slug": "n4-te-mo-kamawanai-1",
+      "text": "えんぴつで かいても かまいません。",
+      "tokens": ["えんぴつ", "で", "かいて", "も", "かまいません"],
+      "grammar": "n4-te-mo-kamawanai",
+      "translation": {
+        "en": "You may write in pencil.",
+        "id": "Boleh menulis dengan pensil."
+      }
+    },
+    {
+      "slug": "n4-te-mo-kamawanai-2",
+      "text": "あした こなくても かまいません。",
+      "tokens": ["あした", "こなくて", "も", "かまいません"],
+      "grammar": "n4-te-mo-kamawanai",
+      "translation": {
+        "en": "It's all right if you don't come tomorrow.",
+        "id": "Tidak apa-apa kalau besok tidak datang."
+      }
+    },
+    {
+      "slug": "n4-nakucha-1",
+      "text": "もう かえらなくちゃ。",
+      "tokens": ["もう", "かえらなくちゃ"],
+      "grammar": "n4-nakucha",
+      "translation": {
+        "en": "I've got to go home now.",
+        "id": "Aku harus pulang sekarang."
+      }
+    },
+    {
+      "slug": "n4-nakucha-2",
+      "text": "あした はやく おきなきゃ。",
+      "tokens": ["あした", "はやく", "おきなきゃ"],
+      "grammar": "n4-nakucha",
+      "translation": {
+        "en": "I have to get up early tomorrow.",
+        "id": "Besok aku harus bangun pagi."
+      }
+    },
+    {
+      "slug": "n4-zu-ni-1",
+      "text": "あさごはんを たべないで がっこうへ いきました。",
+      "tokens": ["あさごはん", "を", "たべないで", "がっこう", "へ", "いきました"],
+      "grammar": "n4-zu-ni",
+      "translation": {
+        "en": "I went to school without eating breakfast.",
+        "id": "Saya pergi ke sekolah tanpa sarapan."
+      }
+    },
+    {
+      "slug": "n4-zu-ni-2",
+      "text": "じしょを つかわずに よみました。",
+      "tokens": ["じしょ", "を", "つかわずに", "よみました"],
+      "grammar": "n4-zu-ni",
+      "translation": {
+        "en": "I read it without using a dictionary.",
+        "id": "Saya membacanya tanpa memakai kamus."
+      }
+    }
+  ]
+}

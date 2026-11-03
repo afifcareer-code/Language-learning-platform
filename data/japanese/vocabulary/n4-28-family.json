@@ -1,0 +1,185 @@
+{
+  "source": "N4 · Family life: words from the JLPT N4 list by J. Waller (tanos.co.uk, CC BY) as compiled in open-anki-jlpt-decks (MIT). Meanings written for this project.",
+  "level": "n4",
+  "items": [
+    {
+      "kana": "いきる",
+      "kanji": "生きる",
+      "romaji": "ikiru",
+      "partOfSpeech": "verb",
+      "meaning": {
+        "en": "to live, to be alive",
+        "id": "hidup"
+      }
+    },
+    {
+      "kana": "ぼく",
+      "kanji": "僕",
+      "romaji": "boku",
+      "partOfSpeech": "pronoun",
+      "meaning": {
+        "en": "I (used by men)",
+        "id": "aku (dipakai laki-laki)"
+      }
+    },
+    {
+      "kana": "かれ",
+      "kanji": "彼",
+      "romaji": "kare",
+      "partOfSpeech": "pronoun",
+      "meaning": {
+        "en": "he; boyfriend",
+        "id": "dia (laki-laki); pacar (laki-laki)"
+      }
+    },
+    {
+      "kana": "あかちゃん",
+      "kanji": "赤ちゃん",
+      "romaji": "akachan",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "baby",
+        "id": "bayi"
+      }
+    },
+    {
+      "kana": "おや",
+      "kanji": "親",
+      "romaji": "oya",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "parent",
+        "id": "orang tua"
+      }
+    },
+    {
+      "kana": "けんか",
+      "romaji": "kenka",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "quarrel",
+        "id": "pertengkaran"
+      }
+    },
+    {
+      "kana": "パパ",
+      "romaji": "papa",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "dad, daddy",
+        "id": "papa, ayah"
+      }
+    },
+    {
+      "kana": "おっと",
+      "kanji": "夫",
+      "romaji": "otto",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "husband (my)",
+        "id": "suami (saya)"
+      }
+    },
+    {
+      "kana": "あかんぼう",
+      "kanji": "赤ん坊",
+      "romaji": "akanbou",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "baby",
+        "id": "bayi"
+      }
+    },
+    {
+      "kana": "そぼ",
+      "kanji": "祖母",
+      "romaji": "sobo",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "grandmother (my)",
+        "id": "nenek (saya)"
+      }
+    },
+    {
+      "kana": "あいさつ",
+      "kanji": "挨拶",
+      "romaji": "aisatsu",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "greeting",
+        "id": "salam, sapaan"
+      }
+    },
+    {
+      "kana": "ごしゅじん",
+      "kanji": "ご主人",
+      "romaji": "goshujin",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "(someone's) husband",
+        "id": "suami (orang lain)"
+      }
+    },
+    {
+      "kana": "おじょうさん",
+      "kanji": "お嬢さん",
+      "romaji": "ojousan",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "(someone's) daughter; young lady",
+        "id": "putri (orang lain); nona"
+      }
+    },
+    {
+      "kana": "そだてる",
+      "kanji": "育てる",
+      "romaji": "sodateru",
+      "partOfSpeech": "verb",
+      "meaning": {
+        "en": "to bring up, to raise",
+        "id": "membesarkan, memelihara"
+      }
+    },
+    {
+      "kana": "みな",
+      "kanji": "皆",
+      "romaji": "mina",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "everyone",
+        "id": "semua orang"
+      }
+    },
+    {
+      "kana": "なくなる",
+      "kanji": "亡くなる",
+      "romaji": "nakunaru",
+      "homonym": 2,
+      "partOfSpeech": "verb",
+      "meaning": {
+        "en": "to pass away",
+        "id": "meninggal dunia"
+      }
+    },
+    {
+      "kana": "そふ",
+      "kanji": "祖父",
+      "romaji": "sofu",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "grandfather (my)",
+        "id": "kakek (saya)"
+      }
+    },
+    {
+      "kana": "かれら",
+      "kanji": "彼ら",
+      "romaji": "karera",
+      "partOfSpeech": "pronoun",
+      "meaning": {
+        "en": "they",
+        "id": "mereka"
+      }
+    }
+  ]
+}
