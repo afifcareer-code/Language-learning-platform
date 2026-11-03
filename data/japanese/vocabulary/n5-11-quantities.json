@@ -1,0 +1,246 @@
+{
+  "source": "N5 · How much and how many: words from the JLPT N5 list by J. Waller (tanos.co.uk, CC BY) as compiled in open-anki-jlpt-decks (MIT). Meanings written for this project.",
+  "level": "n5",
+  "items": [
+    {
+      "kana": "だけ",
+      "romaji": "dake",
+      "affix": "suffix",
+      "partOfSpeech": "suffix",
+      "meaning": {
+        "en": "only",
+        "id": "hanya"
+      }
+    },
+    {
+      "kana": "たくさん",
+      "kanji": "沢山",
+      "romaji": "takusan",
+      "partOfSpeech": "adverb",
+      "meaning": {
+        "en": "many, a lot",
+        "id": "banyak"
+      }
+    },
+    {
+      "kana": "ど",
+      "kanji": "度",
+      "romaji": "do",
+      "affix": "suffix",
+      "partOfSpeech": "suffix",
+      "meaning": {
+        "en": "times, degrees (counter)",
+        "id": "kali, derajat (satuan)"
+      }
+    },
+    {
+      "kana": "とお",
+      "kanji": "十",
+      "romaji": "too",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "ten (things)",
+        "id": "sepuluh (buah)"
+      }
+    },
+    {
+      "kana": "など",
+      "romaji": "nado",
+      "affix": "suffix",
+      "partOfSpeech": "suffix",
+      "meaning": {
+        "en": "and so on",
+        "id": "dan lain-lain"
+      }
+    },
+    {
+      "kana": "ななつ",
+      "kanji": "七つ",
+      "romaji": "nanatsu",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "seven (things)",
+        "id": "tujuh (buah)"
+      }
+    },
+    {
+      "kana": "にん",
+      "kanji": "人",
+      "romaji": "nin",
+      "affix": "suffix",
+      "partOfSpeech": "suffix",
+      "meaning": {
+        "en": "people (counter)",
+        "id": "orang (satuan)"
+      }
+    },
+    {
+      "kana": "はい",
+      "kanji": "杯",
+      "romaji": "hai",
+      "affix": "suffix",
+      "homonym": 2,
+      "partOfSpeech": "suffix",
+      "meaning": {
+        "en": "cupfuls (counter)",
+        "id": "gelas, cangkir (satuan)"
+      }
+    },
+    {
+      "kana": "ばん",
+      "kanji": "番",
+      "romaji": "ban",
+      "affix": "suffix",
+      "homonym": 2,
+      "partOfSpeech": "suffix",
+      "meaning": {
+        "en": "number (order)",
+        "id": "nomor (urutan)"
+      }
+    },
+    {
+      "kana": "はんぶん",
+      "kanji": "半分",
+      "romaji": "hanbun",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "half",
+        "id": "setengah, separuh"
+      }
+    },
+    {
+      "kana": "ひき",
+      "kanji": "匹",
+      "romaji": "hiki",
+      "affix": "suffix",
+      "partOfSpeech": "suffix",
+      "meaning": {
+        "en": "small animals (counter)",
+        "id": "ekor (satuan hewan kecil)"
+      }
+    },
+    {
+      "kana": "ひとつ",
+      "kanji": "一つ",
+      "romaji": "hitotsu",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "one (thing)",
+        "id": "satu (buah)"
+      }
+    },
+    {
+      "kana": "ふたつ",
+      "kanji": "二つ",
+      "romaji": "futatsu",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "two (things)",
+        "id": "dua (buah)"
+      }
+    },
+    {
+      "kana": "ほん",
+      "kanji": "本",
+      "romaji": "hon",
+      "affix": "suffix",
+      "homonym": 2,
+      "partOfSpeech": "suffix",
+      "meaning": {
+        "en": "long things (counter)",
+        "id": "batang (satuan benda panjang)"
+      }
+    },
+    {
+      "kana": "まい",
+      "kanji": "枚",
+      "romaji": "mai",
+      "affix": "suffix",
+      "partOfSpeech": "suffix",
+      "meaning": {
+        "en": "flat things (counter)",
+        "id": "lembar (satuan benda tipis)"
+      }
+    },
+    {
+      "kana": "まん",
+      "kanji": "万",
+      "romaji": "man",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "ten thousand",
+        "id": "sepuluh ribu"
+      }
+    },
+    {
+      "kana": "みっつ",
+      "kanji": "三つ",
+      "romaji": "mittsu",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "three (things)",
+        "id": "tiga (buah)"
+      }
+    },
+    {
+      "kana": "むっつ",
+      "kanji": "六つ",
+      "romaji": "muttsu",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "six (things)",
+        "id": "enam (buah)"
+      }
+    },
+    {
+      "kana": "メートル",
+      "romaji": "meetoru",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "metre",
+        "id": "meter"
+      }
+    },
+    {
+      "kana": "やっつ",
+      "kanji": "八つ",
+      "romaji": "yattsu",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "eight (things)",
+        "id": "delapan (buah)"
+      }
+    },
+    {
+      "kana": "よっつ",
+      "kanji": "四つ",
+      "romaji": "yottsu",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "four (things)",
+        "id": "empat (buah)"
+      }
+    },
+    {
+      "kana": "れい",
+      "kanji": "零",
+      "romaji": "rei",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "zero",
+        "id": "nol"
+      }
+    },
+    {
+      "kana": "さん",
+      "kanji": "三",
+      "romaji": "san",
+      "homonym": 2,
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "three",
+        "id": "tiga"
+      }
+    }
+  ]
+}

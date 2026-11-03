@@ -1,0 +1,184 @@
+{
+  "source": "N5 · Going out: words from the JLPT N5 list by J. Waller (tanos.co.uk, CC BY) as compiled in open-anki-jlpt-decks (MIT). Meanings written for this project.",
+  "level": "n5",
+  "items": [
+    {
+      "kana": "ない",
+      "romaji": "nai",
+      "partOfSpeech": "adjective",
+      "meaning": {
+        "en": "there is not, not have",
+        "id": "tidak ada"
+      }
+    },
+    {
+      "kana": "なか",
+      "kanji": "中",
+      "romaji": "naka",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "inside, middle",
+        "id": "dalam, tengah"
+      }
+    },
+    {
+      "kana": "ならぶ",
+      "kanji": "並ぶ",
+      "romaji": "narabu",
+      "partOfSpeech": "verb",
+      "meaning": {
+        "en": "to line up",
+        "id": "berbaris, berjajar"
+      }
+    },
+    {
+      "kana": "ならべる",
+      "kanji": "並べる",
+      "romaji": "naraberu",
+      "partOfSpeech": "verb",
+      "meaning": {
+        "en": "to line (things) up",
+        "id": "menjajarkan"
+      }
+    },
+    {
+      "kana": "にし",
+      "kanji": "西",
+      "romaji": "nishi",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "west",
+        "id": "barat"
+      }
+    },
+    {
+      "kana": "はいる",
+      "kanji": "入る",
+      "romaji": "hairu",
+      "partOfSpeech": "verb",
+      "meaning": {
+        "en": "to enter",
+        "id": "masuk"
+      }
+    },
+    {
+      "kana": "はしる",
+      "kanji": "走る",
+      "romaji": "hashiru",
+      "partOfSpeech": "verb",
+      "meaning": {
+        "en": "to run",
+        "id": "berlari"
+      }
+    },
+    {
+      "kana": "ひがし",
+      "kanji": "東",
+      "romaji": "higashi",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "east",
+        "id": "timur"
+      }
+    },
+    {
+      "kana": "ひだり",
+      "kanji": "左",
+      "romaji": "hidari",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "left",
+        "id": "kiri"
+      }
+    },
+    {
+      "kana": "へん",
+      "kanji": "辺",
+      "romaji": "hen",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "area, around",
+        "id": "sekitar, daerah"
+      }
+    },
+    {
+      "kana": "ほか",
+      "kanji": "外",
+      "romaji": "hoka",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "other, else",
+        "id": "lain, selain"
+      }
+    },
+    {
+      "kana": "まえ",
+      "kanji": "前",
+      "romaji": "mae",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "front, before",
+        "id": "depan, sebelum"
+      }
+    },
+    {
+      "kana": "まがる",
+      "kanji": "曲る",
+      "romaji": "magaru",
+      "partOfSpeech": "verb",
+      "meaning": {
+        "en": "to turn, to bend",
+        "id": "berbelok"
+      }
+    },
+    {
+      "kana": "まっすぐ",
+      "romaji": "massugu",
+      "partOfSpeech": "adverb",
+      "meaning": {
+        "en": "straight",
+        "id": "lurus"
+      }
+    },
+    {
+      "kana": "みぎ",
+      "kanji": "右",
+      "romaji": "migi",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "right",
+        "id": "kanan"
+      }
+    },
+    {
+      "kana": "みなみ",
+      "kanji": "南",
+      "romaji": "minami",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "south",
+        "id": "selatan"
+      }
+    },
+    {
+      "kana": "むこう",
+      "kanji": "向こう",
+      "romaji": "mukou",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "over there, the other side",
+        "id": "seberang, sebelah sana"
+      }
+    },
+    {
+      "kana": "よこ",
+      "kanji": "横",
+      "romaji": "yoko",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "side, beside",
+        "id": "samping"
+      }
+    }
+  ]
+}

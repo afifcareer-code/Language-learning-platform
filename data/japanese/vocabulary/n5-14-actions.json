@@ -1,0 +1,247 @@
+{
+  "source": "N5 · Everyday actions: words from the JLPT N5 list by J. Waller (tanos.co.uk, CC BY) as compiled in open-anki-jlpt-decks (MIT). Meanings written for this project.",
+  "level": "n5",
+  "items": [
+    {
+      "kana": "あう",
+      "kanji": "会う",
+      "romaji": "au",
+      "partOfSpeech": "verb",
+      "meaning": {
+        "en": "to meet",
+        "id": "bertemu"
+      }
+    },
+    {
+      "kana": "あらう",
+      "kanji": "洗う",
+      "romaji": "arau",
+      "partOfSpeech": "verb",
+      "meaning": {
+        "en": "to wash",
+        "id": "mencuci"
+      }
+    },
+    {
+      "kana": "いる",
+      "kanji": "要る",
+      "romaji": "iru",
+      "homonym": 2,
+      "partOfSpeech": "verb",
+      "meaning": {
+        "en": "to need",
+        "id": "perlu, butuh"
+      }
+    },
+    {
+      "kana": "いれる",
+      "kanji": "入れる",
+      "romaji": "ireru",
+      "partOfSpeech": "verb",
+      "meaning": {
+        "en": "to put in",
+        "id": "memasukkan"
+      }
+    },
+    {
+      "kana": "おきる",
+      "kanji": "起きる",
+      "romaji": "okiru",
+      "partOfSpeech": "verb",
+      "meaning": {
+        "en": "to get up, to wake up",
+        "id": "bangun"
+      }
+    },
+    {
+      "kana": "おく",
+      "kanji": "置く",
+      "romaji": "oku",
+      "partOfSpeech": "verb",
+      "meaning": {
+        "en": "to put, to place",
+        "id": "menaruh, meletakkan"
+      }
+    },
+    {
+      "kana": "おわる",
+      "kanji": "終る",
+      "romaji": "owaru",
+      "partOfSpeech": "verb",
+      "meaning": {
+        "en": "to end, to finish",
+        "id": "selesai, berakhir"
+      }
+    },
+    {
+      "kana": "する",
+      "romaji": "suru",
+      "partOfSpeech": "verb",
+      "meaning": {
+        "en": "to do",
+        "id": "melakukan"
+      }
+    },
+    {
+      "kana": "すわる",
+      "kanji": "座る",
+      "romaji": "suwaru",
+      "partOfSpeech": "verb",
+      "meaning": {
+        "en": "to sit down",
+        "id": "duduk"
+      }
+    },
+    {
+      "kana": "たつ",
+      "kanji": "立つ",
+      "romaji": "tatsu",
+      "partOfSpeech": "verb",
+      "meaning": {
+        "en": "to stand",
+        "id": "berdiri"
+      }
+    },
+    {
+      "kana": "つかう",
+      "kanji": "使う",
+      "romaji": "tsukau",
+      "partOfSpeech": "verb",
+      "meaning": {
+        "en": "to use",
+        "id": "memakai, menggunakan"
+      }
+    },
+    {
+      "kana": "つくる",
+      "kanji": "作る",
+      "romaji": "tsukuru",
+      "partOfSpeech": "verb",
+      "meaning": {
+        "en": "to make",
+        "id": "membuat"
+      }
+    },
+    {
+      "kana": "なる",
+      "romaji": "naru",
+      "partOfSpeech": "verb",
+      "meaning": {
+        "en": "to become",
+        "id": "menjadi"
+      }
+    },
+    {
+      "kana": "ねる",
+      "kanji": "寝る",
+      "romaji": "neru",
+      "partOfSpeech": "verb",
+      "meaning": {
+        "en": "to sleep, to go to bed",
+        "id": "tidur"
+      }
+    },
+    {
+      "kana": "はじまる",
+      "kanji": "始まる",
+      "romaji": "hajimaru",
+      "partOfSpeech": "verb",
+      "meaning": {
+        "en": "to begin",
+        "id": "dimulai"
+      }
+    },
+    {
+      "kana": "まつ",
+      "kanji": "待つ",
+      "romaji": "matsu",
+      "partOfSpeech": "verb",
+      "meaning": {
+        "en": "to wait",
+        "id": "menunggu"
+      }
+    },
+    {
+      "kana": "みがく",
+      "kanji": "磨く",
+      "romaji": "migaku",
+      "partOfSpeech": "verb",
+      "meaning": {
+        "en": "to brush (teeth), to polish",
+        "id": "menggosok (gigi), memoles"
+      }
+    },
+    {
+      "kana": "みせる",
+      "kanji": "見せる",
+      "romaji": "miseru",
+      "partOfSpeech": "verb",
+      "meaning": {
+        "en": "to show",
+        "id": "memperlihatkan"
+      }
+    },
+    {
+      "kana": "みる",
+      "kanji": "見る",
+      "romaji": "miru",
+      "partOfSpeech": "verb",
+      "meaning": {
+        "en": "to see, to watch",
+        "id": "melihat, menonton"
+      }
+    },
+    {
+      "kana": "もつ",
+      "kanji": "持つ",
+      "romaji": "motsu",
+      "partOfSpeech": "verb",
+      "meaning": {
+        "en": "to hold, to have",
+        "id": "memegang, memiliki"
+      }
+    },
+    {
+      "kana": "やる",
+      "romaji": "yaru",
+      "partOfSpeech": "verb",
+      "meaning": {
+        "en": "to do (casual)",
+        "id": "melakukan (santai)"
+      }
+    },
+    {
+      "kana": "あげる",
+      "kanji": "上げる",
+      "romaji": "ageru",
+      "homonym": 2,
+      "partOfSpeech": "verb",
+      "meaning": {
+        "en": "to raise, to lift",
+        "id": "mengangkat, menaikkan"
+      }
+    },
+    {
+      "kana": "とる",
+      "kanji": "取る",
+      "romaji": "toru",
+      "homonym": 2,
+      "partOfSpeech": "verb",
+      "meaning": {
+        "en": "to take, to get",
+        "id": "mengambil"
+      }
+    },
+    {
+      "kana": "ひく",
+      "kanji": "引く",
+      "romaji": "hiku",
+      "homonym": 2,
+      "partOfSpeech": "verb",
+      "meaning": {
+        "en": "to pull",
+        "id": "menarik"
+      }
+    }
+  ]
+}

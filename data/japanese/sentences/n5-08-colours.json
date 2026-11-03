@@ -1,0 +1,46 @@
+{
+  "source": "Original practice sentences for N5 · Colours and shapes.",
+  "level": "n5",
+  "items": [
+    {
+      "slug": "n5-i-adjective-1",
+      "text": "この かばんは あたらしいです。",
+      "tokens": ["この", "かばん", "は", "あたらしいです"],
+      "grammar": "n5-i-adjective",
+      "translation": {
+        "en": "This bag is new.",
+        "id": "Tas ini baru."
+      }
+    },
+    {
+      "slug": "n5-i-adjective-2",
+      "text": "きょうは さむくないです。",
+      "tokens": ["きょう", "は", "さむくないです"],
+      "grammar": "n5-i-adjective",
+      "translation": {
+        "en": "It isn't cold today.",
+        "id": "Hari ini tidak dingin."
+      }
+    },
+    {
+      "slug": "n5-adj-noun-1",
+      "text": "あかい くるまが あります。",
+      "tokens": ["あかい", "くるま", "が", "あります"],
+      "grammar": "n5-adj-noun",
+      "translation": {
+        "en": "There is a red car.",
+        "id": "Ada mobil merah."
+      }
+    },
+    {
+      "slug": "n5-adj-noun-2",
+      "text": "しずかな へやが すきです。",
+      "tokens": ["しずかな", "へや", "が", "すきです"],
+      "grammar": "n5-adj-noun",
+      "translation": {
+        "en": "I like quiet rooms.",
+        "id": "Saya suka kamar yang tenang."
+      }
+    }
+  ]
+}

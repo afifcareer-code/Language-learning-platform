@@ -1,0 +1,46 @@
+{
+  "source": "Original practice sentences for N5 · Going out.",
+  "level": "n5",
+  "items": [
+    {
+      "slug": "n5-ni-iku-purpose-1",
+      "text": "デパートへ かいものに いきます。",
+      "tokens": ["デパート", "へ", "かいもの", "に", "いきます"],
+      "grammar": "n5-ni-iku-purpose",
+      "translation": {
+        "en": "I'm going to the department store to shop.",
+        "id": "Saya pergi ke toserba untuk berbelanja."
+      }
+    },
+    {
+      "slug": "n5-ni-iku-purpose-2",
+      "text": "こうえんへ さんぽに いきました。",
+      "tokens": ["こうえん", "へ", "さんぽ", "に", "いきました"],
+      "grammar": "n5-ni-iku-purpose",
+      "translation": {
+        "en": "I went to the park for a walk.",
+        "id": "Saya pergi ke taman untuk jalan-jalan."
+      }
+    },
+    {
+      "slug": "n5-te-kara-1",
+      "text": "しゅくだいを してから あそびます。",
+      "tokens": ["しゅくだい", "を", "してから", "あそびます"],
+      "grammar": "n5-te-kara",
+      "translation": {
+        "en": "I'll play after I do my homework.",
+        "id": "Saya bermain setelah mengerjakan PR."
+      }
+    },
+    {
+      "slug": "n5-te-kara-2",
+      "text": "てを あらってから たべて ください。",
+      "tokens": ["て", "を", "あらってから", "たべて", "ください"],
+      "grammar": "n5-te-kara",
+      "translation": {
+        "en": "Please wash your hands before you eat.",
+        "id": "Tolong cuci tangan dulu baru makan."
+      }
+    }
+  ]
+}

@@ -1,0 +1,236 @@
+{
+  "source": "N5 · Asking questions: words from the JLPT N5 list by J. Waller (tanos.co.uk, CC BY) as compiled in open-anki-jlpt-decks (MIT). Meanings written for this project.",
+  "level": "n5",
+  "items": [
+    {
+      "kana": "あちら",
+      "romaji": "achira",
+      "partOfSpeech": "pronoun",
+      "meaning": {
+        "en": "that way, over there (polite)",
+        "id": "sebelah sana (sopan)"
+      }
+    },
+    {
+      "kana": "あっち",
+      "romaji": "acchi",
+      "partOfSpeech": "pronoun",
+      "meaning": {
+        "en": "over there",
+        "id": "sana"
+      }
+    },
+    {
+      "kana": "あの",
+      "romaji": "ano",
+      "partOfSpeech": "pronoun",
+      "meaning": {
+        "en": "that (over there)",
+        "id": "itu (di sana)"
+      }
+    },
+    {
+      "kana": "いかが",
+      "romaji": "ikaga",
+      "partOfSpeech": "adverb",
+      "meaning": {
+        "en": "how (polite)",
+        "id": "bagaimana (sopan)"
+      }
+    },
+    {
+      "kana": "いくつ",
+      "romaji": "ikutsu",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "how many, how old",
+        "id": "berapa (buah), berapa umur"
+      }
+    },
+    {
+      "kana": "いつ",
+      "romaji": "itsu",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "when",
+        "id": "kapan"
+      }
+    },
+    {
+      "kana": "こちら",
+      "romaji": "kochira",
+      "partOfSpeech": "pronoun",
+      "meaning": {
+        "en": "this way, this person (polite)",
+        "id": "sebelah sini, orang ini (sopan)"
+      }
+    },
+    {
+      "kana": "こっち",
+      "romaji": "kocchi",
+      "partOfSpeech": "pronoun",
+      "meaning": {
+        "en": "this way, this side",
+        "id": "sini, sebelah sini"
+      }
+    },
+    {
+      "kana": "この",
+      "romaji": "kono",
+      "partOfSpeech": "pronoun",
+      "meaning": {
+        "en": "this (before a noun)",
+        "id": "ini (sebelum kata benda)"
+      }
+    },
+    {
+      "kana": "こんな",
+      "romaji": "konna",
+      "partOfSpeech": "adjective",
+      "meaning": {
+        "en": "this kind of",
+        "id": "seperti ini"
+      }
+    },
+    {
+      "kana": "そちら",
+      "romaji": "sochira",
+      "partOfSpeech": "pronoun",
+      "meaning": {
+        "en": "that way, there (polite)",
+        "id": "sebelah situ (sopan)"
+      }
+    },
+    {
+      "kana": "そっち",
+      "romaji": "socchi",
+      "partOfSpeech": "pronoun",
+      "meaning": {
+        "en": "that way, there",
+        "id": "situ, sebelah situ"
+      }
+    },
+    {
+      "kana": "その",
+      "romaji": "sono",
+      "partOfSpeech": "pronoun",
+      "meaning": {
+        "en": "that (before a noun)",
+        "id": "itu (sebelum kata benda)"
+      }
+    },
+    {
+      "kana": "だれか",
+      "kanji": "誰か",
+      "romaji": "dareka",
+      "partOfSpeech": "pronoun",
+      "meaning": {
+        "en": "someone",
+        "id": "seseorang"
+      }
+    },
+    {
+      "kana": "どう",
+      "romaji": "dou",
+      "partOfSpeech": "adverb",
+      "meaning": {
+        "en": "how",
+        "id": "bagaimana"
+      }
+    },
+    {
+      "kana": "どうして",
+      "romaji": "doushite",
+      "partOfSpeech": "adverb",
+      "meaning": {
+        "en": "why",
+        "id": "mengapa"
+      }
+    },
+    {
+      "kana": "どちら",
+      "romaji": "dochira",
+      "partOfSpeech": "pronoun",
+      "meaning": {
+        "en": "which (of two), where (polite)",
+        "id": "yang mana (dari dua), di mana (sopan)"
+      }
+    },
+    {
+      "kana": "どっち",
+      "romaji": "docchi",
+      "partOfSpeech": "pronoun",
+      "meaning": {
+        "en": "which (of two)",
+        "id": "yang mana (dari dua)"
+      }
+    },
+    {
+      "kana": "どなた",
+      "romaji": "donata",
+      "partOfSpeech": "pronoun",
+      "meaning": {
+        "en": "who (polite)",
+        "id": "siapa (sopan)"
+      }
+    },
+    {
+      "kana": "どの",
+      "romaji": "dono",
+      "partOfSpeech": "pronoun",
+      "meaning": {
+        "en": "which (before a noun)",
+        "id": "yang mana (sebelum kata benda)"
+      }
+    },
+    {
+      "kana": "どれ",
+      "romaji": "dore",
+      "partOfSpeech": "pronoun",
+      "meaning": {
+        "en": "which one",
+        "id": "yang mana"
+      }
+    },
+    {
+      "kana": "どんな",
+      "romaji": "donna",
+      "partOfSpeech": "adjective",
+      "meaning": {
+        "en": "what kind of",
+        "id": "seperti apa, macam apa"
+      }
+    },
+    {
+      "kana": "なぜ",
+      "romaji": "naze",
+      "partOfSpeech": "adverb",
+      "meaning": {
+        "en": "why",
+        "id": "kenapa"
+      }
+    },
+    {
+      "kana": "なん",
+      "kanji": "何",
+      "romaji": "nan",
+      "partOfSpeech": "pronoun",
+      "meaning": {
+        "en": "what",
+        "id": "apa"
+      }
+    },
+    {
+      "kana": "なん",
+      "kanji": "何",
+      "romaji": "nan",
+      "affix": "prefix",
+      "homonym": 2,
+      "partOfSpeech": "expression",
+      "meaning": {
+        "en": "what (kind of), how many",
+        "id": "apa, berapa (awalan)"
+      }
+    }
+  ]
+}

@@ -12,6 +12,15 @@ building, sentence reading and sentence listening (the listening audio is the
 shipped clip set, see `docs/development/audio.md`). Reading and listening are
 measured on single sentences, not passages or conversations.
 
+N5 coverage: lessons 7-34 add the rest of the JLPT N5 word list (J. Waller's
+list, tanos.co.uk, CC BY, as compiled in open-anki-jlpt-decks, MIT; a few dated
+words such as tape recorder were left out), the remaining N5 grammar
+(past forms, adjectives, counters, て-form requests and permission, 〜ている,
+〜たい, invitations, comparisons, conditions of time, reasons and more) and all
+79 N5 kanji. N5 now has 668 words, 75 grammar points and 149 sentences in 34
+lessons. Words that share their kana (あつい 暑い / 熱い / 厚い) are kept apart
+with a `homonym` number. Meanings, explanations and sentences are original.
+
 N4 Core: ten lessons (Making plans, Experiences, Abilities, Giving and receiving,
 Advice and rules, If and when, What people say and how things look, Reasons and
 purposes, Passive and causative, Polite language) with 140 words, 30 grammar

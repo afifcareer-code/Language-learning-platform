@@ -1,0 +1,281 @@
+{
+  "source": "N5 · Feelings and opinions: words from the JLPT N5 list by J. Waller (tanos.co.uk, CC BY) as compiled in open-anki-jlpt-decks (MIT). Meanings written for this project.",
+  "level": "n5",
+  "items": [
+    {
+      "kana": "あぶない",
+      "kanji": "危ない",
+      "romaji": "abunai",
+      "partOfSpeech": "adjective",
+      "meaning": {
+        "en": "dangerous",
+        "id": "berbahaya"
+      }
+    },
+    {
+      "kana": "いい",
+      "romaji": "ii",
+      "partOfSpeech": "adjective",
+      "meaning": {
+        "en": "good",
+        "id": "baik, bagus"
+      }
+    },
+    {
+      "kana": "いそがしい",
+      "kanji": "忙しい",
+      "romaji": "isogashii",
+      "partOfSpeech": "adjective",
+      "meaning": {
+        "en": "busy",
+        "id": "sibuk"
+      }
+    },
+    {
+      "kana": "いや",
+      "kanji": "嫌",
+      "romaji": "iya",
+      "partOfSpeech": "adjective",
+      "meaning": {
+        "en": "unpleasant, disliked",
+        "id": "tidak suka, menyebalkan"
+      }
+    },
+    {
+      "kana": "うるさい",
+      "romaji": "urusai",
+      "partOfSpeech": "adjective",
+      "meaning": {
+        "en": "noisy, annoying",
+        "id": "berisik, menyebalkan"
+      }
+    },
+    {
+      "kana": "おそい",
+      "kanji": "遅い",
+      "romaji": "osoi",
+      "partOfSpeech": "adjective",
+      "meaning": {
+        "en": "slow, late",
+        "id": "lambat, terlambat"
+      }
+    },
+    {
+      "kana": "おもしろい",
+      "kanji": "面白い",
+      "romaji": "omoshiroi",
+      "partOfSpeech": "adjective",
+      "meaning": {
+        "en": "interesting, funny",
+        "id": "menarik, lucu"
+      }
+    },
+    {
+      "kana": "かわいい",
+      "kanji": "可愛い",
+      "romaji": "kawaii",
+      "partOfSpeech": "adjective",
+      "meaning": {
+        "en": "cute",
+        "id": "lucu, imut"
+      }
+    },
+    {
+      "kana": "きたない",
+      "kanji": "汚い",
+      "romaji": "kitanai",
+      "partOfSpeech": "adjective",
+      "meaning": {
+        "en": "dirty",
+        "id": "kotor"
+      }
+    },
+    {
+      "kana": "きらい",
+      "kanji": "嫌い",
+      "romaji": "kirai",
+      "partOfSpeech": "adjective",
+      "meaning": {
+        "en": "disliked",
+        "id": "tidak suka, benci"
+      }
+    },
+    {
+      "kana": "きれい",
+      "kanji": "綺麗",
+      "romaji": "kirei",
+      "partOfSpeech": "adjective",
+      "meaning": {
+        "en": "pretty, clean",
+        "id": "cantik, bersih"
+      }
+    },
+    {
+      "kana": "しずか",
+      "kanji": "静か",
+      "romaji": "shizuka",
+      "partOfSpeech": "adjective",
+      "meaning": {
+        "en": "quiet",
+        "id": "tenang, sepi"
+      }
+    },
+    {
+      "kana": "じょうず",
+      "kanji": "上手",
+      "romaji": "jouzu",
+      "partOfSpeech": "adjective",
+      "meaning": {
+        "en": "good at",
+        "id": "pandai, mahir"
+      }
+    },
+    {
+      "kana": "だいじょうぶ",
+      "kanji": "大丈夫",
+      "romaji": "daijoubu",
+      "partOfSpeech": "adjective",
+      "meaning": {
+        "en": "all right, OK",
+        "id": "tidak apa-apa, baik-baik saja"
+      }
+    },
+    {
+      "kana": "だいすき",
+      "kanji": "大好き",
+      "romaji": "daisuki",
+      "partOfSpeech": "adjective",
+      "meaning": {
+        "en": "very fond of",
+        "id": "sangat suka"
+      }
+    },
+    {
+      "kana": "たいせつ",
+      "kanji": "大切",
+      "romaji": "taisetsu",
+      "partOfSpeech": "adjective",
+      "meaning": {
+        "en": "important, precious",
+        "id": "penting, berharga"
+      }
+    },
+    {
+      "kana": "たいへん",
+      "kanji": "大変",
+      "romaji": "taihen",
+      "partOfSpeech": "adjective",
+      "meaning": {
+        "en": "very; hard, tough",
+        "id": "sangat; berat, susah"
+      }
+    },
+    {
+      "kana": "たのしい",
+      "kanji": "楽しい",
+      "romaji": "tanoshii",
+      "partOfSpeech": "adjective",
+      "meaning": {
+        "en": "fun, enjoyable",
+        "id": "menyenangkan"
+      }
+    },
+    {
+      "kana": "ちがう",
+      "kanji": "違う",
+      "romaji": "chigau",
+      "partOfSpeech": "verb",
+      "meaning": {
+        "en": "to be different, to be wrong",
+        "id": "berbeda, salah"
+      }
+    },
+    {
+      "kana": "つまらない",
+      "romaji": "tsumaranai",
+      "partOfSpeech": "adjective",
+      "meaning": {
+        "en": "boring",
+        "id": "membosankan"
+      }
+    },
+    {
+      "kana": "にぎやか",
+      "romaji": "nigiyaka",
+      "partOfSpeech": "adjective",
+      "meaning": {
+        "en": "lively, busy (place)",
+        "id": "ramai"
+      }
+    },
+    {
+      "kana": "ひま",
+      "kanji": "暇",
+      "romaji": "hima",
+      "partOfSpeech": "adjective",
+      "meaning": {
+        "en": "free (time)",
+        "id": "senggang"
+      }
+    },
+    {
+      "kana": "べんり",
+      "kanji": "便利",
+      "romaji": "benri",
+      "partOfSpeech": "adjective",
+      "meaning": {
+        "en": "convenient",
+        "id": "praktis, nyaman"
+      }
+    },
+    {
+      "kana": "ほしい",
+      "kanji": "欲しい",
+      "romaji": "hoshii",
+      "partOfSpeech": "adjective",
+      "meaning": {
+        "en": "wanted (I want)",
+        "id": "ingin (memiliki)"
+      }
+    },
+    {
+      "kana": "むずかしい",
+      "kanji": "難しい",
+      "romaji": "muzukashii",
+      "partOfSpeech": "adjective",
+      "meaning": {
+        "en": "difficult",
+        "id": "sulit"
+      }
+    },
+    {
+      "kana": "やさしい",
+      "kanji": "易しい",
+      "romaji": "yasashii",
+      "partOfSpeech": "adjective",
+      "meaning": {
+        "en": "easy, simple",
+        "id": "mudah"
+      }
+    },
+    {
+      "kana": "りっぱ",
+      "romaji": "rippa",
+      "partOfSpeech": "adjective",
+      "meaning": {
+        "en": "splendid, fine",
+        "id": "hebat, megah"
+      }
+    },
+    {
+      "kana": "わるい",
+      "kanji": "悪い",
+      "romaji": "warui",
+      "partOfSpeech": "adjective",
+      "meaning": {
+        "en": "bad",
+        "id": "buruk, jelek"
+      }
+    }
+  ]
+}

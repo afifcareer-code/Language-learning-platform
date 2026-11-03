@@ -1,0 +1,26 @@
+{
+  "source": "Original practice sentences for N5 · Linking words and useful expressions.",
+  "level": "n5",
+  "items": [
+    {
+      "slug": "n5-soshite-1",
+      "text": "デパートで かいものを しました。それから えいがを みました。",
+      "tokens": ["デパート", "で", "かいもの", "を", "しました", "それから", "えいが", "を", "みました"],
+      "grammar": "n5-soshite",
+      "translation": {
+        "en": "I went shopping at the department store. After that, I saw a film.",
+        "id": "Saya berbelanja di toserba. Setelah itu, saya menonton film."
+      }
+    },
+    {
+      "slug": "n5-soshite-2",
+      "text": "この へやは ひろいです。そして あかるいです。",
+      "tokens": ["この", "へや", "は", "ひろいです", "そして", "あかるいです"],
+      "grammar": "n5-soshite",
+      "translation": {
+        "en": "This room is spacious. And it's bright.",
+        "id": "Kamar ini luas. Dan terang."
+      }
+    }
+  ]
+}

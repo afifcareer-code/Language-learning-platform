@@ -1,0 +1,40 @@
+{
+  "source": "Original grammar explanations for N5 · Feelings and opinions, written for this project.",
+  "level": "n5",
+  "items": [
+    {
+      "slug": "n5-amari",
+      "pattern": "あまり V ません / あまり A くないです",
+      "meaning": {
+        "en": "not very, not much",
+        "id": "tidak begitu, jarang"
+      },
+      "explanation": {
+        "en": "あまり with a negative means 'not very' or 'not often': あまり たかくないです, あまり テレビを みません. Without a negative it means something else, so keep the negative.",
+        "id": "あまり dengan bentuk negatif berarti 'tidak begitu' atau 'jarang': あまり たかくないです, あまり テレビを みません. Tanpa negatif artinya lain, jadi tetap pakai bentuk negatif."
+      },
+      "examples": [
+        {
+          "ja": "この えいがは あまり おもしろくないです。",
+          "translation": {
+            "en": "This film isn't very interesting.",
+            "id": "Film ini tidak begitu menarik."
+          }
+        },
+        {
+          "ja": "あまり テレビを みません。",
+          "translation": {
+            "en": "I don't watch TV much.",
+            "id": "Saya jarang menonton TV."
+          }
+        }
+      ],
+      "commonErrors": [
+        {
+          "en": "Using あまり with a positive verb: あまり みます is wrong in this meaning; use the negative.",
+          "id": "Memakai あまり dengan kata kerja positif: あまり みます salah untuk arti ini; pakai bentuk negatif."
+        }
+      ]
+    }
+  ]
+}

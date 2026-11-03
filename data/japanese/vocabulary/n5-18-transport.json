@@ -1,0 +1,183 @@
+{
+  "source": "N5 · Getting around: words from the JLPT N5 list by J. Waller (tanos.co.uk, CC BY) as compiled in open-anki-jlpt-decks (MIT). Meanings written for this project.",
+  "level": "n5",
+  "items": [
+    {
+      "kana": "いりぐち",
+      "kanji": "入口",
+      "romaji": "iriguchi",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "entrance",
+        "id": "pintu masuk"
+      }
+    },
+    {
+      "kana": "エレベーター",
+      "romaji": "erebeetaa",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "lift, elevator",
+        "id": "lift"
+      }
+    },
+    {
+      "kana": "おまわりさん",
+      "romaji": "omawarisan",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "police officer (friendly)",
+        "id": "pak polisi"
+      }
+    },
+    {
+      "kana": "おりる",
+      "kanji": "降りる",
+      "romaji": "oriru",
+      "partOfSpeech": "verb",
+      "meaning": {
+        "en": "to get off (a vehicle)",
+        "id": "turun (dari kendaraan)"
+      }
+    },
+    {
+      "kana": "がいこく",
+      "kanji": "外国",
+      "romaji": "gaikoku",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "foreign country",
+        "id": "luar negeri"
+      }
+    },
+    {
+      "kana": "きっさてん",
+      "kanji": "喫茶店",
+      "romaji": "kissaten",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "café",
+        "id": "kafe, kedai kopi"
+      }
+    },
+    {
+      "kana": "くに",
+      "kanji": "国",
+      "romaji": "kuni",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "country, home country",
+        "id": "negara, kampung halaman"
+      }
+    },
+    {
+      "kana": "くるま",
+      "kanji": "車",
+      "romaji": "kuruma",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "car",
+        "id": "mobil"
+      }
+    },
+    {
+      "kana": "けいかん",
+      "kanji": "警官",
+      "romaji": "keikan",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "police officer",
+        "id": "polisi"
+      }
+    },
+    {
+      "kana": "こうえん",
+      "kanji": "公園",
+      "romaji": "kouen",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "park",
+        "id": "taman"
+      }
+    },
+    {
+      "kana": "こうさてん",
+      "kanji": "交差点",
+      "romaji": "kousaten",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "crossroads, intersection",
+        "id": "perempatan"
+      }
+    },
+    {
+      "kana": "こうばん",
+      "kanji": "交番",
+      "romaji": "kouban",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "police box",
+        "id": "pos polisi"
+      }
+    },
+    {
+      "kana": "じてんしゃ",
+      "kanji": "自転車",
+      "romaji": "jitensha",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "bicycle",
+        "id": "sepeda"
+      }
+    },
+    {
+      "kana": "じどうしゃ",
+      "kanji": "自動車",
+      "romaji": "jidousha",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "car, automobile",
+        "id": "mobil"
+      }
+    },
+    {
+      "kana": "たいしかん",
+      "kanji": "大使館",
+      "romaji": "taishikan",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "embassy",
+        "id": "kedutaan besar"
+      }
+    },
+    {
+      "kana": "タクシー",
+      "romaji": "takushii",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "taxi",
+        "id": "taksi"
+      }
+    },
+    {
+      "kana": "たてもの",
+      "kanji": "建物",
+      "romaji": "tatemono",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "building",
+        "id": "gedung, bangunan"
+      }
+    },
+    {
+      "kana": "ちかてつ",
+      "kanji": "地下鉄",
+      "romaji": "chikatetsu",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "subway, underground",
+        "id": "kereta bawah tanah"
+      }
+    }
+  ]
+}

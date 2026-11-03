@@ -1,0 +1,46 @@
+{
+  "source": "Original practice sentences for N5 · Rooms and house rules.",
+  "level": "n5",
+  "items": [
+    {
+      "slug": "n5-te-wa-ikemasen-1",
+      "text": "ここで たばこを すっては いけません。",
+      "tokens": ["ここ", "で", "たばこ", "を", "すって", "は", "いけません"],
+      "grammar": "n5-te-wa-ikemasen",
+      "translation": {
+        "en": "You must not smoke here.",
+        "id": "Di sini tidak boleh merokok."
+      }
+    },
+    {
+      "slug": "n5-te-wa-ikemasen-2",
+      "text": "へやで たべては いけません。",
+      "tokens": ["へや", "で", "たべて", "は", "いけません"],
+      "grammar": "n5-te-wa-ikemasen",
+      "translation": {
+        "en": "You must not eat in the room.",
+        "id": "Tidak boleh makan di dalam kamar."
+      }
+    },
+    {
+      "slug": "n5-naide-kudasai-1",
+      "text": "でんきを けさないで ください。",
+      "tokens": ["でんき", "を", "けさないで", "ください"],
+      "grammar": "n5-naide-kudasai",
+      "translation": {
+        "en": "Please don't turn off the light.",
+        "id": "Tolong jangan matikan lampunya."
+      }
+    },
+    {
+      "slug": "n5-naide-kudasai-2",
+      "text": "かぎを わすれないで ください。",
+      "tokens": ["かぎ", "を", "わすれないで", "ください"],
+      "grammar": "n5-naide-kudasai",
+      "translation": {
+        "en": "Please don't forget the key.",
+        "id": "Tolong jangan lupa kuncinya."
+      }
+    }
+  ]
+}

@@ -1,0 +1,46 @@
+{
+  "source": "Original practice sentences for N5 · At home.",
+  "level": "n5",
+  "items": [
+    {
+      "slug": "n5-te-kudasai-1",
+      "text": "まどを あけて ください。",
+      "tokens": ["まど", "を", "あけて", "ください"],
+      "grammar": "n5-te-kudasai",
+      "translation": {
+        "en": "Please open the window.",
+        "id": "Tolong buka jendelanya."
+      }
+    },
+    {
+      "slug": "n5-te-kudasai-2",
+      "text": "ここに なまえを かいて ください。",
+      "tokens": ["ここ", "に", "なまえ", "を", "かいて", "ください"],
+      "grammar": "n5-te-kudasai",
+      "translation": {
+        "en": "Please write your name here.",
+        "id": "Silakan tulis nama Anda di sini."
+      }
+    },
+    {
+      "slug": "n5-te-mo-ii-1",
+      "text": "ここに すわっても いいですか。",
+      "tokens": ["ここ", "に", "すわって", "も", "いいです", "か"],
+      "grammar": "n5-te-mo-ii",
+      "translation": {
+        "en": "May I sit here?",
+        "id": "Bolehkah saya duduk di sini?"
+      }
+    },
+    {
+      "slug": "n5-te-mo-ii-2",
+      "text": "しゃしんを とっても いいですか。",
+      "tokens": ["しゃしん", "を", "とって", "も", "いいです", "か"],
+      "grammar": "n5-te-mo-ii",
+      "translation": {
+        "en": "May I take a photo?",
+        "id": "Bolehkah saya memotret?"
+      }
+    }
+  ]
+}

@@ -1,0 +1,74 @@
+{
+  "source": "Original grammar explanations for N5 · Hobbies, written for this project.",
+  "level": "n5",
+  "items": [
+    {
+      "slug": "n5-no-ga-suki",
+      "pattern": "V(dictionary) のが すきです / じょうずです",
+      "meaning": {
+        "en": "like V-ing / be good at V-ing",
+        "id": "suka V / pandai V"
+      },
+      "explanation": {
+        "en": "の after the dictionary form turns a verb into a thing: およぐのが すきです, うたうのが じょうずです.",
+        "id": "の setelah bentuk kamus mengubah kata kerja menjadi kata benda: およぐのが すきです, うたうのが じょうずです."
+      },
+      "examples": [
+        {
+          "ja": "えを かくのが すきです。",
+          "translation": {
+            "en": "I like drawing pictures.",
+            "id": "Saya suka menggambar."
+          }
+        },
+        {
+          "ja": "あねは うたうのが じょうずです。",
+          "translation": {
+            "en": "My older sister is good at singing.",
+            "id": "Kakak perempuan saya pandai bernyanyi."
+          }
+        }
+      ],
+      "commonErrors": [
+        {
+          "en": "Leaving out の: かくが すきです is wrong; say かくのが すきです.",
+          "id": "Melupakan の: かくが すきです salah; katakan かくのが すきです."
+        }
+      ]
+    },
+    {
+      "slug": "n5-ga-jouzu",
+      "pattern": "N が じょうず / へた / すき / きらい です",
+      "meaning": {
+        "en": "be good / bad at N; like / dislike N",
+        "id": "pandai / tidak pandai N; suka / tidak suka N"
+      },
+      "explanation": {
+        "en": "These adjectives mark their object with が: テニスが じょうずです, やさいが きらいです. Don't praise yourself with じょうず; say とくい or まだ へたです.",
+        "id": "Kata sifat ini menandai objeknya dengan が: テニスが じょうずです, やさいが きらいです. Jangan memuji diri sendiri dengan じょうず; katakan とくい atau まだ へたです."
+      },
+      "examples": [
+        {
+          "ja": "ははは りょうりが じょうずです。",
+          "translation": {
+            "en": "My mother is good at cooking.",
+            "id": "Ibu saya pandai memasak."
+          }
+        },
+        {
+          "ja": "わたしは スポーツが へたです。",
+          "translation": {
+            "en": "I'm bad at sports.",
+            "id": "Saya tidak pandai berolahraga."
+          }
+        }
+      ],
+      "commonErrors": [
+        {
+          "en": "Using を: りょうりを じょうずです is wrong; say りょうりが じょうずです.",
+          "id": "Memakai を: りょうりを じょうずです salah; katakan りょうりが じょうずです."
+        }
+      ]
+    }
+  ]
+}

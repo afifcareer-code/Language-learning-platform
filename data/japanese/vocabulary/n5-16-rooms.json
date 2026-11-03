@@ -1,0 +1,161 @@
+{
+  "source": "N5 · Rooms and house rules: words from the JLPT N5 list by J. Waller (tanos.co.uk, CC BY) as compiled in open-anki-jlpt-decks (MIT). Meanings written for this project.",
+  "level": "n5",
+  "items": [
+    {
+      "kana": "シャワー",
+      "romaji": "shawaa",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "shower",
+        "id": "shower, pancuran"
+      }
+    },
+    {
+      "kana": "ストーブ",
+      "romaji": "sutoobu",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "heater",
+        "id": "pemanas ruangan"
+      }
+    },
+    {
+      "kana": "すむ",
+      "kanji": "住む",
+      "romaji": "sumu",
+      "partOfSpeech": "verb",
+      "meaning": {
+        "en": "to live (somewhere)",
+        "id": "tinggal"
+      }
+    },
+    {
+      "kana": "せっけん",
+      "kanji": "石鹸",
+      "romaji": "sekken",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "soap",
+        "id": "sabun"
+      }
+    },
+    {
+      "kana": "だいどころ",
+      "kanji": "台所",
+      "romaji": "daidokoro",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "kitchen",
+        "id": "dapur"
+      }
+    },
+    {
+      "kana": "つける",
+      "romaji": "tsukeru",
+      "partOfSpeech": "verb",
+      "meaning": {
+        "en": "to turn on",
+        "id": "menyalakan"
+      }
+    },
+    {
+      "kana": "テーブル",
+      "romaji": "teeburu",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "table",
+        "id": "meja"
+      }
+    },
+    {
+      "kana": "でんき",
+      "kanji": "電気",
+      "romaji": "denki",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "electricity, light",
+        "id": "listrik, lampu"
+      }
+    },
+    {
+      "kana": "と",
+      "kanji": "戸",
+      "romaji": "to",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "door (Japanese style)",
+        "id": "pintu (gaya Jepang)"
+      }
+    },
+    {
+      "kana": "にわ",
+      "kanji": "庭",
+      "romaji": "niwa",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "garden",
+        "id": "kebun, halaman"
+      }
+    },
+    {
+      "kana": "ベッド",
+      "romaji": "beddo",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "bed",
+        "id": "tempat tidur"
+      }
+    },
+    {
+      "kana": "へや",
+      "kanji": "部屋",
+      "romaji": "heya",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "room",
+        "id": "kamar"
+      }
+    },
+    {
+      "kana": "ほんだな",
+      "kanji": "本棚",
+      "romaji": "hondana",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "bookshelf",
+        "id": "rak buku"
+      }
+    },
+    {
+      "kana": "まど",
+      "kanji": "窓",
+      "romaji": "mado",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "window",
+        "id": "jendela"
+      }
+    },
+    {
+      "kana": "れいぞうこ",
+      "kanji": "冷蔵庫",
+      "romaji": "reizouko",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "refrigerator",
+        "id": "kulkas"
+      }
+    },
+    {
+      "kana": "ろうか",
+      "kanji": "廊下",
+      "romaji": "rouka",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "corridor",
+        "id": "lorong"
+      }
+    }
+  ]
+}

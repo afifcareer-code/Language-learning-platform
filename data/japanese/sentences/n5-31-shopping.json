@@ -1,0 +1,66 @@
+{
+  "source": "Original practice sentences for N5 · Shopping and comparing.",
+  "level": "n5",
+  "items": [
+    {
+      "slug": "n5-hoshii-1",
+      "text": "あたらしい くつが ほしいです。",
+      "tokens": ["あたらしい", "くつ", "が", "ほしいです"],
+      "grammar": "n5-hoshii",
+      "translation": {
+        "en": "I want new shoes.",
+        "id": "Saya ingin sepatu baru."
+      }
+    },
+    {
+      "slug": "n5-hoshii-2",
+      "text": "いま なにが ほしいですか。",
+      "tokens": ["いま", "なに", "が", "ほしいです", "か"],
+      "grammar": "n5-hoshii",
+      "translation": {
+        "en": "What do you want now?",
+        "id": "Sekarang Anda ingin apa?"
+      }
+    },
+    {
+      "slug": "n5-yori-1",
+      "text": "バスは でんしゃより やすいです。",
+      "tokens": ["バス", "は", "でんしゃ", "より", "やすいです"],
+      "grammar": "n5-yori",
+      "translation": {
+        "en": "The bus is cheaper than the train.",
+        "id": "Bus lebih murah daripada kereta."
+      }
+    },
+    {
+      "slug": "n5-yori-2",
+      "text": "コーヒーと こうちゃと どちらが すきですか。",
+      "tokens": ["コーヒー", "と", "こうちゃ", "と", "どちら", "が", "すきです", "か"],
+      "grammar": "n5-yori",
+      "translation": {
+        "en": "Which do you like better, coffee or tea?",
+        "id": "Anda lebih suka kopi atau teh?"
+      }
+    },
+    {
+      "slug": "n5-ichiban-1",
+      "text": "くだものの なかで りんごが いちばん すきです。",
+      "tokens": ["くだもの", "の", "なかで", "りんご", "が", "いちばん", "すきです"],
+      "grammar": "n5-ichiban",
+      "translation": {
+        "en": "Of all fruit, I like apples best.",
+        "id": "Di antara buah-buahan, saya paling suka apel."
+      }
+    },
+    {
+      "slug": "n5-ichiban-2",
+      "text": "この みせで これが いちばん やすいです。",
+      "tokens": ["この", "みせ", "で", "これ", "が", "いちばん", "やすいです"],
+      "grammar": "n5-ichiban",
+      "translation": {
+        "en": "This is the cheapest in this shop.",
+        "id": "Ini yang paling murah di toko ini."
+      }
+    }
+  ]
+}

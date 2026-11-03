@@ -1,0 +1,46 @@
+{
+  "source": "Original practice sentences for N5 · Where things are.",
+  "level": "n5",
+  "items": [
+    {
+      "slug": "n5-position-1",
+      "text": "つくえの うえに ほんが あります。",
+      "tokens": ["つくえ", "の", "うえ", "に", "ほん", "が", "あります"],
+      "grammar": "n5-position",
+      "translation": {
+        "en": "There is a book on the desk.",
+        "id": "Ada buku di atas meja."
+      }
+    },
+    {
+      "slug": "n5-position-2",
+      "text": "ぎんこうは ゆうびんきょくの となりです。",
+      "tokens": ["ぎんこう", "は", "ゆうびんきょく", "の", "となり", "です"],
+      "grammar": "n5-position",
+      "translation": {
+        "en": "The bank is next to the post office.",
+        "id": "Bank ada di sebelah kantor pos."
+      }
+    },
+    {
+      "slug": "n5-adverb-ku-1",
+      "text": "もっと ゆっくり はなして ください。",
+      "tokens": ["もっと", "ゆっくり", "はなして", "ください"],
+      "grammar": "n5-adverb-ku",
+      "translation": {
+        "en": "Please speak more slowly.",
+        "id": "Tolong bicara lebih pelan."
+      }
+    },
+    {
+      "slug": "n5-adverb-ku-2",
+      "text": "としょかんでは しずかに して ください。",
+      "tokens": ["としょかん", "では", "しずかに", "して", "ください"],
+      "grammar": "n5-adverb-ku",
+      "translation": {
+        "en": "Please be quiet in the library.",
+        "id": "Tolong tenang di perpustakaan."
+      }
+    }
+  ]
+}

@@ -1,0 +1,175 @@
+{
+  "source": "N5 · Places in town: words from the JLPT N5 list by J. Waller (tanos.co.uk, CC BY) as compiled in open-anki-jlpt-decks (MIT). Meanings written for this project.",
+  "level": "n5",
+  "items": [
+    {
+      "kana": "でぐち",
+      "kanji": "出口",
+      "romaji": "deguchi",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "exit",
+        "id": "pintu keluar"
+      }
+    },
+    {
+      "kana": "デパート",
+      "romaji": "depaato",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "department store",
+        "id": "toserba"
+      }
+    },
+    {
+      "kana": "でんしゃ",
+      "kanji": "電車",
+      "romaji": "densha",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "train",
+        "id": "kereta listrik"
+      }
+    },
+    {
+      "kana": "としょかん",
+      "kanji": "図書館",
+      "romaji": "toshokan",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "library",
+        "id": "perpustakaan"
+      }
+    },
+    {
+      "kana": "とまる",
+      "kanji": "止まる",
+      "romaji": "tomaru",
+      "partOfSpeech": "verb",
+      "meaning": {
+        "en": "to stop",
+        "id": "berhenti"
+      }
+    },
+    {
+      "kana": "にもつ",
+      "kanji": "荷物",
+      "romaji": "nimotsu",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "luggage",
+        "id": "barang bawaan, bagasi"
+      }
+    },
+    {
+      "kana": "のる",
+      "kanji": "乗る",
+      "romaji": "noru",
+      "partOfSpeech": "verb",
+      "meaning": {
+        "en": "to get on, to ride",
+        "id": "naik (kendaraan)"
+      }
+    },
+    {
+      "kana": "はし",
+      "kanji": "橋",
+      "romaji": "hashi",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "bridge",
+        "id": "jembatan"
+      }
+    },
+    {
+      "kana": "バス",
+      "romaji": "basu",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "bus",
+        "id": "bus"
+      }
+    },
+    {
+      "kana": "ひこうき",
+      "kanji": "飛行機",
+      "romaji": "hikouki",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "aeroplane",
+        "id": "pesawat terbang"
+      }
+    },
+    {
+      "kana": "まち",
+      "kanji": "町",
+      "romaji": "machi",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "town",
+        "id": "kota"
+      }
+    },
+    {
+      "kana": "みせ",
+      "kanji": "店",
+      "romaji": "mise",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "shop",
+        "id": "toko"
+      }
+    },
+    {
+      "kana": "むら",
+      "kanji": "村",
+      "romaji": "mura",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "village",
+        "id": "desa"
+      }
+    },
+    {
+      "kana": "もん",
+      "kanji": "門",
+      "romaji": "mon",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "gate",
+        "id": "gerbang"
+      }
+    },
+    {
+      "kana": "や",
+      "kanji": "屋",
+      "romaji": "ya",
+      "affix": "suffix",
+      "partOfSpeech": "suffix",
+      "meaning": {
+        "en": "shop (suffix)",
+        "id": "toko (akhiran)"
+      }
+    },
+    {
+      "kana": "やおや",
+      "kanji": "八百屋",
+      "romaji": "yaoya",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "greengrocer",
+        "id": "toko sayur"
+      }
+    },
+    {
+      "kana": "ゆうびんきょく",
+      "kanji": "郵便局",
+      "romaji": "yuubinkyoku",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "post office",
+        "id": "kantor pos"
+      }
+    }
+  ]
+}

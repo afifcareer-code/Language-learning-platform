@@ -1,0 +1,74 @@
+{
+  "source": "Original grammar explanations for N5 · Numbers and counters, written for this project.",
+  "level": "n5",
+  "items": [
+    {
+      "slug": "n5-counters",
+      "pattern": "number + counter",
+      "meaning": {
+        "en": "counting with counters",
+        "id": "menghitung dengan kata bantu bilangan"
+      },
+      "explanation": {
+        "en": "Japanese counts with a counter after the number: ～まい for flat things, ～ほん for long things, ～さつ for books, ～だい for machines, ～ひき for small animals, ～にん for people. Some sounds change: いっぽん, さんぼん, ろっぽん; ひとり, ふたり.",
+        "id": "Bahasa Jepang menghitung dengan kata bantu bilangan setelah angka: ～まい untuk benda tipis, ～ほん untuk benda panjang, ～さつ untuk buku, ～だい untuk mesin, ～ひき untuk hewan kecil, ～にん untuk orang. Beberapa bunyi berubah: いっぽん, さんぼん, ろっぽん; ひとり, ふたり."
+      },
+      "examples": [
+        {
+          "ja": "きってを ごまい かいました。",
+          "translation": {
+            "en": "I bought five stamps.",
+            "id": "Saya membeli lima lembar perangko."
+          }
+        },
+        {
+          "ja": "ねこが にひき います。",
+          "translation": {
+            "en": "There are two cats.",
+            "id": "Ada dua ekor kucing."
+          }
+        }
+      ],
+      "commonErrors": [
+        {
+          "en": "Saying いちにん: one person is ひとり and two people are ふたり.",
+          "id": "Mengatakan いちにん: satu orang adalah ひとり dan dua orang ふたり."
+        }
+      ]
+    },
+    {
+      "slug": "n5-gurai",
+      "pattern": "number + ぐらい / くらい",
+      "meaning": {
+        "en": "about (an amount)",
+        "id": "kira-kira, sekitar (jumlah)"
+      },
+      "explanation": {
+        "en": "ぐらい (or くらい) after an amount means 'about': いちじかんぐらい, せんえんぐらい. For a time on the clock, ごろ is used instead.",
+        "id": "ぐらい (atau くらい) setelah jumlah berarti 'kira-kira': いちじかんぐらい, せんえんぐらい. Untuk jam tertentu, yang dipakai adalah ごろ."
+      },
+      "examples": [
+        {
+          "ja": "えきまで じゅっぷんぐらい かかります。",
+          "translation": {
+            "en": "It takes about ten minutes to the station.",
+            "id": "Ke stasiun kira-kira sepuluh menit."
+          }
+        },
+        {
+          "ja": "がくせいが にじゅうにんぐらい います。",
+          "translation": {
+            "en": "There are about twenty students.",
+            "id": "Ada sekitar dua puluh siswa."
+          }
+        }
+      ],
+      "commonErrors": [
+        {
+          "en": "Using ぐらい for a time on the clock: くじぐらい is heard, but くじごろ is the standard way.",
+          "id": "Memakai ぐらい untuk jam: くじぐらい memang terdengar, tetapi くじごろ adalah cara bakunya."
+        }
+      ]
+    }
+  ]
+}

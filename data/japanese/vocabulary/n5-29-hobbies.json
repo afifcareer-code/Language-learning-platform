@@ -1,0 +1,199 @@
+{
+  "source": "N5 · Hobbies: words from the JLPT N5 list by J. Waller (tanos.co.uk, CC BY) as compiled in open-anki-jlpt-decks (MIT). Meanings written for this project.",
+  "level": "n5",
+  "items": [
+    {
+      "kana": "あそぶ",
+      "kanji": "遊ぶ",
+      "romaji": "asobu",
+      "partOfSpeech": "verb",
+      "meaning": {
+        "en": "to play, to have fun",
+        "id": "bermain, bersenang-senang"
+      }
+    },
+    {
+      "kana": "いぬ",
+      "kanji": "犬",
+      "romaji": "inu",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "dog",
+        "id": "anjing"
+      }
+    },
+    {
+      "kana": "うた",
+      "kanji": "歌",
+      "romaji": "uta",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "song",
+        "id": "lagu"
+      }
+    },
+    {
+      "kana": "え",
+      "kanji": "絵",
+      "romaji": "e",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "picture, painting",
+        "id": "gambar, lukisan"
+      }
+    },
+    {
+      "kana": "えいが",
+      "kanji": "映画",
+      "romaji": "eiga",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "film, movie",
+        "id": "film"
+      }
+    },
+    {
+      "kana": "えいがかん",
+      "kanji": "映画館",
+      "romaji": "eigakan",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "cinema",
+        "id": "bioskop"
+      }
+    },
+    {
+      "kana": "カメラ",
+      "romaji": "kamera",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "camera",
+        "id": "kamera"
+      }
+    },
+    {
+      "kana": "ギター",
+      "romaji": "gitaa",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "guitar",
+        "id": "gitar"
+      }
+    },
+    {
+      "kana": "ざっし",
+      "kanji": "雑誌",
+      "romaji": "zasshi",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "magazine",
+        "id": "majalah"
+      }
+    },
+    {
+      "kana": "さんぽ",
+      "kanji": "散歩",
+      "romaji": "sanpo",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "walk, stroll",
+        "id": "jalan-jalan"
+      }
+    },
+    {
+      "kana": "しんぶん",
+      "kanji": "新聞",
+      "romaji": "shinbun",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "newspaper",
+        "id": "koran"
+      }
+    },
+    {
+      "kana": "スポーツ",
+      "romaji": "supootsu",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "sport",
+        "id": "olahraga"
+      }
+    },
+    {
+      "kana": "テレビ",
+      "romaji": "terebi",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "television",
+        "id": "televisi"
+      }
+    },
+    {
+      "kana": "どうぶつ",
+      "kanji": "動物",
+      "romaji": "doubutsu",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "animal",
+        "id": "hewan"
+      }
+    },
+    {
+      "kana": "とり",
+      "kanji": "鳥",
+      "romaji": "tori",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "bird",
+        "id": "burung"
+      }
+    },
+    {
+      "kana": "なく",
+      "kanji": "鳴く",
+      "romaji": "naku",
+      "partOfSpeech": "verb",
+      "meaning": {
+        "en": "to cry (animals), to sing (birds)",
+        "id": "berbunyi (hewan), berkicau"
+      }
+    },
+    {
+      "kana": "ねこ",
+      "kanji": "猫",
+      "romaji": "neko",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "cat",
+        "id": "kucing"
+      }
+    },
+    {
+      "kana": "プール",
+      "romaji": "puuru",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "swimming pool",
+        "id": "kolam renang"
+      }
+    },
+    {
+      "kana": "ペット",
+      "romaji": "petto",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "pet",
+        "id": "hewan peliharaan"
+      }
+    },
+    {
+      "kana": "ラジオ",
+      "romaji": "rajio",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "radio",
+        "id": "radio"
+      }
+    }
+  ]
+}

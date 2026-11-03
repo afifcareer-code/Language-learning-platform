@@ -1,0 +1,46 @@
+{
+  "source": "Original practice sentences for N5 · At school.",
+  "level": "n5",
+  "items": [
+    {
+      "slug": "n5-te-iru-1",
+      "text": "いま としょかんで べんきょうして います。",
+      "tokens": ["いま", "としょかん", "で", "べんきょうして", "います"],
+      "grammar": "n5-te-iru",
+      "translation": {
+        "en": "I'm studying in the library now.",
+        "id": "Sekarang saya sedang belajar di perpustakaan."
+      }
+    },
+    {
+      "slug": "n5-te-iru-2",
+      "text": "せんせいは きょうしつで はなして います。",
+      "tokens": ["せんせい", "は", "きょうしつ", "で", "はなして", "います"],
+      "grammar": "n5-te-iru",
+      "translation": {
+        "en": "The teacher is talking in the classroom.",
+        "id": "Guru sedang berbicara di ruang kelas."
+      }
+    },
+    {
+      "slug": "n5-ga-wakaru-1",
+      "text": "この もんだいが わかりません。",
+      "tokens": ["この", "もんだい", "が", "わかりません"],
+      "grammar": "n5-ga-wakaru",
+      "translation": {
+        "en": "I don't understand this question.",
+        "id": "Saya tidak mengerti soal ini."
+      }
+    },
+    {
+      "slug": "n5-ga-wakaru-2",
+      "text": "えいごが すこし わかります。",
+      "tokens": ["えいご", "が", "すこし", "わかります"],
+      "grammar": "n5-ga-wakaru",
+      "translation": {
+        "en": "I understand a little English.",
+        "id": "Saya sedikit mengerti bahasa Inggris."
+      }
+    }
+  ]
+}

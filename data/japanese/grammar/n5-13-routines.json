@@ -1,0 +1,74 @@
+{
+  "source": "Original grammar explanations for N5 · Before and after, written for this project.",
+  "level": "n5",
+  "items": [
+    {
+      "slug": "n5-mae-ni",
+      "pattern": "V(dictionary) まえに / N の まえに",
+      "meaning": {
+        "en": "before V-ing / before N",
+        "id": "sebelum V / sebelum N"
+      },
+      "explanation": {
+        "en": "まえに after the dictionary form means 'before doing': ねる まえに. After a noun use の: しょくじの まえに. The verb before まえに is always in the dictionary form, even in the past.",
+        "id": "まえに setelah bentuk kamus berarti 'sebelum melakukan': ねる まえに. Setelah kata benda pakai の: しょくじの まえに. Kata kerja sebelum まえに selalu dalam bentuk kamus, walaupun kalimatnya lampau."
+      },
+      "examples": [
+        {
+          "ja": "ねる まえに はを みがきます。",
+          "translation": {
+            "en": "I brush my teeth before going to bed.",
+            "id": "Saya menggosok gigi sebelum tidur."
+          }
+        },
+        {
+          "ja": "しごとの まえに コーヒーを のみます。",
+          "translation": {
+            "en": "I drink coffee before work.",
+            "id": "Saya minum kopi sebelum bekerja."
+          }
+        }
+      ],
+      "commonErrors": [
+        {
+          "en": "Using the past form before まえに: ねた まえに is wrong; say ねる まえに.",
+          "id": "Memakai bentuk lampau sebelum まえに: ねた まえに salah; katakan ねる まえに."
+        }
+      ]
+    },
+    {
+      "slug": "n5-ta-ato-de",
+      "pattern": "V(た) あとで / N の あとで",
+      "meaning": {
+        "en": "after V-ing / after N",
+        "id": "setelah V / setelah N"
+      },
+      "explanation": {
+        "en": "あとで after the た form means 'after doing': たべた あとで. After a noun use の: じゅぎょうの あとで.",
+        "id": "あとで setelah bentuk た berarti 'setelah melakukan': たべた あとで. Setelah kata benda pakai の: じゅぎょうの あとで."
+      },
+      "examples": [
+        {
+          "ja": "ばんごはんを たべた あとで テレビを みます。",
+          "translation": {
+            "en": "After dinner I watch TV.",
+            "id": "Setelah makan malam saya menonton TV."
+          }
+        },
+        {
+          "ja": "じゅぎょうの あとで としょかんへ いきます。",
+          "translation": {
+            "en": "After class I go to the library.",
+            "id": "Setelah pelajaran saya pergi ke perpustakaan."
+          }
+        }
+      ],
+      "commonErrors": [
+        {
+          "en": "Using the dictionary form before あとで: たべる あとで is wrong; say たべた あとで.",
+          "id": "Memakai bentuk kamus sebelum あとで: たべる あとで salah; katakan たべた あとで."
+        }
+      ]
+    }
+  ]
+}

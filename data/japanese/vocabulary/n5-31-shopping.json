@@ -1,0 +1,134 @@
+{
+  "source": "N5 · Shopping and comparing: words from the JLPT N5 list by J. Waller (tanos.co.uk, CC BY) as compiled in open-anki-jlpt-decks (MIT). Meanings written for this project.",
+  "level": "n5",
+  "items": [
+    {
+      "kana": "うる",
+      "kanji": "売る",
+      "romaji": "uru",
+      "partOfSpeech": "verb",
+      "meaning": {
+        "en": "to sell",
+        "id": "menjual"
+      }
+    },
+    {
+      "kana": "おかね",
+      "kanji": "お金",
+      "romaji": "okane",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "money",
+        "id": "uang"
+      }
+    },
+    {
+      "kana": "かいもの",
+      "kanji": "買い物",
+      "romaji": "kaimono",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "shopping",
+        "id": "belanja"
+      }
+    },
+    {
+      "kana": "かう",
+      "kanji": "買う",
+      "romaji": "kau",
+      "partOfSpeech": "verb",
+      "meaning": {
+        "en": "to buy",
+        "id": "membeli"
+      }
+    },
+    {
+      "kana": "かえす",
+      "kanji": "返す",
+      "romaji": "kaesu",
+      "partOfSpeech": "verb",
+      "meaning": {
+        "en": "to give back, to return",
+        "id": "mengembalikan"
+      }
+    },
+    {
+      "kana": "かばん",
+      "romaji": "kaban",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "bag",
+        "id": "tas"
+      }
+    },
+    {
+      "kana": "カレンダー",
+      "romaji": "karendaa",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "calendar",
+        "id": "kalender"
+      }
+    },
+    {
+      "kana": "とけい",
+      "kanji": "時計",
+      "romaji": "tokei",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "clock, watch",
+        "id": "jam (dinding, tangan)"
+      }
+    },
+    {
+      "kana": "なくす",
+      "kanji": "無くす",
+      "romaji": "nakusu",
+      "partOfSpeech": "verb",
+      "meaning": {
+        "en": "to lose",
+        "id": "menghilangkan"
+      }
+    },
+    {
+      "kana": "はこ",
+      "kanji": "箱",
+      "romaji": "hako",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "box",
+        "id": "kotak"
+      }
+    },
+    {
+      "kana": "もの",
+      "kanji": "物",
+      "romaji": "mono",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "thing",
+        "id": "barang, benda"
+      }
+    },
+    {
+      "kana": "やすい",
+      "kanji": "安い",
+      "romaji": "yasui",
+      "partOfSpeech": "adjective",
+      "meaning": {
+        "en": "cheap",
+        "id": "murah"
+      }
+    },
+    {
+      "kana": "わたす",
+      "kanji": "渡す",
+      "romaji": "watasu",
+      "partOfSpeech": "verb",
+      "meaning": {
+        "en": "to hand over",
+        "id": "menyerahkan"
+      }
+    }
+  ]
+}

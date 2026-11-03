@@ -1,0 +1,240 @@
+{
+  "source": "N5 · Times and periods: words from the JLPT N5 list by J. Waller (tanos.co.uk, CC BY) as compiled in open-anki-jlpt-decks (MIT). Meanings written for this project.",
+  "level": "n5",
+  "items": [
+    {
+      "kana": "あさ",
+      "kanji": "朝",
+      "romaji": "asa",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "morning",
+        "id": "pagi"
+      }
+    },
+    {
+      "kana": "あさって",
+      "kanji": "明後日",
+      "romaji": "asatte",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "the day after tomorrow",
+        "id": "lusa"
+      }
+    },
+    {
+      "kana": "あした",
+      "kanji": "明日",
+      "romaji": "ashita",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "tomorrow",
+        "id": "besok"
+      }
+    },
+    {
+      "kana": "あと",
+      "kanji": "後",
+      "romaji": "ato",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "after, later",
+        "id": "setelah, nanti"
+      }
+    },
+    {
+      "kana": "おととい",
+      "kanji": "一昨日",
+      "romaji": "ototoi",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "the day before yesterday",
+        "id": "kemarin lusa"
+      }
+    },
+    {
+      "kana": "おととし",
+      "romaji": "ototoshi",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "the year before last",
+        "id": "dua tahun lalu"
+      }
+    },
+    {
+      "kana": "きのう",
+      "kanji": "昨日",
+      "romaji": "kinou",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "yesterday",
+        "id": "kemarin"
+      }
+    },
+    {
+      "kana": "きょう",
+      "kanji": "今日",
+      "romaji": "kyou",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "today",
+        "id": "hari ini"
+      }
+    },
+    {
+      "kana": "きょねん",
+      "kanji": "去年",
+      "romaji": "kyonen",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "last year",
+        "id": "tahun lalu"
+      }
+    },
+    {
+      "kana": "けさ",
+      "kanji": "今朝",
+      "romaji": "kesa",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "this morning",
+        "id": "tadi pagi"
+      }
+    },
+    {
+      "kana": "ことし",
+      "kanji": "今年",
+      "romaji": "kotoshi",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "this year",
+        "id": "tahun ini"
+      }
+    },
+    {
+      "kana": "ころ",
+      "romaji": "koro",
+      "affix": "suffix",
+      "partOfSpeech": "suffix",
+      "meaning": {
+        "en": "around (a time)",
+        "id": "sekitar (waktu)"
+      }
+    },
+    {
+      "kana": "こんげつ",
+      "kanji": "今月",
+      "romaji": "kongetsu",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "this month",
+        "id": "bulan ini"
+      }
+    },
+    {
+      "kana": "こんしゅう",
+      "kanji": "今週",
+      "romaji": "konshuu",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "this week",
+        "id": "minggu ini"
+      }
+    },
+    {
+      "kana": "こんばん",
+      "kanji": "今晩",
+      "romaji": "konban",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "this evening, tonight",
+        "id": "malam ini"
+      }
+    },
+    {
+      "kana": "さらいねん",
+      "kanji": "さ来年",
+      "romaji": "sarainen",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "the year after next",
+        "id": "dua tahun lagi"
+      }
+    },
+    {
+      "kana": "じかん",
+      "kanji": "時間",
+      "romaji": "jikan",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "time",
+        "id": "waktu"
+      }
+    },
+    {
+      "kana": "じかん",
+      "kanji": "時間",
+      "romaji": "jikan",
+      "affix": "suffix",
+      "homonym": 2,
+      "partOfSpeech": "suffix",
+      "meaning": {
+        "en": "hours (counter)",
+        "id": "jam (lamanya)"
+      }
+    },
+    {
+      "kana": "じゅう",
+      "kanji": "中",
+      "romaji": "juu",
+      "affix": "suffix",
+      "homonym": 2,
+      "partOfSpeech": "suffix",
+      "meaning": {
+        "en": "throughout (all day, all year)",
+        "id": "sepanjang (hari, tahun)"
+      }
+    },
+    {
+      "kana": "しゅうかん",
+      "kanji": "週間",
+      "romaji": "shuukan",
+      "affix": "suffix",
+      "partOfSpeech": "suffix",
+      "meaning": {
+        "en": "weeks (counter)",
+        "id": "minggu (lamanya)"
+      }
+    },
+    {
+      "kana": "すぎ",
+      "romaji": "sugi",
+      "affix": "suffix",
+      "partOfSpeech": "suffix",
+      "meaning": {
+        "en": "past (a time), too much",
+        "id": "lewat (waktu), terlalu"
+      }
+    },
+    {
+      "kana": "せんげつ",
+      "kanji": "先月",
+      "romaji": "sengetsu",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "last month",
+        "id": "bulan lalu"
+      }
+    },
+    {
+      "kana": "せんしゅう",
+      "kanji": "先週",
+      "romaji": "senshuu",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "last week",
+        "id": "minggu lalu"
+      }
+    }
+  ]
+}

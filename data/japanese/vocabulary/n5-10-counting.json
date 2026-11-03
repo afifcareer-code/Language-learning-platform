@@ -1,0 +1,250 @@
+{
+  "source": "N5 · Numbers and counters: words from the JLPT N5 list by J. Waller (tanos.co.uk, CC BY) as compiled in open-anki-jlpt-decks (MIT). Meanings written for this project.",
+  "level": "n5",
+  "items": [
+    {
+      "kana": "いつつ",
+      "kanji": "五つ",
+      "romaji": "itsutsu",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "five (things)",
+        "id": "lima (buah)"
+      }
+    },
+    {
+      "kana": "おおい",
+      "kanji": "多い",
+      "romaji": "ooi",
+      "partOfSpeech": "adjective",
+      "meaning": {
+        "en": "many, a lot",
+        "id": "banyak"
+      }
+    },
+    {
+      "kana": "おおぜい",
+      "kanji": "大勢",
+      "romaji": "oozei",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "many people",
+        "id": "banyak orang"
+      }
+    },
+    {
+      "kana": "かい",
+      "kanji": "回",
+      "romaji": "kai",
+      "affix": "suffix",
+      "partOfSpeech": "suffix",
+      "meaning": {
+        "en": "times (counter)",
+        "id": "kali (satuan)"
+      }
+    },
+    {
+      "kana": "かい",
+      "kanji": "階",
+      "romaji": "kai",
+      "affix": "suffix",
+      "homonym": 2,
+      "partOfSpeech": "suffix",
+      "meaning": {
+        "en": "floor (counter)",
+        "id": "lantai (satuan)"
+      }
+    },
+    {
+      "kana": "かかる",
+      "romaji": "kakaru",
+      "partOfSpeech": "verb",
+      "meaning": {
+        "en": "to take (time, money)",
+        "id": "memakan (waktu, biaya)"
+      }
+    },
+    {
+      "kana": "かげつ",
+      "kanji": "か月",
+      "romaji": "kagetsu",
+      "affix": "suffix",
+      "partOfSpeech": "suffix",
+      "meaning": {
+        "en": "months (counter)",
+        "id": "bulan (satuan lama)"
+      }
+    },
+    {
+      "kana": "きゅう",
+      "kanji": "九",
+      "romaji": "kyuu",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "nine",
+        "id": "sembilan"
+      }
+    },
+    {
+      "kana": "キログラム",
+      "romaji": "kiroguramu",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "kilogram",
+        "id": "kilogram"
+      }
+    },
+    {
+      "kana": "キロメートル",
+      "romaji": "kiromeetoru",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "kilometre",
+        "id": "kilometer"
+      }
+    },
+    {
+      "kana": "くらい",
+      "romaji": "kurai",
+      "affix": "suffix",
+      "homonym": 2,
+      "partOfSpeech": "suffix",
+      "meaning": {
+        "en": "about (amount)",
+        "id": "kira-kira (jumlah)"
+      }
+    },
+    {
+      "kana": "グラム",
+      "romaji": "guramu",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "gram",
+        "id": "gram"
+      }
+    },
+    {
+      "kana": "こ",
+      "kanji": "個",
+      "romaji": "ko",
+      "affix": "suffix",
+      "partOfSpeech": "suffix",
+      "meaning": {
+        "en": "pieces (counter for small things)",
+        "id": "buah (satuan benda kecil)"
+      }
+    },
+    {
+      "kana": "ここのつ",
+      "kanji": "九つ",
+      "romaji": "kokonotsu",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "nine (things)",
+        "id": "sembilan (buah)"
+      }
+    },
+    {
+      "kana": "さい",
+      "kanji": "歳",
+      "romaji": "sai",
+      "affix": "suffix",
+      "partOfSpeech": "suffix",
+      "meaning": {
+        "en": "years old (counter)",
+        "id": "tahun (umur)"
+      }
+    },
+    {
+      "kana": "さつ",
+      "kanji": "冊",
+      "romaji": "satsu",
+      "affix": "suffix",
+      "partOfSpeech": "suffix",
+      "meaning": {
+        "en": "books (counter)",
+        "id": "buku (satuan)"
+      }
+    },
+    {
+      "kana": "し",
+      "kanji": "四",
+      "romaji": "shi",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "four",
+        "id": "empat"
+      }
+    },
+    {
+      "kana": "しち",
+      "kanji": "七",
+      "romaji": "shichi",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "seven",
+        "id": "tujuh"
+      }
+    },
+    {
+      "kana": "すくない",
+      "kanji": "少ない",
+      "romaji": "sukunai",
+      "partOfSpeech": "adjective",
+      "meaning": {
+        "en": "few, little",
+        "id": "sedikit"
+      }
+    },
+    {
+      "kana": "ずつ",
+      "romaji": "zutsu",
+      "affix": "suffix",
+      "partOfSpeech": "suffix",
+      "meaning": {
+        "en": "each, at a time",
+        "id": "masing-masing"
+      }
+    },
+    {
+      "kana": "ゼロ",
+      "romaji": "zero",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "zero",
+        "id": "nol"
+      }
+    },
+    {
+      "kana": "せん",
+      "kanji": "千",
+      "romaji": "sen",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "thousand",
+        "id": "seribu"
+      }
+    },
+    {
+      "kana": "ぜんぶ",
+      "kanji": "全部",
+      "romaji": "zenbu",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "all, everything",
+        "id": "semua, seluruhnya"
+      }
+    },
+    {
+      "kana": "だい",
+      "kanji": "台",
+      "romaji": "dai",
+      "affix": "suffix",
+      "partOfSpeech": "suffix",
+      "meaning": {
+        "en": "machines, vehicles (counter)",
+        "id": "unit (satuan mesin, kendaraan)"
+      }
+    }
+  ]
+}

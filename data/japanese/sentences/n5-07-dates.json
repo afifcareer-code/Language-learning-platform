@@ -1,0 +1,46 @@
+{
+  "source": "Original practice sentences for N5 · Days and dates.",
+  "level": "n5",
+  "items": [
+    {
+      "slug": "n5-mashita-1",
+      "text": "きのう えいがを みました。",
+      "tokens": ["きのう", "えいが", "を", "みました"],
+      "grammar": "n5-mashita",
+      "translation": {
+        "en": "I watched a film yesterday.",
+        "id": "Kemarin saya menonton film."
+      }
+    },
+    {
+      "slug": "n5-mashita-2",
+      "text": "けさ あさごはんを たべませんでした。",
+      "tokens": ["けさ", "あさごはん", "を", "たべませんでした"],
+      "grammar": "n5-mashita",
+      "translation": {
+        "en": "I didn't eat breakfast this morning.",
+        "id": "Tadi pagi saya tidak sarapan."
+      }
+    },
+    {
+      "slug": "n5-tsu-counter-1",
+      "text": "たまごを みっつ ください。",
+      "tokens": ["たまご", "を", "みっつ", "ください"],
+      "grammar": "n5-tsu-counter",
+      "translation": {
+        "en": "Three eggs, please.",
+        "id": "Minta telur tiga butir."
+      }
+    },
+    {
+      "slug": "n5-tsu-counter-2",
+      "text": "はこが よっつ あります。",
+      "tokens": ["はこ", "が", "よっつ", "あります"],
+      "grammar": "n5-tsu-counter",
+      "translation": {
+        "en": "There are four boxes.",
+        "id": "Ada empat kotak."
+      }
+    }
+  ]
+}

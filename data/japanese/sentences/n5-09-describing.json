@@ -1,0 +1,46 @@
+{
+  "source": "Original practice sentences for N5 · Describing things.",
+  "level": "n5",
+  "items": [
+    {
+      "slug": "n5-na-adjective-1",
+      "text": "この まちは にぎやかです。",
+      "tokens": ["この", "まち", "は", "にぎやかです"],
+      "grammar": "n5-na-adjective",
+      "translation": {
+        "en": "This town is lively.",
+        "id": "Kota ini ramai."
+      }
+    },
+    {
+      "slug": "n5-na-adjective-2",
+      "text": "この へやは きれいじゃ ありません。",
+      "tokens": ["この", "へや", "は", "きれいじゃ", "ありません"],
+      "grammar": "n5-na-adjective",
+      "translation": {
+        "en": "This room isn't clean.",
+        "id": "Kamar ini tidak bersih."
+      }
+    },
+    {
+      "slug": "n5-adjective-past-1",
+      "text": "りょこうは たのしかったです。",
+      "tokens": ["りょこう", "は", "たのしかったです"],
+      "grammar": "n5-adjective-past",
+      "translation": {
+        "en": "The trip was fun.",
+        "id": "Perjalanannya menyenangkan."
+      }
+    },
+    {
+      "slug": "n5-adjective-past-2",
+      "text": "きのうは ひまでした。",
+      "tokens": ["きのう", "は", "ひまでした"],
+      "grammar": "n5-adjective-past",
+      "translation": {
+        "en": "I was free yesterday.",
+        "id": "Kemarin saya senggang."
+      }
+    }
+  ]
+}

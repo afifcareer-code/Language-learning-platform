@@ -1,0 +1,74 @@
+{
+  "source": "Original grammar explanations for N5 · Going out, written for this project.",
+  "level": "n5",
+  "items": [
+    {
+      "slug": "n5-ni-iku-purpose",
+      "pattern": "V(ます stem) / N に いきます",
+      "meaning": {
+        "en": "go to V; go for N",
+        "id": "pergi untuk V"
+      },
+      "explanation": {
+        "en": "The ます stem + に before いく, くる or かえる gives the purpose of going: かいものに いきます, ひるごはんを たべに いきます.",
+        "id": "Bentuk ます tanpa ます + に sebelum いく, くる, atau かえる menyatakan tujuan pergi: かいものに いきます, ひるごはんを たべに いきます."
+      },
+      "examples": [
+        {
+          "ja": "デパートへ かいものに いきます。",
+          "translation": {
+            "en": "I'm going to the department store to shop.",
+            "id": "Saya pergi ke toserba untuk berbelanja."
+          }
+        },
+        {
+          "ja": "こうえんへ さんぽに いきました。",
+          "translation": {
+            "en": "I went to the park for a walk.",
+            "id": "Saya pergi ke taman untuk jalan-jalan."
+          }
+        }
+      ],
+      "commonErrors": [
+        {
+          "en": "Using the dictionary form: たべるに いきます is wrong; say たべに いきます.",
+          "id": "Memakai bentuk kamus: たべるに いきます salah; katakan たべに いきます."
+        }
+      ]
+    },
+    {
+      "slug": "n5-te-kara",
+      "pattern": "V(て) から",
+      "meaning": {
+        "en": "after V-ing, then…",
+        "id": "setelah V, lalu…"
+      },
+      "explanation": {
+        "en": "The て form + から means 'after doing this, then…', with an order that matters: しゅくだいを してから あそびます.",
+        "id": "Bentuk て + から berarti 'setelah melakukan ini, kemudian…', dengan urutan yang penting: しゅくだいを してから あそびます."
+      },
+      "examples": [
+        {
+          "ja": "しゅくだいを してから あそびます。",
+          "translation": {
+            "en": "I'll play after I do my homework.",
+            "id": "Saya bermain setelah mengerjakan PR."
+          }
+        },
+        {
+          "ja": "てを あらってから たべて ください。",
+          "translation": {
+            "en": "Please wash your hands before you eat.",
+            "id": "Tolong cuci tangan dulu baru makan."
+          }
+        }
+      ],
+      "commonErrors": [
+        {
+          "en": "Using the past form: したから means 'because I did', not 'after doing'.",
+          "id": "Memakai bentuk lampau: したから berarti 'karena sudah melakukan', bukan 'setelah melakukan'."
+        }
+      ]
+    }
+  ]
+}

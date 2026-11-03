@@ -1,0 +1,46 @@
+{
+  "source": "Original practice sentences for N5 · Before and after.",
+  "level": "n5",
+  "items": [
+    {
+      "slug": "n5-mae-ni-1",
+      "text": "ねる まえに はを みがきます。",
+      "tokens": ["ねる", "まえに", "は", "を", "みがきます"],
+      "grammar": "n5-mae-ni",
+      "translation": {
+        "en": "I brush my teeth before going to bed.",
+        "id": "Saya menggosok gigi sebelum tidur."
+      }
+    },
+    {
+      "slug": "n5-mae-ni-2",
+      "text": "しごとの まえに コーヒーを のみます。",
+      "tokens": ["しごと", "の", "まえに", "コーヒー", "を", "のみます"],
+      "grammar": "n5-mae-ni",
+      "translation": {
+        "en": "I drink coffee before work.",
+        "id": "Saya minum kopi sebelum bekerja."
+      }
+    },
+    {
+      "slug": "n5-ta-ato-de-1",
+      "text": "ばんごはんを たべた あとで テレビを みます。",
+      "tokens": ["ばんごはん", "を", "たべた", "あとで", "テレビ", "を", "みます"],
+      "grammar": "n5-ta-ato-de",
+      "translation": {
+        "en": "After dinner I watch TV.",
+        "id": "Setelah makan malam saya menonton TV."
+      }
+    },
+    {
+      "slug": "n5-ta-ato-de-2",
+      "text": "じゅぎょうの あとで としょかんへ いきます。",
+      "tokens": ["じゅぎょう", "の", "あとで", "としょかん", "へ", "いきます"],
+      "grammar": "n5-ta-ato-de",
+      "translation": {
+        "en": "After class I go to the library.",
+        "id": "Setelah pelajaran saya pergi ke perpustakaan."
+      }
+    }
+  ]
+}

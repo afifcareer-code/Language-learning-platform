@@ -1,0 +1,46 @@
+{
+  "source": "Original practice sentences for N5 · Numbers and counters.",
+  "level": "n5",
+  "items": [
+    {
+      "slug": "n5-counters-1",
+      "text": "きってを ごまい かいました。",
+      "tokens": ["きって", "を", "ごまい", "かいました"],
+      "grammar": "n5-counters",
+      "translation": {
+        "en": "I bought five stamps.",
+        "id": "Saya membeli lima lembar perangko."
+      }
+    },
+    {
+      "slug": "n5-counters-2",
+      "text": "ねこが にひき います。",
+      "tokens": ["ねこ", "が", "にひき", "います"],
+      "grammar": "n5-counters",
+      "translation": {
+        "en": "There are two cats.",
+        "id": "Ada dua ekor kucing."
+      }
+    },
+    {
+      "slug": "n5-gurai-1",
+      "text": "えきまで じゅっぷんぐらい かかります。",
+      "tokens": ["えき", "まで", "じゅっぷん", "ぐらい", "かかります"],
+      "grammar": "n5-gurai",
+      "translation": {
+        "en": "It takes about ten minutes to the station.",
+        "id": "Ke stasiun kira-kira sepuluh menit."
+      }
+    },
+    {
+      "slug": "n5-gurai-2",
+      "text": "がくせいが にじゅうにんぐらい います。",
+      "tokens": ["がくせい", "が", "にじゅうにん", "ぐらい", "います"],
+      "grammar": "n5-gurai",
+      "translation": {
+        "en": "There are about twenty students.",
+        "id": "Ada sekitar dua puluh siswa."
+      }
+    }
+  ]
+}

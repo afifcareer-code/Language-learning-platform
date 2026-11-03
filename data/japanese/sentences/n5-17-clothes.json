@@ -1,0 +1,46 @@
+{
+  "source": "Original practice sentences for N5 · Clothes.",
+  "level": "n5",
+  "items": [
+    {
+      "slug": "n5-te-iru-state-1",
+      "text": "せんせいは めがねを かけて います。",
+      "tokens": ["せんせい", "は", "めがね", "を", "かけて", "います"],
+      "grammar": "n5-te-iru-state",
+      "translation": {
+        "en": "The teacher is wearing glasses.",
+        "id": "Guru memakai kacamata."
+      }
+    },
+    {
+      "slug": "n5-te-iru-state-2",
+      "text": "あには あおい シャツを きて います。",
+      "tokens": ["あに", "は", "あおい", "シャツ", "を", "きて", "います"],
+      "grammar": "n5-te-iru-state",
+      "translation": {
+        "en": "My older brother is wearing a blue shirt.",
+        "id": "Kakak laki-laki saya memakai kemeja biru."
+      }
+    },
+    {
+      "slug": "n5-mou-mada-1",
+      "text": "もう ひるごはんを たべましたか。",
+      "tokens": ["もう", "ひるごはん", "を", "たべました", "か"],
+      "grammar": "n5-mou-mada",
+      "translation": {
+        "en": "Have you had lunch already?",
+        "id": "Sudah makan siang?"
+      }
+    },
+    {
+      "slug": "n5-mou-mada-2",
+      "text": "まだ しゅくだいを して いません。",
+      "tokens": ["まだ", "しゅくだい", "を", "して", "いません"],
+      "grammar": "n5-mou-mada",
+      "translation": {
+        "en": "I haven't done my homework yet.",
+        "id": "Saya belum mengerjakan PR."
+      }
+    }
+  ]
+}

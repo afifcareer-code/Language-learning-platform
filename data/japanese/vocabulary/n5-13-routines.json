@@ -1,0 +1,232 @@
+{
+  "source": "N5 · Before and after: words from the JLPT N5 list by J. Waller (tanos.co.uk, CC BY) as compiled in open-anki-jlpt-decks (MIT). Meanings written for this project.",
+  "level": "n5",
+  "items": [
+    {
+      "kana": "ちゅう",
+      "kanji": "中",
+      "romaji": "chuu",
+      "affix": "suffix",
+      "partOfSpeech": "suffix",
+      "meaning": {
+        "en": "in the middle of, during",
+        "id": "sedang, selama"
+      }
+    },
+    {
+      "kana": "つぎ",
+      "kanji": "次",
+      "romaji": "tsugi",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "next",
+        "id": "berikutnya"
+      }
+    },
+    {
+      "kana": "とき",
+      "kanji": "時",
+      "romaji": "toki",
+      "affix": "suffix",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "time, when",
+        "id": "waktu, ketika"
+      }
+    },
+    {
+      "kana": "とし",
+      "kanji": "年",
+      "romaji": "toshi",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "year, age",
+        "id": "tahun, umur"
+      }
+    },
+    {
+      "kana": "ねん",
+      "kanji": "年",
+      "romaji": "nen",
+      "affix": "suffix",
+      "partOfSpeech": "suffix",
+      "meaning": {
+        "en": "years (counter)",
+        "id": "tahun (lamanya)"
+      }
+    },
+    {
+      "kana": "はじめ",
+      "kanji": "初め",
+      "romaji": "hajime",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "beginning",
+        "id": "awal, permulaan"
+      }
+    },
+    {
+      "kana": "はやい",
+      "kanji": "早い",
+      "romaji": "hayai",
+      "partOfSpeech": "adjective",
+      "meaning": {
+        "en": "early",
+        "id": "awal, pagi-pagi"
+      }
+    },
+    {
+      "kana": "はん",
+      "kanji": "半",
+      "romaji": "han",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "half (past)",
+        "id": "setengah (lewat)"
+      }
+    },
+    {
+      "kana": "ばん",
+      "kanji": "晩",
+      "romaji": "ban",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "evening",
+        "id": "malam"
+      }
+    },
+    {
+      "kana": "ひとつき",
+      "kanji": "一月",
+      "romaji": "hitotsuki",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "one month (length of time)",
+        "id": "satu bulan (lamanya)"
+      }
+    },
+    {
+      "kana": "ひる",
+      "kanji": "昼",
+      "romaji": "hiru",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "noon, daytime",
+        "id": "siang"
+      }
+    },
+    {
+      "kana": "ふん",
+      "kanji": "分",
+      "romaji": "fun",
+      "affix": "suffix",
+      "partOfSpeech": "suffix",
+      "meaning": {
+        "en": "minutes (counter)",
+        "id": "menit"
+      }
+    },
+    {
+      "kana": "まいあさ",
+      "kanji": "毎朝",
+      "romaji": "maiasa",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "every morning",
+        "id": "setiap pagi"
+      }
+    },
+    {
+      "kana": "まいげつ",
+      "kanji": "毎月",
+      "romaji": "maigetsu",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "every month",
+        "id": "setiap bulan"
+      }
+    },
+    {
+      "kana": "まいしゅう",
+      "kanji": "毎週",
+      "romaji": "maishuu",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "every week",
+        "id": "setiap minggu"
+      }
+    },
+    {
+      "kana": "まいねん",
+      "kanji": "毎年",
+      "romaji": "mainen",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "every year",
+        "id": "setiap tahun"
+      }
+    },
+    {
+      "kana": "まいばん",
+      "kanji": "毎晩",
+      "romaji": "maiban",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "every night",
+        "id": "setiap malam"
+      }
+    },
+    {
+      "kana": "まえ",
+      "kanji": "前",
+      "romaji": "mae",
+      "affix": "suffix",
+      "homonym": 2,
+      "partOfSpeech": "suffix",
+      "meaning": {
+        "en": "before (a time), to (the hour)",
+        "id": "kurang (waktu), sebelum"
+      }
+    },
+    {
+      "kana": "ゆうがた",
+      "kanji": "夕方",
+      "romaji": "yuugata",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "late afternoon, early evening",
+        "id": "sore"
+      }
+    },
+    {
+      "kana": "ゆうべ",
+      "kanji": "昨夜",
+      "romaji": "yuube",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "last night",
+        "id": "tadi malam"
+      }
+    },
+    {
+      "kana": "よる",
+      "kanji": "夜",
+      "romaji": "yoru",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "night",
+        "id": "malam"
+      }
+    },
+    {
+      "kana": "らいねん",
+      "kanji": "来年",
+      "romaji": "rainen",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "next year",
+        "id": "tahun depan"
+      }
+    }
+  ]
+}

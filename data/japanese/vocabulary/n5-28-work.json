@@ -1,0 +1,214 @@
+{
+  "source": "N5 · Work and the telephone: words from the JLPT N5 list by J. Waller (tanos.co.uk, CC BY) as compiled in open-anki-jlpt-decks (MIT). Meanings written for this project.",
+  "level": "n5",
+  "items": [
+    {
+      "kana": "いう",
+      "kanji": "言う",
+      "romaji": "iu",
+      "partOfSpeech": "verb",
+      "meaning": {
+        "en": "to say",
+        "id": "berkata"
+      }
+    },
+    {
+      "kana": "かいしゃ",
+      "kanji": "会社",
+      "romaji": "kaisha",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "company",
+        "id": "perusahaan"
+      }
+    },
+    {
+      "kana": "かける",
+      "romaji": "kakeru",
+      "homonym": 2,
+      "partOfSpeech": "verb",
+      "meaning": {
+        "en": "to make (a phone call)",
+        "id": "menelepon"
+      }
+    },
+    {
+      "kana": "きく",
+      "kanji": "聞く",
+      "romaji": "kiku",
+      "partOfSpeech": "verb",
+      "meaning": {
+        "en": "to listen, to hear, to ask",
+        "id": "mendengar, bertanya"
+      }
+    },
+    {
+      "kana": "きって",
+      "kanji": "切手",
+      "romaji": "kitte",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "postage stamp",
+        "id": "perangko"
+      }
+    },
+    {
+      "kana": "コピーする",
+      "romaji": "kopiisuru",
+      "partOfSpeech": "verb",
+      "meaning": {
+        "en": "to copy",
+        "id": "menyalin, memfotokopi"
+      }
+    },
+    {
+      "kana": "しごと",
+      "kanji": "仕事",
+      "romaji": "shigoto",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "work, job",
+        "id": "pekerjaan"
+      }
+    },
+    {
+      "kana": "つとめる",
+      "kanji": "勤める",
+      "romaji": "tsutomeru",
+      "partOfSpeech": "verb",
+      "meaning": {
+        "en": "to work (for a company)",
+        "id": "bekerja (di perusahaan)"
+      }
+    },
+    {
+      "kana": "でんわ",
+      "kanji": "電話",
+      "romaji": "denwa",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "telephone",
+        "id": "telepon"
+      }
+    },
+    {
+      "kana": "はがき",
+      "kanji": "葉書",
+      "romaji": "hagaki",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "postcard",
+        "id": "kartu pos"
+      }
+    },
+    {
+      "kana": "はたらく",
+      "kanji": "働く",
+      "romaji": "hataraku",
+      "partOfSpeech": "verb",
+      "meaning": {
+        "en": "to work",
+        "id": "bekerja"
+      }
+    },
+    {
+      "kana": "はなし",
+      "kanji": "話",
+      "romaji": "hanashi",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "talk, story",
+        "id": "pembicaraan, cerita"
+      }
+    },
+    {
+      "kana": "はなす",
+      "kanji": "話す",
+      "romaji": "hanasu",
+      "partOfSpeech": "verb",
+      "meaning": {
+        "en": "to speak, to talk",
+        "id": "berbicara"
+      }
+    },
+    {
+      "kana": "ばんごう",
+      "kanji": "番号",
+      "romaji": "bangou",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "number",
+        "id": "nomor"
+      }
+    },
+    {
+      "kana": "ふうとう",
+      "kanji": "封筒",
+      "romaji": "fuutou",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "envelope",
+        "id": "amplop"
+      }
+    },
+    {
+      "kana": "ポスト",
+      "romaji": "posuto",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "postbox",
+        "id": "kotak pos"
+      }
+    },
+    {
+      "kana": "もしもし",
+      "romaji": "moshimoshi",
+      "partOfSpeech": "expression",
+      "meaning": {
+        "en": "hello (on the phone)",
+        "id": "halo (di telepon)"
+      }
+    },
+    {
+      "kana": "やすみ",
+      "kanji": "休み",
+      "romaji": "yasumi",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "holiday, day off",
+        "id": "libur, hari libur"
+      }
+    },
+    {
+      "kana": "やすむ",
+      "kanji": "休む",
+      "romaji": "yasumu",
+      "partOfSpeech": "verb",
+      "meaning": {
+        "en": "to rest, to take a day off",
+        "id": "beristirahat, libur"
+      }
+    },
+    {
+      "kana": "よぶ",
+      "kanji": "呼ぶ",
+      "romaji": "yobu",
+      "partOfSpeech": "verb",
+      "meaning": {
+        "en": "to call, to invite",
+        "id": "memanggil, mengundang"
+      }
+    },
+    {
+      "kana": "はる",
+      "kanji": "貼る",
+      "romaji": "haru",
+      "homonym": 2,
+      "partOfSpeech": "verb",
+      "meaning": {
+        "en": "to stick, to paste",
+        "id": "menempel"
+      }
+    }
+  ]
+}

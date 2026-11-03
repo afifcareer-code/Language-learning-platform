@@ -18,6 +18,8 @@ export const vocabularyEntrySchema = z.object({
   alternateRomaji: z.array(romaji).optional(),
   /** Prefix/suffix words such as 〜さん are shown with a 〜 marker. */
   affix: z.enum(["prefix", "suffix"]).optional(),
+  /** 2, 3…: another word with the same kana (あつい 暑い / 熱い), kept apart in keys and ids. */
+  homonym: z.number().int().min(2).optional(),
   partOfSpeech: z.enum([
     "noun",
     "pronoun",
@@ -47,12 +49,14 @@ export interface VocabularyTranslation {
   meaning: string;
 }
 
-export function vocabularyItemId(entry: Pick<VocabularyEntry, "romaji">): string {
-  return `ja.vocab.${entry.romaji.replace(/[^a-z]+/g, "-")}`;
+export function vocabularyItemId(entry: Pick<VocabularyEntry, "romaji" | "homonym">): string {
+  return `ja.vocab.${entry.romaji.replace(/[^a-z]+/g, "-")}${entry.homonym ? `-${entry.homonym}` : ""}`;
 }
 
-export function vocabularyItemKey(entry: Pick<VocabularyEntry, "kana" | "affix">): string {
-  return `vocabulary:${entry.affix === "prefix" ? `${entry.kana}〜` : entry.affix === "suffix" ? `〜${entry.kana}` : entry.kana}`;
+export function vocabularyItemKey(entry: Pick<VocabularyEntry, "kana" | "affix" | "homonym">): string {
+  const word =
+    entry.affix === "prefix" ? `${entry.kana}〜` : entry.affix === "suffix" ? `〜${entry.kana}` : entry.kana;
+  return `vocabulary:${word}${entry.homonym ? `:${entry.homonym}` : ""}`;
 }
 
 export function isVocabularyData(data: unknown): data is VocabularyItemData {

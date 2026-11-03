@@ -1,0 +1,46 @@
+{
+  "source": "Original practice sentences for N5 · Hobbies.",
+  "level": "n5",
+  "items": [
+    {
+      "slug": "n5-no-ga-suki-1",
+      "text": "えを かくのが すきです。",
+      "tokens": ["え", "を", "かく", "の", "が", "すきです"],
+      "grammar": "n5-no-ga-suki",
+      "translation": {
+        "en": "I like drawing pictures.",
+        "id": "Saya suka menggambar."
+      }
+    },
+    {
+      "slug": "n5-no-ga-suki-2",
+      "text": "あねは うたうのが じょうずです。",
+      "tokens": ["あね", "は", "うたう", "の", "が", "じょうずです"],
+      "grammar": "n5-no-ga-suki",
+      "translation": {
+        "en": "My older sister is good at singing.",
+        "id": "Kakak perempuan saya pandai bernyanyi."
+      }
+    },
+    {
+      "slug": "n5-ga-jouzu-1",
+      "text": "ははは りょうりが じょうずです。",
+      "tokens": ["はは", "は", "りょうり", "が", "じょうずです"],
+      "grammar": "n5-ga-jouzu",
+      "translation": {
+        "en": "My mother is good at cooking.",
+        "id": "Ibu saya pandai memasak."
+      }
+    },
+    {
+      "slug": "n5-ga-jouzu-2",
+      "text": "わたしは スポーツが へたです。",
+      "tokens": ["わたし", "は", "スポーツ", "が", "へたです"],
+      "grammar": "n5-ga-jouzu",
+      "translation": {
+        "en": "I'm bad at sports.",
+        "id": "Saya tidak pandai berolahraga."
+      }
+    }
+  ]
+}

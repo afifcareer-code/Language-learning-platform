@@ -1,0 +1,46 @@
+{
+  "source": "Original practice sentences for N5 · Cooking and eating.",
+  "level": "n5",
+  "items": [
+    {
+      "slug": "n5-mashou-1",
+      "text": "ちょっと やすみましょう。",
+      "tokens": ["ちょっと", "やすみましょう"],
+      "grammar": "n5-mashou",
+      "translation": {
+        "en": "Let's take a short break.",
+        "id": "Ayo istirahat sebentar."
+      }
+    },
+    {
+      "slug": "n5-mashou-2",
+      "text": "まどを あけましょうか。",
+      "tokens": ["まど", "を", "あけましょう", "か"],
+      "grammar": "n5-mashou",
+      "translation": {
+        "en": "Shall I open the window?",
+        "id": "Perlu saya buka jendelanya?"
+      }
+    },
+    {
+      "slug": "n5-te-sequence-1",
+      "text": "やさいを きって、なべに いれます。",
+      "tokens": ["やさい", "を", "きって", "なべ", "に", "いれます"],
+      "grammar": "n5-te-sequence",
+      "translation": {
+        "en": "I cut the vegetables and put them in the pot.",
+        "id": "Saya memotong sayur lalu memasukkannya ke panci."
+      }
+    },
+    {
+      "slug": "n5-te-sequence-2",
+      "text": "あさ おきて、シャワーを あびます。",
+      "tokens": ["あさ", "おきて", "シャワー", "を", "あびます"],
+      "grammar": "n5-te-sequence",
+      "translation": {
+        "en": "I get up in the morning and take a shower.",
+        "id": "Pagi hari saya bangun lalu mandi."
+      }
+    }
+  ]
+}

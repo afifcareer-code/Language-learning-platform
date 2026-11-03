@@ -1,0 +1,217 @@
+{
+  "source": "N5 · Clothes: words from the JLPT N5 list by J. Waller (tanos.co.uk, CC BY) as compiled in open-anki-jlpt-decks (MIT). Meanings written for this project.",
+  "level": "n5",
+  "items": [
+    {
+      "kana": "うわぎ",
+      "kanji": "上着",
+      "romaji": "uwagi",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "jacket, coat",
+        "id": "jaket"
+      }
+    },
+    {
+      "kana": "かける",
+      "kanji": "掛ける",
+      "romaji": "kakeru",
+      "partOfSpeech": "verb",
+      "meaning": {
+        "en": "to put on (glasses), to hang",
+        "id": "memakai (kacamata), menggantung"
+      }
+    },
+    {
+      "kana": "かぶる",
+      "romaji": "kaburu",
+      "partOfSpeech": "verb",
+      "meaning": {
+        "en": "to put on (a hat)",
+        "id": "memakai (topi)"
+      }
+    },
+    {
+      "kana": "くつ",
+      "kanji": "靴",
+      "romaji": "kutsu",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "shoes",
+        "id": "sepatu"
+      }
+    },
+    {
+      "kana": "くつした",
+      "kanji": "靴下",
+      "romaji": "kutsushita",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "socks",
+        "id": "kaus kaki"
+      }
+    },
+    {
+      "kana": "コート",
+      "romaji": "kooto",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "coat",
+        "id": "mantel"
+      }
+    },
+    {
+      "kana": "しめる",
+      "kanji": "締める",
+      "romaji": "shimeru",
+      "homonym": 2,
+      "partOfSpeech": "verb",
+      "meaning": {
+        "en": "to tie, to fasten",
+        "id": "mengikat, memasang (dasi, sabuk)"
+      }
+    },
+    {
+      "kana": "シャツ",
+      "romaji": "shatsu",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "shirt",
+        "id": "kemeja, kaus"
+      }
+    },
+    {
+      "kana": "スカート",
+      "romaji": "sukaato",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "skirt",
+        "id": "rok"
+      }
+    },
+    {
+      "kana": "ズボン",
+      "romaji": "zubon",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "trousers",
+        "id": "celana panjang"
+      }
+    },
+    {
+      "kana": "セーター",
+      "romaji": "seetaa",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "sweater",
+        "id": "sweter"
+      }
+    },
+    {
+      "kana": "せびろ",
+      "kanji": "背広",
+      "romaji": "sebiro",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "(men's) suit",
+        "id": "jas"
+      }
+    },
+    {
+      "kana": "ぬぐ",
+      "kanji": "脱ぐ",
+      "romaji": "nugu",
+      "partOfSpeech": "verb",
+      "meaning": {
+        "en": "to take off (clothes)",
+        "id": "melepas (pakaian)"
+      }
+    },
+    {
+      "kana": "ネクタイ",
+      "romaji": "nekutai",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "necktie",
+        "id": "dasi"
+      }
+    },
+    {
+      "kana": "はく",
+      "romaji": "haku",
+      "partOfSpeech": "verb",
+      "meaning": {
+        "en": "to put on (shoes, trousers)",
+        "id": "memakai (sepatu, celana)"
+      }
+    },
+    {
+      "kana": "ハンカチ",
+      "romaji": "hankachi",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "handkerchief",
+        "id": "sapu tangan"
+      }
+    },
+    {
+      "kana": "ふく",
+      "kanji": "服",
+      "romaji": "fuku",
+      "homonym": 2,
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "clothes",
+        "id": "pakaian"
+      }
+    },
+    {
+      "kana": "ぼうし",
+      "kanji": "帽子",
+      "romaji": "boushi",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "hat, cap",
+        "id": "topi"
+      }
+    },
+    {
+      "kana": "ポケット",
+      "romaji": "poketto",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "pocket",
+        "id": "saku"
+      }
+    },
+    {
+      "kana": "めがね",
+      "kanji": "眼鏡",
+      "romaji": "megane",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "glasses",
+        "id": "kacamata"
+      }
+    },
+    {
+      "kana": "ようふく",
+      "kanji": "洋服",
+      "romaji": "youfuku",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "Western clothes",
+        "id": "pakaian gaya Barat"
+      }
+    },
+    {
+      "kana": "ワイシャツ",
+      "romaji": "waishatsu",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "business shirt",
+        "id": "kemeja kerja"
+      }
+    }
+  ]
+}

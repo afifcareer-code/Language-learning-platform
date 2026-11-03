@@ -1,0 +1,74 @@
+{
+  "source": "Original grammar explanations for N5 · Days and dates, written for this project.",
+  "level": "n5",
+  "items": [
+    {
+      "slug": "n5-mashita",
+      "pattern": "V ました / V ませんでした",
+      "meaning": {
+        "en": "did V / did not V",
+        "id": "sudah V / tidak V (lampau)"
+      },
+      "explanation": {
+        "en": "The past of ます is ました, and the past of ません is ませんでした: たべました, たべませんでした. Use it for actions that are finished.",
+        "id": "Bentuk lampau ます adalah ました, dan bentuk lampau ません adalah ませんでした: たべました, たべませんでした. Dipakai untuk tindakan yang sudah selesai."
+      },
+      "examples": [
+        {
+          "ja": "きのう えいがを みました。",
+          "translation": {
+            "en": "I watched a film yesterday.",
+            "id": "Kemarin saya menonton film."
+          }
+        },
+        {
+          "ja": "けさ あさごはんを たべませんでした。",
+          "translation": {
+            "en": "I didn't eat breakfast this morning.",
+            "id": "Tadi pagi saya tidak sarapan."
+          }
+        }
+      ],
+      "commonErrors": [
+        {
+          "en": "Using ます for yesterday: きのう みます is wrong; say きのう みました.",
+          "id": "Memakai ます untuk kemarin: きのう みます salah; katakan きのう みました."
+        }
+      ]
+    },
+    {
+      "slug": "n5-tsu-counter",
+      "pattern": "N を ひとつ / ふたつ / みっつ…",
+      "meaning": {
+        "en": "one, two, three (things)",
+        "id": "satu, dua, tiga (buah)"
+      },
+      "explanation": {
+        "en": "ひとつ, ふたつ, みっつ… とお count things in general, up to ten. The number usually comes right after the particle: りんごを ふたつ ください.",
+        "id": "ひとつ, ふたつ, みっつ… とお dipakai untuk menghitung benda secara umum sampai sepuluh. Angkanya biasanya diletakkan langsung setelah partikel: りんごを ふたつ ください."
+      },
+      "examples": [
+        {
+          "ja": "たまごを みっつ ください。",
+          "translation": {
+            "en": "Three eggs, please.",
+            "id": "Minta telur tiga butir."
+          }
+        },
+        {
+          "ja": "はこが よっつ あります。",
+          "translation": {
+            "en": "There are four boxes.",
+            "id": "Ada empat kotak."
+          }
+        }
+      ],
+      "commonErrors": [
+        {
+          "en": "Putting the number before the noun with の: みっつの たまご is possible but less common in requests.",
+          "id": "Meletakkan angka sebelum kata benda dengan の: みっつの たまご boleh, tetapi jarang dipakai saat meminta."
+        }
+      ]
+    }
+  ]
+}

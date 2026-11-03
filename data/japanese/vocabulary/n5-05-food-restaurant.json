@@ -4,6 +4,7 @@
   "items": [
     {
       "kana": "ごはん",
+      "kanji": "御飯",
       "romaji": "gohan",
       "partOfSpeech": "noun",
       "meaning": {
@@ -13,6 +14,7 @@
     },
     {
       "kana": "おちゃ",
+      "kanji": "お茶",
       "romaji": "ocha",
       "partOfSpeech": "noun",
       "meaning": {
@@ -22,6 +24,7 @@
     },
     {
       "kana": "さかな",
+      "kanji": "魚",
       "romaji": "sakana",
       "partOfSpeech": "noun",
       "meaning": {
@@ -31,6 +34,7 @@
     },
     {
       "kana": "にく",
+      "kanji": "肉",
       "romaji": "niku",
       "partOfSpeech": "noun",
       "meaning": {
@@ -67,6 +71,7 @@
     },
     {
       "kana": "おいしい",
+      "kanji": "美味しい",
       "romaji": "oishii",
       "partOfSpeech": "adjective",
       "meaning": {
@@ -76,6 +81,7 @@
     },
     {
       "kana": "すき",
+      "kanji": "好き",
       "romaji": "suki",
       "partOfSpeech": "adjective",
       "meaning": {

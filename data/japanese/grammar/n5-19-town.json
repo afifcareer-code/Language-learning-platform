@@ -1,0 +1,74 @@
+{
+  "source": "Original grammar explanations for N5 · Places in town, written for this project.",
+  "level": "n5",
+  "items": [
+    {
+      "slug": "n5-de-place",
+      "pattern": "Place で V",
+      "meaning": {
+        "en": "V at / in (a place)",
+        "id": "V di (suatu tempat)"
+      },
+      "explanation": {
+        "en": "で marks the place where an action happens: こうえんで あそびます. For where something exists, use に: こうえんに いけが あります.",
+        "id": "で menandai tempat terjadinya suatu kegiatan: こうえんで あそびます. Untuk tempat beradanya sesuatu, pakai に: こうえんに いけが あります."
+      },
+      "examples": [
+        {
+          "ja": "デパートで くつを かいました。",
+          "translation": {
+            "en": "I bought shoes at the department store.",
+            "id": "Saya membeli sepatu di toserba."
+          }
+        },
+        {
+          "ja": "きっさてんで ともだちに あいました。",
+          "translation": {
+            "en": "I met a friend at a café.",
+            "id": "Saya bertemu teman di kafe."
+          }
+        }
+      ],
+      "commonErrors": [
+        {
+          "en": "Using に for an action: デパートに かいました is wrong; say デパートで かいました.",
+          "id": "Memakai に untuk kegiatan: デパートに かいました salah; katakan デパートで かいました."
+        }
+      ]
+    },
+    {
+      "slug": "n5-wo-route",
+      "pattern": "N を わたります / まがります / あるきます",
+      "meaning": {
+        "en": "cross / turn at / walk along N",
+        "id": "menyeberangi / berbelok di / berjalan menyusuri N"
+      },
+      "explanation": {
+        "en": "With verbs of movement, を marks the place you move through: はしを わたります, こうさてんを まがります, みちを あるきます.",
+        "id": "Dengan kata kerja gerakan, を menandai tempat yang dilalui: はしを わたります, こうさてんを まがります, みちを あるきます."
+      },
+      "examples": [
+        {
+          "ja": "はしを わたって ください。",
+          "translation": {
+            "en": "Please cross the bridge.",
+            "id": "Silakan seberangi jembatannya."
+          }
+        },
+        {
+          "ja": "つぎの こうさてんを みぎへ まがります。",
+          "translation": {
+            "en": "I turn right at the next crossroads.",
+            "id": "Saya berbelok ke kanan di perempatan berikutnya."
+          }
+        }
+      ],
+      "commonErrors": [
+        {
+          "en": "Using で for the route: はしで わたります is wrong; say はしを わたります.",
+          "id": "Memakai で untuk rute: はしで わたります salah; katakan はしを わたります."
+        }
+      ]
+    }
+  ]
+}

@@ -4,6 +4,7 @@
   "items": [
     {
       "kana": "かぞく",
+      "kanji": "家族",
       "romaji": "kazoku",
       "partOfSpeech": "noun",
       "meaning": {
@@ -13,6 +14,7 @@
     },
     {
       "kana": "ちち",
+      "kanji": "父",
       "romaji": "chichi",
       "partOfSpeech": "noun",
       "meaning": {
@@ -22,6 +24,7 @@
     },
     {
       "kana": "はは",
+      "kanji": "母",
       "romaji": "haha",
       "partOfSpeech": "noun",
       "meaning": {
@@ -31,6 +34,7 @@
     },
     {
       "kana": "あに",
+      "kanji": "兄",
       "romaji": "ani",
       "partOfSpeech": "noun",
       "meaning": {
@@ -40,6 +44,7 @@
     },
     {
       "kana": "あね",
+      "kanji": "姉",
       "romaji": "ane",
       "partOfSpeech": "noun",
       "meaning": {
@@ -49,6 +54,7 @@
     },
     {
       "kana": "ともだち",
+      "kanji": "友達",
       "romaji": "tomodachi",
       "partOfSpeech": "noun",
       "meaning": {
@@ -58,6 +64,7 @@
     },
     {
       "kana": "ひと",
+      "kanji": "人",
       "romaji": "hito",
       "partOfSpeech": "noun",
       "meaning": {
@@ -67,6 +74,7 @@
     },
     {
       "kana": "おとうさん",
+      "kanji": "お父さん",
       "romaji": "otousan",
       "alternateRomaji": ["otosan"],
       "partOfSpeech": "noun",
@@ -77,6 +85,7 @@
     },
     {
       "kana": "おかあさん",
+      "kanji": "お母さん",
       "romaji": "okaasan",
       "alternateRomaji": ["okasan"],
       "partOfSpeech": "noun",
@@ -87,6 +96,7 @@
     },
     {
       "kana": "なまえ",
+      "kanji": "名前",
       "romaji": "namae",
       "partOfSpeech": "noun",
       "meaning": {
@@ -96,6 +106,7 @@
     },
     {
       "kana": "だれ",
+      "kanji": "誰",
       "romaji": "dare",
       "partOfSpeech": "pronoun",
       "meaning": {

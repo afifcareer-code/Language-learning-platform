@@ -1,0 +1,46 @@
+{
+  "source": "Original practice sentences for N5 · Food and drink.",
+  "level": "n5",
+  "items": [
+    {
+      "slug": "n5-tai-1",
+      "text": "すしが たべたいです。",
+      "tokens": ["すし", "が", "たべたいです"],
+      "grammar": "n5-tai",
+      "translation": {
+        "en": "I want to eat sushi.",
+        "id": "Saya ingin makan sushi."
+      }
+    },
+    {
+      "slug": "n5-tai-2",
+      "text": "なつやすみに うみへ いきたいです。",
+      "tokens": ["なつやすみ", "に", "うみ", "へ", "いきたいです"],
+      "grammar": "n5-tai",
+      "translation": {
+        "en": "I want to go to the sea in the summer holidays.",
+        "id": "Saya ingin pergi ke laut saat libur musim panas."
+      }
+    },
+    {
+      "slug": "n5-masen-ka-1",
+      "text": "いっしょに ひるごはんを たべませんか。",
+      "tokens": ["いっしょに", "ひるごはん", "を", "たべません", "か"],
+      "grammar": "n5-masen-ka",
+      "translation": {
+        "en": "Would you like to have lunch together?",
+        "id": "Bagaimana kalau kita makan siang bersama?"
+      }
+    },
+    {
+      "slug": "n5-masen-ka-2",
+      "text": "こんばん えいがを みませんか。",
+      "tokens": ["こんばん", "えいが", "を", "みません", "か"],
+      "grammar": "n5-masen-ka",
+      "translation": {
+        "en": "Would you like to see a film tonight?",
+        "id": "Maukah menonton film malam ini?"
+      }
+    }
+  ]
+}

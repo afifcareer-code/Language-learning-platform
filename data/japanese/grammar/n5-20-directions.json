@@ -1,0 +1,74 @@
+{
+  "source": "Original grammar explanations for N5 · Where things are, written for this project.",
+  "level": "n5",
+  "items": [
+    {
+      "slug": "n5-position",
+      "pattern": "N の うえ / した / まえ / うしろ / となり / なか に",
+      "meaning": {
+        "en": "on / under / in front of / behind / next to / in N",
+        "id": "di atas / bawah / depan / belakang / sebelah / dalam N"
+      },
+      "explanation": {
+        "en": "Position words come after a noun with の, then に: つくえの うえに, えきの まえに. There is はこの なかに ねこが います.",
+        "id": "Kata posisi diletakkan setelah kata benda dengan の, lalu に: つくえの うえに, えきの まえに. Contoh: はこの なかに ねこが います."
+      },
+      "examples": [
+        {
+          "ja": "つくえの うえに ほんが あります。",
+          "translation": {
+            "en": "There is a book on the desk.",
+            "id": "Ada buku di atas meja."
+          }
+        },
+        {
+          "ja": "ぎんこうは ゆうびんきょくの となりです。",
+          "translation": {
+            "en": "The bank is next to the post office.",
+            "id": "Bank ada di sebelah kantor pos."
+          }
+        }
+      ],
+      "commonErrors": [
+        {
+          "en": "Leaving out の: つくえ うえに is wrong; say つくえの うえに.",
+          "id": "Melupakan の: つくえ うえに salah; katakan つくえの うえに."
+        }
+      ]
+    },
+    {
+      "slug": "n5-adverb-ku",
+      "pattern": "い-adj く V / な-adj に V",
+      "meaning": {
+        "en": "V in an A way (A-ly)",
+        "id": "V dengan A"
+      },
+      "explanation": {
+        "en": "To describe how something is done, change い to く: はやく はしります. For な-adjectives use に: しずかに はなします.",
+        "id": "Untuk menerangkan cara melakukan sesuatu, ganti い menjadi く: はやく はしります. Untuk kata sifat な pakai に: しずかに はなします."
+      },
+      "examples": [
+        {
+          "ja": "もっと ゆっくり はなして ください。",
+          "translation": {
+            "en": "Please speak more slowly.",
+            "id": "Tolong bicara lebih pelan."
+          }
+        },
+        {
+          "ja": "としょかんでは しずかに して ください。",
+          "translation": {
+            "en": "Please be quiet in the library.",
+            "id": "Tolong tenang di perpustakaan."
+          }
+        }
+      ],
+      "commonErrors": [
+        {
+          "en": "Using the adjective form before a verb: はやい はしります is wrong; say はやく はしります.",
+          "id": "Memakai bentuk kata sifat sebelum kata kerja: はやい はしります salah; katakan はやく はしります."
+        }
+      ]
+    }
+  ]
+}

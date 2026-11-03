@@ -1,0 +1,187 @@
+{
+  "source": "N5 · Body and health: words from the JLPT N5 list by J. Waller (tanos.co.uk, CC BY) as compiled in open-anki-jlpt-decks (MIT). Meanings written for this project.",
+  "level": "n5",
+  "items": [
+    {
+      "kana": "あし",
+      "kanji": "足",
+      "romaji": "ashi",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "foot, leg",
+        "id": "kaki"
+      }
+    },
+    {
+      "kana": "あたま",
+      "kanji": "頭",
+      "romaji": "atama",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "head",
+        "id": "kepala"
+      }
+    },
+    {
+      "kana": "いたい",
+      "kanji": "痛い",
+      "romaji": "itai",
+      "partOfSpeech": "adjective",
+      "meaning": {
+        "en": "painful, sore",
+        "id": "sakit (nyeri)"
+      }
+    },
+    {
+      "kana": "おなか",
+      "kanji": "お腹",
+      "romaji": "onaka",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "stomach, belly",
+        "id": "perut"
+      }
+    },
+    {
+      "kana": "かお",
+      "kanji": "顔",
+      "romaji": "kao",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "face",
+        "id": "wajah"
+      }
+    },
+    {
+      "kana": "からだ",
+      "kanji": "体",
+      "romaji": "karada",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "body",
+        "id": "tubuh, badan"
+      }
+    },
+    {
+      "kana": "くち",
+      "kanji": "口",
+      "romaji": "kuchi",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "mouth",
+        "id": "mulut"
+      }
+    },
+    {
+      "kana": "げんき",
+      "kanji": "元気",
+      "romaji": "genki",
+      "partOfSpeech": "adjective",
+      "meaning": {
+        "en": "healthy, energetic",
+        "id": "sehat, bersemangat"
+      }
+    },
+    {
+      "kana": "こえ",
+      "kanji": "声",
+      "romaji": "koe",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "voice",
+        "id": "suara"
+      }
+    },
+    {
+      "kana": "しぬ",
+      "kanji": "死ぬ",
+      "romaji": "shinu",
+      "partOfSpeech": "verb",
+      "meaning": {
+        "en": "to die",
+        "id": "meninggal, mati"
+      }
+    },
+    {
+      "kana": "じょうぶ",
+      "kanji": "丈夫",
+      "romaji": "joubu",
+      "partOfSpeech": "adjective",
+      "meaning": {
+        "en": "strong, sturdy",
+        "id": "kuat, kokoh"
+      }
+    },
+    {
+      "kana": "せい",
+      "kanji": "背",
+      "romaji": "sei",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "height (of a person)",
+        "id": "tinggi badan"
+      }
+    },
+    {
+      "kana": "つかれる",
+      "kanji": "疲れる",
+      "romaji": "tsukareru",
+      "partOfSpeech": "verb",
+      "meaning": {
+        "en": "to get tired",
+        "id": "lelah, capek"
+      }
+    },
+    {
+      "kana": "て",
+      "kanji": "手",
+      "romaji": "te",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "hand",
+        "id": "tangan"
+      }
+    },
+    {
+      "kana": "は",
+      "kanji": "歯",
+      "romaji": "ha",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "tooth",
+        "id": "gigi"
+      }
+    },
+    {
+      "kana": "はな",
+      "kanji": "鼻",
+      "romaji": "hana",
+      "homonym": 2,
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "nose",
+        "id": "hidung"
+      }
+    },
+    {
+      "kana": "みみ",
+      "kanji": "耳",
+      "romaji": "mimi",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "ear",
+        "id": "telinga"
+      }
+    },
+    {
+      "kana": "め",
+      "kanji": "目",
+      "romaji": "me",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "eye",
+        "id": "mata"
+      }
+    }
+  ]
+}

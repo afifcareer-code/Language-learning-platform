@@ -1,0 +1,74 @@
+{
+  "source": "Original grammar explanations for N5 · Describing things, written for this project.",
+  "level": "n5",
+  "items": [
+    {
+      "slug": "n5-na-adjective",
+      "pattern": "な-adj です / な-adj じゃ ありません",
+      "meaning": {
+        "en": "is A / is not A",
+        "id": "A / tidak A"
+      },
+      "explanation": {
+        "en": "な-adjectives such as しずか, きれい and べんり work like nouns at the end of a sentence: しずかです, しずかじゃ ありません. Note that きれい and きらい are な-adjectives even though they end in い.",
+        "id": "Kata sifat な seperti しずか, きれい, dan べんり berperilaku seperti kata benda di akhir kalimat: しずかです, しずかじゃ ありません. Perhatikan bahwa きれい dan きらい termasuk kata sifat な walaupun berakhiran い."
+      },
+      "examples": [
+        {
+          "ja": "この まちは にぎやかです。",
+          "translation": {
+            "en": "This town is lively.",
+            "id": "Kota ini ramai."
+          }
+        },
+        {
+          "ja": "この へやは きれいじゃ ありません。",
+          "translation": {
+            "en": "This room isn't clean.",
+            "id": "Kamar ini tidak bersih."
+          }
+        }
+      ],
+      "commonErrors": [
+        {
+          "en": "Making きれい negative like an い-adjective: きれくないです is wrong; say きれいじゃ ありません.",
+          "id": "Membuat きれい negatif seperti kata sifat い: きれくないです salah; katakan きれいじゃ ありません."
+        }
+      ]
+    },
+    {
+      "slug": "n5-adjective-past",
+      "pattern": "い-adj かったです / な-adj でした",
+      "meaning": {
+        "en": "was A",
+        "id": "dulu A, tadi A"
+      },
+      "explanation": {
+        "en": "For い-adjectives change い to かったです: たのしかったです. For な-adjectives and nouns use でした: しずかでした. いい becomes よかったです.",
+        "id": "Untuk kata sifat い, ganti い menjadi かったです: たのしかったです. Untuk kata sifat な dan kata benda pakai でした: しずかでした. いい menjadi よかったです."
+      },
+      "examples": [
+        {
+          "ja": "りょこうは たのしかったです。",
+          "translation": {
+            "en": "The trip was fun.",
+            "id": "Perjalanannya menyenangkan."
+          }
+        },
+        {
+          "ja": "きのうは ひまでした。",
+          "translation": {
+            "en": "I was free yesterday.",
+            "id": "Kemarin saya senggang."
+          }
+        }
+      ],
+      "commonErrors": [
+        {
+          "en": "Saying たのしいでした: the past of an い-adjective is たのしかったです.",
+          "id": "Mengatakan たのしいでした: bentuk lampau kata sifat い adalah たのしかったです."
+        }
+      ]
+    }
+  ]
+}

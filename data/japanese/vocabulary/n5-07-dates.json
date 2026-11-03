@@ -1,0 +1,218 @@
+{
+  "source": "N5 · Days and dates: words from the JLPT N5 list by J. Waller (tanos.co.uk, CC BY) as compiled in open-anki-jlpt-decks (MIT). Meanings written for this project.",
+  "level": "n5",
+  "items": [
+    {
+      "kana": "いちにち",
+      "kanji": "一日",
+      "romaji": "ichinichi",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "one day (length of time)",
+        "id": "satu hari (lamanya)"
+      }
+    },
+    {
+      "kana": "いつか",
+      "kanji": "五日",
+      "romaji": "itsuka",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "the fifth (of the month), five days",
+        "id": "tanggal lima, lima hari"
+      }
+    },
+    {
+      "kana": "がつ",
+      "kanji": "月",
+      "romaji": "gatsu",
+      "affix": "suffix",
+      "partOfSpeech": "suffix",
+      "meaning": {
+        "en": "month (of the year)",
+        "id": "bulan (ke-)"
+      }
+    },
+    {
+      "kana": "かようび",
+      "kanji": "火曜日",
+      "romaji": "kayoubi",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "Tuesday",
+        "id": "hari Selasa"
+      }
+    },
+    {
+      "kana": "きんようび",
+      "kanji": "金曜日",
+      "romaji": "kin'youbi",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "Friday",
+        "id": "hari Jumat"
+      }
+    },
+    {
+      "kana": "げつようび",
+      "kanji": "月曜日",
+      "romaji": "getsuyoubi",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "Monday",
+        "id": "hari Senin"
+      }
+    },
+    {
+      "kana": "ここのか",
+      "kanji": "九日",
+      "romaji": "kokonoka",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "the ninth (of the month), nine days",
+        "id": "tanggal sembilan, sembilan hari"
+      }
+    },
+    {
+      "kana": "すいようび",
+      "kanji": "水曜日",
+      "romaji": "suiyoubi",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "Wednesday",
+        "id": "hari Rabu"
+      }
+    },
+    {
+      "kana": "ついたち",
+      "kanji": "一日",
+      "romaji": "tsuitachi",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "the first (of the month)",
+        "id": "tanggal satu"
+      }
+    },
+    {
+      "kana": "とおか",
+      "kanji": "十日",
+      "romaji": "tooka",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "the tenth (of the month), ten days",
+        "id": "tanggal sepuluh, sepuluh hari"
+      }
+    },
+    {
+      "kana": "どようび",
+      "kanji": "土曜日",
+      "romaji": "doyoubi",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "Saturday",
+        "id": "hari Sabtu"
+      }
+    },
+    {
+      "kana": "なのか",
+      "kanji": "七日",
+      "romaji": "nanoka",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "the seventh (of the month), seven days",
+        "id": "tanggal tujuh, tujuh hari"
+      }
+    },
+    {
+      "kana": "にち",
+      "kanji": "日",
+      "romaji": "nichi",
+      "affix": "suffix",
+      "partOfSpeech": "suffix",
+      "meaning": {
+        "en": "day (of the month), days",
+        "id": "tanggal, hari (satuan)"
+      }
+    },
+    {
+      "kana": "にちようび",
+      "kanji": "日曜日",
+      "romaji": "nichiyoubi",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "Sunday",
+        "id": "hari Minggu"
+      }
+    },
+    {
+      "kana": "はつか",
+      "kanji": "二十日",
+      "romaji": "hatsuka",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "the twentieth (of the month), twenty days",
+        "id": "tanggal dua puluh, dua puluh hari"
+      }
+    },
+    {
+      "kana": "ふつか",
+      "kanji": "二日",
+      "romaji": "futsuka",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "the second (of the month), two days",
+        "id": "tanggal dua, dua hari"
+      }
+    },
+    {
+      "kana": "みっか",
+      "kanji": "三日",
+      "romaji": "mikka",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "the third (of the month), three days",
+        "id": "tanggal tiga, tiga hari"
+      }
+    },
+    {
+      "kana": "むいか",
+      "kanji": "六日",
+      "romaji": "muika",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "the sixth (of the month), six days",
+        "id": "tanggal enam, enam hari"
+      }
+    },
+    {
+      "kana": "もくようび",
+      "kanji": "木曜日",
+      "romaji": "mokuyoubi",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "Thursday",
+        "id": "hari Kamis"
+      }
+    },
+    {
+      "kana": "ようか",
+      "kanji": "八日",
+      "romaji": "youka",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "the eighth (of the month), eight days",
+        "id": "tanggal delapan, delapan hari"
+      }
+    },
+    {
+      "kana": "よっか",
+      "kanji": "四日",
+      "romaji": "yokka",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "the fourth (of the month), four days",
+        "id": "tanggal empat, empat hari"
+      }
+    }
+  ]
+}

@@ -1,0 +1,74 @@
+{
+  "source": "Original grammar explanations for N5 · At home, written for this project.",
+  "level": "n5",
+  "items": [
+    {
+      "slug": "n5-te-kudasai",
+      "pattern": "V(て) ください",
+      "meaning": {
+        "en": "please V",
+        "id": "tolong V; silakan V"
+      },
+      "explanation": {
+        "en": "The て form + ください asks someone politely to do something. The て form of う-verbs depends on the ending: かう → かって, のむ → のんで, かく → かいて, はなす → はなして. いく → いって.",
+        "id": "Bentuk て + ください meminta seseorang melakukan sesuatu dengan sopan. Bentuk て kata kerja u tergantung akhirannya: かう → かって, のむ → のんで, かく → かいて, はなす → はなして. いく → いって."
+      },
+      "examples": [
+        {
+          "ja": "まどを あけて ください。",
+          "translation": {
+            "en": "Please open the window.",
+            "id": "Tolong buka jendelanya."
+          }
+        },
+        {
+          "ja": "ここに なまえを かいて ください。",
+          "translation": {
+            "en": "Please write your name here.",
+            "id": "Silakan tulis nama Anda di sini."
+          }
+        }
+      ],
+      "commonErrors": [
+        {
+          "en": "Using the ます stem: あけください is wrong; use the て form: あけて ください.",
+          "id": "Memakai bentuk ます tanpa ます: あけください salah; pakai bentuk て: あけて ください."
+        }
+      ]
+    },
+    {
+      "slug": "n5-te-mo-ii",
+      "pattern": "V(て) も いいですか",
+      "meaning": {
+        "en": "may I V?",
+        "id": "bolehkah saya V?"
+      },
+      "explanation": {
+        "en": "The て form + も いいですか asks for permission. The answer is はい、どうぞ, or すみません、ちょっと… to refuse politely.",
+        "id": "Bentuk て + も いいですか dipakai untuk meminta izin. Jawabannya はい、どうぞ, atau すみません、ちょっと… untuk menolak dengan sopan."
+      },
+      "examples": [
+        {
+          "ja": "ここに すわっても いいですか。",
+          "translation": {
+            "en": "May I sit here?",
+            "id": "Bolehkah saya duduk di sini?"
+          }
+        },
+        {
+          "ja": "しゃしんを とっても いいですか。",
+          "translation": {
+            "en": "May I take a photo?",
+            "id": "Bolehkah saya memotret?"
+          }
+        }
+      ],
+      "commonErrors": [
+        {
+          "en": "Answering いいです alone can sound like 'no, thanks'; say はい、どうぞ.",
+          "id": "Menjawab いいです saja bisa terdengar seperti 'tidak usah'; katakan はい、どうぞ."
+        }
+      ]
+    }
+  ]
+}

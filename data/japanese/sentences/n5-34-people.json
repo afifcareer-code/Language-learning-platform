@@ -1,0 +1,46 @@
+{
+  "source": "Original practice sentences for N5 · People around you.",
+  "level": "n5",
+  "items": [
+    {
+      "slug": "n5-to-and-1",
+      "text": "ちちと ははは げんきです。",
+      "tokens": ["ちち", "と", "はは", "は", "げんきです"],
+      "grammar": "n5-to-and",
+      "translation": {
+        "en": "My father and mother are well.",
+        "id": "Ayah dan ibu saya sehat."
+      }
+    },
+    {
+      "slug": "n5-to-and-2",
+      "text": "あさ パンと たまごを たべました。",
+      "tokens": ["あさ", "パン", "と", "たまご", "を", "たべました"],
+      "grammar": "n5-to-and",
+      "translation": {
+        "en": "In the morning I ate bread and eggs.",
+        "id": "Pagi tadi saya makan roti dan telur."
+      }
+    },
+    {
+      "slug": "n5-nansai-1",
+      "text": "おこさんは なんさいですか。",
+      "tokens": ["おこさん", "は", "なんさい", "です", "か"],
+      "grammar": "n5-nansai",
+      "translation": {
+        "en": "How old is your child?",
+        "id": "Anak Anda umur berapa?"
+      }
+    },
+    {
+      "slug": "n5-nansai-2",
+      "text": "いもうとは はたちです。",
+      "tokens": ["いもうと", "は", "はたち", "です"],
+      "grammar": "n5-nansai",
+      "translation": {
+        "en": "My younger sister is twenty.",
+        "id": "Adik perempuan saya berumur dua puluh tahun."
+      }
+    }
+  ]
+}
