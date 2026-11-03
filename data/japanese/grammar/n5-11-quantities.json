@@ -1,0 +1,74 @@
+{
+  "source": "Original grammar explanations for N5 · How much and how many, written for this project.",
+  "level": "n5",
+  "items": [
+    {
+      "slug": "n5-dake",
+      "pattern": "N / number + だけ",
+      "meaning": {
+        "en": "only",
+        "id": "hanya"
+      },
+      "explanation": {
+        "en": "だけ after a noun or an amount means 'only, just': みずだけ, ひとつだけ. It can come before a particle: コーヒーだけを のみます.",
+        "id": "だけ setelah kata benda atau jumlah berarti 'hanya': みずだけ, ひとつだけ. Bisa diletakkan sebelum partikel: コーヒーだけを のみます."
+      },
+      "examples": [
+        {
+          "ja": "あさは コーヒーだけ のみます。",
+          "translation": {
+            "en": "In the morning I only drink coffee.",
+            "id": "Pagi hari saya hanya minum kopi."
+          }
+        },
+        {
+          "ja": "ひとつだけ ください。",
+          "translation": {
+            "en": "Just one, please.",
+            "id": "Satu saja."
+          }
+        }
+      ],
+      "commonErrors": [
+        {
+          "en": "Using だけ with a negative verb to mean 'only': for 'only… not', Japanese uses しか… ない, which comes later.",
+          "id": "Memakai だけ dengan kata kerja negatif untuk arti 'hanya': untuk 'hanya… (tidak)', bahasa Jepang memakai しか… ない, yang dipelajari nanti."
+        }
+      ]
+    },
+    {
+      "slug": "n5-ya",
+      "pattern": "N1 や N2 (など)",
+      "meaning": {
+        "en": "N1, N2 and so on",
+        "id": "N1, N2, dan sebagainya"
+      },
+      "explanation": {
+        "en": "や joins nouns as examples from a longer list, often ending with など. と lists everything; や gives only some.",
+        "id": "や menyambungkan kata benda sebagai contoh dari daftar yang lebih panjang, sering diakhiri など. と menyebut semuanya; や hanya sebagian."
+      },
+      "examples": [
+        {
+          "ja": "かばんに ほんや ノートが あります。",
+          "translation": {
+            "en": "There are books, notebooks and other things in the bag.",
+            "id": "Di dalam tas ada buku, buku catatan, dan lain-lain."
+          }
+        },
+        {
+          "ja": "やさいや くだものなどを かいました。",
+          "translation": {
+            "en": "I bought vegetables, fruit and so on.",
+            "id": "Saya membeli sayur, buah, dan sebagainya."
+          }
+        }
+      ],
+      "commonErrors": [
+        {
+          "en": "Using や with verbs: や joins nouns only.",
+          "id": "Memakai や dengan kata kerja: や hanya menyambung kata benda."
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,177 @@
+{
+  "source": "N5 · At school: words from the JLPT N5 list by J. Waller (tanos.co.uk, CC BY) as compiled in open-anki-jlpt-decks (MIT). Meanings written for this project.",
+  "level": "n5",
+  "items": [
+    {
+      "kana": "いみ",
+      "kanji": "意味",
+      "romaji": "imi",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "meaning",
+        "id": "arti, makna"
+      }
+    },
+    {
+      "kana": "えいご",
+      "kanji": "英語",
+      "romaji": "eigo",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "English (language)",
+        "id": "bahasa Inggris"
+      }
+    },
+    {
+      "kana": "えんぴつ",
+      "kanji": "鉛筆",
+      "romaji": "enpitsu",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "pencil",
+        "id": "pensil"
+      }
+    },
+    {
+      "kana": "おしえる",
+      "kanji": "教える",
+      "romaji": "oshieru",
+      "partOfSpeech": "verb",
+      "meaning": {
+        "en": "to teach, to tell",
+        "id": "mengajar, memberi tahu"
+      }
+    },
+    {
+      "kana": "かく",
+      "kanji": "書く",
+      "romaji": "kaku",
+      "partOfSpeech": "verb",
+      "meaning": {
+        "en": "to write",
+        "id": "menulis"
+      }
+    },
+    {
+      "kana": "かたかな",
+      "kanji": "片仮名",
+      "romaji": "katakana",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "katakana",
+        "id": "katakana"
+      }
+    },
+    {
+      "kana": "かみ",
+      "kanji": "紙",
+      "romaji": "kami",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "paper",
+        "id": "kertas"
+      }
+    },
+    {
+      "kana": "きょうしつ",
+      "kanji": "教室",
+      "romaji": "kyoushitsu",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "classroom",
+        "id": "ruang kelas"
+      }
+    },
+    {
+      "kana": "クラス",
+      "romaji": "kurasu",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "class",
+        "id": "kelas"
+      }
+    },
+    {
+      "kana": "ご",
+      "kanji": "語",
+      "romaji": "go",
+      "affix": "suffix",
+      "homonym": 2,
+      "partOfSpeech": "suffix",
+      "meaning": {
+        "en": "language (suffix)",
+        "id": "bahasa (akhiran)"
+      }
+    },
+    {
+      "kana": "こたえる",
+      "kanji": "答える",
+      "romaji": "kotaeru",
+      "partOfSpeech": "verb",
+      "meaning": {
+        "en": "to answer",
+        "id": "menjawab"
+      }
+    },
+    {
+      "kana": "じしょ",
+      "kanji": "辞書",
+      "romaji": "jisho",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "dictionary",
+        "id": "kamus"
+      }
+    },
+    {
+      "kana": "しつもん",
+      "kanji": "質問",
+      "romaji": "shitsumon",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "question",
+        "id": "pertanyaan"
+      }
+    },
+    {
+      "kana": "じゅぎょう",
+      "kanji": "授業",
+      "romaji": "jugyou",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "class, lesson",
+        "id": "pelajaran (di kelas)"
+      }
+    },
+    {
+      "kana": "しゅくだい",
+      "kanji": "宿題",
+      "romaji": "shukudai",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "homework",
+        "id": "pekerjaan rumah (PR)"
+      }
+    },
+    {
+      "kana": "しる",
+      "kanji": "知る",
+      "romaji": "shiru",
+      "partOfSpeech": "verb",
+      "meaning": {
+        "en": "to know",
+        "id": "tahu, mengetahui"
+      }
+    },
+    {
+      "kana": "せいと",
+      "kanji": "生徒",
+      "romaji": "seito",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "pupil, student",
+        "id": "murid, siswa"
+      }
+    }
+  ]
+}

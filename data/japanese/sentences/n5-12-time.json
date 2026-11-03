@@ -1,0 +1,46 @@
+{
+  "source": "Original practice sentences for N5 · Times and periods.",
+  "level": "n5",
+  "items": [
+    {
+      "slug": "n5-kara-made-1",
+      "text": "ぎんこうは くじから さんじまでです。",
+      "tokens": ["ぎんこう", "は", "くじ", "から", "さんじ", "まで", "です"],
+      "grammar": "n5-kara-made",
+      "translation": {
+        "en": "The bank is open from nine to three.",
+        "id": "Bank buka dari pukul sembilan sampai pukul tiga."
+      }
+    },
+    {
+      "slug": "n5-kara-made-2",
+      "text": "うちから がっこうまで あるきます。",
+      "tokens": ["うち", "から", "がっこう", "まで", "あるきます"],
+      "grammar": "n5-kara-made",
+      "translation": {
+        "en": "I walk from home to school.",
+        "id": "Saya berjalan kaki dari rumah ke sekolah."
+      }
+    },
+    {
+      "slug": "n5-goro-1",
+      "text": "まいあさ しちじごろ おきます。",
+      "tokens": ["まいあさ", "しちじ", "ごろ", "おきます"],
+      "grammar": "n5-goro",
+      "translation": {
+        "en": "I get up at about seven every morning.",
+        "id": "Setiap pagi saya bangun sekitar pukul tujuh."
+      }
+    },
+    {
+      "slug": "n5-goro-2",
+      "text": "じゅうにじごろ ねました。",
+      "tokens": ["じゅうにじ", "ごろ", "ねました"],
+      "grammar": "n5-goro",
+      "translation": {
+        "en": "I went to bed at about twelve.",
+        "id": "Saya tidur sekitar pukul dua belas."
+      }
+    }
+  ]
+}

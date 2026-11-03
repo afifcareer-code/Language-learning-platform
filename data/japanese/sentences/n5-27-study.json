@@ -1,0 +1,46 @@
+{
+  "source": "Original practice sentences for N5 · Studying.",
+  "level": "n5",
+  "items": [
+    {
+      "slug": "n5-ga-but-1",
+      "text": "かんじは むずかしいですが、おもしろいです。",
+      "tokens": ["かんじ", "は", "むずかしいです", "が", "おもしろいです"],
+      "grammar": "n5-ga-but",
+      "translation": {
+        "en": "Kanji are difficult but interesting.",
+        "id": "Kanji sulit, tetapi menarik."
+      }
+    },
+    {
+      "slug": "n5-ga-but-2",
+      "text": "しけんは ありましたが、かんたんでした。",
+      "tokens": ["しけん", "は", "ありました", "が", "かんたんでした"],
+      "grammar": "n5-ga-but",
+      "translation": {
+        "en": "There was a test, but it was easy.",
+        "id": "Ada ujian, tetapi mudah."
+      }
+    },
+    {
+      "slug": "n5-toki-1",
+      "text": "わからない とき、せんせいに ききます。",
+      "tokens": ["わからない", "とき", "せんせい", "に", "ききます"],
+      "grammar": "n5-toki",
+      "translation": {
+        "en": "When I don't understand, I ask the teacher.",
+        "id": "Ketika tidak mengerti, saya bertanya kepada guru."
+      }
+    },
+    {
+      "slug": "n5-toki-2",
+      "text": "こどもの とき、よく やまへ いきました。",
+      "tokens": ["こども", "の", "とき", "よく", "やま", "へ", "いきました"],
+      "grammar": "n5-toki",
+      "translation": {
+        "en": "When I was a child, I often went to the mountains.",
+        "id": "Waktu kecil, saya sering pergi ke gunung."
+      }
+    }
+  ]
+}

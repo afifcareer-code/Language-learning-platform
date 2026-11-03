@@ -1,0 +1,74 @@
+{
+  "source": "Original grammar explanations for N5 · Rooms and house rules, written for this project.",
+  "level": "n5",
+  "items": [
+    {
+      "slug": "n5-te-wa-ikemasen",
+      "pattern": "V(て) は いけません",
+      "meaning": {
+        "en": "you must not V",
+        "id": "tidak boleh V"
+      },
+      "explanation": {
+        "en": "The て form + は いけません forbids something: rules, signs, a parent to a child. It is strong; between adults 〜ないで ください is softer.",
+        "id": "Bentuk て + は いけません melarang sesuatu: aturan, papan tanda, orang tua kepada anak. Ungkapan ini keras; di antara orang dewasa 〜ないで ください lebih halus."
+      },
+      "examples": [
+        {
+          "ja": "ここで たばこを すっては いけません。",
+          "translation": {
+            "en": "You must not smoke here.",
+            "id": "Di sini tidak boleh merokok."
+          }
+        },
+        {
+          "ja": "へやで たべては いけません。",
+          "translation": {
+            "en": "You must not eat in the room.",
+            "id": "Tidak boleh makan di dalam kamar."
+          }
+        }
+      ],
+      "commonErrors": [
+        {
+          "en": "Using it to a superior: to someone above you, it sounds rude.",
+          "id": "Memakainya kepada atasan: kepada orang yang lebih tinggi, ungkapan ini terdengar kasar."
+        }
+      ]
+    },
+    {
+      "slug": "n5-naide-kudasai",
+      "pattern": "V(ない) で ください",
+      "meaning": {
+        "en": "please don't V",
+        "id": "tolong jangan V"
+      },
+      "explanation": {
+        "en": "The ない form + で ください asks someone not to do something. The ない form of う-verbs changes the last u-sound to a and adds ない: すう → すわない, わすれる → わすれない.",
+        "id": "Bentuk ない + で ください meminta seseorang untuk tidak melakukan sesuatu. Bentuk ない kata kerja u: ubah bunyi u terakhir menjadi a lalu tambah ない: すう → すわない, わすれる → わすれない."
+      },
+      "examples": [
+        {
+          "ja": "でんきを けさないで ください。",
+          "translation": {
+            "en": "Please don't turn off the light.",
+            "id": "Tolong jangan matikan lampunya."
+          }
+        },
+        {
+          "ja": "かぎを わすれないで ください。",
+          "translation": {
+            "en": "Please don't forget the key.",
+            "id": "Tolong jangan lupa kuncinya."
+          }
+        }
+      ],
+      "commonErrors": [
+        {
+          "en": "Using the ない form without で: わすれない ください is wrong; say わすれないで ください.",
+          "id": "Memakai bentuk ない tanpa で: わすれない ください salah; katakan わすれないで ください."
+        }
+      ]
+    }
+  ]
+}

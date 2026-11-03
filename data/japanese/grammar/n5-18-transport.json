@@ -1,0 +1,74 @@
+{
+  "source": "Original grammar explanations for N5 · Getting around, written for this project.",
+  "level": "n5",
+  "items": [
+    {
+      "slug": "n5-de-means",
+      "pattern": "N で V (means)",
+      "meaning": {
+        "en": "V by / with N",
+        "id": "V dengan / naik N"
+      },
+      "explanation": {
+        "en": "で after a vehicle, tool or language says how something is done: バスで いきます, はしで たべます, にほんごで はなします.",
+        "id": "で setelah kendaraan, alat, atau bahasa menyatakan cara melakukan sesuatu: バスで いきます, はしで たべます, にほんごで はなします."
+      },
+      "examples": [
+        {
+          "ja": "まいにち でんしゃで かいしゃへ いきます。",
+          "translation": {
+            "en": "I go to work by train every day.",
+            "id": "Setiap hari saya pergi ke kantor naik kereta."
+          }
+        },
+        {
+          "ja": "はしで ごはんを たべます。",
+          "translation": {
+            "en": "I eat rice with chopsticks.",
+            "id": "Saya makan nasi dengan sumpit."
+          }
+        }
+      ],
+      "commonErrors": [
+        {
+          "en": "Walking: あるいて いきます, not あしで いきます.",
+          "id": "Berjalan kaki: あるいて いきます, bukan あしで いきます."
+        }
+      ]
+    },
+    {
+      "slug": "n5-ni-noru",
+      "pattern": "N に のります / N を おります",
+      "meaning": {
+        "en": "get on N / get off N",
+        "id": "naik N / turun dari N"
+      },
+      "explanation": {
+        "en": "You get on (のる) into a vehicle, marked with に: バスに のります. You get off (おりる) from it, marked with を: でんしゃを おります.",
+        "id": "Naik (のる) ke kendaraan ditandai に: バスに のります. Turun (おりる) dari kendaraan ditandai を: でんしゃを おります."
+      },
+      "examples": [
+        {
+          "ja": "えきで タクシーに のりました。",
+          "translation": {
+            "en": "I got into a taxi at the station.",
+            "id": "Saya naik taksi di stasiun."
+          }
+        },
+        {
+          "ja": "つぎの えきで でんしゃを おります。",
+          "translation": {
+            "en": "I get off the train at the next station.",
+            "id": "Saya turun dari kereta di stasiun berikutnya."
+          }
+        }
+      ],
+      "commonErrors": [
+        {
+          "en": "Using を with のる: バスを のります is wrong; say バスに のります.",
+          "id": "Memakai を dengan のる: バスを のります salah; katakan バスに のります."
+        }
+      ]
+    }
+  ]
+}

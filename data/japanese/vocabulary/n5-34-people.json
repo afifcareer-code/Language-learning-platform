@@ -1,0 +1,281 @@
+{
+  "source": "N5 · People around you: words from the JLPT N5 list by J. Waller (tanos.co.uk, CC BY) as compiled in open-anki-jlpt-decks (MIT). Meanings written for this project.",
+  "level": "n5",
+  "items": [
+    {
+      "kana": "いもうと",
+      "kanji": "妹",
+      "romaji": "imouto",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "younger sister (my)",
+        "id": "adik perempuan (saya)"
+      }
+    },
+    {
+      "kana": "うまれる",
+      "kanji": "生まれる",
+      "romaji": "umareru",
+      "partOfSpeech": "verb",
+      "meaning": {
+        "en": "to be born",
+        "id": "lahir"
+      }
+    },
+    {
+      "kana": "おくさん",
+      "kanji": "奥さん",
+      "romaji": "okusan",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "(someone else's) wife",
+        "id": "istri (orang lain)"
+      }
+    },
+    {
+      "kana": "おじさん",
+      "romaji": "ojisan",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "uncle, middle-aged man",
+        "id": "paman, bapak-bapak"
+      }
+    },
+    {
+      "kana": "おじいさん",
+      "romaji": "ojiisan",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "grandfather, old man",
+        "id": "kakek"
+      }
+    },
+    {
+      "kana": "おとうと",
+      "kanji": "弟",
+      "romaji": "otouto",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "younger brother (my)",
+        "id": "adik laki-laki (saya)"
+      }
+    },
+    {
+      "kana": "おとこ",
+      "kanji": "男",
+      "romaji": "otoko",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "man",
+        "id": "laki-laki"
+      }
+    },
+    {
+      "kana": "おとこのこ",
+      "kanji": "男の子",
+      "romaji": "otokonoko",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "boy",
+        "id": "anak laki-laki"
+      }
+    },
+    {
+      "kana": "おとな",
+      "kanji": "大人",
+      "romaji": "otona",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "adult",
+        "id": "orang dewasa"
+      }
+    },
+    {
+      "kana": "おにいさん",
+      "kanji": "お兄さん",
+      "romaji": "oniisan",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "(someone's) older brother",
+        "id": "kakak laki-laki (orang lain)"
+      }
+    },
+    {
+      "kana": "おねえさん",
+      "kanji": "お姉さん",
+      "romaji": "oneesan",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "(someone's) older sister",
+        "id": "kakak perempuan (orang lain)"
+      }
+    },
+    {
+      "kana": "おばさん",
+      "romaji": "obasan",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "aunt, middle-aged woman",
+        "id": "bibi, ibu-ibu"
+      }
+    },
+    {
+      "kana": "おばあさん",
+      "romaji": "obaasan",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "grandmother, old woman",
+        "id": "nenek"
+      }
+    },
+    {
+      "kana": "おんな",
+      "kanji": "女",
+      "romaji": "onna",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "woman",
+        "id": "perempuan"
+      }
+    },
+    {
+      "kana": "おんなのこ",
+      "kanji": "女の子",
+      "romaji": "onnanoko",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "girl",
+        "id": "anak perempuan"
+      }
+    },
+    {
+      "kana": "がいこくじん",
+      "kanji": "外国人",
+      "romaji": "gaikokujin",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "foreigner",
+        "id": "orang asing"
+      }
+    },
+    {
+      "kana": "かた",
+      "kanji": "方",
+      "romaji": "kata",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "person (polite)",
+        "id": "orang (sopan)"
+      }
+    },
+    {
+      "kana": "かてい",
+      "kanji": "家庭",
+      "romaji": "katei",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "home, household",
+        "id": "rumah tangga, keluarga"
+      }
+    },
+    {
+      "kana": "きょうだい",
+      "kanji": "兄弟",
+      "romaji": "kyoudai",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "brothers and sisters",
+        "id": "saudara kandung"
+      }
+    },
+    {
+      "kana": "こども",
+      "kanji": "子供",
+      "romaji": "kodomo",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "child",
+        "id": "anak"
+      }
+    },
+    {
+      "kana": "じぶん",
+      "kanji": "自分",
+      "romaji": "jibun",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "oneself",
+        "id": "diri sendiri"
+      }
+    },
+    {
+      "kana": "たち",
+      "romaji": "tachi",
+      "affix": "suffix",
+      "partOfSpeech": "suffix",
+      "meaning": {
+        "en": "(plural for people)",
+        "id": "para, kami-kami (jamak orang)"
+      }
+    },
+    {
+      "kana": "はたち",
+      "kanji": "二十歳",
+      "romaji": "hatachi",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "twenty years old",
+        "id": "umur dua puluh tahun"
+      }
+    },
+    {
+      "kana": "ひとり",
+      "kanji": "一人",
+      "romaji": "hitori",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "one person, alone",
+        "id": "satu orang, sendirian"
+      }
+    },
+    {
+      "kana": "ふたり",
+      "kanji": "二人",
+      "romaji": "futari",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "two people",
+        "id": "dua orang"
+      }
+    },
+    {
+      "kana": "みなさん",
+      "kanji": "皆さん",
+      "romaji": "minasan",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "everyone (polite)",
+        "id": "semuanya (sopan), Bapak-Ibu sekalian"
+      }
+    },
+    {
+      "kana": "みんな",
+      "romaji": "minna",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "everyone",
+        "id": "semua orang"
+      }
+    },
+    {
+      "kana": "りょうしん",
+      "kanji": "両親",
+      "romaji": "ryoushin",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "parents",
+        "id": "orang tua"
+      }
+    }
+  ]
+}

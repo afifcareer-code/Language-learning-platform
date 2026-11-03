@@ -1,0 +1,74 @@
+{
+  "source": "Original grammar explanations for N5 · At school, written for this project.",
+  "level": "n5",
+  "items": [
+    {
+      "slug": "n5-te-iru",
+      "pattern": "V(て) います (action in progress)",
+      "meaning": {
+        "en": "is V-ing",
+        "id": "sedang V"
+      },
+      "explanation": {
+        "en": "〜て います says an action is going on now: いま べんきょうして います. It also describes a habit: まいにち ジョギングを して います.",
+        "id": "〜て います menyatakan kegiatan yang sedang berlangsung: いま べんきょうして います. Juga dipakai untuk kebiasaan: まいにち ジョギングを して います."
+      },
+      "examples": [
+        {
+          "ja": "いま としょかんで べんきょうして います。",
+          "translation": {
+            "en": "I'm studying in the library now.",
+            "id": "Sekarang saya sedang belajar di perpustakaan."
+          }
+        },
+        {
+          "ja": "せんせいは きょうしつで はなして います。",
+          "translation": {
+            "en": "The teacher is talking in the classroom.",
+            "id": "Guru sedang berbicara di ruang kelas."
+          }
+        }
+      ],
+      "commonErrors": [
+        {
+          "en": "Using the plain ます form for 'now': いま べんきょうします means 'I will study now'.",
+          "id": "Memakai bentuk ます biasa untuk 'sekarang': いま べんきょうします berarti 'saya akan belajar sekarang'."
+        }
+      ]
+    },
+    {
+      "slug": "n5-ga-wakaru",
+      "pattern": "N が わかります",
+      "meaning": {
+        "en": "understand N",
+        "id": "mengerti N"
+      },
+      "explanation": {
+        "en": "わかる marks what is understood with が, not を: にほんごが わかります. Questions: わかりますか. Answers: はい、わかります / いいえ、わかりません.",
+        "id": "わかる menandai hal yang dimengerti dengan が, bukan を: にほんごが わかります. Pertanyaan: わかりますか. Jawaban: はい、わかります / いいえ、わかりません."
+      },
+      "examples": [
+        {
+          "ja": "この もんだいが わかりません。",
+          "translation": {
+            "en": "I don't understand this question.",
+            "id": "Saya tidak mengerti soal ini."
+          }
+        },
+        {
+          "ja": "えいごが すこし わかります。",
+          "translation": {
+            "en": "I understand a little English.",
+            "id": "Saya sedikit mengerti bahasa Inggris."
+          }
+        }
+      ],
+      "commonErrors": [
+        {
+          "en": "Using を with わかる: にほんごを わかります is wrong; say にほんごが わかります.",
+          "id": "Memakai を dengan わかる: にほんごを わかります salah; katakan にほんごが わかります."
+        }
+      ]
+    }
+  ]
+}

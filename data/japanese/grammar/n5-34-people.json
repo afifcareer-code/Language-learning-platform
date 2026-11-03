@@ -1,0 +1,74 @@
+{
+  "source": "Original grammar explanations for N5 · People around you, written for this project.",
+  "level": "n5",
+  "items": [
+    {
+      "slug": "n5-to-and",
+      "pattern": "N1 と N2",
+      "meaning": {
+        "en": "N1 and N2",
+        "id": "N1 dan N2"
+      },
+      "explanation": {
+        "en": "と joins nouns and lists all of them: パンと たまごを たべました. It does not join verbs or sentences.",
+        "id": "と menyambung kata benda dan menyebut semuanya: パンと たまごを たべました. と tidak menyambung kata kerja atau kalimat."
+      },
+      "examples": [
+        {
+          "ja": "ちちと ははは げんきです。",
+          "translation": {
+            "en": "My father and mother are well.",
+            "id": "Ayah dan ibu saya sehat."
+          }
+        },
+        {
+          "ja": "あさ パンと たまごを たべました。",
+          "translation": {
+            "en": "In the morning I ate bread and eggs.",
+            "id": "Pagi tadi saya makan roti dan telur."
+          }
+        }
+      ],
+      "commonErrors": [
+        {
+          "en": "Joining adjectives with と: ひろいと あかるい is wrong; say ひろくて あかるい.",
+          "id": "Menyambung kata sifat dengan と: ひろいと あかるい salah; katakan ひろくて あかるい."
+        }
+      ]
+    },
+    {
+      "slug": "n5-nansai",
+      "pattern": "なんさい / おいくつ ですか",
+      "meaning": {
+        "en": "how old are you?",
+        "id": "berapa umur Anda?"
+      },
+      "explanation": {
+        "en": "なんさいですか asks someone's age; おいくつですか is more polite. Answer with number + さい: にじゅっさいです. Twenty is also はたち.",
+        "id": "なんさいですか menanyakan umur; おいくつですか lebih sopan. Jawab dengan angka + さい: にじゅっさいです. Dua puluh tahun juga disebut はたち."
+      },
+      "examples": [
+        {
+          "ja": "おこさんは なんさいですか。",
+          "translation": {
+            "en": "How old is your child?",
+            "id": "Anak Anda umur berapa?"
+          }
+        },
+        {
+          "ja": "いもうとは はたちです。",
+          "translation": {
+            "en": "My younger sister is twenty.",
+            "id": "Adik perempuan saya berumur dua puluh tahun."
+          }
+        }
+      ],
+      "commonErrors": [
+        {
+          "en": "Asking an older person なんさいですか: use おいくつですか.",
+          "id": "Menanyakan なんさいですか kepada orang yang lebih tua: pakai おいくつですか."
+        }
+      ]
+    }
+  ]
+}

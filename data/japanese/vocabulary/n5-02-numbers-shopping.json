@@ -4,6 +4,7 @@
   "items": [
     {
       "kana": "いち",
+      "kanji": "一",
       "romaji": "ichi",
       "partOfSpeech": "noun",
       "meaning": {
@@ -13,6 +14,7 @@
     },
     {
       "kana": "に",
+      "kanji": "二",
       "romaji": "ni",
       "partOfSpeech": "noun",
       "meaning": {
@@ -22,6 +24,7 @@
     },
     {
       "kana": "ご",
+      "kanji": "五",
       "romaji": "go",
       "partOfSpeech": "noun",
       "meaning": {
@@ -31,6 +34,7 @@
     },
     {
       "kana": "じゅう",
+      "kanji": "十",
       "romaji": "juu",
       "alternateRomaji": ["ju", "juu"],
       "partOfSpeech": "noun",
@@ -41,6 +45,7 @@
     },
     {
       "kana": "ひゃく",
+      "kanji": "百",
       "romaji": "hyaku",
       "partOfSpeech": "noun",
       "meaning": {
@@ -95,6 +100,7 @@
     },
     {
       "kana": "ほん",
+      "kanji": "本",
       "romaji": "hon",
       "partOfSpeech": "noun",
       "meaning": {
@@ -104,6 +110,7 @@
     },
     {
       "kana": "みず",
+      "kanji": "水",
       "romaji": "mizu",
       "partOfSpeech": "noun",
       "meaning": {

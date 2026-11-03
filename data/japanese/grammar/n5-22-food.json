@@ -1,0 +1,74 @@
+{
+  "source": "Original grammar explanations for N5 · Food and drink, written for this project.",
+  "level": "n5",
+  "items": [
+    {
+      "slug": "n5-tai",
+      "pattern": "V(ます stem) たいです",
+      "meaning": {
+        "en": "want to V",
+        "id": "ingin V"
+      },
+      "explanation": {
+        "en": "Add たい to the ます stem to say what you want to do: たべたいです, いきたいです. The object can take が or を. For other people's wishes this form is not used directly.",
+        "id": "Tambahkan たい pada bentuk ます tanpa ます untuk menyatakan apa yang ingin Anda lakukan: たべたいです, いきたいです. Objeknya boleh ditandai が atau を. Bentuk ini tidak dipakai langsung untuk keinginan orang lain."
+      },
+      "examples": [
+        {
+          "ja": "すしが たべたいです。",
+          "translation": {
+            "en": "I want to eat sushi.",
+            "id": "Saya ingin makan sushi."
+          }
+        },
+        {
+          "ja": "なつやすみに うみへ いきたいです。",
+          "translation": {
+            "en": "I want to go to the sea in the summer holidays.",
+            "id": "Saya ingin pergi ke laut saat libur musim panas."
+          }
+        }
+      ],
+      "commonErrors": [
+        {
+          "en": "Asking a superior 〜たいですか can sound too direct; offer instead: 〜ませんか.",
+          "id": "Bertanya 〜たいですか kepada atasan bisa terlalu langsung; lebih baik menawarkan: 〜ませんか."
+        }
+      ]
+    },
+    {
+      "slug": "n5-masen-ka",
+      "pattern": "V ませんか",
+      "meaning": {
+        "en": "won't you V? why don't we V?",
+        "id": "maukah V? bagaimana kalau V?"
+      },
+      "explanation": {
+        "en": "The negative question 〜ませんか is a polite invitation: いっしょに たべませんか. Accept with いいですね, or refuse gently with ちょっと….",
+        "id": "Pertanyaan negatif 〜ませんか adalah ajakan yang sopan: いっしょに たべませんか. Terima dengan いいですね, atau tolak dengan halus memakai ちょっと…."
+      },
+      "examples": [
+        {
+          "ja": "いっしょに ひるごはんを たべませんか。",
+          "translation": {
+            "en": "Would you like to have lunch together?",
+            "id": "Bagaimana kalau kita makan siang bersama?"
+          }
+        },
+        {
+          "ja": "こんばん えいがを みませんか。",
+          "translation": {
+            "en": "Would you like to see a film tonight?",
+            "id": "Maukah menonton film malam ini?"
+          }
+        }
+      ],
+      "commonErrors": [
+        {
+          "en": "Answering はい、たべません to accept: say いいですね, たべましょう.",
+          "id": "Menjawab はい、たべません untuk menerima ajakan: katakan いいですね, たべましょう."
+        }
+      ]
+    }
+  ]
+}

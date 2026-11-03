@@ -1,0 +1,46 @@
+{
+  "source": "Original practice sentences for N5 · Work and the telephone.",
+  "level": "n5",
+  "items": [
+    {
+      "slug": "n5-ni-person-1",
+      "text": "よる ともだちに でんわを かけました。",
+      "tokens": ["よる", "ともだち", "に", "でんわ", "を", "かけました"],
+      "grammar": "n5-ni-person",
+      "translation": {
+        "en": "I called a friend in the evening.",
+        "id": "Malam hari saya menelepon teman."
+      }
+    },
+    {
+      "slug": "n5-ni-person-2",
+      "text": "あした かいしゃの ひとに あいます。",
+      "tokens": ["あした", "かいしゃ", "の", "ひと", "に", "あいます"],
+      "grammar": "n5-ni-person",
+      "translation": {
+        "en": "Tomorrow I'm meeting someone from the company.",
+        "id": "Besok saya bertemu orang dari perusahaan."
+      }
+    },
+    {
+      "slug": "n5-ne-yo-1",
+      "text": "きょうは いい てんきですね。",
+      "tokens": ["きょう", "は", "いい", "てんき", "です", "ね"],
+      "grammar": "n5-ne-yo",
+      "translation": {
+        "en": "Nice weather today, isn't it?",
+        "id": "Hari ini cuacanya bagus, ya."
+      }
+    },
+    {
+      "slug": "n5-ne-yo-2",
+      "text": "あの みせは やすいですよ。",
+      "tokens": ["あの", "みせ", "は", "やすいです", "よ"],
+      "grammar": "n5-ne-yo",
+      "translation": {
+        "en": "That shop is cheap, you know.",
+        "id": "Toko itu murah, lho."
+      }
+    }
+  ]
+}

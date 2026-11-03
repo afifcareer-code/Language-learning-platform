@@ -1,0 +1,74 @@
+{
+  "source": "Original grammar explanations for N5 · Everyday actions, written for this project.",
+  "level": "n5",
+  "items": [
+    {
+      "slug": "n5-to-with",
+      "pattern": "N と V",
+      "meaning": {
+        "en": "V with N",
+        "id": "V bersama N"
+      },
+      "explanation": {
+        "en": "と after a person means 'with': ともだちと あそびます. いっしょに can be added: ははと いっしょに かいものを します.",
+        "id": "と setelah orang berarti 'bersama': ともだちと あそびます. Bisa ditambah いっしょに: ははと いっしょに かいものを します."
+      },
+      "examples": [
+        {
+          "ja": "ともだちと こうえんで あそびました。",
+          "translation": {
+            "en": "I played in the park with a friend.",
+            "id": "Saya bermain di taman bersama teman."
+          }
+        },
+        {
+          "ja": "ははと いっしょに かいものを します。",
+          "translation": {
+            "en": "I go shopping with my mother.",
+            "id": "Saya berbelanja bersama ibu."
+          }
+        }
+      ],
+      "commonErrors": [
+        {
+          "en": "Using と for a tool: はしと たべます means 'eat with (someone called) chopsticks'; for a tool use で.",
+          "id": "Memakai と untuk alat: はしと たべます berarti 'makan bersama sumpit' (seperti orang); untuk alat pakai で."
+        }
+      ]
+    },
+    {
+      "slug": "n5-mo",
+      "pattern": "N も",
+      "meaning": {
+        "en": "N too, also",
+        "id": "N juga"
+      },
+      "explanation": {
+        "en": "も replaces は, が or を to mean 'also': わたしも がくせいです. With another particle it comes after it: ここにも あります.",
+        "id": "も menggantikan は, が, atau を dengan arti 'juga': わたしも がくせいです. Dengan partikel lain, も diletakkan setelahnya: ここにも あります."
+      },
+      "examples": [
+        {
+          "ja": "わたしも コーヒーを のみます。",
+          "translation": {
+            "en": "I drink coffee too.",
+            "id": "Saya juga minum kopi."
+          }
+        },
+        {
+          "ja": "きょうも あめです。",
+          "translation": {
+            "en": "It is raining today too.",
+            "id": "Hari ini juga hujan."
+          }
+        }
+      ],
+      "commonErrors": [
+        {
+          "en": "Keeping は before も: わたしはも is wrong; も replaces は.",
+          "id": "Tetap memakai は sebelum も: わたしはも salah; も menggantikan は."
+        }
+      ]
+    }
+  ]
+}

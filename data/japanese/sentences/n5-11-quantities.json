@@ -1,0 +1,46 @@
+{
+  "source": "Original practice sentences for N5 · How much and how many.",
+  "level": "n5",
+  "items": [
+    {
+      "slug": "n5-dake-1",
+      "text": "あさは コーヒーだけ のみます。",
+      "tokens": ["あさ", "は", "コーヒー", "だけ", "のみます"],
+      "grammar": "n5-dake",
+      "translation": {
+        "en": "In the morning I only drink coffee.",
+        "id": "Pagi hari saya hanya minum kopi."
+      }
+    },
+    {
+      "slug": "n5-dake-2",
+      "text": "ひとつだけ ください。",
+      "tokens": ["ひとつ", "だけ", "ください"],
+      "grammar": "n5-dake",
+      "translation": {
+        "en": "Just one, please.",
+        "id": "Satu saja."
+      }
+    },
+    {
+      "slug": "n5-ya-1",
+      "text": "かばんに ほんや ノートが あります。",
+      "tokens": ["かばん", "に", "ほん", "や", "ノート", "が", "あります"],
+      "grammar": "n5-ya",
+      "translation": {
+        "en": "There are books, notebooks and other things in the bag.",
+        "id": "Di dalam tas ada buku, buku catatan, dan lain-lain."
+      }
+    },
+    {
+      "slug": "n5-ya-2",
+      "text": "やさいや くだものなどを かいました。",
+      "tokens": ["やさい", "や", "くだもの", "など", "を", "かいました"],
+      "grammar": "n5-ya",
+      "translation": {
+        "en": "I bought vegetables, fruit and so on.",
+        "id": "Saya membeli sayur, buah, dan sebagainya."
+      }
+    }
+  ]
+}

@@ -1,0 +1,223 @@
+{
+  "source": "N5 · Cooking and eating: words from the JLPT N5 list by J. Waller (tanos.co.uk, CC BY) as compiled in open-anki-jlpt-decks (MIT). Meanings written for this project.",
+  "level": "n5",
+  "items": [
+    {
+      "kana": "たべもの",
+      "kanji": "食べ物",
+      "romaji": "tabemono",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "food",
+        "id": "makanan"
+      }
+    },
+    {
+      "kana": "たべる",
+      "kanji": "食べる",
+      "romaji": "taberu",
+      "partOfSpeech": "verb",
+      "meaning": {
+        "en": "to eat",
+        "id": "makan"
+      }
+    },
+    {
+      "kana": "たまご",
+      "kanji": "卵",
+      "romaji": "tamago",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "egg",
+        "id": "telur"
+      }
+    },
+    {
+      "kana": "ちゃわん",
+      "kanji": "茶碗",
+      "romaji": "chawan",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "rice bowl",
+        "id": "mangkuk nasi"
+      }
+    },
+    {
+      "kana": "つめたい",
+      "kanji": "冷たい",
+      "romaji": "tsumetai",
+      "partOfSpeech": "adjective",
+      "meaning": {
+        "en": "cold (to the touch)",
+        "id": "dingin (benda)"
+      }
+    },
+    {
+      "kana": "とりにく",
+      "kanji": "鶏肉",
+      "romaji": "toriniku",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "chicken (meat)",
+        "id": "daging ayam"
+      }
+    },
+    {
+      "kana": "ナイフ",
+      "romaji": "naifu",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "knife",
+        "id": "pisau"
+      }
+    },
+    {
+      "kana": "ぬるい",
+      "kanji": "温い",
+      "romaji": "nurui",
+      "partOfSpeech": "adjective",
+      "meaning": {
+        "en": "lukewarm",
+        "id": "suam-suam kuku"
+      }
+    },
+    {
+      "kana": "のみもの",
+      "kanji": "飲み物",
+      "romaji": "nomimono",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "drink",
+        "id": "minuman"
+      }
+    },
+    {
+      "kana": "のむ",
+      "kanji": "飲む",
+      "romaji": "nomu",
+      "partOfSpeech": "verb",
+      "meaning": {
+        "en": "to drink",
+        "id": "minum"
+      }
+    },
+    {
+      "kana": "はし",
+      "kanji": "箸",
+      "romaji": "hashi",
+      "homonym": 2,
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "chopsticks",
+        "id": "sumpit"
+      }
+    },
+    {
+      "kana": "バター",
+      "romaji": "bataa",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "butter",
+        "id": "mentega"
+      }
+    },
+    {
+      "kana": "ばんごはん",
+      "kanji": "晩御飯",
+      "romaji": "bangohan",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "dinner",
+        "id": "makan malam"
+      }
+    },
+    {
+      "kana": "ひるごはん",
+      "kanji": "昼御飯",
+      "romaji": "hirugohan",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "lunch",
+        "id": "makan siang"
+      }
+    },
+    {
+      "kana": "フォーク",
+      "romaji": "fooku",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "fork",
+        "id": "garpu"
+      }
+    },
+    {
+      "kana": "ぶたにく",
+      "kanji": "豚肉",
+      "romaji": "butaniku",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "pork",
+        "id": "daging babi"
+      }
+    },
+    {
+      "kana": "まずい",
+      "romaji": "mazui",
+      "partOfSpeech": "adjective",
+      "meaning": {
+        "en": "tasting bad",
+        "id": "tidak enak"
+      }
+    },
+    {
+      "kana": "やさい",
+      "kanji": "野菜",
+      "romaji": "yasai",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "vegetable",
+        "id": "sayur"
+      }
+    },
+    {
+      "kana": "ゆうはん",
+      "kanji": "夕飯",
+      "romaji": "yuuhan",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "evening meal",
+        "id": "makan malam"
+      }
+    },
+    {
+      "kana": "りょうり",
+      "kanji": "料理",
+      "romaji": "ryouri",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "cooking, dish",
+        "id": "masakan"
+      }
+    },
+    {
+      "kana": "レストラン",
+      "romaji": "resutoran",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "restaurant",
+        "id": "restoran"
+      }
+    },
+    {
+      "kana": "きる",
+      "kanji": "切る",
+      "romaji": "kiru",
+      "homonym": 2,
+      "partOfSpeech": "verb",
+      "meaning": {
+        "en": "to cut",
+        "id": "memotong"
+      }
+    }
+  ]
+}

@@ -1,0 +1,74 @@
+{
+  "source": "Original grammar explanations for N5 · Weather and seasons, written for this project.",
+  "level": "n5",
+  "items": [
+    {
+      "slug": "n5-deshou",
+      "pattern": "plain form + でしょう",
+      "meaning": {
+        "en": "probably…",
+        "id": "mungkin…; barangkali…"
+      },
+      "explanation": {
+        "en": "でしょう after a plain form or a noun is a guess about the future or something you don't know for sure: あしたは あめでしょう. Weather forecasts use it a lot.",
+        "id": "でしょう setelah bentuk biasa atau kata benda adalah dugaan tentang masa depan atau hal yang belum pasti: あしたは あめでしょう. Prakiraan cuaca sering memakainya."
+      },
+      "examples": [
+        {
+          "ja": "あしたは はれるでしょう。",
+          "translation": {
+            "en": "It will probably be sunny tomorrow.",
+            "id": "Besok mungkin cerah."
+          }
+        },
+        {
+          "ja": "こんばんは さむいでしょう。",
+          "translation": {
+            "en": "It will probably be cold tonight.",
+            "id": "Malam ini mungkin dingin."
+          }
+        }
+      ],
+      "commonErrors": [
+        {
+          "en": "Adding です before でしょう: さむいですでしょう is wrong; say さむいでしょう.",
+          "id": "Menambahkan です sebelum でしょう: さむいですでしょう salah; katakan さむいでしょう."
+        }
+      ]
+    },
+    {
+      "slug": "n5-naru",
+      "pattern": "い-adj くなる / な-adj・N に なる",
+      "meaning": {
+        "en": "become A / become N",
+        "id": "menjadi A / menjadi N"
+      },
+      "explanation": {
+        "en": "なる means 'become'. い-adjectives change い to く: さむく なります. な-adjectives and nouns take に: げんきに なりました, はるに なりました.",
+        "id": "なる berarti 'menjadi'. Kata sifat い mengganti い menjadi く: さむく なります. Kata sifat な dan kata benda memakai に: げんきに なりました, はるに なりました."
+      },
+      "examples": [
+        {
+          "ja": "だんだん さむく なりました。",
+          "translation": {
+            "en": "It has gradually got colder.",
+            "id": "Lambat laun cuaca menjadi dingin."
+          }
+        },
+        {
+          "ja": "はるに なりました。",
+          "translation": {
+            "en": "Spring has come.",
+            "id": "Musim semi sudah tiba."
+          }
+        }
+      ],
+      "commonErrors": [
+        {
+          "en": "Joining なる to the plain adjective: さむい なります is wrong; say さむく なります.",
+          "id": "Menyambung なる dengan kata sifat biasa: さむい なります salah; katakan さむく なります."
+        }
+      ]
+    }
+  ]
+}

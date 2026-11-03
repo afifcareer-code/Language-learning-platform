@@ -1,0 +1,207 @@
+{
+  "source": "N5 · Colours and shapes: words from the JLPT N5 list by J. Waller (tanos.co.uk, CC BY) as compiled in open-anki-jlpt-decks (MIT). Meanings written for this project.",
+  "level": "n5",
+  "items": [
+    {
+      "kana": "あお",
+      "kanji": "青",
+      "romaji": "ao",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "blue (colour)",
+        "id": "biru (warna)"
+      }
+    },
+    {
+      "kana": "あおい",
+      "kanji": "青い",
+      "romaji": "aoi",
+      "partOfSpeech": "adjective",
+      "meaning": {
+        "en": "blue",
+        "id": "biru"
+      }
+    },
+    {
+      "kana": "あか",
+      "kanji": "赤",
+      "romaji": "aka",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "red (colour)",
+        "id": "merah (warna)"
+      }
+    },
+    {
+      "kana": "あかい",
+      "kanji": "赤い",
+      "romaji": "akai",
+      "partOfSpeech": "adjective",
+      "meaning": {
+        "en": "red",
+        "id": "merah"
+      }
+    },
+    {
+      "kana": "あかるい",
+      "kanji": "明るい",
+      "romaji": "akarui",
+      "partOfSpeech": "adjective",
+      "meaning": {
+        "en": "bright, cheerful",
+        "id": "terang, ceria"
+      }
+    },
+    {
+      "kana": "あたらしい",
+      "kanji": "新しい",
+      "romaji": "atarashii",
+      "partOfSpeech": "adjective",
+      "meaning": {
+        "en": "new",
+        "id": "baru"
+      }
+    },
+    {
+      "kana": "あつい",
+      "kanji": "厚い",
+      "romaji": "atsui",
+      "homonym": 3,
+      "partOfSpeech": "adjective",
+      "meaning": {
+        "en": "thick",
+        "id": "tebal"
+      }
+    },
+    {
+      "kana": "いろ",
+      "kanji": "色",
+      "romaji": "iro",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "colour",
+        "id": "warna"
+      }
+    },
+    {
+      "kana": "うすい",
+      "kanji": "薄い",
+      "romaji": "usui",
+      "partOfSpeech": "adjective",
+      "meaning": {
+        "en": "thin, light (colour, taste)",
+        "id": "tipis, pucat (warna), hambar"
+      }
+    },
+    {
+      "kana": "おおきい",
+      "kanji": "大きい",
+      "romaji": "ookii",
+      "partOfSpeech": "adjective",
+      "meaning": {
+        "en": "big",
+        "id": "besar"
+      }
+    },
+    {
+      "kana": "おおきな",
+      "kanji": "大きな",
+      "romaji": "ookina",
+      "partOfSpeech": "adjective",
+      "meaning": {
+        "en": "big (before a noun)",
+        "id": "besar (sebelum kata benda)"
+      }
+    },
+    {
+      "kana": "おなじ",
+      "kanji": "同じ",
+      "romaji": "onaji",
+      "partOfSpeech": "adjective",
+      "meaning": {
+        "en": "same",
+        "id": "sama"
+      }
+    },
+    {
+      "kana": "おもい",
+      "kanji": "重い",
+      "romaji": "omoi",
+      "partOfSpeech": "adjective",
+      "meaning": {
+        "en": "heavy",
+        "id": "berat"
+      }
+    },
+    {
+      "kana": "かるい",
+      "kanji": "軽い",
+      "romaji": "karui",
+      "partOfSpeech": "adjective",
+      "meaning": {
+        "en": "light (in weight)",
+        "id": "ringan"
+      }
+    },
+    {
+      "kana": "きいろ",
+      "kanji": "黄色",
+      "romaji": "kiiro",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "yellow (colour)",
+        "id": "kuning (warna)"
+      }
+    },
+    {
+      "kana": "きいろい",
+      "kanji": "黄色い",
+      "romaji": "kiiroi",
+      "partOfSpeech": "adjective",
+      "meaning": {
+        "en": "yellow",
+        "id": "kuning"
+      }
+    },
+    {
+      "kana": "くらい",
+      "kanji": "暗い",
+      "romaji": "kurai",
+      "partOfSpeech": "adjective",
+      "meaning": {
+        "en": "dark",
+        "id": "gelap"
+      }
+    },
+    {
+      "kana": "くろ",
+      "kanji": "黒",
+      "romaji": "kuro",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "black (colour)",
+        "id": "hitam (warna)"
+      }
+    },
+    {
+      "kana": "くろい",
+      "kanji": "黒い",
+      "romaji": "kuroi",
+      "partOfSpeech": "adjective",
+      "meaning": {
+        "en": "black",
+        "id": "hitam"
+      }
+    },
+    {
+      "kana": "しろ",
+      "kanji": "白",
+      "romaji": "shiro",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "white (colour)",
+        "id": "putih (warna)"
+      }
+    }
+  ]
+}

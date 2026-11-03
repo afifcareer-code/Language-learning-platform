@@ -1,0 +1,171 @@
+{
+  "source": "N5 · Studying: words from the JLPT N5 list by J. Waller (tanos.co.uk, CC BY) as compiled in open-anki-jlpt-decks (MIT). Meanings written for this project.",
+  "level": "n5",
+  "items": [
+    {
+      "kana": "だいがく",
+      "kanji": "大学",
+      "romaji": "daigaku",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "university",
+        "id": "universitas"
+      }
+    },
+    {
+      "kana": "つくえ",
+      "kanji": "机",
+      "romaji": "tsukue",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "desk",
+        "id": "meja tulis"
+      }
+    },
+    {
+      "kana": "テスト",
+      "romaji": "tesuto",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "test",
+        "id": "tes, ujian"
+      }
+    },
+    {
+      "kana": "ノート",
+      "romaji": "nooto",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "notebook",
+        "id": "buku catatan"
+      }
+    },
+    {
+      "kana": "ひらがな",
+      "kanji": "平仮名",
+      "romaji": "hiragana",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "hiragana",
+        "id": "hiragana"
+      }
+    },
+    {
+      "kana": "ぶんしょう",
+      "kanji": "文章",
+      "romaji": "bunshou",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "text, writing",
+        "id": "tulisan, karangan"
+      }
+    },
+    {
+      "kana": "ページ",
+      "romaji": "peeji",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "page",
+        "id": "halaman"
+      }
+    },
+    {
+      "kana": "ペン",
+      "romaji": "pen",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "pen",
+        "id": "pena"
+      }
+    },
+    {
+      "kana": "べんきょう",
+      "kanji": "勉強",
+      "romaji": "benkyou",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "study",
+        "id": "belajar"
+      }
+    },
+    {
+      "kana": "ボールペン",
+      "romaji": "boorupen",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "ballpoint pen",
+        "id": "pulpen"
+      }
+    },
+    {
+      "kana": "まんねんひつ",
+      "kanji": "万年筆",
+      "romaji": "mannenhitsu",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "fountain pen",
+        "id": "pena tinta"
+      }
+    },
+    {
+      "kana": "もんだい",
+      "kanji": "問題",
+      "romaji": "mondai",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "problem, question",
+        "id": "soal, masalah"
+      }
+    },
+    {
+      "kana": "よむ",
+      "kanji": "読む",
+      "romaji": "yomu",
+      "partOfSpeech": "verb",
+      "meaning": {
+        "en": "to read",
+        "id": "membaca"
+      }
+    },
+    {
+      "kana": "りゅうがくせい",
+      "kanji": "留学生",
+      "romaji": "ryuugakusei",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "international student",
+        "id": "mahasiswa asing"
+      }
+    },
+    {
+      "kana": "れんしゅう",
+      "kanji": "練習",
+      "romaji": "renshuu",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "practice",
+        "id": "latihan"
+      }
+    },
+    {
+      "kana": "わかる",
+      "kanji": "分かる",
+      "romaji": "wakaru",
+      "partOfSpeech": "verb",
+      "meaning": {
+        "en": "to understand",
+        "id": "mengerti, paham"
+      }
+    },
+    {
+      "kana": "わすれる",
+      "kanji": "忘れる",
+      "romaji": "wasureru",
+      "partOfSpeech": "verb",
+      "meaning": {
+        "en": "to forget",
+        "id": "lupa"
+      }
+    }
+  ]
+}

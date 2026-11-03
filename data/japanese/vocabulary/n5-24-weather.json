@@ -1,0 +1,237 @@
+{
+  "source": "N5 · Weather and seasons: words from the JLPT N5 list by J. Waller (tanos.co.uk, CC BY) as compiled in open-anki-jlpt-decks (MIT). Meanings written for this project.",
+  "level": "n5",
+  "items": [
+    {
+      "kana": "あき",
+      "kanji": "秋",
+      "romaji": "aki",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "autumn",
+        "id": "musim gugur"
+      }
+    },
+    {
+      "kana": "あつい",
+      "kanji": "暑い",
+      "romaji": "atsui",
+      "partOfSpeech": "adjective",
+      "meaning": {
+        "en": "hot (weather)",
+        "id": "panas (cuaca)"
+      }
+    },
+    {
+      "kana": "あめ",
+      "kanji": "雨",
+      "romaji": "ame",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "rain",
+        "id": "hujan"
+      }
+    },
+    {
+      "kana": "いけ",
+      "kanji": "池",
+      "romaji": "ike",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "pond",
+        "id": "kolam"
+      }
+    },
+    {
+      "kana": "かわ",
+      "kanji": "川",
+      "romaji": "kawa",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "river",
+        "id": "sungai"
+      }
+    },
+    {
+      "kana": "き",
+      "kanji": "木",
+      "romaji": "ki",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "tree, wood",
+        "id": "pohon, kayu"
+      }
+    },
+    {
+      "kana": "くもり",
+      "kanji": "曇り",
+      "romaji": "kumori",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "cloudy weather",
+        "id": "cuaca mendung"
+      }
+    },
+    {
+      "kana": "くもる",
+      "kanji": "曇る",
+      "romaji": "kumoru",
+      "partOfSpeech": "verb",
+      "meaning": {
+        "en": "to become cloudy",
+        "id": "menjadi mendung"
+      }
+    },
+    {
+      "kana": "さす",
+      "kanji": "差す",
+      "romaji": "sasu",
+      "partOfSpeech": "verb",
+      "meaning": {
+        "en": "to put up (an umbrella)",
+        "id": "memakai (payung)"
+      }
+    },
+    {
+      "kana": "さむい",
+      "kanji": "寒い",
+      "romaji": "samui",
+      "partOfSpeech": "adjective",
+      "meaning": {
+        "en": "cold (weather)",
+        "id": "dingin (cuaca)"
+      }
+    },
+    {
+      "kana": "すずしい",
+      "kanji": "涼しい",
+      "romaji": "suzushii",
+      "partOfSpeech": "adjective",
+      "meaning": {
+        "en": "cool (weather)",
+        "id": "sejuk"
+      }
+    },
+    {
+      "kana": "そら",
+      "kanji": "空",
+      "romaji": "sora",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "sky",
+        "id": "langit"
+      }
+    },
+    {
+      "kana": "てんき",
+      "kanji": "天気",
+      "romaji": "tenki",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "weather",
+        "id": "cuaca"
+      }
+    },
+    {
+      "kana": "とぶ",
+      "kanji": "飛ぶ",
+      "romaji": "tobu",
+      "partOfSpeech": "verb",
+      "meaning": {
+        "en": "to fly",
+        "id": "terbang"
+      }
+    },
+    {
+      "kana": "なつ",
+      "kanji": "夏",
+      "romaji": "natsu",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "summer",
+        "id": "musim panas"
+      }
+    },
+    {
+      "kana": "はな",
+      "kanji": "花",
+      "romaji": "hana",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "flower",
+        "id": "bunga"
+      }
+    },
+    {
+      "kana": "はれ",
+      "kanji": "晴れ",
+      "romaji": "hare",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "fine weather",
+        "id": "cuaca cerah"
+      }
+    },
+    {
+      "kana": "はれる",
+      "kanji": "晴れる",
+      "romaji": "hareru",
+      "partOfSpeech": "verb",
+      "meaning": {
+        "en": "to clear up (weather)",
+        "id": "menjadi cerah"
+      }
+    },
+    {
+      "kana": "ふく",
+      "kanji": "吹く",
+      "romaji": "fuku",
+      "partOfSpeech": "verb",
+      "meaning": {
+        "en": "to blow (wind)",
+        "id": "bertiup"
+      }
+    },
+    {
+      "kana": "ふゆ",
+      "kanji": "冬",
+      "romaji": "fuyu",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "winter",
+        "id": "musim dingin"
+      }
+    },
+    {
+      "kana": "ふる",
+      "kanji": "降る",
+      "romaji": "furu",
+      "partOfSpeech": "verb",
+      "meaning": {
+        "en": "to fall (rain, snow)",
+        "id": "turun (hujan, salju)"
+      }
+    },
+    {
+      "kana": "やま",
+      "kanji": "山",
+      "romaji": "yama",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "mountain",
+        "id": "gunung"
+      }
+    },
+    {
+      "kana": "かぜ",
+      "kanji": "風",
+      "romaji": "kaze",
+      "homonym": 2,
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "wind",
+        "id": "angin"
+      }
+    }
+  ]
+}

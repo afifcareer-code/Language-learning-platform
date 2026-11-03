@@ -50,6 +50,54 @@
       }
     },
     {
+      "key": "kanji-meaning",
+      "type": "recognition",
+      "skill": "ja.kanji.meaning",
+      "contentType": "ja.kanji",
+      "difficulty": 1,
+      "successCriteria": ["recognition", "meaning_recall"],
+      "passScore": 0.8,
+      "targetMastery": "proficient",
+      "text": {
+        "en": {
+          "title": "Recognize the kanji of {lesson}",
+          "objective": "Connect each of the {count} kanji of this lesson to its meaning.",
+          "instruction": "Choose the meaning of the kanji.",
+          "explanation": "Each kanji carries a meaning. Knowing it helps you guess and remember the words written with it."
+        },
+        "id": {
+          "title": "Kenali kanji {lesson}",
+          "objective": "Menghubungkan {count} kanji pelajaran ini dengan artinya.",
+          "instruction": "Pilih arti kanji tersebut.",
+          "explanation": "Setiap kanji membawa makna. Mengetahuinya membantu Anda menebak dan mengingat kata yang ditulis dengannya."
+        }
+      }
+    },
+    {
+      "key": "kanji-reading",
+      "type": "recognition",
+      "skill": "ja.kanji.reading",
+      "contentType": "ja.kanji",
+      "difficulty": 2,
+      "successCriteria": ["recognition", "recall"],
+      "passScore": 0.8,
+      "targetMastery": "proficient",
+      "text": {
+        "en": {
+          "title": "Read the kanji of {lesson}",
+          "objective": "Recognize the on and kun readings of each of the {count} kanji of this lesson.",
+          "instruction": "Choose how the kanji is read.",
+          "explanation": "Most kanji have a Chinese-origin (on) reading used in compounds and a Japanese (kun) reading used on its own or with okurigana."
+        },
+        "id": {
+          "title": "Baca kanji {lesson}",
+          "objective": "Mengenali bacaan on dan kun dari {count} kanji pelajaran ini.",
+          "instruction": "Pilih cara membaca kanji tersebut.",
+          "explanation": "Kebanyakan kanji punya bacaan on (asal Tionghoa) yang dipakai dalam gabungan kata, dan bacaan kun (Jepang) yang dipakai sendiri atau dengan okurigana."
+        }
+      }
+    },
+    {
       "key": "sentence-building",
       "type": "sentence_building",
       "skill": "ja.grammar.sentence",

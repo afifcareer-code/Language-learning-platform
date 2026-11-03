@@ -1,0 +1,46 @@
+{
+  "source": "Original practice sentences for N5 · Getting around.",
+  "level": "n5",
+  "items": [
+    {
+      "slug": "n5-de-means-1",
+      "text": "まいにち でんしゃで かいしゃへ いきます。",
+      "tokens": ["まいにち", "でんしゃ", "で", "かいしゃ", "へ", "いきます"],
+      "grammar": "n5-de-means",
+      "translation": {
+        "en": "I go to work by train every day.",
+        "id": "Setiap hari saya pergi ke kantor naik kereta."
+      }
+    },
+    {
+      "slug": "n5-de-means-2",
+      "text": "はしで ごはんを たべます。",
+      "tokens": ["はし", "で", "ごはん", "を", "たべます"],
+      "grammar": "n5-de-means",
+      "translation": {
+        "en": "I eat rice with chopsticks.",
+        "id": "Saya makan nasi dengan sumpit."
+      }
+    },
+    {
+      "slug": "n5-ni-noru-1",
+      "text": "えきで タクシーに のりました。",
+      "tokens": ["えき", "で", "タクシー", "に", "のりました"],
+      "grammar": "n5-ni-noru",
+      "translation": {
+        "en": "I got into a taxi at the station.",
+        "id": "Saya naik taksi di stasiun."
+      }
+    },
+    {
+      "slug": "n5-ni-noru-2",
+      "text": "つぎの えきで でんしゃを おります。",
+      "tokens": ["つぎ", "の", "えき", "で", "でんしゃ", "を", "おります"],
+      "grammar": "n5-ni-noru",
+      "translation": {
+        "en": "I get off the train at the next station.",
+        "id": "Saya turun dari kereta di stasiun berikutnya."
+      }
+    }
+  ]
+}

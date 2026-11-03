@@ -1,0 +1,46 @@
+{
+  "source": "Original practice sentences for N5 · Everyday actions.",
+  "level": "n5",
+  "items": [
+    {
+      "slug": "n5-to-with-1",
+      "text": "ともだちと こうえんで あそびました。",
+      "tokens": ["ともだち", "と", "こうえん", "で", "あそびました"],
+      "grammar": "n5-to-with",
+      "translation": {
+        "en": "I played in the park with a friend.",
+        "id": "Saya bermain di taman bersama teman."
+      }
+    },
+    {
+      "slug": "n5-to-with-2",
+      "text": "ははと いっしょに かいものを します。",
+      "tokens": ["はは", "と", "いっしょに", "かいもの", "を", "します"],
+      "grammar": "n5-to-with",
+      "translation": {
+        "en": "I go shopping with my mother.",
+        "id": "Saya berbelanja bersama ibu."
+      }
+    },
+    {
+      "slug": "n5-mo-1",
+      "text": "わたしも コーヒーを のみます。",
+      "tokens": ["わたし", "も", "コーヒー", "を", "のみます"],
+      "grammar": "n5-mo",
+      "translation": {
+        "en": "I drink coffee too.",
+        "id": "Saya juga minum kopi."
+      }
+    },
+    {
+      "slug": "n5-mo-2",
+      "text": "きょうも あめです。",
+      "tokens": ["きょう", "も", "あめ", "です"],
+      "grammar": "n5-mo",
+      "translation": {
+        "en": "It is raining today too.",
+        "id": "Hari ini juga hujan."
+      }
+    }
+  ]
+}

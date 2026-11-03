@@ -1,0 +1,223 @@
+{
+  "source": "N5 · Food and drink: words from the JLPT N5 list by J. Waller (tanos.co.uk, CC BY) as compiled in open-anki-jlpt-decks (MIT). Meanings written for this project.",
+  "level": "n5",
+  "items": [
+    {
+      "kana": "あさごはん",
+      "kanji": "朝御飯",
+      "romaji": "asagohan",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "breakfast",
+        "id": "sarapan"
+      }
+    },
+    {
+      "kana": "あつい",
+      "kanji": "熱い",
+      "romaji": "atsui",
+      "homonym": 2,
+      "partOfSpeech": "adjective",
+      "meaning": {
+        "en": "hot (to the touch)",
+        "id": "panas (benda)"
+      }
+    },
+    {
+      "kana": "あまい",
+      "kanji": "甘い",
+      "romaji": "amai",
+      "partOfSpeech": "adjective",
+      "meaning": {
+        "en": "sweet",
+        "id": "manis"
+      }
+    },
+    {
+      "kana": "あめ",
+      "kanji": "飴",
+      "romaji": "ame",
+      "homonym": 2,
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "candy",
+        "id": "permen"
+      }
+    },
+    {
+      "kana": "おかし",
+      "kanji": "お菓子",
+      "romaji": "okashi",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "sweets, snacks",
+        "id": "kue, camilan"
+      }
+    },
+    {
+      "kana": "おさけ",
+      "kanji": "お酒",
+      "romaji": "osake",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "sake, alcohol",
+        "id": "sake, minuman beralkohol"
+      }
+    },
+    {
+      "kana": "おさら",
+      "kanji": "お皿",
+      "romaji": "osara",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "plate, dish",
+        "id": "piring"
+      }
+    },
+    {
+      "kana": "おべんとう",
+      "kanji": "お弁当",
+      "romaji": "obentou",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "boxed lunch",
+        "id": "bekal makan siang"
+      }
+    },
+    {
+      "kana": "カップ",
+      "romaji": "kappu",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "cup",
+        "id": "cangkir"
+      }
+    },
+    {
+      "kana": "からい",
+      "kanji": "辛い",
+      "romaji": "karai",
+      "partOfSpeech": "adjective",
+      "meaning": {
+        "en": "spicy, salty",
+        "id": "pedas, asin"
+      }
+    },
+    {
+      "kana": "カレー",
+      "romaji": "karee",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "curry",
+        "id": "kari"
+      }
+    },
+    {
+      "kana": "ぎゅうにく",
+      "kanji": "牛肉",
+      "romaji": "gyuuniku",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "beef",
+        "id": "daging sapi"
+      }
+    },
+    {
+      "kana": "ぎゅうにゅう",
+      "kanji": "牛乳",
+      "romaji": "gyuunyuu",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "milk",
+        "id": "susu"
+      }
+    },
+    {
+      "kana": "くだもの",
+      "kanji": "果物",
+      "romaji": "kudamono",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "fruit",
+        "id": "buah-buahan"
+      }
+    },
+    {
+      "kana": "こうちゃ",
+      "kanji": "紅茶",
+      "romaji": "koucha",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "black tea",
+        "id": "teh hitam"
+      }
+    },
+    {
+      "kana": "コーヒー",
+      "romaji": "koohii",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "coffee",
+        "id": "kopi"
+      }
+    },
+    {
+      "kana": "コップ",
+      "romaji": "koppu",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "glass (for drinking)",
+        "id": "gelas"
+      }
+    },
+    {
+      "kana": "さとう",
+      "kanji": "砂糖",
+      "romaji": "satou",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "sugar",
+        "id": "gula"
+      }
+    },
+    {
+      "kana": "しお",
+      "kanji": "塩",
+      "romaji": "shio",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "salt",
+        "id": "garam"
+      }
+    },
+    {
+      "kana": "しょうゆ",
+      "kanji": "醤油",
+      "romaji": "shouyu",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "soy sauce",
+        "id": "kecap asin"
+      }
+    },
+    {
+      "kana": "しょくどう",
+      "kanji": "食堂",
+      "romaji": "shokudou",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "canteen, dining hall",
+        "id": "kantin, ruang makan"
+      }
+    },
+    {
+      "kana": "スプーン",
+      "romaji": "supuun",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "spoon",
+        "id": "sendok"
+      }
+    }
+  ]
+}

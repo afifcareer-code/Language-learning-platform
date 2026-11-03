@@ -1,0 +1,341 @@
+{
+  "source": "N5 · Linking words and useful expressions: words from the JLPT N5 list by J. Waller (tanos.co.uk, CC BY) as compiled in open-anki-jlpt-decks (MIT). Meanings written for this project.",
+  "level": "n5",
+  "items": [
+    {
+      "kana": "ああ",
+      "romaji": "aa",
+      "partOfSpeech": "expression",
+      "meaning": {
+        "en": "ah, oh",
+        "id": "ah, oh"
+      }
+    },
+    {
+      "kana": "あまり",
+      "kanji": "余り",
+      "romaji": "amari",
+      "partOfSpeech": "adverb",
+      "meaning": {
+        "en": "not very (with negative)",
+        "id": "tidak terlalu"
+      }
+    },
+    {
+      "kana": "いいえ",
+      "romaji": "iie",
+      "partOfSpeech": "expression",
+      "meaning": {
+        "en": "no",
+        "id": "tidak, bukan"
+      }
+    },
+    {
+      "kana": "いちばん",
+      "kanji": "一番",
+      "romaji": "ichiban",
+      "partOfSpeech": "adverb",
+      "meaning": {
+        "en": "the most, number one",
+        "id": "paling, nomor satu"
+      }
+    },
+    {
+      "kana": "いっしょ",
+      "kanji": "一緒",
+      "romaji": "issho",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "together",
+        "id": "bersama"
+      }
+    },
+    {
+      "kana": "いつも",
+      "romaji": "itsumo",
+      "partOfSpeech": "adverb",
+      "meaning": {
+        "en": "always, usually",
+        "id": "selalu, biasanya"
+      }
+    },
+    {
+      "kana": "いろいろ",
+      "kanji": "色々",
+      "romaji": "iroiro",
+      "partOfSpeech": "adjective",
+      "meaning": {
+        "en": "various",
+        "id": "bermacam-macam"
+      }
+    },
+    {
+      "kana": "ええ",
+      "romaji": "ee",
+      "partOfSpeech": "expression",
+      "meaning": {
+        "en": "yes (casual)",
+        "id": "ya (santai)"
+      }
+    },
+    {
+      "kana": "お",
+      "romaji": "o",
+      "affix": "prefix",
+      "partOfSpeech": "expression",
+      "meaning": {
+        "en": "polite prefix",
+        "id": "awalan sopan"
+      }
+    },
+    {
+      "kana": "けっこう",
+      "kanji": "結構",
+      "romaji": "kekkou",
+      "partOfSpeech": "adjective",
+      "meaning": {
+        "en": "fine, enough (no, thank you)",
+        "id": "baik, cukup (tidak usah, terima kasih)"
+      }
+    },
+    {
+      "kana": "さあ",
+      "romaji": "saa",
+      "partOfSpeech": "expression",
+      "meaning": {
+        "en": "well, come on",
+        "id": "nah, ayo"
+      }
+    },
+    {
+      "kana": "しかし",
+      "romaji": "shikashi",
+      "partOfSpeech": "expression",
+      "meaning": {
+        "en": "however",
+        "id": "namun, akan tetapi"
+      }
+    },
+    {
+      "kana": "じゃ",
+      "romaji": "ja",
+      "partOfSpeech": "expression",
+      "meaning": {
+        "en": "well then",
+        "id": "kalau begitu"
+      }
+    },
+    {
+      "kana": "すぐに",
+      "romaji": "suguni",
+      "partOfSpeech": "adverb",
+      "meaning": {
+        "en": "right away",
+        "id": "segera"
+      }
+    },
+    {
+      "kana": "そう",
+      "romaji": "sou",
+      "partOfSpeech": "adverb",
+      "meaning": {
+        "en": "so, like that",
+        "id": "begitu"
+      }
+    },
+    {
+      "kana": "そうして",
+      "romaji": "soushite",
+      "partOfSpeech": "expression",
+      "meaning": {
+        "en": "and, and then",
+        "id": "dan, lalu"
+      }
+    },
+    {
+      "kana": "それから",
+      "romaji": "sorekara",
+      "partOfSpeech": "expression",
+      "meaning": {
+        "en": "and then, after that",
+        "id": "lalu, setelah itu"
+      }
+    },
+    {
+      "kana": "それでは",
+      "romaji": "soredeha",
+      "partOfSpeech": "expression",
+      "meaning": {
+        "en": "well then",
+        "id": "baiklah, kalau begitu"
+      }
+    },
+    {
+      "kana": "たぶん",
+      "kanji": "多分",
+      "romaji": "tabun",
+      "partOfSpeech": "adverb",
+      "meaning": {
+        "en": "probably",
+        "id": "mungkin"
+      }
+    },
+    {
+      "kana": "だんだん",
+      "kanji": "段々",
+      "romaji": "dandan",
+      "partOfSpeech": "adverb",
+      "meaning": {
+        "en": "gradually",
+        "id": "lambat laun, sedikit demi sedikit"
+      }
+    },
+    {
+      "kana": "ちょうど",
+      "kanji": "丁度",
+      "romaji": "choudo",
+      "partOfSpeech": "adverb",
+      "meaning": {
+        "en": "exactly, just",
+        "id": "tepat, pas"
+      }
+    },
+    {
+      "kana": "ちょっと",
+      "romaji": "chotto",
+      "partOfSpeech": "adverb",
+      "meaning": {
+        "en": "a little, a moment",
+        "id": "sedikit, sebentar"
+      }
+    },
+    {
+      "kana": "では",
+      "romaji": "deha",
+      "partOfSpeech": "expression",
+      "meaning": {
+        "en": "well then (formal)",
+        "id": "kalau begitu (formal)"
+      }
+    },
+    {
+      "kana": "でも",
+      "romaji": "demo",
+      "partOfSpeech": "expression",
+      "meaning": {
+        "en": "but",
+        "id": "tetapi"
+      }
+    },
+    {
+      "kana": "どうぞ",
+      "romaji": "douzo",
+      "partOfSpeech": "expression",
+      "meaning": {
+        "en": "please (go ahead)",
+        "id": "silakan"
+      }
+    },
+    {
+      "kana": "どうも",
+      "romaji": "doumo",
+      "partOfSpeech": "expression",
+      "meaning": {
+        "en": "thanks; very",
+        "id": "terima kasih; sangat"
+      }
+    },
+    {
+      "kana": "ときどき",
+      "kanji": "時々",
+      "romaji": "tokidoki",
+      "partOfSpeech": "adverb",
+      "meaning": {
+        "en": "sometimes",
+        "id": "kadang-kadang"
+      }
+    },
+    {
+      "kana": "とても",
+      "romaji": "totemo",
+      "partOfSpeech": "adverb",
+      "meaning": {
+        "en": "very",
+        "id": "sangat"
+      }
+    },
+    {
+      "kana": "はい",
+      "romaji": "hai",
+      "partOfSpeech": "expression",
+      "meaning": {
+        "en": "yes",
+        "id": "ya"
+      }
+    },
+    {
+      "kana": "ほんとう",
+      "kanji": "本当",
+      "romaji": "hontou",
+      "partOfSpeech": "adjective",
+      "meaning": {
+        "en": "true, real",
+        "id": "benar, sungguh"
+      }
+    },
+    {
+      "kana": "また",
+      "romaji": "mata",
+      "partOfSpeech": "adverb",
+      "meaning": {
+        "en": "again, also",
+        "id": "lagi, juga"
+      }
+    },
+    {
+      "kana": "まだ",
+      "romaji": "mada",
+      "partOfSpeech": "adverb",
+      "meaning": {
+        "en": "still, not yet",
+        "id": "masih, belum"
+      }
+    },
+    {
+      "kana": "もう",
+      "romaji": "mou",
+      "partOfSpeech": "adverb",
+      "meaning": {
+        "en": "already; more",
+        "id": "sudah; lagi"
+      }
+    },
+    {
+      "kana": "もっと",
+      "romaji": "motto",
+      "partOfSpeech": "adverb",
+      "meaning": {
+        "en": "more",
+        "id": "lebih"
+      }
+    },
+    {
+      "kana": "ゆっくりと",
+      "romaji": "yukkurito",
+      "partOfSpeech": "adverb",
+      "meaning": {
+        "en": "slowly",
+        "id": "pelan-pelan"
+      }
+    },
+    {
+      "kana": "よく",
+      "romaji": "yoku",
+      "partOfSpeech": "adverb",
+      "meaning": {
+        "en": "often, well",
+        "id": "sering, dengan baik"
+      }
+    }
+  ]
+}

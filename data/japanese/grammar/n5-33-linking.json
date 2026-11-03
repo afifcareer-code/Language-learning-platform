@@ -1,0 +1,40 @@
+{
+  "source": "Original grammar explanations for N5 · Linking words and useful expressions, written for this project.",
+  "level": "n5",
+  "items": [
+    {
+      "slug": "n5-soshite",
+      "pattern": "S1。 そして / それから S2",
+      "meaning": {
+        "en": "and / and then",
+        "id": "dan; lalu"
+      },
+      "explanation": {
+        "en": "そして adds a further fact; それから adds the next thing in time. Both start the second sentence: デパートへ いきました。それから、レストランで たべました.",
+        "id": "そして menambahkan fakta lain; それから menambahkan hal berikutnya secara waktu. Keduanya mengawali kalimat kedua: デパートへ いきました。それから、レストランで たべました."
+      },
+      "examples": [
+        {
+          "ja": "デパートで かいものを しました。それから えいがを みました。",
+          "translation": {
+            "en": "I went shopping at the department store. After that, I saw a film.",
+            "id": "Saya berbelanja di toserba. Setelah itu, saya menonton film."
+          }
+        },
+        {
+          "ja": "この へやは ひろいです。そして あかるいです。",
+          "translation": {
+            "en": "This room is spacious. And it's bright.",
+            "id": "Kamar ini luas. Dan terang."
+          }
+        }
+      ],
+      "commonErrors": [
+        {
+          "en": "Using そして to join two nouns: for 'A and B' use と: パンと たまご.",
+          "id": "Memakai そして untuk menyambung dua kata benda: untuk 'A dan B' pakai と: パンと たまご."
+        }
+      ]
+    }
+  ]
+}

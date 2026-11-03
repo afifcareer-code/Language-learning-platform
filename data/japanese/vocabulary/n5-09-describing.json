@@ -1,0 +1,206 @@
+{
+  "source": "N5 · Describing things: words from the JLPT N5 list by J. Waller (tanos.co.uk, CC BY) as compiled in open-anki-jlpt-decks (MIT). Meanings written for this project.",
+  "level": "n5",
+  "items": [
+    {
+      "kana": "しろい",
+      "kanji": "白い",
+      "romaji": "shiroi",
+      "partOfSpeech": "adjective",
+      "meaning": {
+        "en": "white",
+        "id": "putih"
+      }
+    },
+    {
+      "kana": "せまい",
+      "kanji": "狭い",
+      "romaji": "semai",
+      "partOfSpeech": "adjective",
+      "meaning": {
+        "en": "narrow, small (room)",
+        "id": "sempit"
+      }
+    },
+    {
+      "kana": "たかい",
+      "kanji": "高い",
+      "romaji": "takai",
+      "partOfSpeech": "adjective",
+      "meaning": {
+        "en": "high, tall, expensive",
+        "id": "tinggi, mahal"
+      }
+    },
+    {
+      "kana": "たて",
+      "romaji": "tate",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "length, vertical",
+        "id": "panjang, arah tegak"
+      }
+    },
+    {
+      "kana": "ちいさい",
+      "kanji": "小さい",
+      "romaji": "chiisai",
+      "partOfSpeech": "adjective",
+      "meaning": {
+        "en": "small",
+        "id": "kecil"
+      }
+    },
+    {
+      "kana": "ちいさな",
+      "kanji": "小さな",
+      "romaji": "chiisana",
+      "partOfSpeech": "adjective",
+      "meaning": {
+        "en": "small (before a noun)",
+        "id": "kecil (sebelum kata benda)"
+      }
+    },
+    {
+      "kana": "ちゃいろ",
+      "kanji": "茶色",
+      "romaji": "chairo",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "brown",
+        "id": "cokelat (warna)"
+      }
+    },
+    {
+      "kana": "つよい",
+      "kanji": "強い",
+      "romaji": "tsuyoi",
+      "partOfSpeech": "adjective",
+      "meaning": {
+        "en": "strong",
+        "id": "kuat"
+      }
+    },
+    {
+      "kana": "ながい",
+      "kanji": "長い",
+      "romaji": "nagai",
+      "partOfSpeech": "adjective",
+      "meaning": {
+        "en": "long",
+        "id": "panjang"
+      }
+    },
+    {
+      "kana": "はやい",
+      "kanji": "速い",
+      "romaji": "hayai",
+      "homonym": 2,
+      "partOfSpeech": "adjective",
+      "meaning": {
+        "en": "fast",
+        "id": "cepat"
+      }
+    },
+    {
+      "kana": "ひくい",
+      "kanji": "低い",
+      "romaji": "hikui",
+      "partOfSpeech": "adjective",
+      "meaning": {
+        "en": "low, short (height)",
+        "id": "rendah, pendek (tinggi)"
+      }
+    },
+    {
+      "kana": "ひろい",
+      "kanji": "広い",
+      "romaji": "hiroi",
+      "partOfSpeech": "adjective",
+      "meaning": {
+        "en": "wide, spacious",
+        "id": "luas, lebar"
+      }
+    },
+    {
+      "kana": "ふとい",
+      "kanji": "太い",
+      "romaji": "futoi",
+      "partOfSpeech": "adjective",
+      "meaning": {
+        "en": "thick, fat",
+        "id": "tebal, gemuk"
+      }
+    },
+    {
+      "kana": "ふるい",
+      "kanji": "古い",
+      "romaji": "furui",
+      "partOfSpeech": "adjective",
+      "meaning": {
+        "en": "old (things)",
+        "id": "tua, lama (benda)"
+      }
+    },
+    {
+      "kana": "ほそい",
+      "kanji": "細い",
+      "romaji": "hosoi",
+      "partOfSpeech": "adjective",
+      "meaning": {
+        "en": "thin, slender",
+        "id": "kurus, ramping"
+      }
+    },
+    {
+      "kana": "まるい",
+      "kanji": "丸い",
+      "romaji": "marui",
+      "partOfSpeech": "adjective",
+      "meaning": {
+        "en": "round",
+        "id": "bulat"
+      }
+    },
+    {
+      "kana": "みじかい",
+      "kanji": "短い",
+      "romaji": "mijikai",
+      "partOfSpeech": "adjective",
+      "meaning": {
+        "en": "short",
+        "id": "pendek"
+      }
+    },
+    {
+      "kana": "みどり",
+      "kanji": "緑",
+      "romaji": "midori",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "green",
+        "id": "hijau"
+      }
+    },
+    {
+      "kana": "よわい",
+      "kanji": "弱い",
+      "romaji": "yowai",
+      "partOfSpeech": "adjective",
+      "meaning": {
+        "en": "weak",
+        "id": "lemah"
+      }
+    },
+    {
+      "kana": "わかい",
+      "kanji": "若い",
+      "romaji": "wakai",
+      "partOfSpeech": "adjective",
+      "meaning": {
+        "en": "young",
+        "id": "muda"
+      }
+    }
+  ]
+}

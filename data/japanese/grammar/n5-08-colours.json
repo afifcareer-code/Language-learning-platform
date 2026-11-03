@@ -1,0 +1,74 @@
+{
+  "source": "Original grammar explanations for N5 · Colours and shapes, written for this project.",
+  "level": "n5",
+  "items": [
+    {
+      "slug": "n5-i-adjective",
+      "pattern": "い-adj です / い-adj くないです",
+      "meaning": {
+        "en": "is A / is not A",
+        "id": "A / tidak A"
+      },
+      "explanation": {
+        "en": "い-adjectives end in い. Add です to be polite: たかいです. For the negative, change い to くない: たかくないです. いい is irregular: よくないです.",
+        "id": "Kata sifat い berakhiran い. Tambahkan です agar sopan: たかいです. Untuk bentuk negatif, ganti い menjadi くない: たかくないです. いい tidak beraturan: よくないです."
+      },
+      "examples": [
+        {
+          "ja": "この かばんは あたらしいです。",
+          "translation": {
+            "en": "This bag is new.",
+            "id": "Tas ini baru."
+          }
+        },
+        {
+          "ja": "きょうは さむくないです。",
+          "translation": {
+            "en": "It isn't cold today.",
+            "id": "Hari ini tidak dingin."
+          }
+        }
+      ],
+      "commonErrors": [
+        {
+          "en": "Saying いいくないです: the negative of いい is よくないです.",
+          "id": "Mengatakan いいくないです: bentuk negatif いい adalah よくないです."
+        }
+      ]
+    },
+    {
+      "slug": "n5-adj-noun",
+      "pattern": "い-adj N / な-adj な N",
+      "meaning": {
+        "en": "an A N",
+        "id": "N yang A"
+      },
+      "explanation": {
+        "en": "An adjective can come before a noun. い-adjectives join directly: あかい くるま. な-adjectives take な: しずかな へや.",
+        "id": "Kata sifat bisa diletakkan sebelum kata benda. Kata sifat い langsung disambung: あかい くるま. Kata sifat な memakai な: しずかな へや."
+      },
+      "examples": [
+        {
+          "ja": "あかい くるまが あります。",
+          "translation": {
+            "en": "There is a red car.",
+            "id": "Ada mobil merah."
+          }
+        },
+        {
+          "ja": "しずかな へやが すきです。",
+          "translation": {
+            "en": "I like quiet rooms.",
+            "id": "Saya suka kamar yang tenang."
+          }
+        }
+      ],
+      "commonErrors": [
+        {
+          "en": "Leaving out な: しずか へや is wrong; say しずかな へや.",
+          "id": "Melupakan な: しずか へや salah; katakan しずかな へや."
+        }
+      ]
+    }
+  ]
+}

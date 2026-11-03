@@ -1,0 +1,108 @@
+{
+  "source": "Original grammar explanations for N5 · Asking questions, written for this project.",
+  "level": "n5",
+  "items": [
+    {
+      "slug": "n5-nanimo-nai",
+      "pattern": "なにも / だれも / どこへも + negative",
+      "meaning": {
+        "en": "nothing / nobody / nowhere",
+        "id": "tidak apa-apa / tidak seorang pun / tidak ke mana-mana"
+      },
+      "explanation": {
+        "en": "A question word + も with a negative verb means 'not any': なにも たべません, だれも いません, どこへも いきません.",
+        "id": "Kata tanya + も dengan kata kerja negatif berarti 'tidak satu pun': なにも たべません, だれも いません, どこへも いきません."
+      },
+      "examples": [
+        {
+          "ja": "けさは なにも たべませんでした。",
+          "translation": {
+            "en": "I didn't eat anything this morning.",
+            "id": "Tadi pagi saya tidak makan apa-apa."
+          }
+        },
+        {
+          "ja": "きょうしつに だれも いません。",
+          "translation": {
+            "en": "There is nobody in the classroom.",
+            "id": "Tidak ada seorang pun di ruang kelas."
+          }
+        }
+      ],
+      "commonErrors": [
+        {
+          "en": "Using a positive verb: なにも たべます is wrong; なにも needs a negative.",
+          "id": "Memakai kata kerja positif: なにも たべます salah; なにも memerlukan bentuk negatif."
+        }
+      ]
+    },
+    {
+      "slug": "n5-doushite",
+      "pattern": "どうして… か。 / …から です。",
+      "meaning": {
+        "en": "why…? / because…",
+        "id": "mengapa…? / karena…"
+      },
+      "explanation": {
+        "en": "どうして (or なぜ) asks for a reason. The answer often ends with から です: どうして やすみましたか。かぜを ひいたからです.",
+        "id": "どうして (atau なぜ) menanyakan alasan. Jawabannya sering diakhiri から です: どうして やすみましたか。かぜを ひいたからです."
+      },
+      "examples": [
+        {
+          "ja": "どうして きのう やすみましたか。",
+          "translation": {
+            "en": "Why were you absent yesterday?",
+            "id": "Mengapa kemarin Anda tidak masuk?"
+          }
+        },
+        {
+          "ja": "あたまが いたかったからです。",
+          "translation": {
+            "en": "Because I had a headache.",
+            "id": "Karena kepala saya sakit."
+          }
+        }
+      ],
+      "commonErrors": [
+        {
+          "en": "Answering with ので です: the answer form is 〜から です.",
+          "id": "Menjawab dengan ので です: bentuk jawabannya 〜から です."
+        }
+      ]
+    },
+    {
+      "slug": "n5-donna",
+      "pattern": "どんな N / どの N",
+      "meaning": {
+        "en": "what kind of N / which N",
+        "id": "N seperti apa / N yang mana"
+      },
+      "explanation": {
+        "en": "どんな asks about the kind or the qualities: どんな ひとですか. どの asks which one out of several you can see: どの かさですか.",
+        "id": "どんな menanyakan jenis atau sifat: どんな ひとですか. どの menanyakan yang mana di antara beberapa yang terlihat: どの かさですか."
+      },
+      "examples": [
+        {
+          "ja": "どんな おんがくが すきですか。",
+          "translation": {
+            "en": "What kind of music do you like?",
+            "id": "Anda suka musik seperti apa?"
+          }
+        },
+        {
+          "ja": "どの かさが あなたのですか。",
+          "translation": {
+            "en": "Which umbrella is yours?",
+            "id": "Payung yang mana milik Anda?"
+          }
+        }
+      ],
+      "commonErrors": [
+        {
+          "en": "Using どれ before a noun: どれ かさ is wrong; before a noun use どの.",
+          "id": "Memakai どれ sebelum kata benda: どれ かさ salah; sebelum kata benda pakai どの."
+        }
+      ]
+    }
+  ]
+}

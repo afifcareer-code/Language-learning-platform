@@ -241,6 +241,1323 @@
         "sentence:haha-kaishain",
         "sentence:koko-ni-tomodachi"
       ]
+    },
+    {
+      "slug": "n5-07-dates",
+      "title": {
+        "en": "Days and dates",
+        "id": "Hari dan tanggal"
+      },
+      "situation": {
+        "en": "You make an appointment with a friend and talk about what you did last week: days of the week, dates, and counting things.",
+        "id": "Anda membuat janji dengan teman dan bercerita tentang kegiatan minggu lalu: nama hari, tanggal, dan menghitung benda."
+      },
+      "objective": {
+        "en": "By the end of this lesson, you can say days and dates, count things up to ten and say what you did.",
+        "id": "Setelah menyelesaikan pelajaran ini, Anda mampu menyebut hari dan tanggal, menghitung benda sampai sepuluh, dan mengatakan apa yang sudah Anda lakukan."
+      },
+      "items": [
+        "vocabulary:いちにち",
+        "vocabulary:いつか",
+        "vocabulary:〜がつ",
+        "vocabulary:かようび",
+        "vocabulary:きんようび",
+        "vocabulary:げつようび",
+        "vocabulary:ここのか",
+        "vocabulary:すいようび",
+        "vocabulary:ついたち",
+        "vocabulary:とおか",
+        "vocabulary:どようび",
+        "vocabulary:なのか",
+        "vocabulary:〜にち",
+        "vocabulary:にちようび",
+        "vocabulary:はつか",
+        "vocabulary:ふつか",
+        "vocabulary:みっか",
+        "vocabulary:むいか",
+        "vocabulary:もくようび",
+        "vocabulary:ようか",
+        "vocabulary:よっか",
+        "kanji:一",
+        "kanji:日",
+        "kanji:五",
+        "kanji:月",
+        "grammar:n5-mashita",
+        "grammar:n5-tsu-counter",
+        "sentence:n5-mashita-1",
+        "sentence:n5-mashita-2",
+        "sentence:n5-tsu-counter-1",
+        "sentence:n5-tsu-counter-2"
+      ]
+    },
+    {
+      "slug": "n5-08-colours",
+      "title": {
+        "en": "Colours and shapes",
+        "id": "Warna dan bentuk"
+      },
+      "situation": {
+        "en": "At a market you describe things by their colour, size and shape so the seller can find what you want.",
+        "id": "Di pasar Anda menjelaskan barang berdasarkan warna, ukuran, dan bentuknya agar penjual menemukan yang Anda inginkan."
+      },
+      "objective": {
+        "en": "By the end of this lesson, you can describe things with い-adjectives and put an adjective before a noun.",
+        "id": "Setelah menyelesaikan pelajaran ini, Anda mampu menggambarkan benda dengan kata sifat い dan meletakkan kata sifat sebelum kata benda."
+      },
+      "items": [
+        "vocabulary:あお",
+        "vocabulary:あおい",
+        "vocabulary:あか",
+        "vocabulary:あかい",
+        "vocabulary:あかるい",
+        "vocabulary:あたらしい",
+        "vocabulary:あつい:3",
+        "vocabulary:いろ",
+        "vocabulary:うすい",
+        "vocabulary:おおきい",
+        "vocabulary:おおきな",
+        "vocabulary:おなじ",
+        "vocabulary:おもい",
+        "vocabulary:かるい",
+        "vocabulary:きいろ",
+        "vocabulary:きいろい",
+        "vocabulary:くらい",
+        "vocabulary:くろ",
+        "vocabulary:くろい",
+        "vocabulary:しろ",
+        "kanji:大",
+        "kanji:白",
+        "kanji:金",
+        "grammar:n5-i-adjective",
+        "grammar:n5-adj-noun",
+        "sentence:n5-i-adjective-1",
+        "sentence:n5-i-adjective-2",
+        "sentence:n5-adj-noun-1",
+        "sentence:n5-adj-noun-2"
+      ]
+    },
+    {
+      "slug": "n5-09-describing",
+      "title": {
+        "en": "Describing things",
+        "id": "Menggambarkan sesuatu"
+      },
+      "situation": {
+        "en": "Back from a trip, you tell a friend what the hotel, the town and the food were like.",
+        "id": "Sepulang dari perjalanan, Anda menceritakan kepada teman seperti apa hotel, kotanya, dan makanannya."
+      },
+      "objective": {
+        "en": "By the end of this lesson, you can use な-adjectives and say what something was like.",
+        "id": "Setelah menyelesaikan pelajaran ini, Anda mampu memakai kata sifat な dan mengatakan bagaimana sesuatu dulu."
+      },
+      "items": [
+        "vocabulary:しろい",
+        "vocabulary:せまい",
+        "vocabulary:たかい",
+        "vocabulary:たて",
+        "vocabulary:ちいさい",
+        "vocabulary:ちいさな",
+        "vocabulary:ちゃいろ",
+        "vocabulary:つよい",
+        "vocabulary:ながい",
+        "vocabulary:はやい:2",
+        "vocabulary:ひくい",
+        "vocabulary:ひろい",
+        "vocabulary:ふとい",
+        "vocabulary:ふるい",
+        "vocabulary:ほそい",
+        "vocabulary:まるい",
+        "vocabulary:みじかい",
+        "vocabulary:みどり",
+        "vocabulary:よわい",
+        "vocabulary:わかい",
+        "kanji:高",
+        "kanji:小",
+        "kanji:長",
+        "grammar:n5-na-adjective",
+        "grammar:n5-adjective-past",
+        "sentence:n5-na-adjective-1",
+        "sentence:n5-na-adjective-2",
+        "sentence:n5-adjective-past-1",
+        "sentence:n5-adjective-past-2"
+      ]
+    },
+    {
+      "slug": "n5-10-counting",
+      "title": {
+        "en": "Numbers and counters",
+        "id": "Angka dan kata bantu bilangan"
+      },
+      "situation": {
+        "en": "At a post office and a shop you buy stamps, pens and drinks, saying how many you want.",
+        "id": "Di kantor pos dan toko Anda membeli perangko, pena, dan minuman sambil menyebut jumlahnya."
+      },
+      "objective": {
+        "en": "By the end of this lesson, you can count with the common counters and say about how many.",
+        "id": "Setelah menyelesaikan pelajaran ini, Anda mampu menghitung dengan kata bantu bilangan yang umum dan menyebut perkiraan jumlah."
+      },
+      "items": [
+        "vocabulary:いつつ",
+        "vocabulary:おおい",
+        "vocabulary:おおぜい",
+        "vocabulary:〜かい",
+        "vocabulary:〜かい:2",
+        "vocabulary:かかる",
+        "vocabulary:〜かげつ",
+        "vocabulary:きゅう",
+        "vocabulary:キログラム",
+        "vocabulary:キロメートル",
+        "vocabulary:〜くらい:2",
+        "vocabulary:グラム",
+        "vocabulary:〜こ",
+        "vocabulary:ここのつ",
+        "vocabulary:〜さい",
+        "vocabulary:〜さつ",
+        "vocabulary:し",
+        "vocabulary:しち",
+        "vocabulary:すくない",
+        "vocabulary:〜ずつ",
+        "vocabulary:ゼロ",
+        "vocabulary:せん",
+        "vocabulary:ぜんぶ",
+        "vocabulary:〜だい",
+        "kanji:千",
+        "kanji:八",
+        "kanji:間",
+        "grammar:n5-counters",
+        "grammar:n5-gurai",
+        "sentence:n5-counters-1",
+        "sentence:n5-counters-2",
+        "sentence:n5-gurai-1",
+        "sentence:n5-gurai-2"
+      ]
+    },
+    {
+      "slug": "n5-11-quantities",
+      "title": {
+        "en": "How much and how many",
+        "id": "Seberapa banyak"
+      },
+      "situation": {
+        "en": "You pack for a trip and shop for a party, talking about amounts, weights and lists of things.",
+        "id": "Anda berkemas untuk perjalanan dan berbelanja untuk pesta, membicarakan jumlah, berat, dan daftar barang."
+      },
+      "objective": {
+        "en": "By the end of this lesson, you can talk about quantities, say 'only' and list examples.",
+        "id": "Setelah menyelesaikan pelajaran ini, Anda mampu membicarakan jumlah, mengatakan 'hanya', dan menyebut contoh."
+      },
+      "items": [
+        "vocabulary:〜だけ",
+        "vocabulary:たくさん",
+        "vocabulary:〜ど",
+        "vocabulary:とお",
+        "vocabulary:〜など",
+        "vocabulary:ななつ",
+        "vocabulary:〜にん",
+        "vocabulary:〜はい:2",
+        "vocabulary:〜ばん:2",
+        "vocabulary:はんぶん",
+        "vocabulary:〜ひき",
+        "vocabulary:ひとつ",
+        "vocabulary:ふたつ",
+        "vocabulary:〜ほん:2",
+        "vocabulary:〜まい",
+        "vocabulary:まん",
+        "vocabulary:みっつ",
+        "vocabulary:むっつ",
+        "vocabulary:メートル",
+        "vocabulary:やっつ",
+        "vocabulary:よっつ",
+        "vocabulary:れい",
+        "vocabulary:さん:2",
+        "kanji:山",
+        "kanji:人",
+        "kanji:半",
+        "kanji:本",
+        "grammar:n5-dake",
+        "grammar:n5-ya",
+        "sentence:n5-dake-1",
+        "sentence:n5-dake-2",
+        "sentence:n5-ya-1",
+        "sentence:n5-ya-2"
+      ]
+    },
+    {
+      "slug": "n5-12-time",
+      "title": {
+        "en": "Times and periods",
+        "id": "Waktu dan rentang waktu"
+      },
+      "situation": {
+        "en": "You ask about opening hours and talk about your timetable: from when to when, and at about what time.",
+        "id": "Anda menanyakan jam buka dan membicarakan jadwal Anda: dari kapan sampai kapan, dan sekitar jam berapa."
+      },
+      "objective": {
+        "en": "By the end of this lesson, you can give periods of time and approximate times.",
+        "id": "Setelah menyelesaikan pelajaran ini, Anda mampu menyebut rentang waktu dan waktu perkiraan."
+      },
+      "items": [
+        "vocabulary:あさ",
+        "vocabulary:あさって",
+        "vocabulary:あした",
+        "vocabulary:あと",
+        "vocabulary:おととい",
+        "vocabulary:おととし",
+        "vocabulary:きのう",
+        "vocabulary:きょう",
+        "vocabulary:きょねん",
+        "vocabulary:けさ",
+        "vocabulary:ことし",
+        "vocabulary:〜ころ",
+        "vocabulary:こんげつ",
+        "vocabulary:こんしゅう",
+        "vocabulary:こんばん",
+        "vocabulary:さらいねん",
+        "vocabulary:じかん",
+        "vocabulary:〜じかん:2",
+        "vocabulary:〜じゅう:2",
+        "vocabulary:〜しゅうかん",
+        "vocabulary:〜すぎ",
+        "vocabulary:せんげつ",
+        "vocabulary:せんしゅう",
+        "kanji:後",
+        "kanji:今",
+        "kanji:年",
+        "kanji:来",
+        "grammar:n5-kara-made",
+        "grammar:n5-goro",
+        "sentence:n5-kara-made-1",
+        "sentence:n5-kara-made-2",
+        "sentence:n5-goro-1",
+        "sentence:n5-goro-2"
+      ]
+    },
+    {
+      "slug": "n5-13-routines",
+      "title": {
+        "en": "Before and after",
+        "id": "Sebelum dan sesudah"
+      },
+      "situation": {
+        "en": "You describe your day to a new roommate: what you do every morning, before work and after dinner.",
+        "id": "Anda menceritakan hari Anda kepada teman sekamar baru: apa yang Anda lakukan setiap pagi, sebelum bekerja, dan setelah makan malam."
+      },
+      "objective": {
+        "en": "By the end of this lesson, you can say what you do before and after something.",
+        "id": "Setelah menyelesaikan pelajaran ini, Anda mampu mengatakan apa yang Anda lakukan sebelum dan sesudah sesuatu."
+      },
+      "items": [
+        "vocabulary:〜ちゅう",
+        "vocabulary:つぎ",
+        "vocabulary:〜とき",
+        "vocabulary:とし",
+        "vocabulary:〜ねん",
+        "vocabulary:はじめ",
+        "vocabulary:はやい",
+        "vocabulary:はん",
+        "vocabulary:ばん",
+        "vocabulary:ひとつき",
+        "vocabulary:ひる",
+        "vocabulary:〜ふん",
+        "vocabulary:まいあさ",
+        "vocabulary:まいげつ",
+        "vocabulary:まいしゅう",
+        "vocabulary:まいねん",
+        "vocabulary:まいばん",
+        "vocabulary:〜まえ:2",
+        "vocabulary:ゆうがた",
+        "vocabulary:ゆうべ",
+        "vocabulary:よる",
+        "vocabulary:らいねん",
+        "kanji:毎",
+        "kanji:前",
+        "kanji:火",
+        "grammar:n5-mae-ni",
+        "grammar:n5-ta-ato-de",
+        "sentence:n5-mae-ni-1",
+        "sentence:n5-mae-ni-2",
+        "sentence:n5-ta-ato-de-1",
+        "sentence:n5-ta-ato-de-2"
+      ]
+    },
+    {
+      "slug": "n5-14-actions",
+      "title": {
+        "en": "Everyday actions",
+        "id": "Kegiatan sehari-hari"
+      },
+      "situation": {
+        "en": "You talk about what you do with friends and family on a normal day.",
+        "id": "Anda membicarakan apa yang Anda lakukan bersama teman dan keluarga pada hari biasa."
+      },
+      "objective": {
+        "en": "By the end of this lesson, you can say who you do things with and add 'too'.",
+        "id": "Setelah menyelesaikan pelajaran ini, Anda mampu mengatakan dengan siapa Anda melakukan sesuatu dan menambahkan 'juga'."
+      },
+      "items": [
+        "vocabulary:あう",
+        "vocabulary:あらう",
+        "vocabulary:いる:2",
+        "vocabulary:いれる",
+        "vocabulary:おきる",
+        "vocabulary:おく",
+        "vocabulary:おわる",
+        "vocabulary:する",
+        "vocabulary:すわる",
+        "vocabulary:たつ",
+        "vocabulary:つかう",
+        "vocabulary:つくる",
+        "vocabulary:なる",
+        "vocabulary:ねる",
+        "vocabulary:はじまる",
+        "vocabulary:まつ",
+        "vocabulary:みがく",
+        "vocabulary:みせる",
+        "vocabulary:みる",
+        "vocabulary:もつ",
+        "vocabulary:やる",
+        "vocabulary:あげる:2",
+        "vocabulary:とる:2",
+        "vocabulary:ひく:2",
+        "kanji:入",
+        "kanji:見",
+        "kanji:上",
+        "grammar:n5-to-with",
+        "grammar:n5-mo",
+        "sentence:n5-to-with-1",
+        "sentence:n5-to-with-2",
+        "sentence:n5-mo-1",
+        "sentence:n5-mo-2"
+      ]
+    },
+    {
+      "slug": "n5-15-home",
+      "title": {
+        "en": "At home",
+        "id": "Di rumah"
+      },
+      "situation": {
+        "en": "You stay with a host family. You ask for things, ask permission and follow the house rules.",
+        "id": "Anda tinggal bersama keluarga angkat. Anda meminta sesuatu, meminta izin, dan mengikuti aturan rumah."
+      },
+      "objective": {
+        "en": "By the end of this lesson, you can make polite requests and ask for permission.",
+        "id": "Setelah menyelesaikan pelajaran ini, Anda mampu membuat permintaan yang sopan dan meminta izin."
+      },
+      "items": [
+        "vocabulary:あく",
+        "vocabulary:あける",
+        "vocabulary:アパート",
+        "vocabulary:あびる",
+        "vocabulary:いえ",
+        "vocabulary:いす",
+        "vocabulary:うち",
+        "vocabulary:おてあらい",
+        "vocabulary:おふろ",
+        "vocabulary:かいだん",
+        "vocabulary:かぎ",
+        "vocabulary:かびん",
+        "vocabulary:きえる",
+        "vocabulary:けす",
+        "vocabulary:げんかん",
+        "vocabulary:しまる",
+        "vocabulary:しめる",
+        "kanji:子",
+        "kanji:木",
+        "kanji:万",
+        "grammar:n5-te-kudasai",
+        "grammar:n5-te-mo-ii",
+        "sentence:n5-te-kudasai-1",
+        "sentence:n5-te-kudasai-2",
+        "sentence:n5-te-mo-ii-1",
+        "sentence:n5-te-mo-ii-2"
+      ]
+    },
+    {
+      "slug": "n5-16-rooms",
+      "title": {
+        "en": "Rooms and house rules",
+        "id": "Ruangan dan aturan rumah"
+      },
+      "situation": {
+        "en": "You move into a dormitory. The manager shows you the rooms and explains what is not allowed.",
+        "id": "Anda pindah ke asrama. Pengelola menunjukkan ruangan dan menjelaskan apa yang tidak boleh."
+      },
+      "objective": {
+        "en": "By the end of this lesson, you can understand and give rules about what must not be done.",
+        "id": "Setelah menyelesaikan pelajaran ini, Anda mampu memahami dan memberi aturan tentang apa yang tidak boleh dilakukan."
+      },
+      "items": [
+        "vocabulary:シャワー",
+        "vocabulary:ストーブ",
+        "vocabulary:すむ",
+        "vocabulary:せっけん",
+        "vocabulary:だいどころ",
+        "vocabulary:つける",
+        "vocabulary:テーブル",
+        "vocabulary:でんき",
+        "vocabulary:と",
+        "vocabulary:にわ",
+        "vocabulary:ベッド",
+        "vocabulary:へや",
+        "vocabulary:ほんだな",
+        "vocabulary:まど",
+        "vocabulary:れいぞうこ",
+        "vocabulary:ろうか",
+        "kanji:電",
+        "kanji:気",
+        "kanji:下",
+        "grammar:n5-te-wa-ikemasen",
+        "grammar:n5-naide-kudasai",
+        "sentence:n5-te-wa-ikemasen-1",
+        "sentence:n5-te-wa-ikemasen-2",
+        "sentence:n5-naide-kudasai-1",
+        "sentence:n5-naide-kudasai-2"
+      ]
+    },
+    {
+      "slug": "n5-17-clothes",
+      "title": {
+        "en": "Clothes",
+        "id": "Pakaian"
+      },
+      "situation": {
+        "en": "You get ready to go out and describe what people are wearing.",
+        "id": "Anda bersiap-siap keluar dan menggambarkan pakaian yang dikenakan orang."
+      },
+      "objective": {
+        "en": "By the end of this lesson, you can say what someone is wearing and what is already or not yet done.",
+        "id": "Setelah menyelesaikan pelajaran ini, Anda mampu mengatakan apa yang dipakai seseorang dan apa yang sudah atau belum dilakukan."
+      },
+      "items": [
+        "vocabulary:うわぎ",
+        "vocabulary:かける",
+        "vocabulary:かぶる",
+        "vocabulary:くつ",
+        "vocabulary:くつした",
+        "vocabulary:コート",
+        "vocabulary:しめる:2",
+        "vocabulary:シャツ",
+        "vocabulary:スカート",
+        "vocabulary:ズボン",
+        "vocabulary:セーター",
+        "vocabulary:せびろ",
+        "vocabulary:ぬぐ",
+        "vocabulary:ネクタイ",
+        "vocabulary:はく",
+        "vocabulary:ハンカチ",
+        "vocabulary:ふく:2",
+        "vocabulary:ぼうし",
+        "vocabulary:ポケット",
+        "vocabulary:めがね",
+        "vocabulary:ようふく",
+        "vocabulary:ワイシャツ",
+        "kanji:円",
+        "kanji:六",
+        "kanji:時",
+        "grammar:n5-te-iru-state",
+        "grammar:n5-mou-mada",
+        "sentence:n5-te-iru-state-1",
+        "sentence:n5-te-iru-state-2",
+        "sentence:n5-mou-mada-1",
+        "sentence:n5-mou-mada-2"
+      ]
+    },
+    {
+      "slug": "n5-18-transport",
+      "title": {
+        "en": "Getting around",
+        "id": "Bepergian"
+      },
+      "situation": {
+        "en": "You travel across the city by train, bus and taxi.",
+        "id": "Anda bepergian keliling kota naik kereta, bus, dan taksi."
+      },
+      "objective": {
+        "en": "By the end of this lesson, you can say how you travel and where you get on and off.",
+        "id": "Setelah menyelesaikan pelajaran ini, Anda mampu mengatakan cara Anda bepergian dan di mana Anda naik dan turun."
+      },
+      "items": [
+        "vocabulary:いりぐち",
+        "vocabulary:エレベーター",
+        "vocabulary:おまわりさん",
+        "vocabulary:おりる",
+        "vocabulary:がいこく",
+        "vocabulary:きっさてん",
+        "vocabulary:くに",
+        "vocabulary:くるま",
+        "vocabulary:けいかん",
+        "vocabulary:こうえん",
+        "vocabulary:こうさてん",
+        "vocabulary:こうばん",
+        "vocabulary:じてんしゃ",
+        "vocabulary:じどうしゃ",
+        "vocabulary:たいしかん",
+        "vocabulary:タクシー",
+        "vocabulary:たてもの",
+        "vocabulary:ちかてつ",
+        "kanji:外",
+        "kanji:国",
+        "kanji:車",
+        "grammar:n5-de-means",
+        "grammar:n5-ni-noru",
+        "sentence:n5-de-means-1",
+        "sentence:n5-de-means-2",
+        "sentence:n5-ni-noru-1",
+        "sentence:n5-ni-noru-2"
+      ]
+    },
+    {
+      "slug": "n5-19-town",
+      "title": {
+        "en": "Places in town",
+        "id": "Tempat di kota"
+      },
+      "situation": {
+        "en": "You run errands in town: the post office, the bank, a café and a department store.",
+        "id": "Anda mengurus berbagai keperluan di kota: kantor pos, bank, kafe, dan toserba."
+      },
+      "objective": {
+        "en": "By the end of this lesson, you can say where you do things and follow a route.",
+        "id": "Setelah menyelesaikan pelajaran ini, Anda mampu mengatakan tempat Anda melakukan sesuatu dan mengikuti rute."
+      },
+      "items": [
+        "vocabulary:でぐち",
+        "vocabulary:デパート",
+        "vocabulary:でんしゃ",
+        "vocabulary:としょかん",
+        "vocabulary:とまる",
+        "vocabulary:にもつ",
+        "vocabulary:のる",
+        "vocabulary:はし",
+        "vocabulary:バス",
+        "vocabulary:ひこうき",
+        "vocabulary:まち",
+        "vocabulary:みせ",
+        "vocabulary:むら",
+        "vocabulary:もん",
+        "vocabulary:〜や",
+        "vocabulary:やおや",
+        "vocabulary:ゆうびんきょく",
+        "kanji:出",
+        "kanji:書",
+        "kanji:行",
+        "kanji:百",
+        "grammar:n5-de-place",
+        "grammar:n5-wo-route",
+        "sentence:n5-de-place-1",
+        "sentence:n5-de-place-2",
+        "sentence:n5-wo-route-1",
+        "sentence:n5-wo-route-2"
+      ]
+    },
+    {
+      "slug": "n5-20-directions",
+      "title": {
+        "en": "Where things are",
+        "id": "Letak benda"
+      },
+      "situation": {
+        "en": "You look for your things in a room and give directions to a visitor.",
+        "id": "Anda mencari barang di kamar dan memberi petunjuk arah kepada tamu."
+      },
+      "objective": {
+        "en": "By the end of this lesson, you can say where things are and how something is done.",
+        "id": "Setelah menyelesaikan pelajaran ini, Anda mampu mengatakan letak benda dan cara sesuatu dilakukan."
+      },
+      "items": [
+        "vocabulary:ある",
+        "vocabulary:あるく",
+        "vocabulary:いく",
+        "vocabulary:いる",
+        "vocabulary:うえ",
+        "vocabulary:うしろ",
+        "vocabulary:かえる",
+        "vocabulary:〜がわ",
+        "vocabulary:きた",
+        "vocabulary:くる",
+        "vocabulary:さき",
+        "vocabulary:した",
+        "vocabulary:そと",
+        "vocabulary:そば",
+        "vocabulary:ちかく",
+        "vocabulary:でかける",
+        "vocabulary:でる",
+        "vocabulary:ところ",
+        "vocabulary:となり",
+        "kanji:北",
+        "kanji:三",
+        "kanji:南",
+        "grammar:n5-position",
+        "grammar:n5-adverb-ku",
+        "sentence:n5-position-1",
+        "sentence:n5-position-2",
+        "sentence:n5-adverb-ku-1",
+        "sentence:n5-adverb-ku-2"
+      ]
+    },
+    {
+      "slug": "n5-21-going-out",
+      "title": {
+        "en": "Going out",
+        "id": "Pergi keluar"
+      },
+      "situation": {
+        "en": "You plan a day out: where you are going, what for, and in what order.",
+        "id": "Anda merencanakan hari di luar: ke mana, untuk apa, dan dengan urutan apa."
+      },
+      "objective": {
+        "en": "By the end of this lesson, you can say why you are going somewhere and what you will do after something else.",
+        "id": "Setelah menyelesaikan pelajaran ini, Anda mampu mengatakan tujuan Anda pergi dan apa yang akan Anda lakukan setelah hal lain."
+      },
+      "items": [
+        "vocabulary:ない",
+        "vocabulary:なか",
+        "vocabulary:ならぶ",
+        "vocabulary:ならべる",
+        "vocabulary:にし",
+        "vocabulary:はいる",
+        "vocabulary:はしる",
+        "vocabulary:ひがし",
+        "vocabulary:ひだり",
+        "vocabulary:へん",
+        "vocabulary:ほか",
+        "vocabulary:まえ",
+        "vocabulary:まがる",
+        "vocabulary:まっすぐ",
+        "vocabulary:みぎ",
+        "vocabulary:みなみ",
+        "vocabulary:むこう",
+        "vocabulary:よこ",
+        "kanji:西",
+        "kanji:東",
+        "kanji:左",
+        "kanji:右",
+        "grammar:n5-ni-iku-purpose",
+        "grammar:n5-te-kara",
+        "sentence:n5-ni-iku-purpose-1",
+        "sentence:n5-ni-iku-purpose-2",
+        "sentence:n5-te-kara-1",
+        "sentence:n5-te-kara-2"
+      ]
+    },
+    {
+      "slug": "n5-22-food",
+      "title": {
+        "en": "Food and drink",
+        "id": "Makanan dan minuman"
+      },
+      "situation": {
+        "en": "You talk about food you like and invite a colleague to eat together.",
+        "id": "Anda membicarakan makanan kesukaan dan mengajak rekan kerja makan bersama."
+      },
+      "objective": {
+        "en": "By the end of this lesson, you can say what you want to do and invite someone.",
+        "id": "Setelah menyelesaikan pelajaran ini, Anda mampu mengatakan apa yang ingin Anda lakukan dan mengajak seseorang."
+      },
+      "items": [
+        "vocabulary:あさごはん",
+        "vocabulary:あつい:2",
+        "vocabulary:あまい",
+        "vocabulary:あめ:2",
+        "vocabulary:おかし",
+        "vocabulary:おさけ",
+        "vocabulary:おさら",
+        "vocabulary:おべんとう",
+        "vocabulary:カップ",
+        "vocabulary:からい",
+        "vocabulary:カレー",
+        "vocabulary:ぎゅうにく",
+        "vocabulary:ぎゅうにゅう",
+        "vocabulary:くだもの",
+        "vocabulary:こうちゃ",
+        "vocabulary:コーヒー",
+        "vocabulary:コップ",
+        "vocabulary:さとう",
+        "vocabulary:しお",
+        "vocabulary:しょうゆ",
+        "vocabulary:しょくどう",
+        "vocabulary:スプーン",
+        "kanji:食",
+        "kanji:二",
+        "grammar:n5-tai",
+        "grammar:n5-masen-ka",
+        "sentence:n5-tai-1",
+        "sentence:n5-tai-2",
+        "sentence:n5-masen-ka-1",
+        "sentence:n5-masen-ka-2"
+      ]
+    },
+    {
+      "slug": "n5-23-cooking",
+      "title": {
+        "en": "Cooking and eating",
+        "id": "Memasak dan makan"
+      },
+      "situation": {
+        "en": "You cook a simple dish with a friend and explain the steps.",
+        "id": "Anda memasak hidangan sederhana bersama teman dan menjelaskan langkah-langkahnya."
+      },
+      "objective": {
+        "en": "By the end of this lesson, you can suggest doing things together and describe steps in order.",
+        "id": "Setelah menyelesaikan pelajaran ini, Anda mampu mengusulkan melakukan sesuatu bersama dan menjelaskan langkah secara berurutan."
+      },
+      "items": [
+        "vocabulary:たべもの",
+        "vocabulary:たべる",
+        "vocabulary:たまご",
+        "vocabulary:ちゃわん",
+        "vocabulary:つめたい",
+        "vocabulary:とりにく",
+        "vocabulary:ナイフ",
+        "vocabulary:ぬるい",
+        "vocabulary:のみもの",
+        "vocabulary:のむ",
+        "vocabulary:はし:2",
+        "vocabulary:バター",
+        "vocabulary:ばんごはん",
+        "vocabulary:ひるごはん",
+        "vocabulary:フォーク",
+        "vocabulary:ぶたにく",
+        "vocabulary:まずい",
+        "vocabulary:やさい",
+        "vocabulary:ゆうはん",
+        "vocabulary:りょうり",
+        "vocabulary:レストラン",
+        "vocabulary:きる:2",
+        "kanji:午",
+        "kanji:七",
+        "grammar:n5-mashou",
+        "grammar:n5-te-sequence",
+        "sentence:n5-mashou-1",
+        "sentence:n5-mashou-2",
+        "sentence:n5-te-sequence-1",
+        "sentence:n5-te-sequence-2"
+      ]
+    },
+    {
+      "slug": "n5-24-weather",
+      "title": {
+        "en": "Weather and seasons",
+        "id": "Cuaca dan musim"
+      },
+      "situation": {
+        "en": "You watch the weather forecast and talk about the seasons in Japan.",
+        "id": "Anda menonton prakiraan cuaca dan membicarakan musim di Jepang."
+      },
+      "objective": {
+        "en": "By the end of this lesson, you can talk about the weather, guess what it will be like and describe change.",
+        "id": "Setelah menyelesaikan pelajaran ini, Anda mampu membicarakan cuaca, menduga keadaannya, dan menggambarkan perubahan."
+      },
+      "items": [
+        "vocabulary:あき",
+        "vocabulary:あつい",
+        "vocabulary:あめ",
+        "vocabulary:いけ",
+        "vocabulary:かわ",
+        "vocabulary:き",
+        "vocabulary:くもり",
+        "vocabulary:くもる",
+        "vocabulary:さす",
+        "vocabulary:さむい",
+        "vocabulary:すずしい",
+        "vocabulary:そら",
+        "vocabulary:てんき",
+        "vocabulary:とぶ",
+        "vocabulary:なつ",
+        "vocabulary:はな",
+        "vocabulary:はれ",
+        "vocabulary:はれる",
+        "vocabulary:ふく",
+        "vocabulary:ふゆ",
+        "vocabulary:ふる",
+        "vocabulary:やま",
+        "vocabulary:かぜ:2",
+        "kanji:雨",
+        "kanji:川",
+        "kanji:天",
+        "grammar:n5-deshou",
+        "grammar:n5-naru",
+        "sentence:n5-deshou-1",
+        "sentence:n5-deshou-2",
+        "sentence:n5-naru-1",
+        "sentence:n5-naru-2"
+      ]
+    },
+    {
+      "slug": "n5-25-health",
+      "title": {
+        "en": "Body and health",
+        "id": "Tubuh dan kesehatan"
+      },
+      "situation": {
+        "en": "You don't feel well and tell your teacher what hurts and why you need to go home.",
+        "id": "Anda merasa tidak enak badan dan memberi tahu guru bagian mana yang sakit dan mengapa Anda perlu pulang."
+      },
+      "objective": {
+        "en": "By the end of this lesson, you can name parts of the body, say what hurts and give a reason.",
+        "id": "Setelah menyelesaikan pelajaran ini, Anda mampu menyebut bagian tubuh, mengatakan bagian yang sakit, dan memberi alasan."
+      },
+      "items": [
+        "vocabulary:あし",
+        "vocabulary:あたま",
+        "vocabulary:いたい",
+        "vocabulary:おなか",
+        "vocabulary:かお",
+        "vocabulary:からだ",
+        "vocabulary:くち",
+        "vocabulary:げんき",
+        "vocabulary:こえ",
+        "vocabulary:しぬ",
+        "vocabulary:じょうぶ",
+        "vocabulary:せい",
+        "vocabulary:つかれる",
+        "vocabulary:て",
+        "vocabulary:は",
+        "vocabulary:はな:2",
+        "vocabulary:みみ",
+        "vocabulary:め",
+        "kanji:校",
+        "kanji:土",
+        "grammar:n5-wa-ga",
+        "grammar:n5-kara-reason",
+        "sentence:n5-wa-ga-1",
+        "sentence:n5-wa-ga-2",
+        "sentence:n5-kara-reason-1",
+        "sentence:n5-kara-reason-2"
+      ]
+    },
+    {
+      "slug": "n5-26-school",
+      "title": {
+        "en": "At school",
+        "id": "Di sekolah"
+      },
+      "situation": {
+        "en": "In class you describe what people are doing and say what you understand.",
+        "id": "Di kelas Anda menggambarkan apa yang sedang dilakukan orang dan mengatakan apa yang Anda mengerti."
+      },
+      "objective": {
+        "en": "By the end of this lesson, you can say what is happening now and what you understand.",
+        "id": "Setelah menyelesaikan pelajaran ini, Anda mampu mengatakan apa yang sedang terjadi dan apa yang Anda mengerti."
+      },
+      "items": [
+        "vocabulary:いみ",
+        "vocabulary:えいご",
+        "vocabulary:えんぴつ",
+        "vocabulary:おしえる",
+        "vocabulary:かく",
+        "vocabulary:かたかな",
+        "vocabulary:かみ",
+        "vocabulary:きょうしつ",
+        "vocabulary:クラス",
+        "vocabulary:〜ご:2",
+        "vocabulary:こたえる",
+        "vocabulary:じしょ",
+        "vocabulary:しつもん",
+        "vocabulary:じゅぎょう",
+        "vocabulary:しゅくだい",
+        "vocabulary:しる",
+        "vocabulary:せいと",
+        "kanji:語",
+        "kanji:名",
+        "kanji:生",
+        "grammar:n5-te-iru",
+        "grammar:n5-ga-wakaru",
+        "sentence:n5-te-iru-1",
+        "sentence:n5-te-iru-2",
+        "sentence:n5-ga-wakaru-1",
+        "sentence:n5-ga-wakaru-2"
+      ]
+    },
+    {
+      "slug": "n5-27-study",
+      "title": {
+        "en": "Studying",
+        "id": "Belajar"
+      },
+      "situation": {
+        "en": "You talk with a classmate about studying Japanese: what is hard, what is fun and what you do when you are stuck.",
+        "id": "Anda berbincang dengan teman sekelas tentang belajar bahasa Jepang: apa yang sulit, apa yang menyenangkan, dan apa yang Anda lakukan saat buntu."
+      },
+      "objective": {
+        "en": "By the end of this lesson, you can contrast two facts and say when something happens.",
+        "id": "Setelah menyelesaikan pelajaran ini, Anda mampu membandingkan dua fakta dan mengatakan kapan sesuatu terjadi."
+      },
+      "items": [
+        "vocabulary:だいがく",
+        "vocabulary:つくえ",
+        "vocabulary:テスト",
+        "vocabulary:ノート",
+        "vocabulary:ひらがな",
+        "vocabulary:ぶんしょう",
+        "vocabulary:ページ",
+        "vocabulary:ペン",
+        "vocabulary:べんきょう",
+        "vocabulary:ボールペン",
+        "vocabulary:まんねんひつ",
+        "vocabulary:もんだい",
+        "vocabulary:よむ",
+        "vocabulary:りゅうがくせい",
+        "vocabulary:れんしゅう",
+        "vocabulary:わかる",
+        "vocabulary:わすれる",
+        "kanji:学",
+        "kanji:読",
+        "grammar:n5-ga-but",
+        "grammar:n5-toki",
+        "sentence:n5-ga-but-1",
+        "sentence:n5-ga-but-2",
+        "sentence:n5-toki-1",
+        "sentence:n5-toki-2"
+      ]
+    },
+    {
+      "slug": "n5-28-work",
+      "title": {
+        "en": "Work and the telephone",
+        "id": "Pekerjaan dan telepon"
+      },
+      "situation": {
+        "en": "At work you make phone calls, send mail and chat with colleagues.",
+        "id": "Di kantor Anda menelepon, mengirim surat, dan mengobrol dengan rekan kerja."
+      },
+      "objective": {
+        "en": "By the end of this lesson, you can say who you contact and use ね and よ in conversation.",
+        "id": "Setelah menyelesaikan pelajaran ini, Anda mampu mengatakan siapa yang Anda hubungi dan memakai ね dan よ dalam percakapan."
+      },
+      "items": [
+        "vocabulary:いう",
+        "vocabulary:かいしゃ",
+        "vocabulary:かける:2",
+        "vocabulary:きく",
+        "vocabulary:きって",
+        "vocabulary:コピーする",
+        "vocabulary:しごと",
+        "vocabulary:つとめる",
+        "vocabulary:でんわ",
+        "vocabulary:はがき",
+        "vocabulary:はたらく",
+        "vocabulary:はなし",
+        "vocabulary:はなす",
+        "vocabulary:ばんごう",
+        "vocabulary:ふうとう",
+        "vocabulary:ポスト",
+        "vocabulary:もしもし",
+        "vocabulary:やすみ",
+        "vocabulary:やすむ",
+        "vocabulary:よぶ",
+        "vocabulary:はる:2",
+        "kanji:聞",
+        "kanji:話",
+        "kanji:休",
+        "grammar:n5-ni-person",
+        "grammar:n5-ne-yo",
+        "sentence:n5-ni-person-1",
+        "sentence:n5-ni-person-2",
+        "sentence:n5-ne-yo-1",
+        "sentence:n5-ne-yo-2"
+      ]
+    },
+    {
+      "slug": "n5-29-hobbies",
+      "title": {
+        "en": "Hobbies",
+        "id": "Hobi"
+      },
+      "situation": {
+        "en": "You meet new people at a club and talk about your hobbies and what you are good at.",
+        "id": "Anda bertemu orang baru di sebuah klub dan membicarakan hobi serta apa yang Anda kuasai."
+      },
+      "objective": {
+        "en": "By the end of this lesson, you can talk about what you like doing and what you are good or bad at.",
+        "id": "Setelah menyelesaikan pelajaran ini, Anda mampu membicarakan kegiatan yang Anda sukai dan apa yang Anda kuasai atau tidak."
+      },
+      "items": [
+        "vocabulary:あそぶ",
+        "vocabulary:いぬ",
+        "vocabulary:うた",
+        "vocabulary:え",
+        "vocabulary:えいが",
+        "vocabulary:えいがかん",
+        "vocabulary:カメラ",
+        "vocabulary:ギター",
+        "vocabulary:ざっし",
+        "vocabulary:さんぽ",
+        "vocabulary:しんぶん",
+        "vocabulary:スポーツ",
+        "vocabulary:テレビ",
+        "vocabulary:どうぶつ",
+        "vocabulary:とり",
+        "vocabulary:なく",
+        "vocabulary:ねこ",
+        "vocabulary:プール",
+        "vocabulary:ペット",
+        "vocabulary:ラジオ",
+        "kanji:母",
+        "kanji:十",
+        "grammar:n5-no-ga-suki",
+        "grammar:n5-ga-jouzu",
+        "sentence:n5-no-ga-suki-1",
+        "sentence:n5-no-ga-suki-2",
+        "sentence:n5-ga-jouzu-1",
+        "sentence:n5-ga-jouzu-2"
+      ]
+    },
+    {
+      "slug": "n5-30-feelings",
+      "title": {
+        "en": "Feelings and opinions",
+        "id": "Perasaan dan pendapat"
+      },
+      "situation": {
+        "en": "After a film and a meal, you and a friend say what you thought of them.",
+        "id": "Setelah menonton film dan makan, Anda dan teman mengungkapkan pendapat tentang keduanya."
+      },
+      "objective": {
+        "en": "By the end of this lesson, you can give simple opinions and say 'not very'.",
+        "id": "Setelah menyelesaikan pelajaran ini, Anda mampu memberi pendapat sederhana dan mengatakan 'tidak begitu'."
+      },
+      "items": [
+        "vocabulary:あぶない",
+        "vocabulary:いい",
+        "vocabulary:いそがしい",
+        "vocabulary:いや",
+        "vocabulary:うるさい",
+        "vocabulary:おそい",
+        "vocabulary:おもしろい",
+        "vocabulary:かわいい",
+        "vocabulary:きたない",
+        "vocabulary:きらい",
+        "vocabulary:きれい",
+        "vocabulary:しずか",
+        "vocabulary:じょうず",
+        "vocabulary:だいじょうぶ",
+        "vocabulary:だいすき",
+        "vocabulary:たいせつ",
+        "vocabulary:たいへん",
+        "vocabulary:たのしい",
+        "vocabulary:ちがう",
+        "vocabulary:つまらない",
+        "vocabulary:にぎやか",
+        "vocabulary:ひま",
+        "vocabulary:べんり",
+        "vocabulary:ほしい",
+        "vocabulary:むずかしい",
+        "vocabulary:やさしい",
+        "vocabulary:りっぱ",
+        "vocabulary:わるい",
+        "kanji:友",
+        "kanji:水",
+        "grammar:n5-amari",
+        "sentence:n5-amari-1",
+        "sentence:n5-amari-2"
+      ]
+    },
+    {
+      "slug": "n5-31-shopping",
+      "title": {
+        "en": "Shopping and comparing",
+        "id": "Berbelanja dan membandingkan"
+      },
+      "situation": {
+        "en": "You shop for a present, compare prices and choose the best one.",
+        "id": "Anda berbelanja hadiah, membandingkan harga, dan memilih yang terbaik."
+      },
+      "objective": {
+        "en": "By the end of this lesson, you can say what you want, compare two things and pick the most.",
+        "id": "Setelah menyelesaikan pelajaran ini, Anda mampu mengatakan apa yang Anda inginkan, membandingkan dua hal, dan memilih yang paling."
+      },
+      "items": [
+        "vocabulary:うる",
+        "vocabulary:おかね",
+        "vocabulary:かいもの",
+        "vocabulary:かう",
+        "vocabulary:かえす",
+        "vocabulary:かばん",
+        "vocabulary:カレンダー",
+        "vocabulary:とけい",
+        "vocabulary:なくす",
+        "vocabulary:はこ",
+        "vocabulary:もの",
+        "vocabulary:やすい",
+        "vocabulary:わたす",
+        "kanji:父",
+        "kanji:先",
+        "grammar:n5-hoshii",
+        "grammar:n5-yori",
+        "grammar:n5-ichiban",
+        "sentence:n5-hoshii-1",
+        "sentence:n5-hoshii-2",
+        "sentence:n5-yori-1",
+        "sentence:n5-yori-2",
+        "sentence:n5-ichiban-1",
+        "sentence:n5-ichiban-2"
+      ]
+    },
+    {
+      "slug": "n5-32-questions",
+      "title": {
+        "en": "Asking questions",
+        "id": "Bertanya"
+      },
+      "situation": {
+        "en": "You ask a new neighbour about the area and answer their questions about you.",
+        "id": "Anda bertanya kepada tetangga baru tentang lingkungan sekitar dan menjawab pertanyaannya tentang Anda."
+      },
+      "objective": {
+        "en": "By the end of this lesson, you can use question words, say 'nothing / nobody' and ask why.",
+        "id": "Setelah menyelesaikan pelajaran ini, Anda mampu memakai kata tanya, mengatakan 'tidak apa-apa / tidak seorang pun', dan bertanya mengapa."
+      },
+      "items": [
+        "vocabulary:あちら",
+        "vocabulary:あっち",
+        "vocabulary:あの",
+        "vocabulary:いかが",
+        "vocabulary:いくつ",
+        "vocabulary:いつ",
+        "vocabulary:こちら",
+        "vocabulary:こっち",
+        "vocabulary:この",
+        "vocabulary:こんな",
+        "vocabulary:そちら",
+        "vocabulary:そっち",
+        "vocabulary:その",
+        "vocabulary:だれか",
+        "vocabulary:どう",
+        "vocabulary:どうして",
+        "vocabulary:どちら",
+        "vocabulary:どっち",
+        "vocabulary:どなた",
+        "vocabulary:どの",
+        "vocabulary:どれ",
+        "vocabulary:どんな",
+        "vocabulary:なぜ",
+        "vocabulary:なん",
+        "vocabulary:なん〜:2",
+        "kanji:何",
+        "kanji:九",
+        "grammar:n5-nanimo-nai",
+        "grammar:n5-doushite",
+        "grammar:n5-donna",
+        "sentence:n5-nanimo-nai-1",
+        "sentence:n5-nanimo-nai-2",
+        "sentence:n5-doushite-1",
+        "sentence:n5-doushite-2",
+        "sentence:n5-donna-1",
+        "sentence:n5-donna-2"
+      ]
+    },
+    {
+      "slug": "n5-33-linking",
+      "title": {
+        "en": "Linking words and useful expressions",
+        "id": "Kata sambung dan ungkapan berguna"
+      },
+      "situation": {
+        "en": "You tell a short story about your weekend and react to what others say.",
+        "id": "Anda menceritakan kisah singkat tentang akhir pekan dan menanggapi cerita orang lain."
+      },
+      "objective": {
+        "en": "By the end of this lesson, you can join sentences and use common adverbs and expressions.",
+        "id": "Setelah menyelesaikan pelajaran ini, Anda mampu menyambung kalimat dan memakai kata keterangan serta ungkapan umum."
+      },
+      "items": [
+        "vocabulary:ああ",
+        "vocabulary:あまり",
+        "vocabulary:いいえ",
+        "vocabulary:いちばん",
+        "vocabulary:いっしょ",
+        "vocabulary:いつも",
+        "vocabulary:いろいろ",
+        "vocabulary:ええ",
+        "vocabulary:お〜",
+        "vocabulary:けっこう",
+        "vocabulary:さあ",
+        "vocabulary:しかし",
+        "vocabulary:じゃ",
+        "vocabulary:すぐに",
+        "vocabulary:そう",
+        "vocabulary:そうして",
+        "vocabulary:それから",
+        "vocabulary:それでは",
+        "vocabulary:たぶん",
+        "vocabulary:だんだん",
+        "vocabulary:ちょうど",
+        "vocabulary:ちょっと",
+        "vocabulary:では",
+        "vocabulary:でも",
+        "vocabulary:どうぞ",
+        "vocabulary:どうも",
+        "vocabulary:ときどき",
+        "vocabulary:とても",
+        "vocabulary:はい",
+        "vocabulary:ほんとう",
+        "vocabulary:また",
+        "vocabulary:まだ",
+        "vocabulary:もう",
+        "vocabulary:もっと",
+        "vocabulary:ゆっくりと",
+        "vocabulary:よく",
+        "kanji:四",
+        "kanji:中",
+        "grammar:n5-soshite",
+        "sentence:n5-soshite-1",
+        "sentence:n5-soshite-2"
+      ]
+    },
+    {
+      "slug": "n5-34-people",
+      "title": {
+        "en": "People around you",
+        "id": "Orang-orang di sekitar Anda"
+      },
+      "situation": {
+        "en": "You show photos of your family and friends and talk about who they are.",
+        "id": "Anda menunjukkan foto keluarga dan teman lalu bercerita tentang mereka."
+      },
+      "objective": {
+        "en": "By the end of this lesson, you can talk about people, their ages and how they are related to you.",
+        "id": "Setelah menyelesaikan pelajaran ini, Anda mampu membicarakan orang, umur mereka, dan hubungan mereka dengan Anda."
+      },
+      "items": [
+        "vocabulary:いもうと",
+        "vocabulary:うまれる",
+        "vocabulary:おくさん",
+        "vocabulary:おじさん",
+        "vocabulary:おじいさん",
+        "vocabulary:おとうと",
+        "vocabulary:おとこ",
+        "vocabulary:おとこのこ",
+        "vocabulary:おとな",
+        "vocabulary:おにいさん",
+        "vocabulary:おねえさん",
+        "vocabulary:おばさん",
+        "vocabulary:おばあさん",
+        "vocabulary:おんな",
+        "vocabulary:おんなのこ",
+        "vocabulary:がいこくじん",
+        "vocabulary:かた",
+        "vocabulary:かてい",
+        "vocabulary:きょうだい",
+        "vocabulary:こども",
+        "vocabulary:じぶん",
+        "vocabulary:〜たち",
+        "vocabulary:はたち",
+        "vocabulary:ひとり",
+        "vocabulary:ふたり",
+        "vocabulary:みなさん",
+        "vocabulary:みんな",
+        "vocabulary:りょうしん",
+        "kanji:男",
+        "kanji:女",
+        "grammar:n5-to-and",
+        "grammar:n5-nansai",
+        "sentence:n5-to-and-1",
+        "sentence:n5-to-and-2",
+        "sentence:n5-nansai-1",
+        "sentence:n5-nansai-2"
+      ]
     }
   ]
 }

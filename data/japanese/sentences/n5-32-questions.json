@@ -1,0 +1,66 @@
+{
+  "source": "Original practice sentences for N5 · Asking questions.",
+  "level": "n5",
+  "items": [
+    {
+      "slug": "n5-nanimo-nai-1",
+      "text": "けさは なにも たべませんでした。",
+      "tokens": ["けさ", "は", "なにも", "たべませんでした"],
+      "grammar": "n5-nanimo-nai",
+      "translation": {
+        "en": "I didn't eat anything this morning.",
+        "id": "Tadi pagi saya tidak makan apa-apa."
+      }
+    },
+    {
+      "slug": "n5-nanimo-nai-2",
+      "text": "きょうしつに だれも いません。",
+      "tokens": ["きょうしつ", "に", "だれも", "いません"],
+      "grammar": "n5-nanimo-nai",
+      "translation": {
+        "en": "There is nobody in the classroom.",
+        "id": "Tidak ada seorang pun di ruang kelas."
+      }
+    },
+    {
+      "slug": "n5-doushite-1",
+      "text": "どうして きのう やすみましたか。",
+      "tokens": ["どうして", "きのう", "やすみました", "か"],
+      "grammar": "n5-doushite",
+      "translation": {
+        "en": "Why were you absent yesterday?",
+        "id": "Mengapa kemarin Anda tidak masuk?"
+      }
+    },
+    {
+      "slug": "n5-doushite-2",
+      "text": "あたまが いたかったからです。",
+      "tokens": ["あたま", "が", "いたかった", "から", "です"],
+      "grammar": "n5-doushite",
+      "translation": {
+        "en": "Because I had a headache.",
+        "id": "Karena kepala saya sakit."
+      }
+    },
+    {
+      "slug": "n5-donna-1",
+      "text": "どんな おんがくが すきですか。",
+      "tokens": ["どんな", "おんがく", "が", "すきです", "か"],
+      "grammar": "n5-donna",
+      "translation": {
+        "en": "What kind of music do you like?",
+        "id": "Anda suka musik seperti apa?"
+      }
+    },
+    {
+      "slug": "n5-donna-2",
+      "text": "どの かさが あなたのですか。",
+      "tokens": ["どの", "かさ", "が", "あなた", "の", "です", "か"],
+      "grammar": "n5-donna",
+      "translation": {
+        "en": "Which umbrella is yours?",
+        "id": "Payung yang mana milik Anda?"
+      }
+    }
+  ]
+}

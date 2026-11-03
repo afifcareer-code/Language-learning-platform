@@ -1,0 +1,46 @@
+{
+  "source": "Original practice sentences for N5 · Weather and seasons.",
+  "level": "n5",
+  "items": [
+    {
+      "slug": "n5-deshou-1",
+      "text": "あしたは はれるでしょう。",
+      "tokens": ["あした", "は", "はれる", "でしょう"],
+      "grammar": "n5-deshou",
+      "translation": {
+        "en": "It will probably be sunny tomorrow.",
+        "id": "Besok mungkin cerah."
+      }
+    },
+    {
+      "slug": "n5-deshou-2",
+      "text": "こんばんは さむいでしょう。",
+      "tokens": ["こんばん", "は", "さむい", "でしょう"],
+      "grammar": "n5-deshou",
+      "translation": {
+        "en": "It will probably be cold tonight.",
+        "id": "Malam ini mungkin dingin."
+      }
+    },
+    {
+      "slug": "n5-naru-1",
+      "text": "だんだん さむく なりました。",
+      "tokens": ["だんだん", "さむく", "なりました"],
+      "grammar": "n5-naru",
+      "translation": {
+        "en": "It has gradually got colder.",
+        "id": "Lambat laun cuaca menjadi dingin."
+      }
+    },
+    {
+      "slug": "n5-naru-2",
+      "text": "はるに なりました。",
+      "tokens": ["はる", "に", "なりました"],
+      "grammar": "n5-naru",
+      "translation": {
+        "en": "Spring has come.",
+        "id": "Musim semi sudah tiba."
+      }
+    }
+  ]
+}

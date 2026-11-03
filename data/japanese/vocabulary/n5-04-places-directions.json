@@ -40,6 +40,7 @@
     },
     {
       "kana": "えき",
+      "kanji": "駅",
       "romaji": "eki",
       "partOfSpeech": "noun",
       "meaning": {
@@ -49,6 +50,7 @@
     },
     {
       "kana": "ぎんこう",
+      "kanji": "銀行",
       "romaji": "ginkou",
       "alternateRomaji": ["ginko"],
       "partOfSpeech": "noun",
@@ -59,6 +61,7 @@
     },
     {
       "kana": "びょういん",
+      "kanji": "病院",
       "romaji": "byouin",
       "alternateRomaji": ["byoin"],
       "partOfSpeech": "noun",
@@ -78,6 +81,7 @@
     },
     {
       "kana": "ちかい",
+      "kanji": "近い",
       "romaji": "chikai",
       "partOfSpeech": "adjective",
       "meaning": {
@@ -87,6 +91,7 @@
     },
     {
       "kana": "とおい",
+      "kanji": "遠い",
       "romaji": "tooi",
       "alternateRomaji": ["toi"],
       "partOfSpeech": "adjective",

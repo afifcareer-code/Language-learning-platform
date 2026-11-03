@@ -1,0 +1,108 @@
+{
+  "source": "Original grammar explanations for N5 · Shopping and comparing, written for this project.",
+  "level": "n5",
+  "items": [
+    {
+      "slug": "n5-hoshii",
+      "pattern": "N が ほしいです",
+      "meaning": {
+        "en": "want N",
+        "id": "ingin (memiliki) N"
+      },
+      "explanation": {
+        "en": "ほしい is an い-adjective meaning 'wanted': あたらしい かばんが ほしいです. For wanting to do something use 〜たい.",
+        "id": "ほしい adalah kata sifat い yang berarti 'diinginkan': あたらしい かばんが ほしいです. Untuk ingin melakukan sesuatu pakai 〜たい."
+      },
+      "examples": [
+        {
+          "ja": "あたらしい くつが ほしいです。",
+          "translation": {
+            "en": "I want new shoes.",
+            "id": "Saya ingin sepatu baru."
+          }
+        },
+        {
+          "ja": "いま なにが ほしいですか。",
+          "translation": {
+            "en": "What do you want now?",
+            "id": "Sekarang Anda ingin apa?"
+          }
+        }
+      ],
+      "commonErrors": [
+        {
+          "en": "Using を: くつを ほしいです is wrong; say くつが ほしいです.",
+          "id": "Memakai を: くつを ほしいです salah; katakan くつが ほしいです."
+        }
+      ]
+    },
+    {
+      "slug": "n5-yori",
+      "pattern": "N1 は N2 より A です / N1 と N2 と どちらが A ですか",
+      "meaning": {
+        "en": "N1 is more A than N2 / which is more A?",
+        "id": "N1 lebih A daripada N2 / mana yang lebih A?"
+      },
+      "explanation": {
+        "en": "より marks what you compare with: バスは でんしゃより やすいです. To ask, use と… と どちらが: コーヒーと こうちゃと どちらが すきですか. Answer with 〜の ほうが.",
+        "id": "より menandai pembanding: バスは でんしゃより やすいです. Untuk bertanya, pakai と… と どちらが: コーヒーと こうちゃと どちらが すきですか. Jawab dengan 〜の ほうが."
+      },
+      "examples": [
+        {
+          "ja": "バスは でんしゃより やすいです。",
+          "translation": {
+            "en": "The bus is cheaper than the train.",
+            "id": "Bus lebih murah daripada kereta."
+          }
+        },
+        {
+          "ja": "コーヒーと こうちゃと どちらが すきですか。",
+          "translation": {
+            "en": "Which do you like better, coffee or tea?",
+            "id": "Anda lebih suka kopi atau teh?"
+          }
+        }
+      ],
+      "commonErrors": [
+        {
+          "en": "Putting より after the adjective: やすいです より でんしゃ is wrong; より follows the thing compared with.",
+          "id": "Meletakkan より setelah kata sifat: やすいです より でんしゃ salah; より mengikuti hal yang dibandingkan."
+        }
+      ]
+    },
+    {
+      "slug": "n5-ichiban",
+      "pattern": "N の なかで N が いちばん A です",
+      "meaning": {
+        "en": "N is the most A (of all)",
+        "id": "N paling A (di antara semua)"
+      },
+      "explanation": {
+        "en": "いちばん before an adjective means 'the most'. The group comes first with の なかで: くだものの なかで りんごが いちばん すきです.",
+        "id": "いちばん sebelum kata sifat berarti 'paling'. Kelompoknya disebut lebih dulu dengan の なかで: くだものの なかで りんごが いちばん すきです."
+      },
+      "examples": [
+        {
+          "ja": "くだものの なかで りんごが いちばん すきです。",
+          "translation": {
+            "en": "Of all fruit, I like apples best.",
+            "id": "Di antara buah-buahan, saya paling suka apel."
+          }
+        },
+        {
+          "ja": "この みせで これが いちばん やすいです。",
+          "translation": {
+            "en": "This is the cheapest in this shop.",
+            "id": "Ini yang paling murah di toko ini."
+          }
+        }
+      ],
+      "commonErrors": [
+        {
+          "en": "Using もっと for 'the most': もっと means 'more'; for 'the most' use いちばん.",
+          "id": "Memakai もっと untuk 'paling': もっと berarti 'lebih'; untuk 'paling' pakai いちばん."
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,74 @@
+{
+  "source": "Original grammar explanations for N5 · Body and health, written for this project.",
+  "level": "n5",
+  "items": [
+    {
+      "slug": "n5-wa-ga",
+      "pattern": "N1 は N2 が A",
+      "meaning": {
+        "en": "N1 has an A N2",
+        "id": "N1 itu N2-nya A"
+      },
+      "explanation": {
+        "en": "は gives the topic and が the part being described: ぞうは はなが ながいです (elephants have long trunks). It is also used for symptoms: あたまが いたいです.",
+        "id": "は menyatakan topik dan が bagian yang diterangkan: ぞうは はなが ながいです (gajah belalainya panjang). Pola ini juga dipakai untuk keluhan: あたまが いたいです."
+      },
+      "examples": [
+        {
+          "ja": "あたまが いたいです。",
+          "translation": {
+            "en": "I have a headache.",
+            "id": "Kepala saya sakit."
+          }
+        },
+        {
+          "ja": "あには せが たかいです。",
+          "translation": {
+            "en": "My older brother is tall.",
+            "id": "Kakak laki-laki saya tinggi badannya."
+          }
+        }
+      ],
+      "commonErrors": [
+        {
+          "en": "Using の: あにの せが たかいです is possible, but は… が is the natural way to describe someone.",
+          "id": "Memakai の: あにの せが たかいです boleh, tetapi は… が adalah cara yang wajar untuk menggambarkan seseorang."
+        }
+      ]
+    },
+    {
+      "slug": "n5-kara-reason",
+      "pattern": "S1 から、S2",
+      "meaning": {
+        "en": "S2, because S1",
+        "id": "karena S1, S2"
+      },
+      "explanation": {
+        "en": "から after a sentence gives the reason, which comes first: ねつが あるから、やすみます. It is more direct than ので.",
+        "id": "から setelah kalimat menyatakan alasan, yang diletakkan lebih dulu: ねつが あるから、やすみます. Lebih langsung daripada ので."
+      },
+      "examples": [
+        {
+          "ja": "ねつが あるから、きょうは やすみます。",
+          "translation": {
+            "en": "I have a fever, so I'm taking today off.",
+            "id": "Karena demam, hari ini saya libur."
+          }
+        },
+        {
+          "ja": "つかれたから、はやく ねます。",
+          "translation": {
+            "en": "I'm tired, so I'll go to bed early.",
+            "id": "Karena lelah, saya tidur lebih awal."
+          }
+        }
+      ],
+      "commonErrors": [
+        {
+          "en": "Putting the reason after the result: やすみます、ねつが あるから sounds like an afterthought.",
+          "id": "Meletakkan alasan setelah akibat: やすみます、ねつが あるから terdengar seperti tambahan belakangan."
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,196 @@
+{
+  "source": "N5 · Where things are: words from the JLPT N5 list by J. Waller (tanos.co.uk, CC BY) as compiled in open-anki-jlpt-decks (MIT). Meanings written for this project.",
+  "level": "n5",
+  "items": [
+    {
+      "kana": "ある",
+      "kanji": "在る",
+      "romaji": "aru",
+      "partOfSpeech": "verb",
+      "meaning": {
+        "en": "to be, to exist (things)",
+        "id": "ada (benda)"
+      }
+    },
+    {
+      "kana": "あるく",
+      "kanji": "歩く",
+      "romaji": "aruku",
+      "partOfSpeech": "verb",
+      "meaning": {
+        "en": "to walk",
+        "id": "berjalan"
+      }
+    },
+    {
+      "kana": "いく",
+      "kanji": "行く",
+      "romaji": "iku",
+      "partOfSpeech": "verb",
+      "meaning": {
+        "en": "to go",
+        "id": "pergi"
+      }
+    },
+    {
+      "kana": "いる",
+      "kanji": "居る",
+      "romaji": "iru",
+      "partOfSpeech": "verb",
+      "meaning": {
+        "en": "to be, to exist (people, animals)",
+        "id": "ada (orang, hewan)"
+      }
+    },
+    {
+      "kana": "うえ",
+      "kanji": "上",
+      "romaji": "ue",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "top, above",
+        "id": "atas"
+      }
+    },
+    {
+      "kana": "うしろ",
+      "kanji": "後ろ",
+      "romaji": "ushiro",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "back, behind",
+        "id": "belakang"
+      }
+    },
+    {
+      "kana": "かえる",
+      "kanji": "帰る",
+      "romaji": "kaeru",
+      "partOfSpeech": "verb",
+      "meaning": {
+        "en": "to go home, to return",
+        "id": "pulang"
+      }
+    },
+    {
+      "kana": "がわ",
+      "kanji": "側",
+      "romaji": "gawa",
+      "affix": "suffix",
+      "partOfSpeech": "suffix",
+      "meaning": {
+        "en": "side",
+        "id": "sisi"
+      }
+    },
+    {
+      "kana": "きた",
+      "kanji": "北",
+      "romaji": "kita",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "north",
+        "id": "utara"
+      }
+    },
+    {
+      "kana": "くる",
+      "kanji": "来る",
+      "romaji": "kuru",
+      "partOfSpeech": "verb",
+      "meaning": {
+        "en": "to come",
+        "id": "datang"
+      }
+    },
+    {
+      "kana": "さき",
+      "kanji": "先",
+      "romaji": "saki",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "ahead, the tip, before",
+        "id": "depan, ujung, lebih dulu"
+      }
+    },
+    {
+      "kana": "した",
+      "kanji": "下",
+      "romaji": "shita",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "bottom, below",
+        "id": "bawah"
+      }
+    },
+    {
+      "kana": "そと",
+      "kanji": "外",
+      "romaji": "soto",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "outside",
+        "id": "luar"
+      }
+    },
+    {
+      "kana": "そば",
+      "romaji": "soba",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "beside, near",
+        "id": "samping, dekat"
+      }
+    },
+    {
+      "kana": "ちかく",
+      "kanji": "近く",
+      "romaji": "chikaku",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "nearby",
+        "id": "dekat, sekitar"
+      }
+    },
+    {
+      "kana": "でかける",
+      "kanji": "出かける",
+      "romaji": "dekakeru",
+      "partOfSpeech": "verb",
+      "meaning": {
+        "en": "to go out",
+        "id": "pergi keluar"
+      }
+    },
+    {
+      "kana": "でる",
+      "kanji": "出る",
+      "romaji": "deru",
+      "partOfSpeech": "verb",
+      "meaning": {
+        "en": "to go out, to leave",
+        "id": "keluar, berangkat"
+      }
+    },
+    {
+      "kana": "ところ",
+      "kanji": "所",
+      "romaji": "tokoro",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "place",
+        "id": "tempat"
+      }
+    },
+    {
+      "kana": "となり",
+      "kanji": "隣",
+      "romaji": "tonari",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "next to, next door",
+        "id": "sebelah, tetangga"
+      }
+    }
+  ]
+}

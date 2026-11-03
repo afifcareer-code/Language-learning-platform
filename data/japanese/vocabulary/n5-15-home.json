@@ -1,0 +1,174 @@
+{
+  "source": "N5 · At home: words from the JLPT N5 list by J. Waller (tanos.co.uk, CC BY) as compiled in open-anki-jlpt-decks (MIT). Meanings written for this project.",
+  "level": "n5",
+  "items": [
+    {
+      "kana": "あく",
+      "kanji": "開く",
+      "romaji": "aku",
+      "partOfSpeech": "verb",
+      "meaning": {
+        "en": "to open (by itself)",
+        "id": "terbuka"
+      }
+    },
+    {
+      "kana": "あける",
+      "kanji": "開ける",
+      "romaji": "akeru",
+      "partOfSpeech": "verb",
+      "meaning": {
+        "en": "to open (something)",
+        "id": "membuka"
+      }
+    },
+    {
+      "kana": "アパート",
+      "romaji": "apaato",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "apartment",
+        "id": "apartemen"
+      }
+    },
+    {
+      "kana": "あびる",
+      "kanji": "浴びる",
+      "romaji": "abiru",
+      "partOfSpeech": "verb",
+      "meaning": {
+        "en": "to take (a shower), to bathe",
+        "id": "mandi (shower)"
+      }
+    },
+    {
+      "kana": "いえ",
+      "kanji": "家",
+      "romaji": "ie",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "house",
+        "id": "rumah"
+      }
+    },
+    {
+      "kana": "いす",
+      "kanji": "椅子",
+      "romaji": "isu",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "chair",
+        "id": "kursi"
+      }
+    },
+    {
+      "kana": "うち",
+      "romaji": "uchi",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "home, my house",
+        "id": "rumah (saya)"
+      }
+    },
+    {
+      "kana": "おてあらい",
+      "kanji": "お手洗い",
+      "romaji": "otearai",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "toilet",
+        "id": "toilet"
+      }
+    },
+    {
+      "kana": "おふろ",
+      "kanji": "お風呂",
+      "romaji": "ofuro",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "bath",
+        "id": "bak mandi, mandi berendam"
+      }
+    },
+    {
+      "kana": "かいだん",
+      "kanji": "階段",
+      "romaji": "kaidan",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "stairs",
+        "id": "tangga"
+      }
+    },
+    {
+      "kana": "かぎ",
+      "kanji": "鍵",
+      "romaji": "kagi",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "key, lock",
+        "id": "kunci"
+      }
+    },
+    {
+      "kana": "かびん",
+      "kanji": "花瓶",
+      "romaji": "kabin",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "vase",
+        "id": "vas bunga"
+      }
+    },
+    {
+      "kana": "きえる",
+      "kanji": "消える",
+      "romaji": "kieru",
+      "partOfSpeech": "verb",
+      "meaning": {
+        "en": "to go out (light), to disappear",
+        "id": "padam, menghilang"
+      }
+    },
+    {
+      "kana": "けす",
+      "kanji": "消す",
+      "romaji": "kesu",
+      "partOfSpeech": "verb",
+      "meaning": {
+        "en": "to turn off, to erase",
+        "id": "mematikan, menghapus"
+      }
+    },
+    {
+      "kana": "げんかん",
+      "kanji": "玄関",
+      "romaji": "genkan",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "front door, entrance hall",
+        "id": "pintu depan, serambi"
+      }
+    },
+    {
+      "kana": "しまる",
+      "kanji": "閉まる",
+      "romaji": "shimaru",
+      "partOfSpeech": "verb",
+      "meaning": {
+        "en": "to close (by itself)",
+        "id": "tertutup"
+      }
+    },
+    {
+      "kana": "しめる",
+      "kanji": "閉める",
+      "romaji": "shimeru",
+      "partOfSpeech": "verb",
+      "meaning": {
+        "en": "to close (something)",
+        "id": "menutup"
+      }
+    }
+  ]
+}

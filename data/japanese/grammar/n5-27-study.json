@@ -1,0 +1,74 @@
+{
+  "source": "Original grammar explanations for N5 · Studying, written for this project.",
+  "level": "n5",
+  "items": [
+    {
+      "slug": "n5-ga-but",
+      "pattern": "S1 が、S2",
+      "meaning": {
+        "en": "S1, but S2",
+        "id": "S1, tetapi S2"
+      },
+      "explanation": {
+        "en": "が after a sentence joins two contrasting facts: この ほんは たかいですが、おもしろいです. でも at the start of the next sentence means the same.",
+        "id": "が setelah kalimat menyambung dua fakta yang berlawanan: この ほんは たかいですが、おもしろいです. でも di awal kalimat berikutnya artinya sama."
+      },
+      "examples": [
+        {
+          "ja": "かんじは むずかしいですが、おもしろいです。",
+          "translation": {
+            "en": "Kanji are difficult but interesting.",
+            "id": "Kanji sulit, tetapi menarik."
+          }
+        },
+        {
+          "ja": "しけんは ありましたが、かんたんでした。",
+          "translation": {
+            "en": "There was a test, but it was easy.",
+            "id": "Ada ujian, tetapi mudah."
+          }
+        }
+      ],
+      "commonErrors": [
+        {
+          "en": "Confusing it with the subject marker が: here が comes after a whole sentence, often after です or ます.",
+          "id": "Tertukar dengan が penanda subjek: di sini が diletakkan setelah kalimat utuh, sering setelah です atau ます."
+        }
+      ]
+    },
+    {
+      "slug": "n5-toki",
+      "pattern": "plain form / N の とき",
+      "meaning": {
+        "en": "when…",
+        "id": "ketika…; waktu…"
+      },
+      "explanation": {
+        "en": "とき after a plain form or a noun with の means 'when, at the time': こどもの とき, ひまな とき, わからない とき.",
+        "id": "とき setelah bentuk biasa atau kata benda dengan の berarti 'ketika, pada saat': こどもの とき, ひまな とき, わからない とき."
+      },
+      "examples": [
+        {
+          "ja": "わからない とき、せんせいに ききます。",
+          "translation": {
+            "en": "When I don't understand, I ask the teacher.",
+            "id": "Ketika tidak mengerti, saya bertanya kepada guru."
+          }
+        },
+        {
+          "ja": "こどもの とき、よく やまへ いきました。",
+          "translation": {
+            "en": "When I was a child, I often went to the mountains.",
+            "id": "Waktu kecil, saya sering pergi ke gunung."
+          }
+        }
+      ],
+      "commonErrors": [
+        {
+          "en": "Leaving out の after a noun: こども とき is wrong; say こどもの とき.",
+          "id": "Melupakan の setelah kata benda: こども とき salah; katakan こどもの とき."
+        }
+      ]
+    }
+  ]
+}

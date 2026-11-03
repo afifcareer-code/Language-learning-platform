@@ -1,0 +1,74 @@
+{
+  "source": "Original grammar explanations for N5 · Times and periods, written for this project.",
+  "level": "n5",
+  "items": [
+    {
+      "slug": "n5-kara-made",
+      "pattern": "N から N まで",
+      "meaning": {
+        "en": "from N to N",
+        "id": "dari N sampai N"
+      },
+      "explanation": {
+        "en": "から marks a starting point and まで an end point, in time or in space: くじから ごじまで, うちから えきまで.",
+        "id": "から menandai titik awal dan まで titik akhir, untuk waktu maupun tempat: くじから ごじまで, うちから えきまで."
+      },
+      "examples": [
+        {
+          "ja": "ぎんこうは くじから さんじまでです。",
+          "translation": {
+            "en": "The bank is open from nine to three.",
+            "id": "Bank buka dari pukul sembilan sampai pukul tiga."
+          }
+        },
+        {
+          "ja": "うちから がっこうまで あるきます。",
+          "translation": {
+            "en": "I walk from home to school.",
+            "id": "Saya berjalan kaki dari rumah ke sekolah."
+          }
+        }
+      ],
+      "commonErrors": [
+        {
+          "en": "Using に instead of まで for the end of a period: くじに ごじまで is wrong; say くじから ごじまで.",
+          "id": "Memakai に sebagai pengganti まで untuk akhir rentang: くじに ごじまで salah; katakan くじから ごじまで."
+        }
+      ]
+    },
+    {
+      "slug": "n5-goro",
+      "pattern": "time + ごろ",
+      "meaning": {
+        "en": "at about (a time)",
+        "id": "sekitar (jam)"
+      },
+      "explanation": {
+        "en": "ごろ after a point in time means 'around then': しちじごろ, さんがつごろ. It can be followed by に or used without it.",
+        "id": "ごろ setelah suatu waktu berarti 'sekitar waktu itu': しちじごろ, さんがつごろ. Boleh diikuti に atau tanpa に."
+      },
+      "examples": [
+        {
+          "ja": "まいあさ しちじごろ おきます。",
+          "translation": {
+            "en": "I get up at about seven every morning.",
+            "id": "Setiap pagi saya bangun sekitar pukul tujuh."
+          }
+        },
+        {
+          "ja": "じゅうにじごろ ねました。",
+          "translation": {
+            "en": "I went to bed at about twelve.",
+            "id": "Saya tidur sekitar pukul dua belas."
+          }
+        }
+      ],
+      "commonErrors": [
+        {
+          "en": "Using ごろ for an amount of time: いちじかんごろ is wrong; say いちじかんぐらい.",
+          "id": "Memakai ごろ untuk lamanya waktu: いちじかんごろ salah; katakan いちじかんぐらい."
+        }
+      ]
+    }
+  ]
+}

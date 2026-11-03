@@ -1,0 +1,74 @@
+{
+  "source": "Original grammar explanations for N5 · Cooking and eating, written for this project.",
+  "level": "n5",
+  "items": [
+    {
+      "slug": "n5-mashou",
+      "pattern": "V ましょう / V ましょうか",
+      "meaning": {
+        "en": "let's V / shall I V?",
+        "id": "ayo V / bagaimana kalau saya V?"
+      },
+      "explanation": {
+        "en": "〜ましょう says 'let's do it': いきましょう. 〜ましょうか offers or suggests: てつだいましょうか (shall I help?).",
+        "id": "〜ましょう berarti 'ayo kita lakukan': いきましょう. 〜ましょうか menawarkan atau mengusulkan: てつだいましょうか (perlu saya bantu?)."
+      },
+      "examples": [
+        {
+          "ja": "ちょっと やすみましょう。",
+          "translation": {
+            "en": "Let's take a short break.",
+            "id": "Ayo istirahat sebentar."
+          }
+        },
+        {
+          "ja": "まどを あけましょうか。",
+          "translation": {
+            "en": "Shall I open the window?",
+            "id": "Perlu saya buka jendelanya?"
+          }
+        }
+      ],
+      "commonErrors": [
+        {
+          "en": "Using 〜ましょう to make your own decision for others: to invite gently, use 〜ませんか.",
+          "id": "Memakai 〜ましょう untuk memutuskan bagi orang lain: untuk mengajak dengan halus, pakai 〜ませんか."
+        }
+      ]
+    },
+    {
+      "slug": "n5-te-sequence",
+      "pattern": "V1(て)、 V2",
+      "meaning": {
+        "en": "V1 and then V2",
+        "id": "V1 lalu V2"
+      },
+      "explanation": {
+        "en": "The て form joins actions in the order they happen. Only the last verb shows the tense: あさ おきて、シャワーを あびて、でかけました.",
+        "id": "Bentuk て menyambung kegiatan sesuai urutannya. Hanya kata kerja terakhir yang menunjukkan kala: あさ おきて、シャワーを あびて、でかけました."
+      },
+      "examples": [
+        {
+          "ja": "やさいを きって、なべに いれます。",
+          "translation": {
+            "en": "I cut the vegetables and put them in the pot.",
+            "id": "Saya memotong sayur lalu memasukkannya ke panci."
+          }
+        },
+        {
+          "ja": "あさ おきて、シャワーを あびます。",
+          "translation": {
+            "en": "I get up in the morning and take a shower.",
+            "id": "Pagi hari saya bangun lalu mandi."
+          }
+        }
+      ],
+      "commonErrors": [
+        {
+          "en": "Putting every verb in the past: おきました、あびました works but sounds choppy; join them with the て form.",
+          "id": "Membuat semua kata kerja lampau: おきました、あびました bisa, tetapi terdengar terputus-putus; sambungkan dengan bentuk て."
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "source": "Original practice sentences for N5 · Feelings and opinions.",
+  "level": "n5",
+  "items": [
+    {
+      "slug": "n5-amari-1",
+      "text": "この えいがは あまり おもしろくないです。",
+      "tokens": ["この", "えいが", "は", "あまり", "おもしろくないです"],
+      "grammar": "n5-amari",
+      "translation": {
+        "en": "This film isn't very interesting.",
+        "id": "Film ini tidak begitu menarik."
+      }
+    },
+    {
+      "slug": "n5-amari-2",
+      "text": "あまり テレビを みません。",
+      "tokens": ["あまり", "テレビ", "を", "みません"],
+      "grammar": "n5-amari",
+      "translation": {
+        "en": "I don't watch TV much.",
+        "id": "Saya jarang menonton TV."
+      }
+    }
+  ]
+}

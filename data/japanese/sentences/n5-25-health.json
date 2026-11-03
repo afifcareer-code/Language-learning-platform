@@ -1,0 +1,46 @@
+{
+  "source": "Original practice sentences for N5 · Body and health.",
+  "level": "n5",
+  "items": [
+    {
+      "slug": "n5-wa-ga-1",
+      "text": "あたまが いたいです。",
+      "tokens": ["あたま", "が", "いたいです"],
+      "grammar": "n5-wa-ga",
+      "translation": {
+        "en": "I have a headache.",
+        "id": "Kepala saya sakit."
+      }
+    },
+    {
+      "slug": "n5-wa-ga-2",
+      "text": "あには せが たかいです。",
+      "tokens": ["あに", "は", "せ", "が", "たかいです"],
+      "grammar": "n5-wa-ga",
+      "translation": {
+        "en": "My older brother is tall.",
+        "id": "Kakak laki-laki saya tinggi badannya."
+      }
+    },
+    {
+      "slug": "n5-kara-reason-1",
+      "text": "ねつが あるから、きょうは やすみます。",
+      "tokens": ["ねつ", "が", "ある", "から", "きょう", "は", "やすみます"],
+      "grammar": "n5-kara-reason",
+      "translation": {
+        "en": "I have a fever, so I'm taking today off.",
+        "id": "Karena demam, hari ini saya libur."
+      }
+    },
+    {
+      "slug": "n5-kara-reason-2",
+      "text": "つかれたから、はやく ねます。",
+      "tokens": ["つかれた", "から", "はやく", "ねます"],
+      "grammar": "n5-kara-reason",
+      "translation": {
+        "en": "I'm tired, so I'll go to bed early.",
+        "id": "Karena lelah, saya tidur lebih awal."
+      }
+    }
+  ]
+}

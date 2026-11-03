@@ -1,0 +1,74 @@
+{
+  "source": "Original grammar explanations for N5 · Work and the telephone, written for this project.",
+  "level": "n5",
+  "items": [
+    {
+      "slug": "n5-ni-person",
+      "pattern": "N に V (to a person)",
+      "meaning": {
+        "en": "V to N (a person)",
+        "id": "V kepada N"
+      },
+      "explanation": {
+        "en": "に marks the person who receives an action: ともだちに でんわを かけます, せんせいに てがみを かきます, ははに あいます.",
+        "id": "に menandai orang yang menerima suatu tindakan: ともだちに でんわを かけます, せんせいに てがみを かきます, ははに あいます."
+      },
+      "examples": [
+        {
+          "ja": "よる ともだちに でんわを かけました。",
+          "translation": {
+            "en": "I called a friend in the evening.",
+            "id": "Malam hari saya menelepon teman."
+          }
+        },
+        {
+          "ja": "あした かいしゃの ひとに あいます。",
+          "translation": {
+            "en": "Tomorrow I'm meeting someone from the company.",
+            "id": "Besok saya bertemu orang dari perusahaan."
+          }
+        }
+      ],
+      "commonErrors": [
+        {
+          "en": "Using を with あう: ははを あいます is wrong; say ははに あいます.",
+          "id": "Memakai を dengan あう: ははを あいます salah; katakan ははに あいます."
+        }
+      ]
+    },
+    {
+      "slug": "n5-ne-yo",
+      "pattern": "S ね / S よ",
+      "meaning": {
+        "en": "…, isn't it? / …, you know",
+        "id": "…, ya? / …, lho"
+      },
+      "explanation": {
+        "en": "ね at the end looks for agreement: いい てんきですね. よ gives the listener new information: この みせは やすいですよ.",
+        "id": "ね di akhir kalimat mencari persetujuan: いい てんきですね. よ memberi informasi baru kepada lawan bicara: この みせは やすいですよ."
+      },
+      "examples": [
+        {
+          "ja": "きょうは いい てんきですね。",
+          "translation": {
+            "en": "Nice weather today, isn't it?",
+            "id": "Hari ini cuacanya bagus, ya."
+          }
+        },
+        {
+          "ja": "あの みせは やすいですよ。",
+          "translation": {
+            "en": "That shop is cheap, you know.",
+            "id": "Toko itu murah, lho."
+          }
+        }
+      ],
+      "commonErrors": [
+        {
+          "en": "Using よ too often can sound pushy; use it when you really tell something new.",
+          "id": "Terlalu sering memakai よ bisa terdengar memaksa; pakai ketika benar-benar memberi informasi baru."
+        }
+      ]
+    }
+  ]
+}

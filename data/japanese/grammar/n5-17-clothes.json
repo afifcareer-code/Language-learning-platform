@@ -1,0 +1,74 @@
+{
+  "source": "Original grammar explanations for N5 · Clothes, written for this project.",
+  "level": "n5",
+  "items": [
+    {
+      "slug": "n5-te-iru-state",
+      "pattern": "V(て) います (state)",
+      "meaning": {
+        "en": "is wearing; lives; is married…",
+        "id": "sedang memakai; tinggal; sudah menikah…"
+      },
+      "explanation": {
+        "en": "With some verbs 〜て います describes a state that continues after an action: めがねを かけて います (is wearing glasses), とうきょうに すんで います (lives in Tokyo).",
+        "id": "Dengan beberapa kata kerja, 〜て います menggambarkan keadaan yang berlanjut setelah suatu tindakan: めがねを かけて います (memakai kacamata), とうきょうに すんで います (tinggal di Tokyo)."
+      },
+      "examples": [
+        {
+          "ja": "せんせいは めがねを かけて います。",
+          "translation": {
+            "en": "The teacher is wearing glasses.",
+            "id": "Guru memakai kacamata."
+          }
+        },
+        {
+          "ja": "あには あおい シャツを きて います。",
+          "translation": {
+            "en": "My older brother is wearing a blue shirt.",
+            "id": "Kakak laki-laki saya memakai kemeja biru."
+          }
+        }
+      ],
+      "commonErrors": [
+        {
+          "en": "Saying すみます for where you live: say すんで います.",
+          "id": "Mengatakan すみます untuk tempat tinggal: katakan すんで います."
+        }
+      ]
+    },
+    {
+      "slug": "n5-mou-mada",
+      "pattern": "もう V ました / まだ V て いません",
+      "meaning": {
+        "en": "already did V / have not V-ed yet",
+        "id": "sudah V / belum V"
+      },
+      "explanation": {
+        "en": "もう + past means 'already': もう たべました. 'Not yet' is まだ + 〜て いません: まだ たべて いません. The short answer is いいえ、まだです.",
+        "id": "もう + bentuk lampau berarti 'sudah': もう たべました. 'Belum' adalah まだ + 〜て いません: まだ たべて いません. Jawaban singkatnya いいえ、まだです."
+      },
+      "examples": [
+        {
+          "ja": "もう ひるごはんを たべましたか。",
+          "translation": {
+            "en": "Have you had lunch already?",
+            "id": "Sudah makan siang?"
+          }
+        },
+        {
+          "ja": "まだ しゅくだいを して いません。",
+          "translation": {
+            "en": "I haven't done my homework yet.",
+            "id": "Saya belum mengerjakan PR."
+          }
+        }
+      ],
+      "commonErrors": [
+        {
+          "en": "Saying まだ たべませんでした for 'not yet': that means 'I did not eat (then)'; use まだ たべて いません.",
+          "id": "Mengatakan まだ たべませんでした untuk 'belum': itu berarti 'tidak makan (waktu itu)'; pakai まだ たべて いません."
+        }
+      ]
+    }
+  ]
+}
