@@ -15,7 +15,7 @@
       },
       "examples": [
         {
-          "ja": "えを かくのが すきです。",
+          "ja": "えを 書《か》くのが すきです。",
           "translation": {
             "en": "I like drawing pictures.",
             "id": "Saya suka menggambar."
@@ -49,7 +49,7 @@
       },
       "examples": [
         {
-          "ja": "ははは りょうりが じょうずです。",
+          "ja": "母《はは》は りょうりが じょうずです。",
           "translation": {
             "en": "My mother is good at cooking.",
             "id": "Ibu saya pandai memasak."

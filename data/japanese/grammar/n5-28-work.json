@@ -15,7 +15,7 @@
       },
       "examples": [
         {
-          "ja": "よる ともだちに でんわを かけました。",
+          "ja": "よる ともだちに 電話《でんわ》を かけました。",
           "translation": {
             "en": "I called a friend in the evening.",
             "id": "Malam hari saya menelepon teman."
@@ -49,7 +49,7 @@
       },
       "examples": [
         {
-          "ja": "きょうは いい てんきですね。",
+          "ja": "今日《きょう》は いい 天気《てんき》ですね。",
           "translation": {
             "en": "Nice weather today, isn't it?",
             "id": "Hari ini cuacanya bagus, ya."

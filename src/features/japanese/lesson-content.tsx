@@ -1,3 +1,5 @@
+import { RubyText } from "./ruby-text";
+import { rubyReading } from "@/languages/japanese/ruby";
 import { SpeakButton } from "@/audio/speak-button";
 import type { ContentItem } from "@/core/learning";
 import { Card, CardTitle } from "@/components/ui/card";
@@ -100,10 +102,10 @@ export function JapaneseLessonContent({
                 <ul className="mt-2 grid gap-3">
                   {point.examples.map((example, i) => (
                     <li key={i} className="flex items-start gap-3">
-                      <SpeakButton text={example.ja} lang="ja" className="size-10 shrink-0" />
+                      <SpeakButton text={rubyReading(example.ja)} lang="ja" className="size-10 shrink-0" />
                       <span>
                         <span lang="ja" className="block font-jp text-lg">
-                          {example.ja}
+                          <RubyText text={example.ja} />
                         </span>
                         {example.romaji && (
                           <span className="block text-sm text-muted italic">{example.romaji}</span>

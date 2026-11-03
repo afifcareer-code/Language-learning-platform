@@ -1,3 +1,4 @@
+import { RubyText } from "@/features/japanese/ruby-text";
 import type { PracticeItem } from "@/features/japanese/practice-items";
 import { cn } from "@/shared/cn";
 
@@ -13,7 +14,7 @@ export function PromptDisplay({ item }: { item: PracticeItem }) {
         item.displayStyle === "text" && "text-2xl leading-snug font-semibold md:text-3xl",
       )}
     >
-      {item.display}
+      {item.displayLang === "ja" ? <RubyText text={item.display} /> : item.display}
     </p>
   );
 }

@@ -4,8 +4,8 @@
   "items": [
     {
       "slug": "n4-sonkeigo-1",
-      "text": "せんせいは なんと おっしゃいましたか。",
-      "tokens": ["せんせい", "は", "なん", "と", "おっしゃいました", "か"],
+      "text": "先生《せんせい》は なんと おっしゃいましたか。",
+      "tokens": ["先生《せんせい》", "は", "なん", "と", "おっしゃいました", "か"],
       "grammar": "n4-sonkeigo",
       "translation": {
         "en": "What did the teacher say?",
@@ -24,8 +24,8 @@
     },
     {
       "slug": "n4-kenjougo-1",
-      "text": "わたしは アフィフと もうします。",
-      "tokens": ["わたし", "は", "アフィフ", "と", "もうします"],
+      "text": "私《わたし》は アフィフと もうします。",
+      "tokens": ["私《わたし》", "は", "アフィフ", "と", "もうします"],
       "grammar": "n4-kenjougo",
       "translation": {
         "en": "My name is Afif.",
@@ -34,8 +34,8 @@
     },
     {
       "slug": "n4-kenjougo-2",
-      "text": "あした また まいります。",
-      "tokens": ["あした", "また", "まいります"],
+      "text": "明日《あした》 また まいります。",
+      "tokens": ["明日《あした》", "また", "まいります"],
       "grammar": "n4-kenjougo",
       "translation": {
         "en": "I'll come again tomorrow.",

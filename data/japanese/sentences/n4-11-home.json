@@ -14,8 +14,8 @@
     },
     {
       "slug": "n4-te-aru-2",
-      "text": "ビールは れいぞうこに いれて あります。",
-      "tokens": ["ビール", "は", "れいぞうこ", "に", "いれて", "あります"],
+      "text": "ビールは れいぞうこに 入《い》れて あります。",
+      "tokens": ["ビール", "は", "れいぞうこ", "に", "入《い》れて", "あります"],
       "grammar": "n4-te-aru",
       "translation": {
         "en": "The beer has been put in the fridge.",
@@ -24,8 +24,8 @@
     },
     {
       "slug": "n4-te-oku-1",
-      "text": "りょこうの まえに ホテルを よやくして おきます。",
-      "tokens": ["りょこう", "の", "まえに", "ホテル", "を", "よやくして", "おきます"],
+      "text": "旅行《りょこう》の 前《まえ》に ホテルを よやくして おきます。",
+      "tokens": ["旅行《りょこう》", "の", "前《まえ》に", "ホテル", "を", "よやくして", "おきます"],
       "grammar": "n4-te-oku",
       "translation": {
         "en": "I'll book the hotel before the trip.",
@@ -34,8 +34,8 @@
     },
     {
       "slug": "n4-te-oku-2",
-      "text": "まどを あけて おいて ください。",
-      "tokens": ["まど", "を", "あけて", "おいて", "ください"],
+      "text": "まどを 開《あ》けて おいて ください。",
+      "tokens": ["まど", "を", "開《あ》けて", "おいて", "ください"],
       "grammar": "n4-te-oku",
       "translation": {
         "en": "Please leave the window open.",

@@ -1,5 +1,6 @@
 "use client";
 
+import { RubyText } from "@/features/japanese/ruby-text";
 import { useRef, useState } from "react";
 import { AudioPlayButton } from "@/audio/audio-play-button";
 import { useSpeech } from "@/audio/use-speech";
@@ -83,7 +84,7 @@ export function TextWritingExercise({
                   : t("practice.textWriting.model")}
               </p>
               <p lang="ja" className="font-jp text-3xl leading-snug" data-testid="writing-model">
-                {item.display}
+                <RubyText text={item.display} />
               </p>
             </div>
             <p className="text-sm text-muted">{t("practice.textWriting.compare")}</p>

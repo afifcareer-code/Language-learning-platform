@@ -15,14 +15,14 @@
       },
       "examples": [
         {
-          "ja": "かれは たぶん こないだろう。",
+          "ja": "かれは たぶん 来《こ》ないだろう。",
           "translation": {
             "en": "He probably won't come.",
             "id": "Dia mungkin tidak datang."
           }
         },
         {
-          "ja": "この しけんは むずかしいでしょう。",
+          "ja": "この 試験《しけん》は むずかしいでしょう。",
           "translation": {
             "en": "This exam will probably be difficult.",
             "id": "Ujian ini mungkin sulit."
@@ -49,7 +49,7 @@
       },
       "examples": [
         {
-          "ja": "そとは さむいみたいです。",
+          "ja": "外《そと》は さむいみたいです。",
           "translation": {
             "en": "It seems cold outside.",
             "id": "Di luar sepertinya dingin."
@@ -83,14 +83,14 @@
       },
       "examples": [
         {
-          "ja": "あの みせは らいげつ しまる らしいです。",
+          "ja": "あの 店《みせ》は 来月《らいげつ》 しまる らしいです。",
           "translation": {
             "en": "Apparently that shop is closing next month.",
             "id": "Kabarnya toko itu tutup bulan depan."
           }
         },
         {
-          "ja": "きょうは はるらしい てんきですね。",
+          "ja": "今日《きょう》は はるらしい 天気《てんき》ですね。",
           "translation": {
             "en": "Today's weather is just like spring, isn't it?",
             "id": "Hari ini cuacanya khas musim semi, ya."

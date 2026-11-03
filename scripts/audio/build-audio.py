@@ -11,7 +11,7 @@ Attribution is required: see public/audio/CREDITS.md.
 Writes public/audio/ja/<id>.mp3 and public/audio/ja/manifest.json
 ({ "<text the app speaks>": "<file>" }). Clips already built are kept.
 """
-import hashlib, json, subprocess, sys, tempfile
+import hashlib, json, re, subprocess, sys, tempfile
 from pathlib import Path
 import numpy as np
 import pyopenjtalk
@@ -20,6 +20,12 @@ from scipy.io import wavfile
 ROOT = Path(__file__).resolve().parents[2]
 DATA = ROOT / "data" / "japanese"
 OUT = ROOT / "public" / "audio" / "ja"
+
+
+def reading(text):
+    """The text as read aloud: furigana 漢字《よみ》 replaced by its reading (｜ marks where the base starts)."""
+    text = re.sub(r"｜([^《》｜]+)《([^》]+)》", r"\2", text)
+    return re.sub(r"[\u4e00-\u9fff\u3005]+《([^》]+)》", r"\1", text)
 
 
 def texts():
@@ -32,7 +38,7 @@ def texts():
             found.append((v["kana"], False))
     for f in sorted((DATA / "sentences").glob("*.json")):
         for s in json.loads(f.read_text())["items"]:
-            found.append((s["text"], False))
+            found.append((reading(s["text"]), False))
     for f in sorted((DATA / "native").glob("*.json")):
         for s in json.loads(f.read_text())["items"]:
             found.append((s["text"], False))

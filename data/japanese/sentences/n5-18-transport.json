@@ -4,8 +4,8 @@
   "items": [
     {
       "slug": "n5-de-means-1",
-      "text": "まいにち でんしゃで かいしゃへ いきます。",
-      "tokens": ["まいにち", "でんしゃ", "で", "かいしゃ", "へ", "いきます"],
+      "text": "毎日《まいにち》 電車《でんしゃ》で かいしゃへ いきます。",
+      "tokens": ["毎日《まいにち》", "電車《でんしゃ》", "で", "かいしゃ", "へ", "いきます"],
       "grammar": "n5-de-means",
       "translation": {
         "en": "I go to work by train every day.",

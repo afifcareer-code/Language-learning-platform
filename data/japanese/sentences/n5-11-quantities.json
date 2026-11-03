@@ -14,8 +14,8 @@
     },
     {
       "slug": "n5-dake-2",
-      "text": "ひとつだけ ください。",
-      "tokens": ["ひとつ", "だけ", "ください"],
+      "text": "一《ひと》つだけ ください。",
+      "tokens": ["一《ひと》つ", "だけ", "ください"],
       "grammar": "n5-dake",
       "translation": {
         "en": "Just one, please.",

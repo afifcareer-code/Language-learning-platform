@@ -14,8 +14,8 @@
     },
     {
       "slug": "n4-jidoushi-tadoushi-2",
-      "text": "でんきを けして ください。",
-      "tokens": ["でんき", "を", "けして", "ください"],
+      "text": "電気《でんき》を けして ください。",
+      "tokens": ["電気《でんき》", "を", "けして", "ください"],
       "grammar": "n4-jidoushi-tadoushi",
       "translation": {
         "en": "Please turn off the light.",
@@ -24,8 +24,8 @@
     },
     {
       "slug": "n4-ku-suru-1",
-      "text": "おとを すこし ちいさく して ください。",
-      "tokens": ["おと", "を", "すこし", "ちいさく", "して", "ください"],
+      "text": "音《おと》を 少《すこ》し 小《ちい》さく して ください。",
+      "tokens": ["音《おと》", "を", "少《すこ》し", "小《ちい》さく", "して", "ください"],
       "grammar": "n4-ku-suru",
       "translation": {
         "en": "Please turn the sound down a little.",

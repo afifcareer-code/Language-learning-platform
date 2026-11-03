@@ -4,8 +4,8 @@
   "items": [
     {
       "slug": "n4-you-na-1",
-      "text": "それは ゆめの ような はなしです。",
-      "tokens": ["それ", "は", "ゆめ", "の", "ような", "はなし", "です"],
+      "text": "それは ゆめの ような 話《はなし》です。",
+      "tokens": ["それ", "は", "ゆめ", "の", "ような", "話《はなし》", "です"],
       "grammar": "n4-you-na",
       "translation": {
         "en": "That's like a dream.",
@@ -24,8 +24,8 @@
     },
     {
       "slug": "n4-to-onaji-1",
-      "text": "わたしの かばんは あなたのと おなじです。",
-      "tokens": ["わたし", "の", "かばん", "は", "あなた", "の", "と", "おなじです"],
+      "text": "私《わたし》の かばんは あなたのと 同《おな》じです。",
+      "tokens": ["私《わたし》", "の", "かばん", "は", "あなた", "の", "と", "同《おな》じです"],
       "grammar": "n4-to-onaji",
       "translation": {
         "en": "My bag is the same as yours.",
@@ -34,8 +34,8 @@
     },
     {
       "slug": "n4-to-onaji-2",
-      "text": "にほんの しゅうかんは インドネシアと ちがいます。",
-      "tokens": ["にほん", "の", "しゅうかん", "は", "インドネシア", "と", "ちがいます"],
+      "text": "日本《にほん》の しゅうかんは インドネシアと ちがいます。",
+      "tokens": ["日本《にほん》", "の", "しゅうかん", "は", "インドネシア", "と", "ちがいます"],
       "grammar": "n4-to-onaji",
       "translation": {
         "en": "Japanese customs are different from Indonesian ones.",

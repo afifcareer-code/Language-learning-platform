@@ -15,14 +15,14 @@
       },
       "examples": [
         {
-          "ja": "ねる まえに はを みがきます。",
+          "ja": "ねる 前《まえ》に はを みがきます。",
           "translation": {
             "en": "I brush my teeth before going to bed.",
             "id": "Saya menggosok gigi sebelum tidur."
           }
         },
         {
-          "ja": "しごとの まえに コーヒーを のみます。",
+          "ja": "しごとの 前《まえ》に コーヒーを のみます。",
           "translation": {
             "en": "I drink coffee before work.",
             "id": "Saya minum kopi sebelum bekerja."
@@ -49,14 +49,14 @@
       },
       "examples": [
         {
-          "ja": "ばんごはんを たべた あとで テレビを みます。",
+          "ja": "ばんごはんを たべた 後《あと》で テレビを みます。",
           "translation": {
             "en": "After dinner I watch TV.",
             "id": "Setelah makan malam saya menonton TV."
           }
         },
         {
-          "ja": "じゅぎょうの あとで としょかんへ いきます。",
+          "ja": "じゅぎょうの 後《あと》で としょかんへ いきます。",
           "translation": {
             "en": "After class I go to the library.",
             "id": "Setelah pelajaran saya pergi ke perpustakaan."

@@ -15,14 +15,14 @@
       },
       "examples": [
         {
-          "ja": "この みせは やすいし、おいしいし、よく きます。",
+          "ja": "この 店《みせ》は やすいし、おいしいし、よく きます。",
           "translation": {
             "en": "This place is cheap and the food is good, so I come here often.",
             "id": "Toko ini murah, enak lagi, jadi saya sering ke sini."
           }
         },
         {
-          "ja": "きょうは あめだし、さむいし、でかけたくないです。",
+          "ja": "今日《きょう》は あめだし、さむいし、でかけたくないです。",
           "translation": {
             "en": "It's raining and cold today, so I don't want to go out.",
             "id": "Hari ini hujan, dingin pula, jadi saya malas keluar."
@@ -49,7 +49,7 @@
       },
       "examples": [
         {
-          "ja": "にほんごで はなすのは たのしいです。",
+          "ja": "にほんごで はなすのは 楽《たの》しいです。",
           "translation": {
             "en": "Speaking in Japanese is fun.",
             "id": "Berbicara dalam bahasa Jepang itu menyenangkan."

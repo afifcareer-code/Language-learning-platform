@@ -1,3 +1,4 @@
+import { rubyReading } from "@/languages/japanese/ruby";
 import { existsSync, readFileSync, readdirSync } from "node:fs";
 import { describe, expect, it } from "vitest";
 
@@ -14,7 +15,7 @@ describe("shipped Japanese audio clips", () => {
         read(`data/japanese/vocabulary/${f}`).items.map((v: { kana: string }) => v.kana),
       ),
       ...readdirSync("data/japanese/sentences").flatMap((f) =>
-        read(`data/japanese/sentences/${f}`).items.map((s: { text: string }) => s.text),
+        read(`data/japanese/sentences/${f}`).items.map((s: { text: string }) => rubyReading(s.text)),
       ),
       ...readdirSync("data/japanese/native")
         .filter((f) => f.endsWith(".json"))

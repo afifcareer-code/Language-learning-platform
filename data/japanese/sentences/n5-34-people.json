@@ -4,8 +4,8 @@
   "items": [
     {
       "slug": "n5-to-and-1",
-      "text": "ちちと ははは げんきです。",
-      "tokens": ["ちち", "と", "はは", "は", "げんきです"],
+      "text": "父《ちち》と 母《はは》は げんきです。",
+      "tokens": ["父《ちち》", "と", "母《はは》", "は", "げんきです"],
       "grammar": "n5-to-and",
       "translation": {
         "en": "My father and mother are well.",
@@ -24,8 +24,8 @@
     },
     {
       "slug": "n5-nansai-1",
-      "text": "おこさんは なんさいですか。",
-      "tokens": ["おこさん", "は", "なんさい", "です", "か"],
+      "text": "お子《こ》さんは なんさいですか。",
+      "tokens": ["お子《こ》さん", "は", "なんさい", "です", "か"],
       "grammar": "n5-nansai",
       "translation": {
         "en": "How old is your child?",

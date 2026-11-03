@@ -15,14 +15,14 @@
       },
       "examples": [
         {
-          "ja": "この サラダを たべて みて ください。",
+          "ja": "この サラダを 食《た》べて みて ください。",
           "translation": {
             "en": "Please try this salad.",
             "id": "Coba makan salad ini."
           }
         },
         {
-          "ja": "あたらしい みせに いって みました。",
+          "ja": "新《あたら》しい 店《みせ》に いって みました。",
           "translation": {
             "en": "I tried going to the new shop.",
             "id": "Saya mencoba pergi ke toko baru itu."
@@ -49,14 +49,14 @@
       },
       "examples": [
         {
-          "ja": "この ペンは かきやすいです。",
+          "ja": "この ペンは 書《か》きやすいです。",
           "translation": {
             "en": "This pen is easy to write with.",
             "id": "Pena ini enak dipakai menulis."
           }
         },
         {
-          "ja": "この にくは かたくて かみにくいです。",
+          "ja": "この 肉《にく》は かたくて かみにくいです。",
           "translation": {
             "en": "This meat is tough and hard to chew.",
             "id": "Daging ini keras dan sulit dikunyah."
@@ -83,14 +83,14 @@
       },
       "examples": [
         {
-          "ja": "この なべは スープを つくるのに べんりです。",
+          "ja": "この なべは スープを 作《つく》るのに べんりです。",
           "translation": {
             "en": "This pot is handy for making soup.",
             "id": "Panci ini praktis untuk membuat sup."
           }
         },
         {
-          "ja": "はさみは かみを きるのに つかいます。",
+          "ja": "はさみは かみを きるのに 使《つか》います。",
           "translation": {
             "en": "Scissors are used for cutting paper.",
             "id": "Gunting dipakai untuk memotong kertas."

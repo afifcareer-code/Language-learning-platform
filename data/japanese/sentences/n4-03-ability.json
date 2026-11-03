@@ -14,8 +14,8 @@
     },
     {
       "slug": "n4-kanji-yomemasu",
-      "text": "かんじが すこし よめます。",
-      "tokens": ["かんじ", "が", "すこし", "よめます"],
+      "text": "漢字《かんじ》が 少《すこ》し 読《よ》めます。",
+      "tokens": ["漢字《かんじ》", "が", "少《すこ》し", "読《よ》めます"],
       "grammar": "n4-potential",
       "translation": {
         "en": "I can read a little kanji.",
@@ -44,8 +44,8 @@
     },
     {
       "slug": "n4-hanaseru-you-ni",
-      "text": "にほんごが はなせるように なりました。",
-      "tokens": ["にほんご", "が", "はなせる", "ように", "なりました"],
+      "text": "にほんごが 話《はな》せるように なりました。",
+      "tokens": ["にほんご", "が", "話《はな》せる", "ように", "なりました"],
       "grammar": "n4-you-ni-naru",
       "translation": {
         "en": "I have become able to speak Japanese.",
@@ -54,8 +54,8 @@
     },
     {
       "slug": "n4-unten-dekiru-you-ni",
-      "text": "くるまを うんてん できるように なりたいです。",
-      "tokens": ["くるま", "を", "うんてん", "できる", "ように", "なりたいです"],
+      "text": "車《くるま》を 運転《うんてん》 できるように なりたいです。",
+      "tokens": ["車《くるま》", "を", "運転《うんてん》", "できる", "ように", "なりたいです"],
       "grammar": "n4-you-ni-naru",
       "translation": {
         "en": "I want to become able to drive a car.",

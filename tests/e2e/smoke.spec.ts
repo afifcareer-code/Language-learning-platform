@@ -432,3 +432,8 @@ test("N4 is a level with its own lessons, and its first lesson teaches kanji", a
   await page.getByRole("group").last().getByRole("button").first().click();
   await expect(page.getByRole("status")).toBeVisible();
 });
+
+test("lesson sentences show learned kanji with furigana", async ({ page }) => {
+  await page.goto("/learn/n4-01-plans");
+  await expect(page.locator("ruby rt").first()).toBeVisible();
+});

@@ -24,8 +24,8 @@
     },
     {
       "slug": "n5-naide-kudasai-1",
-      "text": "でんきを けさないで ください。",
-      "tokens": ["でんき", "を", "けさないで", "ください"],
+      "text": "電気《でんき》を けさないで ください。",
+      "tokens": ["電気《でんき》", "を", "けさないで", "ください"],
       "grammar": "n5-naide-kudasai",
       "translation": {
         "en": "Please don't turn off the light.",

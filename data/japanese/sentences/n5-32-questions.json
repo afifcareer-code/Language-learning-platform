@@ -4,8 +4,8 @@
   "items": [
     {
       "slug": "n5-nanimo-nai-1",
-      "text": "けさは なにも たべませんでした。",
-      "tokens": ["けさ", "は", "なにも", "たべませんでした"],
+      "text": "けさは なにも 食《た》べませんでした。",
+      "tokens": ["けさ", "は", "なにも", "食《た》べませんでした"],
       "grammar": "n5-nanimo-nai",
       "translation": {
         "en": "I didn't eat anything this morning.",
@@ -24,8 +24,8 @@
     },
     {
       "slug": "n5-doushite-1",
-      "text": "どうして きのう やすみましたか。",
-      "tokens": ["どうして", "きのう", "やすみました", "か"],
+      "text": "どうして きのう 休《やす》みましたか。",
+      "tokens": ["どうして", "きのう", "休《やす》みました", "か"],
       "grammar": "n5-doushite",
       "translation": {
         "en": "Why were you absent yesterday?",

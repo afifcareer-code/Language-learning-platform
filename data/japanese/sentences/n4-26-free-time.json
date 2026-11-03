@@ -4,8 +4,8 @@
   "items": [
     {
       "slug": "n4-ka-dou-ka-1",
-      "text": "パーティーに いけるか どうか わかりません。",
-      "tokens": ["パーティー", "に", "いける", "か", "どうか", "わかりません"],
+      "text": "パーティーに 行《い》けるか どうか わかりません。",
+      "tokens": ["パーティー", "に", "行《い》ける", "か", "どうか", "わかりません"],
       "grammar": "n4-ka-dou-ka",
       "translation": {
         "en": "I don't know whether I can go to the party.",
@@ -14,8 +14,8 @@
     },
     {
       "slug": "n4-ka-dou-ka-2",
-      "text": "あじが いいか どうか たべて みて ください。",
-      "tokens": ["あじ", "が", "いい", "か", "どうか", "たべて", "みて", "ください"],
+      "text": "味《あじ》が いいか どうか 食《た》べて みて ください。",
+      "tokens": ["味《あじ》", "が", "いい", "か", "どうか", "食《た》べて", "みて", "ください"],
       "grammar": "n4-ka-dou-ka",
       "translation": {
         "en": "Please taste it to see whether it's good.",
@@ -24,8 +24,8 @@
     },
     {
       "slug": "n4-koto-ga-aru-sometimes-1",
-      "text": "ときどき あさごはんを たべない ことが あります。",
-      "tokens": ["ときどき", "あさごはん", "を", "たべない", "こと", "が", "あります"],
+      "text": "ときどき あさごはんを 食《た》べない ことが あります。",
+      "tokens": ["ときどき", "あさごはん", "を", "食《た》べない", "こと", "が", "あります"],
       "grammar": "n4-koto-ga-aru-sometimes",
       "translation": {
         "en": "Sometimes I don't eat breakfast.",
@@ -34,8 +34,8 @@
     },
     {
       "slug": "n4-koto-ga-aru-sometimes-2",
-      "text": "この みちは あさ こむ ことが あります。",
-      "tokens": ["この", "みち", "は", "あさ", "こむ", "こと", "が", "あります"],
+      "text": "この 道《みち》は 朝《あさ》 こむ ことが あります。",
+      "tokens": ["この", "道《みち》", "は", "朝《あさ》", "こむ", "こと", "が", "あります"],
       "grammar": "n4-koto-ga-aru-sometimes",
       "translation": {
         "en": "This road is sometimes busy in the morning.",

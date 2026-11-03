@@ -14,8 +14,8 @@
     },
     {
       "slug": "n4-kimono-kita-koto-nai",
-      "text": "きものを きた ことが ありません。",
-      "tokens": ["きもの", "を", "きた", "こと", "が", "ありません"],
+      "text": "着物《きもの》を きた ことが ありません。",
+      "tokens": ["着物《きもの》", "を", "きた", "こと", "が", "ありません"],
       "grammar": "n4-ta-koto-ga-aru",
       "translation": {
         "en": "I have never worn a kimono.",
@@ -44,8 +44,8 @@
     },
     {
       "slug": "n4-ongaku-kikinagara",
-      "text": "おんがくを ききながら べんきょうします。",
-      "tokens": ["おんがく", "を", "ききながら", "べんきょうします"],
+      "text": "音楽《おんがく》を 聞《き》きながら べんきょうします。",
+      "tokens": ["音楽《おんがく》", "を", "聞《き》きながら", "べんきょうします"],
       "grammar": "n4-nagara",
       "translation": {
         "en": "I study while listening to music.",
@@ -54,8 +54,8 @@
     },
     {
       "slug": "n4-arukinagara-denwa",
-      "text": "あるきながら でんわを しないで ください。",
-      "tokens": ["あるきながら", "でんわ", "を", "しないで", "ください"],
+      "text": "あるきながら 電話《でんわ》を しないで ください。",
+      "tokens": ["あるきながら", "電話《でんわ》", "を", "しないで", "ください"],
       "grammar": "n4-nagara",
       "translation": {
         "en": "Please don't talk on the phone while walking.",

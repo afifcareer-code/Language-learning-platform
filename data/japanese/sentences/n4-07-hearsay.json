@@ -14,8 +14,8 @@
     },
     {
       "slug": "n4-kekkon-suru-sou",
-      "text": "たなかさんは らいげつ けっこんするそうです。",
-      "tokens": ["たなか", "さん", "は", "らいげつ", "けっこんする", "そうです"],
+      "text": "たなかさんは 来月《らいげつ》 けっこんするそうです。",
+      "tokens": ["たなか", "さん", "は", "来月《らいげつ》", "けっこんする", "そうです"],
       "grammar": "n4-sou-hearsay",
       "translation": {
         "en": "I hear Mr Tanaka is getting married next month.",
@@ -34,8 +34,8 @@
     },
     {
       "slug": "n4-ame-furisou",
-      "text": "いまにも あめが ふりそうです。",
-      "tokens": ["いまにも", "あめ", "が", "ふりそう", "です"],
+      "text": "今《いま》にも あめが ふりそうです。",
+      "tokens": ["今《いま》にも", "あめ", "が", "ふりそう", "です"],
       "grammar": "n4-sou-appearance",
       "translation": {
         "en": "It looks like it will rain at any moment.",
@@ -54,8 +54,8 @@
     },
     {
       "slug": "n4-ninki-ga-aru-you",
-      "text": "その みせは にんきが ある ようです。",
-      "tokens": ["その", "みせ", "は", "にんき", "が", "ある", "よう", "です"],
+      "text": "その 店《みせ》は 人気《にんき》が ある ようです。",
+      "tokens": ["その", "店《みせ》", "は", "人気《にんき》", "が", "ある", "よう", "です"],
       "grammar": "n4-you-da",
       "translation": {
         "en": "That shop seems to be popular.",

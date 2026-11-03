@@ -4,8 +4,8 @@
   "items": [
     {
       "slug": "n4-okaeri-ni-narimashita",
-      "text": "しゃちょうは もう おかえりに なりました。",
-      "tokens": ["しゃちょう", "は", "もう", "おかえりに", "なりました"],
+      "text": "社長《しゃちょう》は もう おかえりに なりました。",
+      "tokens": ["社長《しゃちょう》", "は", "もう", "おかえりに", "なりました"],
       "grammar": "n4-o-ni-naru",
       "translation": {
         "en": "The president has already gone home.",
@@ -14,8 +14,8 @@
     },
     {
       "slug": "n4-oyomi-ni-narimashita",
-      "text": "せんせいは この ほんを およみに なりましたか。",
-      "tokens": ["せんせい", "は", "この", "ほん", "を", "およみに", "なりました", "か"],
+      "text": "先生《せんせい》は この ほんを およみに なりましたか。",
+      "tokens": ["先生《せんせい》", "は", "この", "ほん", "を", "およみに", "なりました", "か"],
       "grammar": "n4-o-ni-naru",
       "translation": {
         "en": "Have you read this book, sensei?",
@@ -44,8 +44,8 @@
     },
     {
       "slug": "n4-matte-itadakemasenka",
-      "text": "しょうしょう まって いただけませんか。",
-      "tokens": ["しょうしょう", "まって", "いただけません", "か"],
+      "text": "しょうしょう 待《ま》って いただけませんか。",
+      "tokens": ["しょうしょう", "待《ま》って", "いただけません", "か"],
       "grammar": "n4-te-itadakemasenka",
       "translation": {
         "en": "Could you wait a moment, please?",
@@ -54,8 +54,8 @@
     },
     {
       "slug": "n4-setsumei-itadakemasenka",
-      "text": "もう いちど せつめいして いただけませんか。",
-      "tokens": ["もう", "いちど", "せつめいして", "いただけません", "か"],
+      "text": "もう 一度《いちど》 せつめいして いただけませんか。",
+      "tokens": ["もう", "一度《いちど》", "せつめいして", "いただけません", "か"],
       "grammar": "n4-te-itadakemasenka",
       "translation": {
         "en": "Could you explain it once more, please?",

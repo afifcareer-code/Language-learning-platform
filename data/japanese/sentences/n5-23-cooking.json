@@ -24,8 +24,8 @@
     },
     {
       "slug": "n5-te-sequence-1",
-      "text": "やさいを きって、なべに いれます。",
-      "tokens": ["やさい", "を", "きって", "なべ", "に", "いれます"],
+      "text": "やさいを きって、なべに 入《い》れます。",
+      "tokens": ["やさい", "を", "きって", "なべ", "に", "入《い》れます"],
       "grammar": "n5-te-sequence",
       "translation": {
         "en": "I cut the vegetables and put them in the pot.",

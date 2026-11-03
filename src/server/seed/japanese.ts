@@ -1,3 +1,4 @@
+import { stripRuby } from "@/languages/japanese/ruby";
 import {
   KANJI_CONTENT_TYPE,
   kanjiFileSchema,
@@ -202,7 +203,7 @@ async function readItems(root: string): Promise<SeedItem[]> {
         data: sentence satisfies SentenceItemData,
         tags: [`grammar:${sentence.grammar}`],
         level: file.level,
-        display: sentence.text,
+        display: stripRuby(sentence.text),
         translations: Object.fromEntries(
           Object.entries(translation).map(([l, text]) => [
             l,

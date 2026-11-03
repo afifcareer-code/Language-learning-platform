@@ -15,14 +15,14 @@
       },
       "examples": [
         {
-          "ja": "あした パーティーに いく?",
+          "ja": "明日《あした》 パーティーに 行《い》く?",
           "translation": {
             "en": "Are you going to the party tomorrow?",
             "id": "Besok kamu ke pesta?"
           }
         },
         {
-          "ja": "うん、いく。きみも いかない?",
+          "ja": "うん、行《い》く。きみも 行《い》かない?",
           "translation": {
             "en": "Yeah, I'm going. Won't you come too?",
             "id": "Iya, aku pergi. Kamu nggak ikut?"

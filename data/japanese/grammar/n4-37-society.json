@@ -15,7 +15,7 @@
       },
       "examples": [
         {
-          "ja": "こどもの とき、ははに やさいを たべさせられました。",
+          "ja": "こどもの とき、母《はは》に やさいを 食《た》べさせられました。",
           "translation": {
             "en": "As a child I was made to eat vegetables by my mother.",
             "id": "Waktu kecil, saya dipaksa ibu makan sayur."
@@ -49,14 +49,14 @@
       },
       "examples": [
         {
-          "ja": "しゃちょうは なんじに こられますか。",
+          "ja": "社長《しゃちょう》は なんじに こられますか。",
           "translation": {
             "en": "What time will the president be coming?",
             "id": "Bapak direktur akan datang jam berapa?"
           }
         },
         {
-          "ja": "せんせいは この ほんを かかれました。",
+          "ja": "先生《せんせい》は この ほんを 書《か》かれました。",
           "translation": {
             "en": "The professor wrote this book.",
             "id": "Profesor menulis buku ini."

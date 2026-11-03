@@ -4,8 +4,8 @@
   "items": [
     {
       "slug": "n4-ni-tsuite-1",
-      "text": "にほんの れきしに ついて レポートを かきます。",
-      "tokens": ["にほん", "の", "れきし", "に", "ついて", "レポート", "を", "かきます"],
+      "text": "日本《にほん》の れきしに ついて レポートを 書《か》きます。",
+      "tokens": ["日本《にほん》", "の", "れきし", "に", "ついて", "レポート", "を", "書《か》きます"],
       "grammar": "n4-ni-tsuite",
       "translation": {
         "en": "I'm writing a report about Japanese history.",
@@ -14,8 +14,8 @@
     },
     {
       "slug": "n4-ni-tsuite-2",
-      "text": "その もんだいに ついて そうだんしました。",
-      "tokens": ["その", "もんだい", "に", "ついて", "そうだんしました"],
+      "text": "その 問題《もんだい》に ついて そうだんしました。",
+      "tokens": ["その", "問題《もんだい》", "に", "ついて", "そうだんしました"],
       "grammar": "n4-ni-tsuite",
       "translation": {
         "en": "We talked over that problem.",
@@ -34,8 +34,8 @@
     },
     {
       "slug": "n4-passive-indirect-2",
-      "text": "よる あかちゃんに なかれて ねられませんでした。",
-      "tokens": ["よる", "あかちゃん", "に", "なかれて", "ねられませんでした"],
+      "text": "よる 赤《あか》ちゃんに なかれて ねられませんでした。",
+      "tokens": ["よる", "赤《あか》ちゃん", "に", "なかれて", "ねられませんでした"],
       "grammar": "n4-passive-indirect",
       "translation": {
         "en": "The baby cried at night and I couldn't sleep.",

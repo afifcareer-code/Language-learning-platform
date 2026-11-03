@@ -24,8 +24,8 @@
     },
     {
       "slug": "n4-repooto-dasanakereba",
-      "text": "あしたまでに レポートを ださなければ なりません。",
-      "tokens": ["あした", "まで", "に", "レポート", "を", "ださなければ", "なりません"],
+      "text": "あしたまでに レポートを 出《だ》さなければ なりません。",
+      "tokens": ["あした", "まで", "に", "レポート", "を", "出《だ》さなければ", "なりません"],
       "grammar": "n4-nakereba-naranai",
       "translation": {
         "en": "I have to hand in the report by tomorrow.",
@@ -44,8 +44,8 @@
     },
     {
       "slug": "n4-ikanakute-mo-ii",
-      "text": "あしたは がっこうへ いかなくても いいです。",
-      "tokens": ["あした", "は", "がっこう", "へ", "いかなくても", "いいです"],
+      "text": "あしたは 学校《がっこう》へ 行《い》かなくても いいです。",
+      "tokens": ["あした", "は", "学校《がっこう》", "へ", "行《い》かなくても", "いいです"],
       "grammar": "n4-nakute-mo-ii",
       "translation": {
         "en": "You don't have to go to school tomorrow.",

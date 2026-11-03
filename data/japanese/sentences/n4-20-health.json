@@ -4,8 +4,8 @@
   "items": [
     {
       "slug": "n4-hazu-1",
-      "text": "でんしゃは もう ついた はずです。",
-      "tokens": ["でんしゃ", "は", "もう", "ついた", "はず", "です"],
+      "text": "電車《でんしゃ》は もう ついた はずです。",
+      "tokens": ["電車《でんしゃ》", "は", "もう", "ついた", "はず", "です"],
       "grammar": "n4-hazu",
       "translation": {
         "en": "The train should have arrived by now.",
@@ -14,8 +14,8 @@
     },
     {
       "slug": "n4-hazu-2",
-      "text": "かのじょは きょう やすみの はずです。",
-      "tokens": ["かのじょ", "は", "きょう", "やすみ", "の", "はず", "です"],
+      "text": "かのじょは 今日《きょう》 休《やす》みの はずです。",
+      "tokens": ["かのじょ", "は", "今日《きょう》", "休《やす》み", "の", "はず", "です"],
       "grammar": "n4-hazu",
       "translation": {
         "en": "She should be off today.",
@@ -24,8 +24,8 @@
     },
     {
       "slug": "n4-kamoshirenai-1",
-      "text": "あしたは ゆきが ふるかもしれません。",
-      "tokens": ["あした", "は", "ゆき", "が", "ふる", "かもしれません"],
+      "text": "明日《あした》は ゆきが ふるかもしれません。",
+      "tokens": ["明日《あした》", "は", "ゆき", "が", "ふる", "かもしれません"],
       "grammar": "n4-kamoshirenai",
       "translation": {
         "en": "It might snow tomorrow.",
@@ -34,8 +34,8 @@
     },
     {
       "slug": "n4-kamoshirenai-2",
-      "text": "かれは びょうきかもしれません。",
-      "tokens": ["かれ", "は", "びょうき", "かもしれません"],
+      "text": "かれは 病気《びょうき》かもしれません。",
+      "tokens": ["かれ", "は", "病気《びょうき》", "かもしれません"],
       "grammar": "n4-kamoshirenai",
       "translation": {
         "en": "He might be ill.",

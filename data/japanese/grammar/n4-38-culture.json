@@ -22,7 +22,7 @@
           }
         },
         {
-          "ja": "きょうは はやく かえらせて いただきます。",
+          "ja": "今日《きょう》は はやく 帰《かえ》らせて いただきます。",
           "translation": {
             "en": "With your permission, I'll leave early today.",
             "id": "Mohon izin, hari ini saya pulang lebih awal."
@@ -49,14 +49,14 @@
       },
       "examples": [
         {
-          "ja": "にほんへ いくのに ビザが ひつようですか。",
+          "ja": "日本《にほん》へ 行《い》くのに ビザが ひつようですか。",
           "translation": {
             "en": "Do I need a visa to go to Japan?",
             "id": "Apakah perlu visa untuk pergi ke Jepang?"
           }
         },
         {
-          "ja": "この しごとには けいけんが ひつようです。",
+          "ja": "この 仕事《しごと》には けいけんが ひつようです。",
           "translation": {
             "en": "This job requires experience.",
             "id": "Pekerjaan ini memerlukan pengalaman."

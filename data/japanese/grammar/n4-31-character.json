@@ -15,14 +15,14 @@
       },
       "examples": [
         {
-          "ja": "この やまの たかさは どのぐらいですか。",
+          "ja": "この 山《やま》の 高《たか》さは どのぐらいですか。",
           "translation": {
             "en": "How high is this mountain?",
             "id": "Berapa ketinggian gunung ini?"
           }
         },
         {
-          "ja": "はしの ながさは ひゃくメートルです。",
+          "ja": "はしの 長《なが》さは ひゃくメートルです。",
           "translation": {
             "en": "The bridge is a hundred metres long.",
             "id": "Panjang jembatan itu seratus meter."
@@ -49,7 +49,7 @@
       },
       "examples": [
         {
-          "ja": "あした はれるかな。",
+          "ja": "明日《あした》 はれるかな。",
           "translation": {
             "en": "I wonder if it'll be sunny tomorrow.",
             "id": "Besok cerah nggak, ya."

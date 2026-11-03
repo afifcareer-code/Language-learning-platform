@@ -22,7 +22,7 @@
           }
         },
         {
-          "ja": "たなかさんは らいげつ けっこんするそうです。",
+          "ja": "たなかさんは 来月《らいげつ》 けっこんするそうです。",
           "translation": {
             "en": "I hear Mr Tanaka is getting married next month.",
             "id": "Katanya Pak Tanaka akan menikah bulan depan."
@@ -56,7 +56,7 @@
           }
         },
         {
-          "ja": "いまにも あめが ふりそうです。",
+          "ja": "今《いま》にも あめが ふりそうです。",
           "translation": {
             "en": "It looks like it will rain at any moment.",
             "id": "Sepertinya sebentar lagi hujan turun."
@@ -90,7 +90,7 @@
           }
         },
         {
-          "ja": "その みせは にんきが ある ようです。",
+          "ja": "その 店《みせ》は 人気《にんき》が ある ようです。",
           "translation": {
             "en": "That shop seems to be popular.",
             "id": "Toko itu sepertinya populer."

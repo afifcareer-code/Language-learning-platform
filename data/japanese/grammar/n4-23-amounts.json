@@ -49,14 +49,14 @@
       },
       "examples": [
         {
-          "ja": "えきで さんじかんも まちました。",
+          "ja": "駅《えき》で さんじかんも 待《ま》ちました。",
           "translation": {
             "en": "I waited at the station for a whole three hours.",
             "id": "Saya menunggu di stasiun sampai tiga jam."
           }
         },
         {
-          "ja": "かれは ケーキを いつつも たべました。",
+          "ja": "かれは ケーキを 五《いつ》つも たべました。",
           "translation": {
             "en": "He ate as many as five pieces of cake.",
             "id": "Dia makan kue sampai lima potong."
@@ -83,14 +83,14 @@
       },
       "examples": [
         {
-          "ja": "ことしの ふゆは きょねんほど さむくないです。",
+          "ja": "今年《ことし》の 冬《ふゆ》は 去年《きょねん》ほど さむくないです。",
           "translation": {
             "en": "This winter isn't as cold as last year's.",
             "id": "Musim dingin tahun ini tidak sedingin tahun lalu."
           }
         },
         {
-          "ja": "この えいがは ほんほど おもしろくなかったです。",
+          "ja": "この 映画《えいが》は ほんほど おもしろくなかったです。",
           "translation": {
             "en": "This film wasn't as interesting as the book.",
             "id": "Film ini tidak semenarik bukunya."

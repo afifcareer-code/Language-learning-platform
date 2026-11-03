@@ -15,7 +15,7 @@
       },
       "examples": [
         {
-          "ja": "ちちと ははは げんきです。",
+          "ja": "父《ちち》と 母《はは》は げんきです。",
           "translation": {
             "en": "My father and mother are well.",
             "id": "Ayah dan ibu saya sehat."
@@ -49,7 +49,7 @@
       },
       "examples": [
         {
-          "ja": "おこさんは なんさいですか。",
+          "ja": "お子《こ》さんは なんさいですか。",
           "translation": {
             "en": "How old is your child?",
             "id": "Anak Anda umur berapa?"

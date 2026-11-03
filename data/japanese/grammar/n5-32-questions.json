@@ -15,7 +15,7 @@
       },
       "examples": [
         {
-          "ja": "けさは なにも たべませんでした。",
+          "ja": "けさは なにも 食《た》べませんでした。",
           "translation": {
             "en": "I didn't eat anything this morning.",
             "id": "Tadi pagi saya tidak makan apa-apa."
@@ -49,7 +49,7 @@
       },
       "examples": [
         {
-          "ja": "どうして きのう やすみましたか。",
+          "ja": "どうして きのう 休《やす》みましたか。",
           "translation": {
             "en": "Why were you absent yesterday?",
             "id": "Mengapa kemarin Anda tidak masuk?"

@@ -1,5 +1,7 @@
 "use client";
 
+import { RubyText } from "@/features/japanese/ruby-text";
+import { stripRuby } from "@/languages/japanese/ruby";
 import type { AttemptFeedback } from "@/features/practice/actions";
 import type { PracticeItem } from "@/features/japanese/practice-items";
 import { useT } from "@/localization/client";
@@ -52,10 +54,10 @@ export function SentenceExercise({
             lang="ja"
             disabled={locked}
             onClick={() => onRemove(position)}
-            aria-label={t("practice.sentence.remove", { piece: item.tokens[tokenIndex]! })}
+            aria-label={t("practice.sentence.remove", { piece: stripRuby(item.tokens[tokenIndex]!) })}
             className="min-h-12 rounded-lg bg-accent-soft px-3 font-jp text-xl text-accent disabled:cursor-default"
           >
-            {item.tokens[tokenIndex]}
+            <RubyText text={item.tokens[tokenIndex]!} />
           </button>
         ))}
       </div>
@@ -79,7 +81,7 @@ export function SentenceExercise({
                 used ? "opacity-30" : "hover:border-accent",
               )}
             >
-              {token}
+              <RubyText text={token} />
             </button>
           );
         })}

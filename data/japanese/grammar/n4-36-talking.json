@@ -15,14 +15,14 @@
       },
       "examples": [
         {
-          "ja": "にほんの れきしに ついて レポートを かきます。",
+          "ja": "日本《にほん》の れきしに ついて レポートを 書《か》きます。",
           "translation": {
             "en": "I'm writing a report about Japanese history.",
             "id": "Saya menulis laporan tentang sejarah Jepang."
           }
         },
         {
-          "ja": "その もんだいに ついて そうだんしました。",
+          "ja": "その 問題《もんだい》に ついて そうだんしました。",
           "translation": {
             "en": "We talked over that problem.",
             "id": "Kami berunding tentang masalah itu."
@@ -56,7 +56,7 @@
           }
         },
         {
-          "ja": "よる あかちゃんに なかれて ねられませんでした。",
+          "ja": "よる 赤《あか》ちゃんに なかれて ねられませんでした。",
           "translation": {
             "en": "The baby cried at night and I couldn't sleep.",
             "id": "Malam hari bayi menangis sehingga saya tidak bisa tidur."

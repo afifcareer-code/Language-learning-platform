@@ -14,8 +14,8 @@
     },
     {
       "slug": "n5-hoshii-2",
-      "text": "いま なにが ほしいですか。",
-      "tokens": ["いま", "なに", "が", "ほしいです", "か"],
+      "text": "今《いま》 なにが ほしいですか。",
+      "tokens": ["今《いま》", "なに", "が", "ほしいです", "か"],
       "grammar": "n5-hoshii",
       "translation": {
         "en": "What do you want now?",
@@ -24,8 +24,8 @@
     },
     {
       "slug": "n5-yori-1",
-      "text": "バスは でんしゃより やすいです。",
-      "tokens": ["バス", "は", "でんしゃ", "より", "やすいです"],
+      "text": "バスは 電車《でんしゃ》より やすいです。",
+      "tokens": ["バス", "は", "電車《でんしゃ》", "より", "やすいです"],
       "grammar": "n5-yori",
       "translation": {
         "en": "The bus is cheaper than the train.",

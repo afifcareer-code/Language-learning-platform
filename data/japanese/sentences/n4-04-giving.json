@@ -14,8 +14,8 @@
     },
     {
       "slug": "n4-tegami-moraimashita",
-      "text": "せんぱいに てがみを もらいました。",
-      "tokens": ["せんぱい", "に", "てがみ", "を", "もらいました"],
+      "text": "せんぱいに 手紙《てがみ》を もらいました。",
+      "tokens": ["せんぱい", "に", "手紙《てがみ》", "を", "もらいました"],
       "grammar": "n4-ageru-morau",
       "translation": {
         "en": "I received a letter from my senior.",
@@ -24,8 +24,8 @@
     },
     {
       "slug": "n4-kasa-kashite-kureta",
-      "text": "あには わたしに かさを かして くれました。",
-      "tokens": ["あに", "は", "わたし", "に", "かさ", "を", "かして", "くれました"],
+      "text": "あには わたしに かさを 貸《か》して くれました。",
+      "tokens": ["あに", "は", "わたし", "に", "かさ", "を", "貸《か》して", "くれました"],
       "grammar": "n4-te-kureru",
       "translation": {
         "en": "My older brother lent me an umbrella.",
@@ -44,8 +44,8 @@
     },
     {
       "slug": "n4-sakubun-mite-moratta",
-      "text": "せんせいに さくぶんを みて もらいました。",
-      "tokens": ["せんせい", "に", "さくぶん", "を", "みて", "もらいました"],
+      "text": "先生《せんせい》に さくぶんを 見《み》て もらいました。",
+      "tokens": ["先生《せんせい》", "に", "さくぶん", "を", "見《み》て", "もらいました"],
       "grammar": "n4-te-morau",
       "translation": {
         "en": "I had my teacher look at my essay.",
@@ -54,8 +54,8 @@
     },
     {
       "slug": "n4-purezento-okutte",
-      "text": "たんじょうびに プレゼントを おくって もらいました。",
-      "tokens": ["たんじょうび", "に", "プレゼント", "を", "おくって", "もらいました"],
+      "text": "たんじょうびに プレゼントを 送《おく》って もらいました。",
+      "tokens": ["たんじょうび", "に", "プレゼント", "を", "送《おく》って", "もらいました"],
       "grammar": "n4-te-morau",
       "translation": {
         "en": "Someone sent me a present for my birthday.",

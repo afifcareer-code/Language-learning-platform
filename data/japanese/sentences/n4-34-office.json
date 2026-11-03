@@ -14,8 +14,8 @@
     },
     {
       "slug": "n4-te-mo-kamawanai-2",
-      "text": "あした こなくても かまいません。",
-      "tokens": ["あした", "こなくて", "も", "かまいません"],
+      "text": "明日《あした》 こなくても かまいません。",
+      "tokens": ["明日《あした》", "こなくて", "も", "かまいません"],
       "grammar": "n4-te-mo-kamawanai",
       "translation": {
         "en": "It's all right if you don't come tomorrow.",
@@ -34,8 +34,8 @@
     },
     {
       "slug": "n4-nakucha-2",
-      "text": "あした はやく おきなきゃ。",
-      "tokens": ["あした", "はやく", "おきなきゃ"],
+      "text": "明日《あした》 はやく おきなきゃ。",
+      "tokens": ["明日《あした》", "はやく", "おきなきゃ"],
       "grammar": "n4-nakucha",
       "translation": {
         "en": "I have to get up early tomorrow.",
@@ -54,8 +54,8 @@
     },
     {
       "slug": "n4-zu-ni-2",
-      "text": "じしょを つかわずに よみました。",
-      "tokens": ["じしょ", "を", "つかわずに", "よみました"],
+      "text": "じしょを 使《つか》わずに 読《よ》みました。",
+      "tokens": ["じしょ", "を", "使《つか》わずに", "読《よ》みました"],
       "grammar": "n4-zu-ni",
       "translation": {
         "en": "I read it without using a dictionary.",

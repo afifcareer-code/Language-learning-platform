@@ -4,8 +4,8 @@
   "items": [
     {
       "slug": "n5-ni-person-1",
-      "text": "よる ともだちに でんわを かけました。",
-      "tokens": ["よる", "ともだち", "に", "でんわ", "を", "かけました"],
+      "text": "よる ともだちに 電話《でんわ》を かけました。",
+      "tokens": ["よる", "ともだち", "に", "電話《でんわ》", "を", "かけました"],
       "grammar": "n5-ni-person",
       "translation": {
         "en": "I called a friend in the evening.",
@@ -24,8 +24,8 @@
     },
     {
       "slug": "n5-ne-yo-1",
-      "text": "きょうは いい てんきですね。",
-      "tokens": ["きょう", "は", "いい", "てんき", "です", "ね"],
+      "text": "今日《きょう》は いい 天気《てんき》ですね。",
+      "tokens": ["今日《きょう》", "は", "いい", "天気《てんき》", "です", "ね"],
       "grammar": "n5-ne-yo",
       "translation": {
         "en": "Nice weather today, isn't it?",

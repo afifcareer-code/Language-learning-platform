@@ -3,7 +3,7 @@ import type { ContentItem } from "@/core/learning";
 import type { WritingStage } from "@/handwriting/guidance";
 import { acceptedStrokeCounts, isKanaItemData, type KanaItemData } from "@/languages/japanese";
 import { isGrammarData, type GrammarTranslation } from "@/languages/japanese/grammar/schema";
-import { parseRuby } from "@/languages/japanese/ruby";
+import { parseRuby, rubyInline, rubyReading } from "@/languages/japanese/ruby";
 import {
   isKanjiData,
   KANJI_VIEWBOX,
@@ -93,7 +93,7 @@ export function itemDisplay(item: ContentItem | undefined): string {
   if (isKanjiData(item.data)) return item.data.character;
   if (isVocabularyData(item.data)) return vocabularyDisplay(item.data);
   if (isNativeData(item.data)) return item.data.text;
-  if (isSentenceData(item.data)) return item.data.text;
+  if (isSentenceData(item.data)) return rubyInline(item.data.text);
   if (isGrammarData(item.data)) return item.data.pattern;
   return item.key;
 }
@@ -296,7 +296,7 @@ export function toPracticeItem(
       display: item.data.text,
       displayLang: "ja",
       displayStyle: "word",
-      speech: item.data.text,
+      speech: rubyReading(item.data.text),
       audioPrompt: options.skill === JA_SKILLS.sentenceListening,
       answerKind: "meaning" as const,
     };
@@ -309,7 +309,7 @@ export function toPracticeItem(
       display: item.data.text,
       displayLang: "ja",
       displayStyle: "word",
-      speech: item.data.text,
+      speech: rubyReading(item.data.text),
       cue: translation,
       cueKind: "sentence",
     };
@@ -322,7 +322,7 @@ export function toPracticeItem(
       display: translation,
       displayLang: options.locale,
       displayStyle: "text",
-      speech: item.data.text,
+      speech: rubyReading(item.data.text),
       tokens: shuffleUntilDifferent(item.data.tokens),
     };
   }

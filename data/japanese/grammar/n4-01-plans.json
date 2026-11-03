@@ -15,14 +15,14 @@
       },
       "examples": [
         {
-          "ja": "しゅうまつ うみに いこうと おもいます。",
+          "ja": "しゅうまつ 海《うみ》に 行《い》こうと おもいます。",
           "translation": {
             "en": "I'm thinking of going to the sea this weekend.",
             "id": "Akhir pekan ini saya berencana pergi ke laut."
           }
         },
         {
-          "ja": "ともだちを りょこうに さそおうと おもいます。",
+          "ja": "ともだちを 旅行《りょこう》に さそおうと おもいます。",
           "translation": {
             "en": "I'm thinking of inviting a friend on a trip.",
             "id": "Saya berpikir untuk mengajak teman jalan-jalan."
@@ -49,14 +49,14 @@
       },
       "examples": [
         {
-          "ja": "なつやすみに にほんへ いく つもりです。",
+          "ja": "夏休《なつやす》みに 日本《にほん》へ 行《い》く つもりです。",
           "translation": {
             "en": "I intend to go to Japan in the summer holidays.",
             "id": "Saya berniat pergi ke Jepang saat libur musim panas."
           }
         },
         {
-          "ja": "らいしゅうは なにも しない つもりです。",
+          "ja": "来週《らいしゅう》は なにも しない つもりです。",
           "translation": {
             "en": "I don't intend to do anything next week.",
             "id": "Minggu depan saya tidak berniat melakukan apa-apa."
@@ -90,7 +90,7 @@
           }
         },
         {
-          "ja": "でんしゃは くじに でる よていです。",
+          "ja": "電車《でんしゃ》は くじに 出《で》る よていです。",
           "translation": {
             "en": "The train is scheduled to leave at nine.",
             "id": "Kereta dijadwalkan berangkat pukul sembilan."

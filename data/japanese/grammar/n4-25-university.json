@@ -15,7 +15,7 @@
       },
       "examples": [
         {
-          "ja": "えきの まえに さくらという きっさてんが あります。",
+          "ja": "駅《えき》の まえに さくらという きっさてんが あります。",
           "translation": {
             "en": "There's a café called Sakura in front of the station.",
             "id": "Di depan stasiun ada kafe bernama Sakura."
@@ -49,14 +49,14 @@
       },
       "examples": [
         {
-          "ja": "かれは あした くると いいました。",
+          "ja": "かれは 明日《あした》 来《く》ると 言《い》いました。",
           "translation": {
             "en": "He said he'd come tomorrow.",
             "id": "Dia bilang besok akan datang."
           }
         },
         {
-          "ja": "せんせいは しけんは かんたんだと いって いました。",
+          "ja": "先生《せんせい》は 試験《しけん》は かんたんだと いって いました。",
           "translation": {
             "en": "The teacher said the exam would be easy.",
             "id": "Guru bilang ujiannya mudah."
@@ -83,14 +83,14 @@
       },
       "examples": [
         {
-          "ja": "かれが どこに すんで いるか しりません。",
+          "ja": "かれが どこに すんで いるか 知《し》りません。",
           "translation": {
             "en": "I don't know where he lives.",
             "id": "Saya tidak tahu di mana dia tinggal."
           }
         },
         {
-          "ja": "かいぎが なんじに はじまるか おしえて ください。",
+          "ja": "かいぎが なんじに 始《はじ》まるか 教《おし》えて ください。",
           "translation": {
             "en": "Please tell me what time the meeting starts.",
             "id": "Tolong beri tahu saya rapatnya mulai jam berapa."

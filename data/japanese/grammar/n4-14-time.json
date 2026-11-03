@@ -15,14 +15,14 @@
       },
       "examples": [
         {
-          "ja": "ごじまでに かえって ください。",
+          "ja": "ごじまでに 帰《かえ》って ください。",
           "translation": {
             "en": "Please be back by five.",
             "id": "Tolong pulang paling lambat pukul lima."
           }
         },
         {
-          "ja": "きんようびまでに しゅくだいを だします。",
+          "ja": "金曜日《きんようび》までに しゅくだいを 出《だ》します。",
           "translation": {
             "en": "I'll hand in the homework by Friday.",
             "id": "Saya akan menyerahkan PR paling lambat hari Jumat."
@@ -49,14 +49,14 @@
       },
       "examples": [
         {
-          "ja": "なつやすみの あいだ、いなかに いました。",
+          "ja": "夏休《なつやす》みの 間《あいだ》、いなかに いました。",
           "translation": {
             "en": "I was in the countryside throughout the summer holidays.",
             "id": "Selama libur musim panas saya berada di kampung."
           }
         },
         {
-          "ja": "るすの あいだに どろぼうが はいりました。",
+          "ja": "るすの 間《あいだ》に どろぼうが 入《はい》りました。",
           "translation": {
             "en": "A burglar got in while I was out.",
             "id": "Sewaktu saya tidak di rumah, pencuri masuk."
@@ -83,14 +83,14 @@
       },
       "examples": [
         {
-          "ja": "あつい うちに たべて ください。",
+          "ja": "あつい うちに 食《た》べて ください。",
           "translation": {
             "en": "Please eat it while it's hot.",
             "id": "Silakan dimakan selagi panas."
           }
         },
         {
-          "ja": "わかい うちに いろいろな くにへ いきたいです。",
+          "ja": "わかい うちに いろいろな 国《くに》へ いきたいです。",
           "translation": {
             "en": "I want to go to many countries while I'm young.",
             "id": "Selagi masih muda, saya ingin pergi ke berbagai negara."

@@ -30,3 +30,17 @@ export function stripRuby(input: string): string {
     .map((s) => s.text)
     .join("");
 }
+
+/** The text as it is read: each reading in place of its kanji. What is spoken. */
+export function rubyReading(input: string): string {
+  return parseRuby(input)
+    .map((s) => s.reading ?? s.text)
+    .join("");
+}
+
+/** The text with readings in brackets, e.g. 食(た)べます, for places that cannot show ruby. */
+export function rubyInline(input: string): string {
+  return parseRuby(input)
+    .map((s) => (s.reading ? `${s.text}(${s.reading})` : s.text))
+    .join("");
+}

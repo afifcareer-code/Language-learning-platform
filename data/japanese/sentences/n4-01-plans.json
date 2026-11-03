@@ -4,8 +4,8 @@
   "items": [
     {
       "slug": "n4-umi-ni-ikou",
-      "text": "しゅうまつ うみに いこうと おもいます。",
-      "tokens": ["しゅうまつ", "うみ", "に", "いこう", "と", "おもいます"],
+      "text": "しゅうまつ 海《うみ》に 行《い》こうと おもいます。",
+      "tokens": ["しゅうまつ", "海《うみ》", "に", "行《い》こう", "と", "おもいます"],
       "grammar": "n4-volitional-to-omou",
       "translation": {
         "en": "I'm thinking of going to the sea this weekend.",
@@ -14,8 +14,8 @@
     },
     {
       "slug": "n4-ryokou-ni-sasou",
-      "text": "ともだちを りょこうに さそおうと おもいます。",
-      "tokens": ["ともだち", "を", "りょこう", "に", "さそおう", "と", "おもいます"],
+      "text": "ともだちを 旅行《りょこう》に さそおうと おもいます。",
+      "tokens": ["ともだち", "を", "旅行《りょこう》", "に", "さそおう", "と", "おもいます"],
       "grammar": "n4-volitional-to-omou",
       "translation": {
         "en": "I'm thinking of inviting a friend on a trip.",
@@ -24,8 +24,8 @@
     },
     {
       "slug": "n4-nihon-e-iku-tsumori",
-      "text": "なつやすみに にほんへ いく つもりです。",
-      "tokens": ["なつやすみ", "に", "にほん", "へ", "いく", "つもり", "です"],
+      "text": "夏休《なつやす》みに 日本《にほん》へ 行《い》く つもりです。",
+      "tokens": ["夏休《なつやす》み", "に", "日本《にほん》", "へ", "行《い》く", "つもり", "です"],
       "grammar": "n4-tsumori",
       "translation": {
         "en": "I intend to go to Japan in the summer holidays.",
@@ -34,8 +34,8 @@
     },
     {
       "slug": "n4-nanimo-shinai-tsumori",
-      "text": "らいしゅうは なにも しない つもりです。",
-      "tokens": ["らいしゅう", "は", "なにも", "しない", "つもり", "です"],
+      "text": "来週《らいしゅう》は なにも しない つもりです。",
+      "tokens": ["来週《らいしゅう》", "は", "なにも", "しない", "つもり", "です"],
       "grammar": "n4-tsumori",
       "translation": {
         "en": "I don't intend to do anything next week.",
@@ -54,8 +54,8 @@
     },
     {
       "slug": "n4-densha-deru-yotei",
-      "text": "でんしゃは くじに でる よていです。",
-      "tokens": ["でんしゃ", "は", "くじ", "に", "でる", "よてい", "です"],
+      "text": "電車《でんしゃ》は くじに 出《で》る よていです。",
+      "tokens": ["電車《でんしゃ》", "は", "くじ", "に", "出《で》る", "よてい", "です"],
       "grammar": "n4-yotei",
       "translation": {
         "en": "The train is scheduled to leave at nine.",

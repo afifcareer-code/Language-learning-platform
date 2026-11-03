@@ -4,8 +4,8 @@
   "items": [
     {
       "slug": "n5-mae-ni-1",
-      "text": "ねる まえに はを みがきます。",
-      "tokens": ["ねる", "まえに", "は", "を", "みがきます"],
+      "text": "ねる 前《まえ》に はを みがきます。",
+      "tokens": ["ねる", "前《まえ》に", "は", "を", "みがきます"],
       "grammar": "n5-mae-ni",
       "translation": {
         "en": "I brush my teeth before going to bed.",
@@ -14,8 +14,8 @@
     },
     {
       "slug": "n5-mae-ni-2",
-      "text": "しごとの まえに コーヒーを のみます。",
-      "tokens": ["しごと", "の", "まえに", "コーヒー", "を", "のみます"],
+      "text": "しごとの 前《まえ》に コーヒーを のみます。",
+      "tokens": ["しごと", "の", "前《まえ》に", "コーヒー", "を", "のみます"],
       "grammar": "n5-mae-ni",
       "translation": {
         "en": "I drink coffee before work.",
@@ -24,8 +24,8 @@
     },
     {
       "slug": "n5-ta-ato-de-1",
-      "text": "ばんごはんを たべた あとで テレビを みます。",
-      "tokens": ["ばんごはん", "を", "たべた", "あとで", "テレビ", "を", "みます"],
+      "text": "ばんごはんを たべた 後《あと》で テレビを みます。",
+      "tokens": ["ばんごはん", "を", "たべた", "後《あと》で", "テレビ", "を", "みます"],
       "grammar": "n5-ta-ato-de",
       "translation": {
         "en": "After dinner I watch TV.",
@@ -34,8 +34,8 @@
     },
     {
       "slug": "n5-ta-ato-de-2",
-      "text": "じゅぎょうの あとで としょかんへ いきます。",
-      "tokens": ["じゅぎょう", "の", "あとで", "としょかん", "へ", "いきます"],
+      "text": "じゅぎょうの 後《あと》で としょかんへ いきます。",
+      "tokens": ["じゅぎょう", "の", "後《あと》で", "としょかん", "へ", "いきます"],
       "grammar": "n5-ta-ato-de",
       "translation": {
         "en": "After class I go to the library.",

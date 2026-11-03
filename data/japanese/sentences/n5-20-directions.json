@@ -4,8 +4,8 @@
   "items": [
     {
       "slug": "n5-position-1",
-      "text": "つくえの うえに ほんが あります。",
-      "tokens": ["つくえ", "の", "うえ", "に", "ほん", "が", "あります"],
+      "text": "つくえの 上《うえ》に ほんが あります。",
+      "tokens": ["つくえ", "の", "上《うえ》", "に", "ほん", "が", "あります"],
       "grammar": "n5-position",
       "translation": {
         "en": "There is a book on the desk.",

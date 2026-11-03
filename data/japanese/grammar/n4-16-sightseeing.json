@@ -15,14 +15,14 @@
       },
       "examples": [
         {
-          "ja": "きょうとへ いくなら、きんかくじが いいですよ。",
+          "ja": "きょうとへ 行《い》くなら、きんかくじが いいですよ。",
           "translation": {
             "en": "If you're going to Kyoto, Kinkakuji is good.",
             "id": "Kalau mau ke Kyoto, Kinkakuji bagus, lho."
           }
         },
         {
-          "ja": "カメラなら あの みせが やすいです。",
+          "ja": "カメラなら あの 店《みせ》が 安《やす》いです。",
           "translation": {
             "en": "If it's a camera you want, that shop is cheap.",
             "id": "Kalau soal kamera, toko itu murah."
@@ -56,7 +56,7 @@
           }
         },
         {
-          "ja": "あした はれると いいですね。",
+          "ja": "明日《あした》 はれると いいですね。",
           "translation": {
             "en": "I hope it's sunny tomorrow.",
             "id": "Semoga besok cerah, ya."
@@ -83,14 +83,14 @@
       },
       "examples": [
         {
-          "ja": "すこし やすんだら どうですか。",
+          "ja": "少《すこ》し 休《やす》んだら どうですか。",
           "translation": {
             "en": "Why don't you take a little rest?",
             "id": "Bagaimana kalau istirahat sebentar?"
           }
         },
         {
-          "ja": "せんせいに そうだんしたら どうですか。",
+          "ja": "先生《せんせい》に そうだんしたら どうですか。",
           "translation": {
             "en": "Why don't you talk it over with your teacher?",
             "id": "Bagaimana kalau berkonsultasi dengan guru?"

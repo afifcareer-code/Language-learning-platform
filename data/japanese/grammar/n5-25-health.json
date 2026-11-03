@@ -22,7 +22,7 @@
           }
         },
         {
-          "ja": "あには せが たかいです。",
+          "ja": "あには せが 高《たか》いです。",
           "translation": {
             "en": "My older brother is tall.",
             "id": "Kakak laki-laki saya tinggi badannya."
@@ -49,7 +49,7 @@
       },
       "examples": [
         {
-          "ja": "ねつが あるから、きょうは やすみます。",
+          "ja": "ねつが あるから、今日《きょう》は やすみます。",
           "translation": {
             "en": "I have a fever, so I'm taking today off.",
             "id": "Karena demam, hari ini saya libur."

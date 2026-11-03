@@ -4,8 +4,8 @@
   "items": [
     {
       "slug": "n4-shi-1",
-      "text": "この みせは やすいし、おいしいし、よく きます。",
-      "tokens": ["この", "みせ", "は", "やすい", "し", "おいしい", "し", "よく", "きます"],
+      "text": "この 店《みせ》は やすいし、おいしいし、よく きます。",
+      "tokens": ["この", "店《みせ》", "は", "やすい", "し", "おいしい", "し", "よく", "きます"],
       "grammar": "n4-shi",
       "translation": {
         "en": "This place is cheap and the food is good, so I come here often.",
@@ -14,8 +14,8 @@
     },
     {
       "slug": "n4-shi-2",
-      "text": "きょうは あめだし、さむいし、でかけたくないです。",
-      "tokens": ["きょう", "は", "あめだ", "し", "さむい", "し", "でかけたくないです"],
+      "text": "今日《きょう》は あめだし、さむいし、でかけたくないです。",
+      "tokens": ["今日《きょう》", "は", "あめだ", "し", "さむい", "し", "でかけたくないです"],
       "grammar": "n4-shi",
       "translation": {
         "en": "It's raining and cold today, so I don't want to go out.",
@@ -24,8 +24,8 @@
     },
     {
       "slug": "n4-no-wa-1",
-      "text": "にほんごで はなすのは たのしいです。",
-      "tokens": ["にほんご", "で", "はなす", "の", "は", "たのしいです"],
+      "text": "にほんごで はなすのは 楽《たの》しいです。",
+      "tokens": ["にほんご", "で", "はなす", "の", "は", "楽《たの》しいです"],
       "grammar": "n4-no-wa",
       "translation": {
         "en": "Speaking in Japanese is fun.",
