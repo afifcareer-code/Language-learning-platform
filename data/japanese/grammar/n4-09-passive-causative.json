@@ -22,7 +22,7 @@
           }
         },
         {
-          "ja": "でんしゃで さいふを ぬすまれました。",
+          "ja": "電車《でんしゃ》で さいふを ぬすまれました。",
           "translation": {
             "en": "I had my wallet stolen on the train.",
             "id": "Dompet saya dicuri di kereta."
@@ -49,14 +49,14 @@
       },
       "examples": [
         {
-          "ja": "むすこに ピアノを ならわせます。",
+          "ja": "むすこに ピアノを 習《なら》わせます。",
           "translation": {
             "en": "I'm having my son take piano lessons.",
             "id": "Saya menyuruh anak laki-laki saya belajar piano."
           }
         },
         {
-          "ja": "ぶちょうは わたしに ざんぎょうを させました。",
+          "ja": "ぶちょうは 私《わたし》に ざんぎょうを させました。",
           "translation": {
             "en": "The manager made me work overtime.",
             "id": "Kepala bagian menyuruh saya lembur."
@@ -83,7 +83,7 @@
       },
       "examples": [
         {
-          "ja": "すこし かんがえさせて ください。",
+          "ja": "少《すこ》し 考《かんが》えさせて ください。",
           "translation": {
             "en": "Please let me think about it a little.",
             "id": "Izinkan saya memikirkannya sebentar."

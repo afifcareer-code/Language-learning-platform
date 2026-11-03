@@ -14,8 +14,8 @@
     },
     {
       "slug": "n4-sasete-morau-2",
-      "text": "きょうは はやく かえらせて いただきます。",
-      "tokens": ["きょう", "は", "はやく", "かえらせて", "いただきます"],
+      "text": "今日《きょう》は はやく 帰《かえ》らせて いただきます。",
+      "tokens": ["今日《きょう》", "は", "はやく", "帰《かえ》らせて", "いただきます"],
       "grammar": "n4-sasete-morau",
       "translation": {
         "en": "With your permission, I'll leave early today.",
@@ -24,8 +24,8 @@
     },
     {
       "slug": "n4-ga-hitsuyou-1",
-      "text": "にほんへ いくのに ビザが ひつようですか。",
-      "tokens": ["にほん", "へ", "いく", "のに", "ビザ", "が", "ひつようです", "か"],
+      "text": "日本《にほん》へ 行《い》くのに ビザが ひつようですか。",
+      "tokens": ["日本《にほん》", "へ", "行《い》く", "のに", "ビザ", "が", "ひつようです", "か"],
       "grammar": "n4-ga-hitsuyou",
       "translation": {
         "en": "Do I need a visa to go to Japan?",
@@ -34,8 +34,8 @@
     },
     {
       "slug": "n4-ga-hitsuyou-2",
-      "text": "この しごとには けいけんが ひつようです。",
-      "tokens": ["この", "しごと", "には", "けいけん", "が", "ひつようです"],
+      "text": "この 仕事《しごと》には けいけんが ひつようです。",
+      "tokens": ["この", "仕事《しごと》", "には", "けいけん", "が", "ひつようです"],
       "grammar": "n4-ga-hitsuyou",
       "translation": {
         "en": "This job requires experience.",

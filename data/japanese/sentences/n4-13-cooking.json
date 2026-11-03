@@ -4,8 +4,8 @@
   "items": [
     {
       "slug": "n4-te-miru-1",
-      "text": "この サラダを たべて みて ください。",
-      "tokens": ["この", "サラダ", "を", "たべて", "みて", "ください"],
+      "text": "この サラダを 食《た》べて みて ください。",
+      "tokens": ["この", "サラダ", "を", "食《た》べて", "みて", "ください"],
       "grammar": "n4-te-miru",
       "translation": {
         "en": "Please try this salad.",
@@ -14,8 +14,8 @@
     },
     {
       "slug": "n4-te-miru-2",
-      "text": "あたらしい みせに いって みました。",
-      "tokens": ["あたらしい", "みせ", "に", "いって", "みました"],
+      "text": "新《あたら》しい 店《みせ》に いって みました。",
+      "tokens": ["新《あたら》しい", "店《みせ》", "に", "いって", "みました"],
       "grammar": "n4-te-miru",
       "translation": {
         "en": "I tried going to the new shop.",
@@ -24,8 +24,8 @@
     },
     {
       "slug": "n4-yasui-nikui-1",
-      "text": "この ペンは かきやすいです。",
-      "tokens": ["この", "ペン", "は", "かきやすいです"],
+      "text": "この ペンは 書《か》きやすいです。",
+      "tokens": ["この", "ペン", "は", "書《か》きやすいです"],
       "grammar": "n4-yasui-nikui",
       "translation": {
         "en": "This pen is easy to write with.",
@@ -34,8 +34,8 @@
     },
     {
       "slug": "n4-yasui-nikui-2",
-      "text": "この にくは かたくて かみにくいです。",
-      "tokens": ["この", "にく", "は", "かたくて", "かみにくいです"],
+      "text": "この 肉《にく》は かたくて かみにくいです。",
+      "tokens": ["この", "肉《にく》", "は", "かたくて", "かみにくいです"],
       "grammar": "n4-yasui-nikui",
       "translation": {
         "en": "This meat is tough and hard to chew.",
@@ -44,8 +44,8 @@
     },
     {
       "slug": "n4-noni-use-1",
-      "text": "この なべは スープを つくるのに べんりです。",
-      "tokens": ["この", "なべ", "は", "スープ", "を", "つくる", "のに", "べんりです"],
+      "text": "この なべは スープを 作《つく》るのに べんりです。",
+      "tokens": ["この", "なべ", "は", "スープ", "を", "作《つく》る", "のに", "べんりです"],
       "grammar": "n4-noni-use",
       "translation": {
         "en": "This pot is handy for making soup.",
@@ -54,8 +54,8 @@
     },
     {
       "slug": "n4-noni-use-2",
-      "text": "はさみは かみを きるのに つかいます。",
-      "tokens": ["はさみ", "は", "かみ", "を", "きる", "のに", "つかいます"],
+      "text": "はさみは かみを きるのに 使《つか》います。",
+      "tokens": ["はさみ", "は", "かみ", "を", "きる", "のに", "使《つか》います"],
       "grammar": "n4-noni-use",
       "translation": {
         "en": "Scissors are used for cutting paper.",

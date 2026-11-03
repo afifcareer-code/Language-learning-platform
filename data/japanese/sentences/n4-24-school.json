@@ -4,8 +4,8 @@
   "items": [
     {
       "slug": "n4-plain-speech-1",
-      "text": "あした パーティーに いく?",
-      "tokens": ["あした", "パーティー", "に", "いく"],
+      "text": "明日《あした》 パーティーに 行《い》く?",
+      "tokens": ["明日《あした》", "パーティー", "に", "行《い》く"],
       "grammar": "n4-plain-speech",
       "translation": {
         "en": "Are you going to the party tomorrow?",
@@ -14,8 +14,8 @@
     },
     {
       "slug": "n4-plain-speech-2",
-      "text": "うん、いく。きみも いかない?",
-      "tokens": ["うん", "いく", "きみ", "も", "いかない"],
+      "text": "うん、行《い》く。きみも 行《い》かない?",
+      "tokens": ["うん", "行《い》く", "きみ", "も", "行《い》かない"],
       "grammar": "n4-plain-speech",
       "translation": {
         "en": "Yeah, I'm going. Won't you come too?",

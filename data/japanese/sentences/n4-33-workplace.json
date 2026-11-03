@@ -14,8 +14,8 @@
     },
     {
       "slug": "n4-nasai-2",
-      "text": "ただしい こたえを えらびなさい。",
-      "tokens": ["ただしい", "こたえ", "を", "えらびなさい"],
+      "text": "正《ただ》しい 答《こたえ》を えらびなさい。",
+      "tokens": ["正《ただ》しい", "答《こたえ》", "を", "えらびなさい"],
       "grammar": "n4-nasai",
       "translation": {
         "en": "Choose the correct answer.",
@@ -54,8 +54,8 @@
     },
     {
       "slug": "n4-na-prohibitive-2",
-      "text": "ここに くるまを とめるな。",
-      "tokens": ["ここ", "に", "くるま", "を", "とめるな"],
+      "text": "ここに 車《くるま》を とめるな。",
+      "tokens": ["ここ", "に", "車《くるま》", "を", "とめるな"],
       "grammar": "n4-na-prohibitive",
       "translation": {
         "en": "Don't park here.",

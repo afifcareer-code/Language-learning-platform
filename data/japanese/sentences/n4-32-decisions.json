@@ -4,8 +4,8 @@
   "items": [
     {
       "slug": "n4-koto-ni-suru-1",
-      "text": "らいねん にほんへ りゅうがくする ことに しました。",
-      "tokens": ["らいねん", "にほん", "へ", "りゅうがくする", "こと", "に", "しました"],
+      "text": "来年《らいねん》 日本《にほん》へ りゅうがくする ことに しました。",
+      "tokens": ["来年《らいねん》", "日本《にほん》", "へ", "りゅうがくする", "こと", "に", "しました"],
       "grammar": "n4-koto-ni-suru",
       "translation": {
         "en": "I've decided to study in Japan next year.",
@@ -14,8 +14,8 @@
     },
     {
       "slug": "n4-koto-ni-suru-2",
-      "text": "もう おさけを のまない ことに しました。",
-      "tokens": ["もう", "おさけ", "を", "のまない", "こと", "に", "しました"],
+      "text": "もう おさけを 飲《の》まない ことに しました。",
+      "tokens": ["もう", "おさけ", "を", "飲《の》まない", "こと", "に", "しました"],
       "grammar": "n4-koto-ni-suru",
       "translation": {
         "en": "I've decided not to drink any more.",
@@ -24,8 +24,8 @@
     },
     {
       "slug": "n4-koto-ni-naru-1",
-      "text": "らいげつ おおさかへ ひっこす ことに なりました。",
-      "tokens": ["らいげつ", "おおさか", "へ", "ひっこす", "こと", "に", "なりました"],
+      "text": "来月《らいげつ》 おおさかへ ひっこす ことに なりました。",
+      "tokens": ["来月《らいげつ》", "おおさか", "へ", "ひっこす", "こと", "に", "なりました"],
       "grammar": "n4-koto-ni-naru",
       "translation": {
         "en": "It's been decided that I'll move to Osaka next month.",
@@ -34,8 +34,8 @@
     },
     {
       "slug": "n4-koto-ni-naru-2",
-      "text": "かいぎは もくようびに する ことに なりました。",
-      "tokens": ["かいぎ", "は", "もくようび", "に", "する", "こと", "に", "なりました"],
+      "text": "かいぎは 木曜日《もくようび》に する ことに なりました。",
+      "tokens": ["かいぎ", "は", "木曜日《もくようび》", "に", "する", "こと", "に", "なりました"],
       "grammar": "n4-koto-ni-naru",
       "translation": {
         "en": "It's been decided to hold the meeting on Thursday.",
@@ -44,8 +44,8 @@
     },
     {
       "slug": "n4-ni-suru-1",
-      "text": "わたしは コーヒーに します。",
-      "tokens": ["わたし", "は", "コーヒー", "に", "します"],
+      "text": "私《わたし》は コーヒーに します。",
+      "tokens": ["私《わたし》", "は", "コーヒー", "に", "します"],
       "grammar": "n4-ni-suru",
       "translation": {
         "en": "I'll have coffee.",
@@ -54,8 +54,8 @@
     },
     {
       "slug": "n4-ni-suru-2",
-      "text": "プレゼントは とけいに しました。",
-      "tokens": ["プレゼント", "は", "とけい", "に", "しました"],
+      "text": "プレゼントは 時計《とけい》に しました。",
+      "tokens": ["プレゼント", "は", "時計《とけい》", "に", "しました"],
       "grammar": "n4-ni-suru",
       "translation": {
         "en": "I decided on a watch for the present.",

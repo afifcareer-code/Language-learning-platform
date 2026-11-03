@@ -22,7 +22,7 @@
           }
         },
         {
-          "ja": "はやく あめが やんで ほしいです。",
+          "ja": "はやく あめが 止《や》んで ほしいです。",
           "translation": {
             "en": "I want the rain to stop soon.",
             "id": "Saya ingin hujan cepat reda."
@@ -49,14 +49,14 @@
       },
       "examples": [
         {
-          "ja": "こどもが そとで あそびたがって います。",
+          "ja": "こどもが 外《そと》で あそびたがって います。",
           "translation": {
             "en": "The child wants to play outside.",
             "id": "Anak itu ingin bermain di luar."
           }
         },
         {
-          "ja": "いもうとは いぬを こわがって います。",
+          "ja": "妹《いもうと》は 犬《いぬ》を こわがって います。",
           "translation": {
             "en": "My younger sister is scared of dogs.",
             "id": "Adik perempuan saya takut anjing."

@@ -4,8 +4,8 @@
   "items": [
     {
       "slug": "n5-te-iru-1",
-      "text": "いま としょかんで べんきょうして います。",
-      "tokens": ["いま", "としょかん", "で", "べんきょうして", "います"],
+      "text": "今《いま》 としょかんで べんきょうして います。",
+      "tokens": ["今《いま》", "としょかん", "で", "べんきょうして", "います"],
       "grammar": "n5-te-iru",
       "translation": {
         "en": "I'm studying in the library now.",

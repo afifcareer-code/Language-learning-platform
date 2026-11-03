@@ -22,7 +22,7 @@
           }
         },
         {
-          "ja": "この ほんを よみおわったら かして ください。",
+          "ja": "この ほんを 読《よ》みおわったら 貸《か》して ください。",
           "translation": {
             "en": "When you've finished reading this book, please lend it to me.",
             "id": "Kalau sudah selesai membaca buku ini, tolong pinjamkan kepada saya."
@@ -49,7 +49,7 @@
       },
       "examples": [
         {
-          "ja": "あかちゃんが きゅうに なきだしました。",
+          "ja": "赤《あか》ちゃんが きゅうに なきだしました。",
           "translation": {
             "en": "The baby suddenly started crying.",
             "id": "Bayi itu tiba-tiba menangis."
@@ -83,14 +83,14 @@
       },
       "examples": [
         {
-          "ja": "この きかいの つかいかたを おしえて ください。",
+          "ja": "この きかいの 使《つか》いかたを 教《おし》えて ください。",
           "translation": {
             "en": "Please show me how to use this machine.",
             "id": "Tolong ajari saya cara memakai mesin ini."
           }
         },
         {
-          "ja": "この かんじの よみかたが わかりません。",
+          "ja": "この 漢字《かんじ》の 読《よ》みかたが わかりません。",
           "translation": {
             "en": "I don't know how to read this kanji.",
             "id": "Saya tidak tahu cara membaca kanji ini."

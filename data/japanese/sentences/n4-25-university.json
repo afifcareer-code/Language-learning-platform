@@ -4,8 +4,8 @@
   "items": [
     {
       "slug": "n4-to-iu-1",
-      "text": "えきの まえに さくらという きっさてんが あります。",
-      "tokens": ["えき", "の", "まえ", "に", "さくら", "という", "きっさてん", "が", "あります"],
+      "text": "駅《えき》の まえに さくらという きっさてんが あります。",
+      "tokens": ["駅《えき》", "の", "まえ", "に", "さくら", "という", "きっさてん", "が", "あります"],
       "grammar": "n4-to-iu",
       "translation": {
         "en": "There's a café called Sakura in front of the station.",
@@ -24,8 +24,8 @@
     },
     {
       "slug": "n4-to-iimasu-1",
-      "text": "かれは あした くると いいました。",
-      "tokens": ["かれ", "は", "あした", "くる", "と", "いいました"],
+      "text": "かれは 明日《あした》 来《く》ると 言《い》いました。",
+      "tokens": ["かれ", "は", "明日《あした》", "来《く》る", "と", "言《い》いました"],
       "grammar": "n4-to-iimasu",
       "translation": {
         "en": "He said he'd come tomorrow.",
@@ -34,8 +34,8 @@
     },
     {
       "slug": "n4-to-iimasu-2",
-      "text": "せんせいは しけんは かんたんだと いって いました。",
-      "tokens": ["せんせい", "は", "しけん", "は", "かんたんだ", "と", "いって", "いました"],
+      "text": "先生《せんせい》は 試験《しけん》は かんたんだと いって いました。",
+      "tokens": ["先生《せんせい》", "は", "試験《しけん》", "は", "かんたんだ", "と", "いって", "いました"],
       "grammar": "n4-to-iimasu",
       "translation": {
         "en": "The teacher said the exam would be easy.",
@@ -44,8 +44,8 @@
     },
     {
       "slug": "n4-embedded-question-1",
-      "text": "かれが どこに すんで いるか しりません。",
-      "tokens": ["かれ", "が", "どこ", "に", "すんで", "いる", "か", "しりません"],
+      "text": "かれが どこに すんで いるか 知《し》りません。",
+      "tokens": ["かれ", "が", "どこ", "に", "すんで", "いる", "か", "知《し》りません"],
       "grammar": "n4-embedded-question",
       "translation": {
         "en": "I don't know where he lives.",
@@ -54,8 +54,8 @@
     },
     {
       "slug": "n4-embedded-question-2",
-      "text": "かいぎが なんじに はじまるか おしえて ください。",
-      "tokens": ["かいぎ", "が", "なんじ", "に", "はじまる", "か", "おしえて", "ください"],
+      "text": "かいぎが なんじに 始《はじ》まるか 教《おし》えて ください。",
+      "tokens": ["かいぎ", "が", "なんじ", "に", "始《はじ》まる", "か", "教《おし》えて", "ください"],
       "grammar": "n4-embedded-question",
       "translation": {
         "en": "Please tell me what time the meeting starts.",

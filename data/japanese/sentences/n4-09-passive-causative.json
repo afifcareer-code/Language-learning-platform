@@ -14,8 +14,8 @@
     },
     {
       "slug": "n4-saifu-nusumareta",
-      "text": "でんしゃで さいふを ぬすまれました。",
-      "tokens": ["でんしゃ", "で", "さいふ", "を", "ぬすまれました"],
+      "text": "電車《でんしゃ》で さいふを ぬすまれました。",
+      "tokens": ["電車《でんしゃ》", "で", "さいふ", "を", "ぬすまれました"],
       "grammar": "n4-passive",
       "translation": {
         "en": "I had my wallet stolen on the train.",
@@ -24,8 +24,8 @@
     },
     {
       "slug": "n4-haha-ni-shikarareta",
-      "text": "ははに しかられました。",
-      "tokens": ["はは", "に", "しかられました"],
+      "text": "母《はは》に しかられました。",
+      "tokens": ["母《はは》", "に", "しかられました"],
       "grammar": "n4-passive",
       "translation": {
         "en": "I was scolded by my mother.",
@@ -34,8 +34,8 @@
     },
     {
       "slug": "n4-piano-narawasemasu",
-      "text": "むすこに ピアノを ならわせます。",
-      "tokens": ["むすこ", "に", "ピアノ", "を", "ならわせます"],
+      "text": "むすこに ピアノを 習《なら》わせます。",
+      "tokens": ["むすこ", "に", "ピアノ", "を", "習《なら》わせます"],
       "grammar": "n4-causative",
       "translation": {
         "en": "I'm having my son take piano lessons.",
@@ -44,8 +44,8 @@
     },
     {
       "slug": "n4-zangyou-sasemashita",
-      "text": "ぶちょうは わたしに ざんぎょうを させました。",
-      "tokens": ["ぶちょう", "は", "わたし", "に", "ざんぎょう", "を", "させました"],
+      "text": "ぶちょうは 私《わたし》に ざんぎょうを させました。",
+      "tokens": ["ぶちょう", "は", "私《わたし》", "に", "ざんぎょう", "を", "させました"],
       "grammar": "n4-causative",
       "translation": {
         "en": "The manager made me work overtime.",
@@ -54,8 +54,8 @@
     },
     {
       "slug": "n4-kangaesasete-kudasai",
-      "text": "すこし かんがえさせて ください。",
-      "tokens": ["すこし", "かんがえさせて", "ください"],
+      "text": "少《すこ》し 考《かんが》えさせて ください。",
+      "tokens": ["少《すこ》し", "考《かんが》えさせて", "ください"],
       "grammar": "n4-sasete-kudasai",
       "translation": {
         "en": "Please let me think about it a little.",

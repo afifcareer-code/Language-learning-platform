@@ -4,8 +4,18 @@
   "items": [
     {
       "slug": "n5-soshite-1",
-      "text": "デパートで かいものを しました。それから えいがを みました。",
-      "tokens": ["デパート", "で", "かいもの", "を", "しました", "それから", "えいが", "を", "みました"],
+      "text": "デパートで かいものを しました。それから えいがを 見《み》ました。",
+      "tokens": [
+        "デパート",
+        "で",
+        "かいもの",
+        "を",
+        "しました",
+        "それから",
+        "えいが",
+        "を",
+        "見《み》ました"
+      ],
       "grammar": "n5-soshite",
       "translation": {
         "en": "I went shopping at the department store. After that, I saw a film.",

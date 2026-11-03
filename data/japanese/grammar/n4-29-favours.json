@@ -15,14 +15,14 @@
       },
       "examples": [
         {
-          "ja": "いもうとに しゅくだいを おしえて あげました。",
+          "ja": "妹《いもうと》に しゅくだいを 教《おし》えて あげました。",
           "translation": {
             "en": "I helped my younger sister with her homework.",
             "id": "Saya mengajari adik perempuan saya mengerjakan PR."
           }
         },
         {
-          "ja": "おばあさんの にもつを もって あげました。",
+          "ja": "おばあさんの にもつを 持《も》って あげました。",
           "translation": {
             "en": "I carried an old lady's bags for her.",
             "id": "Saya membawakan barang seorang nenek."
@@ -49,14 +49,14 @@
       },
       "examples": [
         {
-          "ja": "せんせいが じしょを かして くださいました。",
+          "ja": "先生《せんせい》が じしょを 貸《か》して くださいました。",
           "translation": {
             "en": "The teacher kindly lent me a dictionary.",
             "id": "Guru berkenan meminjamkan kamus kepada saya."
           }
         },
         {
-          "ja": "ぶちょうに しりょうを みて いただきました。",
+          "ja": "ぶちょうに しりょうを 見《み》て いただきました。",
           "translation": {
             "en": "I had the manager look over the documents.",
             "id": "Saya mendapat bantuan kepala bagian untuk memeriksa dokumennya."
@@ -90,7 +90,7 @@
           }
         },
         {
-          "ja": "しゃしんを とって くださいませんか。",
+          "ja": "写真《しゃしん》を とって くださいませんか。",
           "translation": {
             "en": "Would you mind taking a photo for us?",
             "id": "Maukah Anda memotret kami?"

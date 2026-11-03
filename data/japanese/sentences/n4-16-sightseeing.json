@@ -4,8 +4,8 @@
   "items": [
     {
       "slug": "n4-nara-1",
-      "text": "きょうとへ いくなら、きんかくじが いいですよ。",
-      "tokens": ["きょうと", "へ", "いく", "なら", "きんかくじ", "が", "いいです", "よ"],
+      "text": "きょうとへ 行《い》くなら、きんかくじが いいですよ。",
+      "tokens": ["きょうと", "へ", "行《い》く", "なら", "きんかくじ", "が", "いいです", "よ"],
       "grammar": "n4-nara",
       "translation": {
         "en": "If you're going to Kyoto, Kinkakuji is good.",
@@ -14,8 +14,8 @@
     },
     {
       "slug": "n4-nara-2",
-      "text": "カメラなら あの みせが やすいです。",
-      "tokens": ["カメラ", "なら", "あの", "みせ", "が", "やすいです"],
+      "text": "カメラなら あの 店《みせ》が 安《やす》いです。",
+      "tokens": ["カメラ", "なら", "あの", "店《みせ》", "が", "安《やす》いです"],
       "grammar": "n4-nara",
       "translation": {
         "en": "If it's a camera you want, that shop is cheap.",
@@ -34,8 +34,8 @@
     },
     {
       "slug": "n4-to-ii-2",
-      "text": "あした はれると いいですね。",
-      "tokens": ["あした", "はれる", "と", "いいです", "ね"],
+      "text": "明日《あした》 はれると いいですね。",
+      "tokens": ["明日《あした》", "はれる", "と", "いいです", "ね"],
       "grammar": "n4-to-ii",
       "translation": {
         "en": "I hope it's sunny tomorrow.",
@@ -44,8 +44,8 @@
     },
     {
       "slug": "n4-tara-dou-1",
-      "text": "すこし やすんだら どうですか。",
-      "tokens": ["すこし", "やすんだら", "どうです", "か"],
+      "text": "少《すこ》し 休《やす》んだら どうですか。",
+      "tokens": ["少《すこ》し", "休《やす》んだら", "どうです", "か"],
       "grammar": "n4-tara-dou",
       "translation": {
         "en": "Why don't you take a little rest?",
@@ -54,8 +54,8 @@
     },
     {
       "slug": "n4-tara-dou-2",
-      "text": "せんせいに そうだんしたら どうですか。",
-      "tokens": ["せんせい", "に", "そうだんしたら", "どうです", "か"],
+      "text": "先生《せんせい》に そうだんしたら どうですか。",
+      "tokens": ["先生《せんせい》", "に", "そうだんしたら", "どうです", "か"],
       "grammar": "n4-tara-dou",
       "translation": {
         "en": "Why don't you talk it over with your teacher?",

@@ -4,8 +4,8 @@
   "items": [
     {
       "slug": "n4-causative-passive-1",
-      "text": "こどもの とき、ははに やさいを たべさせられました。",
-      "tokens": ["こども", "の", "とき", "はは", "に", "やさい", "を", "たべさせられました"],
+      "text": "こどもの とき、母《はは》に やさいを 食《た》べさせられました。",
+      "tokens": ["こども", "の", "とき", "母《はは》", "に", "やさい", "を", "食《た》べさせられました"],
       "grammar": "n4-causative-passive",
       "translation": {
         "en": "As a child I was made to eat vegetables by my mother.",
@@ -24,8 +24,8 @@
     },
     {
       "slug": "n4-rareru-honorific-1",
-      "text": "しゃちょうは なんじに こられますか。",
-      "tokens": ["しゃちょう", "は", "なんじ", "に", "こられます", "か"],
+      "text": "社長《しゃちょう》は なんじに こられますか。",
+      "tokens": ["社長《しゃちょう》", "は", "なんじ", "に", "こられます", "か"],
       "grammar": "n4-rareru-honorific",
       "translation": {
         "en": "What time will the president be coming?",
@@ -34,8 +34,8 @@
     },
     {
       "slug": "n4-rareru-honorific-2",
-      "text": "せんせいは この ほんを かかれました。",
-      "tokens": ["せんせい", "は", "この", "ほん", "を", "かかれました"],
+      "text": "先生《せんせい》は この ほんを 書《か》かれました。",
+      "tokens": ["先生《せんせい》", "は", "この", "ほん", "を", "書《か》かれました"],
       "grammar": "n4-rareru-honorific",
       "translation": {
         "en": "The professor wrote this book.",

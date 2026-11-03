@@ -22,7 +22,7 @@
           }
         },
         {
-          "ja": "あした こなくても かまいません。",
+          "ja": "明日《あした》 こなくても かまいません。",
           "translation": {
             "en": "It's all right if you don't come tomorrow.",
             "id": "Tidak apa-apa kalau besok tidak datang."
@@ -56,7 +56,7 @@
           }
         },
         {
-          "ja": "あした はやく おきなきゃ。",
+          "ja": "明日《あした》 はやく おきなきゃ。",
           "translation": {
             "en": "I have to get up early tomorrow.",
             "id": "Besok aku harus bangun pagi."
@@ -90,7 +90,7 @@
           }
         },
         {
-          "ja": "じしょを つかわずに よみました。",
+          "ja": "じしょを 使《つか》わずに 読《よ》みました。",
           "translation": {
             "en": "I read it without using a dictionary.",
             "id": "Saya membacanya tanpa memakai kamus."

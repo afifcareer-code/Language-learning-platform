@@ -4,8 +4,8 @@
   "items": [
     {
       "slug": "n4-te-ageru-1",
-      "text": "いもうとに しゅくだいを おしえて あげました。",
-      "tokens": ["いもうと", "に", "しゅくだい", "を", "おしえて", "あげました"],
+      "text": "妹《いもうと》に しゅくだいを 教《おし》えて あげました。",
+      "tokens": ["妹《いもうと》", "に", "しゅくだい", "を", "教《おし》えて", "あげました"],
       "grammar": "n4-te-ageru",
       "translation": {
         "en": "I helped my younger sister with her homework.",
@@ -14,8 +14,8 @@
     },
     {
       "slug": "n4-te-ageru-2",
-      "text": "おばあさんの にもつを もって あげました。",
-      "tokens": ["おばあさん", "の", "にもつ", "を", "もって", "あげました"],
+      "text": "おばあさんの にもつを 持《も》って あげました。",
+      "tokens": ["おばあさん", "の", "にもつ", "を", "持《も》って", "あげました"],
       "grammar": "n4-te-ageru",
       "translation": {
         "en": "I carried an old lady's bags for her.",
@@ -24,8 +24,8 @@
     },
     {
       "slug": "n4-te-kudasaru-1",
-      "text": "せんせいが じしょを かして くださいました。",
-      "tokens": ["せんせい", "が", "じしょ", "を", "かして", "くださいました"],
+      "text": "先生《せんせい》が じしょを 貸《か》して くださいました。",
+      "tokens": ["先生《せんせい》", "が", "じしょ", "を", "貸《か》して", "くださいました"],
       "grammar": "n4-te-kudasaru",
       "translation": {
         "en": "The teacher kindly lent me a dictionary.",
@@ -34,8 +34,8 @@
     },
     {
       "slug": "n4-te-kudasaru-2",
-      "text": "ぶちょうに しりょうを みて いただきました。",
-      "tokens": ["ぶちょう", "に", "しりょう", "を", "みて", "いただきました"],
+      "text": "ぶちょうに しりょうを 見《み》て いただきました。",
+      "tokens": ["ぶちょう", "に", "しりょう", "を", "見《み》て", "いただきました"],
       "grammar": "n4-te-kudasaru",
       "translation": {
         "en": "I had the manager look over the documents.",
@@ -54,8 +54,8 @@
     },
     {
       "slug": "n4-te-kuremasenka-2",
-      "text": "しゃしんを とって くださいませんか。",
-      "tokens": ["しゃしん", "を", "とって", "くださいません", "か"],
+      "text": "写真《しゃしん》を とって くださいませんか。",
+      "tokens": ["写真《しゃしん》", "を", "とって", "くださいません", "か"],
       "grammar": "n4-te-kuremasenka",
       "translation": {
         "en": "Would you mind taking a photo for us?",

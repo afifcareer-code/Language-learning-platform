@@ -34,8 +34,8 @@
     },
     {
       "slug": "n4-yasukereba-kaimasu",
-      "text": "ねだんが やすければ かいます。",
-      "tokens": ["ねだん", "が", "やすければ", "かいます"],
+      "text": "ねだんが 安《やす》ければ かいます。",
+      "tokens": ["ねだん", "が", "安《やす》ければ", "かいます"],
       "grammar": "n4-ba",
       "translation": {
         "en": "If the price is low, I'll buy it.",
@@ -54,8 +54,8 @@
     },
     {
       "slug": "n4-kado-magaru-to",
-      "text": "かどを みぎに まがると えきが あります。",
-      "tokens": ["かど", "を", "みぎ", "に", "まがると", "えき", "が", "あります"],
+      "text": "かどを 右《みぎ》に まがると えきが あります。",
+      "tokens": ["かど", "を", "右《みぎ》", "に", "まがると", "えき", "が", "あります"],
       "grammar": "n4-to-condition",
       "translation": {
         "en": "Turn right at the corner and you'll find the station.",

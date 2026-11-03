@@ -34,8 +34,8 @@
     },
     {
       "slug": "n5-toki-2",
-      "text": "こどもの とき、よく やまへ いきました。",
-      "tokens": ["こども", "の", "とき", "よく", "やま", "へ", "いきました"],
+      "text": "こどもの とき、よく 山《やま》へ いきました。",
+      "tokens": ["こども", "の", "とき", "よく", "山《やま》", "へ", "いきました"],
       "grammar": "n5-toki",
       "translation": {
         "en": "When I was a child, I often went to the mountains.",

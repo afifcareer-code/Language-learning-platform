@@ -4,8 +4,8 @@
   "items": [
     {
       "slug": "n5-no-ga-suki-1",
-      "text": "えを かくのが すきです。",
-      "tokens": ["え", "を", "かく", "の", "が", "すきです"],
+      "text": "えを 書《か》くのが すきです。",
+      "tokens": ["え", "を", "書《か》く", "の", "が", "すきです"],
       "grammar": "n5-no-ga-suki",
       "translation": {
         "en": "I like drawing pictures.",
@@ -24,8 +24,8 @@
     },
     {
       "slug": "n5-ga-jouzu-1",
-      "text": "ははは りょうりが じょうずです。",
-      "tokens": ["はは", "は", "りょうり", "が", "じょうずです"],
+      "text": "母《はは》は りょうりが じょうずです。",
+      "tokens": ["母《はは》", "は", "りょうり", "が", "じょうずです"],
       "grammar": "n5-ga-jouzu",
       "translation": {
         "en": "My mother is good at cooking.",

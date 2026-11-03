@@ -14,8 +14,8 @@
     },
     {
       "slug": "n4-oki-ni-2",
-      "text": "いちにちおきに プールで およぎます。",
-      "tokens": ["いちにち", "おきに", "プール", "で", "およぎます"],
+      "text": "一日《いちにち》おきに プールで およぎます。",
+      "tokens": ["一日《いちにち》", "おきに", "プール", "で", "およぎます"],
       "grammar": "n4-oki-ni",
       "translation": {
         "en": "I swim in the pool every other day.",
@@ -24,8 +24,8 @@
     },
     {
       "slug": "n4-me-ordinal-1",
-      "text": "ふたつめの かどを みぎに まがって ください。",
-      "tokens": ["ふたつめ", "の", "かど", "を", "みぎ", "に", "まがって", "ください"],
+      "text": "ふたつめの かどを 右《みぎ》に まがって ください。",
+      "tokens": ["ふたつめ", "の", "かど", "を", "右《みぎ》", "に", "まがって", "ください"],
       "grammar": "n4-me-ordinal",
       "translation": {
         "en": "Please turn right at the second corner.",
@@ -34,8 +34,8 @@
     },
     {
       "slug": "n4-me-ordinal-2",
-      "text": "にほんは にかいめです。",
-      "tokens": ["にほん", "は", "にかいめ", "です"],
+      "text": "日本《にほん》は にかいめです。",
+      "tokens": ["日本《にほん》", "は", "にかいめ", "です"],
       "grammar": "n4-me-ordinal",
       "translation": {
         "en": "This is my second time in Japan.",

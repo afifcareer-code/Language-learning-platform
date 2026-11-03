@@ -4,8 +4,8 @@
   "items": [
     {
       "slug": "n4-darou-1",
-      "text": "かれは たぶん こないだろう。",
-      "tokens": ["かれ", "は", "たぶん", "こない", "だろう"],
+      "text": "かれは たぶん 来《こ》ないだろう。",
+      "tokens": ["かれ", "は", "たぶん", "来《こ》ない", "だろう"],
       "grammar": "n4-darou",
       "translation": {
         "en": "He probably won't come.",
@@ -14,8 +14,8 @@
     },
     {
       "slug": "n4-darou-2",
-      "text": "この しけんは むずかしいでしょう。",
-      "tokens": ["この", "しけん", "は", "むずかしい", "でしょう"],
+      "text": "この 試験《しけん》は むずかしいでしょう。",
+      "tokens": ["この", "試験《しけん》", "は", "むずかしい", "でしょう"],
       "grammar": "n4-darou",
       "translation": {
         "en": "This exam will probably be difficult.",
@@ -24,8 +24,8 @@
     },
     {
       "slug": "n4-mitai-1",
-      "text": "そとは さむいみたいです。",
-      "tokens": ["そと", "は", "さむい", "みたい", "です"],
+      "text": "外《そと》は さむいみたいです。",
+      "tokens": ["外《そと》", "は", "さむい", "みたい", "です"],
       "grammar": "n4-mitai",
       "translation": {
         "en": "It seems cold outside.",
@@ -44,8 +44,8 @@
     },
     {
       "slug": "n4-rashii-1",
-      "text": "あの みせは らいげつ しまる らしいです。",
-      "tokens": ["あの", "みせ", "は", "らいげつ", "しまる", "らしい", "です"],
+      "text": "あの 店《みせ》は 来月《らいげつ》 しまる らしいです。",
+      "tokens": ["あの", "店《みせ》", "は", "来月《らいげつ》", "しまる", "らしい", "です"],
       "grammar": "n4-rashii",
       "translation": {
         "en": "Apparently that shop is closing next month.",
@@ -54,8 +54,8 @@
     },
     {
       "slug": "n4-rashii-2",
-      "text": "きょうは はるらしい てんきですね。",
-      "tokens": ["きょう", "は", "はる", "らしい", "てんき", "です", "ね"],
+      "text": "今日《きょう》は はるらしい 天気《てんき》ですね。",
+      "tokens": ["今日《きょう》", "は", "はる", "らしい", "天気《てんき》", "です", "ね"],
       "grammar": "n4-rashii",
       "translation": {
         "en": "Today's weather is just like spring, isn't it?",

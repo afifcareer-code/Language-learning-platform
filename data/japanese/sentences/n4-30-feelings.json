@@ -14,8 +14,8 @@
     },
     {
       "slug": "n4-temo-2",
-      "text": "いくら かんがえても わかりません。",
-      "tokens": ["いくら", "かんがえて", "も", "わかりません"],
+      "text": "いくら 考《かんが》えても わかりません。",
+      "tokens": ["いくら", "考《かんが》えて", "も", "わかりません"],
       "grammar": "n4-temo",
       "translation": {
         "en": "However much I think about it, I can't work it out.",
@@ -24,8 +24,8 @@
     },
     {
       "slug": "n4-ba-yokatta-1",
-      "text": "もっと べんきょうすれば よかったです。",
-      "tokens": ["もっと", "べんきょうすれば", "よかったです"],
+      "text": "もっと 勉強《べんきょう》すれば よかったです。",
+      "tokens": ["もっと", "勉強《べんきょう》すれば", "よかったです"],
       "grammar": "n4-ba-yokatta",
       "translation": {
         "en": "I should have studied more.",
@@ -34,8 +34,8 @@
     },
     {
       "slug": "n4-ba-yokatta-2",
-      "text": "あんな ことを いわなければ よかったです。",
-      "tokens": ["あんな", "こと", "を", "いわなければ", "よかったです"],
+      "text": "あんな ことを 言《い》わなければ よかったです。",
+      "tokens": ["あんな", "こと", "を", "言《い》わなければ", "よかったです"],
       "grammar": "n4-ba-yokatta",
       "translation": {
         "en": "I wish I hadn't said that.",

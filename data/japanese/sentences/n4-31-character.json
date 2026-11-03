@@ -4,8 +4,8 @@
   "items": [
     {
       "slug": "n4-sa-1",
-      "text": "この やまの たかさは どのぐらいですか。",
-      "tokens": ["この", "やま", "の", "たかさ", "は", "どのぐらい", "です", "か"],
+      "text": "この 山《やま》の 高《たか》さは どのぐらいですか。",
+      "tokens": ["この", "山《やま》", "の", "高《たか》さ", "は", "どのぐらい", "です", "か"],
       "grammar": "n4-sa",
       "translation": {
         "en": "How high is this mountain?",
@@ -14,8 +14,8 @@
     },
     {
       "slug": "n4-sa-2",
-      "text": "はしの ながさは ひゃくメートルです。",
-      "tokens": ["はし", "の", "ながさ", "は", "ひゃくメートル", "です"],
+      "text": "はしの 長《なが》さは ひゃくメートルです。",
+      "tokens": ["はし", "の", "長《なが》さ", "は", "ひゃくメートル", "です"],
       "grammar": "n4-sa",
       "translation": {
         "en": "The bridge is a hundred metres long.",
@@ -24,8 +24,8 @@
     },
     {
       "slug": "n4-ka-na-1",
-      "text": "あした はれるかな。",
-      "tokens": ["あした", "はれる", "かな"],
+      "text": "明日《あした》 はれるかな。",
+      "tokens": ["明日《あした》", "はれる", "かな"],
       "grammar": "n4-ka-na",
       "translation": {
         "en": "I wonder if it'll be sunny tomorrow.",

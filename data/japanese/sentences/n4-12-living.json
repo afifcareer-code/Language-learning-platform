@@ -4,8 +4,8 @@
   "items": [
     {
       "slug": "n4-mama-1",
-      "text": "でんきを つけた まま ねて しまいました。",
-      "tokens": ["でんき", "を", "つけた", "まま", "ねて", "しまいました"],
+      "text": "電気《でんき》を つけた まま ねて しまいました。",
+      "tokens": ["電気《でんき》", "を", "つけた", "まま", "ねて", "しまいました"],
       "grammar": "n4-mama",
       "translation": {
         "en": "I fell asleep with the light on.",
@@ -14,8 +14,8 @@
     },
     {
       "slug": "n4-mama-2",
-      "text": "くつの まま へやに はいらないで ください。",
-      "tokens": ["くつ", "の", "まま", "へや", "に", "はいらないで", "ください"],
+      "text": "くつの まま へやに 入《はい》らないで ください。",
+      "tokens": ["くつ", "の", "まま", "へや", "に", "入《はい》らないで", "ください"],
       "grammar": "n4-mama",
       "translation": {
         "en": "Please don't come into the room with your shoes on.",
@@ -24,8 +24,8 @@
     },
     {
       "slug": "n4-sugiru-1",
-      "text": "きのうは のみすぎました。",
-      "tokens": ["きのう", "は", "のみすぎました"],
+      "text": "きのうは 飲《の》みすぎました。",
+      "tokens": ["きのう", "は", "飲《の》みすぎました"],
       "grammar": "n4-sugiru",
       "translation": {
         "en": "I drank too much yesterday.",

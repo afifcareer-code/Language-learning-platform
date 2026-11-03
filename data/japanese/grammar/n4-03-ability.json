@@ -22,7 +22,7 @@
           }
         },
         {
-          "ja": "かんじが すこし よめます。",
+          "ja": "漢字《かんじ》が 少《すこ》し 読《よ》めます。",
           "translation": {
             "en": "I can read a little kanji.",
             "id": "Saya bisa membaca sedikit kanji."
@@ -83,14 +83,14 @@
       },
       "examples": [
         {
-          "ja": "にほんごが はなせるように なりました。",
+          "ja": "にほんごが 話《はな》せるように なりました。",
           "translation": {
             "en": "I have become able to speak Japanese.",
             "id": "Sekarang saya sudah bisa berbicara bahasa Jepang."
           }
         },
         {
-          "ja": "くるまを うんてん できるように なりたいです。",
+          "ja": "車《くるま》を 運転《うんてん》 できるように なりたいです。",
           "translation": {
             "en": "I want to become able to drive a car.",
             "id": "Saya ingin bisa menyetir mobil."

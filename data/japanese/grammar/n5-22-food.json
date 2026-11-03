@@ -49,14 +49,14 @@
       },
       "examples": [
         {
-          "ja": "いっしょに ひるごはんを たべませんか。",
+          "ja": "いっしょに ひるごはんを 食《た》べませんか。",
           "translation": {
             "en": "Would you like to have lunch together?",
             "id": "Bagaimana kalau kita makan siang bersama?"
           }
         },
         {
-          "ja": "こんばん えいがを みませんか。",
+          "ja": "こんばん えいがを 見《み》ませんか。",
           "translation": {
             "en": "Would you like to see a film tonight?",
             "id": "Maukah menonton film malam ini?"

@@ -15,14 +15,14 @@
       },
       "examples": [
         {
-          "ja": "しゃちょうは もう おかえりに なりました。",
+          "ja": "社長《しゃちょう》は もう おかえりに なりました。",
           "translation": {
             "en": "The president has already gone home.",
             "id": "Bapak direktur sudah pulang."
           }
         },
         {
-          "ja": "せんせいは この ほんを およみに なりましたか。",
+          "ja": "先生《せんせい》は この ほんを およみに なりましたか。",
           "translation": {
             "en": "Have you read this book, sensei?",
             "id": "Apakah Bapak/Ibu guru sudah membaca buku ini?"
@@ -83,14 +83,14 @@
       },
       "examples": [
         {
-          "ja": "しょうしょう まって いただけませんか。",
+          "ja": "しょうしょう 待《ま》って いただけませんか。",
           "translation": {
             "en": "Could you wait a moment, please?",
             "id": "Bisakah Anda menunggu sebentar?"
           }
         },
         {
-          "ja": "もう いちど せつめいして いただけませんか。",
+          "ja": "もう 一度《いちど》 せつめいして いただけませんか。",
           "translation": {
             "en": "Could you explain it once more, please?",
             "id": "Bisakah Anda menjelaskannya sekali lagi?"

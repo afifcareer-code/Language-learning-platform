@@ -24,8 +24,8 @@
     },
     {
       "slug": "n5-masen-ka-1",
-      "text": "いっしょに ひるごはんを たべませんか。",
-      "tokens": ["いっしょに", "ひるごはん", "を", "たべません", "か"],
+      "text": "いっしょに ひるごはんを 食《た》べませんか。",
+      "tokens": ["いっしょに", "ひるごはん", "を", "食《た》べません", "か"],
       "grammar": "n5-masen-ka",
       "translation": {
         "en": "Would you like to have lunch together?",
@@ -34,8 +34,8 @@
     },
     {
       "slug": "n5-masen-ka-2",
-      "text": "こんばん えいがを みませんか。",
-      "tokens": ["こんばん", "えいが", "を", "みません", "か"],
+      "text": "こんばん えいがを 見《み》ませんか。",
+      "tokens": ["こんばん", "えいが", "を", "見《み》ません", "か"],
       "grammar": "n5-masen-ka",
       "translation": {
         "en": "Would you like to see a film tonight?",

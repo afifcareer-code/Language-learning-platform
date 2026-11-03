@@ -14,8 +14,8 @@
     },
     {
       "slug": "n4-michi-konde-ita-node",
-      "text": "みちが こんで いたので ちこくしました。",
-      "tokens": ["みち", "が", "こんで", "いた", "ので", "ちこくしました"],
+      "text": "道《みち》が こんで いたので ちこくしました。",
+      "tokens": ["道《みち》", "が", "こんで", "いた", "ので", "ちこくしました"],
       "grammar": "n4-node",
       "translation": {
         "en": "I was late because the road was crowded.",
@@ -24,8 +24,8 @@
     },
     {
       "slug": "n4-kenkou-no-tame",
-      "text": "けんこうの ために まいにち あるきます。",
-      "tokens": ["けんこう", "の", "ために", "まいにち", "あるきます"],
+      "text": "けんこうの ために 毎日《まいにち》 歩《ある》きます。",
+      "tokens": ["けんこう", "の", "ために", "毎日《まいにち》", "歩《ある》きます"],
       "grammar": "n4-tame-ni",
       "translation": {
         "en": "I walk every day for my health.",
@@ -34,8 +34,8 @@
     },
     {
       "slug": "n4-goukaku-suru-tame",
-      "text": "しけんに ごうかくする ために がんばって います。",
-      "tokens": ["しけん", "に", "ごうかくする", "ために", "がんばって", "います"],
+      "text": "試験《しけん》に ごうかくする ために がんばって います。",
+      "tokens": ["試験《しけん》", "に", "ごうかくする", "ために", "がんばって", "います"],
       "grammar": "n4-tame-ni",
       "translation": {
         "en": "I'm working hard to pass the exam.",
@@ -54,8 +54,8 @@
     },
     {
       "slug": "n4-hayaku-deta-noni",
-      "text": "はやく でたのに まにあいませんでした。",
-      "tokens": ["はやく", "でた", "のに", "まにあいませんでした"],
+      "text": "はやく 出《で》たのに まにあいませんでした。",
+      "tokens": ["はやく", "出《で》た", "のに", "まにあいませんでした"],
       "grammar": "n4-noni",
       "translation": {
         "en": "Although I left early, I didn't make it in time.",

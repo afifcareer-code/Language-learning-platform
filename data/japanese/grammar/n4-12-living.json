@@ -15,14 +15,14 @@
       },
       "examples": [
         {
-          "ja": "でんきを つけた まま ねて しまいました。",
+          "ja": "電気《でんき》を つけた まま ねて しまいました。",
           "translation": {
             "en": "I fell asleep with the light on.",
             "id": "Saya ketiduran dengan lampu tetap menyala."
           }
         },
         {
-          "ja": "くつの まま へやに はいらないで ください。",
+          "ja": "くつの まま へやに 入《はい》らないで ください。",
           "translation": {
             "en": "Please don't come into the room with your shoes on.",
             "id": "Tolong jangan masuk kamar dengan tetap memakai sepatu."
@@ -49,7 +49,7 @@
       },
       "examples": [
         {
-          "ja": "きのうは のみすぎました。",
+          "ja": "きのうは 飲《の》みすぎました。",
           "translation": {
             "en": "I drank too much yesterday.",
             "id": "Kemarin saya terlalu banyak minum."

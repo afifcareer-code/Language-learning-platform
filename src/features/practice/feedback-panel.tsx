@@ -1,5 +1,6 @@
 "use client";
 
+import { RubyText } from "@/features/japanese/ruby-text";
 import type { AttemptFeedback } from "@/features/practice/actions";
 import { AudioPlayButton } from "@/audio/audio-play-button";
 import { useSpeech } from "@/audio/use-speech";
@@ -38,7 +39,7 @@ export function FeedbackPanel({ feedback, item }: { feedback: AttemptFeedback; i
       {showPair && (
         <p className="mt-1 text-3xl">
           <span lang={item.displayLang} className="font-jp">
-            {item.display}
+            <RubyText text={item.display} />
           </span>{" "}
           = {item.reading}
         </p>

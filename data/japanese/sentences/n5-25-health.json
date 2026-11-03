@@ -14,8 +14,8 @@
     },
     {
       "slug": "n5-wa-ga-2",
-      "text": "あには せが たかいです。",
-      "tokens": ["あに", "は", "せ", "が", "たかいです"],
+      "text": "あには せが 高《たか》いです。",
+      "tokens": ["あに", "は", "せ", "が", "高《たか》いです"],
       "grammar": "n5-wa-ga",
       "translation": {
         "en": "My older brother is tall.",
@@ -24,8 +24,8 @@
     },
     {
       "slug": "n5-kara-reason-1",
-      "text": "ねつが あるから、きょうは やすみます。",
-      "tokens": ["ねつ", "が", "ある", "から", "きょう", "は", "やすみます"],
+      "text": "ねつが あるから、今日《きょう》は やすみます。",
+      "tokens": ["ねつ", "が", "ある", "から", "今日《きょう》", "は", "やすみます"],
       "grammar": "n5-kara-reason",
       "translation": {
         "en": "I have a fever, so I'm taking today off.",

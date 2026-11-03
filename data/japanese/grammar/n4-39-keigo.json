@@ -15,7 +15,7 @@
       },
       "examples": [
         {
-          "ja": "せんせいは なんと おっしゃいましたか。",
+          "ja": "先生《せんせい》は なんと おっしゃいましたか。",
           "translation": {
             "en": "What did the teacher say?",
             "id": "Bapak/Ibu guru bilang apa?"
@@ -49,14 +49,14 @@
       },
       "examples": [
         {
-          "ja": "わたしは アフィフと もうします。",
+          "ja": "私《わたし》は アフィフと もうします。",
           "translation": {
             "en": "My name is Afif.",
             "id": "Nama saya Afif."
           }
         },
         {
-          "ja": "あした また まいります。",
+          "ja": "明日《あした》 また まいります。",
           "translation": {
             "en": "I'll come again tomorrow.",
             "id": "Besok saya akan datang lagi."

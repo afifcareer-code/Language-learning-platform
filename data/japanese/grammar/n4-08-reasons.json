@@ -22,7 +22,7 @@
           }
         },
         {
-          "ja": "みちが こんで いたので ちこくしました。",
+          "ja": "道《みち》が こんで いたので ちこくしました。",
           "translation": {
             "en": "I was late because the road was crowded.",
             "id": "Saya terlambat karena jalannya macet."
@@ -49,14 +49,14 @@
       },
       "examples": [
         {
-          "ja": "けんこうの ために まいにち あるきます。",
+          "ja": "けんこうの ために 毎日《まいにち》 歩《ある》きます。",
           "translation": {
             "en": "I walk every day for my health.",
             "id": "Saya berjalan kaki setiap hari demi kesehatan."
           }
         },
         {
-          "ja": "しけんに ごうかくする ために がんばって います。",
+          "ja": "試験《しけん》に ごうかくする ために がんばって います。",
           "translation": {
             "en": "I'm working hard to pass the exam.",
             "id": "Saya berusaha keras supaya lulus ujian."
@@ -90,7 +90,7 @@
           }
         },
         {
-          "ja": "はやく でたのに まにあいませんでした。",
+          "ja": "はやく 出《で》たのに まにあいませんでした。",
           "translation": {
             "en": "Although I left early, I didn't make it in time.",
             "id": "Padahal saya berangkat lebih awal, tetapi tetap tidak sempat."

@@ -15,7 +15,7 @@
       },
       "examples": [
         {
-          "ja": "それは ゆめの ような はなしです。",
+          "ja": "それは ゆめの ような 話《はなし》です。",
           "translation": {
             "en": "That's like a dream.",
             "id": "Itu cerita seperti mimpi."
@@ -49,14 +49,14 @@
       },
       "examples": [
         {
-          "ja": "わたしの かばんは あなたのと おなじです。",
+          "ja": "私《わたし》の かばんは あなたのと 同《おな》じです。",
           "translation": {
             "en": "My bag is the same as yours.",
             "id": "Tas saya sama dengan tas Anda."
           }
         },
         {
-          "ja": "にほんの しゅうかんは インドネシアと ちがいます。",
+          "ja": "日本《にほん》の しゅうかんは インドネシアと ちがいます。",
           "translation": {
             "en": "Japanese customs are different from Indonesian ones.",
             "id": "Kebiasaan di Jepang berbeda dengan di Indonesia."

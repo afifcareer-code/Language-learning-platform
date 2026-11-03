@@ -22,7 +22,7 @@
           }
         },
         {
-          "ja": "でんきを けして ください。",
+          "ja": "電気《でんき》を けして ください。",
           "translation": {
             "en": "Please turn off the light.",
             "id": "Tolong matikan lampunya."
@@ -49,7 +49,7 @@
       },
       "examples": [
         {
-          "ja": "おとを すこし ちいさく して ください。",
+          "ja": "音《おと》を 少《すこ》し 小《ちい》さく して ください。",
           "translation": {
             "en": "Please turn the sound down a little.",
             "id": "Tolong kecilkan suaranya sedikit."

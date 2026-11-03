@@ -14,8 +14,8 @@
     },
     {
       "slug": "n5-amari-2",
-      "text": "あまり テレビを みません。",
-      "tokens": ["あまり", "テレビ", "を", "みません"],
+      "text": "あまり テレビを 見《み》ません。",
+      "tokens": ["あまり", "テレビ", "を", "見《み》ません"],
       "grammar": "n5-amari",
       "translation": {
         "en": "I don't watch TV much.",

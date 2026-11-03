@@ -28,6 +28,12 @@ taught as 看護師), and 71 more grammar points (〜てしまう, 〜ておく,
 embedded questions, causative passive, keigo verbs and more). N4 now has 732 words,
 101 grammar points and 202 sentences in 39 lessons.
 
+Sentences carry kanji with furigana (漢字《かな》) once the learner has been taught
+those kanji: `scripts/content/add-furigana.py` writes a token in kanji only when it is
+a known word (or a conjugated form of one), its kanji are taught in that lesson or
+earlier, and no other word reads the same. About 170 N5/N4 sentences now use kanji;
+the rest stay in kana. Speech and audio use the reading, so they are unchanged.
+
 N4 Core: ten lessons (Making plans, Experiences, Abilities, Giving and receiving,
 Advice and rules, If and when, What people say and how things look, Reasons and
 purposes, Passive and causative, Polite language) with 140 words, 30 grammar

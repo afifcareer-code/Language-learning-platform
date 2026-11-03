@@ -15,14 +15,14 @@
       },
       "examples": [
         {
-          "ja": "いま うちを でる ところです。",
+          "ja": "今《いま》 うちを 出《で》る ところです。",
           "translation": {
             "en": "I'm just about to leave home.",
             "id": "Saya baru akan berangkat dari rumah."
           }
         },
         {
-          "ja": "いま えきに ついた ところです。",
+          "ja": "今《いま》 駅《えき》に ついた ところです。",
           "translation": {
             "en": "I've just arrived at the station.",
             "id": "Saya baru saja tiba di stasiun."
@@ -49,7 +49,7 @@
       },
       "examples": [
         {
-          "ja": "にほんに きた ばかりです。",
+          "ja": "日本《にほん》に きた ばかりです。",
           "translation": {
             "en": "I've only just come to Japan.",
             "id": "Saya baru saja datang ke Jepang."
@@ -83,7 +83,7 @@
       },
       "examples": [
         {
-          "ja": "かさを もって いきます。",
+          "ja": "かさを 持《も》って いきます。",
           "translation": {
             "en": "I'll take an umbrella with me.",
             "id": "Saya akan membawa payung."

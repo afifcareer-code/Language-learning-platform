@@ -4,8 +4,8 @@
   "items": [
     {
       "slug": "n4-you-ni-suru-1",
-      "text": "まいにち やさいを たべるように して います。",
-      "tokens": ["まいにち", "やさい", "を", "たべる", "ように", "して", "います"],
+      "text": "毎日《まいにち》 やさいを 食《た》べるように して います。",
+      "tokens": ["毎日《まいにち》", "やさい", "を", "食《た》べる", "ように", "して", "います"],
       "grammar": "n4-you-ni-suru",
       "translation": {
         "en": "I make a point of eating vegetables every day.",
@@ -24,8 +24,8 @@
     },
     {
       "slug": "n4-you-ni-purpose-1",
-      "text": "わすれないように てちょうに かきます。",
-      "tokens": ["わすれない", "ように", "てちょう", "に", "かきます"],
+      "text": "わすれないように てちょうに 書《か》きます。",
+      "tokens": ["わすれない", "ように", "てちょう", "に", "書《か》きます"],
       "grammar": "n4-you-ni-purpose",
       "translation": {
         "en": "I'll write it in my planner so I don't forget.",
@@ -34,8 +34,8 @@
     },
     {
       "slug": "n4-you-ni-purpose-2",
-      "text": "よく きこえるように まえの せきに すわりました。",
-      "tokens": ["よく", "きこえる", "ように", "まえ", "の", "せき", "に", "すわりました"],
+      "text": "よく 聞《き》こえるように まえの せきに すわりました。",
+      "tokens": ["よく", "聞《き》こえる", "ように", "まえ", "の", "せき", "に", "すわりました"],
       "grammar": "n4-you-ni-purpose",
       "translation": {
         "en": "I sat in the front seat so that I could hear well.",

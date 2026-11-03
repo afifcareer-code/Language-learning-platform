@@ -4,8 +4,8 @@
   "items": [
     {
       "slug": "n4-made-ni-1",
-      "text": "ごじまでに かえって ください。",
-      "tokens": ["ごじ", "までに", "かえって", "ください"],
+      "text": "ごじまでに 帰《かえ》って ください。",
+      "tokens": ["ごじ", "までに", "帰《かえ》って", "ください"],
       "grammar": "n4-made-ni",
       "translation": {
         "en": "Please be back by five.",
@@ -14,8 +14,8 @@
     },
     {
       "slug": "n4-made-ni-2",
-      "text": "きんようびまでに しゅくだいを だします。",
-      "tokens": ["きんようび", "までに", "しゅくだい", "を", "だします"],
+      "text": "金曜日《きんようび》までに しゅくだいを 出《だ》します。",
+      "tokens": ["金曜日《きんようび》", "までに", "しゅくだい", "を", "出《だ》します"],
       "grammar": "n4-made-ni",
       "translation": {
         "en": "I'll hand in the homework by Friday.",
@@ -24,8 +24,8 @@
     },
     {
       "slug": "n4-aida-1",
-      "text": "なつやすみの あいだ、いなかに いました。",
-      "tokens": ["なつやすみ", "の", "あいだ", "いなか", "に", "いました"],
+      "text": "夏休《なつやす》みの 間《あいだ》、いなかに いました。",
+      "tokens": ["夏休《なつやす》み", "の", "間《あいだ》", "いなか", "に", "いました"],
       "grammar": "n4-aida",
       "translation": {
         "en": "I was in the countryside throughout the summer holidays.",
@@ -34,8 +34,8 @@
     },
     {
       "slug": "n4-aida-2",
-      "text": "るすの あいだに どろぼうが はいりました。",
-      "tokens": ["るす", "の", "あいだに", "どろぼう", "が", "はいりました"],
+      "text": "るすの 間《あいだ》に どろぼうが 入《はい》りました。",
+      "tokens": ["るす", "の", "間《あいだ》に", "どろぼう", "が", "入《はい》りました"],
       "grammar": "n4-aida",
       "translation": {
         "en": "A burglar got in while I was out.",
@@ -44,8 +44,8 @@
     },
     {
       "slug": "n4-uchi-ni-1",
-      "text": "あつい うちに たべて ください。",
-      "tokens": ["あつい", "うちに", "たべて", "ください"],
+      "text": "あつい うちに 食《た》べて ください。",
+      "tokens": ["あつい", "うちに", "食《た》べて", "ください"],
       "grammar": "n4-uchi-ni",
       "translation": {
         "en": "Please eat it while it's hot.",
@@ -54,8 +54,8 @@
     },
     {
       "slug": "n4-uchi-ni-2",
-      "text": "わかい うちに いろいろな くにへ いきたいです。",
-      "tokens": ["わかい", "うちに", "いろいろな", "くに", "へ", "いきたいです"],
+      "text": "わかい うちに いろいろな 国《くに》へ いきたいです。",
+      "tokens": ["わかい", "うちに", "いろいろな", "国《くに》", "へ", "いきたいです"],
       "grammar": "n4-uchi-ni",
       "translation": {
         "en": "I want to go to many countries while I'm young.",

@@ -15,14 +15,14 @@
       },
       "examples": [
         {
-          "ja": "でんしゃは もう ついた はずです。",
+          "ja": "電車《でんしゃ》は もう ついた はずです。",
           "translation": {
             "en": "The train should have arrived by now.",
             "id": "Keretanya seharusnya sudah tiba."
           }
         },
         {
-          "ja": "かのじょは きょう やすみの はずです。",
+          "ja": "かのじょは 今日《きょう》 休《やす》みの はずです。",
           "translation": {
             "en": "She should be off today.",
             "id": "Hari ini seharusnya dia libur."
@@ -49,14 +49,14 @@
       },
       "examples": [
         {
-          "ja": "あしたは ゆきが ふるかもしれません。",
+          "ja": "明日《あした》は ゆきが ふるかもしれません。",
           "translation": {
             "en": "It might snow tomorrow.",
             "id": "Besok mungkin turun salju."
           }
         },
         {
-          "ja": "かれは びょうきかもしれません。",
+          "ja": "かれは 病気《びょうき》かもしれません。",
           "translation": {
             "en": "He might be ill.",
             "id": "Dia mungkin sakit."

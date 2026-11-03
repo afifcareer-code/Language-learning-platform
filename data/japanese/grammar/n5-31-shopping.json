@@ -22,7 +22,7 @@
           }
         },
         {
-          "ja": "いま なにが ほしいですか。",
+          "ja": "今《いま》 なにが ほしいですか。",
           "translation": {
             "en": "What do you want now?",
             "id": "Sekarang Anda ingin apa?"
@@ -49,7 +49,7 @@
       },
       "examples": [
         {
-          "ja": "バスは でんしゃより やすいです。",
+          "ja": "バスは 電車《でんしゃ》より やすいです。",
           "translation": {
             "en": "The bus is cheaper than the train.",
             "id": "Bus lebih murah daripada kereta."

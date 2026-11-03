@@ -22,7 +22,7 @@
           }
         },
         {
-          "ja": "ビールは れいぞうこに いれて あります。",
+          "ja": "ビールは れいぞうこに 入《い》れて あります。",
           "translation": {
             "en": "The beer has been put in the fridge.",
             "id": "Birnya sudah dimasukkan ke kulkas."
@@ -49,14 +49,14 @@
       },
       "examples": [
         {
-          "ja": "りょこうの まえに ホテルを よやくして おきます。",
+          "ja": "旅行《りょこう》の 前《まえ》に ホテルを よやくして おきます。",
           "translation": {
             "en": "I'll book the hotel before the trip.",
             "id": "Sebelum perjalanan, saya pesan hotel dulu."
           }
         },
         {
-          "ja": "まどを あけて おいて ください。",
+          "ja": "まどを 開《あ》けて おいて ください。",
           "translation": {
             "en": "Please leave the window open.",
             "id": "Tolong biarkan jendelanya terbuka."

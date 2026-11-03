@@ -22,7 +22,7 @@
           }
         },
         {
-          "ja": "いくら かんがえても わかりません。",
+          "ja": "いくら 考《かんが》えても わかりません。",
           "translation": {
             "en": "However much I think about it, I can't work it out.",
             "id": "Sekeras apa pun saya pikirkan, tetap tidak mengerti."
@@ -49,14 +49,14 @@
       },
       "examples": [
         {
-          "ja": "もっと べんきょうすれば よかったです。",
+          "ja": "もっと 勉強《べんきょう》すれば よかったです。",
           "translation": {
             "en": "I should have studied more.",
             "id": "Seharusnya saya belajar lebih banyak."
           }
         },
         {
-          "ja": "あんな ことを いわなければ よかったです。",
+          "ja": "あんな ことを 言《い》わなければ よかったです。",
           "translation": {
             "en": "I wish I hadn't said that.",
             "id": "Seharusnya saya tidak mengatakan hal itu."

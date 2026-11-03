@@ -14,8 +14,8 @@
     },
     {
       "slug": "n4-te-hoshii-2",
-      "text": "はやく あめが やんで ほしいです。",
-      "tokens": ["はやく", "あめ", "が", "やんで", "ほしいです"],
+      "text": "はやく あめが 止《や》んで ほしいです。",
+      "tokens": ["はやく", "あめ", "が", "止《や》んで", "ほしいです"],
       "grammar": "n4-te-hoshii",
       "translation": {
         "en": "I want the rain to stop soon.",
@@ -24,8 +24,8 @@
     },
     {
       "slug": "n4-garu-1",
-      "text": "こどもが そとで あそびたがって います。",
-      "tokens": ["こども", "が", "そと", "で", "あそびたがって", "います"],
+      "text": "こどもが 外《そと》で あそびたがって います。",
+      "tokens": ["こども", "が", "外《そと》", "で", "あそびたがって", "います"],
       "grammar": "n4-garu",
       "translation": {
         "en": "The child wants to play outside.",
@@ -34,8 +34,8 @@
     },
     {
       "slug": "n4-garu-2",
-      "text": "いもうとは いぬを こわがって います。",
-      "tokens": ["いもうと", "は", "いぬ", "を", "こわがって", "います"],
+      "text": "妹《いもうと》は 犬《いぬ》を こわがって います。",
+      "tokens": ["妹《いもうと》", "は", "犬《いぬ》", "を", "こわがって", "います"],
       "grammar": "n4-garu",
       "translation": {
         "en": "My younger sister is scared of dogs.",

@@ -1,5 +1,6 @@
 import { z } from "zod";
 import { localizedTextSchema } from "@/localization/content";
+import { stripRuby } from "../ruby";
 
 /** Content type of practice sentences in the generic content store. */
 export const SENTENCE_CONTENT_TYPE = "ja.sentence";
@@ -9,7 +10,7 @@ const slug = z.string().regex(/^[a-z0-9-]+$/);
 /** A sentence as authored in data/japanese/sentences/*.json. Sentences are original. */
 export const sentenceEntrySchema = z.object({
   slug,
-  /** The sentence as written for learners at its level, e.g. "わたしは がくせいです。". */
+  /** The sentence as written for learners at its level, e.g. "わたしは がくせいです。". Kanji carry furigana: 学生《がくせい》. */
   text: z.string().min(2),
   /** The sentence split into the units a learner arranges (words and particles), in order. */
   tokens: z.array(z.string().min(1)).min(2),
@@ -48,6 +49,6 @@ export function isSentenceData(data: unknown): data is SentenceItemData {
 
 /** The tokens must spell the text (ignoring spaces and final punctuation). */
 export function tokensMatchText(data: Pick<SentenceItemData, "tokens" | "text">): boolean {
-  const strip = (s: string) => s.replace(/[\s。？?、]/g, "");
+  const strip = (s: string) => stripRuby(s).replace(/[\s。？?、]/g, "");
   return strip(data.tokens.join("")) === strip(data.text);
 }

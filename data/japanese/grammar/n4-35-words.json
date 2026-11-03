@@ -22,7 +22,7 @@
           }
         },
         {
-          "ja": "いちにちおきに プールで およぎます。",
+          "ja": "一日《いちにち》おきに プールで およぎます。",
           "translation": {
             "en": "I swim in the pool every other day.",
             "id": "Saya berenang di kolam renang selang sehari."
@@ -49,14 +49,14 @@
       },
       "examples": [
         {
-          "ja": "ふたつめの かどを みぎに まがって ください。",
+          "ja": "ふたつめの かどを 右《みぎ》に まがって ください。",
           "translation": {
             "en": "Please turn right at the second corner.",
             "id": "Silakan belok kanan di tikungan kedua."
           }
         },
         {
-          "ja": "にほんは にかいめです。",
+          "ja": "日本《にほん》は にかいめです。",
           "translation": {
             "en": "This is my second time in Japan.",
             "id": "Ini kedua kalinya saya ke Jepang."

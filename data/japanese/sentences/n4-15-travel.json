@@ -4,8 +4,8 @@
   "items": [
     {
       "slug": "n4-tokoro-1",
-      "text": "いま うちを でる ところです。",
-      "tokens": ["いま", "うち", "を", "でる", "ところ", "です"],
+      "text": "今《いま》 うちを 出《で》る ところです。",
+      "tokens": ["今《いま》", "うち", "を", "出《で》る", "ところ", "です"],
       "grammar": "n4-tokoro",
       "translation": {
         "en": "I'm just about to leave home.",
@@ -14,8 +14,8 @@
     },
     {
       "slug": "n4-tokoro-2",
-      "text": "いま えきに ついた ところです。",
-      "tokens": ["いま", "えき", "に", "ついた", "ところ", "です"],
+      "text": "今《いま》 駅《えき》に ついた ところです。",
+      "tokens": ["今《いま》", "駅《えき》", "に", "ついた", "ところ", "です"],
       "grammar": "n4-tokoro",
       "translation": {
         "en": "I've just arrived at the station.",
@@ -24,8 +24,8 @@
     },
     {
       "slug": "n4-ta-bakari-1",
-      "text": "にほんに きた ばかりです。",
-      "tokens": ["にほん", "に", "きた", "ばかり", "です"],
+      "text": "日本《にほん》に きた ばかりです。",
+      "tokens": ["日本《にほん》", "に", "きた", "ばかり", "です"],
       "grammar": "n4-ta-bakari",
       "translation": {
         "en": "I've only just come to Japan.",
@@ -44,8 +44,8 @@
     },
     {
       "slug": "n4-te-iku-kuru-1",
-      "text": "かさを もって いきます。",
-      "tokens": ["かさ", "を", "もって", "いきます"],
+      "text": "かさを 持《も》って いきます。",
+      "tokens": ["かさ", "を", "持《も》って", "いきます"],
       "grammar": "n4-te-iku-kuru",
       "translation": {
         "en": "I'll take an umbrella with me.",

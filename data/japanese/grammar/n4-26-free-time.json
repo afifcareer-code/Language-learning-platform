@@ -15,14 +15,14 @@
       },
       "examples": [
         {
-          "ja": "パーティーに いけるか どうか わかりません。",
+          "ja": "パーティーに 行《い》けるか どうか わかりません。",
           "translation": {
             "en": "I don't know whether I can go to the party.",
             "id": "Saya belum tahu apakah bisa ke pesta atau tidak."
           }
         },
         {
-          "ja": "あじが いいか どうか たべて みて ください。",
+          "ja": "味《あじ》が いいか どうか 食《た》べて みて ください。",
           "translation": {
             "en": "Please taste it to see whether it's good.",
             "id": "Coba cicipi, enak atau tidak."
@@ -49,14 +49,14 @@
       },
       "examples": [
         {
-          "ja": "ときどき あさごはんを たべない ことが あります。",
+          "ja": "ときどき あさごはんを 食《た》べない ことが あります。",
           "translation": {
             "en": "Sometimes I don't eat breakfast.",
             "id": "Kadang-kadang saya tidak sarapan."
           }
         },
         {
-          "ja": "この みちは あさ こむ ことが あります。",
+          "ja": "この 道《みち》は 朝《あさ》 こむ ことが あります。",
           "translation": {
             "en": "This road is sometimes busy in the morning.",
             "id": "Jalan ini kadang ramai di pagi hari."

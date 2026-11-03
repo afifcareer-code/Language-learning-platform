@@ -34,8 +34,8 @@
     },
     {
       "slug": "n5-mo-2",
-      "text": "きょうも あめです。",
-      "tokens": ["きょう", "も", "あめ", "です"],
+      "text": "今日《きょう》も あめです。",
+      "tokens": ["今日《きょう》", "も", "あめ", "です"],
       "grammar": "n5-mo",
       "translation": {
         "en": "It is raining today too.",
