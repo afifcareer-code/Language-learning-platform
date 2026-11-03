@@ -575,6 +575,1304 @@
         "sentence:n4-matte-itadakemasenka",
         "sentence:n4-setsumei-itadakemasenka"
       ]
+    },
+    {
+      "slug": "n4-11-home",
+      "title": {
+        "en": "Getting the house ready",
+        "id": "Menyiapkan rumah"
+      },
+      "situation": {
+        "en": "Guests are coming. You check what has already been prepared, get things ready in advance and admit what went wrong.",
+        "id": "Tamu akan datang. Anda memeriksa apa yang sudah disiapkan, menyiapkan hal-hal lebih dulu, dan mengakui apa yang terlanjur salah."
+      },
+      "objective": {
+        "en": "By the end of this lesson, you can describe prepared states, things done in advance and things that went wrong.",
+        "id": "Setelah menyelesaikan pelajaran ini, Anda mampu menggambarkan keadaan yang sudah disiapkan, hal yang dikerjakan lebih dulu, dan hal yang terlanjur terjadi."
+      },
+      "items": [
+        "vocabulary:ごみ",
+        "vocabulary:たてる",
+        "vocabulary:ふとん",
+        "vocabulary:〜けん",
+        "vocabulary:ガラス",
+        "vocabulary:ガス",
+        "vocabulary:〜だて",
+        "vocabulary:たたみ",
+        "vocabulary:こしょう",
+        "vocabulary:じゅうしょ",
+        "vocabulary:ねぼう",
+        "vocabulary:すてる",
+        "vocabulary:かべ",
+        "vocabulary:すいどう",
+        "vocabulary:ベル",
+        "vocabulary:げしゅく",
+        "vocabulary:かがみ",
+        "grammar:n4-te-aru",
+        "grammar:n4-te-oku",
+        "grammar:n4-te-shimau",
+        "sentence:n4-te-aru-1",
+        "sentence:n4-te-aru-2",
+        "sentence:n4-te-oku-1",
+        "sentence:n4-te-oku-2",
+        "sentence:n4-te-shimau-1",
+        "sentence:n4-te-shimau-2"
+      ]
+    },
+    {
+      "slug": "n4-12-living",
+      "title": {
+        "en": "Living in Japan",
+        "id": "Tinggal di Jepang"
+      },
+      "situation": {
+        "en": "You move into a Japanese flat and learn the house rules: shoes, rubbish, heating and the neighbours.",
+        "id": "Anda pindah ke apartemen di Jepang dan mempelajari aturannya: sepatu, sampah, pemanas, dan tetangga."
+      },
+      "objective": {
+        "en": "By the end of this lesson, you can say what stays as it is and what is too much.",
+        "id": "Setelah menyelesaikan pelajaran ini, Anda mampu mengatakan apa yang dibiarkan apa adanya dan apa yang berlebihan."
+      },
+      "items": [
+        "vocabulary:ひっこす",
+        "vocabulary:れいぼう",
+        "vocabulary:かたづける",
+        "vocabulary:かじ",
+        "vocabulary:おしいれ",
+        "vocabulary:でんとう",
+        "vocabulary:ひきだし",
+        "vocabulary:どうぐ",
+        "vocabulary:だんぼう",
+        "vocabulary:るす",
+        "vocabulary:カーテン",
+        "vocabulary:きんじょ",
+        "vocabulary:ねむる",
+        "vocabulary:ゆ",
+        "vocabulary:せいかつ",
+        "vocabulary:たな",
+        "grammar:n4-mama",
+        "grammar:n4-sugiru",
+        "sentence:n4-mama-1",
+        "sentence:n4-mama-2",
+        "sentence:n4-sugiru-1",
+        "sentence:n4-sugiru-2"
+      ]
+    },
+    {
+      "slug": "n4-13-cooking",
+      "title": {
+        "en": "Cooking and tasting",
+        "id": "Memasak dan mencicipi"
+      },
+      "situation": {
+        "en": "A friend teaches you a Japanese dish. You try new food, talk about the tools and say what is easy or hard to eat.",
+        "id": "Seorang teman mengajari Anda masakan Jepang. Anda mencoba makanan baru, membicarakan alat masak, dan mengatakan mana yang mudah atau sulit dimakan."
+      },
+      "objective": {
+        "en": "By the end of this lesson, you can say you will try something, what is easy or hard to do and what a tool is for.",
+        "id": "Setelah menyelesaikan pelajaran ini, Anda mampu mengatakan akan mencoba sesuatu, apa yang mudah atau sulit dilakukan, dan kegunaan suatu alat."
+      },
+      "items": [
+        "vocabulary:にがい",
+        "vocabulary:わく",
+        "vocabulary:やく",
+        "vocabulary:かむ",
+        "vocabulary:サンドイッチ",
+        "vocabulary:ぶどう",
+        "vocabulary:におい",
+        "vocabulary:つける:2",
+        "vocabulary:サラダ",
+        "vocabulary:ステーキ",
+        "vocabulary:しょくりょうひん",
+        "vocabulary:みそ",
+        "vocabulary:ジャム",
+        "vocabulary:あじ",
+        "vocabulary:ごちそう",
+        "vocabulary:こめ",
+        "vocabulary:うまい",
+        "vocabulary:わかす",
+        "vocabulary:ハンバーグ",
+        "vocabulary:やける",
+        "vocabulary:しょくじ",
+        "vocabulary:アルコール",
+        "grammar:n4-te-miru",
+        "grammar:n4-yasui-nikui",
+        "grammar:n4-noni-use",
+        "sentence:n4-te-miru-1",
+        "sentence:n4-te-miru-2",
+        "sentence:n4-yasui-nikui-1",
+        "sentence:n4-yasui-nikui-2",
+        "sentence:n4-noni-use-1",
+        "sentence:n4-noni-use-2"
+      ]
+    },
+    {
+      "slug": "n4-14-time",
+      "title": {
+        "en": "Deadlines and time",
+        "id": "Tenggat dan waktu"
+      },
+      "situation": {
+        "en": "You plan your week around deadlines and talk about what happened while you were away.",
+        "id": "Anda menyusun minggu Anda berdasarkan tenggat dan membicarakan apa yang terjadi selama Anda pergi."
+      },
+      "objective": {
+        "en": "By the end of this lesson, you can give deadlines and say what happens during or while something lasts.",
+        "id": "Setelah menyelesaikan pelajaran ini, Anda mampu menyebut tenggat dan mengatakan apa yang terjadi selama atau selagi sesuatu berlangsung."
+      },
+      "items": [
+        "vocabulary:たいてい",
+        "vocabulary:とうとう",
+        "vocabulary:こんど",
+        "vocabulary:さっき",
+        "vocabulary:やっと",
+        "vocabulary:さらいげつ",
+        "vocabulary:むかし",
+        "vocabulary:おわり",
+        "vocabulary:こんや",
+        "vocabulary:くれる:2",
+        "vocabulary:ひるま",
+        "vocabulary:さらいしゅう",
+        "vocabulary:さいきん",
+        "vocabulary:しばらく",
+        "vocabulary:そろそろ",
+        "vocabulary:〜だい:2",
+        "vocabulary:さいご",
+        "vocabulary:ひさしぶり",
+        "vocabulary:〜おき",
+        "vocabulary:さいしょ",
+        "vocabulary:しょうらい",
+        "vocabulary:このあいだ",
+        "vocabulary:もうすぐ",
+        "vocabulary:このごろ",
+        "vocabulary:これから",
+        "vocabulary:たまに",
+        "grammar:n4-made-ni",
+        "grammar:n4-aida",
+        "grammar:n4-uchi-ni",
+        "sentence:n4-made-ni-1",
+        "sentence:n4-made-ni-2",
+        "sentence:n4-aida-1",
+        "sentence:n4-aida-2",
+        "sentence:n4-uchi-ni-1",
+        "sentence:n4-uchi-ni-2"
+      ]
+    },
+    {
+      "slug": "n4-15-travel",
+      "title": {
+        "en": "On the move",
+        "id": "Dalam perjalanan"
+      },
+      "situation": {
+        "en": "You call a friend from the station: you have just arrived, are about to change trains and are bringing something along.",
+        "id": "Anda menelepon teman dari stasiun: Anda baru tiba, akan berganti kereta, dan membawa sesuatu."
+      },
+      "objective": {
+        "en": "By the end of this lesson, you can say where you are in an action and use て いく / て くる.",
+        "id": "Setelah menyelesaikan pelajaran ini, Anda mampu mengatakan tahap suatu tindakan dan memakai て いく / て くる."
+      },
+      "items": [
+        "vocabulary:〜く",
+        "vocabulary:ガソリン",
+        "vocabulary:とこや",
+        "vocabulary:オートバイ",
+        "vocabulary:うりば",
+        "vocabulary:おくじょう",
+        "vocabulary:とおる",
+        "vocabulary:エスカレーター",
+        "vocabulary:むかえる",
+        "vocabulary:よる:2",
+        "vocabulary:ビル",
+        "vocabulary:さか",
+        "vocabulary:ひこうじょう",
+        "vocabulary:とどける",
+        "vocabulary:りょかん",
+        "vocabulary:のりもの",
+        "vocabulary:かよう",
+        "vocabulary:つれる",
+        "vocabulary:すすむ",
+        "vocabulary:とまる:2",
+        "vocabulary:こうつう",
+        "vocabulary:きゅうこう",
+        "vocabulary:くうこう",
+        "grammar:n4-tokoro",
+        "grammar:n4-ta-bakari",
+        "grammar:n4-te-iku-kuru",
+        "sentence:n4-tokoro-1",
+        "sentence:n4-tokoro-2",
+        "sentence:n4-ta-bakari-1",
+        "sentence:n4-ta-bakari-2",
+        "sentence:n4-te-iku-kuru-1",
+        "sentence:n4-te-iku-kuru-2"
+      ]
+    },
+    {
+      "slug": "n4-16-sightseeing",
+      "title": {
+        "en": "Travel advice",
+        "id": "Saran perjalanan"
+      },
+      "situation": {
+        "en": "A visitor asks you where to go and what to do. You give advice and suggestions.",
+        "id": "Seorang tamu bertanya ke mana sebaiknya pergi dan apa yang bisa dilakukan. Anda memberi saran dan usul."
+      },
+      "objective": {
+        "en": "By the end of this lesson, you can give advice with なら, ば いい and たら どうですか.",
+        "id": "Setelah menyelesaikan pelajaran ini, Anda mampu memberi saran dengan なら, ば いい, dan たら どうですか."
+      },
+      "items": [
+        "vocabulary:みなと",
+        "vocabulary:とおり",
+        "vocabulary:し:2",
+        "vocabulary:と:2",
+        "vocabulary:とっきゅう",
+        "vocabulary:かえり",
+        "vocabulary:ちゅうしゃじょう",
+        "vocabulary:おりる:2",
+        "vocabulary:せき",
+        "vocabulary:しゅっぱつ",
+        "vocabulary:スーパー",
+        "vocabulary:むかう",
+        "vocabulary:うつる",
+        "vocabulary:スーツケース",
+        "vocabulary:ふね",
+        "vocabulary:いそぐ",
+        "vocabulary:もどる",
+        "vocabulary:たずねる:2",
+        "vocabulary:とちゅう",
+        "vocabulary:のりかえる",
+        "vocabulary:〜ちょう",
+        "vocabulary:ガソリンスタンド",
+        "grammar:n4-nara",
+        "grammar:n4-to-ii",
+        "grammar:n4-tara-dou",
+        "sentence:n4-nara-1",
+        "sentence:n4-nara-2",
+        "sentence:n4-to-ii-1",
+        "sentence:n4-to-ii-2",
+        "sentence:n4-tara-dou-1",
+        "sentence:n4-tara-dou-2"
+      ]
+    },
+    {
+      "slug": "n4-17-actions",
+      "title": {
+        "en": "Starting and finishing",
+        "id": "Memulai dan menyelesaikan"
+      },
+      "situation": {
+        "en": "You learn a new machine at work: how to use it, when to start and when you are done.",
+        "id": "Anda mempelajari mesin baru di kantor: cara memakainya, kapan mulai, dan kapan selesai."
+      },
+      "objective": {
+        "en": "By the end of this lesson, you can say how to do something and when actions start, continue and end.",
+        "id": "Setelah menyelesaikan pelajaran ini, Anda mampu mengatakan cara melakukan sesuatu dan kapan tindakan dimulai, berlanjut, dan berakhir."
+      },
+      "items": [
+        "vocabulary:ひろう",
+        "vocabulary:くらべる",
+        "vocabulary:さわる",
+        "vocabulary:つかまえる",
+        "vocabulary:にげる",
+        "vocabulary:つつむ",
+        "vocabulary:かざる",
+        "vocabulary:なげる",
+        "vocabulary:まちがえる",
+        "vocabulary:はじめる",
+        "vocabulary:えらぶ",
+        "vocabulary:ぬる",
+        "vocabulary:さがす",
+        "vocabulary:うつ",
+        "vocabulary:みつける",
+        "vocabulary:はこぶ",
+        "vocabulary:とりかえる",
+        "grammar:n4-hajimeru-owaru",
+        "grammar:n4-dasu",
+        "grammar:n4-kata",
+        "sentence:n4-hajimeru-owaru-1",
+        "sentence:n4-hajimeru-owaru-2",
+        "sentence:n4-dasu-1",
+        "sentence:n4-dasu-2",
+        "sentence:n4-kata-1",
+        "sentence:n4-kata-2"
+      ]
+    },
+    {
+      "slug": "n4-18-verb-pairs",
+      "title": {
+        "en": "Things that happen and things you do",
+        "id": "Yang terjadi dan yang dilakukan"
+      },
+      "situation": {
+        "en": "Things break, open and fall around the house. You say what happened and what you did about it.",
+        "id": "Barang-barang di rumah rusak, terbuka, dan jatuh. Anda mengatakan apa yang terjadi dan apa yang Anda lakukan."
+      },
+      "objective": {
+        "en": "By the end of this lesson, you can choose between paired verbs and say how you changed something.",
+        "id": "Setelah menyelesaikan pelajaran ini, Anda mampu memilih kata kerja berpasangan dan mengatakan bagaimana Anda mengubah sesuatu."
+      },
+      "items": [
+        "vocabulary:ふむ",
+        "vocabulary:なる:2",
+        "vocabulary:おる",
+        "vocabulary:きこえる",
+        "vocabulary:こわす",
+        "vocabulary:すぎる",
+        "vocabulary:やめる",
+        "vocabulary:ゆれる",
+        "vocabulary:おこす",
+        "vocabulary:きまる",
+        "vocabulary:とめる",
+        "vocabulary:なくなる",
+        "vocabulary:のこる",
+        "vocabulary:たてる:2",
+        "vocabulary:ふえる",
+        "vocabulary:かわく",
+        "vocabulary:かえる:2",
+        "vocabulary:あく:2",
+        "vocabulary:かわる",
+        "vocabulary:すむ:2",
+        "vocabulary:みえる",
+        "grammar:n4-jidoushi-tadoushi",
+        "grammar:n4-ku-suru",
+        "sentence:n4-jidoushi-tadoushi-1",
+        "sentence:n4-jidoushi-tadoushi-2",
+        "sentence:n4-ku-suru-1",
+        "sentence:n4-ku-suru-2"
+      ]
+    },
+    {
+      "slug": "n4-19-habits",
+      "title": {
+        "en": "Good habits",
+        "id": "Kebiasaan baik"
+      },
+      "situation": {
+        "en": "You talk with a colleague about the habits you keep to stay healthy and not forget things.",
+        "id": "Anda berbincang dengan rekan tentang kebiasaan yang Anda jaga agar tetap sehat dan tidak lupa."
+      },
+      "objective": {
+        "en": "By the end of this lesson, you can talk about efforts you make and purposes with ように.",
+        "id": "Setelah menyelesaikan pelajaran ini, Anda mampu membicarakan usaha yang Anda lakukan dan tujuan dengan ように."
+      },
+      "items": [
+        "vocabulary:おれる",
+        "vocabulary:すべる",
+        "vocabulary:さがる",
+        "vocabulary:すく",
+        "vocabulary:あう:2",
+        "vocabulary:みつかる",
+        "vocabulary:なおる:2",
+        "vocabulary:あつめる",
+        "vocabulary:なおす",
+        "vocabulary:つづく",
+        "vocabulary:つく:2",
+        "vocabulary:つづける:2",
+        "vocabulary:おとす",
+        "vocabulary:われる",
+        "vocabulary:まわる",
+        "vocabulary:たおれる",
+        "vocabulary:うごく",
+        "vocabulary:よごれる",
+        "vocabulary:さげる",
+        "vocabulary:あがる",
+        "vocabulary:あつまる",
+        "grammar:n4-you-ni-suru",
+        "grammar:n4-you-ni-purpose",
+        "sentence:n4-you-ni-suru-1",
+        "sentence:n4-you-ni-suru-2",
+        "sentence:n4-you-ni-purpose-1",
+        "sentence:n4-you-ni-purpose-2"
+      ]
+    },
+    {
+      "slug": "n4-20-health",
+      "title": {
+        "en": "At the hospital",
+        "id": "Di rumah sakit"
+      },
+      "situation": {
+        "en": "You visit a friend in hospital and talk about how they are and when they might leave.",
+        "id": "Anda menjenguk teman di rumah sakit dan membicarakan keadaannya serta kapan mungkin keluar."
+      },
+      "objective": {
+        "en": "By the end of this lesson, you can express expectations and possibilities.",
+        "id": "Setelah menyelesaikan pelajaran ini, Anda mampu menyatakan perkiraan dan kemungkinan."
+      },
+      "items": [
+        "vocabulary:ちから",
+        "vocabulary:やせる",
+        "vocabulary:はいしゃ",
+        "vocabulary:なおる",
+        "vocabulary:けが",
+        "vocabulary:のど",
+        "vocabulary:ち",
+        "vocabulary:け",
+        "vocabulary:ぐあい",
+        "vocabulary:かみ:2",
+        "vocabulary:うで",
+        "vocabulary:おみまい",
+        "vocabulary:たいいん",
+        "vocabulary:ふとる",
+        "vocabulary:ちゅうしゃ",
+        "vocabulary:せなか",
+        "vocabulary:くび",
+        "vocabulary:ひげ",
+        "vocabulary:にゅういん",
+        "vocabulary:かんごし",
+        "vocabulary:ゆび",
+        "grammar:n4-hazu",
+        "grammar:n4-kamoshirenai",
+        "sentence:n4-hazu-1",
+        "sentence:n4-hazu-2",
+        "sentence:n4-kamoshirenai-1",
+        "sentence:n4-kamoshirenai-2"
+      ]
+    },
+    {
+      "slug": "n4-21-appearance",
+      "title": {
+        "en": "Clothes and appearance",
+        "id": "Pakaian dan penampilan"
+      },
+      "situation": {
+        "en": "You shop for clothes with a friend and compare styles and materials.",
+        "id": "Anda berbelanja pakaian bersama teman dan membandingkan gaya serta bahannya."
+      },
+      "objective": {
+        "en": "By the end of this lesson, you can compare things and say what something is like.",
+        "id": "Setelah menyelesaikan pelajaran ini, Anda mampu membandingkan benda dan mengatakan sesuatu itu seperti apa."
+      },
+      "items": [
+        "vocabulary:やわらかい",
+        "vocabulary:ふくざつ",
+        "vocabulary:きぬ",
+        "vocabulary:ふかい",
+        "vocabulary:あさい",
+        "vocabulary:オーバー",
+        "vocabulary:こまかい",
+        "vocabulary:かたち",
+        "vocabulary:てぶくろ",
+        "vocabulary:サンダル",
+        "vocabulary:したぎ",
+        "vocabulary:かたい",
+        "vocabulary:スーツ",
+        "vocabulary:ゆびわ",
+        "vocabulary:かっこう",
+        "vocabulary:アクセサリー",
+        "vocabulary:いと",
+        "vocabulary:もめん",
+        "grammar:n4-you-na",
+        "grammar:n4-to-onaji",
+        "sentence:n4-you-na-1",
+        "sentence:n4-you-na-2",
+        "sentence:n4-to-onaji-1",
+        "sentence:n4-to-onaji-2"
+      ]
+    },
+    {
+      "slug": "n4-22-nature",
+      "title": {
+        "en": "Nature and the seasons",
+        "id": "Alam dan musim"
+      },
+      "situation": {
+        "en": "You go hiking and talk about the weather, the scenery and what people say about the area.",
+        "id": "Anda mendaki gunung dan membicarakan cuaca, pemandangan, serta kabar tentang daerah itu."
+      },
+      "objective": {
+        "en": "By the end of this lesson, you can guess and pass on impressions with だろう, みたい and らしい.",
+        "id": "Setelah menyelesaikan pelajaran ini, Anda mampu menduga dan menyampaikan kesan dengan だろう, みたい, dan らしい."
+      },
+      "items": [
+        "vocabulary:やむ",
+        "vocabulary:こうがい",
+        "vocabulary:は:2",
+        "vocabulary:じしん",
+        "vocabulary:きせつ",
+        "vocabulary:ほし",
+        "vocabulary:はやし",
+        "vocabulary:ひかる",
+        "vocabulary:くも",
+        "vocabulary:もり",
+        "vocabulary:いし",
+        "vocabulary:かいがん",
+        "vocabulary:ひ",
+        "vocabulary:ことり",
+        "vocabulary:くうき",
+        "vocabulary:おと",
+        "vocabulary:しま",
+        "vocabulary:えだ",
+        "vocabulary:いなか",
+        "vocabulary:ひかり",
+        "vocabulary:ひえる",
+        "vocabulary:ぬれる",
+        "vocabulary:むし",
+        "vocabulary:うえる",
+        "vocabulary:すな",
+        "vocabulary:くさ",
+        "vocabulary:みずうみ",
+        "grammar:n4-darou",
+        "grammar:n4-mitai",
+        "grammar:n4-rashii",
+        "sentence:n4-darou-1",
+        "sentence:n4-darou-2",
+        "sentence:n4-mitai-1",
+        "sentence:n4-mitai-2",
+        "sentence:n4-rashii-1",
+        "sentence:n4-rashii-2"
+      ]
+    },
+    {
+      "slug": "n4-23-amounts",
+      "title": {
+        "en": "Amounts and money",
+        "id": "Jumlah dan uang"
+      },
+      "situation": {
+        "en": "At the end of the month you check your money and complain about how much things cost.",
+        "id": "Di akhir bulan Anda memeriksa uang dan mengeluh tentang mahalnya harga."
+      },
+      "objective": {
+        "en": "By the end of this lesson, you can stress small and large amounts and say 'not as… as'.",
+        "id": "Setelah menyelesaikan pelajaran ini, Anda mampu menekankan jumlah kecil dan besar serta mengatakan 'tidak se…'."
+      },
+      "items": [
+        "vocabulary:しなもの",
+        "vocabulary:たりる",
+        "vocabulary:ばい",
+        "vocabulary:せん:2",
+        "vocabulary:いか",
+        "vocabulary:いない",
+        "vocabulary:おつり",
+        "vocabulary:たす",
+        "vocabulary:レジ",
+        "vocabulary:いがい",
+        "vocabulary:じゅうぶん",
+        "vocabulary:いじょう",
+        "vocabulary:わすれもの",
+        "vocabulary:わりあい",
+        "vocabulary:おく:2",
+        "vocabulary:はらう",
+        "vocabulary:ほど",
+        "vocabulary:かわり",
+        "vocabulary:りょうほう",
+        "vocabulary:〜め:2",
+        "grammar:n4-shika",
+        "grammar:n4-mo-number",
+        "grammar:n4-hodo-nai",
+        "sentence:n4-shika-1",
+        "sentence:n4-shika-2",
+        "sentence:n4-mo-number-1",
+        "sentence:n4-mo-number-2",
+        "sentence:n4-hodo-nai-1",
+        "sentence:n4-hodo-nai-2"
+      ]
+    },
+    {
+      "slug": "n4-24-school",
+      "title": {
+        "en": "Classmates",
+        "id": "Teman sekelas"
+      },
+      "situation": {
+        "en": "You chat casually with classmates and explain why you were absent.",
+        "id": "Anda mengobrol santai dengan teman sekelas dan menjelaskan mengapa Anda tidak masuk."
+      },
+      "objective": {
+        "en": "By the end of this lesson, you can speak in plain forms with friends and explain with んです.",
+        "id": "Setelah menyelesaikan pelajaran ini, Anda mampu berbicara dengan bentuk biasa kepada teman dan menjelaskan dengan んです."
+      },
+      "items": [
+        "vocabulary:いがく",
+        "vocabulary:テキスト",
+        "vocabulary:だいがくせい",
+        "vocabulary:よしゅう",
+        "vocabulary:はつおん",
+        "vocabulary:てん",
+        "vocabulary:〜がくぶ",
+        "vocabulary:ちゅうがっこう",
+        "vocabulary:しゅっせき",
+        "vocabulary:ちり",
+        "vocabulary:うける",
+        "vocabulary:しらべる",
+        "vocabulary:しょうがっこう",
+        "vocabulary:ぶんぽう",
+        "vocabulary:じてん",
+        "vocabulary:こたえ",
+        "vocabulary:けしゴム",
+        "vocabulary:かいわ",
+        "grammar:n4-plain-speech",
+        "grammar:n4-noda",
+        "sentence:n4-plain-speech-1",
+        "sentence:n4-plain-speech-2",
+        "sentence:n4-noda-1",
+        "sentence:n4-noda-2"
+      ]
+    },
+    {
+      "slug": "n4-25-university",
+      "title": {
+        "en": "At university",
+        "id": "Di universitas"
+      },
+      "situation": {
+        "en": "You tell a friend what the professor said and ask about things you don't know.",
+        "id": "Anda menyampaikan kepada teman apa yang dikatakan dosen dan menanyakan hal yang belum Anda ketahui."
+      },
+      "objective": {
+        "en": "By the end of this lesson, you can name things, report what was said and put questions inside sentences.",
+        "id": "Setelah menyelesaikan pelajaran ini, Anda mampu menyebut nama sesuatu, melaporkan perkataan, dan menyisipkan pertanyaan dalam kalimat."
+      },
+      "items": [
+        "vocabulary:こうちょう",
+        "vocabulary:かがく",
+        "vocabulary:にゅうがく",
+        "vocabulary:うつす",
+        "vocabulary:きょういく",
+        "vocabulary:れきし",
+        "vocabulary:こうどう",
+        "vocabulary:そつぎょう",
+        "vocabulary:せんもん",
+        "vocabulary:こうこうせい",
+        "vocabulary:こうぎ",
+        "vocabulary:こうこう",
+        "vocabulary:ぶんがく",
+        "vocabulary:じ:2",
+        "vocabulary:すうがく",
+        "vocabulary:けんきゅうしつ",
+        "vocabulary:ふくしゅう",
+        "vocabulary:けんきゅう",
+        "grammar:n4-to-iu",
+        "grammar:n4-to-iimasu",
+        "grammar:n4-embedded-question",
+        "sentence:n4-to-iu-1",
+        "sentence:n4-to-iu-2",
+        "sentence:n4-to-iimasu-1",
+        "sentence:n4-to-iimasu-2",
+        "sentence:n4-embedded-question-1",
+        "sentence:n4-embedded-question-2"
+      ]
+    },
+    {
+      "slug": "n4-26-free-time",
+      "title": {
+        "en": "Free time",
+        "id": "Waktu luang"
+      },
+      "situation": {
+        "en": "You plan a day off and talk about things you sometimes do in your free time.",
+        "id": "Anda merencanakan hari libur dan membicarakan hal yang kadang Anda lakukan di waktu luang."
+      },
+      "objective": {
+        "en": "By the end of this lesson, you can say 'whether or not' and talk about things that sometimes happen.",
+        "id": "Setelah menyelesaikan pelajaran ini, Anda mampu mengatakan 'apakah… atau tidak' dan membicarakan hal yang kadang terjadi."
+      },
+      "items": [
+        "vocabulary:まんが",
+        "vocabulary:しょうがつ",
+        "vocabulary:おくりもの",
+        "vocabulary:しょうせつ",
+        "vocabulary:どうぶつえん",
+        "vocabulary:にんぎょう",
+        "vocabulary:じゅうどう",
+        "vocabulary:しあい",
+        "vocabulary:びじゅつかん",
+        "vocabulary:おまつり",
+        "vocabulary:スクリーン",
+        "vocabulary:おみやげ",
+        "vocabulary:おいわい",
+        "vocabulary:しょうたい",
+        "vocabulary:たのしむ",
+        "vocabulary:おどり",
+        "vocabulary:おもちゃ",
+        "grammar:n4-ka-dou-ka",
+        "grammar:n4-koto-ga-aru-sometimes",
+        "sentence:n4-ka-dou-ka-1",
+        "sentence:n4-ka-dou-ka-2",
+        "sentence:n4-koto-ga-aru-sometimes-1",
+        "sentence:n4-koto-ga-aru-sometimes-2"
+      ]
+    },
+    {
+      "slug": "n4-27-events",
+      "title": {
+        "en": "Events and festivals",
+        "id": "Acara dan festival"
+      },
+      "situation": {
+        "en": "You go to a festival and a concert and say why you enjoyed them.",
+        "id": "Anda pergi ke festival dan konser lalu mengatakan mengapa Anda menikmatinya."
+      },
+      "objective": {
+        "en": "By the end of this lesson, you can give several reasons and talk about activities as things.",
+        "id": "Setelah menyelesaikan pelajaran ini, Anda mampu memberi beberapa alasan dan membicarakan kegiatan sebagai hal."
+      },
+      "items": [
+        "vocabulary:つる",
+        "vocabulary:あそび",
+        "vocabulary:ほうそう",
+        "vocabulary:まける",
+        "vocabulary:にっき",
+        "vocabulary:かいじょう",
+        "vocabulary:てんらんかい",
+        "vocabulary:コンサート",
+        "vocabulary:すいえい",
+        "vocabulary:かつ",
+        "vocabulary:はなみ",
+        "vocabulary:けんぶつ",
+        "vocabulary:テニス",
+        "vocabulary:ばんぐみ",
+        "vocabulary:たのしみ",
+        "vocabulary:しゅみ",
+        "grammar:n4-shi",
+        "grammar:n4-no-wa",
+        "sentence:n4-shi-1",
+        "sentence:n4-shi-2",
+        "sentence:n4-no-wa-1",
+        "sentence:n4-no-wa-2"
+      ]
+    },
+    {
+      "slug": "n4-28-family",
+      "title": {
+        "en": "Family life",
+        "id": "Kehidupan keluarga"
+      },
+      "situation": {
+        "en": "You talk about your family: what you want them to do and how they feel.",
+        "id": "Anda membicarakan keluarga: apa yang Anda harapkan mereka lakukan dan bagaimana perasaan mereka."
+      },
+      "objective": {
+        "en": "By the end of this lesson, you can say what you want others to do and describe others' feelings.",
+        "id": "Setelah menyelesaikan pelajaran ini, Anda mampu mengatakan apa yang Anda ingin orang lain lakukan dan menggambarkan perasaan orang lain."
+      },
+      "items": [
+        "vocabulary:いきる",
+        "vocabulary:ぼく",
+        "vocabulary:かれ",
+        "vocabulary:あかちゃん",
+        "vocabulary:おや",
+        "vocabulary:けんか",
+        "vocabulary:パパ",
+        "vocabulary:おっと",
+        "vocabulary:あかんぼう",
+        "vocabulary:そぼ",
+        "vocabulary:あいさつ",
+        "vocabulary:ごしゅじん",
+        "vocabulary:おじょうさん",
+        "vocabulary:そだてる",
+        "vocabulary:みな",
+        "vocabulary:なくなる:2",
+        "vocabulary:そふ",
+        "vocabulary:かれら",
+        "grammar:n4-te-hoshii",
+        "grammar:n4-garu",
+        "sentence:n4-te-hoshii-1",
+        "sentence:n4-te-hoshii-2",
+        "sentence:n4-garu-1",
+        "sentence:n4-garu-2"
+      ]
+    },
+    {
+      "slug": "n4-29-favours",
+      "title": {
+        "en": "Doing favours",
+        "id": "Saling membantu"
+      },
+      "situation": {
+        "en": "You help people around you, thank a teacher for their help and ask a stranger for a favour.",
+        "id": "Anda membantu orang di sekitar, berterima kasih kepada guru atas bantuannya, dan meminta tolong kepada orang yang tidak dikenal."
+      },
+      "objective": {
+        "en": "By the end of this lesson, you can talk about favours given and received politely.",
+        "id": "Setelah menyelesaikan pelajaran ini, Anda mampu membicarakan kebaikan yang diberi dan diterima dengan sopan."
+      },
+      "items": [
+        "vocabulary:だんせい",
+        "vocabulary:〜ちゃん",
+        "vocabulary:あやまる",
+        "vocabulary:じょせい",
+        "vocabulary:こ:2",
+        "vocabulary:おかねもち",
+        "vocabulary:つま",
+        "vocabulary:かのじょ",
+        "vocabulary:にる",
+        "vocabulary:おこさん",
+        "vocabulary:〜さま",
+        "vocabulary:せわ",
+        "vocabulary:きみ",
+        "vocabulary:いじめる",
+        "vocabulary:〜くん",
+        "vocabulary:しょうかい",
+        "vocabulary:わかれる",
+        "vocabulary:かない",
+        "grammar:n4-te-ageru",
+        "grammar:n4-te-kudasaru",
+        "grammar:n4-te-kuremasenka",
+        "sentence:n4-te-ageru-1",
+        "sentence:n4-te-ageru-2",
+        "sentence:n4-te-kudasaru-1",
+        "sentence:n4-te-kudasaru-2",
+        "sentence:n4-te-kuremasenka-1",
+        "sentence:n4-te-kuremasenka-2"
+      ]
+    },
+    {
+      "slug": "n4-30-feelings",
+      "title": {
+        "en": "Feelings",
+        "id": "Perasaan"
+      },
+      "situation": {
+        "en": "Things did not go as planned. You talk about what you regret and what you will do anyway.",
+        "id": "Ada hal yang tidak berjalan sesuai rencana. Anda membicarakan apa yang Anda sesali dan apa yang tetap akan Anda lakukan."
+      },
+      "objective": {
+        "en": "By the end of this lesson, you can say 'even if' and express regret.",
+        "id": "Setelah menyelesaikan pelajaran ini, Anda mampu mengatakan 'walaupun' dan menyatakan penyesalan."
+      },
+      "items": [
+        "vocabulary:おこる",
+        "vocabulary:しんぱい",
+        "vocabulary:き:2",
+        "vocabulary:だめ",
+        "vocabulary:だいじ",
+        "vocabulary:きびしい",
+        "vocabulary:かなしい",
+        "vocabulary:うそ",
+        "vocabulary:おもう",
+        "vocabulary:ざんねん",
+        "vocabulary:ていねい",
+        "vocabulary:こわい",
+        "vocabulary:はずかしい",
+        "vocabulary:きぶん",
+        "vocabulary:うつくしい",
+        "vocabulary:てきとう",
+        "vocabulary:すばらしい",
+        "vocabulary:しんせつ",
+        "vocabulary:ねっしん",
+        "vocabulary:なく:2",
+        "vocabulary:おかしい",
+        "vocabulary:へん:2",
+        "vocabulary:おどろく",
+        "vocabulary:こころ",
+        "vocabulary:おもいだす",
+        "vocabulary:めずらしい",
+        "vocabulary:さびしい",
+        "grammar:n4-temo",
+        "grammar:n4-ba-yokatta",
+        "sentence:n4-temo-1",
+        "sentence:n4-temo-2",
+        "sentence:n4-ba-yokatta-1",
+        "sentence:n4-ba-yokatta-2"
+      ]
+    },
+    {
+      "slug": "n4-31-character",
+      "title": {
+        "en": "People's character",
+        "id": "Sifat seseorang"
+      },
+      "situation": {
+        "en": "You describe people you know and wonder aloud about them.",
+        "id": "Anda menggambarkan orang-orang yang Anda kenal dan bertanya-tanya tentang mereka."
+      },
+      "objective": {
+        "en": "By the end of this lesson, you can turn adjectives into nouns and wonder with かな.",
+        "id": "Setelah menyelesaikan pelajaran ini, Anda mampu mengubah kata sifat menjadi kata benda dan bertanya-tanya dengan かな."
+      },
+      "items": [
+        "vocabulary:はんたい",
+        "vocabulary:まじめ",
+        "vocabulary:よろこぶ",
+        "vocabulary:きょうみ",
+        "vocabulary:えんりょ",
+        "vocabulary:きもち",
+        "vocabulary:すごい",
+        "vocabulary:じゃま",
+        "vocabulary:ゆめ",
+        "vocabulary:ふべん",
+        "vocabulary:ひどい",
+        "vocabulary:びっくり",
+        "vocabulary:ただしい",
+        "vocabulary:きけん",
+        "vocabulary:さわぐ",
+        "vocabulary:なれる",
+        "vocabulary:ふつう",
+        "vocabulary:わらう",
+        "vocabulary:あんしん",
+        "vocabulary:かまう",
+        "vocabulary:やさしい:2",
+        "vocabulary:とくべつ",
+        "vocabulary:やくにたつ",
+        "vocabulary:あんぜん",
+        "vocabulary:おかげ",
+        "vocabulary:きゅう:2",
+        "vocabulary:うれしい",
+        "grammar:n4-sa",
+        "grammar:n4-ka-na",
+        "sentence:n4-sa-1",
+        "sentence:n4-sa-2",
+        "sentence:n4-ka-na-1",
+        "sentence:n4-ka-na-2"
+      ]
+    },
+    {
+      "slug": "n4-32-decisions",
+      "title": {
+        "en": "Decisions",
+        "id": "Keputusan"
+      },
+      "situation": {
+        "en": "You tell a friend about decisions you made and decisions that were made for you.",
+        "id": "Anda menceritakan kepada teman keputusan yang Anda buat dan keputusan yang dibuat untuk Anda."
+      },
+      "objective": {
+        "en": "By the end of this lesson, you can talk about decisions with ことに する, ことに なる and に する.",
+        "id": "Setelah menyelesaikan pelajaran ini, Anda mampu membicarakan keputusan dengan ことに する, ことに なる, dan に する."
+      },
+      "items": [
+        "vocabulary:おもて",
+        "vocabulary:〜しまう",
+        "vocabulary:ばしょ",
+        "vocabulary:うち:2",
+        "vocabulary:〜ばかり",
+        "vocabulary:〜だす:2",
+        "vocabulary:はず",
+        "vocabulary:すみ",
+        "vocabulary:まわり",
+        "vocabulary:〜つづける",
+        "vocabulary:〜やすい:2",
+        "vocabulary:うら",
+        "vocabulary:ため",
+        "vocabulary:〜はじめる:2",
+        "vocabulary:とおく",
+        "vocabulary:〜まま",
+        "vocabulary:あいだ",
+        "vocabulary:〜おわる:2",
+        "vocabulary:まんなか",
+        "vocabulary:〜にくい",
+        "grammar:n4-koto-ni-suru",
+        "grammar:n4-koto-ni-naru",
+        "grammar:n4-ni-suru",
+        "sentence:n4-koto-ni-suru-1",
+        "sentence:n4-koto-ni-suru-2",
+        "sentence:n4-koto-ni-naru-1",
+        "sentence:n4-koto-ni-naru-2",
+        "sentence:n4-ni-suru-1",
+        "sentence:n4-ni-suru-2"
+      ]
+    },
+    {
+      "slug": "n4-33-workplace",
+      "title": {
+        "en": "Orders and signs",
+        "id": "Perintah dan papan tanda"
+      },
+      "situation": {
+        "en": "At a factory and on the street you read signs and hear orders, and learn how strong each one is.",
+        "id": "Di pabrik dan di jalan Anda membaca papan tanda dan mendengar perintah, lalu mempelajari seberapa keras masing-masing."
+      },
+      "objective": {
+        "en": "By the end of this lesson, you can understand commands and prohibitions of different strength.",
+        "id": "Setelah menyelesaikan pelajaran ini, Anda mampu memahami perintah dan larangan dengan tingkat kekerasan yang berbeda."
+      },
+      "items": [
+        "vocabulary:いけん",
+        "vocabulary:うんてんしゅ",
+        "vocabulary:きかい",
+        "vocabulary:ひつよう",
+        "vocabulary:かちょう",
+        "vocabulary:アルバイト",
+        "vocabulary:パート",
+        "vocabulary:〜か",
+        "vocabulary:ようじ",
+        "vocabulary:おこなう",
+        "vocabulary:じゅんび",
+        "vocabulary:じむしょ",
+        "vocabulary:きゃく",
+        "vocabulary:しらせる",
+        "vocabulary:〜いん",
+        "vocabulary:よう",
+        "vocabulary:こうむいん",
+        "vocabulary:ようい",
+        "vocabulary:アナウンサー",
+        "grammar:n4-nasai",
+        "grammar:n4-imperative",
+        "grammar:n4-na-prohibitive",
+        "sentence:n4-nasai-1",
+        "sentence:n4-nasai-2",
+        "sentence:n4-imperative-1",
+        "sentence:n4-imperative-2",
+        "sentence:n4-na-prohibitive-1",
+        "sentence:n4-na-prohibitive-2"
+      ]
+    },
+    {
+      "slug": "n4-34-office",
+      "title": {
+        "en": "At the office",
+        "id": "Di kantor"
+      },
+      "situation": {
+        "en": "You get ready for a meeting: what is allowed, what you have to do and what you did without help.",
+        "id": "Anda bersiap untuk rapat: apa yang boleh, apa yang harus dilakukan, dan apa yang Anda kerjakan tanpa bantuan."
+      },
+      "objective": {
+        "en": "By the end of this lesson, you can give permission, say what you have to do casually and say 'without'.",
+        "id": "Setelah menyelesaikan pelajaran ini, Anda mampu memberi izin, mengatakan kewajiban dengan santai, dan mengatakan 'tanpa'."
+      },
+      "items": [
+        "vocabulary:てんいん",
+        "vocabulary:チェック",
+        "vocabulary:つごう",
+        "vocabulary:パソコン",
+        "vocabulary:したく",
+        "vocabulary:へんじ",
+        "vocabulary:つたえる",
+        "vocabulary:たずねる",
+        "vocabulary:ひるやすみ",
+        "vocabulary:やくそく",
+        "vocabulary:しんぶんしゃ",
+        "vocabulary:しっぱい",
+        "vocabulary:こうじょう",
+        "vocabulary:コンピューター",
+        "vocabulary:そうだん",
+        "vocabulary:ほんやく",
+        "vocabulary:かいぎ",
+        "vocabulary:ソフト",
+        "grammar:n4-te-mo-kamawanai",
+        "grammar:n4-nakucha",
+        "grammar:n4-zu-ni",
+        "sentence:n4-te-mo-kamawanai-1",
+        "sentence:n4-te-mo-kamawanai-2",
+        "sentence:n4-nakucha-1",
+        "sentence:n4-nakucha-2",
+        "sentence:n4-zu-ni-1",
+        "sentence:n4-zu-ni-2"
+      ]
+    },
+    {
+      "slug": "n4-35-words",
+      "title": {
+        "en": "Useful words",
+        "id": "Kata-kata berguna"
+      },
+      "situation": {
+        "en": "You read a timetable and give directions with order and intervals.",
+        "id": "Anda membaca jadwal dan memberi petunjuk arah dengan urutan dan selang waktu."
+      },
+      "objective": {
+        "en": "By the end of this lesson, you can use intervals and ordinal numbers, and common adverbs.",
+        "id": "Setelah menyelesaikan pelajaran ini, Anda mampu memakai selang waktu, bilangan urutan, dan kata keterangan umum."
+      },
+      "items": [
+        "vocabulary:すっと",
+        "vocabulary:しっかり",
+        "vocabulary:やっぱり",
+        "vocabulary:かならず",
+        "vocabulary:べつ",
+        "vocabulary:ひじょうに",
+        "vocabulary:ほとんど",
+        "vocabulary:うん",
+        "vocabulary:すると",
+        "vocabulary:ちっとも",
+        "vocabulary:できるだけ",
+        "vocabulary:それに",
+        "vocabulary:だから",
+        "vocabulary:なるべく",
+        "vocabulary:そんな",
+        "vocabulary:ばあい",
+        "vocabulary:けっして",
+        "vocabulary:こと",
+        "vocabulary:どんどん",
+        "vocabulary:もちろん",
+        "vocabulary:または",
+        "vocabulary:たしか",
+        "vocabulary:すっかり",
+        "vocabulary:はっきり",
+        "grammar:n4-oki-ni",
+        "grammar:n4-me-ordinal",
+        "sentence:n4-oki-ni-1",
+        "sentence:n4-oki-ni-2",
+        "sentence:n4-me-ordinal-1",
+        "sentence:n4-me-ordinal-2"
+      ]
+    },
+    {
+      "slug": "n4-36-talking",
+      "title": {
+        "en": "Talking it over",
+        "id": "Membicarakan sesuatu"
+      },
+      "situation": {
+        "en": "You tell a friend about a bad day and discuss a problem together.",
+        "id": "Anda bercerita kepada teman tentang hari yang buruk dan membahas suatu masalah bersama."
+      },
+      "objective": {
+        "en": "By the end of this lesson, you can give a topic with に ついて and say what happened to you with the passive.",
+        "id": "Setelah menyelesaikan pelajaran ini, Anda mampu menyebut topik dengan に ついて dan mengatakan apa yang menimpa Anda dengan bentuk pasif."
+      },
+      "items": [
+        "vocabulary:いっぱい",
+        "vocabulary:あんな",
+        "vocabulary:たとえば",
+        "vocabulary:なかなか",
+        "vocabulary:ずいぶん",
+        "vocabulary:とくに",
+        "vocabulary:こう",
+        "vocabulary:ぜひ",
+        "vocabulary:きっと",
+        "vocabulary:まず",
+        "vocabulary:だいたい",
+        "vocabulary:それほど",
+        "vocabulary:それで",
+        "vocabulary:そんなに",
+        "vocabulary:わけ",
+        "vocabulary:なるほど",
+        "vocabulary:あ",
+        "vocabulary:もっとも",
+        "vocabulary:よう:2",
+        "vocabulary:しかた",
+        "vocabulary:けれども",
+        "vocabulary:ぜんぜん",
+        "vocabulary:タイプ",
+        "vocabulary:だいぶ",
+        "grammar:n4-ni-tsuite",
+        "grammar:n4-passive-indirect",
+        "sentence:n4-ni-tsuite-1",
+        "sentence:n4-ni-tsuite-2",
+        "sentence:n4-passive-indirect-1",
+        "sentence:n4-passive-indirect-2"
+      ]
+    },
+    {
+      "slug": "n4-37-society",
+      "title": {
+        "en": "Society and the news",
+        "id": "Masyarakat dan berita"
+      },
+      "situation": {
+        "en": "You read the news and talk about work, society and people in charge.",
+        "id": "Anda membaca berita dan membicarakan pekerjaan, masyarakat, dan para pemimpin."
+      },
+      "objective": {
+        "en": "By the end of this lesson, you can say what people were made to do and talk respectfully about others.",
+        "id": "Setelah menyelesaikan pelajaran ini, Anda mampu mengatakan apa yang terpaksa dilakukan orang dan membicarakan orang lain dengan hormat."
+      },
+      "items": [
+        "vocabulary:〜かい:3",
+        "vocabulary:アフリカ",
+        "vocabulary:どろぼう",
+        "vocabulary:〜せい:2",
+        "vocabulary:じんこう",
+        "vocabulary:いのる",
+        "vocabulary:さかん",
+        "vocabulary:せいよう",
+        "vocabulary:じだい",
+        "vocabulary:〜しき",
+        "vocabulary:りよう",
+        "vocabulary:せかい",
+        "vocabulary:せんそう",
+        "vocabulary:げんいん",
+        "vocabulary:ぎじゅつ",
+        "vocabulary:ほうりつ",
+        "vocabulary:ぼうえき",
+        "vocabulary:きょうかい",
+        "vocabulary:アメリカ",
+        "vocabulary:せいさん",
+        "grammar:n4-causative-passive",
+        "grammar:n4-rareru-honorific",
+        "sentence:n4-causative-passive-1",
+        "sentence:n4-causative-passive-2",
+        "sentence:n4-rareru-honorific-1",
+        "sentence:n4-rareru-honorific-2"
+      ]
+    },
+    {
+      "slug": "n4-38-culture",
+      "title": {
+        "en": "Culture and the world",
+        "id": "Budaya dan dunia"
+      },
+      "situation": {
+        "en": "You visit a shrine and a museum and talk about Japanese culture and what you need to live abroad.",
+        "id": "Anda mengunjungi kuil dan museum lalu membicarakan budaya Jepang dan apa yang diperlukan untuk tinggal di luar negeri."
+      },
+      "objective": {
+        "en": "By the end of this lesson, you can say what you were allowed to do and what is necessary.",
+        "id": "Setelah menyelesaikan pelajaran ini, Anda mampu mengatakan apa yang diizinkan dan apa yang diperlukan."
+      },
+      "items": [
+        "vocabulary:こくさい",
+        "vocabulary:けいざい",
+        "vocabulary:ゆにゅう",
+        "vocabulary:さんぎょう",
+        "vocabulary:せいじ",
+        "vocabulary:しみん",
+        "vocabulary:てら",
+        "vocabulary:アジア",
+        "vocabulary:ぶんか",
+        "vocabulary:しゅうかん:2",
+        "vocabulary:じゆう",
+        "vocabulary:こうぎょう",
+        "vocabulary:けいさつ",
+        "vocabulary:きょうそう",
+        "vocabulary:かんけい",
+        "vocabulary:ゆしゅつ",
+        "vocabulary:すり",
+        "vocabulary:じんじゃ",
+        "vocabulary:しゃかい",
+        "grammar:n4-sasete-morau",
+        "grammar:n4-ga-hitsuyou",
+        "sentence:n4-sasete-morau-1",
+        "sentence:n4-sasete-morau-2",
+        "sentence:n4-ga-hitsuyou-1",
+        "sentence:n4-ga-hitsuyou-2"
+      ]
+    },
+    {
+      "slug": "n4-39-keigo",
+      "title": {
+        "en": "Honorific and humble language",
+        "id": "Bahasa hormat dan merendah"
+      },
+      "situation": {
+        "en": "You visit a client's company, introduce yourself and talk with their manager.",
+        "id": "Anda mengunjungi perusahaan klien, memperkenalkan diri, dan berbicara dengan manajernya."
+      },
+      "objective": {
+        "en": "By the end of this lesson, you can use the special honorific and humble verbs.",
+        "id": "Setelah menyelesaikan pelajaran ini, Anda mampu memakai kata kerja hormat dan merendah yang khusus."
+      },
+      "items": [
+        "vocabulary:うかがう",
+        "vocabulary:おたく",
+        "vocabulary:〜ございます",
+        "vocabulary:いたす",
+        "vocabulary:もうしあげる",
+        "vocabulary:なさる",
+        "vocabulary:おる:2",
+        "vocabulary:ごらんになる",
+        "vocabulary:よろしい",
+        "vocabulary:さしあげる",
+        "vocabulary:うかがう:2",
+        "vocabulary:おいでになる",
+        "vocabulary:しょうち",
+        "vocabulary:くださる",
+        "vocabulary:ごぞんじ",
+        "vocabulary:ご〜:3",
+        "vocabulary:はいけん",
+        "vocabulary:おっしゃる",
+        "grammar:n4-sonkeigo",
+        "grammar:n4-kenjougo",
+        "sentence:n4-sonkeigo-1",
+        "sentence:n4-sonkeigo-2",
+        "sentence:n4-kenjougo-1",
+        "sentence:n4-kenjougo-2"
+      ]
     }
   ]
 }

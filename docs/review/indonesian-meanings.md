@@ -5,256 +5,442 @@ translations that the Open Multilingual Wordnet (Wordnet Bahasa, MIT) gives for 
 The items below share no word with the dictionary. Many are still right (the dictionary knows general senses,
 not the one a learner needs); check each and correct the meaning in the data file if it is wrong.
 
-- Match: 813
-- To review: 69
-- Not in the dictionary (not checked): 171
+- Match: 1219
+- To review: 132
+- Not in the dictionary (not checked): 294
 
-| File                    | Word         | Kana         | English                              | Indonesian (ours)                       | Dictionary suggests                                                |
-| ----------------------- | ------------ | ------------ | ------------------------------------ | --------------------------------------- | ------------------------------------------------------------------ |
-| n4-01-plans             | 予定         | よてい       | plan, schedule                       | rencana, jadwal                         | cara, pelan, jalan, agenda, program, rancangan                     |
-| n4-02-experiences       | 掃除         | そうじ       | cleaning                             | bersih-bersih                           | pencucian, pembersihan                                             |
-| n4-02-experiences       | 洗濯         | せんたく     | laundry                              | mencuci pakaian                         | dobi, basuhan                                                      |
-| n4-03-ability           | 運転         | うんてん     | driving                              | menyetir                                | pimpinan, kewibawaan, berkendara                                   |
-| n4-03-ability           | 少し         | すこし       | a little                             | sedikit                                 | secercah                                                           |
-| n4-05-advice            | 薬           | くすり       | medicine                             | obat                                    | ubat, penawar                                                      |
-| n4-07-hearsay           | 台風         | たいふう     | typhoon                              | topan                                   | badai, taufan, taifun                                              |
-| n4-07-hearsay           | 噂           | うわさ       | rumour                               | kabar burung                            | gosip, desas-desus                                                 |
-| n4-07-hearsay           | 人気         | にんき       | popularity                           | popularitas                             | ketenaran, kemasyhuran                                             |
-| n4-09-passive-causative | 息子         | むすこ       | son                                  | anak laki-laki                          | putra, logos                                                       |
-| n4-10-polite            | 失礼         | しつれい     | rudeness; excuse me                  | ketidaksopanan; permisi                 | kekasaran, kebiadaban                                              |
-| n4-10-polite            | 案内         | あんない     | guidance, showing the way            | pemanduan, petunjuk                     | hala, arah, haluan, saranan, nasihat, panduan                      |
-| n5-02-numbers-shopping  | えん         | えん         | yen (Japanese money)                 | yen (mata uang Jepang)                  | minat                                                              |
-| n5-04-places-directions | そこ         | そこ         | there (near you)                     | di situ                                 | sana                                                               |
-| n5-04-places-directions | 銀行         | ぎんこう     | bank                                 | bank                                    | baris, tambak, tebing, miring, tepian, jajaran                     |
-| n5-05-food-restaurant   | 好き         | すき         | like, fond of                        | suka                                    | sama, ganal, kayak, mirip, demen, bagai                            |
-| n5-07-dates             | 一日         | ついたち     | the first (of the month)             | tanggal satu                            | awal, dahulu, pertama, pembukaan, mula-mula, permulaan             |
-| n5-07-dates             | 四日         | よっか       | the fourth (of the month), four days | tanggal empat, empat hari               | suku, seperempat                                                   |
-| n5-10-counting          | くらい       | くらい       | about (amount)                       | kira-kira (jumlah)                      | kira, dari, rapat, dekat, hampir, nyaris                           |
-| n5-10-counting          | 少ない       | すくない     | few, little                          | sedikit                                 | mini, katek, kecil, katik, sumir, bogel                            |
-| n5-10-counting          | ずつ         | ずつ         | each, at a time                      | masing-masing                           | tiap, kali, saban, setiap, seorang, serentak                       |
-| n5-12-time              | 今日         | きょう       | today                                | hari ini                                | sekarang                                                           |
-| n5-15-home              | 玄関         | げんかん     | front door, entrance hall            | pintu depan, serambi                    | lobi, dewan                                                        |
-| n5-16-rooms             | ベッド       | ベッド       | bed                                  | tempat tidur                            | alas, dasar, katil, kebun, batas, lipit                            |
-| n5-16-rooms             | 廊下         | ろうか       | corridor                             | lorong                                  | koridor                                                            |
-| n5-17-clothes           | 靴           | くつ         | shoes                                | sepatu                                  | posisi, tempat, kedudukan                                          |
-| n5-17-clothes           | セーター     | セーター     | sweater                              | sweter                                  | baju panas                                                         |
-| n5-18-transport         | エレベーター | エレベーター | lift, elevator                       | lift                                    | angkat, bangun, penaikan, kenaikan, keluhuran, kemuliaan           |
-| n5-18-transport         | 地下鉄       | ちかてつ     | subway, underground                  | kereta bawah tanah                      | metro, rintangan, ketahanan, daya tahan                            |
-| n5-20-directions        | 外           | そと         | outside                              | luar                                    | kelihatannya                                                       |
-| n5-22-food              | 果物         | くだもの     | fruit                                | buah-buahan                             | buah, hasil, perolehan, keuntungan, buah-buahan                    |
-| n5-23-cooking           | 温い         | ぬるい       | lukewarm                             | suam-suam kuku                          | suam, pesam, hangat                                                |
-| n5-24-weather           | 差す         | さす         | to put up (an umbrella)              | memakai (payung)                        | bisa, bekal, dapat, tahan, boleh, betah                            |
-| n5-25-health            | 元気         | げんき       | healthy, energetic                   | sehat, bersemangat                      | giat, afiat, subur, segar, waras, energik                          |
-| n5-26-school            | 宿題         | しゅくだい   | homework                             | pekerjaan rumah (PR)                    | persiapan, pengurusan, penyediaan, persediaan, penyusunan          |
-| n5-27-study             | ノート       | ノート       | notebook                             | buku catatan                            | laptop                                                             |
-| n5-27-study             | 勉強         | べんきょう   | study                                | belajar                                 | lakar, medan, kajian, subjek, laporan, disiplin                    |
-| n5-28-work              | かける       | かける       | to make (a phone call)               | menelepon                               | ada, siap, buat, tiba, jadi, muat                                  |
-| n5-28-work              | 切手         | きって       | postage stamp                        | perangko                                | setem, prangko                                                     |
-| n5-28-work              | 封筒         | ふうとう     | envelope                             | amplop                                  | sampul, sarung, pembalut, selubung, pembungkus, sampul surat       |
-| n5-29-hobbies           | 散歩         | さんぽ       | walk, stroll                         | jalan-jalan                             | jalan, berjalan, bersiar-siar                                      |
-| n5-29-hobbies           | ペット       | ペット       | pet                                  | hewan peliharaan                        | sayang, kekasih, anak mas, buah hati, kesayangan, binatang piaraan |
-| n5-30-feelings          | 嫌           | いや         | unpleasant, disliked                 | tidak suka, menyebalkan                 | langu, someng                                                      |
-| n5-30-feelings          | 可愛い       | かわいい     | cute                                 | lucu, imut                              | comel, mahal, berharga, bernilai                                   |
-| n5-30-feelings          | 大丈夫       | だいじょうぶ | all right, OK                        | tidak apa-apa, baik-baik saja           | oke, elok, oklahoma, sooner state                                  |
-| n5-30-feelings          | 楽しい       | たのしい     | fun, enjoyable                       | menyenangkan                            | main, mesra, seronok, seloroh, gurauan, hiburan                    |
-| n5-30-feelings          | にぎやか     | にぎやか     | lively, busy (place)                 | ramai                                   | riang, aktif, hibuk, sibuk, ribut, girang                          |
-| n5-30-feelings          | 暇           | ひま         | free (time)                          | senggang                                | bebas                                                              |
-| n5-30-feelings          | 悪い         | わるい       | bad                                  | buruk, jelek                            | getun, kasihan, menyesal, bersimpati                               |
-| n5-32-questions         | そちら       | そちら       | that way, there (polite)             | sebelah situ (sopan)                    | sana                                                               |
-| n5-32-questions         | そっち       | そっち       | that way, there                      | situ, sebelah situ                      | sana                                                               |
-| n5-32-questions         | なぜ         | なぜ         | why                                  | kenapa                                  | mengapa                                                            |
-| n5-33-linking           | ああ         | ああ         | ah, oh                               | ah, oh                                  | oh, ohio, buckeye state                                            |
-| n5-33-linking           | 色々         | いろいろ     | various                              | bermacam-macam                          | aneka, pelbagai, berlainan, masing-masing, berbagai-bagai          |
-| n5-33-linking           | ええ         | ええ         | yes (casual)                         | ya (santai)                             | ya, jadi                                                           |
-| n5-33-linking           | 時々         | ときどき     | sometimes                            | kadang-kadang                           | sesekali, terkadang, adakalanya, kadang-kadang, sekali-sekali      |
-| n5-33-linking           | はい         | はい         | yes                                  | ya                                      | ya, jadi                                                           |
-| n5-33-linking           | ゆっくりと   | ゆっくりと   | slowly                               | pelan-pelan                             | lambat, perlahan, lambat-lambat, perlahan-lahan, tergontai-gontai  |
-| n5-34-people            | 生まれる     | うまれる     | to be born                           | lahir                                   | menimbulkan                                                        |
-| n5-34-people            | おじいさん   | おじいさん   | grandfather, old man                 | kakek                                   | nenda, datuk, nenenda, nenekanda, orang tua                        |
-| n5-34-people            | 男           | おとこ       | man                                  | laki-laki                               | buah, nara, orang, dunia, askar, insan                             |
-| n5-introductions        | さん         | さん         | Mr./Ms. (polite, after a name)       | Bapak/Ibu/Saudara (sopan, setelah nama) | sri, encik                                                         |
-| kanji n4                | 通           |              | pass through, commute                | melewati, pulang-pergi                  | malih, tukar, berubah, menukar, meresap, menyusup                  |
-| kanji n4                | 院           |              | institution                          | lembaga                                 | maktab, inovasi, pranata, yayasan, ciptaan, institut               |
-| kanji n4                | 少           |              | few, little                          | sedikit                                 | mini, katek, kecil, remeh, katik, sumir                            |
-| kanji n4                | 曜           |              | weekday                              | hari (dalam pekan)                      | akhir pekan                                                        |
-| kanji n4                | 牛           |              | cow                                  | sapi                                    | lembu, menakut-nakuti                                              |
-| kanji n5                | 男           |              | man                                  | laki-laki                               | buah, nara, orang, dunia, askar, insan                             |
-| kanji n5                | 電           |              | electricity                          | listrik                                 | elektrik                                                           |
+| File                    | Word         | Kana         | English                              | Indonesian (ours)                       | Dictionary suggests                                                    |
+| ----------------------- | ------------ | ------------ | ------------------------------------ | --------------------------------------- | ---------------------------------------------------------------------- |
+| n4-01-plans             | 予定         | よてい       | plan, schedule                       | rencana, jadwal                         | cara, jalan, pelan, agenda, program, rancangan                         |
+| n4-02-experiences       | 掃除         | そうじ       | cleaning                             | bersih-bersih                           | pencucian, pembersihan                                                 |
+| n4-02-experiences       | 洗濯         | せんたく     | laundry                              | mencuci pakaian                         | dobi, basuhan                                                          |
+| n4-03-ability           | 運転         | うんてん     | driving                              | menyetir                                | pimpinan, kewibawaan, berkendara                                       |
+| n4-03-ability           | 少し         | すこし       | a little                             | sedikit                                 | secercah                                                               |
+| n4-05-advice            | 薬           | くすり       | medicine                             | obat                                    | ubat, penawar                                                          |
+| n4-07-hearsay           | 台風         | たいふう     | typhoon                              | topan                                   | badai, taifun, taufan                                                  |
+| n4-07-hearsay           | 噂           | うわさ       | rumour                               | kabar burung                            | gosip, desas-desus                                                     |
+| n4-07-hearsay           | 人気         | にんき       | popularity                           | popularitas                             | ketenaran, kemasyhuran                                                 |
+| n4-09-passive-causative | 息子         | むすこ       | son                                  | anak laki-laki                          | putra, logos                                                           |
+| n4-10-polite            | 失礼         | しつれい     | rudeness; excuse me                  | ketidaksopanan; permisi                 | kekasaran, kebiadaban                                                  |
+| n4-10-polite            | 案内         | あんない     | guidance, showing the way            | pemanduan, petunjuk                     | hala, arah, haluan, nasihat, saranan, hidayah                          |
+| n4-11-home              | 下宿         | げしゅく     | boarding house, lodging              | kos, indekos                            | perumahan, penumpangan                                                 |
+| n4-12-living            | 片付ける     | かたづける   | to tidy up, to put away              | merapikan, membereskan                  | buang, tahan, menawan, menahan, menutup, penjara                       |
+| n4-12-living            | カーテン     | カーテン     | curtain                              | tirai, gorden                           | tabir, lurub, langsir                                                  |
+| n4-13-cooking           | サラダ       | サラダ       | salad                                | salad                                   | ulam, selada                                                           |
+| n4-13-cooking           | ステーキ     | ステーキ     | steak                                | steik                                   | stik, bistik                                                           |
+| n4-13-cooking           | ジャム       | ジャム       | jam                                  | selai                                   | akhbar, kekusutan, kesukaran, kerumitan, kekeliruan, kesemrawutan      |
+| n4-13-cooking           | ごちそう     | ごちそう     | feast; treat                         | hidangan istimewa; traktiran            | lepa, pesta, selera, jamuan, kenduri, perjamuan                        |
+| n4-15-travel            | 屋上         | おくじょう   | rooftop                              | atap gedung                             | kemuncak                                                               |
+| n4-15-travel            | 届ける       | とどける     | to deliver                           | mengantarkan                            | ada, hamil, kirim, bebas, hantar, babaran                              |
+| n4-15-travel            | 通う         | かよう       | to commute, to attend regularly      | pulang-pergi, rutin datang ke           | tukar, malih, menukar, berubah, berkisar, memermak                     |
+| n4-15-travel            | 泊まる       | とまる       | to stay (overnight)                  | menginap                                | diam, asas, tetap, terus, rehat, duduk                                 |
+| n4-16-sightseeing       | スーツケース | スーツケース | suitcase                             | koper                                   | tas                                                                    |
+| n4-18-verb-pairs        | 踏む         | ふむ         | to step on                           | menginjak                               | menjejaki                                                              |
+| n4-18-verb-pairs        | 無くなる     | なくなる     | to be lost, to run out               | hilang, habis                           | mati, mogok, urung, jatuh, barbur, kandas                              |
+| n4-20-health            | 痩せる       | やせる       | to lose weight                       | menjadi kurus                           | menyusuti, menipiskan, menurunkan, menciutkan, mengurangi, menguruskan |
+| n4-20-health            | 看護師       | かんごし     | nurse                                | perawat                                 | misi, pengasuh                                                         |
+| n4-21-appearance        | 複雑         | ふくざつ     | complicated                          | rumit                                   | memalukan, berbelit-belit                                              |
+| n4-21-appearance        | 格好         | かっこう     | appearance, look                     | penampilan                              | gaya, rupa, muka, nada, wajah, aroma                                   |
+| n4-21-appearance        | 木綿         | もめん       | cotton                               | katun                                   | kapas, benang                                                          |
+| n4-24-school            | 医学         | いがく       | medicine (the science)               | ilmu kedokteran                         | ubat, penawar                                                          |
+| n4-24-school            | 発音         | はつおん     | pronunciation                        | pelafalan                               | sebutan, penyebutan                                                    |
+| n4-24-school            | 学部         | がくぶ       | faculty (of a university)            | fakultas                                | guru, kebolehan, kemampuan                                             |
+| n4-25-university        | 校長         | こうちょう   | head teacher, principal              | kepala sekolah                          | utama, aktor, modal, bintang, pengetua, guru besar                     |
+| n4-25-university        | 講堂         | こうどう     | auditorium                           | aula                                    | auditorium                                                             |
+| n4-25-university        | 文学         | ぶんがく     | literature                           | sastra                                  | maklumat, kepustakaan                                                  |
+| n4-26-free-time         | 漫画         | まんが       | manga, comic                         | komik, manga                            | badut, komedi, pelawak                                                 |
+| n4-26-free-time         | お土産       | おみやげ     | souvenir                             | oleh-oleh                               | relik, suvenir, tinggalan, peringatan, tanda mata, peninggalan         |
+| n4-27-events            | 見物         | けんぶつ     | sightseeing                          | bertamasya, melihat-lihat               | makan angin                                                            |
+| n4-28-family            | 僕           | ぼく         | I (used by men)                      | aku (dipakai laki-laki)                 | esa, satu, iodin, yodium                                               |
+| n4-28-family            | 彼           | かれ         | he; boyfriend                        | dia (laki-laki); pacar (laki-laki)      | peria, helium, jejaka, pesolek, kekasih                                |
+| n4-28-family            | 祖父         | そふ         | grandfather (my)                     | kakek (saya)                            | nenda, datuk, nenenda, nenekanda                                       |
+| n4-29-favours           | 謝る         | あやまる     | to apologise                         | meminta maaf                            | alasan, berdalih, berkilah, menashihkan, membenarkan, menghalalkan     |
+| n4-29-favours           | お金持ち     | おかねもち   | rich person                          | orang kaya                              | jutawan                                                                |
+| n4-29-favours           | 彼女         | かのじょ     | she; girlfriend                      | dia (perempuan); pacar (perempuan)      | cewek, kekasih, buah hati                                              |
+| n4-29-favours           | 様           | さま         | Mr, Ms (very polite suffix)          | Bapak, Ibu (akhiran sangat sopan)       | sri, encik, manuskrip, mississippi, magnolia state                     |
+| n4-29-favours           | いじめる     | いじめる     | to bully                             | merundung                               | gertak, mengugut, mengancam, mengerasi, menggertak, mencaci maki       |
+| n4-30-feelings          | 心配         | しんぱい     | worry                                | kekhawatiran                            | kesulitan, kesusahan, kerisauan, kesukaran, kecemasan, keresahan       |
+| n4-30-feelings          | 寂しい       | さびしい     | lonely                               | kesepian                                | rindu, sorang, sendiri, tunggal, sendirian, terpencil                  |
+| n4-31-character         | 遠慮         | えんりょ     | holding back, reserve                | sungkan, menahan diri                   | sopan, simpan, tempahan, simpanan, kesopanan, berat mulut              |
+| n4-31-character         | 凄い         | すごい       | amazing; terrible                    | hebat; luar biasa                       | keras, tenat, tegas, terik, susah, parah                               |
+| n4-31-character         | びっくり     | びっくり     | surprise                             | kaget                                   | kejutan, terkejut, terperanjat                                         |
+| n4-32-decisions         | 真中         | まんなか     | middle, centre                       | tengah-tengah                           | isi, sari, hati, inti, pati, bahan                                     |
+| n4-33-workplace         | 運転手       | うんてんしゅ | driver (by profession)               | sopir, pengemudi                        | mandur, penjaga, pemandu, pengawas, pemimpin                           |
+| n4-33-workplace         | 用事         | ようじ       | errand, something to do              | urusan, keperluan                       | suruhan, pesanan, pendakian                                            |
+| n4-34-office            | 店員         | てんいん     | shop assistant                       | pelayan toko                            | kerani, penjual                                                        |
+| n4-34-office            | パソコン     | パソコン     | personal computer                    | komputer pribadi                        | mikrokomputer                                                          |
+| n4-34-office            | 会議         | かいぎ       | meeting                              | rapat                                   | kumpul, cabang, simpang, pertemuan, perjumpaan, persidangan            |
+| n4-35-words             | しっかり     | しっかり     | firmly, properly                     | dengan kuat, dengan sungguh-sungguh     | tegas, erat-erat, selayaknya, sewajarnya, seyogianya, semestinya       |
+| n4-35-words             | うん         | うん         | yeah (casual)                        | iya (santai)                            | tapi                                                                   |
+| n4-35-words             | なるべく     | なるべく     | as far as possible                   | sedapat mungkin                         | sebisanya                                                              |
+| n4-35-words             | 決して       | けっして     | never (with negative)                | sama sekali tidak, tidak pernah         | jangan, masakan                                                        |
+| n4-35-words             | どんどん     | どんどん     | rapidly, one after another           | terus-menerus, dengan cepat             | taajul, segera, sekejap mata, bertubi-tubi                             |
+| n4-35-words             | もちろん     | もちろん     | of course                            | tentu saja                              | memang, sewajarnya                                                     |
+| n4-35-words             | または       | または       | or                                   | atau                                    | oregon, beaver state                                                   |
+| n4-35-words             | はっきり     | はっきり     | clearly                              | dengan jelas                            | terambah                                                               |
+| n4-36-talking           | まず         | まず         | first of all                         | pertama-tama                            | pertama, mula-mula, terdahulu, pertama-tama                            |
+| n4-36-talking           | 大体         | だいたい     | mostly, about                        | kira-kira, pada umumnya                 | kira, dari, rapat, dekat, hampir, nyaris                               |
+| n4-36-talking           | あ           | あ           | ah, oh                               | ah                                      | oh, ohio, buckeye state                                                |
+| n4-36-talking           | タイプ       | タイプ       | type                                 | tipe                                    | kes, cara, ciri, budi, hero, jenis                                     |
+| n4-38-culture           | 輸入         | ゆにゅう     | import                               | impor                                   | erti, makna, tujuan, maksud, akibat, penting                           |
+| n4-38-culture           | すり         | すり         | pickpocket                           | pencopet                                | pencuri                                                                |
+| n4-38-culture           | 社会         | しゃかい     | society                              | masyarakat                              | kelab, kompeni, berteman, persatuan, institusi, pertubuhan             |
+| n4-39-keigo             | 拝見         | はいけん     | seeing (humble)                      | melihat (merendah)                      | penglihatan                                                            |
+| n5-02-numbers-shopping  | えん         | えん         | yen (Japanese money)                 | yen (mata uang Jepang)                  | minat                                                                  |
+| n5-04-places-directions | そこ         | そこ         | there (near you)                     | di situ                                 | sana                                                                   |
+| n5-04-places-directions | 銀行         | ぎんこう     | bank                                 | bank                                    | baris, tambak, miring, tebing, tepian, jajaran                         |
+| n5-05-food-restaurant   | 好き         | すき         | like, fond of                        | suka                                    | sama, mirip, ganal, bagai, kayak, demen                                |
+| n5-07-dates             | 一日         | ついたち     | the first (of the month)             | tanggal satu                            | awal, dahulu, pertama, pembukaan, permulaan, mula-mula                 |
+| n5-07-dates             | 四日         | よっか       | the fourth (of the month), four days | tanggal empat, empat hari               | suku, seperempat                                                       |
+| n5-10-counting          | くらい       | くらい       | about (amount)                       | kira-kira (jumlah)                      | kira, dari, rapat, dekat, hampir, nyaris                               |
+| n5-10-counting          | 少ない       | すくない     | few, little                          | sedikit                                 | mini, katek, katik, bogel, kecil, sumir                                |
+| n5-10-counting          | ずつ         | ずつ         | each, at a time                      | masing-masing                           | tiap, kali, saban, setiap, seorang, serentak                           |
+| n5-12-time              | 今日         | きょう       | today                                | hari ini                                | sekarang                                                               |
+| n5-15-home              | 玄関         | げんかん     | front door, entrance hall            | pintu depan, serambi                    | lobi, dewan                                                            |
+| n5-16-rooms             | ベッド       | ベッド       | bed                                  | tempat tidur                            | alas, lipit, batas, katil, kebun, dasar                                |
+| n5-16-rooms             | 廊下         | ろうか       | corridor                             | lorong                                  | koridor                                                                |
+| n5-17-clothes           | 靴           | くつ         | shoes                                | sepatu                                  | posisi, tempat, kedudukan                                              |
+| n5-17-clothes           | セーター     | セーター     | sweater                              | sweter                                  | baju panas                                                             |
+| n5-18-transport         | エレベーター | エレベーター | lift, elevator                       | lift                                    | angkat, bangun, kenaikan, penaikan, keagungan, tumpangan               |
+| n5-18-transport         | 地下鉄       | ちかてつ     | subway, underground                  | kereta bawah tanah                      | metro, rintangan, ketahanan, daya tahan                                |
+| n5-20-directions        | 外           | そと         | outside                              | luar                                    | kelihatannya                                                           |
+| n5-22-food              | 果物         | くだもの     | fruit                                | buah-buahan                             | buah, hasil, perolehan, keuntungan, buah-buahan                        |
+| n5-23-cooking           | 温い         | ぬるい       | lukewarm                             | suam-suam kuku                          | suam, pesam, hangat                                                    |
+| n5-24-weather           | 差す         | さす         | to put up (an umbrella)              | memakai (payung)                        | bisa, dapat, betah, tahan, bekal, derma                                |
+| n5-25-health            | 元気         | げんき       | healthy, energetic                   | sehat, bersemangat                      | giat, subur, waras, segar, afiat, energik                              |
+| n5-26-school            | 宿題         | しゅくだい   | homework                             | pekerjaan rumah (PR)                    | persiapan, pengurusan, penyusunan, penyediaan, persediaan              |
+| n5-27-study             | ノート       | ノート       | notebook                             | buku catatan                            | laptop                                                                 |
+| n5-27-study             | 勉強         | べんきょう   | study                                | belajar                                 | medan, lakar, subjek, kajian, laporan, tinjauan                        |
+| n5-28-work              | かける       | かける       | to make (a phone call)               | menelepon                               | ada, buat, tiba, siap, jadi, muat                                      |
+| n5-28-work              | 切手         | きって       | postage stamp                        | perangko                                | setem, prangko                                                         |
+| n5-28-work              | 封筒         | ふうとう     | envelope                             | amplop                                  | sarung, sampul, pembalut, selubung, pembungkus, sampul surat           |
+| n5-29-hobbies           | 散歩         | さんぽ       | walk, stroll                         | jalan-jalan                             | jalan, berjalan, bersiar-siar                                          |
+| n5-29-hobbies           | ペット       | ペット       | pet                                  | hewan peliharaan                        | sayang, kekasih, anak mas, buah hati, kesayangan, binatang piaraan     |
+| n5-30-feelings          | 嫌           | いや         | unpleasant, disliked                 | tidak suka, menyebalkan                 | langu, someng                                                          |
+| n5-30-feelings          | 可愛い       | かわいい     | cute                                 | lucu, imut                              | comel, mahal, berharga, bernilai                                       |
+| n5-30-feelings          | 大丈夫       | だいじょうぶ | all right, OK                        | tidak apa-apa, baik-baik saja           | oke, elok, oklahoma, sooner state                                      |
+| n5-30-feelings          | 楽しい       | たのしい     | fun, enjoyable                       | menyenangkan                            | main, mesra, gembira, seronok, gurauan, seloroh                        |
+| n5-30-feelings          | にぎやか     | にぎやか     | lively, busy (place)                 | ramai                                   | sibuk, riang, aktif, ribut, hibuk, girang                              |
+| n5-30-feelings          | 暇           | ひま         | free (time)                          | senggang                                | bebas                                                                  |
+| n5-30-feelings          | 悪い         | わるい       | bad                                  | buruk, jelek                            | getun, kasihan, menyesal, bersimpati                                   |
+| n5-32-questions         | そちら       | そちら       | that way, there (polite)             | sebelah situ (sopan)                    | sana                                                                   |
+| n5-32-questions         | そっち       | そっち       | that way, there                      | situ, sebelah situ                      | sana                                                                   |
+| n5-32-questions         | なぜ         | なぜ         | why                                  | kenapa                                  | mengapa                                                                |
+| n5-33-linking           | ああ         | ああ         | ah, oh                               | ah, oh                                  | oh, ohio, buckeye state                                                |
+| n5-33-linking           | 色々         | いろいろ     | various                              | bermacam-macam                          | aneka, pelbagai, berlainan, masing-masing, berbagai-bagai              |
+| n5-33-linking           | ええ         | ええ         | yes (casual)                         | ya (santai)                             | ya, jadi                                                               |
+| n5-33-linking           | 時々         | ときどき     | sometimes                            | kadang-kadang                           | sesekali, terkadang, adakalanya, kadang-kadang, sekali-sekali          |
+| n5-33-linking           | はい         | はい         | yes                                  | ya                                      | ya, jadi                                                               |
+| n5-33-linking           | ゆっくりと   | ゆっくりと   | slowly                               | pelan-pelan                             | lambat, perlahan, lambat-lambat, perlahan-lahan, tergontai-gontai      |
+| n5-34-people            | 生まれる     | うまれる     | to be born                           | lahir                                   | menimbulkan                                                            |
+| n5-34-people            | おじいさん   | おじいさん   | grandfather, old man                 | kakek                                   | nenda, datuk, nenenda, nenekanda, orang tua                            |
+| n5-34-people            | 男           | おとこ       | man                                  | laki-laki                               | buah, nara, insan, askar, orang, dunia                                 |
+| n5-introductions        | さん         | さん         | Mr./Ms. (polite, after a name)       | Bapak/Ibu/Saudara (sopan, setelah nama) | sri, encik                                                             |
+| kanji n4                | 通           |              | pass through, commute                | melewati, pulang-pergi                  | tukar, malih, menukar, berubah, meresap, berkisar                      |
+| kanji n4                | 院           |              | institution                          | lembaga                                 | maktab, pranata, ciptaan, yayasan, inovasi, institut                   |
+| kanji n4                | 少           |              | few, little                          | sedikit                                 | mini, katik, remeh, katek, bogel, kecil                                |
+| kanji n4                | 曜           |              | weekday                              | hari (dalam pekan)                      | akhir pekan                                                            |
+| kanji n4                | 牛           |              | cow                                  | sapi                                    | lembu, menakut-nakuti                                                  |
+| kanji n5                | 男           |              | man                                  | laki-laki                               | buah, nara, insan, askar, orang, dunia                                 |
+| kanji n5                | 電           |              | electricity                          | listrik                                 | elektrik                                                               |
 
 ## Not in the dictionary
 
 These could not be checked automatically (grammar words, set phrases, katakana words, counters).
 
-| File                    | Word                    | English                                          | Indonesian (ours)                     |
-| ----------------------- | ----------------------- | ------------------------------------------------ | ------------------------------------- |
-| n4-01-plans             | 来週                    | next week                                        | minggu depan                          |
-| n4-01-plans             | 夏休み                  | summer holidays                                  | libur musim panas                     |
-| n4-03-ability           | 漢字                    | kanji                                            | kanji                                 |
-| n4-03-ability           | 下手                    | bad at                                           | tidak pandai                          |
-| n4-03-ability           | 得意                    | good at                                          | mahir                                 |
-| n4-04-giving            | 先輩                    | senior (at school or work)                       | senior                                |
-| n4-04-giving            | 引っ越し                | moving house                                     | pindahan rumah                        |
-| n4-06-conditions        | もし                    | if, by any chance                                | seandainya, jika                      |
-| n4-06-conditions        | 桜                      | cherry blossom                                   | bunga sakura                          |
-| n4-07-hearsay           | 今にも                  | at any moment                                    | sebentar lagi                         |
-| n4-07-hearsay           | 来月                    | next month                                       | bulan depan                           |
-| n4-08-reasons           | 遅刻                    | being late                                       | keterlambatan                         |
-| n4-08-reasons           | 遅れる                  | to be late, to be delayed                        | terlambat                             |
-| n4-08-reasons           | 一生懸命                | as hard as one can                               | sekuat tenaga                         |
-| n4-08-reasons           | 込む                    | to be crowded                                    | ramai, penuh sesak                    |
-| n4-08-reasons           | 間に合う                | to be in time                                    | sempat, tepat waktu                   |
-| n4-08-reasons           | 頑張る                  | to do one's best                                 | berusaha keras                        |
-| n4-09-passive-causative | 部長                    | department manager                               | kepala bagian                         |
-| n4-09-passive-causative | 残業                    | overtime                                         | lembur                                |
-| n4-09-passive-causative | 塾                      | cram school                                      | bimbingan belajar                     |
-| n4-09-passive-causative | 困る                    | to be in trouble                                 | kesulitan, kerepotan                  |
-| n4-10-polite            | 受付                    | reception desk                                   | meja resepsionis                      |
-| n4-10-polite            | 資料                    | documents, materials                             | dokumen, bahan                        |
-| n4-10-polite            | 会議室                  | meeting room                                     | ruang rapat                           |
-| n4-10-polite            | 社長                    | company president                                | direktur utama                        |
-| n5-02-numbers-shopping  | いくら                  | how much                                         | berapa harganya                       |
-| n5-02-numbers-shopping  | これ                    | this (near me)                                   | ini (dekat saya)                      |
-| n5-02-numbers-shopping  | それ                    | that (near you)                                  | itu (dekat Anda)                      |
-| n5-02-numbers-shopping  | あれ                    | that over there                                  | itu (di sana, jauh dari kita)         |
-| n5-02-numbers-shopping  | ください                | please give me                                   | tolong beri saya                      |
-| n5-03-time-daily-life   | なんじ                  | what time                                        | jam berapa                            |
-| n5-03-time-daily-life   | じ                      | o'clock (after a number)                         | jam (setelah angka)                   |
-| n5-03-time-daily-life   | 毎日                    | every day                                        | setiap hari                           |
-| n5-04-places-directions | あそこ                  | over there                                       | di sana                               |
-| n5-04-places-directions | どこ                    | where                                            | di mana                               |
-| n5-04-places-directions | あります                | there is (things)                                | ada (benda)                           |
-| n5-04-places-directions | います                  | there is (people, animals)                       | ada (orang, hewan)                    |
-| n5-05-food-restaurant   | なに                    | what                                             | apa                                   |
-| n5-05-food-restaurant   | いただきます            | said before eating                               | ucapan sebelum makan                  |
-| n5-05-food-restaurant   | ごちそうさまでした      | said after eating                                | ucapan setelah makan                  |
-| n5-06-family-people     | 父                      | my father                                        | ayah saya                             |
-| n5-06-family-people     | 母                      | my mother                                        | ibu saya                              |
-| n5-06-family-people     | 兄                      | my older brother                                 | kakak laki-laki saya                  |
-| n5-06-family-people     | 姉                      | my older sister                                  | kakak perempuan saya                  |
-| n5-07-dates             | 一日                    | one day (length of time)                         | satu hari (lamanya)                   |
-| n5-07-dates             | 五日                    | the fifth (of the month), five days              | tanggal lima, lima hari               |
-| n5-07-dates             | 十日                    | the tenth (of the month), ten days               | tanggal sepuluh, sepuluh hari         |
-| n5-07-dates             | 七日                    | the seventh (of the month), seven days           | tanggal tujuh, tujuh hari             |
-| n5-07-dates             | 二十日                  | the twentieth (of the month), twenty days        | tanggal dua puluh, dua puluh hari     |
-| n5-07-dates             | 六日                    | the sixth (of the month), six days               | tanggal enam, enam hari               |
-| n5-07-dates             | 八日                    | the eighth (of the month), eight days            | tanggal delapan, delapan hari         |
-| n5-10-counting          | 大勢                    | many people                                      | banyak orang                          |
-| n5-10-counting          | か月                    | months (counter)                                 | bulan (satuan lama)                   |
-| n5-10-counting          | 個                      | pieces (counter for small things)                | buah (satuan benda kecil)             |
-| n5-10-counting          | 歳                      | years old (counter)                              | tahun (umur)                          |
-| n5-10-counting          | 冊                      | books (counter)                                  | buku (satuan)                         |
-| n5-10-counting          | 台                      | machines, vehicles (counter)                     | unit (satuan mesin, kendaraan)        |
-| n5-11-quantities        | など                    | and so on                                        | dan lain-lain                         |
-| n5-11-quantities        | 杯                      | cupfuls (counter)                                | gelas, cangkir (satuan)               |
-| n5-11-quantities        | 匹                      | small animals (counter)                          | ekor (satuan hewan kecil)             |
-| n5-11-quantities        | 本                      | long things (counter)                            | batang (satuan benda panjang)         |
-| n5-11-quantities        | 枚                      | flat things (counter)                            | lembar (satuan benda tipis)           |
-| n5-11-quantities        | 万                      | ten thousand                                     | sepuluh ribu                          |
-| n5-12-time              | 明後日                  | the day after tomorrow                           | lusa                                  |
-| n5-12-time              | 一昨日                  | the day before yesterday                         | kemarin lusa                          |
-| n5-12-time              | おととし                | the year before last                             | dua tahun lalu                        |
-| n5-12-time              | 去年                    | last year                                        | tahun lalu                            |
-| n5-12-time              | 今朝                    | this morning                                     | tadi pagi                             |
-| n5-12-time              | 今年                    | this year                                        | tahun ini                             |
-| n5-12-time              | 今月                    | this month                                       | bulan ini                             |
-| n5-12-time              | 今週                    | this week                                        | minggu ini                            |
-| n5-12-time              | 今晩                    | this evening, tonight                            | malam ini                             |
-| n5-12-time              | さ来年                  | the year after next                              | dua tahun lagi                        |
-| n5-12-time              | 週間                    | weeks (counter)                                  | minggu (lamanya)                      |
-| n5-12-time              | 先月                    | last month                                       | bulan lalu                            |
-| n5-12-time              | 先週                    | last week                                        | minggu lalu                           |
-| n5-13-routines          | 中                      | in the middle of, during                         | sedang, selama                        |
-| n5-13-routines          | 一月                    | one month (length of time)                       | satu bulan (lamanya)                  |
-| n5-13-routines          | 分                      | minutes (counter)                                | menit                                 |
-| n5-13-routines          | 毎朝                    | every morning                                    | setiap pagi                           |
-| n5-13-routines          | 毎月                    | every month                                      | setiap bulan                          |
-| n5-13-routines          | 毎週                    | every week                                       | setiap minggu                         |
-| n5-13-routines          | 毎晩                    | every night                                      | setiap malam                          |
-| n5-13-routines          | 夕方                    | late afternoon, early evening                    | sore                                  |
-| n5-13-routines          | 昨夜                    | last night                                       | tadi malam                            |
-| n5-13-routines          | 来年                    | next year                                        | tahun depan                           |
-| n5-17-clothes           | 靴下                    | socks                                            | kaus kaki                             |
-| n5-17-clothes           | ズボン                  | trousers                                         | celana panjang                        |
-| n5-17-clothes           | 洋服                    | Western clothes                                  | pakaian gaya Barat                    |
-| n5-17-clothes           | ワイシャツ              | business shirt                                   | kemeja kerja                          |
-| n5-18-transport         | 外国                    | foreign country                                  | luar negeri                           |
-| n5-18-transport         | 交番                    | police box                                       | pos polisi                            |
-| n5-19-town              | 八百屋                  | greengrocer                                      | toko sayur                            |
-| n5-19-town              | 郵便局                  | post office                                      | kantor pos                            |
-| n5-20-directions        | 隣                      | next to, next door                               | sebelah, tetangga                     |
-| n5-21-going-out         | ない                    | there is not, not have                           | tidak ada                             |
-| n5-21-going-out         | 並べる                  | to line (things) up                              | menjajarkan                           |
-| n5-21-going-out         | 向こう                  | over there, the other side                       | seberang, sebelah sana                |
-| n5-22-food              | お菓子                  | sweets, snacks                                   | kue, camilan                          |
-| n5-22-food              | お弁当                  | boxed lunch                                      | bekal makan siang                     |
-| n5-23-cooking           | 茶碗                    | rice bowl                                        | mangkuk nasi                          |
-| n5-23-cooking           | 箸                      | chopsticks                                       | sumpit                                |
-| n5-23-cooking           | 豚肉                    | pork                                             | daging babi                           |
-| n5-23-cooking           | まずい                  | tasting bad                                      | tidak enak                            |
-| n5-23-cooking           | 夕飯                    | evening meal                                     | makan malam                           |
-| n5-24-weather           | 曇り                    | cloudy weather                                   | cuaca mendung                         |
-| n5-24-weather           | 曇る                    | to become cloudy                                 | menjadi mendung                       |
-| n5-24-weather           | 晴れ                    | fine weather                                     | cuaca cerah                           |
-| n5-25-health            | 疲れる                  | to get tired                                     | lelah, capek                          |
-| n5-26-school            | 鉛筆                    | pencil                                           | pensil                                |
-| n5-26-school            | 片仮名                  | katakana                                         | katakana                              |
-| n5-27-study             | 平仮名                  | hiragana                                         | hiragana                              |
-| n5-27-study             | 万年筆                  | fountain pen                                     | pena tinta                            |
-| n5-27-study             | 留学生                  | international student                            | mahasiswa asing                       |
-| n5-28-work              | もしもし                | hello (on the phone)                             | halo (di telepon)                     |
-| n5-30-feelings          | 嫌い                    | disliked                                         | tidak suka, benci                     |
-| n5-30-feelings          | 上手                    | good at                                          | pandai, mahir                         |
-| n5-30-feelings          | 大好き                  | very fond of                                     | sangat suka                           |
-| n5-30-feelings          | 違う                    | to be different, to be wrong                     | berbeda, salah                        |
-| n5-30-feelings          | 欲しい                  | wanted (I want)                                  | ingin (memiliki)                      |
-| n5-32-questions         | あちら                  | that way, over there (polite)                    | sebelah sana (sopan)                  |
-| n5-32-questions         | あっち                  | over there                                       | sana                                  |
-| n5-32-questions         | あの                    | that (over there)                                | itu (di sana)                         |
-| n5-32-questions         | いかが                  | how (polite)                                     | bagaimana (sopan)                     |
-| n5-32-questions         | いくつ                  | how many, how old                                | berapa (buah), berapa umur            |
-| n5-32-questions         | いつ                    | when                                             | kapan                                 |
-| n5-32-questions         | こちら                  | this way, this person (polite)                   | sebelah sini, orang ini (sopan)       |
-| n5-32-questions         | こっち                  | this way, this side                              | sini, sebelah sini                    |
-| n5-32-questions         | この                    | this (before a noun)                             | ini (sebelum kata benda)              |
-| n5-32-questions         | こんな                  | this kind of                                     | seperti ini                           |
-| n5-32-questions         | その                    | that (before a noun)                             | itu (sebelum kata benda)              |
-| n5-32-questions         | どう                    | how                                              | bagaimana                             |
-| n5-32-questions         | どちら                  | which (of two), where (polite)                   | yang mana (dari dua), di mana (sopan) |
-| n5-32-questions         | どっち                  | which (of two)                                   | yang mana (dari dua)                  |
-| n5-32-questions         | どの                    | which (before a noun)                            | yang mana (sebelum kata benda)        |
-| n5-32-questions         | どれ                    | which one                                        | yang mana                             |
-| n5-32-questions         | どんな                  | what kind of                                     | seperti apa, macam apa                |
-| n5-32-questions         | 何                      | what                                             | apa                                   |
-| n5-32-questions         | 何                      | what (kind of), how many                         | apa, berapa (awalan)                  |
-| n5-33-linking           | 余り                    | not very (with negative)                         | tidak terlalu                         |
-| n5-33-linking           | お                      | polite prefix                                    | awalan sopan                          |
-| n5-33-linking           | じゃ                    | well then                                        | kalau begitu                          |
-| n5-33-linking           | それでは                | well then                                        | baiklah, kalau begitu                 |
-| n5-33-linking           | では                    | well then (formal)                               | kalau begitu (formal)                 |
-| n5-34-people            | 妹                      | younger sister (my)                              | adik perempuan (saya)                 |
-| n5-34-people            | 弟                      | younger brother (my)                             | adik laki-laki (saya)                 |
-| n5-34-people            | お兄さん                | (someone's) older brother                        | kakak laki-laki (orang lain)          |
-| n5-34-people            | お姉さん                | (someone's) older sister                         | kakak perempuan (orang lain)          |
-| n5-34-people            | 兄弟                    | brothers and sisters                             | saudara kandung                       |
-| n5-34-people            | 自分                    | oneself                                          | diri sendiri                          |
-| n5-34-people            | たち                    | (plural for people)                              | para, kami-kami (jamak orang)         |
-| n5-34-people            | 二十歳                  | twenty years old                                 | umur dua puluh tahun                  |
-| n5-34-people            | 二人                    | two people                                       | dua orang                             |
-| n5-34-people            | 皆さん                  | everyone (polite)                                | semuanya (sopan), Bapak-Ibu sekalian  |
-| n5-34-people            | みんな                  | everyone                                         | semua orang                           |
-| n5-34-people            | 両親                    | parents                                          | orang tua                             |
-| n5-introductions        | あなた                  | you                                              | Anda, kamu                            |
-| n5-introductions        | 会社員                  | company employee                                 | karyawan perusahaan                   |
-| n5-introductions        | 人                      | person from (a country)                          | orang (dari suatu negara)             |
-| n5-introductions        | はじめまして            | How do you do? (when meeting for the first time) | Salam kenal (saat pertama bertemu)    |
-| n5-introductions        | よろしく おねがいします | Pleased to meet you (asking for good relations)  | Senang berkenalan; mohon bantuannya   |
-| kanji n4                | 自                      | oneself                                          | diri sendiri                          |
-| kanji n4                | 田                      | rice field                                       | sawah                                 |
-| kanji n4                | 以                      | by means of, from                                | dengan, sejak                         |
-| kanji n4                | 帰                      | return home                                      | pulang                                |
-| kanji n4                | 弟                      | younger brother                                  | adik laki-laki                        |
-| kanji n4                | 兄                      | older brother                                    | kakak laki-laki                       |
-| kanji n4                | 妹                      | younger sister                                   | adik perempuan                        |
-| kanji n4                | 姉                      | older sister                                     | kakak perempuan                       |
-| kanji n5                | 何                      | what                                             | apa                                   |
-| kanji n5                | 万                      | ten thousand                                     | sepuluh ribu                          |
+| File                    | Word                    | English                                          | Indonesian (ours)                       |
+| ----------------------- | ----------------------- | ------------------------------------------------ | --------------------------------------- |
+| n4-01-plans             | 来週                    | next week                                        | minggu depan                            |
+| n4-01-plans             | 夏休み                  | summer holidays                                  | libur musim panas                       |
+| n4-03-ability           | 漢字                    | kanji                                            | kanji                                   |
+| n4-03-ability           | 下手                    | bad at                                           | tidak pandai                            |
+| n4-03-ability           | 得意                    | good at                                          | mahir                                   |
+| n4-04-giving            | 先輩                    | senior (at school or work)                       | senior                                  |
+| n4-04-giving            | 引っ越し                | moving house                                     | pindahan rumah                          |
+| n4-06-conditions        | もし                    | if, by any chance                                | seandainya, jika                        |
+| n4-06-conditions        | 桜                      | cherry blossom                                   | bunga sakura                            |
+| n4-07-hearsay           | 今にも                  | at any moment                                    | sebentar lagi                           |
+| n4-07-hearsay           | 来月                    | next month                                       | bulan depan                             |
+| n4-08-reasons           | 遅刻                    | being late                                       | keterlambatan                           |
+| n4-08-reasons           | 遅れる                  | to be late, to be delayed                        | terlambat                               |
+| n4-08-reasons           | 一生懸命                | as hard as one can                               | sekuat tenaga                           |
+| n4-08-reasons           | 込む                    | to be crowded                                    | ramai, penuh sesak                      |
+| n4-08-reasons           | 間に合う                | to be in time                                    | sempat, tepat waktu                     |
+| n4-08-reasons           | 頑張る                  | to do one's best                                 | berusaha keras                          |
+| n4-09-passive-causative | 部長                    | department manager                               | kepala bagian                           |
+| n4-09-passive-causative | 残業                    | overtime                                         | lembur                                  |
+| n4-09-passive-causative | 塾                      | cram school                                      | bimbingan belajar                       |
+| n4-09-passive-causative | 困る                    | to be in trouble                                 | kesulitan, kerepotan                    |
+| n4-10-polite            | 受付                    | reception desk                                   | meja resepsionis                        |
+| n4-10-polite            | 資料                    | documents, materials                             | dokumen, bahan                          |
+| n4-10-polite            | 会議室                  | meeting room                                     | ruang rapat                             |
+| n4-10-polite            | 社長                    | company president                                | direktur utama                          |
+| n4-11-home              | 布団                    | futon (Japanese bedding)                         | futon (kasur Jepang)                    |
+| n4-11-home              | 軒                      | houses (counter)                                 | rumah (satuan)                          |
+| n4-11-home              | 建て                    | -storey (building)                               | bertingkat (akhiran)                    |
+| n4-11-home              | 畳                      | tatami mat                                       | tikar tatami                            |
+| n4-11-home              | 寝坊                    | oversleeping                                     | bangun kesiangan                        |
+| n4-12-living            | 引っ越す                | to move house                                    | pindah rumah                            |
+| n4-12-living            | 冷房                    | air conditioning (cooling)                       | pendingin ruangan                       |
+| n4-12-living            | 留守                    | being out, not at home                           | tidak ada di rumah                      |
+| n4-12-living            | 湯                      | hot water                                        | air panas                               |
+| n4-13-cooking           | サンドイッチ            | sandwich                                         | roti lapis                              |
+| n4-13-cooking           | ぶどう                  | grapes                                           | anggur                                  |
+| n4-13-cooking           | 食料品                  | groceries                                        | bahan makanan                           |
+| n4-13-cooking           | 味噌                    | miso (bean paste)                                | miso (pasta kedelai)                    |
+| n4-13-cooking           | 米                      | uncooked rice                                    | beras                                   |
+| n4-13-cooking           | ハンバーグ              | hamburger steak                                  | hamburger steak (daging cincang)        |
+| n4-14-time              | 今度                    | this time, next time                             | kali ini, lain kali                     |
+| n4-14-time              | さっき                  | a moment ago                                     | tadi                                    |
+| n4-14-time              | 再来月                  | the month after next                             | dua bulan lagi                          |
+| n4-14-time              | 昔                      | long ago                                         | dahulu kala                             |
+| n4-14-time              | 今夜                    | tonight                                          | malam ini                               |
+| n4-14-time              | 暮れる                  | to get dark; to come to an end                   | menjadi gelap; berakhir                 |
+| n4-14-time              | 再来週                  | the week after next                              | dua minggu lagi                         |
+| n4-14-time              | 久しぶり                | for the first time in a long while               | lama tidak bertemu                      |
+| n4-14-time              | おき                    | every other (suffix)                             | selang (akhiran)                        |
+| n4-14-time              | この間                  | the other day                                    | beberapa hari yang lalu                 |
+| n4-14-time              | もうすぐ                | very soon                                        | sebentar lagi                           |
+| n4-14-time              | この頃                  | these days                                       | akhir-akhir ini                         |
+| n4-14-time              | これから                | from now on                                      | mulai sekarang                          |
+| n4-15-travel            | 床屋                    | barber's shop                                    | tempat pangkas rambut                   |
+| n4-15-travel            | 旅館                    | Japanese inn                                     | penginapan gaya Jepang                  |
+| n4-15-travel            | 連れる                  | to take (someone) along                          | membawa (seseorang), mengajak           |
+| n4-16-sightseeing       | 特急                    | limited express (train)                          | kereta ekspres terbatas                 |
+| n4-16-sightseeing       | 駐車場                  | car park                                         | tempat parkir                           |
+| n4-16-sightseeing       | 途中                    | on the way                                       | di tengah jalan                         |
+| n4-17-actions           | 間違える                | to make a mistake                                | salah, keliru                           |
+| n4-18-verb-pairs        | 聞こえる                | to be heard                                      | terdengar                               |
+| n4-18-verb-pairs        | 起こす                  | to wake (someone) up                             | membangunkan                            |
+| n4-18-verb-pairs        | 決まる                  | to be decided                                    | ditetapkan, sudah diputuskan            |
+| n4-18-verb-pairs        | 乾く                    | to get dry                                       | kering                                  |
+| n4-18-verb-pairs        | 済む                    | to be finished, to be settled                    | selesai, beres                          |
+| n4-19-habits            | 空く                    | to be empty (crowd); to be hungry                | lengang, sepi; lapar                    |
+| n4-19-habits            | 見つかる                | to be found                                      | ditemukan                               |
+| n4-19-habits            | 直る                    | to be repaired                                   | diperbaiki, pulih                       |
+| n4-19-habits            | 点く                    | to be turned on                                  | menyala                                 |
+| n4-19-habits            | 回る                    | to turn round, to go round                       | berputar, berkeliling                   |
+| n4-19-habits            | 汚れる                  | to get dirty                                     | menjadi kotor                           |
+| n4-20-health            | 治る                    | to get better (from illness)                     | sembuh                                  |
+| n4-20-health            | お見舞い                | visit to someone who is ill                      | menjenguk orang sakit                   |
+| n4-20-health            | 退院                    | leaving hospital                                 | keluar dari rumah sakit                 |
+| n4-20-health            | 太る                    | to put on weight                                 | menjadi gemuk                           |
+| n4-20-health            | 入院                    | going into hospital                              | masuk rumah sakit (rawat inap)          |
+| n4-21-appearance        | オーバー                | overcoat; exaggerated                            | mantel; berlebihan                      |
+| n4-21-appearance        | 手袋                    | gloves                                           | sarung tangan                           |
+| n4-21-appearance        | サンダル                | sandals                                          | sandal                                  |
+| n4-22-nature            | 郊外                    | suburbs                                          | pinggiran kota                          |
+| n4-22-nature            | 小鳥                    | small bird                                       | burung kecil                            |
+| n4-22-nature            | 冷える                  | to get cold                                      | menjadi dingin                          |
+| n4-22-nature            | 濡れる                  | to get wet                                       | basah                                   |
+| n4-23-amounts           | 品物                    | goods, articles                                  | barang                                  |
+| n4-23-amounts           | 足りる                  | to be enough                                     | cukup                                   |
+| n4-23-amounts           | 以内                    | within, not more than                            | dalam (batas), tidak lebih dari         |
+| n4-23-amounts           | レジ                    | cash register, till                              | kasir, mesin kasir                      |
+| n4-23-amounts           | 以上                    | or more; that is all                             | lebih dari; sekian                      |
+| n4-23-amounts           | 忘れ物                  | something left behind                            | barang yang tertinggal                  |
+| n4-23-amounts           | 億                      | a hundred million                                | seratus juta                            |
+| n4-23-amounts           | 目                      | -th (ordinal suffix)                             | ke- (urutan, akhiran)                   |
+| n4-24-school            | テキスト                | textbook                                         | buku pelajaran                          |
+| n4-24-school            | 予習                    | preparing for a lesson                           | belajar persiapan (sebelum pelajaran)   |
+| n4-24-school            | 中学校                  | junior high school                               | sekolah menengah pertama (SMP)          |
+| n4-25-university        | 入学                    | entering a school                                | masuk sekolah                           |
+| n4-25-university        | 高校生                  | high school student                              | siswa SMA                               |
+| n4-26-free-time         | 美術館                  | art museum                                       | museum seni                             |
+| n4-27-events            | 花見                    | cherry-blossom viewing                           | melihat bunga sakura                    |
+| n4-27-events            | 楽しみ                  | something to look forward to                     | hal yang dinanti-nanti                  |
+| n4-28-family            | 皆                      | everyone                                         | semua orang                             |
+| n4-28-family            | 彼ら                    | they                                             | mereka                                  |
+| n4-29-favours           | ちゃん                  | (familiar suffix for names)                      | (akhiran akrab untuk nama)              |
+| n4-29-favours           | 世話                    | looking after                                    | merawat, mengurus                       |
+| n4-29-favours           | 君                      | you (casual, used by men)                        | kamu (santai, dipakai laki-laki)        |
+| n4-29-favours           | 君                      | (suffix for boys' names)                         | (akhiran untuk nama anak laki-laki)     |
+| n4-30-feelings          | 怒る                    | to get angry                                     | marah                                   |
+| n4-30-feelings          | だめ                    | no good, not allowed                             | tidak boleh, tidak bagus                |
+| n4-30-feelings          | 恥ずかしい              | embarrassed                                      | malu                                    |
+| n4-30-feelings          | 驚く                    | to be surprised                                  | terkejut                                |
+| n4-31-character         | 喜ぶ                    | to be glad                                       | bergembira                              |
+| n4-31-character         | 不便                    | inconvenient                                     | tidak praktis, merepotkan               |
+| n4-31-character         | 騒ぐ                    | to make a noise                                  | ribut, membuat keributan                |
+| n4-31-character         | 慣れる                  | to get used to                                   | terbiasa                                |
+| n4-31-character         | 役に立つ                | to be useful                                     | berguna                                 |
+| n4-31-character         | お陰                    | thanks to                                        | berkat                                  |
+| n4-32-decisions         | しまう                  | to end up V-ing (suffix)                         | terlanjur, sampai habis (akhiran)       |
+| n4-32-decisions         | だす                    | to start V-ing suddenly (suffix)                 | mulai (tiba-tiba, akhiran)              |
+| n4-32-decisions         | はず                    | should, expected to                              | seharusnya                              |
+| n4-32-decisions         | 続ける                  | to keep on V-ing (suffix)                        | terus (akhiran)                         |
+| n4-32-decisions         | やすい                  | easy to V (suffix)                               | mudah di- (akhiran)                     |
+| n4-32-decisions         | 始める                  | to begin V-ing (suffix)                          | mulai (akhiran)                         |
+| n4-32-decisions         | 遠く                    | far away                                         | tempat yang jauh                        |
+| n4-32-decisions         | おわる                  | to finish V-ing (suffix)                         | selesai (akhiran)                       |
+| n4-32-decisions         | にくい                  | hard to V (suffix)                               | sulit di- (akhiran)                     |
+| n4-33-workplace         | 課長                    | section manager                                  | kepala seksi                            |
+| n4-33-workplace         | アルバイト              | part-time job                                    | kerja paruh waktu                       |
+| n4-33-workplace         | パート                  | part-time work                                   | kerja paruh waktu (part time)           |
+| n4-33-workplace         | 公務員                  | civil servant                                    | pegawai negeri                          |
+| n4-34-office            | 支度                    | getting ready                                    | persiapan                               |
+| n4-34-office            | 昼休み                  | lunch break                                      | istirahat siang                         |
+| n4-34-office            | 新聞社                  | newspaper company                                | perusahaan surat kabar                  |
+| n4-35-words             | やっぱり                | as expected, after all                           | sudah kuduga, ternyata memang           |
+| n4-35-words             | ちっとも                | not at all (with negative)                       | sama sekali tidak                       |
+| n4-35-words             | そんな                  | such, like that                                  | seperti itu                             |
+| n4-36-talking           | あんな                  | that kind of                                     | seperti itu                             |
+| n4-36-talking           | 例えば                  | for example                                      | misalnya                                |
+| n4-36-talking           | こう                    | like this                                        | seperti ini                             |
+| n4-36-talking           | 是非                    | by all means                                     | bagaimanapun juga, sangat (berharap)    |
+| n4-36-talking           | それほど                | not so much                                      | tidak sebegitu                          |
+| n4-36-talking           | そんなに                | that much                                        | sebegitu, begitu                        |
+| n4-36-talking           | なるほど                | I see                                            | oh begitu                               |
+| n4-36-talking           | 全然                    | not at all (with negative)                       | sama sekali (tidak)                     |
+| n4-37-society           | 製                      | made in, made of (suffix)                        | buatan (akhiran)                        |
+| n4-38-culture           | 寺                      | Buddhist temple                                  | kuil Buddha                             |
+| n4-38-culture           | 工業                    | manufacturing industry                           | industri manufaktur                     |
+| n4-38-culture           | 神社                    | Shinto shrine                                    | kuil Shinto                             |
+| n4-39-keigo             | ご存じ                  | knowing (honorific)                              | mengetahui (hormat)                     |
+| n4-39-keigo             | 御                      | polite prefix (for Chinese-origin words)         | awalan sopan (untuk kata asal Tionghoa) |
+| n5-02-numbers-shopping  | いくら                  | how much                                         | berapa harganya                         |
+| n5-02-numbers-shopping  | これ                    | this (near me)                                   | ini (dekat saya)                        |
+| n5-02-numbers-shopping  | それ                    | that (near you)                                  | itu (dekat Anda)                        |
+| n5-02-numbers-shopping  | あれ                    | that over there                                  | itu (di sana, jauh dari kita)           |
+| n5-02-numbers-shopping  | ください                | please give me                                   | tolong beri saya                        |
+| n5-03-time-daily-life   | なんじ                  | what time                                        | jam berapa                              |
+| n5-03-time-daily-life   | じ                      | o'clock (after a number)                         | jam (setelah angka)                     |
+| n5-03-time-daily-life   | 毎日                    | every day                                        | setiap hari                             |
+| n5-04-places-directions | あそこ                  | over there                                       | di sana                                 |
+| n5-04-places-directions | どこ                    | where                                            | di mana                                 |
+| n5-04-places-directions | あります                | there is (things)                                | ada (benda)                             |
+| n5-04-places-directions | います                  | there is (people, animals)                       | ada (orang, hewan)                      |
+| n5-05-food-restaurant   | なに                    | what                                             | apa                                     |
+| n5-05-food-restaurant   | いただきます            | said before eating                               | ucapan sebelum makan                    |
+| n5-05-food-restaurant   | ごちそうさまでした      | said after eating                                | ucapan setelah makan                    |
+| n5-06-family-people     | 父                      | my father                                        | ayah saya                               |
+| n5-06-family-people     | 母                      | my mother                                        | ibu saya                                |
+| n5-06-family-people     | 兄                      | my older brother                                 | kakak laki-laki saya                    |
+| n5-06-family-people     | 姉                      | my older sister                                  | kakak perempuan saya                    |
+| n5-07-dates             | 一日                    | one day (length of time)                         | satu hari (lamanya)                     |
+| n5-07-dates             | 五日                    | the fifth (of the month), five days              | tanggal lima, lima hari                 |
+| n5-07-dates             | 十日                    | the tenth (of the month), ten days               | tanggal sepuluh, sepuluh hari           |
+| n5-07-dates             | 七日                    | the seventh (of the month), seven days           | tanggal tujuh, tujuh hari               |
+| n5-07-dates             | 二十日                  | the twentieth (of the month), twenty days        | tanggal dua puluh, dua puluh hari       |
+| n5-07-dates             | 六日                    | the sixth (of the month), six days               | tanggal enam, enam hari                 |
+| n5-07-dates             | 八日                    | the eighth (of the month), eight days            | tanggal delapan, delapan hari           |
+| n5-10-counting          | 大勢                    | many people                                      | banyak orang                            |
+| n5-10-counting          | か月                    | months (counter)                                 | bulan (satuan lama)                     |
+| n5-10-counting          | 個                      | pieces (counter for small things)                | buah (satuan benda kecil)               |
+| n5-10-counting          | 歳                      | years old (counter)                              | tahun (umur)                            |
+| n5-10-counting          | 冊                      | books (counter)                                  | buku (satuan)                           |
+| n5-10-counting          | 台                      | machines, vehicles (counter)                     | unit (satuan mesin, kendaraan)          |
+| n5-11-quantities        | など                    | and so on                                        | dan lain-lain                           |
+| n5-11-quantities        | 杯                      | cupfuls (counter)                                | gelas, cangkir (satuan)                 |
+| n5-11-quantities        | 匹                      | small animals (counter)                          | ekor (satuan hewan kecil)               |
+| n5-11-quantities        | 本                      | long things (counter)                            | batang (satuan benda panjang)           |
+| n5-11-quantities        | 枚                      | flat things (counter)                            | lembar (satuan benda tipis)             |
+| n5-11-quantities        | 万                      | ten thousand                                     | sepuluh ribu                            |
+| n5-12-time              | 明後日                  | the day after tomorrow                           | lusa                                    |
+| n5-12-time              | 一昨日                  | the day before yesterday                         | kemarin lusa                            |
+| n5-12-time              | おととし                | the year before last                             | dua tahun lalu                          |
+| n5-12-time              | 去年                    | last year                                        | tahun lalu                              |
+| n5-12-time              | 今朝                    | this morning                                     | tadi pagi                               |
+| n5-12-time              | 今年                    | this year                                        | tahun ini                               |
+| n5-12-time              | 今月                    | this month                                       | bulan ini                               |
+| n5-12-time              | 今週                    | this week                                        | minggu ini                              |
+| n5-12-time              | 今晩                    | this evening, tonight                            | malam ini                               |
+| n5-12-time              | さ来年                  | the year after next                              | dua tahun lagi                          |
+| n5-12-time              | 週間                    | weeks (counter)                                  | minggu (lamanya)                        |
+| n5-12-time              | 先月                    | last month                                       | bulan lalu                              |
+| n5-12-time              | 先週                    | last week                                        | minggu lalu                             |
+| n5-13-routines          | 中                      | in the middle of, during                         | sedang, selama                          |
+| n5-13-routines          | 一月                    | one month (length of time)                       | satu bulan (lamanya)                    |
+| n5-13-routines          | 分                      | minutes (counter)                                | menit                                   |
+| n5-13-routines          | 毎朝                    | every morning                                    | setiap pagi                             |
+| n5-13-routines          | 毎月                    | every month                                      | setiap bulan                            |
+| n5-13-routines          | 毎週                    | every week                                       | setiap minggu                           |
+| n5-13-routines          | 毎晩                    | every night                                      | setiap malam                            |
+| n5-13-routines          | 夕方                    | late afternoon, early evening                    | sore                                    |
+| n5-13-routines          | 昨夜                    | last night                                       | tadi malam                              |
+| n5-13-routines          | 来年                    | next year                                        | tahun depan                             |
+| n5-17-clothes           | 靴下                    | socks                                            | kaus kaki                               |
+| n5-17-clothes           | ズボン                  | trousers                                         | celana panjang                          |
+| n5-17-clothes           | 洋服                    | Western clothes                                  | pakaian gaya Barat                      |
+| n5-17-clothes           | ワイシャツ              | business shirt                                   | kemeja kerja                            |
+| n5-18-transport         | 外国                    | foreign country                                  | luar negeri                             |
+| n5-18-transport         | 交番                    | police box                                       | pos polisi                              |
+| n5-19-town              | 八百屋                  | greengrocer                                      | toko sayur                              |
+| n5-19-town              | 郵便局                  | post office                                      | kantor pos                              |
+| n5-20-directions        | 隣                      | next to, next door                               | sebelah, tetangga                       |
+| n5-21-going-out         | ない                    | there is not, not have                           | tidak ada                               |
+| n5-21-going-out         | 並べる                  | to line (things) up                              | menjajarkan                             |
+| n5-21-going-out         | 向こう                  | over there, the other side                       | seberang, sebelah sana                  |
+| n5-22-food              | お菓子                  | sweets, snacks                                   | kue, camilan                            |
+| n5-22-food              | お弁当                  | boxed lunch                                      | bekal makan siang                       |
+| n5-23-cooking           | 茶碗                    | rice bowl                                        | mangkuk nasi                            |
+| n5-23-cooking           | 箸                      | chopsticks                                       | sumpit                                  |
+| n5-23-cooking           | 豚肉                    | pork                                             | daging babi                             |
+| n5-23-cooking           | まずい                  | tasting bad                                      | tidak enak                              |
+| n5-23-cooking           | 夕飯                    | evening meal                                     | makan malam                             |
+| n5-24-weather           | 曇り                    | cloudy weather                                   | cuaca mendung                           |
+| n5-24-weather           | 曇る                    | to become cloudy                                 | menjadi mendung                         |
+| n5-24-weather           | 晴れ                    | fine weather                                     | cuaca cerah                             |
+| n5-25-health            | 疲れる                  | to get tired                                     | lelah, capek                            |
+| n5-26-school            | 鉛筆                    | pencil                                           | pensil                                  |
+| n5-26-school            | 片仮名                  | katakana                                         | katakana                                |
+| n5-27-study             | 平仮名                  | hiragana                                         | hiragana                                |
+| n5-27-study             | 万年筆                  | fountain pen                                     | pena tinta                              |
+| n5-27-study             | 留学生                  | international student                            | mahasiswa asing                         |
+| n5-28-work              | もしもし                | hello (on the phone)                             | halo (di telepon)                       |
+| n5-30-feelings          | 嫌い                    | disliked                                         | tidak suka, benci                       |
+| n5-30-feelings          | 上手                    | good at                                          | pandai, mahir                           |
+| n5-30-feelings          | 大好き                  | very fond of                                     | sangat suka                             |
+| n5-30-feelings          | 違う                    | to be different, to be wrong                     | berbeda, salah                          |
+| n5-30-feelings          | 欲しい                  | wanted (I want)                                  | ingin (memiliki)                        |
+| n5-32-questions         | あちら                  | that way, over there (polite)                    | sebelah sana (sopan)                    |
+| n5-32-questions         | あっち                  | over there                                       | sana                                    |
+| n5-32-questions         | あの                    | that (over there)                                | itu (di sana)                           |
+| n5-32-questions         | いかが                  | how (polite)                                     | bagaimana (sopan)                       |
+| n5-32-questions         | いくつ                  | how many, how old                                | berapa (buah), berapa umur              |
+| n5-32-questions         | いつ                    | when                                             | kapan                                   |
+| n5-32-questions         | こちら                  | this way, this person (polite)                   | sebelah sini, orang ini (sopan)         |
+| n5-32-questions         | こっち                  | this way, this side                              | sini, sebelah sini                      |
+| n5-32-questions         | この                    | this (before a noun)                             | ini (sebelum kata benda)                |
+| n5-32-questions         | こんな                  | this kind of                                     | seperti ini                             |
+| n5-32-questions         | その                    | that (before a noun)                             | itu (sebelum kata benda)                |
+| n5-32-questions         | どう                    | how                                              | bagaimana                               |
+| n5-32-questions         | どちら                  | which (of two), where (polite)                   | yang mana (dari dua), di mana (sopan)   |
+| n5-32-questions         | どっち                  | which (of two)                                   | yang mana (dari dua)                    |
+| n5-32-questions         | どの                    | which (before a noun)                            | yang mana (sebelum kata benda)          |
+| n5-32-questions         | どれ                    | which one                                        | yang mana                               |
+| n5-32-questions         | どんな                  | what kind of                                     | seperti apa, macam apa                  |
+| n5-32-questions         | 何                      | what                                             | apa                                     |
+| n5-32-questions         | 何                      | what (kind of), how many                         | apa, berapa (awalan)                    |
+| n5-33-linking           | 余り                    | not very (with negative)                         | tidak terlalu                           |
+| n5-33-linking           | お                      | polite prefix                                    | awalan sopan                            |
+| n5-33-linking           | じゃ                    | well then                                        | kalau begitu                            |
+| n5-33-linking           | それでは                | well then                                        | baiklah, kalau begitu                   |
+| n5-33-linking           | では                    | well then (formal)                               | kalau begitu (formal)                   |
+| n5-34-people            | 妹                      | younger sister (my)                              | adik perempuan (saya)                   |
+| n5-34-people            | 弟                      | younger brother (my)                             | adik laki-laki (saya)                   |
+| n5-34-people            | お兄さん                | (someone's) older brother                        | kakak laki-laki (orang lain)            |
+| n5-34-people            | お姉さん                | (someone's) older sister                         | kakak perempuan (orang lain)            |
+| n5-34-people            | 兄弟                    | brothers and sisters                             | saudara kandung                         |
+| n5-34-people            | 自分                    | oneself                                          | diri sendiri                            |
+| n5-34-people            | たち                    | (plural for people)                              | para, kami-kami (jamak orang)           |
+| n5-34-people            | 二十歳                  | twenty years old                                 | umur dua puluh tahun                    |
+| n5-34-people            | 二人                    | two people                                       | dua orang                               |
+| n5-34-people            | 皆さん                  | everyone (polite)                                | semuanya (sopan), Bapak-Ibu sekalian    |
+| n5-34-people            | みんな                  | everyone                                         | semua orang                             |
+| n5-34-people            | 両親                    | parents                                          | orang tua                               |
+| n5-introductions        | あなた                  | you                                              | Anda, kamu                              |
+| n5-introductions        | 会社員                  | company employee                                 | karyawan perusahaan                     |
+| n5-introductions        | 人                      | person from (a country)                          | orang (dari suatu negara)               |
+| n5-introductions        | はじめまして            | How do you do? (when meeting for the first time) | Salam kenal (saat pertama bertemu)      |
+| n5-introductions        | よろしく おねがいします | Pleased to meet you (asking for good relations)  | Senang berkenalan; mohon bantuannya     |
+| kanji n4                | 自                      | oneself                                          | diri sendiri                            |
+| kanji n4                | 田                      | rice field                                       | sawah                                   |
+| kanji n4                | 以                      | by means of, from                                | dengan, sejak                           |
+| kanji n4                | 帰                      | return home                                      | pulang                                  |
+| kanji n4                | 弟                      | younger brother                                  | adik laki-laki                          |
+| kanji n4                | 兄                      | older brother                                    | kakak laki-laki                         |
+| kanji n4                | 妹                      | younger sister                                   | adik perempuan                          |
+| kanji n4                | 姉                      | older sister                                     | kakak perempuan                         |
+| kanji n5                | 何                      | what                                             | apa                                     |
+| kanji n5                | 万                      | ten thousand                                     | sepuluh ribu                            |

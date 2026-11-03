@@ -1,0 +1,46 @@
+{
+  "source": "Original practice sentences for N4 · Culture and the world.",
+  "level": "n4",
+  "items": [
+    {
+      "slug": "n4-sasete-morau-1",
+      "text": "はくぶつかんで しゃしんを とらせて もらいました。",
+      "tokens": ["はくぶつかん", "で", "しゃしん", "を", "とらせて", "もらいました"],
+      "grammar": "n4-sasete-morau",
+      "translation": {
+        "en": "They let me take photos at the museum.",
+        "id": "Saya diizinkan memotret di museum."
+      }
+    },
+    {
+      "slug": "n4-sasete-morau-2",
+      "text": "きょうは はやく かえらせて いただきます。",
+      "tokens": ["きょう", "は", "はやく", "かえらせて", "いただきます"],
+      "grammar": "n4-sasete-morau",
+      "translation": {
+        "en": "With your permission, I'll leave early today.",
+        "id": "Mohon izin, hari ini saya pulang lebih awal."
+      }
+    },
+    {
+      "slug": "n4-ga-hitsuyou-1",
+      "text": "にほんへ いくのに ビザが ひつようですか。",
+      "tokens": ["にほん", "へ", "いく", "のに", "ビザ", "が", "ひつようです", "か"],
+      "grammar": "n4-ga-hitsuyou",
+      "translation": {
+        "en": "Do I need a visa to go to Japan?",
+        "id": "Apakah perlu visa untuk pergi ke Jepang?"
+      }
+    },
+    {
+      "slug": "n4-ga-hitsuyou-2",
+      "text": "この しごとには けいけんが ひつようです。",
+      "tokens": ["この", "しごと", "には", "けいけん", "が", "ひつようです"],
+      "grammar": "n4-ga-hitsuyou",
+      "translation": {
+        "en": "This job requires experience.",
+        "id": "Pekerjaan ini memerlukan pengalaman."
+      }
+    }
+  ]
+}

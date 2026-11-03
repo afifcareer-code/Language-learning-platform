@@ -1,0 +1,74 @@
+{
+  "source": "Original grammar explanations for N4 · Culture and the world, written for this project.",
+  "level": "n4",
+  "items": [
+    {
+      "slug": "n4-sasete-morau",
+      "pattern": "V(causative て) もらいます / いただきます",
+      "meaning": {
+        "en": "be allowed to V, have the chance to V",
+        "id": "diizinkan V, mendapat kesempatan V"
+      },
+      "explanation": {
+        "en": "The causative て form + もらう (or いただく) says you were allowed to do something and are grateful: しゃしんを とらせて もらいました.",
+        "id": "Bentuk kausatif て + もらう (atau いただく) menyatakan Anda diizinkan melakukan sesuatu dan berterima kasih: しゃしんを とらせて もらいました."
+      },
+      "examples": [
+        {
+          "ja": "はくぶつかんで しゃしんを とらせて もらいました。",
+          "translation": {
+            "en": "They let me take photos at the museum.",
+            "id": "Saya diizinkan memotret di museum."
+          }
+        },
+        {
+          "ja": "きょうは はやく かえらせて いただきます。",
+          "translation": {
+            "en": "With your permission, I'll leave early today.",
+            "id": "Mohon izin, hari ini saya pulang lebih awal."
+          }
+        }
+      ],
+      "commonErrors": [
+        {
+          "en": "Using the plain て form: とって もらいました means someone took the photo for you.",
+          "id": "Memakai bentuk て biasa: とって もらいました berarti orang lain memotretkan untuk Anda."
+        }
+      ]
+    },
+    {
+      "slug": "n4-ga-hitsuyou",
+      "pattern": "N が ひつようです / V のに N が ひつようです",
+      "meaning": {
+        "en": "N is necessary (for V-ing)",
+        "id": "perlu N (untuk V)"
+      },
+      "explanation": {
+        "en": "ひつよう is a な-adjective meaning 'necessary'. What is needed takes が: ビザが ひつようです. Add a purpose with のに or に: りゅうがくするのに おかねが ひつようです.",
+        "id": "ひつよう adalah kata sifat な yang berarti 'perlu'. Hal yang diperlukan memakai が: ビザが ひつようです. Tambahkan tujuan dengan のに atau に: りゅうがくするのに おかねが ひつようです."
+      },
+      "examples": [
+        {
+          "ja": "にほんへ いくのに ビザが ひつようですか。",
+          "translation": {
+            "en": "Do I need a visa to go to Japan?",
+            "id": "Apakah perlu visa untuk pergi ke Jepang?"
+          }
+        },
+        {
+          "ja": "この しごとには けいけんが ひつようです。",
+          "translation": {
+            "en": "This job requires experience.",
+            "id": "Pekerjaan ini memerlukan pengalaman."
+          }
+        }
+      ],
+      "commonErrors": [
+        {
+          "en": "Using を: ビザを ひつようです is wrong; say ビザが ひつようです.",
+          "id": "Memakai を: ビザを ひつようです salah; katakan ビザが ひつようです."
+        }
+      ]
+    }
+  ]
+}

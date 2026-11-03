@@ -1,0 +1,195 @@
+{
+  "source": "N4 · Orders and signs: words from the JLPT N4 list by J. Waller (tanos.co.uk, CC BY) as compiled in open-anki-jlpt-decks (MIT). Meanings written for this project.",
+  "level": "n4",
+  "items": [
+    {
+      "kana": "いけん",
+      "kanji": "意見",
+      "romaji": "iken",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "opinion",
+        "id": "pendapat"
+      }
+    },
+    {
+      "kana": "うんてんしゅ",
+      "kanji": "運転手",
+      "romaji": "untenshu",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "driver (by profession)",
+        "id": "sopir, pengemudi"
+      }
+    },
+    {
+      "kana": "きかい",
+      "kanji": "機会",
+      "romaji": "kikai",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "opportunity, chance",
+        "id": "kesempatan"
+      }
+    },
+    {
+      "kana": "ひつよう",
+      "kanji": "必要",
+      "romaji": "hitsuyou",
+      "partOfSpeech": "adjective",
+      "meaning": {
+        "en": "necessary",
+        "id": "perlu"
+      }
+    },
+    {
+      "kana": "かちょう",
+      "kanji": "課長",
+      "romaji": "kachou",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "section manager",
+        "id": "kepala seksi"
+      }
+    },
+    {
+      "kana": "アルバイト",
+      "romaji": "arubaito",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "part-time job",
+        "id": "kerja paruh waktu"
+      }
+    },
+    {
+      "kana": "パート",
+      "romaji": "paato",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "part-time work",
+        "id": "kerja paruh waktu (part time)"
+      }
+    },
+    {
+      "kana": "か",
+      "kanji": "家",
+      "romaji": "ka",
+      "affix": "suffix",
+      "partOfSpeech": "suffix",
+      "meaning": {
+        "en": "specialist, -ist (suffix)",
+        "id": "ahli (akhiran)"
+      }
+    },
+    {
+      "kana": "ようじ",
+      "kanji": "用事",
+      "romaji": "youji",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "errand, something to do",
+        "id": "urusan, keperluan"
+      }
+    },
+    {
+      "kana": "おこなう",
+      "kanji": "行う",
+      "romaji": "okonau",
+      "partOfSpeech": "verb",
+      "meaning": {
+        "en": "to hold, to carry out",
+        "id": "melaksanakan, mengadakan"
+      }
+    },
+    {
+      "kana": "じゅんび",
+      "kanji": "準備",
+      "romaji": "junbi",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "preparation",
+        "id": "persiapan"
+      }
+    },
+    {
+      "kana": "じむしょ",
+      "kanji": "事務所",
+      "romaji": "jimusho",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "office",
+        "id": "kantor"
+      }
+    },
+    {
+      "kana": "きゃく",
+      "kanji": "客",
+      "romaji": "kyaku",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "guest, customer",
+        "id": "tamu, pelanggan"
+      }
+    },
+    {
+      "kana": "しらせる",
+      "kanji": "知らせる",
+      "romaji": "shiraseru",
+      "partOfSpeech": "verb",
+      "meaning": {
+        "en": "to let know, to inform",
+        "id": "memberi tahu"
+      }
+    },
+    {
+      "kana": "いん",
+      "kanji": "員",
+      "romaji": "in",
+      "affix": "suffix",
+      "partOfSpeech": "suffix",
+      "meaning": {
+        "en": "member, staff (suffix)",
+        "id": "anggota, pegawai (akhiran)"
+      }
+    },
+    {
+      "kana": "よう",
+      "kanji": "用",
+      "romaji": "you",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "business, something to do",
+        "id": "urusan, keperluan"
+      }
+    },
+    {
+      "kana": "こうむいん",
+      "kanji": "公務員",
+      "romaji": "koumuin",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "civil servant",
+        "id": "pegawai negeri"
+      }
+    },
+    {
+      "kana": "ようい",
+      "kanji": "用意",
+      "romaji": "youi",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "preparation",
+        "id": "persiapan"
+      }
+    },
+    {
+      "kana": "アナウンサー",
+      "romaji": "anaunsaa",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "announcer",
+        "id": "penyiar"
+      }
+    }
+  ]
+}

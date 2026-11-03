@@ -1,0 +1,212 @@
+{
+  "source": "N4 · Decisions: words from the JLPT N4 list by J. Waller (tanos.co.uk, CC BY) as compiled in open-anki-jlpt-decks (MIT). Meanings written for this project.",
+  "level": "n4",
+  "items": [
+    {
+      "kana": "おもて",
+      "kanji": "表",
+      "romaji": "omote",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "front, surface, outside",
+        "id": "bagian depan, permukaan, luar"
+      }
+    },
+    {
+      "kana": "しまう",
+      "romaji": "shimau",
+      "affix": "suffix",
+      "partOfSpeech": "suffix",
+      "meaning": {
+        "en": "to end up V-ing (suffix)",
+        "id": "terlanjur, sampai habis (akhiran)"
+      }
+    },
+    {
+      "kana": "ばしょ",
+      "kanji": "場所",
+      "romaji": "basho",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "place",
+        "id": "tempat, lokasi"
+      }
+    },
+    {
+      "kana": "うち",
+      "kanji": "内",
+      "romaji": "uchi",
+      "homonym": 2,
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "inside, within",
+        "id": "dalam, di antara"
+      }
+    },
+    {
+      "kana": "ばかり",
+      "romaji": "bakari",
+      "affix": "suffix",
+      "partOfSpeech": "suffix",
+      "meaning": {
+        "en": "just did; only (suffix)",
+        "id": "baru saja; hanya (akhiran)"
+      }
+    },
+    {
+      "kana": "だす",
+      "romaji": "dasu",
+      "affix": "suffix",
+      "homonym": 2,
+      "partOfSpeech": "suffix",
+      "meaning": {
+        "en": "to start V-ing suddenly (suffix)",
+        "id": "mulai (tiba-tiba, akhiran)"
+      }
+    },
+    {
+      "kana": "はず",
+      "romaji": "hazu",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "should, expected to",
+        "id": "seharusnya"
+      }
+    },
+    {
+      "kana": "すみ",
+      "kanji": "隅",
+      "romaji": "sumi",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "corner",
+        "id": "sudut, pojok"
+      }
+    },
+    {
+      "kana": "まわり",
+      "kanji": "周り",
+      "romaji": "mawari",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "surroundings, around",
+        "id": "sekeliling, sekitar"
+      }
+    },
+    {
+      "kana": "つづける",
+      "kanji": "続ける",
+      "romaji": "tsuzukeru",
+      "affix": "suffix",
+      "partOfSpeech": "suffix",
+      "meaning": {
+        "en": "to keep on V-ing (suffix)",
+        "id": "terus (akhiran)"
+      }
+    },
+    {
+      "kana": "やすい",
+      "romaji": "yasui",
+      "affix": "suffix",
+      "homonym": 2,
+      "partOfSpeech": "suffix",
+      "meaning": {
+        "en": "easy to V (suffix)",
+        "id": "mudah di- (akhiran)"
+      }
+    },
+    {
+      "kana": "うら",
+      "kanji": "裏",
+      "romaji": "ura",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "back, reverse side",
+        "id": "bagian belakang, sisi balik"
+      }
+    },
+    {
+      "kana": "ため",
+      "kanji": "為",
+      "romaji": "tame",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "sake, purpose",
+        "id": "demi, tujuan"
+      }
+    },
+    {
+      "kana": "はじめる",
+      "kanji": "始める",
+      "romaji": "hajimeru",
+      "affix": "suffix",
+      "homonym": 2,
+      "partOfSpeech": "suffix",
+      "meaning": {
+        "en": "to begin V-ing (suffix)",
+        "id": "mulai (akhiran)"
+      }
+    },
+    {
+      "kana": "とおく",
+      "kanji": "遠く",
+      "romaji": "tooku",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "far away",
+        "id": "tempat yang jauh"
+      }
+    },
+    {
+      "kana": "まま",
+      "romaji": "mama",
+      "affix": "suffix",
+      "partOfSpeech": "suffix",
+      "meaning": {
+        "en": "as it is, unchanged",
+        "id": "tetap, dibiarkan apa adanya"
+      }
+    },
+    {
+      "kana": "あいだ",
+      "kanji": "間",
+      "romaji": "aida",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "between, interval",
+        "id": "antara, selama"
+      }
+    },
+    {
+      "kana": "おわる",
+      "romaji": "owaru",
+      "affix": "suffix",
+      "homonym": 2,
+      "partOfSpeech": "suffix",
+      "meaning": {
+        "en": "to finish V-ing (suffix)",
+        "id": "selesai (akhiran)"
+      }
+    },
+    {
+      "kana": "まんなか",
+      "kanji": "真中",
+      "romaji": "mannaka",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "middle, centre",
+        "id": "tengah-tengah"
+      }
+    },
+    {
+      "kana": "にくい",
+      "romaji": "nikui",
+      "affix": "suffix",
+      "partOfSpeech": "suffix",
+      "meaning": {
+        "en": "hard to V (suffix)",
+        "id": "sulit di- (akhiran)"
+      }
+    }
+  ]
+}

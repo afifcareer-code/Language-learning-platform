@@ -1,0 +1,183 @@
+{
+  "source": "N4 · Honorific and humble language: words from the JLPT N4 list by J. Waller (tanos.co.uk, CC BY) as compiled in open-anki-jlpt-decks (MIT). Meanings written for this project.",
+  "level": "n4",
+  "items": [
+    {
+      "kana": "うかがう",
+      "romaji": "ukagau",
+      "partOfSpeech": "verb",
+      "meaning": {
+        "en": "to ask, to visit (humble)",
+        "id": "bertanya, berkunjung (merendah)"
+      }
+    },
+    {
+      "kana": "おたく",
+      "kanji": "お宅",
+      "romaji": "otaku",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "(someone's) home (polite)",
+        "id": "rumah (Anda, sopan)"
+      }
+    },
+    {
+      "kana": "ございます",
+      "romaji": "gozaimasu",
+      "affix": "suffix",
+      "partOfSpeech": "expression",
+      "meaning": {
+        "en": "to be, to have (very polite)",
+        "id": "ada (sangat sopan)"
+      }
+    },
+    {
+      "kana": "いたす",
+      "kanji": "致す",
+      "romaji": "itasu",
+      "partOfSpeech": "verb",
+      "meaning": {
+        "en": "to do (humble)",
+        "id": "melakukan (merendah)"
+      }
+    },
+    {
+      "kana": "もうしあげる",
+      "kanji": "申し上げる",
+      "romaji": "moushiageru",
+      "partOfSpeech": "verb",
+      "meaning": {
+        "en": "to say (humble)",
+        "id": "mengatakan (merendah)"
+      }
+    },
+    {
+      "kana": "なさる",
+      "romaji": "nasaru",
+      "partOfSpeech": "verb",
+      "meaning": {
+        "en": "to do (honorific)",
+        "id": "melakukan (hormat)"
+      }
+    },
+    {
+      "kana": "おる",
+      "romaji": "oru",
+      "homonym": 2,
+      "partOfSpeech": "verb",
+      "meaning": {
+        "en": "to be (humble)",
+        "id": "ada (merendah)"
+      }
+    },
+    {
+      "kana": "ごらんになる",
+      "kanji": "ご覧になる",
+      "romaji": "goranninaru",
+      "partOfSpeech": "verb",
+      "meaning": {
+        "en": "to see (honorific)",
+        "id": "melihat (hormat)"
+      }
+    },
+    {
+      "kana": "よろしい",
+      "romaji": "yoroshii",
+      "partOfSpeech": "adjective",
+      "meaning": {
+        "en": "good, all right (polite)",
+        "id": "baik, boleh (sopan)"
+      }
+    },
+    {
+      "kana": "さしあげる",
+      "kanji": "差し上げる",
+      "romaji": "sashiageru",
+      "partOfSpeech": "verb",
+      "meaning": {
+        "en": "to give (humble)",
+        "id": "memberikan (merendah)"
+      }
+    },
+    {
+      "kana": "うかがう",
+      "kanji": "伺う",
+      "romaji": "ukagau",
+      "homonym": 2,
+      "partOfSpeech": "verb",
+      "meaning": {
+        "en": "to visit, to ask (humble)",
+        "id": "berkunjung, bertanya (merendah)"
+      }
+    },
+    {
+      "kana": "おいでになる",
+      "romaji": "oideninaru",
+      "partOfSpeech": "verb",
+      "meaning": {
+        "en": "to come, to go, to be (honorific)",
+        "id": "datang, pergi, ada (hormat)"
+      }
+    },
+    {
+      "kana": "しょうち",
+      "kanji": "承知",
+      "romaji": "shouchi",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "consent, understanding",
+        "id": "persetujuan, mengerti"
+      }
+    },
+    {
+      "kana": "くださる",
+      "romaji": "kudasaru",
+      "partOfSpeech": "verb",
+      "meaning": {
+        "en": "to give (to me, honorific)",
+        "id": "memberi (kepada saya, hormat)"
+      }
+    },
+    {
+      "kana": "ごぞんじ",
+      "kanji": "ご存じ",
+      "romaji": "gozonji",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "knowing (honorific)",
+        "id": "mengetahui (hormat)"
+      }
+    },
+    {
+      "kana": "ご",
+      "kanji": "御",
+      "romaji": "go",
+      "affix": "prefix",
+      "homonym": 3,
+      "partOfSpeech": "expression",
+      "meaning": {
+        "en": "polite prefix (for Chinese-origin words)",
+        "id": "awalan sopan (untuk kata asal Tionghoa)"
+      }
+    },
+    {
+      "kana": "はいけん",
+      "kanji": "拝見",
+      "romaji": "haiken",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "seeing (humble)",
+        "id": "melihat (merendah)"
+      }
+    },
+    {
+      "kana": "おっしゃる",
+      "romaji": "ossharu",
+      "partOfSpeech": "verb",
+      "meaning": {
+        "en": "to say (honorific)",
+        "id": "berkata (hormat)"
+      }
+    }
+  ]
+}

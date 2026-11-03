@@ -1,0 +1,46 @@
+{
+  "source": "Original practice sentences for N4 · Society and the news.",
+  "level": "n4",
+  "items": [
+    {
+      "slug": "n4-causative-passive-1",
+      "text": "こどもの とき、ははに やさいを たべさせられました。",
+      "tokens": ["こども", "の", "とき", "はは", "に", "やさい", "を", "たべさせられました"],
+      "grammar": "n4-causative-passive",
+      "translation": {
+        "en": "As a child I was made to eat vegetables by my mother.",
+        "id": "Waktu kecil, saya dipaksa ibu makan sayur."
+      }
+    },
+    {
+      "slug": "n4-causative-passive-2",
+      "text": "ぶちょうに ざんぎょうを させられました。",
+      "tokens": ["ぶちょう", "に", "ざんぎょう", "を", "させられました"],
+      "grammar": "n4-causative-passive",
+      "translation": {
+        "en": "I was made to work overtime by the manager.",
+        "id": "Saya terpaksa lembur karena disuruh kepala bagian."
+      }
+    },
+    {
+      "slug": "n4-rareru-honorific-1",
+      "text": "しゃちょうは なんじに こられますか。",
+      "tokens": ["しゃちょう", "は", "なんじ", "に", "こられます", "か"],
+      "grammar": "n4-rareru-honorific",
+      "translation": {
+        "en": "What time will the president be coming?",
+        "id": "Bapak direktur akan datang jam berapa?"
+      }
+    },
+    {
+      "slug": "n4-rareru-honorific-2",
+      "text": "せんせいは この ほんを かかれました。",
+      "tokens": ["せんせい", "は", "この", "ほん", "を", "かかれました"],
+      "grammar": "n4-rareru-honorific",
+      "translation": {
+        "en": "The professor wrote this book.",
+        "id": "Profesor menulis buku ini."
+      }
+    }
+  ]
+}

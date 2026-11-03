@@ -27,3 +27,17 @@ describe("N5 coverage", () => {
     expect(new Set(hot.map((w: { homonym?: number }) => w.homonym ?? 1)).size).toBe(3);
   });
 });
+
+describe("N4 coverage", () => {
+  it("teaches the N4 word list and the N4 grammar in its lessons", () => {
+    const words = files("data/japanese/vocabulary", "n4-").flatMap((f) => f.items);
+    const grammar = files("data/japanese/grammar", "n4-").flatMap((f) => f.items);
+    expect(words.length).toBeGreaterThanOrEqual(700);
+    expect(grammar.length).toBeGreaterThanOrEqual(100);
+    const course = read("data/japanese/curriculum/courses/n4-core.json");
+    const taught = new Set(course.lessons.flatMap((l: { items: string[] }) => l.items));
+    for (const k of read("data/japanese/kanji/n4.json").items)
+      expect(taught.has(`kanji:${k.character}`), k.character).toBe(true);
+    for (const g of grammar) expect(taught.has(`grammar:${g.slug}`), g.slug).toBe(true);
+  });
+});

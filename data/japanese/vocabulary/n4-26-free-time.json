@@ -1,0 +1,174 @@
+{
+  "source": "N4 · Free time: words from the JLPT N4 list by J. Waller (tanos.co.uk, CC BY) as compiled in open-anki-jlpt-decks (MIT). Meanings written for this project.",
+  "level": "n4",
+  "items": [
+    {
+      "kana": "まんが",
+      "kanji": "漫画",
+      "romaji": "manga",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "manga, comic",
+        "id": "komik, manga"
+      }
+    },
+    {
+      "kana": "しょうがつ",
+      "kanji": "正月",
+      "romaji": "shougatsu",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "New Year",
+        "id": "tahun baru"
+      }
+    },
+    {
+      "kana": "おくりもの",
+      "kanji": "贈り物",
+      "romaji": "okurimono",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "gift, present",
+        "id": "hadiah"
+      }
+    },
+    {
+      "kana": "しょうせつ",
+      "kanji": "小説",
+      "romaji": "shousetsu",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "novel",
+        "id": "novel"
+      }
+    },
+    {
+      "kana": "どうぶつえん",
+      "kanji": "動物園",
+      "romaji": "doubutsuen",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "zoo",
+        "id": "kebun binatang"
+      }
+    },
+    {
+      "kana": "にんぎょう",
+      "kanji": "人形",
+      "romaji": "ningyou",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "doll",
+        "id": "boneka"
+      }
+    },
+    {
+      "kana": "じゅうどう",
+      "kanji": "柔道",
+      "romaji": "juudou",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "judo",
+        "id": "judo"
+      }
+    },
+    {
+      "kana": "しあい",
+      "kanji": "試合",
+      "romaji": "shiai",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "match, game",
+        "id": "pertandingan"
+      }
+    },
+    {
+      "kana": "びじゅつかん",
+      "kanji": "美術館",
+      "romaji": "bijutsukan",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "art museum",
+        "id": "museum seni"
+      }
+    },
+    {
+      "kana": "おまつり",
+      "kanji": "お祭り",
+      "romaji": "omatsuri",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "festival",
+        "id": "festival, perayaan"
+      }
+    },
+    {
+      "kana": "スクリーン",
+      "romaji": "sukuriin",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "screen",
+        "id": "layar"
+      }
+    },
+    {
+      "kana": "おみやげ",
+      "kanji": "お土産",
+      "romaji": "omiyage",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "souvenir",
+        "id": "oleh-oleh"
+      }
+    },
+    {
+      "kana": "おいわい",
+      "kanji": "お祝い",
+      "romaji": "oiwai",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "celebration, congratulations",
+        "id": "perayaan, ucapan selamat"
+      }
+    },
+    {
+      "kana": "しょうたい",
+      "kanji": "招待",
+      "romaji": "shoutai",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "invitation",
+        "id": "undangan"
+      }
+    },
+    {
+      "kana": "たのしむ",
+      "kanji": "楽む",
+      "romaji": "tanoshimu",
+      "partOfSpeech": "verb",
+      "meaning": {
+        "en": "to enjoy",
+        "id": "menikmati"
+      }
+    },
+    {
+      "kana": "おどり",
+      "kanji": "踊り",
+      "romaji": "odori",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "dance",
+        "id": "tarian"
+      }
+    },
+    {
+      "kana": "おもちゃ",
+      "romaji": "omocha",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "toy",
+        "id": "mainan"
+      }
+    }
+  ]
+}

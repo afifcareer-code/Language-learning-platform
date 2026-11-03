@@ -1,0 +1,46 @@
+{
+  "source": "Original practice sentences for N4 · Family life.",
+  "level": "n4",
+  "items": [
+    {
+      "slug": "n4-te-hoshii-1",
+      "text": "ともだちに てつだって ほしいです。",
+      "tokens": ["ともだち", "に", "てつだって", "ほしいです"],
+      "grammar": "n4-te-hoshii",
+      "translation": {
+        "en": "I want my friend to help me.",
+        "id": "Saya ingin teman membantu saya."
+      }
+    },
+    {
+      "slug": "n4-te-hoshii-2",
+      "text": "はやく あめが やんで ほしいです。",
+      "tokens": ["はやく", "あめ", "が", "やんで", "ほしいです"],
+      "grammar": "n4-te-hoshii",
+      "translation": {
+        "en": "I want the rain to stop soon.",
+        "id": "Saya ingin hujan cepat reda."
+      }
+    },
+    {
+      "slug": "n4-garu-1",
+      "text": "こどもが そとで あそびたがって います。",
+      "tokens": ["こども", "が", "そと", "で", "あそびたがって", "います"],
+      "grammar": "n4-garu",
+      "translation": {
+        "en": "The child wants to play outside.",
+        "id": "Anak itu ingin bermain di luar."
+      }
+    },
+    {
+      "slug": "n4-garu-2",
+      "text": "いもうとは いぬを こわがって います。",
+      "tokens": ["いもうと", "は", "いぬ", "を", "こわがって", "います"],
+      "grammar": "n4-garu",
+      "translation": {
+        "en": "My younger sister is scared of dogs.",
+        "id": "Adik perempuan saya takut anjing."
+      }
+    }
+  ]
+}

@@ -1,0 +1,108 @@
+{
+  "source": "Original grammar explanations for N4 · Amounts and money, written for this project.",
+  "level": "n4",
+  "items": [
+    {
+      "slug": "n4-shika",
+      "pattern": "N しか V(ない)",
+      "meaning": {
+        "en": "only N (and no more)",
+        "id": "hanya N (tidak lebih)"
+      },
+      "explanation": {
+        "en": "しか always goes with a negative verb and stresses 'only, no more than': せんえんしか ありません. だけ is neutral; しか sounds like 'not enough'.",
+        "id": "しか selalu dipakai dengan kata kerja negatif dan menekankan 'hanya, tidak lebih': せんえんしか ありません. だけ netral; しか terdengar seperti 'kurang'."
+      },
+      "examples": [
+        {
+          "ja": "さいふに せんえんしか ありません。",
+          "translation": {
+            "en": "I've only got a thousand yen in my wallet.",
+            "id": "Di dompet saya hanya ada seribu yen."
+          }
+        },
+        {
+          "ja": "きのうは さんじかんしか ねませんでした。",
+          "translation": {
+            "en": "I only slept three hours last night.",
+            "id": "Kemarin saya hanya tidur tiga jam."
+          }
+        }
+      ],
+      "commonErrors": [
+        {
+          "en": "Using しか with a positive verb: せんえんしか あります is wrong; しか needs a negative.",
+          "id": "Memakai しか dengan kata kerja positif: せんえんしか あります salah; しか memerlukan bentuk negatif."
+        }
+      ]
+    },
+    {
+      "slug": "n4-mo-number",
+      "pattern": "number + も",
+      "meaning": {
+        "en": "as many / much as (surprisingly)",
+        "id": "sampai (sebanyak)…"
+      },
+      "explanation": {
+        "en": "も after an amount stresses that it is a lot: さんじかんも まちました (I waited a whole three hours).",
+        "id": "も setelah suatu jumlah menekankan bahwa jumlah itu banyak: さんじかんも まちました (saya menunggu sampai tiga jam)."
+      },
+      "examples": [
+        {
+          "ja": "えきで さんじかんも まちました。",
+          "translation": {
+            "en": "I waited at the station for a whole three hours.",
+            "id": "Saya menunggu di stasiun sampai tiga jam."
+          }
+        },
+        {
+          "ja": "かれは ケーキを いつつも たべました。",
+          "translation": {
+            "en": "He ate as many as five pieces of cake.",
+            "id": "Dia makan kue sampai lima potong."
+          }
+        }
+      ],
+      "commonErrors": [
+        {
+          "en": "Confusing it with も 'also': after a number, も means 'as many as'.",
+          "id": "Tertukar dengan も 'juga': setelah angka, も berarti 'sampai sebanyak'."
+        }
+      ]
+    },
+    {
+      "slug": "n4-hodo-nai",
+      "pattern": "N1 は N2 ほど A くない",
+      "meaning": {
+        "en": "N1 is not as A as N2",
+        "id": "N1 tidak se-A N2"
+      },
+      "explanation": {
+        "en": "ほど with a negative says N1 does not reach the level of N2: ことしは きょねんほど さむくないです.",
+        "id": "ほど dengan bentuk negatif menyatakan N1 tidak mencapai tingkat N2: ことしは きょねんほど さむくないです."
+      },
+      "examples": [
+        {
+          "ja": "ことしの ふゆは きょねんほど さむくないです。",
+          "translation": {
+            "en": "This winter isn't as cold as last year's.",
+            "id": "Musim dingin tahun ini tidak sedingin tahun lalu."
+          }
+        },
+        {
+          "ja": "この えいがは ほんほど おもしろくなかったです。",
+          "translation": {
+            "en": "This film wasn't as interesting as the book.",
+            "id": "Film ini tidak semenarik bukunya."
+          }
+        }
+      ],
+      "commonErrors": [
+        {
+          "en": "Using ほど with a positive adjective: きょねんほど さむいです is unnatural; use より for 'more than'.",
+          "id": "Memakai ほど dengan kata sifat positif: きょねんほど さむいです tidak wajar; pakai より untuk 'lebih dari'."
+        }
+      ]
+    }
+  ]
+}

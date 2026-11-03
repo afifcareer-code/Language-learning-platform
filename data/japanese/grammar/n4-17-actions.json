@@ -1,0 +1,108 @@
+{
+  "source": "Original grammar explanations for N4 · Starting and finishing, written for this project.",
+  "level": "n4",
+  "items": [
+    {
+      "slug": "n4-hajimeru-owaru",
+      "pattern": "V(ます stem) はじめる / おわる / つづける",
+      "meaning": {
+        "en": "start / finish / keep on V-ing",
+        "id": "mulai / selesai / terus V"
+      },
+      "explanation": {
+        "en": "These join the ます stem: よみはじめる (start reading), かきおわる (finish writing), あるきつづける (keep walking). They conjugate like ordinary verbs.",
+        "id": "Kata-kata ini disambung ke bentuk ます tanpa ます: よみはじめる (mulai membaca), かきおわる (selesai menulis), あるきつづける (terus berjalan). Semuanya berubah bentuk seperti kata kerja biasa."
+      },
+      "examples": [
+        {
+          "ja": "あめが ふりはじめました。",
+          "translation": {
+            "en": "It has started to rain.",
+            "id": "Hujan mulai turun."
+          }
+        },
+        {
+          "ja": "この ほんを よみおわったら かして ください。",
+          "translation": {
+            "en": "When you've finished reading this book, please lend it to me.",
+            "id": "Kalau sudah selesai membaca buku ini, tolong pinjamkan kepada saya."
+          }
+        }
+      ],
+      "commonErrors": [
+        {
+          "en": "Using the て form: ふって はじめる is wrong; say ふりはじめる.",
+          "id": "Memakai bentuk て: ふって はじめる salah; katakan ふりはじめる."
+        }
+      ]
+    },
+    {
+      "slug": "n4-dasu",
+      "pattern": "V(ます stem) だす",
+      "meaning": {
+        "en": "suddenly start V-ing",
+        "id": "tiba-tiba mulai V"
+      },
+      "explanation": {
+        "en": "〜だす is like 〜はじめる but sudden and often not planned: こどもが なきだしました, あめが ふりだしました.",
+        "id": "〜だす mirip 〜はじめる tetapi mendadak dan sering tidak direncanakan: こどもが なきだしました, あめが ふりだしました."
+      },
+      "examples": [
+        {
+          "ja": "あかちゃんが きゅうに なきだしました。",
+          "translation": {
+            "en": "The baby suddenly started crying.",
+            "id": "Bayi itu tiba-tiba menangis."
+          }
+        },
+        {
+          "ja": "みんなが わらいだしました。",
+          "translation": {
+            "en": "Everyone burst out laughing.",
+            "id": "Semua orang tiba-tiba tertawa."
+          }
+        }
+      ],
+      "commonErrors": [
+        {
+          "en": "Using 〜だす for a planned start: for 'start studying (as planned)' use べんきょうしはじめる.",
+          "id": "Memakai 〜だす untuk awal yang direncanakan: untuk 'mulai belajar (sesuai rencana)' pakai べんきょうしはじめる."
+        }
+      ]
+    },
+    {
+      "slug": "n4-kata",
+      "pattern": "V(ます stem) かた",
+      "meaning": {
+        "en": "how to V, way of V-ing",
+        "id": "cara V"
+      },
+      "explanation": {
+        "en": "かた after the ます stem means 'the way of doing': つかいかた, よみかた. The object becomes の: きっぷの かいかた.",
+        "id": "かた setelah bentuk ます tanpa ます berarti 'cara melakukan': つかいかた, よみかた. Objeknya memakai の: きっぷの かいかた."
+      },
+      "examples": [
+        {
+          "ja": "この きかいの つかいかたを おしえて ください。",
+          "translation": {
+            "en": "Please show me how to use this machine.",
+            "id": "Tolong ajari saya cara memakai mesin ini."
+          }
+        },
+        {
+          "ja": "この かんじの よみかたが わかりません。",
+          "translation": {
+            "en": "I don't know how to read this kanji.",
+            "id": "Saya tidak tahu cara membaca kanji ini."
+          }
+        }
+      ],
+      "commonErrors": [
+        {
+          "en": "Keeping を: きっぷを かいかた is wrong; say きっぷの かいかた.",
+          "id": "Tetap memakai を: きっぷを かいかた salah; katakan きっぷの かいかた."
+        }
+      ]
+    }
+  ]
+}

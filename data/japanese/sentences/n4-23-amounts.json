@@ -1,0 +1,66 @@
+{
+  "source": "Original practice sentences for N4 · Amounts and money.",
+  "level": "n4",
+  "items": [
+    {
+      "slug": "n4-shika-1",
+      "text": "さいふに せんえんしか ありません。",
+      "tokens": ["さいふ", "に", "せんえん", "しか", "ありません"],
+      "grammar": "n4-shika",
+      "translation": {
+        "en": "I've only got a thousand yen in my wallet.",
+        "id": "Di dompet saya hanya ada seribu yen."
+      }
+    },
+    {
+      "slug": "n4-shika-2",
+      "text": "きのうは さんじかんしか ねませんでした。",
+      "tokens": ["きのう", "は", "さんじかん", "しか", "ねませんでした"],
+      "grammar": "n4-shika",
+      "translation": {
+        "en": "I only slept three hours last night.",
+        "id": "Kemarin saya hanya tidur tiga jam."
+      }
+    },
+    {
+      "slug": "n4-mo-number-1",
+      "text": "えきで さんじかんも まちました。",
+      "tokens": ["えき", "で", "さんじかん", "も", "まちました"],
+      "grammar": "n4-mo-number",
+      "translation": {
+        "en": "I waited at the station for a whole three hours.",
+        "id": "Saya menunggu di stasiun sampai tiga jam."
+      }
+    },
+    {
+      "slug": "n4-mo-number-2",
+      "text": "かれは ケーキを いつつも たべました。",
+      "tokens": ["かれ", "は", "ケーキ", "を", "いつつ", "も", "たべました"],
+      "grammar": "n4-mo-number",
+      "translation": {
+        "en": "He ate as many as five pieces of cake.",
+        "id": "Dia makan kue sampai lima potong."
+      }
+    },
+    {
+      "slug": "n4-hodo-nai-1",
+      "text": "ことしの ふゆは きょねんほど さむくないです。",
+      "tokens": ["ことし", "の", "ふゆ", "は", "きょねん", "ほど", "さむくないです"],
+      "grammar": "n4-hodo-nai",
+      "translation": {
+        "en": "This winter isn't as cold as last year's.",
+        "id": "Musim dingin tahun ini tidak sedingin tahun lalu."
+      }
+    },
+    {
+      "slug": "n4-hodo-nai-2",
+      "text": "この えいがは ほんほど おもしろくなかったです。",
+      "tokens": ["この", "えいが", "は", "ほん", "ほど", "おもしろくなかったです"],
+      "grammar": "n4-hodo-nai",
+      "translation": {
+        "en": "This film wasn't as interesting as the book.",
+        "id": "Film ini tidak semenarik bukunya."
+      }
+    }
+  ]
+}

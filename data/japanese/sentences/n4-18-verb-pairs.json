@@ -1,0 +1,46 @@
+{
+  "source": "Original practice sentences for N4 · Things that happen and things you do.",
+  "level": "n4",
+  "items": [
+    {
+      "slug": "n4-jidoushi-tadoushi-1",
+      "text": "かぜで まどが あきました。",
+      "tokens": ["かぜ", "で", "まど", "が", "あきました"],
+      "grammar": "n4-jidoushi-tadoushi",
+      "translation": {
+        "en": "The window opened because of the wind.",
+        "id": "Jendelanya terbuka karena angin."
+      }
+    },
+    {
+      "slug": "n4-jidoushi-tadoushi-2",
+      "text": "でんきを けして ください。",
+      "tokens": ["でんき", "を", "けして", "ください"],
+      "grammar": "n4-jidoushi-tadoushi",
+      "translation": {
+        "en": "Please turn off the light.",
+        "id": "Tolong matikan lampunya."
+      }
+    },
+    {
+      "slug": "n4-ku-suru-1",
+      "text": "おとを すこし ちいさく して ください。",
+      "tokens": ["おと", "を", "すこし", "ちいさく", "して", "ください"],
+      "grammar": "n4-ku-suru",
+      "translation": {
+        "en": "Please turn the sound down a little.",
+        "id": "Tolong kecilkan suaranya sedikit."
+      }
+    },
+    {
+      "slug": "n4-ku-suru-2",
+      "text": "へやを きれいに しました。",
+      "tokens": ["へや", "を", "きれいに", "しました"],
+      "grammar": "n4-ku-suru",
+      "translation": {
+        "en": "I tidied up the room.",
+        "id": "Saya merapikan kamar."
+      }
+    }
+  ]
+}

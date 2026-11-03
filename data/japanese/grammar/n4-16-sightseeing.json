@@ -1,0 +1,108 @@
+{
+  "source": "Original grammar explanations for N4 · Travel advice, written for this project.",
+  "level": "n4",
+  "items": [
+    {
+      "slug": "n4-nara",
+      "pattern": "N / plain form + なら",
+      "meaning": {
+        "en": "if it's N (then)…; if you're going to…",
+        "id": "kalau soal N…; kalau memang…"
+      },
+      "explanation": {
+        "en": "なら takes up what the other person said and adds advice or information: きょうとへ いくなら、きんかくじが いいですよ. After a noun it means 'as for N'.",
+        "id": "なら mengambil apa yang dikatakan lawan bicara lalu menambahkan saran atau informasi: きょうとへ いくなら、きんかくじが いいですよ. Setelah kata benda artinya 'kalau soal N'."
+      },
+      "examples": [
+        {
+          "ja": "きょうとへ いくなら、きんかくじが いいですよ。",
+          "translation": {
+            "en": "If you're going to Kyoto, Kinkakuji is good.",
+            "id": "Kalau mau ke Kyoto, Kinkakuji bagus, lho."
+          }
+        },
+        {
+          "ja": "カメラなら あの みせが やすいです。",
+          "translation": {
+            "en": "If it's a camera you want, that shop is cheap.",
+            "id": "Kalau soal kamera, toko itu murah."
+          }
+        }
+      ],
+      "commonErrors": [
+        {
+          "en": "Using なら for 'when (it happens)': for one thing following another, use 〜たら.",
+          "id": "Memakai なら untuk 'setelah (terjadi)': untuk urutan kejadian pakai 〜たら."
+        }
+      ]
+    },
+    {
+      "slug": "n4-to-ii",
+      "pattern": "V(ば / と) いいです",
+      "meaning": {
+        "en": "it would be good to V; I hope…",
+        "id": "sebaiknya V; semoga…"
+      },
+      "explanation": {
+        "en": "〜ば いい gives advice (どう すれば いいですか: what should I do?). 〜と いいですね expresses a hope for someone: はれると いいですね.",
+        "id": "〜ば いい memberi saran (どう すれば いいですか: sebaiknya bagaimana?). 〜と いいですね menyatakan harapan untuk seseorang: はれると いいですね."
+      },
+      "examples": [
+        {
+          "ja": "どう すれば いいですか。",
+          "translation": {
+            "en": "What should I do?",
+            "id": "Sebaiknya saya bagaimana?"
+          }
+        },
+        {
+          "ja": "あした はれると いいですね。",
+          "translation": {
+            "en": "I hope it's sunny tomorrow.",
+            "id": "Semoga besok cerah, ya."
+          }
+        }
+      ],
+      "commonErrors": [
+        {
+          "en": "Answering どう すれば いいですか with 〜て ください sounds like an order; 〜ば いいですよ is gentler.",
+          "id": "Menjawab どう すれば いいですか dengan 〜て ください terdengar seperti perintah; 〜ば いいですよ lebih halus."
+        }
+      ]
+    },
+    {
+      "slug": "n4-tara-dou",
+      "pattern": "V(た)ら どうですか",
+      "meaning": {
+        "en": "why don't you V?",
+        "id": "bagaimana kalau V?"
+      },
+      "explanation": {
+        "en": "〜たら どうですか gives a suggestion. It is friendly but can sound pushy to superiors; for them use 〜たら いかがですか.",
+        "id": "〜たら どうですか memberi usul. Ramah, tetapi bisa terdengar memaksa kepada atasan; untuk mereka pakai 〜たら いかがですか."
+      },
+      "examples": [
+        {
+          "ja": "すこし やすんだら どうですか。",
+          "translation": {
+            "en": "Why don't you take a little rest?",
+            "id": "Bagaimana kalau istirahat sebentar?"
+          }
+        },
+        {
+          "ja": "せんせいに そうだんしたら どうですか。",
+          "translation": {
+            "en": "Why don't you talk it over with your teacher?",
+            "id": "Bagaimana kalau berkonsultasi dengan guru?"
+          }
+        }
+      ],
+      "commonErrors": [
+        {
+          "en": "Using it to make your own offer: for 'shall I…?' use 〜ましょうか.",
+          "id": "Memakainya untuk menawarkan diri: untuk 'perlukah saya…?' pakai 〜ましょうか."
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,218 @@
+{
+  "source": "N4 · Cooking and tasting: words from the JLPT N4 list by J. Waller (tanos.co.uk, CC BY) as compiled in open-anki-jlpt-decks (MIT). Meanings written for this project.",
+  "level": "n4",
+  "items": [
+    {
+      "kana": "にがい",
+      "kanji": "苦い",
+      "romaji": "nigai",
+      "partOfSpeech": "adjective",
+      "meaning": {
+        "en": "bitter",
+        "id": "pahit"
+      }
+    },
+    {
+      "kana": "わく",
+      "kanji": "沸く",
+      "romaji": "waku",
+      "partOfSpeech": "verb",
+      "meaning": {
+        "en": "to boil (water, by itself)",
+        "id": "mendidih"
+      }
+    },
+    {
+      "kana": "やく",
+      "kanji": "焼く",
+      "romaji": "yaku",
+      "partOfSpeech": "verb",
+      "meaning": {
+        "en": "to grill, to bake",
+        "id": "memanggang"
+      }
+    },
+    {
+      "kana": "かむ",
+      "kanji": "噛む",
+      "romaji": "kamu",
+      "partOfSpeech": "verb",
+      "meaning": {
+        "en": "to bite, to chew",
+        "id": "menggigit, mengunyah"
+      }
+    },
+    {
+      "kana": "サンドイッチ",
+      "romaji": "sandoicchi",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "sandwich",
+        "id": "roti lapis"
+      }
+    },
+    {
+      "kana": "ぶどう",
+      "romaji": "budou",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "grapes",
+        "id": "anggur"
+      }
+    },
+    {
+      "kana": "におい",
+      "kanji": "匂い",
+      "romaji": "nioi",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "smell",
+        "id": "bau"
+      }
+    },
+    {
+      "kana": "つける",
+      "kanji": "漬ける",
+      "romaji": "tsukeru",
+      "homonym": 2,
+      "partOfSpeech": "verb",
+      "meaning": {
+        "en": "to pickle, to soak",
+        "id": "merendam, mengasinkan"
+      }
+    },
+    {
+      "kana": "サラダ",
+      "romaji": "sarada",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "salad",
+        "id": "salad"
+      }
+    },
+    {
+      "kana": "ステーキ",
+      "romaji": "suteeki",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "steak",
+        "id": "steik"
+      }
+    },
+    {
+      "kana": "しょくりょうひん",
+      "kanji": "食料品",
+      "romaji": "shokuryouhin",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "groceries",
+        "id": "bahan makanan"
+      }
+    },
+    {
+      "kana": "みそ",
+      "kanji": "味噌",
+      "romaji": "miso",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "miso (bean paste)",
+        "id": "miso (pasta kedelai)"
+      }
+    },
+    {
+      "kana": "ジャム",
+      "romaji": "jamu",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "jam",
+        "id": "selai"
+      }
+    },
+    {
+      "kana": "あじ",
+      "kanji": "味",
+      "romaji": "aji",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "taste, flavour",
+        "id": "rasa"
+      }
+    },
+    {
+      "kana": "ごちそう",
+      "romaji": "gochisou",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "feast; treat",
+        "id": "hidangan istimewa; traktiran"
+      }
+    },
+    {
+      "kana": "こめ",
+      "kanji": "米",
+      "romaji": "kome",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "uncooked rice",
+        "id": "beras"
+      }
+    },
+    {
+      "kana": "うまい",
+      "romaji": "umai",
+      "partOfSpeech": "adjective",
+      "meaning": {
+        "en": "delicious; skilful",
+        "id": "enak; pandai"
+      }
+    },
+    {
+      "kana": "わかす",
+      "kanji": "沸かす",
+      "romaji": "wakasu",
+      "partOfSpeech": "verb",
+      "meaning": {
+        "en": "to boil (water)",
+        "id": "mendidihkan, merebus"
+      }
+    },
+    {
+      "kana": "ハンバーグ",
+      "romaji": "hanbaagu",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "hamburger steak",
+        "id": "hamburger steak (daging cincang)"
+      }
+    },
+    {
+      "kana": "やける",
+      "kanji": "焼ける",
+      "romaji": "yakeru",
+      "partOfSpeech": "verb",
+      "meaning": {
+        "en": "to be grilled, to burn",
+        "id": "terpanggang, terbakar"
+      }
+    },
+    {
+      "kana": "しょくじ",
+      "kanji": "食事",
+      "romaji": "shokuji",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "meal",
+        "id": "makan"
+      }
+    },
+    {
+      "kana": "アルコール",
+      "romaji": "arukooru",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "alcohol",
+        "id": "alkohol"
+      }
+    }
+  ]
+}

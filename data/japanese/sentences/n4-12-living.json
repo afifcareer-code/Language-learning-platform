@@ -1,0 +1,46 @@
+{
+  "source": "Original practice sentences for N4 · Living in Japan.",
+  "level": "n4",
+  "items": [
+    {
+      "slug": "n4-mama-1",
+      "text": "でんきを つけた まま ねて しまいました。",
+      "tokens": ["でんき", "を", "つけた", "まま", "ねて", "しまいました"],
+      "grammar": "n4-mama",
+      "translation": {
+        "en": "I fell asleep with the light on.",
+        "id": "Saya ketiduran dengan lampu tetap menyala."
+      }
+    },
+    {
+      "slug": "n4-mama-2",
+      "text": "くつの まま へやに はいらないで ください。",
+      "tokens": ["くつ", "の", "まま", "へや", "に", "はいらないで", "ください"],
+      "grammar": "n4-mama",
+      "translation": {
+        "en": "Please don't come into the room with your shoes on.",
+        "id": "Tolong jangan masuk kamar dengan tetap memakai sepatu."
+      }
+    },
+    {
+      "slug": "n4-sugiru-1",
+      "text": "きのうは のみすぎました。",
+      "tokens": ["きのう", "は", "のみすぎました"],
+      "grammar": "n4-sugiru",
+      "translation": {
+        "en": "I drank too much yesterday.",
+        "id": "Kemarin saya terlalu banyak minum."
+      }
+    },
+    {
+      "slug": "n4-sugiru-2",
+      "text": "この へやは せますぎて つかいにくいです。",
+      "tokens": ["この", "へや", "は", "せますぎて", "つかいにくいです"],
+      "grammar": "n4-sugiru",
+      "translation": {
+        "en": "This room is too small and hard to use.",
+        "id": "Kamar ini terlalu sempit sehingga sulit dipakai."
+      }
+    }
+  ]
+}

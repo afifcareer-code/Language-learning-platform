@@ -1,0 +1,46 @@
+{
+  "source": "Original practice sentences for N4 · Honorific and humble language.",
+  "level": "n4",
+  "items": [
+    {
+      "slug": "n4-sonkeigo-1",
+      "text": "せんせいは なんと おっしゃいましたか。",
+      "tokens": ["せんせい", "は", "なん", "と", "おっしゃいました", "か"],
+      "grammar": "n4-sonkeigo",
+      "translation": {
+        "en": "What did the teacher say?",
+        "id": "Bapak/Ibu guru bilang apa?"
+      }
+    },
+    {
+      "slug": "n4-sonkeigo-2",
+      "text": "どうぞ めしあがって ください。",
+      "tokens": ["どうぞ", "めしあがって", "ください"],
+      "grammar": "n4-sonkeigo",
+      "translation": {
+        "en": "Please, help yourself.",
+        "id": "Silakan dinikmati."
+      }
+    },
+    {
+      "slug": "n4-kenjougo-1",
+      "text": "わたしは アフィフと もうします。",
+      "tokens": ["わたし", "は", "アフィフ", "と", "もうします"],
+      "grammar": "n4-kenjougo",
+      "translation": {
+        "en": "My name is Afif.",
+        "id": "Nama saya Afif."
+      }
+    },
+    {
+      "slug": "n4-kenjougo-2",
+      "text": "あした また まいります。",
+      "tokens": ["あした", "また", "まいります"],
+      "grammar": "n4-kenjougo",
+      "translation": {
+        "en": "I'll come again tomorrow.",
+        "id": "Besok saya akan datang lagi."
+      }
+    }
+  ]
+}

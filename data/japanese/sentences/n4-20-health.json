@@ -1,0 +1,46 @@
+{
+  "source": "Original practice sentences for N4 · At the hospital.",
+  "level": "n4",
+  "items": [
+    {
+      "slug": "n4-hazu-1",
+      "text": "でんしゃは もう ついた はずです。",
+      "tokens": ["でんしゃ", "は", "もう", "ついた", "はず", "です"],
+      "grammar": "n4-hazu",
+      "translation": {
+        "en": "The train should have arrived by now.",
+        "id": "Keretanya seharusnya sudah tiba."
+      }
+    },
+    {
+      "slug": "n4-hazu-2",
+      "text": "かのじょは きょう やすみの はずです。",
+      "tokens": ["かのじょ", "は", "きょう", "やすみ", "の", "はず", "です"],
+      "grammar": "n4-hazu",
+      "translation": {
+        "en": "She should be off today.",
+        "id": "Hari ini seharusnya dia libur."
+      }
+    },
+    {
+      "slug": "n4-kamoshirenai-1",
+      "text": "あしたは ゆきが ふるかもしれません。",
+      "tokens": ["あした", "は", "ゆき", "が", "ふる", "かもしれません"],
+      "grammar": "n4-kamoshirenai",
+      "translation": {
+        "en": "It might snow tomorrow.",
+        "id": "Besok mungkin turun salju."
+      }
+    },
+    {
+      "slug": "n4-kamoshirenai-2",
+      "text": "かれは びょうきかもしれません。",
+      "tokens": ["かれ", "は", "びょうき", "かもしれません"],
+      "grammar": "n4-kamoshirenai",
+      "translation": {
+        "en": "He might be ill.",
+        "id": "Dia mungkin sakit."
+      }
+    }
+  ]
+}

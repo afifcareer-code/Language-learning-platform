@@ -1,0 +1,182 @@
+{
+  "source": "N4 · At the office: words from the JLPT N4 list by J. Waller (tanos.co.uk, CC BY) as compiled in open-anki-jlpt-decks (MIT). Meanings written for this project.",
+  "level": "n4",
+  "items": [
+    {
+      "kana": "てんいん",
+      "kanji": "店員",
+      "romaji": "ten'in",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "shop assistant",
+        "id": "pelayan toko"
+      }
+    },
+    {
+      "kana": "チェック",
+      "romaji": "chekku",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "check",
+        "id": "pengecekan"
+      }
+    },
+    {
+      "kana": "つごう",
+      "kanji": "都合",
+      "romaji": "tsugou",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "convenience, circumstances",
+        "id": "kesempatan, keadaan"
+      }
+    },
+    {
+      "kana": "パソコン",
+      "romaji": "pasokon",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "personal computer",
+        "id": "komputer pribadi"
+      }
+    },
+    {
+      "kana": "したく",
+      "kanji": "支度",
+      "romaji": "shitaku",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "getting ready",
+        "id": "persiapan"
+      }
+    },
+    {
+      "kana": "へんじ",
+      "kanji": "返事",
+      "romaji": "henji",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "reply",
+        "id": "balasan, jawaban"
+      }
+    },
+    {
+      "kana": "つたえる",
+      "kanji": "伝える",
+      "romaji": "tsutaeru",
+      "partOfSpeech": "verb",
+      "meaning": {
+        "en": "to tell, to pass on",
+        "id": "menyampaikan"
+      }
+    },
+    {
+      "kana": "たずねる",
+      "kanji": "尋ねる",
+      "romaji": "tazuneru",
+      "partOfSpeech": "verb",
+      "meaning": {
+        "en": "to ask",
+        "id": "bertanya"
+      }
+    },
+    {
+      "kana": "ひるやすみ",
+      "kanji": "昼休み",
+      "romaji": "hiruyasumi",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "lunch break",
+        "id": "istirahat siang"
+      }
+    },
+    {
+      "kana": "やくそく",
+      "kanji": "約束",
+      "romaji": "yakusoku",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "promise, appointment",
+        "id": "janji"
+      }
+    },
+    {
+      "kana": "しんぶんしゃ",
+      "kanji": "新聞社",
+      "romaji": "shinbunsha",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "newspaper company",
+        "id": "perusahaan surat kabar"
+      }
+    },
+    {
+      "kana": "しっぱい",
+      "kanji": "失敗",
+      "romaji": "shippai",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "failure, mistake",
+        "id": "kegagalan, kesalahan"
+      }
+    },
+    {
+      "kana": "こうじょう",
+      "kanji": "工場",
+      "romaji": "koujou",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "factory",
+        "id": "pabrik"
+      }
+    },
+    {
+      "kana": "コンピューター",
+      "romaji": "konpyuutaa",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "computer",
+        "id": "komputer"
+      }
+    },
+    {
+      "kana": "そうだん",
+      "kanji": "相談",
+      "romaji": "soudan",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "consultation, talking over",
+        "id": "konsultasi, berunding"
+      }
+    },
+    {
+      "kana": "ほんやく",
+      "kanji": "翻訳",
+      "romaji": "hon'yaku",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "translation",
+        "id": "terjemahan"
+      }
+    },
+    {
+      "kana": "かいぎ",
+      "kanji": "会議",
+      "romaji": "kaigi",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "meeting",
+        "id": "rapat"
+      }
+    },
+    {
+      "kana": "ソフト",
+      "romaji": "sofuto",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "software; soft",
+        "id": "perangkat lunak; lembut"
+      }
+    }
+  ]
+}

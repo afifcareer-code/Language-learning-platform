@@ -1,0 +1,46 @@
+{
+  "source": "Original practice sentences for N4 · Events and festivals.",
+  "level": "n4",
+  "items": [
+    {
+      "slug": "n4-shi-1",
+      "text": "この みせは やすいし、おいしいし、よく きます。",
+      "tokens": ["この", "みせ", "は", "やすい", "し", "おいしい", "し", "よく", "きます"],
+      "grammar": "n4-shi",
+      "translation": {
+        "en": "This place is cheap and the food is good, so I come here often.",
+        "id": "Toko ini murah, enak lagi, jadi saya sering ke sini."
+      }
+    },
+    {
+      "slug": "n4-shi-2",
+      "text": "きょうは あめだし、さむいし、でかけたくないです。",
+      "tokens": ["きょう", "は", "あめだ", "し", "さむい", "し", "でかけたくないです"],
+      "grammar": "n4-shi",
+      "translation": {
+        "en": "It's raining and cold today, so I don't want to go out.",
+        "id": "Hari ini hujan, dingin pula, jadi saya malas keluar."
+      }
+    },
+    {
+      "slug": "n4-no-wa-1",
+      "text": "にほんごで はなすのは たのしいです。",
+      "tokens": ["にほんご", "で", "はなす", "の", "は", "たのしいです"],
+      "grammar": "n4-no-wa",
+      "translation": {
+        "en": "Speaking in Japanese is fun.",
+        "id": "Berbicara dalam bahasa Jepang itu menyenangkan."
+      }
+    },
+    {
+      "slug": "n4-no-wa-2",
+      "text": "かぎを かけるのを わすれました。",
+      "tokens": ["かぎ", "を", "かける", "の", "を", "わすれました"],
+      "grammar": "n4-no-wa",
+      "translation": {
+        "en": "I forgot to lock the door.",
+        "id": "Saya lupa mengunci pintu."
+      }
+    }
+  ]
+}

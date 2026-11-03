@@ -1,0 +1,74 @@
+{
+  "source": "Original grammar explanations for N4 · People's character, written for this project.",
+  "level": "n4",
+  "items": [
+    {
+      "slug": "n4-sa",
+      "pattern": "adjective stem + さ",
+      "meaning": {
+        "en": "-ness (turning an adjective into a noun)",
+        "id": "ke-…-an (kata sifat menjadi kata benda)"
+      },
+      "explanation": {
+        "en": "さ after an adjective stem makes a noun of measure: たかい → たかさ (height), ながい → ながさ (length), べんり → べんりさ.",
+        "id": "さ setelah kata sifat tanpa akhiran membentuk kata benda ukuran: たかい → たかさ (ketinggian), ながい → ながさ (panjangnya), べんり → べんりさ."
+      },
+      "examples": [
+        {
+          "ja": "この やまの たかさは どのぐらいですか。",
+          "translation": {
+            "en": "How high is this mountain?",
+            "id": "Berapa ketinggian gunung ini?"
+          }
+        },
+        {
+          "ja": "はしの ながさは ひゃくメートルです。",
+          "translation": {
+            "en": "The bridge is a hundred metres long.",
+            "id": "Panjang jembatan itu seratus meter."
+          }
+        }
+      ],
+      "commonErrors": [
+        {
+          "en": "Keeping い: たかいさ is wrong; say たかさ.",
+          "id": "Tetap memakai い: たかいさ salah; katakan たかさ."
+        }
+      ]
+    },
+    {
+      "slug": "n4-ka-na",
+      "pattern": "plain form + かな",
+      "meaning": {
+        "en": "I wonder…",
+        "id": "kira-kira…, ya?"
+      },
+      "explanation": {
+        "en": "かな at the end of a casual sentence wonders aloud: あした はれるかな. Women and men both use it; かしら is a softer, older feminine form.",
+        "id": "かな di akhir kalimat santai menyatakan bertanya-tanya: あした はれるかな. Dipakai laki-laki maupun perempuan; かしら bentuk feminin yang lebih halus dan agak kuno."
+      },
+      "examples": [
+        {
+          "ja": "あした はれるかな。",
+          "translation": {
+            "en": "I wonder if it'll be sunny tomorrow.",
+            "id": "Besok cerah nggak, ya."
+          }
+        },
+        {
+          "ja": "かれは もう ついたかな。",
+          "translation": {
+            "en": "I wonder if he's arrived yet.",
+            "id": "Dia sudah sampai belum, ya."
+          }
+        }
+      ],
+      "commonErrors": [
+        {
+          "en": "Using かな with a superior: it is casual; say でしょうか.",
+          "id": "Memakai かな kepada atasan: bentuk ini santai; katakan でしょうか."
+        }
+      ]
+    }
+  ]
+}

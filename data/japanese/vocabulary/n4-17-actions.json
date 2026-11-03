@@ -1,0 +1,176 @@
+{
+  "source": "N4 · Starting and finishing: words from the JLPT N4 list by J. Waller (tanos.co.uk, CC BY) as compiled in open-anki-jlpt-decks (MIT). Meanings written for this project.",
+  "level": "n4",
+  "items": [
+    {
+      "kana": "ひろう",
+      "kanji": "拾う",
+      "romaji": "hirou",
+      "partOfSpeech": "verb",
+      "meaning": {
+        "en": "to pick up",
+        "id": "memungut"
+      }
+    },
+    {
+      "kana": "くらべる",
+      "kanji": "比べる",
+      "romaji": "kuraberu",
+      "partOfSpeech": "verb",
+      "meaning": {
+        "en": "to compare",
+        "id": "membandingkan"
+      }
+    },
+    {
+      "kana": "さわる",
+      "kanji": "触る",
+      "romaji": "sawaru",
+      "partOfSpeech": "verb",
+      "meaning": {
+        "en": "to touch",
+        "id": "menyentuh"
+      }
+    },
+    {
+      "kana": "つかまえる",
+      "kanji": "捕まえる",
+      "romaji": "tsukamaeru",
+      "partOfSpeech": "verb",
+      "meaning": {
+        "en": "to catch",
+        "id": "menangkap"
+      }
+    },
+    {
+      "kana": "にげる",
+      "kanji": "逃げる",
+      "romaji": "nigeru",
+      "partOfSpeech": "verb",
+      "meaning": {
+        "en": "to run away",
+        "id": "melarikan diri"
+      }
+    },
+    {
+      "kana": "つつむ",
+      "kanji": "包む",
+      "romaji": "tsutsumu",
+      "partOfSpeech": "verb",
+      "meaning": {
+        "en": "to wrap",
+        "id": "membungkus"
+      }
+    },
+    {
+      "kana": "かざる",
+      "kanji": "飾る",
+      "romaji": "kazaru",
+      "partOfSpeech": "verb",
+      "meaning": {
+        "en": "to decorate",
+        "id": "menghias"
+      }
+    },
+    {
+      "kana": "なげる",
+      "kanji": "投げる",
+      "romaji": "nageru",
+      "partOfSpeech": "verb",
+      "meaning": {
+        "en": "to throw",
+        "id": "melempar"
+      }
+    },
+    {
+      "kana": "まちがえる",
+      "kanji": "間違える",
+      "romaji": "machigaeru",
+      "partOfSpeech": "verb",
+      "meaning": {
+        "en": "to make a mistake",
+        "id": "salah, keliru"
+      }
+    },
+    {
+      "kana": "はじめる",
+      "kanji": "始める",
+      "romaji": "hajimeru",
+      "partOfSpeech": "verb",
+      "meaning": {
+        "en": "to begin (something)",
+        "id": "memulai"
+      }
+    },
+    {
+      "kana": "えらぶ",
+      "kanji": "選ぶ",
+      "romaji": "erabu",
+      "partOfSpeech": "verb",
+      "meaning": {
+        "en": "to choose",
+        "id": "memilih"
+      }
+    },
+    {
+      "kana": "ぬる",
+      "kanji": "塗る",
+      "romaji": "nuru",
+      "partOfSpeech": "verb",
+      "meaning": {
+        "en": "to paint, to spread",
+        "id": "mengecat, mengoles"
+      }
+    },
+    {
+      "kana": "さがす",
+      "kanji": "探す",
+      "romaji": "sagasu",
+      "partOfSpeech": "verb",
+      "meaning": {
+        "en": "to look for",
+        "id": "mencari"
+      }
+    },
+    {
+      "kana": "うつ",
+      "kanji": "打つ",
+      "romaji": "utsu",
+      "partOfSpeech": "verb",
+      "meaning": {
+        "en": "to hit",
+        "id": "memukul"
+      }
+    },
+    {
+      "kana": "みつける",
+      "kanji": "見つける",
+      "romaji": "mitsukeru",
+      "partOfSpeech": "verb",
+      "meaning": {
+        "en": "to find",
+        "id": "menemukan"
+      }
+    },
+    {
+      "kana": "はこぶ",
+      "kanji": "運ぶ",
+      "romaji": "hakobu",
+      "partOfSpeech": "verb",
+      "meaning": {
+        "en": "to carry",
+        "id": "mengangkut, membawa"
+      }
+    },
+    {
+      "kana": "とりかえる",
+      "kanji": "取り替える",
+      "romaji": "torikaeru",
+      "partOfSpeech": "verb",
+      "meaning": {
+        "en": "to exchange, to replace",
+        "id": "menukar, mengganti"
+      }
+    }
+  ]
+}

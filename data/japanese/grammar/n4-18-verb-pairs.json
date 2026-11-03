@@ -1,0 +1,74 @@
+{
+  "source": "Original grammar explanations for N4 · Things that happen and things you do, written for this project.",
+  "level": "n4",
+  "items": [
+    {
+      "slug": "n4-jidoushi-tadoushi",
+      "pattern": "N が V(intransitive) / N を V(transitive)",
+      "meaning": {
+        "en": "something V-s / someone V-s something",
+        "id": "sesuatu ter-V / seseorang me-V sesuatu"
+      },
+      "explanation": {
+        "en": "Many verbs come in pairs. The intransitive one says what happens, with が: ドアが あきます. The transitive one says what someone does to it, with を: ドアを あけます. Other pairs: しまる/しめる, つく/つける, きえる/けす, はじまる/はじめる.",
+        "id": "Banyak kata kerja berpasangan. Yang intransitif menyatakan apa yang terjadi, dengan が: ドアが あきます. Yang transitif menyatakan apa yang dilakukan seseorang terhadapnya, dengan を: ドアを あけます. Pasangan lain: しまる/しめる, つく/つける, きえる/けす, はじまる/はじめる."
+      },
+      "examples": [
+        {
+          "ja": "かぜで まどが あきました。",
+          "translation": {
+            "en": "The window opened because of the wind.",
+            "id": "Jendelanya terbuka karena angin."
+          }
+        },
+        {
+          "ja": "でんきを けして ください。",
+          "translation": {
+            "en": "Please turn off the light.",
+            "id": "Tolong matikan lampunya."
+          }
+        }
+      ],
+      "commonErrors": [
+        {
+          "en": "Using を with the intransitive verb: ドアを あきます is wrong; say ドアを あけます or ドアが あきます.",
+          "id": "Memakai を dengan kata kerja intransitif: ドアを あきます salah; katakan ドアを あけます atau ドアが あきます."
+        }
+      ]
+    },
+    {
+      "slug": "n4-ku-suru",
+      "pattern": "い-adj く する / な-adj・N に する",
+      "meaning": {
+        "en": "make (something) A",
+        "id": "membuat (sesuatu) menjadi A"
+      },
+      "explanation": {
+        "en": "する after an adjective means making something that way on purpose: へやを あかるく します, しずかに して ください. Compare なる (become by itself).",
+        "id": "する setelah kata sifat berarti sengaja membuat sesuatu menjadi begitu: へやを あかるく します, しずかに して ください. Bandingkan dengan なる (menjadi dengan sendirinya)."
+      },
+      "examples": [
+        {
+          "ja": "おとを すこし ちいさく して ください。",
+          "translation": {
+            "en": "Please turn the sound down a little.",
+            "id": "Tolong kecilkan suaranya sedikit."
+          }
+        },
+        {
+          "ja": "へやを きれいに しました。",
+          "translation": {
+            "en": "I tidied up the room.",
+            "id": "Saya merapikan kamar."
+          }
+        }
+      ],
+      "commonErrors": [
+        {
+          "en": "Using the plain adjective: ちいさい して is wrong; say ちいさく して.",
+          "id": "Memakai kata sifat biasa: ちいさい して salah; katakan ちいさく して."
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,46 @@
+{
+  "source": "Original practice sentences for N4 · Classmates.",
+  "level": "n4",
+  "items": [
+    {
+      "slug": "n4-plain-speech-1",
+      "text": "あした パーティーに いく?",
+      "tokens": ["あした", "パーティー", "に", "いく"],
+      "grammar": "n4-plain-speech",
+      "translation": {
+        "en": "Are you going to the party tomorrow?",
+        "id": "Besok kamu ke pesta?"
+      }
+    },
+    {
+      "slug": "n4-plain-speech-2",
+      "text": "うん、いく。きみも いかない?",
+      "tokens": ["うん", "いく", "きみ", "も", "いかない"],
+      "grammar": "n4-plain-speech",
+      "translation": {
+        "en": "Yeah, I'm going. Won't you come too?",
+        "id": "Iya, aku pergi. Kamu nggak ikut?"
+      }
+    },
+    {
+      "slug": "n4-noda-1",
+      "text": "どうしたんですか。",
+      "tokens": ["どう", "した", "んです", "か"],
+      "grammar": "n4-noda",
+      "translation": {
+        "en": "What's the matter?",
+        "id": "Ada apa?"
+      }
+    },
+    {
+      "slug": "n4-noda-2",
+      "text": "あたまが いたいんです。",
+      "tokens": ["あたま", "が", "いたい", "んです"],
+      "grammar": "n4-noda",
+      "translation": {
+        "en": "It's that I have a headache.",
+        "id": "Soalnya kepala saya sakit."
+      }
+    }
+  ]
+}

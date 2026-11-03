@@ -1,0 +1,66 @@
+{
+  "source": "Original practice sentences for N4 · Deadlines and time.",
+  "level": "n4",
+  "items": [
+    {
+      "slug": "n4-made-ni-1",
+      "text": "ごじまでに かえって ください。",
+      "tokens": ["ごじ", "までに", "かえって", "ください"],
+      "grammar": "n4-made-ni",
+      "translation": {
+        "en": "Please be back by five.",
+        "id": "Tolong pulang paling lambat pukul lima."
+      }
+    },
+    {
+      "slug": "n4-made-ni-2",
+      "text": "きんようびまでに しゅくだいを だします。",
+      "tokens": ["きんようび", "までに", "しゅくだい", "を", "だします"],
+      "grammar": "n4-made-ni",
+      "translation": {
+        "en": "I'll hand in the homework by Friday.",
+        "id": "Saya akan menyerahkan PR paling lambat hari Jumat."
+      }
+    },
+    {
+      "slug": "n4-aida-1",
+      "text": "なつやすみの あいだ、いなかに いました。",
+      "tokens": ["なつやすみ", "の", "あいだ", "いなか", "に", "いました"],
+      "grammar": "n4-aida",
+      "translation": {
+        "en": "I was in the countryside throughout the summer holidays.",
+        "id": "Selama libur musim panas saya berada di kampung."
+      }
+    },
+    {
+      "slug": "n4-aida-2",
+      "text": "るすの あいだに どろぼうが はいりました。",
+      "tokens": ["るす", "の", "あいだに", "どろぼう", "が", "はいりました"],
+      "grammar": "n4-aida",
+      "translation": {
+        "en": "A burglar got in while I was out.",
+        "id": "Sewaktu saya tidak di rumah, pencuri masuk."
+      }
+    },
+    {
+      "slug": "n4-uchi-ni-1",
+      "text": "あつい うちに たべて ください。",
+      "tokens": ["あつい", "うちに", "たべて", "ください"],
+      "grammar": "n4-uchi-ni",
+      "translation": {
+        "en": "Please eat it while it's hot.",
+        "id": "Silakan dimakan selagi panas."
+      }
+    },
+    {
+      "slug": "n4-uchi-ni-2",
+      "text": "わかい うちに いろいろな くにへ いきたいです。",
+      "tokens": ["わかい", "うちに", "いろいろな", "くに", "へ", "いきたいです"],
+      "grammar": "n4-uchi-ni",
+      "translation": {
+        "en": "I want to go to many countries while I'm young.",
+        "id": "Selagi masih muda, saya ingin pergi ke berbagai negara."
+      }
+    }
+  ]
+}

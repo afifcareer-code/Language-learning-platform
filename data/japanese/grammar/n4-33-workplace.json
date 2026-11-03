@@ -1,0 +1,108 @@
+{
+  "source": "Original grammar explanations for N4 · Orders and signs, written for this project.",
+  "level": "n4",
+  "items": [
+    {
+      "slug": "n4-nasai",
+      "pattern": "V(ます stem) なさい",
+      "meaning": {
+        "en": "do V! (from parent or teacher)",
+        "id": "V-lah! (dari orang tua atau guru)"
+      },
+      "explanation": {
+        "en": "なさい is a firm but not rude command, used by parents, teachers and in test instructions: はやく ねなさい, こたえを えらびなさい.",
+        "id": "なさい adalah perintah tegas tetapi tidak kasar, dipakai orang tua, guru, dan dalam petunjuk ujian: はやく ねなさい, こたえを えらびなさい."
+      },
+      "examples": [
+        {
+          "ja": "はやく ねなさい。",
+          "translation": {
+            "en": "Go to bed now!",
+            "id": "Cepat tidur!"
+          }
+        },
+        {
+          "ja": "ただしい こたえを えらびなさい。",
+          "translation": {
+            "en": "Choose the correct answer.",
+            "id": "Pilihlah jawaban yang benar."
+          }
+        }
+      ],
+      "commonErrors": [
+        {
+          "en": "Using なさい to equals or superiors: it is only for people below you.",
+          "id": "Memakai なさい kepada teman sebaya atau atasan: hanya untuk orang di bawah Anda."
+        }
+      ]
+    },
+    {
+      "slug": "n4-imperative",
+      "pattern": "imperative form: いけ, たべろ, しろ, こい",
+      "meaning": {
+        "en": "V! (blunt command)",
+        "id": "V! (perintah kasar)"
+      },
+      "explanation": {
+        "en": "The imperative is blunt. U-verbs: change the last u-sound to e (いく → いけ). Ru-verbs: drop る and add ろ (たべる → たべろ). する → しろ, くる → こい. You hear it in sports, signs and from men among friends.",
+        "id": "Bentuk perintah terdengar kasar. Kata kerja u: ubah bunyi u terakhir menjadi e (いく → いけ). Kata kerja ru: buang る lalu tambah ろ (たべる → たべろ). する → しろ, くる → こい. Terdengar dalam olahraga, papan tanda, dan di antara teman laki-laki."
+      },
+      "examples": [
+        {
+          "ja": "みんな、がんばれ。",
+          "translation": {
+            "en": "Go for it, everyone!",
+            "id": "Ayo semuanya, semangat!"
+          }
+        },
+        {
+          "ja": "はやく にげろ。",
+          "translation": {
+            "en": "Run, quickly!",
+            "id": "Cepat lari!"
+          }
+        }
+      ],
+      "commonErrors": [
+        {
+          "en": "Using it in polite conversation: it sounds rude; use 〜て ください.",
+          "id": "Memakainya dalam percakapan sopan: terdengar kasar; pakai 〜て ください."
+        }
+      ]
+    },
+    {
+      "slug": "n4-na-prohibitive",
+      "pattern": "V(dictionary) な",
+      "meaning": {
+        "en": "don't V! (blunt)",
+        "id": "jangan V! (kasar)"
+      },
+      "explanation": {
+        "en": "な after the dictionary form is a blunt prohibition, seen on signs and heard in emergencies: さわるな, はいるな.",
+        "id": "な setelah bentuk kamus adalah larangan kasar, terlihat di papan tanda dan terdengar dalam keadaan darurat: さわるな, はいるな."
+      },
+      "examples": [
+        {
+          "ja": "あぶない。 さわるな。",
+          "translation": {
+            "en": "Danger! Don't touch it!",
+            "id": "Bahaya! Jangan disentuh!"
+          }
+        },
+        {
+          "ja": "ここに くるまを とめるな。",
+          "translation": {
+            "en": "Don't park here.",
+            "id": "Jangan parkir di sini."
+          }
+        }
+      ],
+      "commonErrors": [
+        {
+          "en": "Confusing it with the friendly な of ね: sentence-final な after a dictionary verb is a prohibition.",
+          "id": "Tertukar dengan な akrab seperti ね: な di akhir kalimat setelah kata kerja bentuk kamus adalah larangan."
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,46 @@
+{
+  "source": "Original practice sentences for N4 · Useful words.",
+  "level": "n4",
+  "items": [
+    {
+      "slug": "n4-oki-ni-1",
+      "text": "バスは じゅっぷんおきに きます。",
+      "tokens": ["バス", "は", "じゅっぷん", "おきに", "きます"],
+      "grammar": "n4-oki-ni",
+      "translation": {
+        "en": "The bus comes every ten minutes.",
+        "id": "Bus datang setiap sepuluh menit."
+      }
+    },
+    {
+      "slug": "n4-oki-ni-2",
+      "text": "いちにちおきに プールで およぎます。",
+      "tokens": ["いちにち", "おきに", "プール", "で", "およぎます"],
+      "grammar": "n4-oki-ni",
+      "translation": {
+        "en": "I swim in the pool every other day.",
+        "id": "Saya berenang di kolam renang selang sehari."
+      }
+    },
+    {
+      "slug": "n4-me-ordinal-1",
+      "text": "ふたつめの かどを みぎに まがって ください。",
+      "tokens": ["ふたつめ", "の", "かど", "を", "みぎ", "に", "まがって", "ください"],
+      "grammar": "n4-me-ordinal",
+      "translation": {
+        "en": "Please turn right at the second corner.",
+        "id": "Silakan belok kanan di tikungan kedua."
+      }
+    },
+    {
+      "slug": "n4-me-ordinal-2",
+      "text": "にほんは にかいめです。",
+      "tokens": ["にほん", "は", "にかいめ", "です"],
+      "grammar": "n4-me-ordinal",
+      "translation": {
+        "en": "This is my second time in Japan.",
+        "id": "Ini kedua kalinya saya ke Jepang."
+      }
+    }
+  ]
+}

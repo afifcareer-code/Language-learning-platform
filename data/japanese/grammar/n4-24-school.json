@@ -1,0 +1,74 @@
+{
+  "source": "Original grammar explanations for N4 · Classmates, written for this project.",
+  "level": "n4",
+  "items": [
+    {
+      "slug": "n4-plain-speech",
+      "pattern": "plain (casual) forms: たべる / たべない / たべた / たべなかった",
+      "meaning": {
+        "en": "casual speech",
+        "id": "bahasa santai"
+      },
+      "explanation": {
+        "en": "Between friends and family, sentences end in the plain form instead of です/ます: いく? うん、いく. Nouns and な-adjectives drop です or use だ: げんき? うん、げんき(だよ).",
+        "id": "Di antara teman dan keluarga, kalimat diakhiri bentuk biasa, bukan です/ます: いく? うん、いく. Kata benda dan kata sifat な melepas です atau memakai だ: げんき? うん、げんき(だよ)."
+      },
+      "examples": [
+        {
+          "ja": "あした パーティーに いく?",
+          "translation": {
+            "en": "Are you going to the party tomorrow?",
+            "id": "Besok kamu ke pesta?"
+          }
+        },
+        {
+          "ja": "うん、いく。きみも いかない?",
+          "translation": {
+            "en": "Yeah, I'm going. Won't you come too?",
+            "id": "Iya, aku pergi. Kamu nggak ikut?"
+          }
+        }
+      ],
+      "commonErrors": [
+        {
+          "en": "Using plain forms with a superior or a stranger: keep です/ます with them.",
+          "id": "Memakai bentuk biasa kepada atasan atau orang asing: tetap pakai です/ます kepada mereka."
+        }
+      ]
+    },
+    {
+      "slug": "n4-noda",
+      "pattern": "plain form + んです (のです)",
+      "meaning": {
+        "en": "explaining, asking for an explanation",
+        "id": "menjelaskan, meminta penjelasan"
+      },
+      "explanation": {
+        "en": "〜んです adds the sense of explaining a situation or asking about it: どうしたんですか (what happened?), あたまが いたいんです (it's that I have a headache). Nouns and な-adjectives take な: びょうきなんです.",
+        "id": "〜んです menambahkan nuansa menjelaskan keadaan atau menanyakannya: どうしたんですか (ada apa?), あたまが いたいんです (soalnya kepala saya sakit). Kata benda dan kata sifat な memakai な: びょうきなんです."
+      },
+      "examples": [
+        {
+          "ja": "どうしたんですか。",
+          "translation": {
+            "en": "What's the matter?",
+            "id": "Ada apa?"
+          }
+        },
+        {
+          "ja": "あたまが いたいんです。",
+          "translation": {
+            "en": "It's that I have a headache.",
+            "id": "Soalnya kepala saya sakit."
+          }
+        }
+      ],
+      "commonErrors": [
+        {
+          "en": "Using んです in every sentence: it sounds pushy when there is nothing to explain.",
+          "id": "Memakai んです di setiap kalimat: terdengar memaksa kalau tidak ada yang perlu dijelaskan."
+        }
+      ]
+    }
+  ]
+}

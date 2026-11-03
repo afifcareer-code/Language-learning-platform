@@ -1,0 +1,108 @@
+{
+  "source": "Original grammar explanations for N4 · On the move, written for this project.",
+  "level": "n4",
+  "items": [
+    {
+      "slug": "n4-tokoro",
+      "pattern": "V(dictionary / ている / た) ところです",
+      "meaning": {
+        "en": "about to V / in the middle of V-ing / have just V-ed",
+        "id": "baru akan V / sedang V / baru saja V"
+      },
+      "explanation": {
+        "en": "ところ points to a moment in an action: いく ところ (about to go), たべて いる ところ (in the middle of eating), おわった ところ (just finished).",
+        "id": "ところ menunjuk saat tertentu dalam suatu tindakan: いく ところ (baru akan pergi), たべて いる ところ (sedang makan), おわった ところ (baru saja selesai)."
+      },
+      "examples": [
+        {
+          "ja": "いま うちを でる ところです。",
+          "translation": {
+            "en": "I'm just about to leave home.",
+            "id": "Saya baru akan berangkat dari rumah."
+          }
+        },
+        {
+          "ja": "いま えきに ついた ところです。",
+          "translation": {
+            "en": "I've just arrived at the station.",
+            "id": "Saya baru saja tiba di stasiun."
+          }
+        }
+      ],
+      "commonErrors": [
+        {
+          "en": "Using ところ for a long time ago: ついた ところ is for something just a moment ago.",
+          "id": "Memakai ところ untuk waktu yang sudah lama: ついた ところ untuk sesuatu yang baru sesaat lalu."
+        }
+      ]
+    },
+    {
+      "slug": "n4-ta-bakari",
+      "pattern": "V(た) ばかりです",
+      "meaning": {
+        "en": "have only just V-ed",
+        "id": "baru saja V"
+      },
+      "explanation": {
+        "en": "〜た ばかり says not much time has passed in the speaker's feeling, which can be days or months: にほんに きた ばかりです. ところ is for a moment ago.",
+        "id": "〜た ばかり menyatakan bahwa menurut perasaan pembicara belum lama berlalu, bisa berhari-hari atau berbulan-bulan: にほんに きた ばかりです. ところ untuk saat yang baru sesaat lalu."
+      },
+      "examples": [
+        {
+          "ja": "にほんに きた ばかりです。",
+          "translation": {
+            "en": "I've only just come to Japan.",
+            "id": "Saya baru saja datang ke Jepang."
+          }
+        },
+        {
+          "ja": "かった ばかりの かさが こわれました。",
+          "translation": {
+            "en": "The umbrella I'd just bought broke.",
+            "id": "Payung yang baru saja saya beli rusak."
+          }
+        }
+      ],
+      "commonErrors": [
+        {
+          "en": "Using the dictionary form: くる ばかり is wrong here; say きた ばかり.",
+          "id": "Memakai bentuk kamus: くる ばかり salah di sini; katakan きた ばかり."
+        }
+      ]
+    },
+    {
+      "slug": "n4-te-iku-kuru",
+      "pattern": "V(て) いきます / きます",
+      "meaning": {
+        "en": "V and go / V and come; (change) going on / coming about",
+        "id": "V lalu pergi / V lalu datang; (perubahan) makin… / mulai…"
+      },
+      "explanation": {
+        "en": "〜て いく and 〜て くる show direction: かさを もって いきます (take it along), パンを かって きます (go and buy it, then come back). For change, 〜て くる is up to now and 〜て いく from now on: さむく なって きました.",
+        "id": "〜て いく dan 〜て くる menunjukkan arah: かさを もって いきます (membawanya pergi), パンを かって きます (pergi membeli lalu kembali). Untuk perubahan, 〜て くる sampai sekarang dan 〜て いく mulai sekarang: さむく なって きました."
+      },
+      "examples": [
+        {
+          "ja": "かさを もって いきます。",
+          "translation": {
+            "en": "I'll take an umbrella with me.",
+            "id": "Saya akan membawa payung."
+          }
+        },
+        {
+          "ja": "コンビニで のみものを かって きます。",
+          "translation": {
+            "en": "I'll go and buy a drink at the convenience store.",
+            "id": "Saya mau beli minuman di minimarket dulu."
+          }
+        }
+      ],
+      "commonErrors": [
+        {
+          "en": "Saying もって いきます for bringing a person: for people use つれて いきます.",
+          "id": "Mengatakan もって いきます untuk membawa orang: untuk orang pakai つれて いきます."
+        }
+      ]
+    }
+  ]
+}

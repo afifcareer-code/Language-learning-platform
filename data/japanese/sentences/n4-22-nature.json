@@ -1,0 +1,66 @@
+{
+  "source": "Original practice sentences for N4 · Nature and the seasons.",
+  "level": "n4",
+  "items": [
+    {
+      "slug": "n4-darou-1",
+      "text": "かれは たぶん こないだろう。",
+      "tokens": ["かれ", "は", "たぶん", "こない", "だろう"],
+      "grammar": "n4-darou",
+      "translation": {
+        "en": "He probably won't come.",
+        "id": "Dia mungkin tidak datang."
+      }
+    },
+    {
+      "slug": "n4-darou-2",
+      "text": "この しけんは むずかしいでしょう。",
+      "tokens": ["この", "しけん", "は", "むずかしい", "でしょう"],
+      "grammar": "n4-darou",
+      "translation": {
+        "en": "This exam will probably be difficult.",
+        "id": "Ujian ini mungkin sulit."
+      }
+    },
+    {
+      "slug": "n4-mitai-1",
+      "text": "そとは さむいみたいです。",
+      "tokens": ["そと", "は", "さむい", "みたい", "です"],
+      "grammar": "n4-mitai",
+      "translation": {
+        "en": "It seems cold outside.",
+        "id": "Di luar sepertinya dingin."
+      }
+    },
+    {
+      "slug": "n4-mitai-2",
+      "text": "まるで ゆめみたいです。",
+      "tokens": ["まるで", "ゆめ", "みたい", "です"],
+      "grammar": "n4-mitai",
+      "translation": {
+        "en": "It's just like a dream.",
+        "id": "Seperti mimpi saja."
+      }
+    },
+    {
+      "slug": "n4-rashii-1",
+      "text": "あの みせは らいげつ しまる らしいです。",
+      "tokens": ["あの", "みせ", "は", "らいげつ", "しまる", "らしい", "です"],
+      "grammar": "n4-rashii",
+      "translation": {
+        "en": "Apparently that shop is closing next month.",
+        "id": "Kabarnya toko itu tutup bulan depan."
+      }
+    },
+    {
+      "slug": "n4-rashii-2",
+      "text": "きょうは はるらしい てんきですね。",
+      "tokens": ["きょう", "は", "はる", "らしい", "てんき", "です", "ね"],
+      "grammar": "n4-rashii",
+      "translation": {
+        "en": "Today's weather is just like spring, isn't it?",
+        "id": "Hari ini cuacanya khas musim semi, ya."
+      }
+    }
+  ]
+}

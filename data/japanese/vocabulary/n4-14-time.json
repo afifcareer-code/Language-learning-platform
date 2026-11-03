@@ -1,0 +1,261 @@
+{
+  "source": "N4 · Deadlines and time: words from the JLPT N4 list by J. Waller (tanos.co.uk, CC BY) as compiled in open-anki-jlpt-decks (MIT). Meanings written for this project.",
+  "level": "n4",
+  "items": [
+    {
+      "kana": "たいてい",
+      "kanji": "大抵",
+      "romaji": "taitei",
+      "partOfSpeech": "adverb",
+      "meaning": {
+        "en": "usually, mostly",
+        "id": "biasanya, umumnya"
+      }
+    },
+    {
+      "kana": "とうとう",
+      "romaji": "toutou",
+      "partOfSpeech": "adverb",
+      "meaning": {
+        "en": "finally, at last",
+        "id": "akhirnya"
+      }
+    },
+    {
+      "kana": "こんど",
+      "kanji": "今度",
+      "romaji": "kondo",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "this time, next time",
+        "id": "kali ini, lain kali"
+      }
+    },
+    {
+      "kana": "さっき",
+      "romaji": "sakki",
+      "partOfSpeech": "adverb",
+      "meaning": {
+        "en": "a moment ago",
+        "id": "tadi"
+      }
+    },
+    {
+      "kana": "やっと",
+      "romaji": "yatto",
+      "partOfSpeech": "adverb",
+      "meaning": {
+        "en": "at last (after effort)",
+        "id": "akhirnya (setelah susah payah)"
+      }
+    },
+    {
+      "kana": "さらいげつ",
+      "kanji": "再来月",
+      "romaji": "saraigetsu",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "the month after next",
+        "id": "dua bulan lagi"
+      }
+    },
+    {
+      "kana": "むかし",
+      "kanji": "昔",
+      "romaji": "mukashi",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "long ago",
+        "id": "dahulu kala"
+      }
+    },
+    {
+      "kana": "おわり",
+      "kanji": "終わり",
+      "romaji": "owari",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "end",
+        "id": "akhir"
+      }
+    },
+    {
+      "kana": "こんや",
+      "kanji": "今夜",
+      "romaji": "kon'ya",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "tonight",
+        "id": "malam ini"
+      }
+    },
+    {
+      "kana": "くれる",
+      "kanji": "暮れる",
+      "romaji": "kureru",
+      "homonym": 2,
+      "partOfSpeech": "verb",
+      "meaning": {
+        "en": "to get dark; to come to an end",
+        "id": "menjadi gelap; berakhir"
+      }
+    },
+    {
+      "kana": "ひるま",
+      "kanji": "昼間",
+      "romaji": "hiruma",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "daytime",
+        "id": "siang hari"
+      }
+    },
+    {
+      "kana": "さらいしゅう",
+      "kanji": "再来週",
+      "romaji": "saraishuu",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "the week after next",
+        "id": "dua minggu lagi"
+      }
+    },
+    {
+      "kana": "さいきん",
+      "kanji": "最近",
+      "romaji": "saikin",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "recently",
+        "id": "akhir-akhir ini"
+      }
+    },
+    {
+      "kana": "しばらく",
+      "romaji": "shibaraku",
+      "partOfSpeech": "adverb",
+      "meaning": {
+        "en": "for a while",
+        "id": "sebentar, untuk sementara"
+      }
+    },
+    {
+      "kana": "そろそろ",
+      "romaji": "sorosoro",
+      "partOfSpeech": "adverb",
+      "meaning": {
+        "en": "soon, it's about time",
+        "id": "sebentar lagi, sudah waktunya"
+      }
+    },
+    {
+      "kana": "だい",
+      "kanji": "代",
+      "romaji": "dai",
+      "affix": "suffix",
+      "homonym": 2,
+      "partOfSpeech": "suffix",
+      "meaning": {
+        "en": "age, generation (suffix)",
+        "id": "usia, generasi (akhiran)"
+      }
+    },
+    {
+      "kana": "さいご",
+      "kanji": "最後",
+      "romaji": "saigo",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "the last, the end",
+        "id": "terakhir"
+      }
+    },
+    {
+      "kana": "ひさしぶり",
+      "kanji": "久しぶり",
+      "romaji": "hisashiburi",
+      "partOfSpeech": "adjective",
+      "meaning": {
+        "en": "for the first time in a long while",
+        "id": "lama tidak bertemu"
+      }
+    },
+    {
+      "kana": "おき",
+      "romaji": "oki",
+      "affix": "suffix",
+      "partOfSpeech": "suffix",
+      "meaning": {
+        "en": "every other (suffix)",
+        "id": "selang (akhiran)"
+      }
+    },
+    {
+      "kana": "さいしょ",
+      "kanji": "最初",
+      "romaji": "saisho",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "the first, the beginning",
+        "id": "pertama, awal"
+      }
+    },
+    {
+      "kana": "しょうらい",
+      "kanji": "将来",
+      "romaji": "shourai",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "the future",
+        "id": "masa depan"
+      }
+    },
+    {
+      "kana": "このあいだ",
+      "kanji": "この間",
+      "romaji": "konoaida",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "the other day",
+        "id": "beberapa hari yang lalu"
+      }
+    },
+    {
+      "kana": "もうすぐ",
+      "romaji": "mousugu",
+      "partOfSpeech": "adverb",
+      "meaning": {
+        "en": "very soon",
+        "id": "sebentar lagi"
+      }
+    },
+    {
+      "kana": "このごろ",
+      "kanji": "この頃",
+      "romaji": "konogoro",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "these days",
+        "id": "akhir-akhir ini"
+      }
+    },
+    {
+      "kana": "これから",
+      "romaji": "korekara",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "from now on",
+        "id": "mulai sekarang"
+      }
+    },
+    {
+      "kana": "たまに",
+      "romaji": "tamani",
+      "partOfSpeech": "adverb",
+      "meaning": {
+        "en": "occasionally",
+        "id": "sesekali"
+      }
+    }
+  ]
+}

@@ -1,0 +1,276 @@
+{
+  "source": "N4 · People's character: words from the JLPT N4 list by J. Waller (tanos.co.uk, CC BY) as compiled in open-anki-jlpt-decks (MIT). Meanings written for this project.",
+  "level": "n4",
+  "items": [
+    {
+      "kana": "はんたい",
+      "kanji": "反対",
+      "romaji": "hantai",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "opposition, the opposite",
+        "id": "penolakan, kebalikan"
+      }
+    },
+    {
+      "kana": "まじめ",
+      "kanji": "真面目",
+      "romaji": "majime",
+      "partOfSpeech": "adjective",
+      "meaning": {
+        "en": "serious, earnest",
+        "id": "serius, sungguh-sungguh"
+      }
+    },
+    {
+      "kana": "よろこぶ",
+      "kanji": "喜ぶ",
+      "romaji": "yorokobu",
+      "partOfSpeech": "verb",
+      "meaning": {
+        "en": "to be glad",
+        "id": "bergembira"
+      }
+    },
+    {
+      "kana": "きょうみ",
+      "kanji": "興味",
+      "romaji": "kyoumi",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "interest",
+        "id": "minat"
+      }
+    },
+    {
+      "kana": "えんりょ",
+      "kanji": "遠慮",
+      "romaji": "enryo",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "holding back, reserve",
+        "id": "sungkan, menahan diri"
+      }
+    },
+    {
+      "kana": "きもち",
+      "kanji": "気持ち",
+      "romaji": "kimochi",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "feeling",
+        "id": "perasaan"
+      }
+    },
+    {
+      "kana": "すごい",
+      "kanji": "凄い",
+      "romaji": "sugoi",
+      "partOfSpeech": "adjective",
+      "meaning": {
+        "en": "amazing; terrible",
+        "id": "hebat; luar biasa"
+      }
+    },
+    {
+      "kana": "じゃま",
+      "kanji": "邪魔",
+      "romaji": "jama",
+      "partOfSpeech": "adjective",
+      "meaning": {
+        "en": "in the way, a nuisance",
+        "id": "mengganggu"
+      }
+    },
+    {
+      "kana": "ゆめ",
+      "kanji": "夢",
+      "romaji": "yume",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "dream",
+        "id": "mimpi"
+      }
+    },
+    {
+      "kana": "ふべん",
+      "kanji": "不便",
+      "romaji": "fuben",
+      "partOfSpeech": "adjective",
+      "meaning": {
+        "en": "inconvenient",
+        "id": "tidak praktis, merepotkan"
+      }
+    },
+    {
+      "kana": "ひどい",
+      "romaji": "hidoi",
+      "partOfSpeech": "adjective",
+      "meaning": {
+        "en": "terrible, cruel",
+        "id": "parah, kejam"
+      }
+    },
+    {
+      "kana": "びっくり",
+      "romaji": "bikkuri",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "surprise",
+        "id": "kaget"
+      }
+    },
+    {
+      "kana": "ただしい",
+      "kanji": "正しい",
+      "romaji": "tadashii",
+      "partOfSpeech": "adjective",
+      "meaning": {
+        "en": "correct",
+        "id": "benar"
+      }
+    },
+    {
+      "kana": "きけん",
+      "kanji": "危険",
+      "romaji": "kiken",
+      "partOfSpeech": "adjective",
+      "meaning": {
+        "en": "dangerous",
+        "id": "berbahaya"
+      }
+    },
+    {
+      "kana": "さわぐ",
+      "kanji": "騒ぐ",
+      "romaji": "sawagu",
+      "partOfSpeech": "verb",
+      "meaning": {
+        "en": "to make a noise",
+        "id": "ribut, membuat keributan"
+      }
+    },
+    {
+      "kana": "なれる",
+      "kanji": "慣れる",
+      "romaji": "nareru",
+      "partOfSpeech": "verb",
+      "meaning": {
+        "en": "to get used to",
+        "id": "terbiasa"
+      }
+    },
+    {
+      "kana": "ふつう",
+      "kanji": "普通",
+      "romaji": "futsuu",
+      "partOfSpeech": "adjective",
+      "meaning": {
+        "en": "usual, ordinary",
+        "id": "biasa"
+      }
+    },
+    {
+      "kana": "わらう",
+      "kanji": "笑う",
+      "romaji": "warau",
+      "partOfSpeech": "verb",
+      "meaning": {
+        "en": "to laugh, to smile",
+        "id": "tertawa, tersenyum"
+      }
+    },
+    {
+      "kana": "あんしん",
+      "kanji": "安心",
+      "romaji": "anshin",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "relief, peace of mind",
+        "id": "lega, rasa aman"
+      }
+    },
+    {
+      "kana": "かまう",
+      "kanji": "構う",
+      "romaji": "kamau",
+      "partOfSpeech": "verb",
+      "meaning": {
+        "en": "to mind, to care",
+        "id": "keberatan, peduli"
+      }
+    },
+    {
+      "kana": "やさしい",
+      "kanji": "優しい",
+      "romaji": "yasashii",
+      "homonym": 2,
+      "partOfSpeech": "adjective",
+      "meaning": {
+        "en": "kind, gentle",
+        "id": "baik hati, lembut"
+      }
+    },
+    {
+      "kana": "とくべつ",
+      "kanji": "特別",
+      "romaji": "tokubetsu",
+      "partOfSpeech": "adjective",
+      "meaning": {
+        "en": "special",
+        "id": "istimewa, khusus"
+      }
+    },
+    {
+      "kana": "やくにたつ",
+      "kanji": "役に立つ",
+      "romaji": "yakunitatsu",
+      "partOfSpeech": "expression",
+      "meaning": {
+        "en": "to be useful",
+        "id": "berguna"
+      }
+    },
+    {
+      "kana": "あんぜん",
+      "kanji": "安全",
+      "romaji": "anzen",
+      "partOfSpeech": "adjective",
+      "meaning": {
+        "en": "safe",
+        "id": "aman"
+      }
+    },
+    {
+      "kana": "おかげ",
+      "kanji": "お陰",
+      "romaji": "okage",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "thanks to",
+        "id": "berkat"
+      }
+    },
+    {
+      "kana": "きゅう",
+      "kanji": "急",
+      "romaji": "kyuu",
+      "homonym": 2,
+      "partOfSpeech": "adjective",
+      "meaning": {
+        "en": "sudden, urgent",
+        "id": "mendadak, mendesak"
+      }
+    },
+    {
+      "kana": "うれしい",
+      "kanji": "嬉しい",
+      "romaji": "ureshii",
+      "partOfSpeech": "adjective",
+      "meaning": {
+        "en": "happy, glad",
+        "id": "senang, gembira"
+      }
+    }
+  ]
+}

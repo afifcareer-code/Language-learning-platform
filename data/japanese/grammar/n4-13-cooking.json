@@ -1,0 +1,108 @@
+{
+  "source": "Original grammar explanations for N4 · Cooking and tasting, written for this project.",
+  "level": "n4",
+  "items": [
+    {
+      "slug": "n4-te-miru",
+      "pattern": "V(て) みます",
+      "meaning": {
+        "en": "try V-ing (and see)",
+        "id": "mencoba V"
+      },
+      "explanation": {
+        "en": "〜て みる means doing something to see what it is like: たべて みます (I'll try eating it). It is not 'try hard'; for effort use がんばる.",
+        "id": "〜て みる berarti melakukan sesuatu untuk melihat bagaimana rasanya: たべて みます (saya coba makan). Bukan 'berusaha keras'; untuk itu pakai がんばる."
+      },
+      "examples": [
+        {
+          "ja": "この サラダを たべて みて ください。",
+          "translation": {
+            "en": "Please try this salad.",
+            "id": "Coba makan salad ini."
+          }
+        },
+        {
+          "ja": "あたらしい みせに いって みました。",
+          "translation": {
+            "en": "I tried going to the new shop.",
+            "id": "Saya mencoba pergi ke toko baru itu."
+          }
+        }
+      ],
+      "commonErrors": [
+        {
+          "en": "Writing 見る in kanji here: in this use みる is usually written in kana.",
+          "id": "Menulis 見る dengan kanji di sini: dalam pemakaian ini みる biasanya ditulis dengan kana."
+        }
+      ]
+    },
+    {
+      "slug": "n4-yasui-nikui",
+      "pattern": "V(ます stem) やすい / にくい",
+      "meaning": {
+        "en": "easy to V / hard to V",
+        "id": "mudah di-V / sulit di-V"
+      },
+      "explanation": {
+        "en": "やすい and にくい after the ます stem describe how easy something is to do: この ペンは かきやすいです, この にくは かみにくいです. They work like い-adjectives.",
+        "id": "やすい dan にくい setelah bentuk ます tanpa ます menyatakan mudah atau sulitnya melakukan sesuatu: この ペンは かきやすいです, この にくは かみにくいです. Keduanya berperilaku seperti kata sifat い."
+      },
+      "examples": [
+        {
+          "ja": "この ペンは かきやすいです。",
+          "translation": {
+            "en": "This pen is easy to write with.",
+            "id": "Pena ini enak dipakai menulis."
+          }
+        },
+        {
+          "ja": "この にくは かたくて かみにくいです。",
+          "translation": {
+            "en": "This meat is tough and hard to chew.",
+            "id": "Daging ini keras dan sulit dikunyah."
+          }
+        }
+      ],
+      "commonErrors": [
+        {
+          "en": "Using the dictionary form: かくやすい is wrong; say かきやすい.",
+          "id": "Memakai bentuk kamus: かくやすい salah; katakan かきやすい."
+        }
+      ]
+    },
+    {
+      "slug": "n4-noni-use",
+      "pattern": "V(dictionary) のに つかいます / いいです",
+      "meaning": {
+        "en": "is used for V-ing; good for V-ing",
+        "id": "dipakai untuk V; bagus untuk V"
+      },
+      "explanation": {
+        "en": "のに after the dictionary form gives a purpose with つかう, いい, べんり or ひつよう: この なべは スープを つくるのに べんりです.",
+        "id": "のに setelah bentuk kamus menyatakan kegunaan bersama つかう, いい, べんり, atau ひつよう: この なべは スープを つくるのに べんりです."
+      },
+      "examples": [
+        {
+          "ja": "この なべは スープを つくるのに べんりです。",
+          "translation": {
+            "en": "This pot is handy for making soup.",
+            "id": "Panci ini praktis untuk membuat sup."
+          }
+        },
+        {
+          "ja": "はさみは かみを きるのに つかいます。",
+          "translation": {
+            "en": "Scissors are used for cutting paper.",
+            "id": "Gunting dipakai untuk memotong kertas."
+          }
+        }
+      ],
+      "commonErrors": [
+        {
+          "en": "Confusing it with のに 'even though': here it comes before つかう, いい or べんり and means 'for'.",
+          "id": "Tertukar dengan のに 'padahal': di sini ia diletakkan sebelum つかう, いい, atau べんり dan berarti 'untuk'."
+        }
+      ]
+    }
+  ]
+}

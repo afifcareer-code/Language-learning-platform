@@ -1,0 +1,108 @@
+{
+  "source": "Original grammar explanations for N4 · Deadlines and time, written for this project.",
+  "level": "n4",
+  "items": [
+    {
+      "slug": "n4-made-ni",
+      "pattern": "time + までに",
+      "meaning": {
+        "en": "by (a time)",
+        "id": "paling lambat, sebelum (waktu)"
+      },
+      "explanation": {
+        "en": "までに is a deadline: something happens at some point before that time. まで (without に) is 'until', for an action that continues up to that time.",
+        "id": "までに adalah batas waktu: sesuatu terjadi kapan saja sebelum waktu itu. まで (tanpa に) berarti 'sampai', untuk kegiatan yang berlangsung terus hingga waktu itu."
+      },
+      "examples": [
+        {
+          "ja": "ごじまでに かえって ください。",
+          "translation": {
+            "en": "Please be back by five.",
+            "id": "Tolong pulang paling lambat pukul lima."
+          }
+        },
+        {
+          "ja": "きんようびまでに しゅくだいを だします。",
+          "translation": {
+            "en": "I'll hand in the homework by Friday.",
+            "id": "Saya akan menyerahkan PR paling lambat hari Jumat."
+          }
+        }
+      ],
+      "commonErrors": [
+        {
+          "en": "Mixing up まで and までに: ごじまで まって ください (wait until five) vs ごじまでに きて ください (come by five).",
+          "id": "Tertukar antara まで dan までに: ごじまで まって ください (tunggu sampai pukul lima) dan ごじまでに きて ください (datang paling lambat pukul lima)."
+        }
+      ]
+    },
+    {
+      "slug": "n4-aida",
+      "pattern": "V(dictionary/ている) / N の あいだ(に)",
+      "meaning": {
+        "en": "while…; during…",
+        "id": "selama…; sewaktu…"
+      },
+      "explanation": {
+        "en": "あいだ means 'throughout the time when': なつやすみの あいだ, ずっと. あいだに means something happens at some point during that time: るすの あいだに どろぼうが はいりました.",
+        "id": "あいだ berarti 'sepanjang waktu ketika': なつやすみの あいだ, ずっと. あいだに berarti sesuatu terjadi pada suatu saat dalam rentang itu: るすの あいだに どろぼうが はいりました."
+      },
+      "examples": [
+        {
+          "ja": "なつやすみの あいだ、いなかに いました。",
+          "translation": {
+            "en": "I was in the countryside throughout the summer holidays.",
+            "id": "Selama libur musim panas saya berada di kampung."
+          }
+        },
+        {
+          "ja": "るすの あいだに どろぼうが はいりました。",
+          "translation": {
+            "en": "A burglar got in while I was out.",
+            "id": "Sewaktu saya tidak di rumah, pencuri masuk."
+          }
+        }
+      ],
+      "commonErrors": [
+        {
+          "en": "Using あいだ (without に) for a one-off event: for something that happened once within the period, use あいだに.",
+          "id": "Memakai あいだ (tanpa に) untuk kejadian sekali: untuk sesuatu yang terjadi sekali dalam rentang itu, pakai あいだに."
+        }
+      ]
+    },
+    {
+      "slug": "n4-uchi-ni",
+      "pattern": "V(dictionary/ない) / A / N の うちに",
+      "meaning": {
+        "en": "while (still)…, before it changes",
+        "id": "selagi…, sebelum berubah"
+      },
+      "explanation": {
+        "en": "うちに means doing something while a state lasts, before it changes: わかい うちに, あかるい うちに, わすれない うちに.",
+        "id": "うちに berarti melakukan sesuatu selagi suatu keadaan masih berlangsung, sebelum berubah: わかい うちに, あかるい うちに, わすれない うちに."
+      },
+      "examples": [
+        {
+          "ja": "あつい うちに たべて ください。",
+          "translation": {
+            "en": "Please eat it while it's hot.",
+            "id": "Silakan dimakan selagi panas."
+          }
+        },
+        {
+          "ja": "わかい うちに いろいろな くにへ いきたいです。",
+          "translation": {
+            "en": "I want to go to many countries while I'm young.",
+            "id": "Selagi masih muda, saya ingin pergi ke berbagai negara."
+          }
+        }
+      ],
+      "commonErrors": [
+        {
+          "en": "Using うちに for a fixed time: for 'before five' use ごじまえに, not ごじの うちに.",
+          "id": "Memakai うちに untuk waktu yang pasti: untuk 'sebelum pukul lima' pakai ごじまえに, bukan ごじの うちに."
+        }
+      ]
+    }
+  ]
+}

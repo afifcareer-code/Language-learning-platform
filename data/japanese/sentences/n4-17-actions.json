@@ -1,0 +1,66 @@
+{
+  "source": "Original practice sentences for N4 · Starting and finishing.",
+  "level": "n4",
+  "items": [
+    {
+      "slug": "n4-hajimeru-owaru-1",
+      "text": "あめが ふりはじめました。",
+      "tokens": ["あめ", "が", "ふりはじめました"],
+      "grammar": "n4-hajimeru-owaru",
+      "translation": {
+        "en": "It has started to rain.",
+        "id": "Hujan mulai turun."
+      }
+    },
+    {
+      "slug": "n4-hajimeru-owaru-2",
+      "text": "この ほんを よみおわったら かして ください。",
+      "tokens": ["この", "ほん", "を", "よみおわったら", "かして", "ください"],
+      "grammar": "n4-hajimeru-owaru",
+      "translation": {
+        "en": "When you've finished reading this book, please lend it to me.",
+        "id": "Kalau sudah selesai membaca buku ini, tolong pinjamkan kepada saya."
+      }
+    },
+    {
+      "slug": "n4-dasu-1",
+      "text": "あかちゃんが きゅうに なきだしました。",
+      "tokens": ["あかちゃん", "が", "きゅうに", "なきだしました"],
+      "grammar": "n4-dasu",
+      "translation": {
+        "en": "The baby suddenly started crying.",
+        "id": "Bayi itu tiba-tiba menangis."
+      }
+    },
+    {
+      "slug": "n4-dasu-2",
+      "text": "みんなが わらいだしました。",
+      "tokens": ["みんな", "が", "わらいだしました"],
+      "grammar": "n4-dasu",
+      "translation": {
+        "en": "Everyone burst out laughing.",
+        "id": "Semua orang tiba-tiba tertawa."
+      }
+    },
+    {
+      "slug": "n4-kata-1",
+      "text": "この きかいの つかいかたを おしえて ください。",
+      "tokens": ["この", "きかい", "の", "つかいかた", "を", "おしえて", "ください"],
+      "grammar": "n4-kata",
+      "translation": {
+        "en": "Please show me how to use this machine.",
+        "id": "Tolong ajari saya cara memakai mesin ini."
+      }
+    },
+    {
+      "slug": "n4-kata-2",
+      "text": "この かんじの よみかたが わかりません。",
+      "tokens": ["この", "かんじ", "の", "よみかた", "が", "わかりません"],
+      "grammar": "n4-kata",
+      "translation": {
+        "en": "I don't know how to read this kanji.",
+        "id": "Saya tidak tahu cara membaca kanji ini."
+      }
+    }
+  ]
+}

@@ -1,0 +1,46 @@
+{
+  "source": "Original practice sentences for N4 · Talking it over.",
+  "level": "n4",
+  "items": [
+    {
+      "slug": "n4-ni-tsuite-1",
+      "text": "にほんの れきしに ついて レポートを かきます。",
+      "tokens": ["にほん", "の", "れきし", "に", "ついて", "レポート", "を", "かきます"],
+      "grammar": "n4-ni-tsuite",
+      "translation": {
+        "en": "I'm writing a report about Japanese history.",
+        "id": "Saya menulis laporan tentang sejarah Jepang."
+      }
+    },
+    {
+      "slug": "n4-ni-tsuite-2",
+      "text": "その もんだいに ついて そうだんしました。",
+      "tokens": ["その", "もんだい", "に", "ついて", "そうだんしました"],
+      "grammar": "n4-ni-tsuite",
+      "translation": {
+        "en": "We talked over that problem.",
+        "id": "Kami berunding tentang masalah itu."
+      }
+    },
+    {
+      "slug": "n4-passive-indirect-1",
+      "text": "かえる とちゅうで あめに ふられました。",
+      "tokens": ["かえる", "とちゅう", "で", "あめ", "に", "ふられました"],
+      "grammar": "n4-passive-indirect",
+      "translation": {
+        "en": "I got caught in the rain on the way home.",
+        "id": "Saya kehujanan dalam perjalanan pulang."
+      }
+    },
+    {
+      "slug": "n4-passive-indirect-2",
+      "text": "よる あかちゃんに なかれて ねられませんでした。",
+      "tokens": ["よる", "あかちゃん", "に", "なかれて", "ねられませんでした"],
+      "grammar": "n4-passive-indirect",
+      "translation": {
+        "en": "The baby cried at night and I couldn't sleep.",
+        "id": "Malam hari bayi menangis sehingga saya tidak bisa tidur."
+      }
+    }
+  ]
+}

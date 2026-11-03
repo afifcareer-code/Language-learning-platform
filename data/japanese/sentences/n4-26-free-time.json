@@ -1,0 +1,46 @@
+{
+  "source": "Original practice sentences for N4 · Free time.",
+  "level": "n4",
+  "items": [
+    {
+      "slug": "n4-ka-dou-ka-1",
+      "text": "パーティーに いけるか どうか わかりません。",
+      "tokens": ["パーティー", "に", "いける", "か", "どうか", "わかりません"],
+      "grammar": "n4-ka-dou-ka",
+      "translation": {
+        "en": "I don't know whether I can go to the party.",
+        "id": "Saya belum tahu apakah bisa ke pesta atau tidak."
+      }
+    },
+    {
+      "slug": "n4-ka-dou-ka-2",
+      "text": "あじが いいか どうか たべて みて ください。",
+      "tokens": ["あじ", "が", "いい", "か", "どうか", "たべて", "みて", "ください"],
+      "grammar": "n4-ka-dou-ka",
+      "translation": {
+        "en": "Please taste it to see whether it's good.",
+        "id": "Coba cicipi, enak atau tidak."
+      }
+    },
+    {
+      "slug": "n4-koto-ga-aru-sometimes-1",
+      "text": "ときどき あさごはんを たべない ことが あります。",
+      "tokens": ["ときどき", "あさごはん", "を", "たべない", "こと", "が", "あります"],
+      "grammar": "n4-koto-ga-aru-sometimes",
+      "translation": {
+        "en": "Sometimes I don't eat breakfast.",
+        "id": "Kadang-kadang saya tidak sarapan."
+      }
+    },
+    {
+      "slug": "n4-koto-ga-aru-sometimes-2",
+      "text": "この みちは あさ こむ ことが あります。",
+      "tokens": ["この", "みち", "は", "あさ", "こむ", "こと", "が", "あります"],
+      "grammar": "n4-koto-ga-aru-sometimes",
+      "translation": {
+        "en": "This road is sometimes busy in the morning.",
+        "id": "Jalan ini kadang ramai di pagi hari."
+      }
+    }
+  ]
+}

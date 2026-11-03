@@ -1,0 +1,108 @@
+{
+  "source": "Original grammar explanations for N4 · Getting the house ready, written for this project.",
+  "level": "n4",
+  "items": [
+    {
+      "slug": "n4-te-aru",
+      "pattern": "N が V(て) あります",
+      "meaning": {
+        "en": "N has been V-ed (and stays so)",
+        "id": "N sudah di-V (dan masih begitu)"
+      },
+      "explanation": {
+        "en": "With a transitive verb, 〜て あります describes a state that someone created on purpose: まどが あけて あります (the window has been opened, and is open). The object takes が.",
+        "id": "Dengan kata kerja transitif, 〜て あります menggambarkan keadaan yang sengaja dibuat seseorang: まどが あけて あります (jendela sudah dibuka, dan terbuka). Objeknya memakai が."
+      },
+      "examples": [
+        {
+          "ja": "かべに えが かけて あります。",
+          "translation": {
+            "en": "A picture has been hung on the wall.",
+            "id": "Sebuah lukisan sudah digantung di dinding."
+          }
+        },
+        {
+          "ja": "ビールは れいぞうこに いれて あります。",
+          "translation": {
+            "en": "The beer has been put in the fridge.",
+            "id": "Birnya sudah dimasukkan ke kulkas."
+          }
+        }
+      ],
+      "commonErrors": [
+        {
+          "en": "Using an intransitive verb: まどが あいて あります is wrong; say あけて あります, or まどが あいて います.",
+          "id": "Memakai kata kerja intransitif: まどが あいて あります salah; katakan あけて あります, atau まどが あいて います."
+        }
+      ]
+    },
+    {
+      "slug": "n4-te-oku",
+      "pattern": "V(て) おきます",
+      "meaning": {
+        "en": "do V in advance, leave V-ed",
+        "id": "V dulu (sebagai persiapan), biarkan ter-V"
+      },
+      "explanation": {
+        "en": "〜て おく means doing something now so that it is ready for later, or leaving something as it is: ホテルを よやくして おきます. In speech it is often 〜とく.",
+        "id": "〜て おく berarti melakukan sesuatu sekarang agar siap untuk nanti, atau membiarkan sesuatu seperti adanya: ホテルを よやくして おきます. Dalam percakapan sering menjadi 〜とく."
+      },
+      "examples": [
+        {
+          "ja": "りょこうの まえに ホテルを よやくして おきます。",
+          "translation": {
+            "en": "I'll book the hotel before the trip.",
+            "id": "Sebelum perjalanan, saya pesan hotel dulu."
+          }
+        },
+        {
+          "ja": "まどを あけて おいて ください。",
+          "translation": {
+            "en": "Please leave the window open.",
+            "id": "Tolong biarkan jendelanya terbuka."
+          }
+        }
+      ],
+      "commonErrors": [
+        {
+          "en": "Confusing it with おく 'to put': here おく has no object of its own; it follows the て form.",
+          "id": "Tertukar dengan おく 'menaruh': di sini おく tidak punya objek sendiri; ia mengikuti bentuk て."
+        }
+      ]
+    },
+    {
+      "slug": "n4-te-shimau",
+      "pattern": "V(て) しまいます",
+      "meaning": {
+        "en": "finish V-ing completely; end up V-ing (regret)",
+        "id": "sampai habis V; terlanjur V (menyesal)"
+      },
+      "explanation": {
+        "en": "〜て しまう has two uses: an action is completely finished (ぜんぶ よんで しまいました), or something regrettable happened (さいふを なくして しまいました). In speech: 〜ちゃう / 〜じゃう.",
+        "id": "〜て しまう punya dua arti: tindakan selesai sepenuhnya (ぜんぶ よんで しまいました), atau terjadi sesuatu yang disesali (さいふを なくして しまいました). Dalam percakapan: 〜ちゃう / 〜じゃう."
+      },
+      "examples": [
+        {
+          "ja": "さいふを なくして しまいました。",
+          "translation": {
+            "en": "I've gone and lost my wallet.",
+            "id": "Dompet saya terlanjur hilang."
+          }
+        },
+        {
+          "ja": "この ほんは もう ぜんぶ よんで しまいました。",
+          "translation": {
+            "en": "I've already read this whole book.",
+            "id": "Buku ini sudah saya baca sampai habis."
+          }
+        }
+      ],
+      "commonErrors": [
+        {
+          "en": "Using it for a neutral finished action without 'completely' or regret: then just use 〜ました.",
+          "id": "Memakainya untuk tindakan biasa tanpa makna 'sampai habis' atau menyesal: cukup pakai 〜ました."
+        }
+      ]
+    }
+  ]
+}

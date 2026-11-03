@@ -21,6 +21,13 @@ words such as tape recorder were left out), the remaining N5 grammar
 lessons. Words that share their kana (あつい 暑い / 熱い / 厚い) are kept apart
 with a `homonym` number. Meanings, explanations and sentences are original.
 
+N4 coverage: lessons 11-39 add the rest of the JLPT N4 word list (same source as
+N5; dated words such as word processor and telegram were left out, and 看護婦 is
+taught as 看護師), and 71 more grammar points (〜てしまう, 〜ておく, 〜てある,
+〜てみる, 〜はず, 〜かもしれない, 〜なら, 〜ても, plain speech, 〜んです, quoting,
+embedded questions, causative passive, keigo verbs and more). N4 now has 732 words,
+101 grammar points and 202 sentences in 39 lessons.
+
 N4 Core: ten lessons (Making plans, Experiences, Abilities, Giving and receiving,
 Advice and rules, If and when, What people say and how things look, Reasons and
 purposes, Passive and causative, Polite language) with 140 words, 30 grammar

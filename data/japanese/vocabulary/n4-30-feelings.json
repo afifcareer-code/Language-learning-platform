@@ -1,0 +1,277 @@
+{
+  "source": "N4 · Feelings: words from the JLPT N4 list by J. Waller (tanos.co.uk, CC BY) as compiled in open-anki-jlpt-decks (MIT). Meanings written for this project.",
+  "level": "n4",
+  "items": [
+    {
+      "kana": "おこる",
+      "kanji": "怒る",
+      "romaji": "okoru",
+      "partOfSpeech": "verb",
+      "meaning": {
+        "en": "to get angry",
+        "id": "marah"
+      }
+    },
+    {
+      "kana": "しんぱい",
+      "kanji": "心配",
+      "romaji": "shinpai",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "worry",
+        "id": "kekhawatiran"
+      }
+    },
+    {
+      "kana": "き",
+      "kanji": "気",
+      "romaji": "ki",
+      "homonym": 2,
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "spirit, mind, mood",
+        "id": "perasaan, hati, suasana hati"
+      }
+    },
+    {
+      "kana": "だめ",
+      "romaji": "dame",
+      "partOfSpeech": "adjective",
+      "meaning": {
+        "en": "no good, not allowed",
+        "id": "tidak boleh, tidak bagus"
+      }
+    },
+    {
+      "kana": "だいじ",
+      "kanji": "大事",
+      "romaji": "daiji",
+      "partOfSpeech": "adjective",
+      "meaning": {
+        "en": "important, precious",
+        "id": "penting, berharga"
+      }
+    },
+    {
+      "kana": "きびしい",
+      "kanji": "厳しい",
+      "romaji": "kibishii",
+      "partOfSpeech": "adjective",
+      "meaning": {
+        "en": "strict, severe",
+        "id": "ketat, keras"
+      }
+    },
+    {
+      "kana": "かなしい",
+      "kanji": "悲しい",
+      "romaji": "kanashii",
+      "partOfSpeech": "adjective",
+      "meaning": {
+        "en": "sad",
+        "id": "sedih"
+      }
+    },
+    {
+      "kana": "うそ",
+      "kanji": "嘘",
+      "romaji": "uso",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "lie",
+        "id": "bohong"
+      }
+    },
+    {
+      "kana": "おもう",
+      "kanji": "思う",
+      "romaji": "omou",
+      "partOfSpeech": "verb",
+      "meaning": {
+        "en": "to think",
+        "id": "berpikir, merasa"
+      }
+    },
+    {
+      "kana": "ざんねん",
+      "kanji": "残念",
+      "romaji": "zannen",
+      "partOfSpeech": "adjective",
+      "meaning": {
+        "en": "regrettable, a pity",
+        "id": "sayang sekali, menyesal"
+      }
+    },
+    {
+      "kana": "ていねい",
+      "kanji": "丁寧",
+      "romaji": "teinei",
+      "partOfSpeech": "adjective",
+      "meaning": {
+        "en": "polite, careful",
+        "id": "sopan, teliti"
+      }
+    },
+    {
+      "kana": "こわい",
+      "kanji": "怖い",
+      "romaji": "kowai",
+      "partOfSpeech": "adjective",
+      "meaning": {
+        "en": "scary",
+        "id": "menakutkan"
+      }
+    },
+    {
+      "kana": "はずかしい",
+      "kanji": "恥ずかしい",
+      "romaji": "hazukashii",
+      "partOfSpeech": "adjective",
+      "meaning": {
+        "en": "embarrassed",
+        "id": "malu"
+      }
+    },
+    {
+      "kana": "きぶん",
+      "kanji": "気分",
+      "romaji": "kibun",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "feeling, mood",
+        "id": "suasana hati, perasaan"
+      }
+    },
+    {
+      "kana": "うつくしい",
+      "kanji": "美しい",
+      "romaji": "utsukushii",
+      "partOfSpeech": "adjective",
+      "meaning": {
+        "en": "beautiful",
+        "id": "indah"
+      }
+    },
+    {
+      "kana": "てきとう",
+      "kanji": "適当",
+      "romaji": "tekitou",
+      "partOfSpeech": "adjective",
+      "meaning": {
+        "en": "suitable; half-hearted",
+        "id": "cocok; asal-asalan"
+      }
+    },
+    {
+      "kana": "すばらしい",
+      "kanji": "素晴らしい",
+      "romaji": "subarashii",
+      "partOfSpeech": "adjective",
+      "meaning": {
+        "en": "wonderful",
+        "id": "luar biasa, hebat"
+      }
+    },
+    {
+      "kana": "しんせつ",
+      "kanji": "親切",
+      "romaji": "shinsetsu",
+      "partOfSpeech": "adjective",
+      "meaning": {
+        "en": "kind",
+        "id": "baik hati"
+      }
+    },
+    {
+      "kana": "ねっしん",
+      "kanji": "熱心",
+      "romaji": "nesshin",
+      "partOfSpeech": "adjective",
+      "meaning": {
+        "en": "eager, enthusiastic",
+        "id": "tekun, bersemangat"
+      }
+    },
+    {
+      "kana": "なく",
+      "kanji": "泣く",
+      "romaji": "naku",
+      "homonym": 2,
+      "partOfSpeech": "verb",
+      "meaning": {
+        "en": "to cry",
+        "id": "menangis"
+      }
+    },
+    {
+      "kana": "おかしい",
+      "romaji": "okashii",
+      "partOfSpeech": "adjective",
+      "meaning": {
+        "en": "strange; funny",
+        "id": "aneh; lucu"
+      }
+    },
+    {
+      "kana": "へん",
+      "kanji": "変",
+      "romaji": "hen",
+      "homonym": 2,
+      "partOfSpeech": "adjective",
+      "meaning": {
+        "en": "strange, odd",
+        "id": "aneh"
+      }
+    },
+    {
+      "kana": "おどろく",
+      "kanji": "驚く",
+      "romaji": "odoroku",
+      "partOfSpeech": "verb",
+      "meaning": {
+        "en": "to be surprised",
+        "id": "terkejut"
+      }
+    },
+    {
+      "kana": "こころ",
+      "kanji": "心",
+      "romaji": "kokoro",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "heart, mind",
+        "id": "hati, jiwa"
+      }
+    },
+    {
+      "kana": "おもいだす",
+      "kanji": "思い出す",
+      "romaji": "omoidasu",
+      "partOfSpeech": "verb",
+      "meaning": {
+        "en": "to remember, to recall",
+        "id": "teringat, mengingat kembali"
+      }
+    },
+    {
+      "kana": "めずらしい",
+      "kanji": "珍しい",
+      "romaji": "mezurashii",
+      "partOfSpeech": "adjective",
+      "meaning": {
+        "en": "rare, unusual",
+        "id": "langka, jarang"
+      }
+    },
+    {
+      "kana": "さびしい",
+      "kanji": "寂しい",
+      "romaji": "sabishii",
+      "partOfSpeech": "adjective",
+      "meaning": {
+        "en": "lonely",
+        "id": "kesepian"
+      }
+    }
+  ]
+}

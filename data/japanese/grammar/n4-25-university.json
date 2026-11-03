@@ -1,0 +1,108 @@
+{
+  "source": "Original grammar explanations for N4 · At university, written for this project.",
+  "level": "n4",
+  "items": [
+    {
+      "slug": "n4-to-iu",
+      "pattern": "N1 という N2",
+      "meaning": {
+        "en": "an N2 called N1",
+        "id": "N2 yang bernama N1"
+      },
+      "explanation": {
+        "en": "という names something the listener may not know: さくらという みせ, ハナという ねこ.",
+        "id": "という menyebut nama sesuatu yang mungkin belum diketahui lawan bicara: さくらという みせ, ハナという ねこ."
+      },
+      "examples": [
+        {
+          "ja": "えきの まえに さくらという きっさてんが あります。",
+          "translation": {
+            "en": "There's a café called Sakura in front of the station.",
+            "id": "Di depan stasiun ada kafe bernama Sakura."
+          }
+        },
+        {
+          "ja": "これは なんという さかなですか。",
+          "translation": {
+            "en": "What is this fish called?",
+            "id": "Ini ikan apa namanya?"
+          }
+        }
+      ],
+      "commonErrors": [
+        {
+          "en": "Leaving out という: さくら きっさてん is unclear; say さくらという きっさてん.",
+          "id": "Melupakan という: さくら きっさてん tidak jelas; katakan さくらという きっさてん."
+        }
+      ]
+    },
+    {
+      "slug": "n4-to-iimasu",
+      "pattern": "plain form + と いいました / いって いました",
+      "meaning": {
+        "en": "said that…",
+        "id": "berkata bahwa…"
+      },
+      "explanation": {
+        "en": "と after a plain form reports what someone said: かれは あした くると いいました. いって いました passes on something said earlier.",
+        "id": "と setelah bentuk biasa melaporkan perkataan seseorang: かれは あした くると いいました. いって いました menyampaikan perkataan sebelumnya."
+      },
+      "examples": [
+        {
+          "ja": "かれは あした くると いいました。",
+          "translation": {
+            "en": "He said he'd come tomorrow.",
+            "id": "Dia bilang besok akan datang."
+          }
+        },
+        {
+          "ja": "せんせいは しけんは かんたんだと いって いました。",
+          "translation": {
+            "en": "The teacher said the exam would be easy.",
+            "id": "Guru bilang ujiannya mudah."
+          }
+        }
+      ],
+      "commonErrors": [
+        {
+          "en": "Leaving out だ after a noun or な-adjective: かんたんと いいました is wrong; say かんたんだと.",
+          "id": "Melupakan だ setelah kata benda atau kata sifat な: かんたんと いいました salah; katakan かんたんだと."
+        }
+      ]
+    },
+    {
+      "slug": "n4-embedded-question",
+      "pattern": "question-word … plain form + か、…",
+      "meaning": {
+        "en": "(I don't know) what / where / when…",
+        "id": "(saya tidak tahu) apa / di mana / kapan…"
+      },
+      "explanation": {
+        "en": "A question can sit inside a sentence with か: なにを かったか おしえて ください, かれが どこに いるか しりません.",
+        "id": "Pertanyaan bisa disisipkan dalam kalimat dengan か: なにを かったか おしえて ください, かれが どこに いるか しりません."
+      },
+      "examples": [
+        {
+          "ja": "かれが どこに すんで いるか しりません。",
+          "translation": {
+            "en": "I don't know where he lives.",
+            "id": "Saya tidak tahu di mana dia tinggal."
+          }
+        },
+        {
+          "ja": "かいぎが なんじに はじまるか おしえて ください。",
+          "translation": {
+            "en": "Please tell me what time the meeting starts.",
+            "id": "Tolong beri tahu saya rapatnya mulai jam berapa."
+          }
+        }
+      ],
+      "commonErrors": [
+        {
+          "en": "Using です/ます inside: なんじに はじまりますか おしえて is wrong; use the plain form before か.",
+          "id": "Memakai です/ます di dalamnya: なんじに はじまりますか おしえて salah; pakai bentuk biasa sebelum か."
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,164 @@
+{
+  "source": "N4 · Events and festivals: words from the JLPT N4 list by J. Waller (tanos.co.uk, CC BY) as compiled in open-anki-jlpt-decks (MIT). Meanings written for this project.",
+  "level": "n4",
+  "items": [
+    {
+      "kana": "つる",
+      "kanji": "釣る",
+      "romaji": "tsuru",
+      "partOfSpeech": "verb",
+      "meaning": {
+        "en": "to fish",
+        "id": "memancing"
+      }
+    },
+    {
+      "kana": "あそび",
+      "kanji": "遊び",
+      "romaji": "asobi",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "play, fun",
+        "id": "permainan"
+      }
+    },
+    {
+      "kana": "ほうそう",
+      "kanji": "放送",
+      "romaji": "housou",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "broadcast",
+        "id": "siaran"
+      }
+    },
+    {
+      "kana": "まける",
+      "kanji": "負ける",
+      "romaji": "makeru",
+      "partOfSpeech": "verb",
+      "meaning": {
+        "en": "to lose (a game)",
+        "id": "kalah"
+      }
+    },
+    {
+      "kana": "にっき",
+      "kanji": "日記",
+      "romaji": "nikki",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "diary",
+        "id": "buku harian"
+      }
+    },
+    {
+      "kana": "かいじょう",
+      "kanji": "会場",
+      "romaji": "kaijou",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "venue",
+        "id": "tempat acara"
+      }
+    },
+    {
+      "kana": "てんらんかい",
+      "kanji": "展覧会",
+      "romaji": "tenrankai",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "exhibition",
+        "id": "pameran"
+      }
+    },
+    {
+      "kana": "コンサート",
+      "romaji": "konsaato",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "concert",
+        "id": "konser"
+      }
+    },
+    {
+      "kana": "すいえい",
+      "kanji": "水泳",
+      "romaji": "suiei",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "swimming",
+        "id": "renang"
+      }
+    },
+    {
+      "kana": "かつ",
+      "kanji": "勝つ",
+      "romaji": "katsu",
+      "partOfSpeech": "verb",
+      "meaning": {
+        "en": "to win",
+        "id": "menang"
+      }
+    },
+    {
+      "kana": "はなみ",
+      "kanji": "花見",
+      "romaji": "hanami",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "cherry-blossom viewing",
+        "id": "melihat bunga sakura"
+      }
+    },
+    {
+      "kana": "けんぶつ",
+      "kanji": "見物",
+      "romaji": "kenbutsu",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "sightseeing",
+        "id": "bertamasya, melihat-lihat"
+      }
+    },
+    {
+      "kana": "テニス",
+      "romaji": "tenisu",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "tennis",
+        "id": "tenis"
+      }
+    },
+    {
+      "kana": "ばんぐみ",
+      "kanji": "番組",
+      "romaji": "bangumi",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "(TV, radio) programme",
+        "id": "acara (TV, radio)"
+      }
+    },
+    {
+      "kana": "たのしみ",
+      "kanji": "楽しみ",
+      "romaji": "tanoshimi",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "something to look forward to",
+        "id": "hal yang dinanti-nanti"
+      }
+    },
+    {
+      "kana": "しゅみ",
+      "kanji": "趣味",
+      "romaji": "shumi",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "hobby",
+        "id": "hobi"
+      }
+    }
+  ]
+}

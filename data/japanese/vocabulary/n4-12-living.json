@@ -1,0 +1,165 @@
+{
+  "source": "N4 · Living in Japan: words from the JLPT N4 list by J. Waller (tanos.co.uk, CC BY) as compiled in open-anki-jlpt-decks (MIT). Meanings written for this project.",
+  "level": "n4",
+  "items": [
+    {
+      "kana": "ひっこす",
+      "kanji": "引っ越す",
+      "romaji": "hikkosu",
+      "partOfSpeech": "verb",
+      "meaning": {
+        "en": "to move house",
+        "id": "pindah rumah"
+      }
+    },
+    {
+      "kana": "れいぼう",
+      "kanji": "冷房",
+      "romaji": "reibou",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "air conditioning (cooling)",
+        "id": "pendingin ruangan"
+      }
+    },
+    {
+      "kana": "かたづける",
+      "kanji": "片付ける",
+      "romaji": "katazukeru",
+      "partOfSpeech": "verb",
+      "meaning": {
+        "en": "to tidy up, to put away",
+        "id": "merapikan, membereskan"
+      }
+    },
+    {
+      "kana": "かじ",
+      "kanji": "火事",
+      "romaji": "kaji",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "fire (a blaze)",
+        "id": "kebakaran"
+      }
+    },
+    {
+      "kana": "おしいれ",
+      "kanji": "押し入れ",
+      "romaji": "oshiire",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "closet (Japanese)",
+        "id": "lemari dinding"
+      }
+    },
+    {
+      "kana": "でんとう",
+      "kanji": "電灯",
+      "romaji": "dentou",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "electric light",
+        "id": "lampu listrik"
+      }
+    },
+    {
+      "kana": "ひきだし",
+      "kanji": "引き出し",
+      "romaji": "hikidashi",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "drawer",
+        "id": "laci"
+      }
+    },
+    {
+      "kana": "どうぐ",
+      "kanji": "道具",
+      "romaji": "dougu",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "tool",
+        "id": "alat"
+      }
+    },
+    {
+      "kana": "だんぼう",
+      "kanji": "暖房",
+      "romaji": "danbou",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "heating",
+        "id": "pemanas ruangan"
+      }
+    },
+    {
+      "kana": "るす",
+      "kanji": "留守",
+      "romaji": "rusu",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "being out, not at home",
+        "id": "tidak ada di rumah"
+      }
+    },
+    {
+      "kana": "カーテン",
+      "romaji": "kaaten",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "curtain",
+        "id": "tirai, gorden"
+      }
+    },
+    {
+      "kana": "きんじょ",
+      "kanji": "近所",
+      "romaji": "kinjo",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "neighbourhood",
+        "id": "lingkungan sekitar, tetangga"
+      }
+    },
+    {
+      "kana": "ねむる",
+      "kanji": "眠る",
+      "romaji": "nemuru",
+      "partOfSpeech": "verb",
+      "meaning": {
+        "en": "to sleep",
+        "id": "tidur"
+      }
+    },
+    {
+      "kana": "ゆ",
+      "kanji": "湯",
+      "romaji": "yu",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "hot water",
+        "id": "air panas"
+      }
+    },
+    {
+      "kana": "せいかつ",
+      "kanji": "生活",
+      "romaji": "seikatsu",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "life, living",
+        "id": "kehidupan"
+      }
+    },
+    {
+      "kana": "たな",
+      "kanji": "棚",
+      "romaji": "tana",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "shelf",
+        "id": "rak"
+      }
+    }
+  ]
+}

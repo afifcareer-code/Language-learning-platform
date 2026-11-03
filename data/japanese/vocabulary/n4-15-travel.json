@@ -1,0 +1,235 @@
+{
+  "source": "N4 · On the move: words from the JLPT N4 list by J. Waller (tanos.co.uk, CC BY) as compiled in open-anki-jlpt-decks (MIT). Meanings written for this project.",
+  "level": "n4",
+  "items": [
+    {
+      "kana": "く",
+      "kanji": "区",
+      "romaji": "ku",
+      "affix": "suffix",
+      "partOfSpeech": "suffix",
+      "meaning": {
+        "en": "ward, district (of a city)",
+        "id": "distrik, kecamatan (kota)"
+      }
+    },
+    {
+      "kana": "ガソリン",
+      "romaji": "gasorin",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "petrol, gasoline",
+        "id": "bensin"
+      }
+    },
+    {
+      "kana": "とこや",
+      "kanji": "床屋",
+      "romaji": "tokoya",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "barber's shop",
+        "id": "tempat pangkas rambut"
+      }
+    },
+    {
+      "kana": "オートバイ",
+      "romaji": "ootobai",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "motorcycle",
+        "id": "sepeda motor"
+      }
+    },
+    {
+      "kana": "うりば",
+      "kanji": "売り場",
+      "romaji": "uriba",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "sales counter, department (in a shop)",
+        "id": "tempat penjualan, bagian (di toko)"
+      }
+    },
+    {
+      "kana": "おくじょう",
+      "kanji": "屋上",
+      "romaji": "okujou",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "rooftop",
+        "id": "atap gedung"
+      }
+    },
+    {
+      "kana": "とおる",
+      "kanji": "通る",
+      "romaji": "tooru",
+      "partOfSpeech": "verb",
+      "meaning": {
+        "en": "to pass, to go through",
+        "id": "lewat, melewati"
+      }
+    },
+    {
+      "kana": "エスカレーター",
+      "romaji": "esukareetaa",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "escalator",
+        "id": "eskalator"
+      }
+    },
+    {
+      "kana": "むかえる",
+      "kanji": "迎える",
+      "romaji": "mukaeru",
+      "partOfSpeech": "verb",
+      "meaning": {
+        "en": "to go to meet, to welcome",
+        "id": "menjemput, menyambut"
+      }
+    },
+    {
+      "kana": "よる",
+      "kanji": "寄る",
+      "romaji": "yoru",
+      "homonym": 2,
+      "partOfSpeech": "verb",
+      "meaning": {
+        "en": "to drop in",
+        "id": "mampir"
+      }
+    },
+    {
+      "kana": "ビル",
+      "romaji": "biru",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "building",
+        "id": "gedung"
+      }
+    },
+    {
+      "kana": "さか",
+      "kanji": "坂",
+      "romaji": "saka",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "slope",
+        "id": "tanjakan, lereng"
+      }
+    },
+    {
+      "kana": "ひこうじょう",
+      "kanji": "飛行場",
+      "romaji": "hikoujou",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "airfield, airport",
+        "id": "lapangan terbang"
+      }
+    },
+    {
+      "kana": "とどける",
+      "kanji": "届ける",
+      "romaji": "todokeru",
+      "partOfSpeech": "verb",
+      "meaning": {
+        "en": "to deliver",
+        "id": "mengantarkan"
+      }
+    },
+    {
+      "kana": "りょかん",
+      "kanji": "旅館",
+      "romaji": "ryokan",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "Japanese inn",
+        "id": "penginapan gaya Jepang"
+      }
+    },
+    {
+      "kana": "のりもの",
+      "kanji": "乗り物",
+      "romaji": "norimono",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "vehicle",
+        "id": "kendaraan"
+      }
+    },
+    {
+      "kana": "かよう",
+      "kanji": "通う",
+      "romaji": "kayou",
+      "partOfSpeech": "verb",
+      "meaning": {
+        "en": "to commute, to attend regularly",
+        "id": "pulang-pergi, rutin datang ke"
+      }
+    },
+    {
+      "kana": "つれる",
+      "kanji": "連れる",
+      "romaji": "tsureru",
+      "partOfSpeech": "verb",
+      "meaning": {
+        "en": "to take (someone) along",
+        "id": "membawa (seseorang), mengajak"
+      }
+    },
+    {
+      "kana": "すすむ",
+      "kanji": "進む",
+      "romaji": "susumu",
+      "partOfSpeech": "verb",
+      "meaning": {
+        "en": "to go forward, to advance",
+        "id": "maju"
+      }
+    },
+    {
+      "kana": "とまる",
+      "kanji": "泊まる",
+      "romaji": "tomaru",
+      "homonym": 2,
+      "partOfSpeech": "verb",
+      "meaning": {
+        "en": "to stay (overnight)",
+        "id": "menginap"
+      }
+    },
+    {
+      "kana": "こうつう",
+      "kanji": "交通",
+      "romaji": "koutsuu",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "traffic, transport",
+        "id": "lalu lintas, transportasi"
+      }
+    },
+    {
+      "kana": "きゅうこう",
+      "kanji": "急行",
+      "romaji": "kyuukou",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "express (train)",
+        "id": "kereta ekspres"
+      }
+    },
+    {
+      "kana": "くうこう",
+      "kanji": "空港",
+      "romaji": "kuukou",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "airport",
+        "id": "bandara"
+      }
+    }
+  ]
+}

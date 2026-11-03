@@ -1,0 +1,74 @@
+{
+  "source": "Original grammar explanations for N4 · At the hospital, written for this project.",
+  "level": "n4",
+  "items": [
+    {
+      "slug": "n4-hazu",
+      "pattern": "plain form + はずです",
+      "meaning": {
+        "en": "should be…, is expected to…",
+        "id": "seharusnya…"
+      },
+      "explanation": {
+        "en": "はず is a confident expectation based on facts: かれは もう ついた はずです. はずが ない means 'there's no way that…'.",
+        "id": "はず adalah perkiraan yang yakin berdasarkan fakta: かれは もう ついた はずです. はずが ない berarti 'tidak mungkin…'."
+      },
+      "examples": [
+        {
+          "ja": "でんしゃは もう ついた はずです。",
+          "translation": {
+            "en": "The train should have arrived by now.",
+            "id": "Keretanya seharusnya sudah tiba."
+          }
+        },
+        {
+          "ja": "かのじょは きょう やすみの はずです。",
+          "translation": {
+            "en": "She should be off today.",
+            "id": "Hari ini seharusnya dia libur."
+          }
+        }
+      ],
+      "commonErrors": [
+        {
+          "en": "Using はず for your own decision: for what you intend, use つもり.",
+          "id": "Memakai はず untuk keputusan sendiri: untuk niat, pakai つもり."
+        }
+      ]
+    },
+    {
+      "slug": "n4-kamoshirenai",
+      "pattern": "plain form + かもしれません",
+      "meaning": {
+        "en": "might…, perhaps…",
+        "id": "mungkin…"
+      },
+      "explanation": {
+        "en": "かもしれない says something is possible but not certain (about 50%). Nouns and な-adjectives join directly: あめかもしれません.",
+        "id": "かもしれない menyatakan sesuatu mungkin terjadi tetapi tidak pasti (sekitar 50%). Kata benda dan kata sifat な langsung disambung: あめかもしれません."
+      },
+      "examples": [
+        {
+          "ja": "あしたは ゆきが ふるかもしれません。",
+          "translation": {
+            "en": "It might snow tomorrow.",
+            "id": "Besok mungkin turun salju."
+          }
+        },
+        {
+          "ja": "かれは びょうきかもしれません。",
+          "translation": {
+            "en": "He might be ill.",
+            "id": "Dia mungkin sakit."
+          }
+        }
+      ],
+      "commonErrors": [
+        {
+          "en": "Adding だ before かもしれない: びょうきだかもしれない is wrong; say びょうきかもしれない.",
+          "id": "Menambahkan だ sebelum かもしれない: びょうきだかもしれない salah; katakan びょうきかもしれない."
+        }
+      ]
+    }
+  ]
+}

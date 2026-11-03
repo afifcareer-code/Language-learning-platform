@@ -1,0 +1,66 @@
+{
+  "source": "Original practice sentences for N4 · Doing favours.",
+  "level": "n4",
+  "items": [
+    {
+      "slug": "n4-te-ageru-1",
+      "text": "いもうとに しゅくだいを おしえて あげました。",
+      "tokens": ["いもうと", "に", "しゅくだい", "を", "おしえて", "あげました"],
+      "grammar": "n4-te-ageru",
+      "translation": {
+        "en": "I helped my younger sister with her homework.",
+        "id": "Saya mengajari adik perempuan saya mengerjakan PR."
+      }
+    },
+    {
+      "slug": "n4-te-ageru-2",
+      "text": "おばあさんの にもつを もって あげました。",
+      "tokens": ["おばあさん", "の", "にもつ", "を", "もって", "あげました"],
+      "grammar": "n4-te-ageru",
+      "translation": {
+        "en": "I carried an old lady's bags for her.",
+        "id": "Saya membawakan barang seorang nenek."
+      }
+    },
+    {
+      "slug": "n4-te-kudasaru-1",
+      "text": "せんせいが じしょを かして くださいました。",
+      "tokens": ["せんせい", "が", "じしょ", "を", "かして", "くださいました"],
+      "grammar": "n4-te-kudasaru",
+      "translation": {
+        "en": "The teacher kindly lent me a dictionary.",
+        "id": "Guru berkenan meminjamkan kamus kepada saya."
+      }
+    },
+    {
+      "slug": "n4-te-kudasaru-2",
+      "text": "ぶちょうに しりょうを みて いただきました。",
+      "tokens": ["ぶちょう", "に", "しりょう", "を", "みて", "いただきました"],
+      "grammar": "n4-te-kudasaru",
+      "translation": {
+        "en": "I had the manager look over the documents.",
+        "id": "Saya mendapat bantuan kepala bagian untuk memeriksa dokumennya."
+      }
+    },
+    {
+      "slug": "n4-te-kuremasenka-1",
+      "text": "ちょっと てつだって くれませんか。",
+      "tokens": ["ちょっと", "てつだって", "くれません", "か"],
+      "grammar": "n4-te-kuremasenka",
+      "translation": {
+        "en": "Could you help me a little?",
+        "id": "Maukah kamu membantu sebentar?"
+      }
+    },
+    {
+      "slug": "n4-te-kuremasenka-2",
+      "text": "しゃしんを とって くださいませんか。",
+      "tokens": ["しゃしん", "を", "とって", "くださいません", "か"],
+      "grammar": "n4-te-kuremasenka",
+      "translation": {
+        "en": "Would you mind taking a photo for us?",
+        "id": "Maukah Anda memotret kami?"
+      }
+    }
+  ]
+}

@@ -1,0 +1,208 @@
+{
+  "source": "N4 · Amounts and money: words from the JLPT N4 list by J. Waller (tanos.co.uk, CC BY) as compiled in open-anki-jlpt-decks (MIT). Meanings written for this project.",
+  "level": "n4",
+  "items": [
+    {
+      "kana": "しなもの",
+      "kanji": "品物",
+      "romaji": "shinamono",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "goods, articles",
+        "id": "barang"
+      }
+    },
+    {
+      "kana": "たりる",
+      "kanji": "足りる",
+      "romaji": "tariru",
+      "partOfSpeech": "verb",
+      "meaning": {
+        "en": "to be enough",
+        "id": "cukup"
+      }
+    },
+    {
+      "kana": "ばい",
+      "kanji": "倍",
+      "romaji": "bai",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "double, times",
+        "id": "dua kali lipat, kali lipat"
+      }
+    },
+    {
+      "kana": "せん",
+      "kanji": "線",
+      "romaji": "sen",
+      "homonym": 2,
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "line",
+        "id": "garis"
+      }
+    },
+    {
+      "kana": "いか",
+      "kanji": "以下",
+      "romaji": "ika",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "or less, below",
+        "id": "kurang dari, di bawah"
+      }
+    },
+    {
+      "kana": "いない",
+      "kanji": "以内",
+      "romaji": "inai",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "within, not more than",
+        "id": "dalam (batas), tidak lebih dari"
+      }
+    },
+    {
+      "kana": "おつり",
+      "romaji": "otsuri",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "change (money)",
+        "id": "uang kembalian"
+      }
+    },
+    {
+      "kana": "たす",
+      "kanji": "足す",
+      "romaji": "tasu",
+      "partOfSpeech": "verb",
+      "meaning": {
+        "en": "to add",
+        "id": "menambahkan"
+      }
+    },
+    {
+      "kana": "レジ",
+      "romaji": "reji",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "cash register, till",
+        "id": "kasir, mesin kasir"
+      }
+    },
+    {
+      "kana": "いがい",
+      "kanji": "以外",
+      "romaji": "igai",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "except, other than",
+        "id": "selain"
+      }
+    },
+    {
+      "kana": "じゅうぶん",
+      "kanji": "十分",
+      "romaji": "juubun",
+      "partOfSpeech": "adjective",
+      "meaning": {
+        "en": "enough",
+        "id": "cukup"
+      }
+    },
+    {
+      "kana": "いじょう",
+      "kanji": "以上",
+      "romaji": "ijou",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "or more; that is all",
+        "id": "lebih dari; sekian"
+      }
+    },
+    {
+      "kana": "わすれもの",
+      "kanji": "忘れ物",
+      "romaji": "wasuremono",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "something left behind",
+        "id": "barang yang tertinggal"
+      }
+    },
+    {
+      "kana": "わりあい",
+      "kanji": "割合",
+      "romaji": "wariai",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "rate, proportion",
+        "id": "persentase, perbandingan"
+      }
+    },
+    {
+      "kana": "おく",
+      "kanji": "億",
+      "romaji": "oku",
+      "homonym": 2,
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "a hundred million",
+        "id": "seratus juta"
+      }
+    },
+    {
+      "kana": "はらう",
+      "kanji": "払う",
+      "romaji": "harau",
+      "partOfSpeech": "verb",
+      "meaning": {
+        "en": "to pay",
+        "id": "membayar"
+      }
+    },
+    {
+      "kana": "ほど",
+      "kanji": "程",
+      "romaji": "hodo",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "degree, extent",
+        "id": "tingkat, sejauh"
+      }
+    },
+    {
+      "kana": "かわり",
+      "kanji": "代わり",
+      "romaji": "kawari",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "substitute",
+        "id": "pengganti"
+      }
+    },
+    {
+      "kana": "りょうほう",
+      "kanji": "両方",
+      "romaji": "ryouhou",
+      "partOfSpeech": "noun",
+      "meaning": {
+        "en": "both",
+        "id": "keduanya"
+      }
+    },
+    {
+      "kana": "め",
+      "kanji": "目",
+      "romaji": "me",
+      "affix": "suffix",
+      "homonym": 2,
+      "partOfSpeech": "suffix",
+      "meaning": {
+        "en": "-th (ordinal suffix)",
+        "id": "ke- (urutan, akhiran)"
+      }
+    }
+  ]
+}

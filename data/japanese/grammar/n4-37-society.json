@@ -1,0 +1,74 @@
+{
+  "source": "Original grammar explanations for N4 · Society and the news, written for this project.",
+  "level": "n4",
+  "items": [
+    {
+      "slug": "n4-causative-passive",
+      "pattern": "V(causative passive): たべさせられる, いかされる",
+      "meaning": {
+        "en": "be made to V (against one's will)",
+        "id": "terpaksa V (disuruh)"
+      },
+      "explanation": {
+        "en": "The causative passive says someone made you do something you did not want to: ぶちょうに おさけを のまされました. Ru-verbs: 〜させられる. U-verbs: 〜される or 〜せられる (いく → いかされる). する → させられる.",
+        "id": "Kausatif pasif menyatakan seseorang memaksa Anda melakukan sesuatu yang tidak Anda inginkan: ぶちょうに おさけを のまされました. Kata kerja ru: 〜させられる. Kata kerja u: 〜される atau 〜せられる (いく → いかされる). する → させられる."
+      },
+      "examples": [
+        {
+          "ja": "こどもの とき、ははに やさいを たべさせられました。",
+          "translation": {
+            "en": "As a child I was made to eat vegetables by my mother.",
+            "id": "Waktu kecil, saya dipaksa ibu makan sayur."
+          }
+        },
+        {
+          "ja": "ぶちょうに ざんぎょうを させられました。",
+          "translation": {
+            "en": "I was made to work overtime by the manager.",
+            "id": "Saya terpaksa lembur karena disuruh kepala bagian."
+          }
+        }
+      ],
+      "commonErrors": [
+        {
+          "en": "Confusing it with the causative: ざんぎょうを させました means the manager made someone else do it.",
+          "id": "Tertukar dengan kausatif: ざんぎょうを させました berarti kepala bagian menyuruh orang lain."
+        }
+      ]
+    },
+    {
+      "slug": "n4-rareru-honorific",
+      "pattern": "V(passive form) as respect: かかれる, こられる",
+      "meaning": {
+        "en": "(respectful) a superior does V",
+        "id": "(hormat) atasan melakukan V"
+      },
+      "explanation": {
+        "en": "The passive form can also show respect for the person doing the action: しゃちょうは なんじに こられますか. It is lighter than お〜に なる.",
+        "id": "Bentuk pasif juga bisa menunjukkan rasa hormat kepada pelaku: しゃちょうは なんじに こられますか. Lebih ringan daripada お〜に なる."
+      },
+      "examples": [
+        {
+          "ja": "しゃちょうは なんじに こられますか。",
+          "translation": {
+            "en": "What time will the president be coming?",
+            "id": "Bapak direktur akan datang jam berapa?"
+          }
+        },
+        {
+          "ja": "せんせいは この ほんを かかれました。",
+          "translation": {
+            "en": "The professor wrote this book.",
+            "id": "Profesor menulis buku ini."
+          }
+        }
+      ],
+      "commonErrors": [
+        {
+          "en": "Reading every 〜られる as passive: with a respected subject and no に, it is usually respect.",
+          "id": "Membaca setiap 〜られる sebagai pasif: dengan subjek yang dihormati dan tanpa に, biasanya itu bentuk hormat."
+        }
+      ]
+    }
+  ]
+}

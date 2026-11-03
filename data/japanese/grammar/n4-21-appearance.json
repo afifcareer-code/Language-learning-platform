@@ -1,0 +1,74 @@
+{
+  "source": "Original grammar explanations for N4 · Clothes and appearance, written for this project.",
+  "level": "n4",
+  "items": [
+    {
+      "slug": "n4-you-na",
+      "pattern": "N の ような N / N の ように V",
+      "meaning": {
+        "en": "like N, such as N",
+        "id": "seperti N"
+      },
+      "explanation": {
+        "en": "ような (before a noun) and ように (before a verb or adjective) compare or give an example: ゆめの ような はなし, こどもの ように わらう.",
+        "id": "ような (sebelum kata benda) dan ように (sebelum kata kerja atau kata sifat) membandingkan atau memberi contoh: ゆめの ような はなし, こどもの ように わらう."
+      },
+      "examples": [
+        {
+          "ja": "それは ゆめの ような はなしです。",
+          "translation": {
+            "en": "That's like a dream.",
+            "id": "Itu cerita seperti mimpi."
+          }
+        },
+        {
+          "ja": "かれは こどもの ように わらいました。",
+          "translation": {
+            "en": "He laughed like a child.",
+            "id": "Dia tertawa seperti anak kecil."
+          }
+        }
+      ],
+      "commonErrors": [
+        {
+          "en": "Using ような before a verb: こどもの ような わらいました is wrong; before a verb use ように.",
+          "id": "Memakai ような sebelum kata kerja: こどもの ような わらいました salah; sebelum kata kerja pakai ように."
+        }
+      ]
+    },
+    {
+      "slug": "n4-to-onaji",
+      "pattern": "N1 は N2 と おなじ / ちがう",
+      "meaning": {
+        "en": "N1 is the same as / different from N2",
+        "id": "N1 sama dengan / berbeda dari N2"
+      },
+      "explanation": {
+        "en": "と marks what you compare with: わたしの かばんは あなたのと おなじです. おなじ goes directly before a noun, without な: おなじ ふく.",
+        "id": "と menandai pembanding: わたしの かばんは あなたのと おなじです. おなじ langsung diletakkan sebelum kata benda, tanpa な: おなじ ふく."
+      },
+      "examples": [
+        {
+          "ja": "わたしの かばんは あなたのと おなじです。",
+          "translation": {
+            "en": "My bag is the same as yours.",
+            "id": "Tas saya sama dengan tas Anda."
+          }
+        },
+        {
+          "ja": "にほんの しゅうかんは インドネシアと ちがいます。",
+          "translation": {
+            "en": "Japanese customs are different from Indonesian ones.",
+            "id": "Kebiasaan di Jepang berbeda dengan di Indonesia."
+          }
+        }
+      ],
+      "commonErrors": [
+        {
+          "en": "Saying おなじな ふく: おなじ takes no な before a noun.",
+          "id": "Mengatakan おなじな ふく: おなじ tidak memakai な sebelum kata benda."
+        }
+      ]
+    }
+  ]
+}

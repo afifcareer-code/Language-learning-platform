@@ -1,0 +1,66 @@
+{
+  "source": "Original practice sentences for N4 · Orders and signs.",
+  "level": "n4",
+  "items": [
+    {
+      "slug": "n4-nasai-1",
+      "text": "はやく ねなさい。",
+      "tokens": ["はやく", "ねなさい"],
+      "grammar": "n4-nasai",
+      "translation": {
+        "en": "Go to bed now!",
+        "id": "Cepat tidur!"
+      }
+    },
+    {
+      "slug": "n4-nasai-2",
+      "text": "ただしい こたえを えらびなさい。",
+      "tokens": ["ただしい", "こたえ", "を", "えらびなさい"],
+      "grammar": "n4-nasai",
+      "translation": {
+        "en": "Choose the correct answer.",
+        "id": "Pilihlah jawaban yang benar."
+      }
+    },
+    {
+      "slug": "n4-imperative-1",
+      "text": "みんな、がんばれ。",
+      "tokens": ["みんな", "がんばれ"],
+      "grammar": "n4-imperative",
+      "translation": {
+        "en": "Go for it, everyone!",
+        "id": "Ayo semuanya, semangat!"
+      }
+    },
+    {
+      "slug": "n4-imperative-2",
+      "text": "はやく にげろ。",
+      "tokens": ["はやく", "にげろ"],
+      "grammar": "n4-imperative",
+      "translation": {
+        "en": "Run, quickly!",
+        "id": "Cepat lari!"
+      }
+    },
+    {
+      "slug": "n4-na-prohibitive-1",
+      "text": "あぶない。 さわるな。",
+      "tokens": ["あぶない", "さわるな"],
+      "grammar": "n4-na-prohibitive",
+      "translation": {
+        "en": "Danger! Don't touch it!",
+        "id": "Bahaya! Jangan disentuh!"
+      }
+    },
+    {
+      "slug": "n4-na-prohibitive-2",
+      "text": "ここに くるまを とめるな。",
+      "tokens": ["ここ", "に", "くるま", "を", "とめるな"],
+      "grammar": "n4-na-prohibitive",
+      "translation": {
+        "en": "Don't park here.",
+        "id": "Jangan parkir di sini."
+      }
+    }
+  ]
+}

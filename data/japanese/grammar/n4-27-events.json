@@ -1,0 +1,74 @@
+{
+  "source": "Original grammar explanations for N4 · Events and festivals, written for this project.",
+  "level": "n4",
+  "items": [
+    {
+      "slug": "n4-shi",
+      "pattern": "plain form + し、…し",
+      "meaning": {
+        "en": "and also…, what's more… (giving reasons)",
+        "id": "lagi pula…, dan juga… (memberi alasan)"
+      },
+      "explanation": {
+        "en": "し lists several reasons or points, often leading to a conclusion: この みせは やすいし、おいしいし、よく きます.",
+        "id": "し menyebutkan beberapa alasan atau hal, sering menuju kesimpulan: この みせは やすいし、おいしいし、よく きます."
+      },
+      "examples": [
+        {
+          "ja": "この みせは やすいし、おいしいし、よく きます。",
+          "translation": {
+            "en": "This place is cheap and the food is good, so I come here often.",
+            "id": "Toko ini murah, enak lagi, jadi saya sering ke sini."
+          }
+        },
+        {
+          "ja": "きょうは あめだし、さむいし、でかけたくないです。",
+          "translation": {
+            "en": "It's raining and cold today, so I don't want to go out.",
+            "id": "Hari ini hujan, dingin pula, jadi saya malas keluar."
+          }
+        }
+      ],
+      "commonErrors": [
+        {
+          "en": "Leaving out だ after a noun: あめし is wrong; say あめだし.",
+          "id": "Melupakan だ setelah kata benda: あめし salah; katakan あめだし."
+        }
+      ]
+    },
+    {
+      "slug": "n4-no-wa",
+      "pattern": "V(dictionary) のは / のが / のを",
+      "meaning": {
+        "en": "V-ing (as a noun)",
+        "id": "kegiatan V (sebagai kata benda)"
+      },
+      "explanation": {
+        "en": "の turns a verb phrase into a noun that can take は, が or を: にほんごを はなすのは たのしいです, かぎを かけるのを わすれました.",
+        "id": "の mengubah frasa kata kerja menjadi kata benda yang bisa diikuti は, が, atau を: にほんごを はなすのは たのしいです, かぎを かけるのを わすれました."
+      },
+      "examples": [
+        {
+          "ja": "にほんごで はなすのは たのしいです。",
+          "translation": {
+            "en": "Speaking in Japanese is fun.",
+            "id": "Berbicara dalam bahasa Jepang itu menyenangkan."
+          }
+        },
+        {
+          "ja": "かぎを かけるのを わすれました。",
+          "translation": {
+            "en": "I forgot to lock the door.",
+            "id": "Saya lupa mengunci pintu."
+          }
+        }
+      ],
+      "commonErrors": [
+        {
+          "en": "Using the ます form before の: はなしますのは is wrong; use the dictionary form.",
+          "id": "Memakai bentuk ます sebelum の: はなしますのは salah; pakai bentuk kamus."
+        }
+      ]
+    }
+  ]
+}
