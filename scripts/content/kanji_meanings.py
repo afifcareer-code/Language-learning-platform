@@ -46,7 +46,7 @@ MEANINGS = {
     "別": ("separate, other", "terpisah, lain"), "物": ("thing", "benda"), "使": ("use", "memakai"), "品": ("goods, item", "barang"),
     "計": ("measure, plan", "mengukur, rencana"), "死": ("death, die", "mati"), "特": ("special", "khusus"),
     "私": ("I, private", "saya, pribadi"), "始": ("begin", "mulai"), "朝": ("morning", "pagi"), "運": ("carry, luck", "mengangkut, nasib"),
-    "終": ("end", "selesai"), "台": ("stand, counter for machines", "meja, satuan mesin"), "広": ("wide", "luas"),
+    "終": ("end", "selesai"), "台": ("stand, counter for machines", "dudukan, satuan mesin"), "広": ("wide", "luas"),
     "住": ("live, reside", "tinggal"), "真": ("true", "benar, sejati"), "有": ("have, exist", "punya, ada"), "口": ("mouth", "mulut"),
     "少": ("few, little", "sedikit"), "町": ("town", "kota kecil"), "料": ("fee, material", "biaya, bahan"),
     "工": ("craft, construction", "kerajinan, konstruksi"), "建": ("build", "membangun"), "空": ("sky, empty", "langit, kosong"),
