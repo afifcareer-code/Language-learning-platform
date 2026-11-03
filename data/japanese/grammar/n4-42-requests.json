@@ -1,0 +1,108 @@
+{
+  "source": "Original grammar explanations for N4 · Requests, apologies and thanks, written for this project.",
+  "level": "n4",
+  "items": [
+    {
+      "slug": "n4-you-ni-iu",
+      "pattern": "V(dictionary / ない) ように いいます / たのみます",
+      "meaning": {
+        "en": "tell / ask someone to (not) V",
+        "id": "menyuruh / meminta seseorang untuk (tidak) V"
+      },
+      "explanation": {
+        "en": "〜ように いう reports an instruction or a request: せんせいは しずかに するように いいました, かれに おくれないように たのみました.",
+        "id": "〜ように いう melaporkan perintah atau permintaan: せんせいは しずかに するように いいました, かれに おくれないように たのみました."
+      },
+      "examples": [
+        {
+          "ja": "医者《いしゃ》に たばこを すわないように 言《い》われました。",
+          "translation": {
+            "en": "The doctor told me not to smoke.",
+            "id": "Dokter menyuruh saya tidak merokok."
+          }
+        },
+        {
+          "ja": "ともだちに はやく 来《く》るように たのみました。",
+          "translation": {
+            "en": "I asked my friend to come early.",
+            "id": "Saya meminta teman supaya datang lebih awal."
+          }
+        }
+      ],
+      "commonErrors": [
+        {
+          "en": "Quoting the command directly with と: すわないでと いわれました is casual; ように is the standard way to report it.",
+          "id": "Mengutip perintah langsung dengan と: すわないでと いわれました terdengar santai; ように adalah cara baku untuk melaporkannya."
+        }
+      ]
+    },
+    {
+      "slug": "n4-o-kudasai",
+      "pattern": "お V(ます stem) ください / ご N ください",
+      "meaning": {
+        "en": "please V (very polite)",
+        "id": "silakan V (sangat sopan)"
+      },
+      "explanation": {
+        "en": "お + ます stem + ください is a very polite request heard in shops and stations: おまちください, おはいりください, ごちゅういください.",
+        "id": "お + bentuk ます tanpa ます + ください adalah permintaan sangat sopan yang terdengar di toko dan stasiun: おまちください, おはいりください, ごちゅういください."
+      },
+      "examples": [
+        {
+          "ja": "しょうしょう おまちください。",
+          "translation": {
+            "en": "Please wait a moment.",
+            "id": "Mohon tunggu sebentar."
+          }
+        },
+        {
+          "ja": "どうぞ おはいりください。",
+          "translation": {
+            "en": "Please come in.",
+            "id": "Silakan masuk."
+          }
+        }
+      ],
+      "commonErrors": [
+        {
+          "en": "Using it for something done for you: it asks the listener to act, not to do something for you.",
+          "id": "Memakainya untuk sesuatu yang dilakukan bagi Anda: pola ini meminta lawan bicara bertindak."
+        }
+      ]
+    },
+    {
+      "slug": "n4-te-sumimasen",
+      "pattern": "V(て) すみません / V(て) くれて ありがとう",
+      "meaning": {
+        "en": "sorry for V-ing / thank you for V-ing",
+        "id": "maaf sudah V / terima kasih sudah V"
+      },
+      "explanation": {
+        "en": "The て form gives the reason for an apology or thanks: おそく なって すみません, てつだって くれて ありがとう. To a superior: 〜て くださって ありがとうございます.",
+        "id": "Bentuk て menyatakan alasan permintaan maaf atau terima kasih: おそく なって すみません, てつだって くれて ありがとう. Kepada atasan: 〜て くださって ありがとうございます."
+      },
+      "examples": [
+        {
+          "ja": "おそく なって すみません。",
+          "translation": {
+            "en": "Sorry I'm late.",
+            "id": "Maaf saya terlambat."
+          }
+        },
+        {
+          "ja": "きて くれて ありがとう。",
+          "translation": {
+            "en": "Thanks for coming.",
+            "id": "Terima kasih sudah datang."
+          }
+        }
+      ],
+      "commonErrors": [
+        {
+          "en": "Using the past: おそく なった すみません is wrong; use the て form.",
+          "id": "Memakai bentuk lampau: おそく なった すみません salah; pakai bentuk て."
+        }
+      ]
+    }
+  ]
+}

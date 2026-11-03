@@ -1,0 +1,80 @@
+{
+  "source": "Original practice sentences for N4 · Opinions in conversation.",
+  "level": "n4",
+  "items": [
+    {
+      "slug": "n4-to-omou-opinion-1",
+      "text": "この 映画《えいが》は おもしろいと 思《おも》います。",
+      "tokens": ["この", "映画《えいが》", "は", "おもしろい", "と", "思《おも》います"],
+      "grammar": "n4-to-omou-opinion",
+      "translation": {
+        "en": "I think this film is interesting.",
+        "id": "Menurut saya film ini menarik."
+      }
+    },
+    {
+      "slug": "n4-to-omou-opinion-2",
+      "text": "かれは 来《こ》ないと 思《おも》います。",
+      "tokens": ["かれ", "は", "来《こ》ない", "と", "思《おも》います"],
+      "grammar": "n4-to-omou-opinion",
+      "translation": {
+        "en": "I don't think he'll come.",
+        "id": "Saya kira dia tidak akan datang."
+      }
+    },
+    {
+      "slug": "n4-kedo-1",
+      "text": "高《たか》いけど、買《か》います。",
+      "tokens": ["高《たか》い", "けど", "買《か》います"],
+      "grammar": "n4-kedo",
+      "translation": {
+        "en": "It's expensive, but I'll buy it.",
+        "id": "Mahal, tapi saya beli."
+      }
+    },
+    {
+      "slug": "n4-kedo-2",
+      "text": "すみません、道《みち》が わからないんですけど。",
+      "tokens": ["すみません", "道《みち》", "が", "わからない", "んです", "けど"],
+      "grammar": "n4-kedo",
+      "translation": {
+        "en": "Excuse me, I don't know the way…",
+        "id": "Permisi, saya tidak tahu jalannya…"
+      }
+    },
+    {
+      "slug": "n4-to-ka-1",
+      "text": "休《やす》みの ひは 映画《えいが》を 見《み》るとか、買《か》い物《もの》を するとか します。",
+      "tokens": [
+        "休《やす》み",
+        "の",
+        "ひ",
+        "は",
+        "映画《えいが》",
+        "を",
+        "見《み》る",
+        "とか",
+        "買《か》い物《もの》",
+        "を",
+        "する",
+        "とか",
+        "します"
+      ],
+      "grammar": "n4-to-ka",
+      "translation": {
+        "en": "On days off I do things like watching films and shopping.",
+        "id": "Di hari libur saya menonton film, berbelanja, dan semacamnya."
+      }
+    },
+    {
+      "slug": "n4-to-ka-2",
+      "text": "りんごとか みかんとか、くだものが すきです。",
+      "tokens": ["りんご", "とか", "みかん", "とか", "くだもの", "が", "すきです"],
+      "grammar": "n4-to-ka",
+      "translation": {
+        "en": "I like fruit, like apples and mandarins.",
+        "id": "Saya suka buah, seperti apel dan jeruk."
+      }
+    }
+  ]
+}

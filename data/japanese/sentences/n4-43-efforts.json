@@ -1,0 +1,66 @@
+{
+  "source": "Original practice sentences for N4 · Efforts and habits.",
+  "level": "n4",
+  "items": [
+    {
+      "slug": "n4-you-to-suru-1",
+      "text": "ねようと した とき、電話《でんわ》が なりました。",
+      "tokens": ["ねよう", "と", "した", "とき", "電話《でんわ》", "が", "なりました"],
+      "grammar": "n4-you-to-suru",
+      "translation": {
+        "en": "Just as I was about to go to sleep, the phone rang.",
+        "id": "Ketika saya hendak tidur, telepon berbunyi."
+      }
+    },
+    {
+      "slug": "n4-you-to-suru-2",
+      "text": "毎日《まいにち》 はやく 起《お》きようと して います。",
+      "tokens": ["毎日《まいにち》", "はやく", "起《お》きよう", "と", "して", "います"],
+      "grammar": "n4-you-to-suru",
+      "translation": {
+        "en": "I'm trying to get up early every day.",
+        "id": "Saya berusaha bangun pagi setiap hari."
+      }
+    },
+    {
+      "slug": "n4-te-bakari-1",
+      "text": "弟《おとうと》は ゲームを して ばかり います。",
+      "tokens": ["弟《おとうと》", "は", "ゲーム", "を", "して", "ばかり", "います"],
+      "grammar": "n4-te-bakari",
+      "translation": {
+        "en": "My younger brother does nothing but play games.",
+        "id": "Adik laki-laki saya terus-terusan main game."
+      }
+    },
+    {
+      "slug": "n4-te-bakari-2",
+      "text": "あまい ものばかり たべないで ください。",
+      "tokens": ["あまい", "もの", "ばかり", "たべないで", "ください"],
+      "grammar": "n4-te-bakari",
+      "translation": {
+        "en": "Don't eat nothing but sweet things.",
+        "id": "Jangan makan yang manis-manis saja."
+      }
+    },
+    {
+      "slug": "n4-ba-hodo-1",
+      "text": "れんしゅうすれば するほど 上手《じょうず》に なります。",
+      "tokens": ["れんしゅうすれば", "するほど", "上手《じょうず》に", "なります"],
+      "grammar": "n4-ba-hodo",
+      "translation": {
+        "en": "The more you practise, the better you get.",
+        "id": "Makin sering berlatih, makin mahir."
+      }
+    },
+    {
+      "slug": "n4-ba-hodo-2",
+      "text": "この ほんは 読《よ》めば よむほど おもしろいです。",
+      "tokens": ["この", "ほん", "は", "読《よ》めば", "よむほど", "おもしろいです"],
+      "grammar": "n4-ba-hodo",
+      "translation": {
+        "en": "The more I read this book, the more interesting it gets.",
+        "id": "Makin dibaca, buku ini makin menarik."
+      }
+    }
+  ]
+}

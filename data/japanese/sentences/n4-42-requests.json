@@ -1,0 +1,66 @@
+{
+  "source": "Original practice sentences for N4 · Requests, apologies and thanks.",
+  "level": "n4",
+  "items": [
+    {
+      "slug": "n4-you-ni-iu-1",
+      "text": "医者《いしゃ》に たばこを すわないように 言《い》われました。",
+      "tokens": ["医者《いしゃ》", "に", "たばこ", "を", "すわない", "ように", "言《い》われました"],
+      "grammar": "n4-you-ni-iu",
+      "translation": {
+        "en": "The doctor told me not to smoke.",
+        "id": "Dokter menyuruh saya tidak merokok."
+      }
+    },
+    {
+      "slug": "n4-you-ni-iu-2",
+      "text": "ともだちに はやく 来《く》るように たのみました。",
+      "tokens": ["ともだち", "に", "はやく", "来《く》る", "ように", "たのみました"],
+      "grammar": "n4-you-ni-iu",
+      "translation": {
+        "en": "I asked my friend to come early.",
+        "id": "Saya meminta teman supaya datang lebih awal."
+      }
+    },
+    {
+      "slug": "n4-o-kudasai-1",
+      "text": "しょうしょう おまちください。",
+      "tokens": ["しょうしょう", "おまちください"],
+      "grammar": "n4-o-kudasai",
+      "translation": {
+        "en": "Please wait a moment.",
+        "id": "Mohon tunggu sebentar."
+      }
+    },
+    {
+      "slug": "n4-o-kudasai-2",
+      "text": "どうぞ おはいりください。",
+      "tokens": ["どうぞ", "おはいりください"],
+      "grammar": "n4-o-kudasai",
+      "translation": {
+        "en": "Please come in.",
+        "id": "Silakan masuk."
+      }
+    },
+    {
+      "slug": "n4-te-sumimasen-1",
+      "text": "おそく なって すみません。",
+      "tokens": ["おそく", "なって", "すみません"],
+      "grammar": "n4-te-sumimasen",
+      "translation": {
+        "en": "Sorry I'm late.",
+        "id": "Maaf saya terlambat."
+      }
+    },
+    {
+      "slug": "n4-te-sumimasen-2",
+      "text": "きて くれて ありがとう。",
+      "tokens": ["きて", "くれて", "ありがとう"],
+      "grammar": "n4-te-sumimasen",
+      "translation": {
+        "en": "Thanks for coming.",
+        "id": "Terima kasih sudah datang."
+      }
+    }
+  ]
+}

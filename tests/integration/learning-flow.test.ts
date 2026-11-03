@@ -204,8 +204,8 @@ describe.each(TEST_DIALECTS)("learning flow on $dialect", ({ dialect, serverUrl 
     expect(id.levels[1]?.courses.map((c) => c.title)).toEqual(["Inti N5"]);
     expect(en.levels[2]?.courses.map((c) => c.title)).toEqual(["N4 Core"]);
     expect(en.levels.slice(3).every((l) => l.courses.length === 0)).toBe(true);
-    expect(en.lessons).toHaveLength(113);
-    expect(en.activities).toHaveLength(561);
+    expect(en.lessons).toHaveLength(119);
+    expect(en.activities).toHaveLength(579);
     expect(en.lessons[1]?.title).toBe("Hiragana: K row");
     expect(id.lessons[1]?.title).toBe("Hiragana: Baris K");
 
@@ -224,7 +224,7 @@ describe.each(TEST_DIALECTS)("learning flow on $dialect", ({ dialect, serverUrl 
     const overview = await getLearningOverview(db, learner, "en");
     expect(overview.nextActivity?.id).toBe("ja.activity.hiragana-vowels.recognition");
     expect(overview.recommendations).toEqual([expect.objectContaining({ kind: "activity" })]);
-    expect(overview.courseProgress).toMatchObject({ completedActivities: 0, totalActivities: 561 });
+    expect(overview.courseProgress).toMatchObject({ completedActivities: 0, totalActivities: 579 });
     expect(overview.overallMastery.ratio).toBe(0);
     expect(overview.readiness).toMatchObject({ ratio: 0, isReady: false });
   });

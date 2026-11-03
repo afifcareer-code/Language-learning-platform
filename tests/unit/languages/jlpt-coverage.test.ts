@@ -33,7 +33,7 @@ describe("N4 coverage", () => {
     const words = files("data/japanese/vocabulary", "n4-").flatMap((f) => f.items);
     const grammar = files("data/japanese/grammar", "n4-").flatMap((f) => f.items);
     expect(words.length).toBeGreaterThanOrEqual(700);
-    expect(grammar.length).toBeGreaterThanOrEqual(100);
+    expect(grammar.length).toBeGreaterThanOrEqual(120);
     const course = read("data/japanese/curriculum/courses/n4-core.json");
     const taught = new Set(course.lessons.flatMap((l: { items: string[] }) => l.items));
     for (const k of read("data/japanese/kanji/n4.json").items)
