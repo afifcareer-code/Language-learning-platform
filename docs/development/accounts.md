@@ -17,6 +17,15 @@ do not change.
   log out.
 - **Rate limit**: 10 attempts per 15 minutes per address (and email for log in), kept
   in memory per process. Behind several processes, add a limit at the proxy as well.
+- **Roles**: every account is a `learner` except admins. The first admin is created on start from
+  `ADMIN_EMAIL` + `ADMIN_PASSWORD` (at least 10 characters; the password is hashed and never logged).
+  If the account already exists it is made admin and keeps its own password. Remove `ADMIN_PASSWORD`
+  after the first start. Admins get **Settings → Backup and restore**; the backup endpoints answer
+  401 without a session and 403 for a learner, and are absent (404) in single mode.
+- **APP_SECRET**: when set, session tokens are stored as an HMAC keyed by it instead of a plain
+  SHA-256. Keep it stable; changing it signs everyone out. `APP_URL` starting with `https://`
+  marks cookies Secure even behind a proxy that does not send `x-forwarded-proto`.
+- **Backup**: see [docs/MIGRATION.md](../MIGRATION.md).
 - **Not included yet**: password reset, email verification, OAuth, deleting an account.
   Without email sending there is no way to reset a forgotten password except by an
   administrator updating the database.

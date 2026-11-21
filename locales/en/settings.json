@@ -15,5 +15,19 @@
     "details": "Full credits",
     "content": "Native example sentences and their translations come from Tatoeba contributors and are licensed CC BY 2.0 FR. Each sentence is credited to its authors when it is shown.",
     "contentLink": "About Tatoeba"
+  },
+  "backup": {
+    "title": "Backup and restore (admin)",
+    "description": "Download all accounts, progress and content as one file, or restore a backup on this server. Use it to move to another domain, server or database.",
+    "download": "Download backup (.tar.gz)",
+    "downloadNote": "Sign-in sessions are not included. Keep the file private: it contains every account.",
+    "importTitle": "Restore from a backup",
+    "importWarning": "This replaces ALL data on this server with the backup and signs everyone out. It cannot be undone.",
+    "file": "Backup file (.tar.gz)",
+    "confirm": "Type IMPOR to confirm",
+    "import": "Restore backup",
+    "imported": "Restored {rows} rows. Everyone has been signed out.",
+    "signInAgain": "Sign in again",
+    "failed": "The restore failed; nothing was changed."
   }
 }

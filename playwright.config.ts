@@ -4,6 +4,9 @@ const PORT = Number(process.env.E2E_PORT ?? 3100);
 // Optional: use a system Chromium instead of Playwright's managed download.
 const executablePath = process.env.PLAYWRIGHT_CHROMIUM_EXECUTABLE || undefined;
 
+/** Test-only admin for the accounts server (created from ADMIN_EMAIL / ADMIN_PASSWORD on start). */
+export const E2E_ADMIN = { email: "admin@example.test", password: "e2e-admin-password" };
+
 export default defineConfig({
   testDir: "tests/e2e",
   fullyParallel: false,
@@ -51,7 +54,14 @@ export default defineConfig({
       url: `http://localhost:${PORT + 1}/login`,
       reuseExistingServer: !process.env.CI,
       timeout: 300_000,
-      env: { DATABASE_URL: "file:./.data/e2e-auth.db", AUTH_MODE: "accounts" },
+      env: {
+        DATABASE_URL: "file:./.data/e2e-auth.db",
+        AUTH_MODE: "accounts",
+        // Throwaway test values, not real credentials.
+        ADMIN_EMAIL: E2E_ADMIN.email,
+        ADMIN_PASSWORD: E2E_ADMIN.password,
+        APP_SECRET: "e2e-only-secret-not-used-anywhere-else",
+      },
     },
   ],
 });

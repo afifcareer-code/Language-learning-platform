@@ -425,6 +425,8 @@ export const accounts = pgTable(
       .references(() => learners.id),
     email: text("email").notNull(),
     passwordHash: text("password_hash").notNull(),
+    /** "learner" or "admin". Admins can back up and restore all data. */
+    role: text("role").notNull().default("learner"),
     createdAt: createdAt(),
   },
   (t) => [uniqueIndex("accounts_email").on(t.email), uniqueIndex("accounts_learner").on(t.learnerId)],

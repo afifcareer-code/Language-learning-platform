@@ -437,3 +437,7 @@ test("lesson sentences show learned kanji with furigana", async ({ page }) => {
   await page.goto("/learn/n4-01-plans");
   await expect(page.locator("ruby rt").first()).toBeVisible();
 });
+
+test("admin backup is not available without accounts mode", async ({ request }) => {
+  expect((await request.get("/api/admin/backup")).status()).toBe(404);
+});

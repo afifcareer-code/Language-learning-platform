@@ -1,0 +1,1 @@
+ALTER TABLE `accounts` ADD `role` varchar(191) DEFAULT 'learner' NOT NULL;

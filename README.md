@@ -112,6 +112,21 @@ The app **detects the database automatically** from the variables your hosting p
 
 Step-by-step guides are in [Deployment](docs/development/deployment.md).
 
+### Choosing the database and filling in `.env`
+
+- **MySQL / MariaDB (recommended on hosting panels, the default when `DB_*` settings are given)**:
+  `DB_HOST`, `DB_PORT=3306`, `DB_DATABASE`, `DB_USERNAME`, `DB_PASSWORD`, or `DATABASE_URL=mysql://user:pass@host:3306/name`.
+- **PostgreSQL**: `DB_CONNECTION=pgsql` with the same `DB_*` settings, or `DATABASE_URL=postgres://user:pass@host:5432/name`.
+- **SQLite**: only for local development; used when no database is configured.
+
+For a public site also set `AUTH_MODE=accounts`, `APP_URL` (your https address), `APP_SECRET`
+(a long random value), and for the first start `ADMIN_EMAIL` + `ADMIN_PASSWORD` (then remove the
+password). Migrations for MySQL, PostgreSQL and SQLite ship with the app and run on start.
+
+**Moving from MySQL to PostgreSQL** (or to another server or domain): download a backup from
+Settings → Backup and restore as admin, start the app on the new database, and restore it there.
+Details in [docs/MIGRATION.md](docs/MIGRATION.md).
+
 ## Development
 
 | Command                              | Purpose                                                         |

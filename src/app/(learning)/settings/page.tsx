@@ -11,6 +11,9 @@ import { requireLearningContext } from "@/server/learning-context";
 import { logOut } from "@/features/auth/actions";
 import { accountEmailForLearner } from "@/server/auth/accounts";
 import { saveSettings } from "./actions";
+import { BackupPanel } from "@/features/admin/backup-panel";
+import { sessionAccount } from "@/server/auth/session";
+import { readEnv } from "@/server/env";
 
 export async function generateMetadata(): Promise<Metadata> {
   const { t } = await getI18n();
@@ -20,6 +23,7 @@ export async function generateMetadata(): Promise<Metadata> {
 export default async function SettingsPage() {
   const { db, learner } = await getContext();
   const accountEmail = await accountEmailForLearner(db, learner.id);
+  const isAdmin = readEnv().AUTH_MODE === "accounts" && (await sessionAccount(db))?.role === "admin";
   const { locale, t } = await getI18n();
   const learning = await requireLearningContext();
 
@@ -93,6 +97,16 @@ export default async function SettingsPage() {
               {t("auth.account.logout")}
             </Button>
           </form>
+        </Card>
+      )}
+
+      {isAdmin && (
+        <Card className="mt-6" aria-labelledby="backup-title">
+          <h2 id="backup-title" className="text-lg font-semibold">
+            {t("settings.backup.title")}
+          </h2>
+          <p className="mt-1 text-sm text-muted">{t("settings.backup.description")}</p>
+          <BackupPanel />
         </Card>
       )}
 
