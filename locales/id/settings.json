@@ -15,5 +15,19 @@
     "details": "Kredit lengkap",
     "content": "Contoh kalimat penutur asli dan terjemahannya berasal dari kontributor Tatoeba dan berlisensi CC BY 2.0 FR. Setiap kalimat dicantumkan penulisnya saat ditampilkan.",
     "contentLink": "Tentang Tatoeba"
+  },
+  "backup": {
+    "title": "Cadangan dan pemulihan (admin)",
+    "description": "Unduh semua akun, progres, dan konten dalam satu file, atau pulihkan cadangan di server ini. Pakai untuk pindah domain, server, atau database.",
+    "download": "Unduh cadangan (.tar.gz)",
+    "downloadNote": "Sesi login tidak ikut. Simpan file ini baik-baik: isinya semua akun.",
+    "importTitle": "Pulihkan dari cadangan",
+    "importWarning": "Ini mengganti SEMUA data di server ini dengan isi cadangan dan mengeluarkan semua pengguna. Tidak bisa dibatalkan.",
+    "file": "File cadangan (.tar.gz)",
+    "confirm": "Ketik IMPOR untuk konfirmasi",
+    "import": "Pulihkan cadangan",
+    "imported": "{rows} baris dipulihkan. Semua pengguna sudah dikeluarkan.",
+    "signInAgain": "Masuk lagi",
+    "failed": "Pemulihan gagal; tidak ada data yang berubah."
   }
 }

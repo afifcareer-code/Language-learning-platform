@@ -23,6 +23,32 @@ const envSchema = z.object({
   AUTO_MIGRATE: flag(true),
   /** Load or refresh bundled content when the server starts. */
   AUTO_SEED: flag(true),
+  /**
+   * Public address of the app, e.g. https://belajar.example.com. Session cookies are
+   * marked Secure when it starts with https. No domain is written in the code.
+   */
+  APP_URL: z
+    .string()
+    .url()
+    .optional()
+    .or(z.literal("").transform(() => undefined)),
+  /**
+   * Long random secret (32+ characters). Session tokens are stored as HMACs keyed by it,
+   * so sessions survive a new domain or database URL, but end if the secret changes.
+   */
+  APP_SECRET: z
+    .string()
+    .optional()
+    .transform((v) => (v ? v : undefined)),
+  /** First admin, created on start when both are set (accounts mode). Remove the password afterwards. */
+  ADMIN_EMAIL: z
+    .string()
+    .optional()
+    .transform((v) => (v ? v : undefined)),
+  ADMIN_PASSWORD: z
+    .string()
+    .optional()
+    .transform((v) => (v ? v : undefined)),
 });
 
 export type Env = z.infer<typeof envSchema>;

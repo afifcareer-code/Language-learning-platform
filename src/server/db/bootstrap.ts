@@ -1,4 +1,5 @@
 import { join } from "node:path";
+import { ensureAdminAccount, MIN_PASSWORD_LENGTH } from "../auth/accounts";
 import { readEnv } from "../env";
 import { ensureLocalLearner } from "../repositories/learners";
 import { seedJapanese } from "../seed/japanese";
@@ -38,6 +39,22 @@ export async function prepareDatabase(db: Database = getDb(), options: PrepareOp
       log(
         `Content loaded: ${catalog.languages} languages in catalog; Japanese: ${result.items} items, ${result.lessons} lessons, ${result.activities} activities`,
       );
+    }
+    // The admin's learner needs the language catalog, which the seed step loads.
+    const catalogReady = (await db.select().from(db.t.languages).limit(1)).length > 0;
+    if (env.ADMIN_EMAIL && env.ADMIN_PASSWORD && catalogReady) {
+      if (env.ADMIN_PASSWORD.length < MIN_PASSWORD_LENGTH)
+        log(`ADMIN_PASSWORD is shorter than ${MIN_PASSWORD_LENGTH} characters: admin account not created`);
+      else {
+        const outcome = await ensureAdminAccount(db, env.ADMIN_EMAIL, env.ADMIN_PASSWORD);
+        log(
+          outcome === "created"
+            ? "Admin account created from ADMIN_EMAIL. You can now remove ADMIN_PASSWORD."
+            : outcome === "promoted"
+              ? "Existing account for ADMIN_EMAIL is now an admin (its password was not changed)."
+              : "Admin account already present.",
+        );
+      }
     }
   });
 }

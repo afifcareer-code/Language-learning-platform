@@ -428,6 +428,8 @@ export const accounts = mysqlTable(
       .references(() => learners.id),
     email: str("email").notNull(),
     passwordHash: text("password_hash").notNull(),
+    /** "learner" or "admin". Admins can back up and restore all data. */
+    role: str("role").notNull().default("learner"),
     createdAt: createdAt(),
   },
   (t) => [uniqueIndex("accounts_email").on(t.email), uniqueIndex("accounts_learner").on(t.learnerId)],

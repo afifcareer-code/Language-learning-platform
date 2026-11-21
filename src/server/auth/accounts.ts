@@ -1,7 +1,8 @@
-import { createHash, randomBytes, randomUUID } from "node:crypto";
+import { createHash, createHmac, randomBytes, randomUUID } from "node:crypto";
 import { and, eq, gt } from "drizzle-orm";
 import type { Database } from "../db/client";
 import { LOCAL_LEARNER_ID, type Learner } from "../repositories/learners";
+import { readEnv } from "../env";
 import { hashPassword, verifyPassword } from "./password";
 
 export const MIN_PASSWORD_LENGTH = 10;
@@ -88,7 +89,61 @@ export async function verifyCredentials(
   return (await verifyPassword(password, account.hash)) ? account.id : null;
 }
 
-const tokenHash = (token: string) => createHash("sha256").update(token).digest("hex");
+/**
+ * What is stored for a session token: an HMAC keyed by APP_SECRET when it is set (so a leaked
+ * database alone cannot be matched to cookies), otherwise a plain SHA-256.
+ */
+function tokenHash(token: string): string {
+  const secret = readEnv().APP_SECRET;
+  return secret
+    ? createHmac("sha256", secret).update(token).digest("hex")
+    : createHash("sha256").update(token).digest("hex");
+}
+
+export type AccountRole = "learner" | "admin";
+
+/** The signed-in account behind a session token, with its role. */
+export async function accountForSession(
+  db: Database,
+  token: string,
+  now = new Date(),
+): Promise<{ accountId: string; learnerId: string; role: AccountRole } | null> {
+  const { accountSessions, accounts } = db.t;
+  const [row] = await db
+    .select({ accountId: accounts.id, learnerId: accounts.learnerId, role: accounts.role })
+    .from(accountSessions)
+    .innerJoin(accounts, eq(accounts.id, accountSessions.accountId))
+    .where(and(eq(accountSessions.tokenHash, tokenHash(token)), gt(accountSessions.expiresAt, now)))
+    .limit(1);
+  return row ? { ...row, role: row.role === "admin" ? "admin" : "learner" } : null;
+}
+
+/**
+ * Make sure the admin from ADMIN_EMAIL / ADMIN_PASSWORD exists. A new account is created with
+ * that password; an existing account is promoted and keeps its own password. The password is
+ * never logged.
+ */
+export async function ensureAdminAccount(
+  db: Database,
+  email: string,
+  password: string,
+): Promise<"created" | "promoted" | "unchanged"> {
+  const { accounts } = db.t;
+  const normalized = normalizeEmail(email);
+  const [existing] = await db
+    .select({ id: accounts.id, role: accounts.role })
+    .from(accounts)
+    .where(eq(accounts.email, normalized))
+    .limit(1);
+  if (existing) {
+    if (existing.role === "admin") return "unchanged";
+    await db.update(accounts).set({ role: "admin" }).where(eq(accounts.id, existing.id));
+    return "promoted";
+  }
+  const { accountId } = await createAccount(db, { email: normalized, password, displayName: "Admin" });
+  await db.update(accounts).set({ role: "admin" }).where(eq(accounts.id, accountId));
+  return "created";
+}
 
 export async function createSession(db: Database, accountId: string, now = new Date()) {
   const token = randomBytes(32).toString("base64url");

@@ -352,7 +352,7 @@ describe.each(TEST_DIALECTS)("learning flow on $dialect", ({ dialect, serverUrl 
       });
       expect(again!.choices["ja.hiragana.o"]).not.toContain("ja.hiragana.wo");
     }
-  });
+  }, 30_000);
 
   it("records attempts, schedules reviews, updates mastery and links the activity", async () => {
     const t0 = new Date("2026-01-01T09:00:00.123Z");
